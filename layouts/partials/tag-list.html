@@ -1,0 +1,8 @@
+{{- with .Params.tags -}}
+  <div class="tags">
+    [{{- range $i, $tag := . -}}
+      {{- if $i -}}, {{ end -}}
+      <span><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ $tag }}</a></span>
+    {{- end -}}]
+  </div>
+{{- end -}}

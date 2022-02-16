@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+<h1>{{ .Site.Title }}</h1>
+
+<h3>Recent Wordles</h3>
+<ul>
+{{ range first 5 (.Data.Pages) }}
+  <li><a href="{{ .Permalink }}">{{ .Title }}</a> [{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 MST" }}]</li>
+{{ end }}
+  <li><a href="{{ with .Site.GetPage "section" "w" }}{{ .Permalink }}{{ end }}">More...</a></li>
+</ul>
+
+{{ end }}

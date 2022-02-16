@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>{{ block "title" . }}{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}{{ end }}</title>
+
+    <meta id="description" name="description" content="{{ block "description" . }}{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.site_description }}{{ end }}{{ end }}"/>
+
+    {{ if eq (getenv "HUGO_ENV") "production" }}
+      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    {{ else }}
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    {{ end }}
+
+    <link rel="stylesheet" href="/dark.min.css">
+  </head>
+
+  <body>
+    <div>
+    {{ block "main" . }}
+    {{ end }}
+    </div>
+  </body>
+</html>
