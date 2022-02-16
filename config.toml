@@ -1,4 +1,7 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://wordle.tomhummel.com'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Tom Hummel : Wordle'
 theme = "ananke"
+
+[taxonomies]
+  tag = "tags"
