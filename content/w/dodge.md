@@ -84,8 +84,14 @@ stats: {
 
 Wordle 244 5/6*
 
+<!-- more -->
+
+I accidentally saw the solution after making four guesses. 😖
+
+```
 🟨⬛🟨⬛⬛
 ⬛🟩⬛🟨⬛
 ⬛🟩⬛⬛🟩
 ⬛🟩⬛⬛🟩
 🟩🟩🟩🟩🟩
+```
