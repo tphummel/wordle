@@ -21,5 +21,10 @@
     {{ block "main" . }}
     {{ end }}
     </div>
+    <div>
+      {{ with .GitInfo }}
+      <a style="opacity:0.1" href="{{$.Site.Params.github_repo}}commit/{{ .Hash }}">{{ .AbbreviatedHash }}</a>
+      {{ end }}
+    </div>
   </body>
 </html>
