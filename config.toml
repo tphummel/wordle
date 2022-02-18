@@ -1,4 +1,4 @@
-baseURL = 'https://wordle.tomhummel.com'
+baseURL = 'https://wordle.tomhummel.com/'
 languageCode = 'en-us'
 title = 'Tom Hummel : Wordle'
 enableGitInfo = true
