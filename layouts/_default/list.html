@@ -4,12 +4,12 @@
 
 <p>{{ partial "breadcrumb.html" . }}</p>
 
-{{ .Content }}
-
-{{ range .Pages }}
-  <div class="relative w-100 w-30-l mb4 bg-white">
-    {{ .Render "summary" }}
-  </div>
-{{ end }}
+<ul>
+  {{ range .Data.Pages }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{.Title}}</a> <span class="meta">{{ dateFormat "Jan 2, 2006" .Date }}</span>
+    </li>
+  {{ end }}
+</ul>
 
 {{ end }}
