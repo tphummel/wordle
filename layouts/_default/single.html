@@ -7,7 +7,7 @@
   {{ partial "tag-list.html" . }}
 </p>
 
-<p>Date: <strong>{{ .Date.Format "January 2, 2006"  }}</strong></p>
+<p>Date: <strong>{{ .Date.Local.Format "January 2, 2006"  }}</strong></p>
 <p>Outcome: <strong>{{ lower .Params.state.gameStatus}}</strong></p>
 <p>Hard Mode: <strong>{{ .Params.state.hardMode}}</strong></p>
 
