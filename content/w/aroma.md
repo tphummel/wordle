@@ -1,43 +1,37 @@
 ---
-<<<<<<< HEAD:content/w/shake.md
-title: shake
-date: 2022-02-17T17:16:37.088Z
-=======
 title: aroma
-date: 2022-02-15T16:21:00Z
+date: 2022-02-15T16:21:00.000Z
 tags: []
-
->>>>>>> reorg puzzles:content/w/aroma.md
 state: {
   "boardState": [
-    "ocean",
-    "beard",
-    "plate",
-    "shake",
+    "azure",
+    "apron",
+    "amour",
+    "aroma",
     "",
     ""
   ],
   "evaluations": [
     [
+      "correct",
       "absent",
+      "absent",
+      "present",
+      "absent"
+    ],
+    [
+      "correct",
       "absent",
       "present",
       "present",
       "absent"
     ],
     [
-      "absent",
+      "correct",
       "present",
       "correct",
       "absent",
-      "absent"
-    ],
-    [
-      "absent",
-      "absent",
-      "correct",
-      "absent",
-      "correct"
+      "present"
     ],
     [
       "correct",
@@ -50,12 +44,12 @@ state: {
     null
   ],
   "rowIndex": 4,
-  "solution": "shake",
+  "solution": "aroma",
   "gameStatus": "WIN",
-  "lastPlayedTs": 1645118197088,
-  "lastCompletedTs": 1645118197088,
+  "lastPlayedTs": 1644969219023,
+  "lastCompletedTs": 1644969219023,
   "restoringFromLocalStorage": null,
-  "hardMode": true
+  "hardMode": false
 }
 stats: {
   "currentStreak": 1,
@@ -75,3 +69,5 @@ stats: {
   "averageGuesses": 4
 }
 ---
+
+<!-- more -->
