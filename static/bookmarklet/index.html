@@ -1,0 +1,7 @@
+
+<a href="javascript:void%20function(){const%20a=JSON.parse(window.localStorage.getItem(%22nyt-wordle-statistics%22)),b=JSON.parse(window.localStorage.getItem(%22nyt-wordle-state%22)),c=new%20Date(b.lastCompletedTs),d=`---\n
+title:%20${b.solution}\n
+date:%20${c.toISOString()}\n
+state:%20${JSON.stringify(b,null,2)}\n
+stats:%20${JSON.stringify(a,null,2)}
+\n---`,e=encodeURIComponent(d),f=`${b.solution}.md`;window.open(%22https://github.com/tphummel/wordle-static/new/main/content/w/new%3Fvalue=%22+e+%22%26filename=%22+f)}();">Save Wordle</a>
