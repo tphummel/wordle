@@ -2,12 +2,17 @@
 
 <h1>{{ .Site.Title }}</h1>
 
-<h3>Recent Wordles</h3>
+
+<div>Total: {{ len .Site.RegularPages }} </div>
+
+<h3>Recent</h3>
 <ul>
-{{ range first 5 (.Data.Pages) }}
-  <li><a href="{{ .Permalink }}">{{ .Title }}</a> [{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 MST" }}]</li>
-{{ end }}
+  {{ range first 5 (.Site.RegularPages) }}
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a> <span style="opacity: 0.3">{{ .Date.Local.Format "January 2, 2006" }}</span></li>
+  {{ end }}
   <li><a href="{{ with .Site.GetPage "section" "w" }}{{ .Permalink }}{{ end }}">More...</a></li>
 </ul>
 
+
+<a href="index.xml">rss</a>
 {{ end }}
