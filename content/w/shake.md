@@ -1,6 +1,7 @@
 ---
 title: shake
 date: 2022-02-17T17:16:37.088Z
+tags: []
 state: {
   "boardState": [
     "ocean",

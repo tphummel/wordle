@@ -5,7 +5,7 @@ date: 2022-02-17T17:16:37.088Z
 =======
 title: aroma
 date: 2022-02-15T16:21:00Z
-tags: ['hi','ok']
+tags: []
 
 >>>>>>> reorg puzzles:content/w/aroma.md
 state: {
