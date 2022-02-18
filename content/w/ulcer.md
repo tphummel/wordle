@@ -1,51 +1,44 @@
 ---
-title: aroma
-date: 2022-02-15T15:50:00.000-08:00
-tags: ['backfill']
+title: ulcer
+date: 2022-02-11T08:18:00.00-08:00
+tags: [backfill]
 state: {
   "boardState": [
-    "ocean",
-    "boats",
-    "avoid",
-    "aloof",
-    "amour",
-    "aroma"
+    "eight",
+    "bread",
+    "reply",
+    "loner",
+    "ulcer",
+    ""
   ],
   "evaluations": [
     [
       "present",
       "absent",
       "absent",
-      "present",
-      "absent"
-    ],
-    [
-      "absent",
-      "present",
-      "present",
       "absent",
       "absent"
     ],
     [
-      "correct",
       "absent",
-      "correct",
-      "absent",
-      "absent"
-    ],
-    [
-      "correct",
-      "absent",
-      "correct",
-      "absent",
-      "absent"
-    ],
-    [
-      "correct",
       "present",
-      "correct",
+      "present",
       "absent",
-      "present"
+      "absent"
+    ],
+    [
+      "present",
+      "present",
+      "absent",
+      "present",
+      "absent"
+    ],
+    [
+      "present",
+      "absent",
+      "absent",
+      "correct",
+      "correct"
     ],
     [
       "correct",
@@ -53,10 +46,11 @@ state: {
       "correct",
       "correct",
       "correct"
-    ]
+    ],
+    null
   ],
-  "rowIndex": 6,
-  "solution": "aroma",
+  "rowIndex": 5,
+  "solution": "ulcer",
   "gameStatus": "WIN",
   "lastPlayedTs": null,
   "lastCompletedTs": null,
@@ -66,15 +60,14 @@ state: {
 stats: {}
 ---
 
-Wordle 241 6/6*
+Wordle 237 5/6*
 
 <!-- more -->
 
 ```
-🟨⬛⬛🟨⬛
+🟨⬛⬛⬛⬛
 ⬛🟨🟨⬛⬛
-🟩⬛🟩⬛⬛
-🟩⬛🟩⬛⬛
-🟩🟨🟩⬛🟨
+🟨🟨⬛🟨⬛
+🟨⬛⬛🟩🟩
 🟩🟩🟩🟩🟩
 ```

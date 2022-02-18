@@ -1,51 +1,37 @@
 ---
-title: aroma
-date: 2022-02-15T15:50:00.000-08:00
+title: cynic
+date: 2022-02-14T12:07:00.000-08:00
 tags: ['backfill']
 state: {
   "boardState": [
     "ocean",
-    "boats",
-    "avoid",
-    "aloof",
-    "amour",
-    "aroma"
+    "nicks",
+    "ching",
+    "cynic",
+    "",
+    ""
   ],
   "evaluations": [
     [
-      "present",
-      "absent",
       "absent",
       "present",
-      "absent"
-    ],
-    [
       "absent",
-      "present",
-      "present",
-      "absent",
-      "absent"
-    ],
-    [
-      "correct",
-      "absent",
-      "correct",
-      "absent",
-      "absent"
-    ],
-    [
-      "correct",
-      "absent",
-      "correct",
-      "absent",
-      "absent"
-    ],
-    [
-      "correct",
-      "present",
-      "correct",
       "absent",
       "present"
+    ],
+    [
+      "present",
+      "present",
+      "present",
+      "absent",
+      "absent"
+    ],
+    [
+      "correct",
+      "absent",
+      "present",
+      "present",
+      "absent"
     ],
     [
       "correct",
@@ -53,10 +39,12 @@ state: {
       "correct",
       "correct",
       "correct"
-    ]
+    ],
+    null,
+    null
   ],
-  "rowIndex": 6,
-  "solution": "aroma",
+  "rowIndex": 4,
+  "solution": "cynic",
   "gameStatus": "WIN",
   "lastPlayedTs": null,
   "lastCompletedTs": null,
@@ -66,15 +54,13 @@ state: {
 stats: {}
 ---
 
-Wordle 241 6/6*
+<!--more-->
 
-<!-- more -->
+Wordle 240 4/6*
 
 ```
-🟨⬛⬛🟨⬛
-⬛🟨🟨⬛⬛
-🟩⬛🟩⬛⬛
-🟩⬛🟩⬛⬛
-🟩🟨🟩⬛🟨
+⬛🟨⬛⬛🟨
+🟨🟨🟨⬛⬛
+🟩⬛🟨🟨⬛
 🟩🟩🟩🟩🟩
 ```
