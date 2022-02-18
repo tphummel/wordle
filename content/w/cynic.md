@@ -44,7 +44,7 @@ state: {
     null
   ],
   "rowIndex": 4,
-  "solution": "shake",
+  "solution": "cynic",
   "gameStatus": "WIN",
   "lastPlayedTs": null,
   "lastCompletedTs": null,

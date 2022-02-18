@@ -56,7 +56,7 @@ state: {
     ]
   ],
   "rowIndex": 6,
-  "solution": "shake",
+  "solution": "aroma",
   "gameStatus": "WIN",
   "lastPlayedTs": null,
   "lastCompletedTs": null,
