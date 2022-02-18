@@ -1,10 +1,33 @@
 <!-- https://caiorss.github.io/bookmarklet-maker/ -->
 <!-- index.js -> bookmarklet -->
 
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>Tom's Wordle Bookmarklet</title>
+    <link rel="stylesheet" href="../dark.min.css">
+  </head>
 
-<a href="javascript:void%20function(){const%20a=JSON.parse(window.localStorage.getItem(%22nyt-wordle-statistics%22)),b=JSON.parse(window.localStorage.getItem(%22nyt-wordle-state%22)),c=new%20Date(b.lastCompletedTs),d=`---\n
-title:%20${b.solution}\n
-date:%20${c.toISOString()}\n
-state:%20${JSON.stringify(b,null,2)}\n
-stats:%20${JSON.stringify(a,null,2)}
-\n---`,e=encodeURIComponent(d),f=`${b.solution}.md`;window.open(%22https://github.com/tphummel/wordle-static/new/main/content/w/new%3Fvalue=%22+e+%22%26filename=%22+f)}();">Save Wordle</a>
+  <body>
+    <h1>Bookmarklet</h1>
+    <a href="javascript:(function()%7Bconst%20stats%20%3D%20JSON.parse(window.localStorage.getItem(%22nyt-wordle-statistics%22))%3B%0Aconst%20state%20%3D%20JSON.parse(window.localStorage.getItem(%22nyt-wordle-state%22))%3B%0A%0Aconst%20completedAt%20%3D%20new%20Date(state.lastCompletedTs)%3B%0A%0Aconst%20fileText%20%3D%20%60---%5Cn%0Atitle%3A%20%24%7Bstate.solution%7D%5Cn%0Adate%3A%20%24%7BcompletedAt.toISOString()%7D%5Cn%0Atags%3A%20%5B%5D%5Cn%0Astate%3A%20%24%7BJSON.stringify(state%2C%20null%2C%202)%7D%5Cn%0Astats%3A%20%24%7BJSON.stringify(stats%2C%20null%2C%202)%7D%0A%5Cn---%60%3B%0A%0Aconst%20encodedFileText%20%3D%20encodeURIComponent(fileText)%3B%0Aconst%20filename%20%3D%20%60%24%7Bstate.solution%7D.md%60%3B%0Aconst%20githubQueryLink%20%3D%20%22https%3A%2F%2Fgithub.com%2Ftphummel%2Fwordle-static%2Fnew%2Fmain%2Fcontent%2Fw%2Fnew%3Fvalue%3D%22%20%2B%20encodedFileText%20%2B%22%26filename%3D%22%20%2B%20filename%3B%0A%0Awindow.open(githubQueryLink)%3B%7D)()%3B">Save Wordle</a> (<--drag this up to bookmarks bar)
+
+    <h1>Instructions</h1>
+    <h2>One Time Setup</h2>
+    <ol>
+      <li>Drag the bookmarklet above to your browser bookmarks bar</li>
+      <li>Prep the github repo, static hosting, and build automation. Steps...</li>
+    </ol>
+
+    <h2>Each Day</h2>
+    <ol>
+      <li>Play wordle</li>
+      <li>Click the bookmarklet in your bookmarks list after you finish the puzzle</li>
+      <li>Submit pull request</li>
+      <li>Merge PR, auto publishes</li>
+      <li>Enjoy <a href="https://wordle.tomhummel.com">wordle data</a></li>
+    </ol>
+  </body>
+</html>
