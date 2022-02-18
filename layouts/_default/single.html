@@ -7,7 +7,32 @@
   {{ partial "tag-list.html" . }}
 </p>
 
-{{ if .Params.toc }}{{ .TableOfContents }}{{ end }}
+<p>Date: <strong>{{ .Date.Format "January 2, 2006"  }}</strong></p>
+<p>Outcome: <strong>{{ lower .Params.state.gameStatus}}</strong></p>
+<p>Hard Mode: <strong>{{ .Params.state.hardMode}}</strong></p>
+
+<table>
+  {{ range $g, $guess := .Params.state.boardState }}
+    <tr>
+      {{ range $c, $char := split $guess "" }}
+        {{ $eval := index $.Params.state.evaluations $g $c }}
+
+        {{ $style := "" }}
+        {{ if eq $eval "correct"}}
+          {{ $style = "color: green" }}
+        {{ else if eq $eval "present"}}
+          {{ $style = "color: yellow" }}
+        {{ else }}
+
+        {{ end }}
+        <td style="{{ $style }}">
+          {{ $char }}
+        </td>
+      {{ end }}
+    </tr>
+  {{ end }}
+
+</table>
 
 {{ .Content }}
 
