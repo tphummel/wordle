@@ -1,7 +1,7 @@
 baseURL = 'https://wordle.tomhummel.com'
 languageCode = 'en-us'
 title = 'Tom Hummel : Wordle'
-theme = "archie"
+enableGitInfo = true
 
-[taxonomies]
-  tag = "tags"
+[params]
+    github_repo = "https://github.com/tphummel/wordle-static/"
