@@ -6,6 +6,7 @@ const completedAt = new Date(state.lastCompletedTs);
 const fileText = `---\n
 title: ${state.solution}\n
 date: ${completedAt.toISOString()}\n
+tags: []\n
 state: ${JSON.stringify(state, null, 2)}\n
 stats: ${JSON.stringify(stats, null, 2)}
 \n---`;
