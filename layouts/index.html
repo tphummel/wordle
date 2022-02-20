@@ -3,7 +3,7 @@
 <h1>{{ .Site.Title }}</h1>
 
 
-<div>Total: {{ len .Site.RegularPages }} </div>
+<div>Total: {{ len .Site.RegularPages }} (W: {{ len (where .Site.RegularPages "Params.state.gameStatus" "WIN") }}, L: {{ len (where .Site.RegularPages "Params.state.gameStatus" "!=" "WIN") }}) </div>
 
 <h3>Recent</h3>
 <ul>
