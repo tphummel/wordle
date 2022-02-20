@@ -7,7 +7,7 @@
 <ul>
   {{ range .Data.Pages }}
     <li>
-      <a href="{{ .RelPermalink }}">{{.Title}}</a> <span class="meta">{{ dateFormat "Jan 2, 2006" .Date }}</span>
+      [{{ partial "puzzle-score.html" . }} pts / {{ partial "guess-count.html" . }}{{- cond (eq .Params.state.hardMode true) "*" "" -}}] <a href="{{ .RelPermalink }}">{{.Title}}</a> <span class="meta">{{ dateFormat "Jan 2, 2006" .Date }}</span>
     </li>
   {{ end }}
 </ul>

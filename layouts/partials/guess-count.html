@@ -1,0 +1,7 @@
+{{ $guesses := 0 }}
+{{ range $g := .Params.state.boardState }}
+  {{ if eq (len $g) 5 }}
+    {{ $guesses = add $guesses 1}}
+  {{ end }}
+{{ end }}
+{{ return $guesses }}
