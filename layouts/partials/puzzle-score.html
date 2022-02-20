@@ -1,0 +1,11 @@
+{{ $score := 0 }}
+{{ range $guess := .Params.state.evaluations }}
+  {{ range $r := $guess }}
+    {{ if (eq $r "absent") }}
+      {{ $score = add $score 2 }}
+    {{ else if (eq $r "present") }}
+      {{ $score = add $score 1 }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ return $score }}

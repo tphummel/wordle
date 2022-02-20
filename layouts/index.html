@@ -8,7 +8,7 @@
 <h3>Recent</h3>
 <ul>
   {{ range first 10 (.Site.RegularPages) }}
-    <li><a href="{{ .Permalink }}">{{ .Title }}</a> <span style="opacity: 0.3">{{ .Date.Local.Format "January 2, 2006" }}</span></li>
+    <li>[{{ partial "puzzle-score.html" . }}] <a href="{{ .Permalink }}">{{ .Title }}</a> <span style="opacity: 0.3">{{ .Date.Local.Format "January 2, 2006" }}</span></li>
   {{ end }}
   <li><a href="{{ with .Site.GetPage "section" "w" }}{{ .Permalink }}{{ end }}">More...</a></li>
 </ul>

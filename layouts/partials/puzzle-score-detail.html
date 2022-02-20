@@ -1,0 +1,43 @@
+{{ $guesses := partial "guess-count" . }}
+{{ $counts := partial "guess-eval-counts" . }}
+
+<table>
+  <tr>
+    <th>Category</th>
+    <th>Count</th>
+    <th>Score</th>
+    <th>Notes</th>
+  </tr>
+  <tr>
+    <th>Outcome</th>
+    <td>{{ lower .Params.state.gameStatus}}</td>
+    <td>{{ cond (eq .Params.state.gameStatus "LOSS") 10 0 }}</td>
+    <td>10 point penalty for a loss</td>
+  </tr>
+  <tr>
+    <th>Guesses</th>
+    <td>{{ $guesses }}</td>
+    <td>N/A</td>
+    <td>Guess count doesn't factor directly into the score</td>
+  </tr>
+  <tr>
+    <th>Correct</th>
+    <td>{{ index $counts "correct" }}</td>
+    <td>{{ mul (index $counts "correct") 0 }}</td>
+    <td>{{ index $counts "correct"}} * 0 pts</td>
+  </tr>
+  <tr>
+    <th>Present</th>
+    <td>{{ index $counts "present" }}</td>
+    <td>{{ mul (index $counts "present") 1 }}</td>
+    <td>{{ index $counts "present"}} * 1 pts</td>
+  </tr>
+  <tr>
+    <th>Absent</th>
+    <td>{{ index $counts "absent" }}</td>
+    <td>{{ mul (index $counts "absent") 2 }}</td>
+    <td>{{ index $counts "absent"}} * 2 pts</td>
+  </tr>
+</table>
+
+Golf. Low scores are better.

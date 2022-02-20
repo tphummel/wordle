@@ -10,6 +10,15 @@
 <p>Date: <strong>{{ .Date.Local.Format "January 2, 2006"  }}</strong></p>
 <p>Outcome: <strong>{{ lower .Params.state.gameStatus}}</strong></p>
 <p>Hard Mode: <strong>{{ .Params.state.hardMode}}</strong></p>
+<p>Guesses: <strong>{{ partial "guess-count" . }}</strong></p>
+<p>
+  <details>
+    <summary>
+      Puzzle Score: <strong>{{ partial "puzzle-score.html" . }}</strong>
+    </summary>
+    {{ partial "puzzle-score-detail.html" .}}
+  </details>
+</p>
 
 <table>
   {{ range $g, $guess := .Params.state.boardState }}
