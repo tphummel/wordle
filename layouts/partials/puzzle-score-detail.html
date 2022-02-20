@@ -11,7 +11,7 @@
   <tr>
     <th>Outcome</th>
     <td>{{ lower .Params.state.gameStatus}}</td>
-    <td>{{ cond (eq .Params.state.gameStatus "LOSS") 10 0 }}</td>
+    <td>{{ cond (eq .Params.state.gameStatus "FAIL") 10 0 }}</td>
     <td>10 point penalty for a loss</td>
   </tr>
   <tr>
