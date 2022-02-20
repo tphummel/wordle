@@ -8,6 +8,7 @@
 </p>
 
 <p>Date: <strong>{{ .Date.Local.Format "January 2, 2006"  }}</strong></p>
+<p>Puzzle: <strong>{{ .Params.puzzle | default "--" }}</strong></p>
 <p>Outcome: <strong>{{ lower .Params.state.gameStatus}}</strong></p>
 <p>Hard Mode: <strong>{{ .Params.state.hardMode}}</strong></p>
 <p>Guesses: <strong>{{ partial "guess-count" . }}</strong></p>
