@@ -4,4 +4,4 @@ title = 'Tom Hummel : Wordle'
 enableGitInfo = true
 
 [params]
-    github_repo = "https://github.com/tphummel/wordle-static/"
+    github_repo = "https://github.com/tphummel/wordle/"
