@@ -65,5 +65,37 @@
   {{ end }}
 </table>
 
+<h2>Openers</h2>
+
+<table>
+  <tr>
+    <td>Word</td>
+    <td>Count</td>
+  </tr>
+
+  {{ $byFirst := dict }}
+  {{ range .Site.RegularPages }}
+    {{ $score := partial "puzzle-score" . }}
+    {{ $first := index .Params.state.boardState 0 }}
+    {{ $date := .Date.Local.Format "January 2, 2006" }}
+
+    {{ if not (isset $byFirst $first) }}
+      {{ $init := dict $first 0 }}
+      {{ $byFirst = merge $byFirst $init }}
+    {{ end }}
+
+    {{ $prev := index $byFirst $first }}
+
+    {{ $byFirst = merge $byFirst (dict $first (add 1 $prev)) }}
+  {{ end }}
+
+  {{ range $word, $count := $byFirst }}
+    <tr>
+      <td>{{ $word }}</td>
+      <td>{{ $count }}</td>
+    </tr>
+  {{ end }}
+</table>
+
 <a href="index.xml">rss</a>
 {{ end }}
