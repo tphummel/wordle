@@ -5,14 +5,65 @@
 
 <div>Total: {{ len .Site.RegularPages }} (W: {{ len (where .Site.RegularPages "Params.state.gameStatus" "WIN") }}, L: {{ len (where .Site.RegularPages "Params.state.gameStatus" "!=" "WIN") }}) </div>
 
-<h3>Recent</h3>
-<ul>
-  {{ range first 10 (.Site.RegularPages) }}
-    <li>[{{ partial "puzzle-score.html" . }}] <a href="{{ .Permalink }}">{{ .Title }}</a> <span style="opacity: 0.3">{{ .Date.Local.Format "January 2, 2006" }}</span></li>
-  {{ end }}
-  <li><a href="{{ with .Site.GetPage "section" "w" }}{{ .Permalink }}{{ end }}">More...</a></li>
-</ul>
+<h2>Recent</h2>
 
+<table>
+  <tr>
+    <td>Puzzle</td>
+    <td>Date</td>
+    <td>Score</td>
+  </tr>
+
+  {{ range first 5 (.Site.RegularPages) }}
+    <tr>
+      <td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
+      <td>{{ .Date.Local.Format "January 2, 2006" }}</td>
+      <td>{{ partial "puzzle-score.html" . }}</td>
+    </tr>
+
+  {{ end }}
+</table>
+
+{{ range .Site.RegularPages }}
+  {{ $score := partial "puzzle-score" . }}
+  {{ $.Scratch.Add "scored" (slice (dict "page" . "score" $score)) }}
+{{ end }}
+
+<h2>Low Scores</h2>
+
+<table>
+  <tr>
+    <td>Puzzle</td>
+    <td>Date</td>
+    <td>Score</td>
+  </tr>
+
+  {{ range first 5 (sort ($.Scratch.Get "scored") ".score" "asc") }}
+    <tr>
+      <td><a href="{{ .page.Permalink }}">{{ .page.Title }}</a></td>
+      <td>{{ .page.Date.Local.Format "January 2, 2006" }}</td>
+      <td>{{ .score }}</td>
+    </tr>
+  {{ end }}
+</table>
+
+<h2>High Scores</h2>
+
+<table>
+  <tr>
+    <td>Puzzle</td>
+    <td>Date</td>
+    <td>Score</td>
+  </tr>
+
+  {{ range first 5 (sort ($.Scratch.Get "scored") ".score" "desc") }}
+    <tr>
+      <td><a href="{{ .page.Permalink }}">{{ .page.Title }}</a></td>
+      <td>{{ .page.Date.Local.Format "January 2, 2006" }}</td>
+      <td>{{ .score }}</td>
+    </tr>
+  {{ end }}
+</table>
 
 <a href="index.xml">rss</a>
 {{ end }}
