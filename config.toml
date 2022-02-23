@@ -5,3 +5,6 @@ enableGitInfo = true
 
 [params]
     github_repo = "https://github.com/tphummel/wordle/"
+
+[taxonomies]
+    tag = 'tags'
