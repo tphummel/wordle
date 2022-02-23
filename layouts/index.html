@@ -3,7 +3,8 @@
 <h1>{{ .Site.Title }}</h1>
 
 
-<div>Total: {{ len .Site.RegularPages }} (W: {{ len (where .Site.RegularPages "Params.state.gameStatus" "WIN") }}, L: {{ len (where .Site.RegularPages "Params.state.gameStatus" "!=" "WIN") }}) </div>
+<div>Total: <a href="{{ with .Site.GetPage "section" "w" }}{{ .Permalink }}{{ end }}">{{ len .Site.RegularPages }}</a> (W: {{ len (where .Site.RegularPages "Params.state.gameStatus" "WIN") }}, L: {{ len (where .Site.RegularPages "Params.state.gameStatus" "!=" "WIN") }}) </div>
+<p><a href="{{ with .Site.GetPage "section" "w" }}{{ .Permalink }}{{ end }}">🧩 All Puzzles</a></p>
 
 <h2>Recent</h2>
 
