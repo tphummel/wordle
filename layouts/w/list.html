@@ -1,0 +1,15 @@
+
+{{ define "main" }}
+<h1>{{.Title}}</h1>
+
+<p>{{ partial "breadcrumb.html" . }}</p>
+
+<ul>
+  {{ range .Data.Pages }}
+    <li>
+      [{{ partial "puzzle-score.html" . }} pts / {{ partial "guess-count.html" . }}{{- cond (eq .Params.state.hardMode true) "*" "" -}}] <a href="{{ .RelPermalink }}">{{.Title}}</a> <span class="meta">{{ dateFormat "Jan 2, 2006" .Date }}</span>
+    </li>
+  {{ end }}
+</ul>
+
+{{ end }}

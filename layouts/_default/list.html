@@ -4,10 +4,14 @@
 
 <p>{{ partial "breadcrumb.html" . }}</p>
 
+{{ with .Content }}
+<div>{{ . }}</div>
+{{ end }}
+
 <ul>
   {{ range .Data.Pages }}
     <li>
-      [{{ partial "puzzle-score.html" . }} pts / {{ partial "guess-count.html" . }}{{- cond (eq .Params.state.hardMode true) "*" "" -}}] <a href="{{ .RelPermalink }}">{{.Title}}</a> <span class="meta">{{ dateFormat "Jan 2, 2006" .Date }}</span>
+      <a href="{{ .RelPermalink }}">{{.Title}}</a>
     </li>
   {{ end }}
 </ul>
