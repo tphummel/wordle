@@ -3,7 +3,8 @@
 <h1>{{ .Site.Title }}</h1>
 
 
-<div>Total: <a href="{{ with .Site.GetPage "section" "w" }}{{ .Permalink }}{{ end }}">{{ len .Site.RegularPages }}</a> (W: {{ len (where .Site.RegularPages "Params.state.gameStatus" "WIN") }}, L: {{ len (where .Site.RegularPages "Params.state.gameStatus" "!=" "WIN") }}) </div>
+{{ $wordles := where .Site.RegularPages "Section" "w" }}
+<div>Total: <a href="{{ with .Site.GetPage "section" "w" }}{{ .Permalink }}{{ end }}">{{ len $wordles }}</a> (W: {{ len (where $wordles "Params.state.gameStatus" "WIN") }}, L: {{ len (where $wordles "Params.state.gameStatus" "!=" "WIN") }}) </div>
 <p><a href="{{ with .Site.GetPage "section" "w" }}{{ .Permalink }}{{ end }}">🧩 All Puzzles</a></p>
 
 <h2>Recent</h2>
@@ -15,7 +16,7 @@
     <td>Score</td>
   </tr>
 
-  {{ range first 5 (.Site.RegularPages) }}
+  {{ range first 5 $wordles }}
     <tr>
       <td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
       <td>{{ .Date.Local.Format "January 2, 2006" }}</td>
@@ -25,7 +26,7 @@
   {{ end }}
 </table>
 
-{{ range .Site.RegularPages }}
+{{ range $wordles }}
   {{ $score := partial "puzzle-score" . }}
   {{ $.Scratch.Add "scored" (slice (dict "page" . "score" $score)) }}
 {{ end }}
@@ -75,7 +76,7 @@
   </tr>
 
   {{ $byFirst := dict }}
-  {{ range .Site.RegularPages }}
+  {{ range $wordles }}
     {{ $score := partial "puzzle-score" . }}
     {{ $first := index .Params.state.boardState 0 }}
     {{ $date := .Date.Local.Format "January 2, 2006" }}
