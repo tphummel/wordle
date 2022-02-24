@@ -1,7 +1,11 @@
 {{ $guesses := 0 }}
-{{ range $g := .Params.state.boardState }}
-  {{ if eq (len $g) 5 }}
-    {{ $guesses = add $guesses 1}}
+{{ if eq .Params.state.gameStatus "WIN" }}
+  {{ range $g := .Params.state.boardState }}
+    {{ if eq (len $g) 5 }}
+      {{ $guesses = add $guesses 1}}
+    {{ end }}
   {{ end }}
+{{ else }}
+  {{ $guesses = "X" }}
 {{ end }}
 {{ return $guesses }}
