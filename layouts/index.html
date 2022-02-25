@@ -7,10 +7,9 @@
 {{ $wins := where $wordles "Params.state.gameStatus" "WIN" }}
 {{ $losses := where $wordles "Params.state.gameStatus" "FAIL"}}
 
-<div>Total: <a href="{{ with .Site.GetPage "section" "w" }}{{ .Permalink }}{{ end }}">{{ len $wordles }}</a> (W: {{ len $wins }}, L: {{ len $losses }}) </div>
-<p><a href="{{ with .Site.GetPage "section" "w" }}{{ .Permalink }}{{ end }}">🧩 All Puzzles</a></p>
+<div>🧩 Total: <a href="{{ with .Site.GetPage "section" "w" }}{{ .Permalink }}{{ end }}">{{ len $wordles }}</a> (W: {{ len $wins }}, L: {{ len $losses }}) 🧩</div>
 
-<h2>Guess Distribution</h2>
+<h2>🎯 Guess Distribution</h2>
 
 <table>
   <tr>
@@ -33,11 +32,9 @@
   <td>{{ len $losses }} </td>
   <td>{{ lang.NumFmt 2 (mul (div (float (len $losses)) (len $wordles)) 100) }}%</td>
 </tr>
-
-
 </table>
 
-<h2>Recent</h2>
+<h2>🕰 Recent Puzzles</h2>
 
 <table>
   <tr>
@@ -61,7 +58,7 @@
   {{ $.Scratch.Add "scored" (slice (dict "page" . "score" $score)) }}
 {{ end }}
 
-<h2>Low (Good) Scores</h2>
+<h2>⬇️ Low (😄) Scores</h2>
 
 <table>
   <tr>
@@ -79,7 +76,7 @@
   {{ end }}
 </table>
 
-<h2>High (Bad) Scores</h2>
+<h2>⬆️ High (😖) Scores</h2>
 
 <table>
   <tr>
@@ -97,7 +94,7 @@
   {{ end }}
 </table>
 
-<h2>Opener Usage</h2>
+<h2>⛳️ Opener Usage</h2>
 
 <table>
   <tr>
@@ -129,7 +126,7 @@
   {{ end }}
 </table>
 
-<h2>Rules</h2>
+<h2>✅ Rules / Data Tests</h2>
 
 <ul>
 {{ range (where .Site.RegularPages "Section" "r") }}
