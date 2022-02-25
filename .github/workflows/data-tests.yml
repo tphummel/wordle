@@ -1,0 +1,23 @@
+name: Wordle Data Tests
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  run-data-tests:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16.x
+    - name: install zx
+      run: |
+        npm -v
+        npm i -g zx
+        which zx
+        zx --version
+    - name: run tests
+      run: |
+        find content/w -name "*.md" | grep -v "_index" | xargs -I {} sh -c "cat {} | zx content/r/guess-count.md"
