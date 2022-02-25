@@ -4,8 +4,38 @@
 
 
 {{ $wordles := where .Site.RegularPages "Section" "w" }}
-<div>Total: <a href="{{ with .Site.GetPage "section" "w" }}{{ .Permalink }}{{ end }}">{{ len $wordles }}</a> (W: {{ len (where $wordles "Params.state.gameStatus" "WIN") }}, L: {{ len (where $wordles "Params.state.gameStatus" "!=" "WIN") }}) </div>
+{{ $wins := where $wordles "Params.state.gameStatus" "WIN" }}
+{{ $losses := where $wordles "Params.state.gameStatus" "FAIL"}}
+
+<div>Total: <a href="{{ with .Site.GetPage "section" "w" }}{{ .Permalink }}{{ end }}">{{ len $wordles }}</a> (W: {{ len $wins }}, L: {{ len $losses }}) </div>
 <p><a href="{{ with .Site.GetPage "section" "w" }}{{ .Permalink }}{{ end }}">🧩 All Puzzles</a></p>
+
+<h2>Guess Distribution</h2>
+
+<table>
+  <tr>
+    <td>Guesses</td>
+    <td># of Puzzles</td>
+    <td>Pct of Total</td>
+  </tr>
+
+{{ range $guesses := seq 1 6 }}
+  {{ $puzzles := len (where $wins "Params.state.rowIndex" $guesses) }}
+  <tr>
+    <td>{{ $guesses }}</td>
+    <td>{{ $puzzles }}</td>
+    <td>{{ lang.NumFmt 2 (mul (div (float $puzzles) (len $wordles)) 100) }}%</td>
+  </tr>
+{{ end }}
+
+<tr>
+  <td>Loss</td>
+  <td>{{ len $losses }} </td>
+  <td>{{ lang.NumFmt 2 (mul (div (float (len $losses)) (len $wordles)) 100) }}%</td>
+</tr>
+
+
+</table>
 
 <h2>Recent</h2>
 
@@ -31,7 +61,7 @@
   {{ $.Scratch.Add "scored" (slice (dict "page" . "score" $score)) }}
 {{ end }}
 
-<h2>Low Scores</h2>
+<h2>Low (Good) Scores</h2>
 
 <table>
   <tr>
@@ -49,7 +79,7 @@
   {{ end }}
 </table>
 
-<h2>High Scores</h2>
+<h2>High (Bad) Scores</h2>
 
 <table>
   <tr>
@@ -67,7 +97,7 @@
   {{ end }}
 </table>
 
-<h2>Openers</h2>
+<h2>Opener Usage</h2>
 
 <table>
   <tr>
