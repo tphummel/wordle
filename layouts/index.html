@@ -99,5 +99,14 @@
   {{ end }}
 </table>
 
+<h2>Rules</h2>
+
+<ul>
+{{ range (where .Site.RegularPages "Section" "r") }}
+  <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+{{ end }}
+</ul>
+
+
 <a href="index.xml">rss</a>
 {{ end }}
