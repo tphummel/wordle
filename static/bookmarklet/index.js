@@ -4,7 +4,7 @@ const state = JSON.parse(window.localStorage.getItem("nyt-wordle-state"));
 const completedAt = new Date(state.lastCompletedTs);
 
 const epoch = new Date("2021-06-19T00:00:00");
-const solutionCount = 2315;
+const solutionCount = 2309;
 
 function getDaysBetween(start, end) {
   let startDate = new Date(start);
@@ -20,10 +20,11 @@ function getPuzzleNumber(today) {
 let puzzleNumber = getPuzzleNumber(new Date)
 
 const fileText = `---
-title: ${state.solution}
+title: ${puzzleNumber}
 date: ${completedAt.toISOString()}
-puzzle: ${puzzleNumber}
 tags: []
+words: ${JSON.stringify(state.boardState.filter(w => w !== ''))}
+puzzle: ${puzzleNumber}
 state: ${JSON.stringify(state, null, 2)}
 stats: ${JSON.stringify(stats, null, 2)}
 ---
