@@ -8,6 +8,7 @@ enableGitInfo = true
 
 [taxonomies]
     tag = 'tags'
+    word = 'words'
 
 [markup]
   [markup.tableOfContents]
