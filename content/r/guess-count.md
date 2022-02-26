@@ -26,7 +26,7 @@ cat content/w/198.md | zx content/r/guess-count.md
 find content/w -name "*.md" | grep -v "_index" | head -n1 | xargs -I {} sh -c "cat {} | zx content/r/guess-count.md"
 
 # test all files
-find content/w -name "*.md" | grep -v "_index" | head -n1 | xargs -I {} sh -c "cat {} | zx content/r/guess-count.md"
+find content/w -name "*.md" | grep -v "_index" | xargs -I {} sh -c "cat {} | zx content/r/guess-count.md"
 ```
 
 - The process will exit 0 on success with info written to stdout
@@ -50,7 +50,6 @@ process.stdin.on("end", function () {
 });
 
 function runTests (yaml) {
-  const testName = 'guess-count.md'
   const firstDoc = YAML.parseAllDocuments(yaml)[0]
   const title = firstDoc.contents.items.find(item => item.key.value === 'title')
 
