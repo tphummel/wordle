@@ -11,7 +11,22 @@
 <p>Puzzle: <strong>{{ .Params.puzzle | default "--" }}</strong></p>
 <p>Outcome: <strong>{{ lower .Params.state.gameStatus}}</strong></p>
 <p>Hard Mode: <strong>{{ .Params.state.hardMode}}</strong></p>
-<p>Guesses: <strong>{{ partial "guess-count" . }}</strong></p>
+<p>
+  <details>
+    <summary>
+      Guesses: <strong>{{ partial "guess-count" . }}</strong>
+    </summary>
+    <ul>
+    {{ range $g, $guess := .Params.state.boardState }}
+      {{ if not (eq $guess "") }}
+        {{ with $.Site.GetPage (printf "/words/%s" $guess) }}
+          <li><a href="{{ .Permalink }}">{{ $guess }}</a> {{ cond (eq $guess $.Params.state.solution) "✨" ""}}</li>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    </ul>
+  </details>
+
 <p>
   <details>
     <summary>
@@ -36,30 +51,6 @@
   <br />
 {{ end }}
 </div>
-
-
-<table>
-  {{ range $g, $guess := .Params.state.boardState }}
-    <tr>
-      {{ range $c, $char := split $guess "" }}
-        {{ $eval := index $.Params.state.evaluations $g $c }}
-
-        {{ $style := "" }}
-        {{ if eq $eval "correct"}}
-          {{ $style = "color: green" }}
-        {{ else if eq $eval "present"}}
-          {{ $style = "color: yellow" }}
-        {{ else }}
-
-        {{ end }}
-        <td style="{{ $style }}">
-          {{ $char }}
-        </td>
-      {{ end }}
-    </tr>
-  {{ end }}
-
-</table>
 
 {{ .Content }}
 
