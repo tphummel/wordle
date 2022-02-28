@@ -2,6 +2,9 @@
 
 <h1>{{ .Site.Title }}</h1>
 
+<blockquote>
+  ❗️❗️ Note: You will not see puzzle solution spoilers anywhere on this site unless you opt in on an individual puzzle page by expanding the Guesses section.
+</blockquote>
 
 {{ $wordles := where .Site.RegularPages "Section" "w" }}
 {{ $wins := where $wordles "Params.state.gameStatus" "WIN" }}
