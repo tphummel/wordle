@@ -10,15 +10,18 @@
 {{ $wins := where $wordles "Params.state.gameStatus" "WIN" }}
 {{ $losses := where $wordles "Params.state.gameStatus" "FAIL"}}
 
-<div>🧩 Total Puzzles: <a href="{{ with .Site.GetPage "section" "w" }}{{ .Permalink }}{{ end }}">{{ len $wordles }}</a> (W: {{ len $wins }}, L: {{ len $losses }})</div>
+<div>🧩 Total Puzzles: <strong><a href="{{ with .Site.GetPage "section" "w" }}{{ .Permalink }}{{ end }}">{{ len $wordles }}</a></strong></div>
+<div>🧩 Win Pct: <strong>{{ lang.NumFmt 3 (div (float (len $wins)) (len $wordles)) }} ({{ len $wins }}-{{ len $losses }})</strong></div>
+
 {{ $total_guesses := 0}}
 {{ range $wordles }}
   {{ $guesses := partial "guess-count" . }}
   {{ $guesses = cond (eq $guesses "X") 6 $guesses }}
   {{ $total_guesses = add $total_guesses $guesses }}
 {{ end }}
-<div>🧩 Total Guesses: {{ $total_guesses }}</div>
-<div>🧩 Distinct Words Guessed: <a href="{{ with .Site.GetPage "words" }}{{ .Permalink }}{{ end }}">{{ len .Site.Taxonomies.words }}</a></div>
+<div>🧩 Total Guesses: <strong>{{ $total_guesses }}</strong></div>
+<div>🧩 Guesses per Puzzle:  <strong>{{ lang.NumFmt 2 (div (float $total_guesses) (len $wordles)) }}</strong></div>
+<div>🧩 Distinct Words Guessed: <strong><a href="{{ with .Site.GetPage "words" }}{{ .Permalink }}{{ end }}">{{ len .Site.Taxonomies.words }}</a></strong></div>
 
 
 <h2>🎯 Guess Distribution</h2>
