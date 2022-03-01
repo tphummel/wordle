@@ -7,14 +7,29 @@
   {{ partial "tag-list.html" . }}
 </p>
 
-<p>Date: <strong>{{ .Date.Local.Format "January 2, 2006"  }}</strong></p>
+<p>Date: <strong>{{ .Date.Local.Format "January 2, 2006" }}</strong></p>
 <p>Puzzle: <strong>{{ .Params.puzzle | default "--" }}</strong></p>
 <p>Outcome: <strong>{{ lower .Params.state.gameStatus}}</strong></p>
 <p>Hard Mode: <strong>{{ .Params.state.hardMode}}</strong></p>
 <p>
+{{ range $g, $guess := .Params.state.boardState }}
+  {{ range $c, $char := split $guess "" -}}
+    {{ $eval := index $.Params.state.evaluations $g $c }}
+    {{- if eq $eval "correct" -}}
+      🟩
+    {{- else if eq $eval "present" -}}
+      🟨
+    {{- else -}}
+      ⬛️
+    {{- end -}}
+  {{ end }}
+  <br />
+{{ end }}
+</p>
+<p>
   <details>
     <summary>
-      Guesses: <strong>{{ partial "guess-count" . }}</strong>
+      Guesses (⛔️ Spoilers ❗️): <strong>{{ partial "guess-count" . }}</strong>
     </summary>
     <ul>
     {{ range $g, $guess := .Params.state.boardState }}
@@ -26,7 +41,7 @@
     {{ end }}
     </ul>
   </details>
-
+</p>
 <p>
   <details>
     <summary>
@@ -36,22 +51,10 @@
   </details>
 </p>
 
-<div>
-{{ range $g, $guess := .Params.state.boardState }}
-  {{ range $c, $char := split $guess "" }}
-    {{ $eval := index $.Params.state.evaluations $g $c }}
-    {{ if eq $eval "correct"}}
-      🟩
-    {{ else if eq $eval "present"}}
-      🟨
-    {{ else }}
-      ⬛️
-    {{ end }}
-  {{ end }}
-  <br />
-{{ end }}
-</div>
-
 {{ .Content }}
 
+<div>Published: {{ .Date.Local }}</div>
+  {{ with .GitInfo }}
+  <div>Committed: {{ .AuthorDate }}</div>
+  {{ end }}
 {{ end }}
