@@ -12,7 +12,7 @@
 {{ $nyt_puzzle_count := 2309 }}
 {{ $nyt_valid_word_count := 10638 }}
 
-<div>🧩 Puzzles Played: <strong><a href="{{ with .Site.GetPage "section" "w" }}{{ .Permalink }}{{ end }}">{{ len $wordles }}</a></strong></div>
+<div>🧩 Puzzles Played: <strong><a href="{{ with .Site.GetPage "section" "w" }}{{ .RelPermalink }}{{ end }}">{{ len $wordles }}</a></strong></div>
 <div>🧩 Win Pct: <strong>{{ lang.NumFmt 3 (div (float (len $wins)) (len $wordles)) }} ({{ len $wins }}-{{ len $losses }})</strong></div>
 <div>🧩 Pct of Total Puzzles Played: <strong>{{ lang.NumFmt 2 (mul (div (float (len $wordles)) ($nyt_puzzle_count)) 100) }}% ({{ lang.NumFmt 0 (len $wordles) }}/{{ lang.NumFmt 0 $nyt_puzzle_count }})</strong></div>
 
@@ -24,14 +24,14 @@
 {{ end }}
 <div>🧩 Total Guesses: <strong>{{ $total_guesses }}</strong></div>
 <div>🧩 Guesses per Puzzle:  <strong>{{ lang.NumFmt 2 (div (float $total_guesses) (len $wordles)) }}</strong></div>
-<div>🧩 Distinct Words Guessed: <strong><a href="{{ with .Site.GetPage "words" }}{{ .Permalink }}{{ end }}">{{ len .Site.Taxonomies.words }}</a></strong></div>
+<div>🧩 Distinct Words Guessed: <strong><a href="{{ with .Site.GetPage "words" }}{{ .RelPermalink }}{{ end }}">{{ len .Site.Taxonomies.words }}</a></strong></div>
 <div>🧩 Pct of Distinct Valid Words Guessed: <strong>{{ lang.NumFmt 2 (mul (div (float (len .Site.Taxonomies.words)) ($nyt_valid_word_count)) 100) }}% ({{ lang.NumFmt 0 (len .Site.Taxonomies.words) }}/{{ lang.NumFmt 0 ($nyt_valid_word_count) }})</strong></div>
 
 <h2>📒 Articles</h2>
 <ul>
   <li>
   {{ with .Site.GetPage "a/savor.md" }}
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
   {{ end }}
   </li>
 </ul>
@@ -70,7 +70,7 @@
 
   {{ range first 5 $wordles }}
     <tr>
-      <td><a href="{{ .Permalink }}">{{ .Title }}</a></td>
+      <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
       <td>{{ .Date.Local.Format "January 2, 2006" }}</td>
       <td>{{ partial "puzzle-score.html" . }}</td>
     </tr>
@@ -93,7 +93,7 @@
 
   {{ range first 5 (sort ($.Scratch.Get "scored") ".score" "asc") }}
     <tr>
-      <td><a href="{{ .page.Permalink }}">{{ .page.Title }}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ .page.Title }}</a></td>
       <td>{{ .page.Date.Local.Format "January 2, 2006" }}</td>
       <td>{{ .score }}</td>
     </tr>
@@ -110,7 +110,7 @@
 
   {{ range first 5 (sort ($.Scratch.Get "scored") ".score" "desc") }}
     <tr>
-      <td><a href="{{ .page.Permalink }}">{{ .page.Title }}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ .page.Title }}</a></td>
       <td>{{ .page.Date.Local.Format "January 2, 2006" }}</td>
       <td>{{ .score }}</td>
     </tr>
@@ -169,7 +169,7 @@
 
 <ul>
 {{ range (where .Site.RegularPages "Section" "r") }}
-  <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
 {{ end }}
 </ul>
 

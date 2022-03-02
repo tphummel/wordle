@@ -1,5 +1,5 @@
 <div>
-  {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+  {{ $url := replace .RelPermalink ( printf "%s" .Site.BaseURL) "" }}
   {{ $.Scratch.Add "breadcrumb-html" .Site.BaseURL }}
   <span><a href='{{ $.Scratch.Get "breadcrumb-html" }}'>home</a></span>
   {{ range $index, $element := split $url "/" }}
