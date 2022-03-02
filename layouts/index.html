@@ -3,7 +3,7 @@
 <h1>{{ .Site.Title }}</h1>
 
 <blockquote>
-  ❗️❗️ Note: You will not see puzzle solution spoilers anywhere on this site unless you opt in on an individual puzzle page by expanding the Guesses section.
+  ❗️⛔️ Note: You will not see puzzle solution spoilers anywhere on this site unless you opt in on an individual puzzle page by expanding the Guesses section.
 </blockquote>
 
 {{ $wordles := where .Site.RegularPages "Section" "w" }}
@@ -14,7 +14,7 @@
 
 <div>🧩 Puzzles Played: <strong><a href="{{ with .Site.GetPage "section" "w" }}{{ .Permalink }}{{ end }}">{{ len $wordles }}</a></strong></div>
 <div>🧩 Win Pct: <strong>{{ lang.NumFmt 3 (div (float (len $wins)) (len $wordles)) }} ({{ len $wins }}-{{ len $losses }})</strong></div>
-<div>🧩 Pct of Total Puzzles Played: <strong>{{ lang.NumFmt 2 (mul (div (float (len $wordles)) ($nyt_puzzle_count)) 100) }}% ({{ len $wordles}}/{{ $nyt_puzzle_count }})</strong></div>
+<div>🧩 Pct of Total Puzzles Played: <strong>{{ lang.NumFmt 2 (mul (div (float (len $wordles)) ($nyt_puzzle_count)) 100) }}% ({{ lang.NumFmt 0 (len $wordles) }}/{{ lang.NumFmt 0 $nyt_puzzle_count }})</strong></div>
 
 {{ $total_guesses := 0}}
 {{ range $wordles }}
@@ -25,11 +25,18 @@
 <div>🧩 Total Guesses: <strong>{{ $total_guesses }}</strong></div>
 <div>🧩 Guesses per Puzzle:  <strong>{{ lang.NumFmt 2 (div (float $total_guesses) (len $wordles)) }}</strong></div>
 <div>🧩 Distinct Words Guessed: <strong><a href="{{ with .Site.GetPage "words" }}{{ .Permalink }}{{ end }}">{{ len .Site.Taxonomies.words }}</a></strong></div>
-<div>🧩 Pct of Distinct Valid Words Guessed: <strong>{{ lang.NumFmt 2 (mul (div (float (len .Site.Taxonomies.words)) ($nyt_valid_word_count)) 100) }}% ({{ len .Site.Taxonomies.words }}/{{ $nyt_valid_word_count }})</strong></div>
+<div>🧩 Pct of Distinct Valid Words Guessed: <strong>{{ lang.NumFmt 2 (mul (div (float (len .Site.Taxonomies.words)) ($nyt_valid_word_count)) 100) }}% ({{ lang.NumFmt 0 (len .Site.Taxonomies.words) }}/{{ lang.NumFmt 0 ($nyt_valid_word_count) }})</strong></div>
 
+<h2>📒 Articles</h2>
+<ul>
+  <li>
+  {{ with .Site.GetPage "a/savor.md" }}
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+  {{ end }}
+  </li>
+</ul>
 
 <h2>🎯 Guess Distribution</h2>
-
 <table>
   <tr>
     <td>Guesses</td>
@@ -54,7 +61,6 @@
 </table>
 
 <h2>🕰 Recent Puzzles</h2>
-
 <table>
   <tr>
     <td>Puzzle</td>
@@ -78,7 +84,6 @@
 {{ end }}
 
 <h2>⬇️ Low (😄) Scores</h2>
-
 <table>
   <tr>
     <td>Puzzle</td>
@@ -96,7 +101,6 @@
 </table>
 
 <h2>⬆️ High (😖) Scores</h2>
-
 <table>
   <tr>
     <td>Puzzle</td>
@@ -114,7 +118,6 @@
 </table>
 
 <h2>⛳️ Opener Usage</h2>
-
 <table>
   <tr>
     <td>Word</td>
@@ -145,9 +148,21 @@
   {{ end }}
 </table>
 
-<h2>Tools</h2>
+<h2>🧰 Tools</h2>
 <ul>
   <li><a href="/tools/">Bookmarklets</a></li>
+</ul>
+
+<h2>🏷 Tags</h2>
+<ul>
+{{range $name, $taxonomy := .Site.Taxonomies.tags}} {{ $cnt := .Count }}
+  {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+  <li>
+    <a href={{ .RelPermalink }} title="All pages with tag {{$name}}">{{ $name }}</a>
+    <sup>{{ $cnt }}</sup>
+  </li>
+  {{end}}
+{{end}}
 </ul>
 
 <h2>✅ Rules / Data Tests</h2>
