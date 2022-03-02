@@ -53,8 +53,11 @@
 
 {{ .Content }}
 
-<div>Published: {{ .Date.Local }}</div>
+<div style="opacity:0.3">
+  <div>Published: {{ dateFormat "2006-01-02 15:04 -0700" .Date.Local }}</div>
   {{ with .GitInfo }}
-  <div>Committed: {{ .AuthorDate }}</div>
+  <div>Committed: {{ dateFormat "2006-01-02 15:04 -0700" .AuthorDate.Local }}</div>
   {{ end }}
+</div>
+
 {{ end }}
