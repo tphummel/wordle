@@ -2,6 +2,7 @@ baseURL = 'https://wordle.tomhummel.com/'
 languageCode = 'en-us'
 title = "Tom Hummel's Wordle Data"
 enableGitInfo = true
+timeZone = 'America/Los_Angeles'
 
 [params]
     github_repo = "https://github.com/tphummel/wordle/"
