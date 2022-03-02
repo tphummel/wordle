@@ -35,7 +35,7 @@
     {{ range $g, $guess := .Params.state.boardState }}
       {{ if not (eq $guess "") }}
         {{ with $.Site.GetPage (printf "/words/%s" $guess) }}
-          <li><a href="{{ .Permalink }}">{{ $guess }}</a> {{ cond (eq $guess $.Params.state.solution) "✨" ""}}</li>
+          <li><a href="{{ .RelPermalink }}">{{ $guess }}</a> {{ cond (eq $guess $.Params.state.solution) "✨" ""}}</li>
         {{ end }}
       {{ end }}
     {{ end }}
