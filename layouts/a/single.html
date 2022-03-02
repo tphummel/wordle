@@ -1,0 +1,30 @@
+{{ define "main" }}
+
+<h1>{{.Title}}</h1>
+
+<p>
+  {{ partial "breadcrumb.html" . }}
+</p>
+
+{{ if .Params.toc }}{{ .TableOfContents }}{{ end }}
+
+{{ .Content }}
+<hr />
+
+   <div class="post-info">
+     <p>
+       📝 {{ .Page.WordCount }} Words
+     </p>
+
+     <p>
+       📆 {{ dateFormat "2006-01-02 15:04 -0700" .Date.Local }}
+     </p>
+
+     {{- if .GitInfo }}
+       <p>
+        ⟜<a href="{{ .Site.Params.gitUrl -}}{{ .GitInfo.Hash }}" target="_blank" rel="noopener">{{ .GitInfo.AbbreviatedHash }}</a>
+         @ {{ dateFormat "2006-01-02" .GitInfo.AuthorDate.Local }}
+       </p>
+     {{- end }}
+   </div>
+{{ end }}
