@@ -4,7 +4,8 @@
 
 - [Wordle](https://www.nytimes.com/games/wordle/index.html) is a very fun and popular game.
 - Wordle doesn't currently (as of 2022-02-26) store high fidelity data historically. The share via emoji feature, while very cool, intentionally doesn't capture the actual guesses you made - so as not to spoil today's puzzle for others.
-- I want to be able to ask arbitrary questions about my wordle data that are not currently a part of the in app reporting.
+- I want to learn about myself and my play style.
+- I am not trying solve or break Wordle. I want to savor the ritual and joy in playing daily.
 
 🚀 https://wordle.tomhummel.com 🛠
 
