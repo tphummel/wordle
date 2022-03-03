@@ -1,0 +1,35 @@
+{{ define "main" }}
+<h1>{{.Title}}</h1>
+
+<p>{{ partial "breadcrumb.html" . }}</p>
+
+{{ with .Content }}
+<div>{{ . }}</div>
+{{ end }}
+
+<table>
+  <tr>
+    <td>Word</td>
+    <td>Count</td>
+    <td>First Use</td>
+    <td>Last Use</td>
+  </tr>
+
+  {{ range .Data.Terms.ByCount }}
+    {{ $name := .Name }}
+    {{ $count := .Count }}
+    {{ $first := index (first 1 .Pages.ByDate) 0 }}
+    {{ $last := index (last 1 .Pages.ByDate) 0 }}
+
+    {{ with $.Site.GetPage (printf "/%s/%s" "words" $name) }}
+    <tr>
+      <td><a href="{{ .RelPermalink }}">{{ .Name }}</a></td>
+      <td>{{ $count }}</td>
+      <td><a href="{{ $first.RelPermalink}}">{{ $first.Date.Local.Format "Jan 2, 2006" }}</a></td>
+      <td><a href="{{ $last.RelPermalink}}">{{ $last.Date.Local.Format "Jan 2, 2006" }}</a></td>
+    </tr>
+    {{ end }}
+
+  {{ end }}
+</table>
+{{ end }}
