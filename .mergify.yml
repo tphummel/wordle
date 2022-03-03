@@ -1,0 +1,12 @@
+pull_request_rules:
+  - name: Automatic merge of new puzzles on check success
+    conditions:
+      - author=tphummel
+      - base=main
+      - label=puzzle
+      - check-success=Cloudflare Pages
+      - check-success=run-data-tests
+      - check-success=run-data-tests
+    actions:
+      merge:
+        method: squash
