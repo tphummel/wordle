@@ -25,8 +25,8 @@
     <tr>
       <td><a href="{{ .RelPermalink }}">{{ .Name }}</a></td>
       <td>{{ $count }}</td>
-      <td><a href="{{ $first.RelPermalink}}">{{ $first.Date.Local.Format "Jan 2, 2006" }}</a></td>
-      <td><a href="{{ $last.RelPermalink}}">{{ $last.Date.Local.Format "Jan 2, 2006" }}</a></td>
+      <td><a href="{{ $first.RelPermalink}}">{{ $first.Date.Format "Jan 2, 2006" }}</a></td>
+      <td><a href="{{ $last.RelPermalink}}">{{ $last.Date.Format "Jan 2, 2006" }}</a></td>
     </tr>
     {{ end }}
 

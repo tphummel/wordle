@@ -71,7 +71,7 @@
   {{ range first 5 $wordles }}
     <tr>
       <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
-      <td>{{ .Date.Local.Format "January 2, 2006" }}</td>
+      <td>{{ .Date.Format "January 2, 2006" }}</td>
       <td>{{ partial "puzzle-score.html" . }}</td>
     </tr>
 
@@ -94,7 +94,7 @@
   {{ range first 5 (sort ($.Scratch.Get "scored") ".score" "asc") }}
     <tr>
       <td><a href="{{ .page.RelPermalink }}">{{ .page.Title }}</a></td>
-      <td>{{ .page.Date.Local.Format "January 2, 2006" }}</td>
+      <td>{{ .page.Date.Format "January 2, 2006" }}</td>
       <td>{{ .score }}</td>
     </tr>
   {{ end }}
@@ -111,7 +111,7 @@
   {{ range first 5 (sort ($.Scratch.Get "scored") ".score" "desc") }}
     <tr>
       <td><a href="{{ .page.RelPermalink }}">{{ .page.Title }}</a></td>
-      <td>{{ .page.Date.Local.Format "January 2, 2006" }}</td>
+      <td>{{ .page.Date.Format "January 2, 2006" }}</td>
       <td>{{ .score }}</td>
     </tr>
   {{ end }}
@@ -128,7 +128,7 @@
   {{ range $wordles }}
     {{ $score := partial "puzzle-score" . }}
     {{ $first := index .Params.state.boardState 0 }}
-    {{ $date := .Date.Local.Format "January 2, 2006" }}
+    {{ $date := .Date.Format "January 2, 2006" }}
 
     {{ if not (isset $byFirst $first) }}
       {{ $init := dict $first 0 }}
