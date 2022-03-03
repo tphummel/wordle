@@ -1,15 +1,28 @@
-
 {{ define "main" }}
 <h1>{{.Title}}</h1>
 
 <p>{{ partial "breadcrumb.html" . }}</p>
 
-<ul>
-  {{ range .Data.Pages }}
-    <li>
-      [{{ partial "puzzle-score.html" . }} pts / {{ partial "guess-count.html" . }}{{- cond (eq .Params.state.hardMode true) "*" "" -}}] <a href="{{ .RelPermalink }}">{{.Title}}</a> <span class="meta">{{ dateFormat "Jan 2, 2006" .Date }}</span>
-    </li>
-  {{ end }}
-</ul>
+{{ with .Content }}
+<div>{{ . }}</div>
+{{ end }}
 
+<table>
+  <tr>
+    <td>Date</td>
+    <td>Puzzle</td>
+    <td>Turns</td>
+    <td>Score</td>
+  </tr>
+
+  {{ range .Data.Pages }}
+    <tr>
+      <td><a href="{{ .RelPermalink }}">{{ dateFormat "Jan 2, 2006" .Date.Local }}</a></td>
+      <td><a href="{{ .RelPermalink }}">{{ .Name }}</td>
+      <td><a href="{{ .RelPermalink }}">{{ partial "guess-count.html" . }}{{- cond (eq .Params.state.hardMode true) "*" "" -}}</a></td>
+      <td><a href="{{ .RelPermalink }}">{{ partial "puzzle-score.html" . }}</a></td>
+    </tr>
+
+  {{ end }}
+</table>
 {{ end }}
