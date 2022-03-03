@@ -7,7 +7,7 @@
   {{ partial "tag-list.html" . }}
 </p>
 
-<p>Date: <strong>{{ .Date.Local.Format "January 2, 2006" }}</strong></p>
+<p>Date: <strong>{{ .Date.Format "January 2, 2006" }}</strong></p>
 <p>Puzzle: <strong>{{ .Params.puzzle | default "--" }}</strong></p>
 <p>Outcome: <strong>{{ lower .Params.state.gameStatus}}</strong></p>
 <p>Hard Mode: <strong>{{ .Params.state.hardMode}}</strong></p>
@@ -54,7 +54,7 @@
 {{ .Content }}
 
 <div style="opacity:0.3">
-  <div>Published: {{ dateFormat "2006-01-02 15:04 -0700" .Date.Local }}</div>
+  <div>Published: {{ dateFormat "2006-01-02 15:04 -0700" .Date }}</div>
   {{ with .GitInfo }}
   <div>Committed: {{ dateFormat "2006-01-02 15:04 -0700" .AuthorDate.Local }}</div>
   {{ end }}
