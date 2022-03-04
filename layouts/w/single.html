@@ -53,6 +53,9 @@
 
 {{ .Content }}
 
+{{ $wordles := (where .Site.RegularPages "Section" "w")}}
+<div>Prev Puzzle: <strong>{{ with $wordles.Prev . }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}</strong></div>
+<div>Next Puzzle: <strong>{{ with $wordles.Next . }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}</strong></div>
 <div style="opacity:0.3">
   <div>Published: {{ dateFormat "2006-01-02 15:04 -0700" .Date }}</div>
   {{ with .GitInfo }}
