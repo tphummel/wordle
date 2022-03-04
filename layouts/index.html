@@ -27,15 +27,6 @@
 <div>🧩 Distinct Words Guessed: <strong><a href="{{ with .Site.GetPage "words" }}{{ .RelPermalink }}{{ end }}">{{ len .Site.Taxonomies.words }}</a></strong></div>
 <div>🧩 Pct of Distinct Valid Words Guessed: <strong>{{ lang.NumFmt 2 (mul (div (float (len .Site.Taxonomies.words)) ($nyt_valid_word_count)) 100) }}% ({{ lang.NumFmt 0 (len .Site.Taxonomies.words) }}/{{ lang.NumFmt 0 ($nyt_valid_word_count) }})</strong></div>
 
-<h2>📒 Articles</h2>
-<ul>
-  <li>
-  {{ with .Site.GetPage "a/savor.md" }}
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-  {{ end }}
-  </li>
-</ul>
-
 <h2>🎯 Guess Distribution</h2>
 <table>
   <tr>
@@ -153,6 +144,15 @@
   <li><a href="/tools/">Bookmarklets</a></li>
 </ul>
 
+<h2>📒 Articles</h2>
+<ul>
+  <li>
+  {{ with .Site.GetPage "a/savor.md" }}
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  {{ end }}
+  </li>
+</ul>
+
 <h2>🏷 Tags</h2>
 <ul>
 {{range $name, $taxonomy := .Site.Taxonomies.tags}} {{ $cnt := .Count }}
@@ -166,7 +166,6 @@
 </ul>
 
 <h2>✅ Rules / Data Tests</h2>
-
 <ul>
 {{ range (where .Site.RegularPages "Section" "r") }}
   <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
