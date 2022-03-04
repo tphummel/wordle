@@ -23,7 +23,7 @@
       ⬛️
     {{- end -}}
   {{ end }}
-  <br />
+  {{ if not (eq $guess "") }}<br />{{ end }}
 {{ end }}
 </p>
 <p>
