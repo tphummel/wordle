@@ -31,15 +31,26 @@
     <summary>
       Guesses: <strong>{{ partial "guess-count" . }}</strong> (⛔️ Spoilers❗️)
     </summary>
-    <ul>
+    <table>
+      <tr>
+        <th>#</th>
+        <th>Word</th>
+        <th>All-Time Usage Count</th>
+      </tr>
     {{ range $g, $guess := .Params.state.boardState }}
       {{ if not (eq $guess "") }}
         {{ with $.Site.GetPage (printf "/words/%s" $guess) }}
-          <li><a href="{{ .RelPermalink }}">{{ $guess }}</a> {{ cond (eq $guess $.Params.state.solution) "✨" ""}}</li>
+          <tr>
+            <td>{{ add $g 1 }}</td>
+            <td>
+              <a href="{{ .RelPermalink }}">{{ $guess }}{{ cond (eq $guess $.Params.state.solution) "✨" ""}}</a>
+            </td>
+            <td>{{ len (index $.Site.Taxonomies.words $guess) }}</td>
+          </tr>
         {{ end }}
       {{ end }}
     {{ end }}
-    </ul>
+    </table>
   </details>
 </p>
 <p>
@@ -54,8 +65,16 @@
 {{ .Content }}
 
 {{ $wordles := (where .Site.RegularPages "Section" "w")}}
-<div>Prev Puzzle: <strong>{{ with $wordles.Prev . }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}</strong></div>
-<div>Next Puzzle: <strong>{{ with $wordles.Next . }}<a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}</strong></div>
+{{ with $wordles.Prev . }}
+<div>
+  Prev Puzzle: <strong><a href="{{ .RelPermalink }}">{{ .Title }}</a></strong>
+</div>
+{{ end }}
+{{ with $wordles.Next . }}
+<div>
+  Next Puzzle: <strong><a href="{{ .RelPermalink }}">{{ .Title }}</a></strong>
+</div>
+{{ end }}
 <div style="opacity:0.3">
   <div>Published: {{ dateFormat "2006-01-02 15:04 -0700" .Date }}</div>
   {{ with .GitInfo }}
