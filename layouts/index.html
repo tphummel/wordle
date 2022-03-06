@@ -29,9 +29,14 @@
       {{ $.Scratch.Add "active" (slice $thisW) }}
     {{ else }}
       <!-- streak broken - add finished streak to streaks list, reset active streak slice -->
-      {{ $a := $.Scratch.Get "active" }}
-      {{ printf "%#v" $a }}
-      {{ $streak := dict "length" (len ($.Scratch.Get "active")) "start" (first 1 $a) "end" (last 1 $a) }}
+      {{ $a := ($.Scratch.Get "active") }}
+
+      {{ $streakLen := 0 }}
+      {{ range ($.Scratch.Get "active") }}
+        {{ $streakLen = add $streakLen 1 }}
+      {{ end }}
+
+      {{ $streak := dict "length" $streakLen  }}
       {{ $.Scratch.Add "streaks" (slice $streak) }}
 
       {{ $.Scratch.Delete "active" }}
@@ -46,8 +51,12 @@
 
 <!-- handle the active streak -->
 {{ $a := $.Scratch.Get "active" }}
+{{ $finalStreakLen := 0 }}
+{{ range $a }}
+  {{ $finalStreakLen = add $finalStreakLen 1 }}
+{{ end }}
 {{ if gt (len $a) 0 }}
-  {{ $streak := dict "length" (len $a) "start" (first 1 $a) "end" (last 1 $a) }}
+  {{ $streak := dict "length" $finalStreakLen "start" (first 1 $a) "end" (last 1 $a) }}
   {{ $.Scratch.Add "streaks" (slice $streak) }}
 {{ end }}
 
