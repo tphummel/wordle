@@ -35,17 +35,26 @@
       <tr>
         <th>#</th>
         <th>Word</th>
-        <th>All-Time Usage Count</th>
+        <th>Usage</th>
       </tr>
+    {{ $title := .Title }}
     {{ range $g, $guess := .Params.state.boardState }}
       {{ if not (eq $guess "") }}
         {{ with $.Site.GetPage (printf "/words/%s" $guess) }}
           <tr>
             <td>{{ add $g 1 }}</td>
             <td>
-              <a href="{{ .RelPermalink }}">{{ $guess }}{{ cond (eq $guess $.Params.state.solution) "✨" ""}}</a>
+              <a href="{{ .RelPermalink }}">{{ $guess }} {{ cond (eq $guess $.Params.state.solution) "✨" ""}}</a>
             </td>
-            <td>{{ len (index $.Site.Taxonomies.words $guess) }}</td>
+            {{ $guessHistory := index $.Site.Taxonomies.words $guess }}
+            {{ $guessSeq := -1 }}
+            {{ range $i, $pastGuess := $guessHistory.Pages.ByDate }}
+              {{ if eq $pastGuess.Title $title }}
+                {{ $guessSeq = $i }}
+              {{ end }}
+            {{ end }}
+            {{ $displayUsage := add $guessSeq 1 }}
+            <td>{{ $displayUsage }} / {{ len $guessHistory }} {{ cond (eq $displayUsage 1) "✅" ""}}</td>
           </tr>
         {{ end }}
       {{ end }}
