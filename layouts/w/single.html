@@ -3,8 +3,8 @@
   <meta property="og:title" content="{{ $.Site.Title }}" />
   <meta property="og:description" content="Wordle puzzle #{{ .Params.puzzle }} completed on {{ .Date.Format "January 2, 2006" }}" />
 
-  <!-- <meta property="og:image" content="image.png" /> -->
-  <!-- <meta property="twitter:card" content="image alt text" /> -->
+  <meta property="og:image" content="./puzzle.svg" />
+  <meta property="twitter:card" content="image alt text" />
 
   <meta property="twitter:label1" value="Guesses" />
   <meta property="twitter:data1" value="{{ partial "guess-count" . }}" />
