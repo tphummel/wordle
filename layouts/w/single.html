@@ -25,21 +25,7 @@
 <p>Puzzle: <strong>{{ .Params.puzzle | default "--" }}</strong></p>
 <p>Outcome: <strong>{{ lower .Params.state.gameStatus}}</strong></p>
 <p>Hard Mode: <strong>{{ .Params.state.hardMode}}</strong></p>
-<p>
-{{ range $g, $guess := .Params.state.boardState }}
-  {{ range $c, $char := split $guess "" -}}
-    {{ $eval := index $.Params.state.evaluations $g $c }}
-    {{- if eq $eval "correct" -}}
-      🟩
-    {{- else if eq $eval "present" -}}
-      🟨
-    {{- else -}}
-      ⬛️
-    {{- end -}}
-  {{ end }}
-  {{ if not (eq $guess "") }}<br />{{ end }}
-{{ end }}
-</p>
+<p>{{ partial "emoji-grid" . }}</p>
 <p>
   <details>
     <summary>

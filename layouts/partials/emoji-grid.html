@@ -1,0 +1,13 @@
+{{ range $g, $guess := .Params.state.boardState }}
+  {{ range $c, $char := split $guess "" -}}
+    {{ $eval := index $.Params.state.evaluations $g $c }}
+    {{- if eq $eval "correct" -}}
+      🟩
+    {{- else if eq $eval "present" -}}
+      🟨
+    {{- else -}}
+      ⬛️
+    {{- end -}}
+  {{ end }}
+  {{ if not (eq $guess "") }}<br />{{ end }}
+{{ end }}
