@@ -145,7 +145,7 @@
   {{ end }}
 </table>
 
-<h2>⛓ Streaks</h2>
+<h2>⛓ Top Streaks, Consecutive Days Played</h2>
 {{ $thisW := dict }}
 {{ $lastW := dict }}
 {{ $active := slice }}
@@ -164,6 +164,83 @@
 
     {{ $isConsecDays := eq $thisDay ($lastDay.AddDate 0 0 1) }}
     {{ if $isConsecDays }}
+      <!-- extend active streak -->
+      {{ $.Scratch.Add "active" (slice $thisW) }}
+      {{ $active = $active | append (slice $thisW) }}
+    {{ else }}
+      <!-- streak broken - add finished streak to streaks list, reset active streak slice -->
+      {{ $a := ($.Scratch.Get "active") }}
+      {{ $streakLen := 0 }}
+      {{ range ($.Scratch.Get "active") }}
+        {{ $streakLen = add $streakLen 1 }}
+      {{ end }}
+
+      {{ $streak := dict "length" (len $active) "start" (index (first 1 $active) 0) "end" (index (last 1 $active) 0) }}
+      {{ $.Scratch.Add "streaks" (slice $streak) }}
+      {{ $streaks = $streaks | append (slice $streak) }}
+
+      {{ $.Scratch.Delete "active" }}
+      {{ $active = slice }}
+    {{ end }}
+  {{ else }}
+    <!-- this is the first wordle in the list. streak extends -->
+    {{ $.Scratch.Add "active" (slice $thisW) }}
+    {{ $active = $active | append (slice $thisW )}}
+  {{ end }}
+
+  {{ $lastW = $thisW }}
+{{ end }}
+
+<!-- handle the active streak -->
+{{ $a := $.Scratch.Get "active" }}
+{{ $finalStreakLen := 0 }}
+{{ range $a }}
+  {{ $finalStreakLen = add $finalStreakLen 1 }}
+{{ end }}
+{{ if gt (len $active) 0 }}
+  {{ $streak := dict "length" (len $active) "start" (index (first 1 $active) 0) "end" (index (last 1 $active) 0) "note" "active" }}
+  {{ $streaks = $streaks | append (slice $streak) }}
+  {{ $.Scratch.Add "streaks" (slice $streak) }}
+{{ end }}
+
+<table>
+  <tr>
+    <td>Start</td>
+    <td>End</td>
+    <td>Length</td>
+    <td>Note</td>
+  </tr>
+
+  {{ range first 5 (sort $streaks "length" "desc") }}
+    <tr>
+      <td>{{ .start }}</td>
+      <td>{{ .end }}</td>
+      <td>{{ .length }}</td>
+      <td>{{ .note | default ""}}</td>
+    </tr>
+  {{ end }}
+</table>
+
+<h2>⛓ Top Streaks, Consecutive Days Won</h2>
+{{ $thisW := dict }}
+{{ $lastW := dict }}
+{{ $active := slice }}
+{{ $streaks := slice }}
+
+{{ range $i, $wordle := $wordles.ByDate }}
+  {{ $thisW = $wordle }}
+
+
+  {{ if (and $thisW.Date $lastW.Date) }}
+    <!-- we're in the middle of the list somewhere -->
+
+    <!-- get puzzle dates with time of day removed -->
+    {{ $thisDay := time ($thisW.Date.Format "2006-01-02") }}
+    {{ $lastDay := time ($lastW.Date.Format "2006-01-02") }}
+
+    {{ $isConsecDays := eq $thisDay ($lastDay.AddDate 0 0 1) }}
+    {{ $isWin := eq ($thisW.Params.state.gameStatus | lower) "win" }}
+    {{ if (and $isConsecDays $isWin) }}
       <!-- extend active streak -->
       {{ $.Scratch.Add "active" (slice $thisW) }}
       {{ $active = $active | append (slice $thisW) }}
