@@ -184,7 +184,7 @@
 <ul>
   <li>
   {{ with .Site.GetPage "a/savor.md" }}
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a> on {{ .Date.Format "January 2, 2006" }}
   {{ end }}
   </li>
 </ul>
