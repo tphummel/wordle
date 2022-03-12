@@ -147,8 +147,8 @@
 <h2>⛳️ Opener Usage</h2>
 <table>
   <tr>
-    <td>Word</td>
-    <td>Count</td>
+    <th>Word</th>
+    <th>Count</th>
   </tr>
 
   {{ $byFirst := dict }}
@@ -167,11 +167,19 @@
     {{ $byFirst = merge $byFirst (dict $first (add 1 $prev)) }}
   {{ end }}
 
+  {{ $wordCounts := slice }}
   {{ range $word, $count := $byFirst }}
+    {{ $wordCounts = $wordCounts | append (slice (dict "word" $word "count" $count)) }}
+  {{ end }}
+
+  {{ $minToPrint := 3 }}
+  {{ range sort $wordCounts "count" "desc" }}
+    {{ if gt .count $minToPrint }}
     <tr>
-      <td>{{ $word }}</td>
-      <td>{{ $count }}</td>
+      <td>{{ .word }}</td>
+      <td>{{ .count }}</td>
     </tr>
+    {{ end }}
   {{ end }}
 </table>
 
