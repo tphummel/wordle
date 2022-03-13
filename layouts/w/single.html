@@ -73,13 +73,12 @@
 
 {{ .Content }}
 
-{{ $wordles := (where .Site.RegularPages "Section" "w")}}
-{{ with $wordles.Prev . }}
+{{ with .PrevInSection }}
 <div>
   Prev Puzzle: <strong><a href="{{ .RelPermalink }}">{{ .Title }}</a></strong>
 </div>
 {{ end }}
-{{ with $wordles.Next . }}
+{{ with .NextInSection }}
 <div>
   Next Puzzle: <strong><a href="{{ .RelPermalink }}">{{ .Title }}</a></strong>
 </div>
