@@ -86,7 +86,9 @@
   <div>🧩 Opener Misses: <strong><a href="{{ .RelPermalink }}">{{ $missedFirstGuesses }}</a></strong></div>
 {{ end }}
 
-<div>🧩 Opener Double Misses: <strong>{{ $missedFirstTwoGuesses }}</strong></div>
+{{ with .Site.GetPage "opener-double-misses.md" }}
+  <div>🧩 Opener Double Misses: <strong><a href="{{ .RelPermalink }}">{{ $missedFirstTwoGuesses }}</a></strong></div>
+{{ end }}
 
 <h2>🕰 Recent Puzzles</h2>
 <table>
