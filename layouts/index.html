@@ -49,7 +49,7 @@
 
 <tr>
   <td>Loss</td>
-  <td>{{ len $losses }} </td>
+  <td><a href="{{ with $.Site.GetPage "losses" }}{{ .RelPermalink }}{{ end }}">{{ len $losses }}</a></td>
   <td>{{ lang.NumFmt 2 (mul (div (float (len $losses)) (len $wordles)) 100) }}%</td>
 </tr>
 </table>
