@@ -36,11 +36,13 @@
     <th>Pct of Total</th>
   </tr>
 
+{{ $guessReports := slice nil "solve-in-one.md" "solve-in-two.md" "solve-in-three.md" "solve-in-four.md" "solve-in-five.md" "solve-in-six.md"}}
+
 {{ range $guesses := seq 1 6 }}
   {{ $puzzles := len (where $wins "Params.state.rowIndex" $guesses) }}
   <tr>
     <td>{{ $guesses }}</td>
-    <td>{{ $puzzles }}</td>
+    <td><a href="{{ with $.Site.GetPage (index $guessReports $guesses) }}{{ .RelPermalink }}{{ end }}">{{ $puzzles }}</a></td>
     <td>{{ lang.NumFmt 2 (mul (div (float $puzzles) (len $wordles)) 100) }}%</td>
   </tr>
 {{ end }}
