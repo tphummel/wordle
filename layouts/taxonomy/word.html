@@ -1,0 +1,35 @@
+{{ define "main" }}
+<h1>{{.Title}}</h1>
+
+<p>{{ partial "breadcrumb.html" . }}</p>
+
+<p>Usage Count: {{ len .Data.Pages }}</p>
+
+{{ with .Content }}
+<div>{{ . }}</div>
+{{ end }}
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Puzzle</th>
+    <th>Guess #</th>
+  </tr>
+
+  {{ range .Data.Pages }}
+    {{ $guessSeq := -1 }}
+    {{ range $g, $guess := .Params.state.boardState }}
+      {{ if eq $guess $.Data.Term }}
+        {{ $guessSeq = add $g 1 }}
+      {{ end }}
+    {{ end }}
+    <tr>
+      <td><a href="{{ .RelPermalink }}">{{ dateFormat "Jan 2, 2006" .Date }}</a></td>
+      <td><a href="{{ .RelPermalink }}">{{ .Name }}</td>
+      <td><a href="{{ .RelPermalink }}">{{ $guessSeq }}</td>
+    </tr>
+
+  {{ end }}
+</table>
+
+{{ end }}
