@@ -1,5 +1,5 @@
 ---
-title: Opener Misses
+title: Opener Double Misses
 ---
 
 Definition: Puzzles where all letters in my first two guesses were absent.
