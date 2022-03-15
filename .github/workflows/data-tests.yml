@@ -15,7 +15,7 @@ jobs:
     - name: install zx
       run: |
         npm -v
-        npm i -g zx
+        npm i -g zx@5.2.0
         which zx
         zx --version
     - name: run tests
