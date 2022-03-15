@@ -36,8 +36,13 @@
         <th>#</th>
         <th>Word</th>
         <th>Usage</th>
+        <th>Before</th>
+        <th>After</th>
+        <th>Diff</th>
       </tr>
     {{ $title := .Title }}
+    {{ $evaluations := .Params.state.evaluations }}
+
     {{ range $g, $guess := .Params.state.boardState }}
       {{ if not (eq $guess "") }}
         {{ with $.Site.GetPage (printf "/words/%s" $guess) }}
@@ -55,6 +60,48 @@
             {{ end }}
             {{ $displayUsage := add $guessSeq 1 }}
             <td>{{ $displayUsage }} / {{ len $guessHistory }} {{ cond (eq $displayUsage 1) "✅" ""}}</td>
+
+            {{ $before := "" }}
+            {{ $beforeScore := 0 }}
+            {{ $after := "" }}
+            {{ $afterScore := 0 }}
+            {{ $diff := "" }}
+
+            {{ if eq $g 0 }}
+              {{ $before = "⬛️⬛️⬛️⬛️⬛️" }}
+              {{ $beforeScore = 10 }}
+            {{ else }}
+              {{ $beforeEval := index $evaluations (sub $g 1) }}
+              {{ range $b := $beforeEval }}
+                {{- if eq $b "correct" -}}
+                  {{ $before = printf "%s%s" $before "🟩" }}
+                  {{ $beforeScore = add 0 $beforeScore }}
+                {{- else if eq $b "present" -}}
+                  {{ $before = printf "%s%s" $before "🟨" }}
+                  {{ $beforeScore = add 1 $beforeScore }}
+                {{- else -}}
+                  {{ $before = printf "%s%s" $before "⬛️" }}
+                  {{ $beforeScore = add 2 $beforeScore }}
+                {{- end -}}
+              {{ end }}
+            {{ end }}
+
+            {{ $afterEval := index $evaluations $g }}
+            {{ range $a := $afterEval }}
+              {{- if eq $a "correct" -}}
+                {{ $after = printf "%s%s" $after "🟩" }}
+                {{ $afterScore = add 0 $afterScore }}
+              {{- else if eq $a "present" -}}
+                {{ $after = printf "%s%s" $after "🟨" }}
+                {{ $afterScore = add 1 $afterScore }}
+              {{- else -}}
+                {{ $after = printf "%s%s" $after "⬛️" }}
+                {{ $afterScore = add 2 $afterScore }}
+              {{- end -}}
+            {{ end }}
+            <td>{{ $before }} {{ $beforeScore }}</td>
+            <td>{{ $after }} {{ $afterScore }}</td>
+            <td>{{ printf "%d" (sub $afterScore $beforeScore) }}</td>
           </tr>
         {{ end }}
       {{ end }}
