@@ -28,6 +28,24 @@
 <div>🧩 Distinct Words Guessed: <strong><a href="{{ with .Site.GetPage "words" }}{{ .RelPermalink }}{{ end }}">{{ len .Site.Taxonomies.words }}</a></strong></div>
 <div>🧩 Pct of Distinct Valid Words Guessed: <strong>{{ lang.NumFmt 2 (mul (div (float (len .Site.Taxonomies.words)) ($nyt_valid_word_count)) 100) }}% ({{ lang.NumFmt 0 (len .Site.Taxonomies.words) }}/{{ lang.NumFmt 0 ($nyt_valid_word_count) }})</strong></div>
 
+<h2>🕰 Recent Puzzles</h2>
+<table>
+  <tr>
+    <th>Puzzle</th>
+    <th>Date</th>
+    <th>Score</th>
+  </tr>
+
+  {{ range first 5 $wordles }}
+    <tr>
+      <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+      <td>{{ .Date.Format "January 2, 2006" }}</td>
+      <td>{{ partial "puzzle-score.html" . }}</td>
+    </tr>
+
+  {{ end }}
+</table>
+
 <h2>🎯 Guess Distribution</h2>
 <table>
   <tr>
@@ -92,23 +110,6 @@
   <div>🧩 Opener Double Misses: <strong><a href="{{ .RelPermalink }}">{{ $missedFirstTwoGuesses }}</a></strong></div>
 {{ end }}
 
-<h2>🕰 Recent Puzzles</h2>
-<table>
-  <tr>
-    <th>Puzzle</th>
-    <th>Date</th>
-    <th>Score</th>
-  </tr>
-
-  {{ range first 5 $wordles }}
-    <tr>
-      <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
-      <td>{{ .Date.Format "January 2, 2006" }}</td>
-      <td>{{ partial "puzzle-score.html" . }}</td>
-    </tr>
-
-  {{ end }}
-</table>
 
 {{ range $wordles }}
   {{ $score := partial "puzzle-score" . }}
