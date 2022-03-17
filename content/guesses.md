@@ -58,7 +58,7 @@ title: Guesses
     {{ end }} <!-- close range over board state -->
   {{ end }} <!-- close range over puzzles -->
 
-
+  <p>Guess Count: {{ len $found }}</p>
   <h1>Guesses By Score Diff</h1>
   {{ $byDiff := dict }}
   {{ range $found }}
