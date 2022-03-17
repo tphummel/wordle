@@ -6,7 +6,7 @@ title: Losses
 
   {{ $wordles := where .Site.RegularPages "Section" "w" }}
   {{ $found := where $wordles "Params.state.gameStatus" "FAIL" }}
-
+  <p>Count of Losses: <strong>{{ len $found }}</strong></p>
   {{ with (index $found 0) }}
   <p>Example: <a href="{{ .RelPermalink }}">Wordle {{ .Params.puzzle }} / {{ dateFormat "Jan 2, 2006" .Date }}</a></p>
 
@@ -31,6 +31,4 @@ title: Losses
 
     {{ end }}
   </table>
-
-  <p>Count of Losses: <strong>{{ len $found }}</strong></p>
 {{< /solve.inline >}}
