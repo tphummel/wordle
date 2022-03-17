@@ -1,0 +1,20 @@
+{{ $found := slice }}
+{{ range . }}
+  {{ $wordleDate := .Date }}
+  {{ $wordle := . }}
+
+  {{ $presentLetters := 0}}
+  {{ range $guess := .Params.state.evaluations }}
+    {{ range $e := $guess }}
+      {{ if eq "present" $e }}
+        {{ $presentLetters = add $presentLetters 1 }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ if (eq $presentLetters 0) }}
+    {{ $found = $found | append (slice (dict "date" $wordleDate "puzzle" $wordle)) }}
+  {{ end }}
+
+{{ end }}
+{{ return $found }}

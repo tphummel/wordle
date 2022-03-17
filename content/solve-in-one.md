@@ -9,7 +9,7 @@ title: Puzzles Solved in One Guess
   {{ $wins := where $wordles "Params.state.gameStatus" "WIN" }}
 
   {{ $found := where $wins "Params.state.rowIndex" $guesses }}
-
+  <p>Count of puzzles solved in one guess: <strong>{{ len $found }}</strong></p>
   {{ with (index $found 0) }}
   <p>Example: <a href="{{ .RelPermalink }}">Wordle {{ .Params.puzzle }} / {{ dateFormat "Jan 2, 2006" .Date }}</a></p>
 
@@ -34,6 +34,4 @@ title: Puzzles Solved in One Guess
 
     {{ end }}
   </table>
-
-  <p>Count of puzzles solved in one guess: <strong>{{ len $found }}</strong></p>
 {{< /solve.inline >}}
