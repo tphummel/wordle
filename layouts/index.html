@@ -110,6 +110,10 @@
   <div>🧩 Opener Double Misses: <strong><a href="{{ .RelPermalink }}">{{ $missedFirstTwoGuesses }}</a></strong></div>
 {{ end }}
 
+{{ with .Site.GetPage "no-yellow-tiles.md" }}
+  {{ $noYellow := partial "no-yellow-tiles.html" (where .Site.RegularPages "Section" "w") }}
+  <div>🧩 Puzzles with no Yellow Tiles: <strong><a href="{{ .RelPermalink }}">{{ len $noYellow }}</a></strong></div>
+{{ end }}
 
 {{ range $wordles }}
   {{ $score := partial "puzzle-score" . }}
