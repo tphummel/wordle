@@ -39,7 +39,7 @@
   {{ range first 5 $wordles }}
     <tr>
       <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
-      <td>{{ .Date.Format "January 2, 2006" }}</td>
+      <td><a href="{{ .RelPermalink }}">{{ .Date.Format "Jan 2, 2006" }}</a></td>
       <td>{{ partial "puzzle-score.html" . }}</td>
     </tr>
 
@@ -131,7 +131,7 @@
   {{ range first 5 (sort ($.Scratch.Get "scored") ".score" "asc") }}
     <tr>
       <td><a href="{{ .page.RelPermalink }}">{{ .page.Title }}</a></td>
-      <td>{{ .page.Date.Format "January 2, 2006" }}</td>
+      <td><a href="{{ .RelPermalink }}">{{ .page.Date.Format "Jan 2, 2006" }}</a></td>
       <td>{{ .score }}</td>
     </tr>
   {{ end }}
@@ -148,7 +148,7 @@
   {{ range first 5 (sort ($.Scratch.Get "scored") ".score" "desc") }}
     <tr>
       <td><a href="{{ .page.RelPermalink }}">{{ .page.Title }}</a></td>
-      <td>{{ .page.Date.Format "January 2, 2006" }}</td>
+      <td><a href="{{ .RelPermalink }}">{{ .page.Date.Format "Jan 2, 2006" }}</a></td>
       <td>{{ .score }}</td>
     </tr>
   {{ end }}
@@ -206,8 +206,8 @@
 
   {{ range first 5 (sort $streaks "length" "desc") }}
     <tr>
-      <td><a href="{{ .start.RelPermalink }}">{{ .start.Date.Format "January 2, 2006" }}</a></td>
-      <td><a href="{{ .end.RelPermalink }}">{{ .end.Date.Format "January 2, 2006" }}</a></td>
+      <td><a href="{{ .start.RelPermalink }}">{{ .start.Date.Format "Jan 2, 2006" }}</a></td>
+      <td><a href="{{ .end.RelPermalink }}">{{ .end.Date.Format "Jan 2, 2006" }}</a></td>
       <td>{{ .length }}</td>
       <td>{{ .note | default ""}}</td>
     </tr>
@@ -264,8 +264,8 @@
 
   {{ range first 5 (sort $streaks "length" "desc") }}
     <tr>
-      <td><a href="{{ .start.RelPermalink }}">{{ .start.Date.Format "January 2, 2006" }}</a></td>
-      <td><a href="{{ .end.RelPermalink }}">{{ .end.Date.Format "January 2, 2006" }}</a></td>
+      <td><a href="{{ .start.RelPermalink }}">{{ .start.Date.Format "Jan 2, 2006" }}</a></td>
+      <td><a href="{{ .end.RelPermalink }}">{{ .end.Date.Format "Jan 2, 2006" }}</a></td>
       <td>{{ .length }}</td>
       <td>{{ .note | default ""}}</td>
     </tr>
@@ -284,7 +284,7 @@
   {{ range $wordles }}
     {{ $score := partial "puzzle-score" . }}
     {{ $first := index .Params.state.boardState 0 }}
-    {{ $date := .Date.Format "January 2, 2006" }}
+    {{ $date := .Date.Format "Jan 2, 2006" }}
 
     {{ if not (isset $byFirst $first) }}
       {{ $init := dict $first 0 }}
@@ -321,7 +321,7 @@
 <ul>
   <li>
   {{ with .Site.GetPage "a/savor.md" }}
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a> on {{ .Date.Format "January 2, 2006" }}
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a> on {{ .Date.Format "Jan 2, 2006" }}
   {{ end }}
   </li>
 </ul>
