@@ -9,12 +9,7 @@ Definition: Puzzles where all letters in all guesses are either absent or correc
 
   {{ $found := partial "no-yellow-tiles.html" $wordles }}
 
-  <p>Count of puzzles with no yellow tiles: <strong>{{ len $found }}</strong></p>
-
-  {{ $example := (index $found 0).puzzle }}
-  <p>Example: <a href="{{ $example.RelPermalink }}">Wordle {{ $example.Params.puzzle }} / {{ dateFormat "Jan 2, 2006" $example.Date }}</a></p>
-
-  <p>{{ partial "emoji-grid" $example }}</p>
+  <p>Puzzle Count: <strong>{{ len $found }}</strong></p>
 
   <table>
     <tr>
