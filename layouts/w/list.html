@@ -18,7 +18,14 @@
   {{ range .Data.Pages }}
     <tr>
       <td><a href="{{ .RelPermalink }}">{{ dateFormat "Jan 2, 2006" .Date }}</a></td>
-      <td><a href="{{ .RelPermalink }}">{{ .Name }}</td>
+
+      {{ $puzzleNum := -1 }}
+      {{ if .Params.puzzles }}
+        {{ $puzzleNum = index .Params.puzzles 0 }}
+      {{ else }}
+        {{ $puzzleNum = .Params.puzzle }}
+      {{ end }}
+      <td><a href="{{ with $.GetPage (printf "/puzzles/%s" $puzzleNum) }}{{ .RelPermalink}}{{end}}">{{ $puzzleNum }}</a></td>
       <td><a href="{{ .RelPermalink }}">{{ partial "guess-count.html" . }}{{- cond (eq .Params.state.hardMode true) "*" "" -}}</a></td>
       <td><a href="{{ .RelPermalink }}">{{ partial "puzzle-score.html" . }}</a></td>
     </tr>
