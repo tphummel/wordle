@@ -301,7 +301,7 @@
     {{ $wordCounts = $wordCounts | append (slice (dict "word" $word "count" $count)) }}
   {{ end }}
 
-  {{ $minToPrint := 3 }}
+  {{ $minToPrint := 5 }}
   {{ range sort $wordCounts "count" "desc" }}
     {{ if gt .count $minToPrint }}
     <tr>
