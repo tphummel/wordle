@@ -76,16 +76,54 @@ title: Guesses
     <tr>
       <th>Score Diff</th>
       <th>Count</th>
+      <th>Pct</th>
     </tr>
   {{ range sort $byDiffSortable "diff" "desc" }}
     <tr>
       <td>{{ printf "%d" .diff }}</td>
       <td>{{ .count }}</td>
+      <td>{{ mul (div (float .count) (len $found)) 100 | lang.FormatNumber 2 }}%</td>
     </tr>
   {{ end }}
   </table>
 
-  <h1>Guesses By Score Diff / Turn</h1>
+  <h1>Guesses By Score Diff / Turn - Pct of Total</h1>
+  {{ $byDiffTurn := dict }}
+  {{ range $found }}
+    {{ $diffKey := printf "%d" .scoreDiff }}
+    {{ $turnKey := printf "%d" .guessNum }}
+
+    {{ $prevDiff := (index $byDiffTurn $diffKey ) | default dict }}
+    {{ $prevCount := ((index $prevDiff $turnKey) | default 0) }}
+
+    {{ $newCount := add 1 $prevCount }}
+
+    {{ $newByDiffTurn := dict $diffKey (dict $turnKey $newCount) }}
+    {{ $byDiffTurn = merge $byDiffTurn $newByDiffTurn }}
+  {{ end }}
+
+  {{ $diffs := seq -10 0 }}
+  {{ $turns := seq 1 6 }}
+
+  <table>
+    <tr>
+      <th>Diffs/Turns</th>
+      {{ range $turns }}
+        <th>{{ printf "%d" . }}</th>
+      {{ end }}
+    </tr>
+    {{ range $i, $diff := $diffs }}
+      <tr>
+        <th>{{ printf "%d" $diff }}</th>
+        {{ range $turn := $turns }}
+          {{ $count := index ((index $byDiffTurn (printf "%d" $diff)) | default dict) (printf "%d" $turn) | default 0 }}
+          <td>{{ mul (div (float $count) (len $found)) 100 | lang.FormatNumber 1 }}%</td>
+        {{ end }}
+      </tr>
+    {{ end }}
+  </table>
+
+  <h1>Guesses By Score Diff / Turn - Guess Counts</h1>
   {{ $byDiffTurn := dict }}
   {{ range $found }}
     {{ $diffKey := printf "%d" .scoreDiff }}
@@ -117,33 +155,6 @@ title: Guesses
           <td>{{ index ((index $byDiffTurn (printf "%d" $diff)) | default dict) (printf "%d" $turn) | default 0 }}</td>
         {{ end }}
       </tr>
-    {{ end }}
-  </table>
-
-
-  <h1>All Guesses</h1>
-  <table>
-    <tr>
-      <th>Date</th>
-      <th>Puzzle</th>
-      <th>Turn #</th>
-      <th>Word</th>
-      <th>Before</th>
-      <th>After</th>
-      <th>Diff</th>
-    </tr>
-
-    {{ range sort $found "date" "desc" }}
-      <tr>
-        <td><a href="{{ .puzzle.RelPermalink }}">{{ dateFormat "Jan 2, 2006" .date }}</a></td>
-        <td><a href="{{ .puzzle.RelPermalink }}">{{ .puzzle.Name }}</td>
-        <td>{{ .guessNum }}</td>
-        <td>{{ .word }}</td>
-        <td>{{ .beforeEmoji }} {{ .beforeScore }}</td>
-        <td>{{ .afterEmoji }} {{ .afterScore }}</td>
-        <td>{{ printf "%d" .scoreDiff }}</td>
-      </tr>
-
     {{ end }}
   </table>
 {{< /solve.inline >}}
