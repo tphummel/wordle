@@ -60,7 +60,7 @@ function runTests (yaml) {
   const boardState = state.value.items.find(item => item.key.value === 'boardState')
 
   const guessesFromBoardState = boardState.value.items.filter(i => i.value.length === 5).length
-  const guessesFromEvaluations = evaluations.value.items.filter(i => i.type === 'FLOW_SEQ').length
+  const guessesFromEvaluations = evaluations.value.items.filter(i => i.type === 'SEQ').length
 
   debug({
     guessesFromBoardState,
