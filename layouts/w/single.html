@@ -22,13 +22,7 @@
 </p>
 
 <p>Date: <strong>{{ .Date.Format "January 2, 2006" }}</strong></p>
-{{ $puzzleNum := -1 }}
-{{ if .Params.puzzles }}
-  {{ $puzzleNum = index .Params.puzzles 0 }}
-{{ else }}
-  {{ $puzzleNum = .Params.puzzle }}
-{{ end }}
-<p>Puzzle: <strong><a href="{{ with $.GetPage (printf "/puzzles/%s" $puzzleNum) }}{{ .RelPermalink}}{{end}}">{{ $puzzleNum }}</a></strong></p>
+<p>Puzzle: <strong><a href="{{ with $.GetPage (printf "/puzzles/%s" (index .Params.puzzles 0)) }}{{ .RelPermalink}}{{end}}">{{ index .Params.puzzles 0 }}</a></strong></p>
 <p>Outcome: <strong>{{ lower .Params.state.gameStatus}}</strong></p>
 <p>Hard Mode: <strong>{{ .Params.state.hardMode}}</strong></p>
 <p>{{ partial "emoji-grid" . }}</p>
