@@ -21,4 +21,4 @@ Wordle is a gift. You can take a 20% lump sum now or you can take annual payment
   [1]: https://bert.org/2021/11/24/the-best-starting-word-in-wordle/
   [2]: https://vaghetti.dev/posts/wordle/
   [3]: https://www.nytimes.com/games/wordle/index.html
-  [4]: {{< relref "w/244.md" >}}
+  [4]: {{< relref "w/2022-02-18" >}}

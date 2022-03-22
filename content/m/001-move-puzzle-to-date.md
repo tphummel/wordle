@@ -33,6 +33,17 @@ This is a one time migration of my puzzle files.
 
 # Usage
 
+```
+# run a single file
+zx content/m/001-move-puzzle-to-date.md $(pwd)/content/w/251.md
+
+# test a single file
+find content/w -name "*.md" | grep -v "_index" | head -n1 | xargs -I {} sh -c "zx content/m/001-move-puzzle-to-date.md {}"
+
+# test all files
+find content/w -name "*.md" | grep -v "_index" | xargs -I {} sh -c "zx content/m/001-move-puzzle-to-date.md {}"
+```
+
 - The process will exit 0 on success
 - The process will exit 1 on failure with failure info written to stdout
 
@@ -45,11 +56,13 @@ const [migrationFile, inputFile] = argv._
 
 debug(`processing: ${inputFile}`)
 const inputContent = await fs.readFile(inputFile, 'utf-8')
-const inputYaml = YAML.parseAllDocuments(inputContent)
+const yamlOptions = {
+  version: '1.2'
+}
+const inputYaml = YAML.parseAllDocuments(inputContent, yamlOptions)
 const puzzle = inputYaml[0].toJSON()
 
-debug(`yaml: ${JSON.stringify(puzzle, null, 2)}`)
-
+// debug(`before: ${JSON.stringify(puzzle, null, 2)}`)
 const puzzleNumber = puzzle.puzzle
 const puzzleDateTime = puzzle.date
 const puzzleDate = puzzleDateTime.substr(0,10)
@@ -67,14 +80,24 @@ puzzle.puzzles = [puzzleNumber]
 puzzle.aliases = [`/w/${puzzleNumber}/`]
 
 // - move the file from `/content/w/168.md` to `/content/w/2021-12-04.md`
-// await $`rm ${inputFile}`
+const outputPuzzle = new YAML.Document({
+  directivesEndMarker: true
+})
+outputPuzzle.contents = puzzle
 
-const outputPuzzle = YAML.stringify(puzzle)
-inputYaml
-const outputYaml =
+inputYaml[0] = outputPuzzle
+const outputYaml = inputYaml
+const delim = '---\n'
+let out = outputYaml.map(doc => {
+  doc.directivesEndMarker = true
+  return YAML.stringify(doc)
+})
+out.unshift('')
+
 const outputFile = `content/w/${puzzleDate}.md`
-await fs.writeFile(outputFile, YAML.stringify)
 
+await fs.writeFile(outputFile, out.join(delim))
+await $`rm ${inputFile}`
 
 function debug (msg) {
   if (process.env.DEBUG) console.log(msg)  
