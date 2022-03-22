@@ -1,0 +1,32 @@
+{{ define "main" }}
+<h1>{{.Title}}</h1>
+
+<p>{{ partial "breadcrumb.html" . }}</p>
+
+{{ with .Content }}
+<div>{{ . }}</div>
+{{ end }}
+
+<table>
+  <tr>
+    <td>Date</td>
+    <td>Turns</td>
+    <td>Score</td>
+  </tr>
+  {{ range .Data.Pages }}
+    <tr>
+      <td><a href="{{ .RelPermalink }}">{{ dateFormat "Jan 2, 2006" .Date }}</a></td>
+      <td><a href="{{ .RelPermalink }}">{{ partial "guess-count.html" . }}{{- cond (eq .Params.state.hardMode true) "*" "" -}}</a></td>
+      <td><a href="{{ .RelPermalink }}">{{ partial "puzzle-score.html" . }}</a></td>
+    </tr>
+  {{ end }}
+  {{ $lastDate := (index (last 1 .Data.Pages) 0).Date }}
+  {{ $nytPuzzleCount := 2309 }}
+  {{ $nextDate := $lastDate.AddDate 0 0 $nytPuzzleCount }}
+  <tr>
+    <td>{{ dateFormat "Jan 2, 2006" $nextDate }}</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+</table>
+{{ end }}

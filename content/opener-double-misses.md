@@ -39,7 +39,7 @@ Definition: Puzzles where all letters in my first two guesses were absent.
   {{ end }}
 
   {{ $example := (index (last 1 $found) 0).puzzle }}
-  <p>Example: <a href="{{ $example.RelPermalink }}">Wordle {{ $example.Params.puzzle }} / {{ dateFormat "Jan 2, 2006" $example.Date }}</a></p>
+  <p>Example: <a href="{{ $example.RelPermalink }}">Wordle {{ index $example.Params.puzzles 0 }} / {{ dateFormat "Jan 2, 2006" $example.Date }}</a></p>
 
   <p>{{ partial "emoji-grid" $example }}</p>
 
@@ -54,7 +54,7 @@ Definition: Puzzles where all letters in my first two guesses were absent.
     {{ range sort $found "date" "desc" }}
       <tr>
         <td><a href="{{ .puzzle.RelPermalink }}">{{ dateFormat "Jan 2, 2006" .date }}</a></td>
-        <td><a href="{{ .puzzle.RelPermalink }}">{{ .puzzle.Name }}</td>
+        <td><a href="{{ .puzzle.RelPermalink }}">{{ index .puzzle.Params.puzzles 0 }}</td>
         <td><a href="{{ .puzzle.RelPermalink }}">{{ partial "guess-count.html" .puzzle }}{{- cond (eq .puzzle.Params.state.hardMode true) "*" "" -}}</a></td>
         <td><a href="{{ .puzzle.RelPermalink }}">{{ partial "puzzle-score.html" .puzzle }}</a></td>
       </tr>

@@ -22,7 +22,7 @@
 </p>
 
 <p>Date: <strong>{{ .Date.Format "January 2, 2006" }}</strong></p>
-<p>Puzzle: <strong>{{ .Params.puzzle | default "--" }}</strong></p>
+<p>Puzzle: <strong><a href="{{ with $.GetPage (printf "/puzzles/%s" (index .Params.puzzles 0)) }}{{ .RelPermalink}}{{end}}">{{ index .Params.puzzles 0 }}</a></strong></p>
 <p>Outcome: <strong>{{ lower .Params.state.gameStatus}}</strong></p>
 <p>Hard Mode: <strong>{{ .Params.state.hardMode}}</strong></p>
 <p>{{ partial "emoji-grid" . }}</p>

@@ -11,6 +11,7 @@ enableInlineShortcodes = true
 [taxonomies]
     tag = 'tags'
     word = 'words'
+    puzzle = 'puzzles'
 
 [markup]
   [markup.tableOfContents]

@@ -59,13 +59,14 @@ function getDateTime (dateStr) {
 }
 
 let puzzleNumber = getPuzzleNumber(new Date)
+let puzzleDate = getDateTime(state.lastCompletedTs).substring(0,10)
 
 const fileText = `---
-title: ${puzzleNumber}
+title: "${puzzleNumber}: ${puzzleDate}"
 date: ${getDateTime(state.lastCompletedTs)+getLocalTimeZone()}
 tags: []
 words: ${JSON.stringify(state.boardState.filter(w => w !== ''))}
-puzzle: ${puzzleNumber}
+puzzles: [${puzzleNumber}]
 state: ${JSON.stringify(state, null, 2)}
 stats: ${JSON.stringify(stats, null, 2)}
 ---
@@ -74,7 +75,7 @@ stats: ${JSON.stringify(stats, null, 2)}
 `;
 
 const encodedFileText = encodeURIComponent(fileText);
-const filename = `${puzzleNumber}.md`;
-const githubQueryLink = "https://github.com/tphummel/wordle-static/new/main/content/w/new?quick_pull=1&labels=puzzle&value=" + encodedFileText +"&filename=" + filename;
+const filename = `${puzzleDate}.md`;
+const githubQueryLink = "https://github.com/tphummel/wordle/new/main/content/w/new?quick_pull=1&labels=puzzle&value=" + encodedFileText +"&filename=" + filename;
 
 window.open(githubQueryLink);
