@@ -31,16 +31,18 @@
 <h2>🕰 Recent Puzzles</h2>
 <table>
   <tr>
-    <th>Puzzle</th>
     <th>Date</th>
+    <th>Puzzle</th>
+    <th>Turns</th>
     <th>Score</th>
   </tr>
 
   {{ range first 5 $wordles }}
     <tr>
-      <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
       <td><a href="{{ .RelPermalink }}">{{ .Date.Format "Jan 2, 2006" }}</a></td>
-      <td>{{ partial "puzzle-score.html" . }}</td>
+      <td><a href="{{ .RelPermalink }}">{{ index .Params.puzzles 0 }}</a></td>
+      <td><a href="{{ .RelPermalink }}">{{ partial "guess-count.html" . }}{{- cond (eq .Params.state.hardMode true) "*" "" -}}</a></td>
+      <td><a href="{{ .RelPermalink }}">{{ partial "puzzle-score.html" . }}</a></td>
     </tr>
 
   {{ end }}
@@ -123,16 +125,18 @@
 <h2>⬇️ Low (😄) Scores</h2>
 <table>
   <tr>
-    <th>Puzzle</th>
     <th>Date</th>
+    <th>Puzzle</th>
+    <th>Turns</th>
     <th>Score</th>
   </tr>
 
   {{ range first 5 (sort ($.Scratch.Get "scored") ".score" "asc") }}
     <tr>
-      <td><a href="{{ .page.RelPermalink }}">{{ .page.Title }}</a></td>
-      <td><a href="{{ .RelPermalink }}">{{ .page.Date.Format "Jan 2, 2006" }}</a></td>
-      <td>{{ .score }}</td>
+      <td><a href="{{ .page.RelPermalink }}">{{ .page.Date.Format "Jan 2, 2006" }}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ index .page.Params.puzzles 0 }}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ partial "guess-count.html" .page }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ .score }}</a></td>
     </tr>
   {{ end }}
 </table>
@@ -140,16 +144,18 @@
 <h2>⬆️ High (😖) Scores</h2>
 <table>
   <tr>
-    <th>Puzzle</th>
     <th>Date</th>
+    <th>Puzzle</th>
+    <th>Turns</th>
     <th>Score</th>
   </tr>
 
   {{ range first 5 (sort ($.Scratch.Get "scored") ".score" "desc") }}
     <tr>
-      <td><a href="{{ .page.RelPermalink }}">{{ .page.Title }}</a></td>
-      <td><a href="{{ .RelPermalink }}">{{ .page.Date.Format "Jan 2, 2006" }}</a></td>
-      <td>{{ .score }}</td>
+      <td><a href="{{ .page.RelPermalink }}">{{ .page.Date.Format "Jan 2, 2006" }}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ index .page.Params.puzzles 0 }}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ partial "guess-count.html" .page }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ .score }}</a></td>
     </tr>
   {{ end }}
 </table>
