@@ -70,7 +70,7 @@
     {{ end }}
     <tr>
       <td><a href="{{ .RelPermalink }}">{{ dateFormat "Jan 2, 2006" .Date }}</a></td>
-      <td><a href="{{ .RelPermalink }}">{{ .Name }}</td>
+      <td><a href="{{ .RelPermalink }}">{{ index .Params.puzzles 0 }}</td>
       <td><a href="{{ .RelPermalink }}">{{ $guessSeq }}</td>
       <td>{{ $before }} {{ $beforeScore }}</td>
       <td>{{ $after }} {{ $afterScore }}</td>
