@@ -117,6 +117,11 @@
   <div>🧩 Puzzles with no Yellow Tiles: <strong><a href="{{ .RelPermalink }}">{{ len $noYellow }}</a></strong></div>
 {{ end }}
 
+{{ with .Site.GetPage "no-green-before-solve.md" }}
+  {{ $noGreenBeforeSolve := partial "no-green-before-solve.html" (where .Site.RegularPages "Section" "w") }}
+  <div>🧩 Puzzles with no Green Tiles Prior to Solving: <strong><a href="{{ .RelPermalink }}">{{ len $noGreenBeforeSolve }}</a></strong></div>
+{{ end }}
+
 {{ range $wordles }}
   {{ $score := partial "puzzle-score" . }}
   {{ $.Scratch.Add "scored" (slice (dict "page" . "score" $score)) }}

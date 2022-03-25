@@ -1,0 +1,10 @@
+{{ $found := slice }}
+{{ range $wordle := . }}
+  {{ if eq $wordle.Params.state.gameStatus "WIN" }}
+    {{ $counts := partial "guess-eval-counts.html" $wordle }}
+    {{ if eq $counts.correct 5 }}
+      {{ $found = $found | append (slice (dict "date" $wordle.Date "puzzle" $wordle)) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ return $found }}
