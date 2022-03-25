@@ -13,7 +13,10 @@
 {{ $nyt_puzzle_count := 2309 }}
 {{ $nyt_valid_word_count := 10638 }}
 
-<div>🧩 Puzzles Played: <strong><a href="{{ with .Site.GetPage "section" "w" }}{{ .RelPermalink }}{{ end }}">{{ len $wordles }}</a></strong></div>
+<div>🧩 Days Played: <strong><a href="{{ with .Site.GetPage "section" "w" }}{{ .RelPermalink }}{{ end }}">{{ len $wordles }}</a></strong></div>
+{{ with .Site.GetPage "/puzzles" }}
+<div>🧩 Puzzles Played: <strong><a href="{{ .RelPermalink }}">{{ len .Pages }}</a></strong></div>
+{{ end }}
 <div>🧩 Win Pct: <strong>{{ lang.NumFmt 3 (div (float (len $wins)) (len $wordles)) }} ({{ len $wins }}-{{ len $losses }})</strong></div>
 <div>🧩 Pct of Total Puzzles Played: <strong>{{ lang.NumFmt 2 (mul (div (float (len $wordles)) ($nyt_puzzle_count)) 100) }}% ({{ lang.NumFmt 0 (len $wordles) }}/{{ lang.NumFmt 0 $nyt_puzzle_count }})</strong></div>
 
