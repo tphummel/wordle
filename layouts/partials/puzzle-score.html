@@ -8,5 +8,4 @@
     {{ end }}
   {{ end }}
 {{ end }}
-{{ $score = add $score (cond (eq .Params.state.gameStatus "FAIL") 10 0) }}
 {{ return $score }}
