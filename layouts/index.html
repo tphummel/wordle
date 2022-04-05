@@ -11,7 +11,7 @@
 {{ $wins := where $wordles "Params.state.gameStatus" "WIN" }}
 {{ $losses := where $wordles "Params.state.gameStatus" "FAIL"}}
 {{ $nyt_puzzle_count := 2309 }}
-{{ $nyt_valid_word_count := 10638 }}
+{{ $nyt_valid_word_count := 10663 }}
 
 <div>🧩 Days Played: <strong><a href="{{ with .Site.GetPage "section" "w" }}{{ .RelPermalink }}{{ end }}">{{ len $wordles }}</a></strong></div>
 {{ with .Site.GetPage "/puzzles" }}
