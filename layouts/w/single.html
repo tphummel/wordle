@@ -26,13 +26,20 @@
 <p>Outcome: <strong>{{ lower .Params.state.gameStatus}}</strong></p>
 <p>Hard Mode: <strong>{{ .Params.state.hardMode}}</strong></p>
 <p>{{ partial "emoji-grid" . }}</p>
-<p><a id="share-button" href="">📦 Standard</a></p>
+<p>Share: <a id="share-button" href="">Standard</a> | <a id="share-enhanced" href="">Enhanced</a></p>
 <script>
   function shareClick() {
     navigator.clipboard.writeText({{ partial "share-standard" . }})
     return false
   }
   document.getElementById("share-button").onclick = shareClick
+</script>
+<script>
+  function shareClick() {
+    navigator.clipboard.writeText({{ partial "share-enhanced" . }})
+    return false
+  }
+  document.getElementById("share-enhanced").onclick = shareClick
 </script>
 <p>
   <details>
