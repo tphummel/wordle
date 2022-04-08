@@ -19,7 +19,7 @@
     {{ end }}
   {{ end }}
   {{ if not (eq $guess "") }}
-    {{ $row = print $row " " (sub $rowScore $prevScore) "\n" }}
+    {{ $row = print $row " +" (sub $rowScore $prevScore) "\n" }}
     {{ $share = print $share $row }}
   {{ end }}
   {{ $prevScore = $rowScore }}
