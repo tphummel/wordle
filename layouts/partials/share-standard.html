@@ -1,0 +1,21 @@
+{{ $guessCount := partial "guess-count" . }}
+{{ $share := print "Wordle " (index .Params.puzzles 0) " " $guessCount "/6" (cond (eq .Params.state.hardMode true) "*" "") "\n\n" }}
+{{ range $g, $guess := .Params.state.boardState }}
+  {{ $row := "" }}
+  {{ range $c, $char := split $guess "" }}
+    {{ $eval := index $.Params.state.evaluations $g $c }}
+    {{ if eq $eval "correct" }}
+      {{ $row = print $row "🟩" }}
+    {{ else if eq $eval "present" }}
+      {{ $row = print $row "🟨" }}
+    {{ else }}
+      {{ $row = print $row "⬛️" }}
+    {{ end }}
+  {{ end }}
+  {{ if not (eq $guess "") }}
+    {{ $row = print $row "\n" }}
+    {{ $share = print $share $row }}
+  {{ end }}
+{{ end }}
+
+{{ return $share }}
