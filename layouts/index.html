@@ -187,9 +187,14 @@
     {{ $lastDay := time ($lastW.Date.Format "2006-01-02") }}
 
     {{ $isConsecDays := eq $thisDay ($lastDay.AddDate 0 0 1) }}
+    {{ $isSameDay := eq $thisDay $lastDay }}
+
     {{ if $isConsecDays }}
       <!-- extend active streak -->
       {{ $active = $active | append (slice $thisW) }}
+    {{ else if $isSameDay }}
+      <!-- for some reason more than one puzzle was played in one day -->
+      <!-- don't extend the streak, but also don't break it -->
     {{ else }}
       <!-- streak broken - add finished streak to streaks list, reset active streak slice -->
       {{ $start := (index (first 1 $active) 0) }}
