@@ -318,6 +318,9 @@
     </tr>
     {{ end }}
   {{ end }}
+  {{ with .Site.GetPage "openers.md" }}
+    <tr><td colspan="2"><a href="{{ .RelPermalink }}">🚪 See All Openers</a></td></tr>
+  {{ end }}
 </table>
 
 <h2>🗓 Monthly Trends</h2>
