@@ -1,0 +1,22 @@
+{{ $byFirst := dict }}
+{{ range . }}
+  {{ $score := partial "puzzle-score" . }}
+  {{ $first := index .Params.state.boardState 0 }}
+  {{ $date := .Date.Format "Jan 2, 2006" }}
+
+  {{ if not (isset $byFirst $first) }}
+    {{ $init := dict $first 0 }}
+    {{ $byFirst = merge $byFirst $init }}
+  {{ end }}
+
+  {{ $prev := index $byFirst $first }}
+
+  {{ $byFirst = merge $byFirst (dict $first (add 1 $prev)) }}
+{{ end }}
+
+{{ $wordCounts := slice }}
+{{ range $word, $count := $byFirst }}
+  {{ $wordCounts = $wordCounts | append (slice (dict "word" $word "count" $count)) }}
+{{ end }}
+
+{{ return $wordCounts }}
