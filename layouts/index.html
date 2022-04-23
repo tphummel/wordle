@@ -307,26 +307,7 @@
     <th>Count</th>
   </tr>
 
-  {{ $byFirst := dict }}
-  {{ range $wordles }}
-    {{ $score := partial "puzzle-score" . }}
-    {{ $first := index .Params.state.boardState 0 }}
-    {{ $date := .Date.Format "Jan 2, 2006" }}
-
-    {{ if not (isset $byFirst $first) }}
-      {{ $init := dict $first 0 }}
-      {{ $byFirst = merge $byFirst $init }}
-    {{ end }}
-
-    {{ $prev := index $byFirst $first }}
-
-    {{ $byFirst = merge $byFirst (dict $first (add 1 $prev)) }}
-  {{ end }}
-
-  {{ $wordCounts := slice }}
-  {{ range $word, $count := $byFirst }}
-    {{ $wordCounts = $wordCounts | append (slice (dict "word" $word "count" $count)) }}
-  {{ end }}
+  {{ $wordCounts := partial "openers.html" $wordles }}
 
   {{ $minToPrint := 5 }}
   {{ range sort $wordCounts "count" "desc" }}
