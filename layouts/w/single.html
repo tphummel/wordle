@@ -57,6 +57,11 @@
     <p>🎖 <a href="{{ .RelPermalink }}">Opener Miss</a></p>
   {{ end }}
 {{ end }}
+{{ with (partial "opener-double-misses" (slice .)) }}
+  {{ with $.Site.GetPage "opener-double-misses.md" }}
+    <p>🎖 <a href="{{ .RelPermalink }}">Opener Double Miss</a></p>
+  {{ end }}
+{{ end }}
 <p>
   <details>
     <summary>
