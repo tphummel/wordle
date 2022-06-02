@@ -173,6 +173,7 @@
   {{ with .GitInfo }}
   <div>Committed: {{ dateFormat "2006-01-02 15:04 -0700" .AuthorDate.Local }}</div>
   {{ end }}
+  <div><a href="https://raw.githubusercontent.com/tphummel/wordle/main/content/{{ .File.Path }}">Markdown</a></div>
 </div>
 
 {{ end }}
