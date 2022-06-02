@@ -1,0 +1,22 @@
+{{ $missedFirstGuesses := 0 }}
+{{ $found := slice }}
+
+{{ range . }}
+  {{ $wordleDate := .Date }}
+  {{ $wordle := . }}
+  {{ $firstGuess := index .Params.state.evaluations 0 }}
+
+  {{ $absentLetters := 0}}
+  {{ range $char := (seq 0 4) }}
+    {{ if (eq "absent" (index $firstGuess $char)) }}
+      {{ $absentLetters = add $absentLetters 1 }}
+    {{ end }}
+  {{ end }}
+
+  {{ if (eq $absentLetters 5) }}
+    {{ $missedFirstGuesses = add 1 $missedFirstGuesses }}
+    {{ $found = $found | append (slice (dict "date" $wordleDate "puzzle" $wordle)) }}
+  {{ end }}
+
+{{ end }}
+{{ return $found }}
