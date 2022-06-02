@@ -52,6 +52,11 @@
     <p>🏅 <a href="{{ .RelPermalink }}">No Yellow Tiles</a></p>
   {{ end }}
 {{ end }}
+{{ with (partial "opener-misses" (slice .)) }}
+  {{ with $.Site.GetPage "opener-misses.md" }}
+    <p>🎖 <a href="{{ .RelPermalink }}">Opener Miss</a></p>
+  {{ end }}
+{{ end }}
 <p>
   <details>
     <summary>
