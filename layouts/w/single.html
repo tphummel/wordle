@@ -41,6 +41,12 @@
   }
   document.getElementById("share-enhanced").onclick = shareClick
 </script>
+<p>Achievements</p>
+{{ with (partial "no-green-before-solve" (slice .)) }}
+  {{ with $.Site.GetPage "no-green-before-solve.md" }}
+    <p>🏅 <a href="{{ .RelPermalink }}">No Green Tiles Prior to Solving</a></p>
+  {{ end }}
+{{ end }}
 <p>
   <details>
     <summary>
