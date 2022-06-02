@@ -201,8 +201,10 @@
       {{ $end := (index (last 1 $active) 0) }}
       {{ $streak := dict "length" (len $active) "start" $start "end" $end }}
       {{ $streaks = $streaks | append (slice $streak) }}
-
       {{ $active = slice }}
+
+      <!-- start the next streak with the current puzzle -->
+      {{ $active = $active | append (slice $thisW )}}
     {{ end }}
   {{ else }}
     <!-- this is the first wordle in the list. streak extends -->
