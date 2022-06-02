@@ -107,8 +107,11 @@
   {{ end }}
 
 {{ end }}
+
+{{ $openerMisses := partial "opener-misses" $wordles }}
+
 {{ with .Site.GetPage "opener-misses.md" }}
-  <div>🧩 Opener Misses: <strong><a href="{{ .RelPermalink }}">{{ $missedFirstGuesses }}</a></strong></div>
+  <div>🧩 Opener Misses: <strong><a href="{{ .RelPermalink }}">{{ len $openerMisses }}</a></strong></div>
 {{ end }}
 
 {{ with .Site.GetPage "opener-double-misses.md" }}
