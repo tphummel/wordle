@@ -42,26 +42,28 @@
   document.getElementById("share-enhanced").onclick = shareClick
 </script>
 <p>Achievements</p>
+<ul>
 {{ with (partial "no-green-before-solve" (slice .)) }}
   {{ with $.Site.GetPage "no-green-before-solve.md" }}
-    <p>🏅 <a href="{{ .RelPermalink }}">No Green Tiles Prior to Solving</a></p>
+    <li>🏅 <a href="{{ .RelPermalink }}">No Green Tiles Prior to Solving</a></li>
   {{ end }}
 {{ end }}
 {{ with (partial "no-yellow-tiles" (slice .)) }}
   {{ with $.Site.GetPage "no-yellow-tiles.md" }}
-    <p>🏅 <a href="{{ .RelPermalink }}">No Yellow Tiles</a></p>
+    <li>🏅 <a href="{{ .RelPermalink }}">No Yellow Tiles</a></li>
   {{ end }}
 {{ end }}
 {{ with (partial "opener-misses" (slice .)) }}
   {{ with $.Site.GetPage "opener-misses.md" }}
-    <p>🎖 <a href="{{ .RelPermalink }}">Opener Miss</a></p>
+    <li>🎖 <a href="{{ .RelPermalink }}">Opener Miss</a></li>
   {{ end }}
 {{ end }}
 {{ with (partial "opener-double-misses" (slice .)) }}
   {{ with $.Site.GetPage "opener-double-misses.md" }}
-    <p>🎖 <a href="{{ .RelPermalink }}">Opener Double Miss</a></p>
+    <li>🎖 <a href="{{ .RelPermalink }}">Opener Double Miss</a></li>
   {{ end }}
 {{ end }}
+</ul>
 <p>
   <details>
     <summary>
