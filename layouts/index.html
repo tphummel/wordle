@@ -77,45 +77,16 @@
 </tr>
 </table>
 
-{{ $missedFirstGuesses := 0 }}
-{{ $missedFirstTwoGuesses := 0 }}
-
-{{ range $wordles }}
-  {{ $firstGuess := index .Params.state.evaluations 0 }}
-
-  {{ $absentLetters := 0}}
-  {{ range $char := (seq 0 4) }}
-    {{ if (eq "absent" (index $firstGuess $char)) }}
-      {{ $absentLetters = add $absentLetters 1 }}
-    {{ end }}
-  {{ end }}
-
-  {{ if (eq $absentLetters 5) }}
-    {{ $missedFirstGuesses = add 1 $missedFirstGuesses }}
-  {{ end }}
-
-  {{ $secondGuess := index .Params.state.evaluations 1 }}
-  {{ $absentLettersTwo := 0}}
-  {{ range $char := (seq 0 4) }}
-    {{ if (eq "absent" (index $secondGuess $char)) }}
-      {{ $absentLettersTwo = add $absentLettersTwo 1 }}
-    {{ end }}
-  {{ end }}
-
-  {{ if (and (eq $absentLetters 5) (eq $absentLettersTwo 5)) }}
-    {{ $missedFirstTwoGuesses = add 1 $missedFirstTwoGuesses }}
-  {{ end }}
-
-{{ end }}
-
 {{ $openerMisses := partial "opener-misses" $wordles }}
 
 {{ with .Site.GetPage "opener-misses.md" }}
   <div>🧩 Opener Misses: <strong><a href="{{ .RelPermalink }}">{{ len $openerMisses }}</a></strong></div>
 {{ end }}
 
+{{ $openerDoubleMisses := partial "opener-double-misses" $wordles }}
+
 {{ with .Site.GetPage "opener-double-misses.md" }}
-  <div>🧩 Opener Double Misses: <strong><a href="{{ .RelPermalink }}">{{ $missedFirstTwoGuesses }}</a></strong></div>
+  <div>🧩 Opener Double Misses: <strong><a href="{{ .RelPermalink }}">{{ len $openerDoubleMisses }}</a></strong></div>
 {{ end }}
 
 {{ with .Site.GetPage "no-yellow-tiles.md" }}

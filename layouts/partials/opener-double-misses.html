@@ -1,0 +1,32 @@
+{{ $found := slice }}
+{{ $missedFirstTwoGuesses := 0 }}
+
+{{ range . }}
+  {{ $wordleDate := .Date }}
+  {{ $wordle := . }}
+  {{ $firstGuess := index .Params.state.evaluations 0 }}
+
+  {{ $absentLetters := 0}}
+  {{ range $char := (seq 0 4) }}
+    {{ if (eq "absent" (index $firstGuess $char)) }}
+      {{ $absentLetters = add $absentLetters 1 }}
+    {{ end }}
+  {{ end }}
+
+  {{ $secondGuess := index .Params.state.evaluations 1 }}
+  {{ $absentLettersTwo := 0}}
+  {{ range $char := (seq 0 4) }}
+    {{ if (eq "absent" (index $secondGuess $char)) }}
+      {{ $absentLettersTwo = add $absentLettersTwo 1 }}
+    {{ end }}
+  {{ end }}
+
+
+
+  {{ if (and (eq $absentLetters 5) (eq $absentLettersTwo 5)) }}
+    {{ $missedFirstTwoGuesses = add 1 $missedFirstTwoGuesses }}
+    {{ $found = $found | append (slice (dict "date" $wordleDate "puzzle" $wordle)) }}
+  {{ end }}
+
+{{ end }}
+{{ return $found }}
