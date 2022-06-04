@@ -167,58 +167,9 @@
   {{ end }}
 </table>
 
-<h2>⛓ Top Streaks, Consec Days Won</h2>
-{{ $thisW := dict }}
-{{ $lastW := dict }}
-{{ $active := slice }}
-{{ $streaks := slice }}
+<h2>⛓ Top Streaks, Consec Days Played and Won</h2>
 
-{{ range $i, $wordle := $wordles.ByDate }}
-  {{ $thisW = $wordle }}
-  {{ $isWin := eq ($thisW.Params.state.gameStatus | lower) "win" }}
-  {{ $activeStreakIsEmpty := eq (len $active) 0 }}
-
-  {{ if and $activeStreakIsEmpty $isWin }}
-    <!-- this is the first wordle in the list or a fresh streak starting. streak extends -->
-    {{ $active = $active | append (slice $thisW )}}
-
-  {{ else if (and $thisW.Date $lastW.Date) }}
-    <!-- we're in the middle of the list somewhere -->
-    <!-- get puzzle dates with time of day removed -->
-    {{ $thisDay := time ($thisW.Date.Format "2006-01-02") }}
-    {{ $lastDay := time ($lastW.Date.Format "2006-01-02") }}
-
-    {{ $isConsecDays := eq $thisDay ($lastDay.AddDate 0 0 1) }}
-    {{ $isSameDay := eq $thisDay $lastDay }}
-
-    {{ if (and $isConsecDays $isWin) }}
-      <!-- extend active streak -->
-      {{ $active = $active | append (slice $thisW) }}
-    {{ else if (and $isSameDay $isWin) }}
-      <!-- two puzzles in same day -->
-      <!-- don't extend streak, but don't break either -->
-    {{ else }}
-      <!-- streak broken - add finished streak to streaks list, reset active streak slice -->
-      <!-- the current puzzle either skipped a day, or lost, or both -->
-      {{ $streak := dict "length" (len $active) "start" (index (first 1 $active) 0) "end" (index (last 1 $active) 0) }}
-      {{ $streaks = $streaks | append (slice $streak) }}
-      {{ $active = slice }}
-
-      <!-- if this day is a win, we want to start the next active streak immediately -->
-      {{ if $isWin }}
-        {{ $active = $active | append (slice $thisW) }}
-      {{ end }}
-    {{ end }}
-  {{ end }}
-
-  {{ $lastW = $thisW }}
-{{ end }}
-
-<!-- handle the active streak -->
-{{ if gt (len $active) 0 }}
-  {{ $streak := dict "length" (len $active) "start" (index (first 1 $active) 0) "end" (index (last 1 $active) 0) "note" "Active 🚧" }}
-  {{ $streaks = $streaks | append (slice $streak) }}
-{{ end }}
+{{ $streaks := partial "streak-days-played-won.html" $wordles }}
 
 <table>
   <tr>
