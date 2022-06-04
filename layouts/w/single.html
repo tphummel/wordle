@@ -41,29 +41,40 @@
   }
   document.getElementById("share-enhanced").onclick = shareClick
 </script>
-<p>Achievements</p>
-<ul>
-{{ with (partial "no-green-before-solve" (slice .)) }}
-  {{ with $.Site.GetPage "no-green-before-solve.md" }}
-    <li>🏅 <a href="{{ .RelPermalink }}">No Green Tiles Prior to Solving</a></li>
-  {{ end }}
+
+{{ $achievements := slice }}
+{{ $wordle := (slice .) }}
+
+{{ with (partial "no-green-before-solve" $wordle) }}
+  {{ $achievement := dict "badge" "🏅" "report" "no-green-before-solve.md" "title" "No Green Tiles Prior to Solving" }}
+  {{ $achievements = $achievements | append (slice $achievement) }}
 {{ end }}
-{{ with (partial "no-yellow-tiles" (slice .)) }}
-  {{ with $.Site.GetPage "no-yellow-tiles.md" }}
-    <li>🏅 <a href="{{ .RelPermalink }}">No Yellow Tiles</a></li>
-  {{ end }}
+{{ with (partial "no-yellow-tiles" $wordle) }}
+  {{ $achievement := dict "badge" "🎖" "report" "no-yellow-tiles.md" "title" "No Yellow Tiles" }}
+  {{ $achievements = $achievements | append (slice $achievement) }}
 {{ end }}
-{{ with (partial "opener-misses" (slice .)) }}
-  {{ with $.Site.GetPage "opener-misses.md" }}
-    <li>🎖 <a href="{{ .RelPermalink }}">Opener Miss</a></li>
-  {{ end }}
+{{ with (partial "opener-misses" $wordle) }}
+  {{ $achievement := dict "badge" "🥇" "report" "opener-misses.md" "title" "Opener Miss" }}
+  {{ $achievements = $achievements | append (slice $achievement) }}
 {{ end }}
-{{ with (partial "opener-double-misses" (slice .)) }}
-  {{ with $.Site.GetPage "opener-double-misses.md" }}
-    <li>🎖 <a href="{{ .RelPermalink }}">Opener Double Miss</a></li>
-  {{ end }}
+{{ with (partial "opener-double-misses" $wordle) }}
+  {{ $achievement := dict "badge" "🥈" "report" "opener-double-misses.md" "title" "Opener Double Miss" }}
+  {{ $achievements = $achievements | append (slice $achievement) }}
 {{ end }}
-</ul>
+
+{{ with $achievements }}
+  <p>🏆 Achievements</p>
+  <ul>
+  {{ range $achievement := . }}
+    {{ with $.Site.GetPage $achievement.report }}
+      <li> {{ $achievement.badge}}
+        <a href="{{ .RelPermalink }}">{{ $achievement.title }}</a>
+      </li>
+    {{ end }}
+  {{ end }}
+  </ul>
+{{ end }}
+
 <p>
   <details>
     <summary>
