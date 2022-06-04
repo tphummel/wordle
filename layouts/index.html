@@ -145,7 +145,7 @@
   {{ end }}
 </table>
 
-<h2>⛓ Top Streaks, Consec Days Played</h2>
+<h2>⛓ Top Streaks, Consec <abbr title="Missing day breaks a streak">Days Played</abbr></h2>
 
 {{ $streaks := partial "streak-days-played.html" $wordles }}
 
@@ -167,9 +167,30 @@
   {{ end }}
 </table>
 
-<h2>⛓ Top Streaks, Consec Days Played and Won</h2>
+<h2>⛓ Top Streaks, Consec <abbr title="Missing a day or a loss breaks a streak">Days Played and Won</abbr></h2>
 
 {{ $streaks := partial "streak-days-played-won.html" $wordles }}
+
+<table>
+  <tr>
+    <th>Start</th>
+    <th>End</th>
+    <th>Length</th>
+    <th></th>
+  </tr>
+  {{ range first 5 (sort $streaks "length" "desc") }}
+    <tr>
+      <td><a href="{{ .start.RelPermalink }}">{{ .start.Date.Format "Jan 2, 2006" }}</a></td>
+      <td><a href="{{ .end.RelPermalink }}">{{ .end.Date.Format "Jan 2, 2006" }}</a></td>
+      <td>{{ .length }}</td>
+      <td>{{ .note | default ""}}</td>
+    </tr>
+  {{ end }}
+</table>
+
+<h2>⛓ Top Streaks, Consec <abbr title="Only losses break streaks, not missed days">Puzzles Won</abbr></h2>
+
+{{ $streaks := partial "streak-wins.html" $wordles }}
 
 <table>
   <tr>
