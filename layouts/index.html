@@ -146,53 +146,8 @@
 </table>
 
 <h2>⛓ Top Streaks, Consec Days Played</h2>
-{{ $thisW := dict }}
-{{ $lastW := dict }}
-{{ $active := slice }}
-{{ $streaks := slice }}
 
-{{ range $i, $wordle := $wordles.ByDate }}
-  {{ $thisW = $wordle }}
-
-  {{ if (and $thisW.Date $lastW.Date) }}
-    <!-- we're in the middle of the list somewhere -->
-    <!-- get puzzle dates with time of day removed -->
-    {{ $thisDay := time ($thisW.Date.Format "2006-01-02") }}
-    {{ $lastDay := time ($lastW.Date.Format "2006-01-02") }}
-
-    {{ $isConsecDays := eq $thisDay ($lastDay.AddDate 0 0 1) }}
-    {{ $isSameDay := eq $thisDay $lastDay }}
-
-    {{ if $isConsecDays }}
-      <!-- extend active streak -->
-      {{ $active = $active | append (slice $thisW) }}
-    {{ else if $isSameDay }}
-      <!-- for some reason more than one puzzle was played in one day -->
-      <!-- don't extend the streak, but also don't break it -->
-    {{ else }}
-      <!-- streak broken - add finished streak to streaks list, reset active streak slice -->
-      {{ $start := (index (first 1 $active) 0) }}
-      {{ $end := (index (last 1 $active) 0) }}
-      {{ $streak := dict "length" (len $active) "start" $start "end" $end }}
-      {{ $streaks = $streaks | append (slice $streak) }}
-      {{ $active = slice }}
-
-      <!-- start the next streak with the current puzzle -->
-      {{ $active = $active | append (slice $thisW )}}
-    {{ end }}
-  {{ else }}
-    <!-- this is the first wordle in the list. streak extends -->
-    {{ $active = $active | append (slice $thisW )}}
-  {{ end }}
-
-  {{ $lastW = $thisW }}
-{{ end }}
-
-<!-- handle the active streak -->
-{{ if gt (len $active) 0 }}
-  {{ $streak := dict "length" (len $active) "start" (index (first 1 $active) 0) "end" (index (last 1 $active) 0) "note" "Active 🚧" }}
-  {{ $streaks = $streaks | append (slice $streak) }}
-{{ end }}
+{{ $streaks := partial "streak-days-played.html" $wordles }}
 
 <table>
   <tr>
