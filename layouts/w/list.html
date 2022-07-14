@@ -13,6 +13,7 @@
     <td>Puzzle</td>
     <td>Turns</td>
     <td>Score</td>
+    <td>Grid</td>
   </tr>
 
   {{ range .Data.Pages }}
@@ -21,6 +22,7 @@
       <td><a href="{{ with $.GetPage (printf "/puzzles/%s" (index .Params.puzzles 0)) }}{{ .RelPermalink}}{{end}}">{{ index .Params.puzzles 0 }}</a></td>
       <td><a href="{{ .RelPermalink }}">{{ partial "guess-count.html" . }}{{- cond (eq .Params.state.hardMode true) "*" "" -}}</a></td>
       <td><a href="{{ .RelPermalink }}">{{ partial "puzzle-score.html" . }}</a></td>
+      <td>{{ partial "emoji-grid" . }}</td>
     </tr>
 
   {{ end }}
