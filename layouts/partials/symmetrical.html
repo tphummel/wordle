@@ -1,0 +1,22 @@
+{{ $found := slice }}
+{{ range . }}
+  {{ $wordleDate := .Date }}
+  {{ $wordle := . }}
+
+  {{ $numGuesses := partial "guess-count.html" $wordle }}
+  {{ $numGuesses = cond (eq "X" $numGuesses) 6 $numGuesses }}
+  {{ $symmetricalGuesses := 0 }}
+
+  {{ range $n, $guess := .Params.state.evaluations }}
+    {{ if $guess }}
+      {{ if and (eq (index $guess 0) (index $guess 4) ) (eq (index $guess 1) (index $guess 3) )}}
+        {{ $symmetricalGuesses = add $symmetricalGuesses 1 }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ if eq $numGuesses $symmetricalGuesses }}
+    {{ $found = $found | append (slice (dict "date" $wordleDate "puzzle" $wordle)) }}
+  {{ end }}
+{{ end }}
+{{ return $found }}
