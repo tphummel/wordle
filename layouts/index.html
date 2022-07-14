@@ -102,6 +102,11 @@
   {{ $anagrams := partial "anagrams.html" (where .Site.RegularPages "Section" "w") }}
   <div>🧩 Anagrams: <strong><a href="{{ .RelPermalink }}">{{ len $anagrams }}</a></strong></div>
 {{ end }}
+{{ with .Site.GetPage "symmetrical.md" }}
+  {{ $symmetrical := partial "symmetrical.html" (where .Site.RegularPages "Section" "w") }}
+  <div>🧩 Symmetrical Puzzles: <strong><a href="{{ .RelPermalink }}">{{ len $symmetrical }}</a></strong></div>
+{{ end }}
+
 {{ with .Site.GetPage "collections.md" }}
   <div>🃏 <a href="{{ .RelPermalink }}">Collections</a></div>
 {{ end }}
