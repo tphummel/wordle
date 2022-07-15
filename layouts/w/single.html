@@ -65,6 +65,10 @@
   {{ $achievement := dict "badge" "🏅" "report" "anagrams.md" "title" "Anagram" }}
   {{ $achievements = $achievements | append (slice $achievement) }}
 {{ end }}
+{{ with (partial "symmetrical" $wordle) }}
+  {{ $achievement := dict "badge" "🎖" "report" "symmetrical.md" "title" "Symmetrical" }}
+  {{ $achievements = $achievements | append (slice $achievement) }}
+{{ end }}
 
 {{ with $achievements }}
   <p>🏆 Achievements</p>
