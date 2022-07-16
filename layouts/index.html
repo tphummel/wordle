@@ -125,7 +125,7 @@
     <th>Score</th>
   </tr>
 
-  {{ range first 5 (sort ($.Scratch.Get "scored") ".score" "asc") }}
+  {{ range first 10 (sort ($.Scratch.Get "scored") ".score" "asc") }}
     <tr>
       <td><a href="{{ .page.RelPermalink }}">{{ .page.Date.Format "Jan 2, 2006" }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ index .page.Params.puzzles 0 }}</a></td>
@@ -144,7 +144,7 @@
     <th>Score</th>
   </tr>
 
-  {{ range first 5 (sort ($.Scratch.Get "scored") ".score" "desc") }}
+  {{ range first 10 (sort ($.Scratch.Get "scored") ".score" "desc") }}
     <tr>
       <td><a href="{{ .page.RelPermalink }}">{{ .page.Date.Format "Jan 2, 2006" }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ index .page.Params.puzzles 0 }}</a></td>
