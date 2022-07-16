@@ -224,17 +224,17 @@
 <table>
   <tr>
     <th>Word</th>
-    <th>Count</th>
+    <th>Pct</th>
   </tr>
 
   {{ $wordCounts := partial "openers.html" $wordles }}
 
-  {{ $minToPrint := 5 }}
+  {{ $minToPrint := 10 }}
   {{ range sort $wordCounts "count" "desc" }}
     {{ if gt .count $minToPrint }}
     <tr>
       <td>{{ .word }}</td>
-      <td>{{ .count }}</td>
+      <td>{{ mul (div (float .count) (len $wordles)) 100 | lang.FormatNumber 2 }}% ({{ .count }} / {{(len $wordles)}})</td>
     </tr>
     {{ end }}
   {{ end }}
