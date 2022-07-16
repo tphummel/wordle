@@ -274,10 +274,73 @@
   {{ end }}
 </table>
 
-<h2>🧰 Tools</h2>
-<ul>
-  <li><a href="/tools/">Bookmarklets</a></li>
-</ul>
+{{ range $wordles }}
+  {{ $tileCounts := partial "tile-counts" . }}
+  {{ $.Scratch.Add "byTileCount" (slice (dict "page" . "greenTiles" (index $tileCounts "greens") "yellowTiles" (index $tileCounts "yellows") "blackTiles" (index $tileCounts "blacks"))) }}
+{{ end }}
+
+<h2>⬛️ Most Black Tiles in a Puzzle</h2>
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Puzzle</th>
+    <th>Tiles</th>
+    <th>Turns</th>
+    <th>Score</th>
+  </tr>
+
+  {{ range first 5 (sort ($.Scratch.Get "byTileCount") ".blackTiles" "desc") }}
+    <tr>
+      <td><a href="{{ .page.RelPermalink }}">{{ .page.Date.Format "Jan 2, 2006" }}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ index .page.Params.puzzles 0 }}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ .blackTiles }}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ partial "guess-count.html" .page }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ partial "puzzle-score" .page }}</a></td>
+    </tr>
+  {{ end }}
+</table>
+
+<h2>🟨 Most Yellow Tiles in a Puzzle</h2>
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Puzzle</th>
+    <th>Tiles</th>
+    <th>Turns</th>
+    <th>Score</th>
+  </tr>
+
+  {{ range first 5 (sort ($.Scratch.Get "byTileCount") ".yellowTiles" "desc") }}
+    <tr>
+      <td><a href="{{ .page.RelPermalink }}">{{ .page.Date.Format "Jan 2, 2006" }}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ index .page.Params.puzzles 0 }}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ .yellowTiles }}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ partial "guess-count.html" .page }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ partial "puzzle-score" .page }}</a></td>
+    </tr>
+  {{ end }}
+</table>
+
+<h2>🟩 Most Green Tiles in a Puzzle</h2>
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Puzzle</th>
+    <th>Tiles</th>
+    <th>Turns</th>
+    <th>Score</th>
+  </tr>
+
+  {{ range first 5 (sort ($.Scratch.Get "byTileCount") ".greenTiles" "desc") }}
+    <tr>
+      <td><a href="{{ .page.RelPermalink }}">{{ .page.Date.Format "Jan 2, 2006" }}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ index .page.Params.puzzles 0 }}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ .greenTiles }}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ partial "guess-count.html" .page }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ partial "puzzle-score" .page }}</a></td>
+    </tr>
+  {{ end }}
+</table>
 
 <h2>📒 Articles</h2>
 <ul>
@@ -307,6 +370,10 @@
 {{ end }}
 </ul>
 
+<h2>🧰 Tools</h2>
+<ul>
+  <li><a href="/tools/">Bookmarklets</a></li>
+</ul>
 
 <a href="index.xml">RSS</a> | <a href="https://github.com/tphummel/wordle">GitHub</a>
 {{ end }}
