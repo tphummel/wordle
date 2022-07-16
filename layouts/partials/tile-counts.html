@@ -1,0 +1,17 @@
+{{ $greens := 0 }}
+{{ $yellows := 0 }}
+{{ $blacks := 0 }}
+
+{{ range $guess := .Params.state.evaluations }}
+  {{ range $r := $guess }}
+    {{ if (eq $r "absent") }}
+      {{ $blacks = add $blacks 1 }}
+    {{ else if (eq $r "present") }}
+      {{ $yellows = add $yellows 1 }}
+    {{ else if (eq $r "correct") }}
+      {{ $greens = add $greens 1 }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ return (dict "greens" $greens "yellows" $yellows "blacks" $blacks) }}
