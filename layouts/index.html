@@ -77,38 +77,76 @@
 </tr>
 </table>
 
-{{ $openerMisses := partial "opener-misses" $wordles }}
+<h2>🦄 Rarities</h2>
+<table>
+  <tr>
+    <th>Type</th>
+    <th>Pct of Total</th>
+  </tr>
 
+{{ $openerMisses := partial "opener-misses" $wordles }}
 {{ with .Site.GetPage "opener-misses.md" }}
-  <div>🧩 Opener Misses: <strong><a href="{{ .RelPermalink }}">{{ len $openerMisses }}</a></strong></div>
+  <tr>
+    <td><a href="{{ .RelPermalink }}">Opener Misses</a></td>
+    <td>
+      {{ lang.NumFmt 2 (mul (div (float (len $openerMisses)) (len $wordles)) 100) }}% (<a href="{{ .RelPermalink }}">{{ len $openerMisses }}</a> / {{ len $wordles }})
+    </td>
+  </tr>
 {{ end }}
 
 {{ $openerDoubleMisses := partial "opener-double-misses" $wordles }}
-
 {{ with .Site.GetPage "opener-double-misses.md" }}
-  <div>🧩 Opener Double Misses: <strong><a href="{{ .RelPermalink }}">{{ len $openerDoubleMisses }}</a></strong></div>
+  <tr>
+    <td><a href="{{ .RelPermalink }}">Opener Double Misses</a></td>
+    <td>
+      {{ lang.NumFmt 2 (mul (div (float (len $openerDoubleMisses)) (len $wordles)) 100) }}% (<a href="{{ .RelPermalink }}">{{ len $openerDoubleMisses }}</a> / {{ len $wordles }})
+    </td>
+  </tr>
 {{ end }}
 
+{{ $noYellow := partial "no-yellow-tiles.html" (where .Site.RegularPages "Section" "w") }}
 {{ with .Site.GetPage "no-yellow-tiles.md" }}
-  {{ $noYellow := partial "no-yellow-tiles.html" (where .Site.RegularPages "Section" "w") }}
-  <div>🧩 Puzzles with no Yellow Tiles: <strong><a href="{{ .RelPermalink }}">{{ len $noYellow }}</a></strong></div>
+  <tr>
+    <td><a href="{{ .RelPermalink }}">No Yellow Tiles</a></td>
+    <td>
+      {{ lang.NumFmt 2 (mul (div (float (len $noYellow)) (len $wordles)) 100) }}% (<a href="{{ .RelPermalink }}">{{ len $noYellow }}</a> / {{ len $wordles }})
+    </td>
+  </tr>
+
 {{ end }}
 
 {{ with .Site.GetPage "no-green-before-solve.md" }}
   {{ $noGreenBeforeSolve := partial "no-green-before-solve.html" (where .Site.RegularPages "Section" "w") }}
-  <div>🧩 Puzzles with no Green Tiles Prior to Solving: <strong><a href="{{ .RelPermalink }}">{{ len $noGreenBeforeSolve }}</a></strong></div>
+  <tr>
+    <td><a href="{{ .RelPermalink }}">No Green Tiles Prior to Solving</a></td>
+    <td>
+      {{ lang.NumFmt 2 (mul (div (float (len $noGreenBeforeSolve)) (len $wordles)) 100) }}% (<a href="{{ .RelPermalink }}">{{ len $noGreenBeforeSolve }}</a> / {{ len $wordles }})
+    </td>
+  </tr>
 {{ end }}
 {{ with .Site.GetPage "anagrams.md" }}
   {{ $anagrams := partial "anagrams.html" (where .Site.RegularPages "Section" "w") }}
-  <div>🧩 Anagrams: <strong><a href="{{ .RelPermalink }}">{{ len $anagrams }}</a></strong></div>
+  <tr>
+    <td><a href="{{ .RelPermalink }}">Anagrams</a></td>
+    <td>
+      {{ lang.NumFmt 2 (mul (div (float (len $anagrams)) (len $wordles)) 100) }}% (<a href="{{ .RelPermalink }}">{{ len $anagrams }}</a> / {{ len $wordles }})
+    </td>
+  </tr>
 {{ end }}
 {{ with .Site.GetPage "symmetrical.md" }}
   {{ $symmetrical := partial "symmetrical.html" (where .Site.RegularPages "Section" "w") }}
-  <div>🧩 Symmetrical Puzzles: <strong><a href="{{ .RelPermalink }}">{{ len $symmetrical }}</a></strong></div>
+  <tr>
+    <td><a href="{{ .RelPermalink }}">Symmetrical Puzzles</a></td>
+    <td>
+      {{ lang.NumFmt 2 (mul (div (float (len $symmetrical)) (len $wordles)) 100) }}% (<a href="{{ .RelPermalink }}">{{ len $symmetrical }}</a> / {{ len $wordles }})
+    </td>
+  </tr>
 {{ end }}
 
+</table>
+
 {{ with .Site.GetPage "collections.md" }}
-  <div>🃏 <a href="{{ .RelPermalink }}">Collections</a></div>
+  <div>🃏 See also: <a href="{{ .RelPermalink }}">Collections</a></div>
 {{ end }}
 
 {{ range $wordles }}
