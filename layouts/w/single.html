@@ -26,7 +26,7 @@
 <p>Outcome: <strong>{{ lower .Params.state.gameStatus}}</strong></p>
 <p>Hard Mode: <strong>{{ .Params.state.hardMode}}</strong></p>
 <p>{{ partial "emoji-grid" . }}</p>
-<p>Share: <a id="share-button" href="">Standard</a> | <a id="share-enhanced" href="">Enhanced</a></p>
+<p>Share: ↘️ <a id="share-button" href="">Standard</a> | ↘️ <a id="share-enhanced" href="">Enhanced</a> | ↘️ <a id="share-spoilers" href="">Spoilers</a></p>
 <script>
   function shareClick() {
     navigator.clipboard.writeText({{ partial "share-standard" . }})
@@ -40,6 +40,13 @@
     return false
   }
   document.getElementById("share-enhanced").onclick = shareClick
+</script>
+<script>
+  function shareClick() {
+    navigator.clipboard.writeText({{ partial "share-spoilers" . }})
+    return false
+  }
+  document.getElementById("share-spoilers").onclick = shareClick
 </script>
 
 {{ $achievements := slice }}
