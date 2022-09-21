@@ -170,6 +170,12 @@
         {{ end }}
       {{ end }}
     {{ end }}
+    {{ if eq (lower $.Params.state.gameStatus) "fail" }}
+      <tr>
+        <td>-</td>
+        <td colspan="5">Solution: {{ $.Params.state.solution }}</td>
+      </tr>
+    {{ end }}
     </table>
   </details>
 </p>
