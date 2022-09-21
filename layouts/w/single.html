@@ -1,7 +1,7 @@
 {{ define "head" }}
   <meta property="og:url" content=""/>
   <meta property="og:title" content="{{ $.Site.Title }}" />
-  <meta property="og:description" content="Wordle puzzle #{{ .Params.puzzle }} completed on {{ .Date.Format "January 2, 2006" }}" />
+  <meta property="og:description" content="Wordle puzzle #{{ index .Params.puzzles 0 }} completed on {{ .Date.Format "January 2, 2006" }}" />
   <meta property="twitter:label1" value="Guesses" />
   <meta property="twitter:data1" value="{{ partial "guess-count" . }}" />
   <meta property="twitter:label2" value="Score" />
