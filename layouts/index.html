@@ -265,7 +265,7 @@
     <th>Pct</th>
   </tr>
 
-  {{ $wordCounts := partial "openers.html" $wordles }}
+  {{ $wordCounts := index (partial "openers.html" $wordles) "wordCounts" }}
 
   {{ $minToPrint := 10 }}
   {{ range sort $wordCounts "count" "desc" }}

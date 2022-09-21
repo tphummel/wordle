@@ -19,4 +19,4 @@
   {{ $wordCounts = $wordCounts | append (slice (dict "word" $word "count" $count)) }}
 {{ end }}
 
-{{ return $wordCounts }}
+{{ return (dict "wordCounts" $wordCounts "byFirst" $byFirst) }}
