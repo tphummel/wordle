@@ -106,14 +106,23 @@
       </tr>
     {{ $title := .Title }}
     {{ $evaluations := .Params.state.evaluations }}
+    {{ $darkRowColor := "color:#161f27;" }}
+    {{ $lightRowColor := "color:#202b38;" }}
 
     {{ range $g, $guess := .Params.state.boardState }}
       {{ if not (eq $guess "") }}
         {{ with $.Site.GetPage (printf "/words/%s" $guess) }}
+          {{ $isSolvingGuess := (eq $guess $.Params.state.solution) }}
+          {{ $rowBackgroundColor := cond (eq (mod $g 2) 0) $darkRowColor $lightRowColor }}
+
           <tr>
             <td>{{ add $g 1 }}</td>
             <td>
-              <a href="{{ .RelPermalink }}">{{ $guess }} {{ cond (eq $guess $.Params.state.solution) "✨" ""}}</a>
+              <a 
+                {{ cond $isSolvingGuess ((printf "style=%q" $rowBackgroundColor) | safeHTMLAttr ) "" }} 
+                  href="{{ .RelPermalink }}">
+                  {{ $guess }} {{ cond $isSolvingGuess "✨" ""}}
+              </a>
             </td>
             {{ $guessHistory := index $.Site.Taxonomies.words $guess }}
             {{ $guessSeq := -1 }}
@@ -173,7 +182,9 @@
     {{ if eq (lower $.Params.state.gameStatus) "fail" }}
       <tr>
         <td>-</td>
-        <td colspan="5">Solution: {{ $.Params.state.solution }}</td>
+        <td colspan="5">
+          <span {{ printf "style=%q" $darkRowColor | safeHTMLAttr }}>{{ $.Params.state.solution }}</span> ✨
+        </td>
       </tr>
     {{ end }}
     </table>
