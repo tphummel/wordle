@@ -6,7 +6,7 @@ All opening words guessed.
 
 {{< om.inline >}}
   {{ $wordles := where .Site.RegularPages "Section" "w" }}
-  {{ $openerWords := partial "openers.html" $wordles }}
+  {{ $openerWords := index (partial "openers.html" $wordles) "wordCounts" }}
 
   <p>Distinct Opening Words Used: <strong>{{ len $openerWords }}</strong></p>
 
