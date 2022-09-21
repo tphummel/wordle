@@ -203,11 +203,15 @@
 
   {{ $minToPrint := 10 }}
   {{ range sort $wordCounts "count" "desc" }}
+    {{ $word := .word }}
+    {{ $count := .count }}
     {{ if gt .count $minToPrint }}
-    <tr>
-      <td>{{ .word }}</td>
-      <td>{{ mul (div (float .count) (len $wordles)) 100 | lang.FormatNumber 2 }}% ({{ .count }} / {{(len $wordles)}})</td>
-    </tr>
+      {{ with $.Site.GetPage (printf "/words/%s" $word) }}
+      <tr>
+        <td><a href="{{ .RelPermalink }}">{{ $word }}</a></td>
+        <td>{{ mul (div (float $count) (len $wordles)) 100 | lang.FormatNumber 2 }}% ({{ $count }} / {{(len $wordles)}})</td>
+      </tr>
+      {{ end }}
     {{ end }}
   {{ end }}
   {{ with .Site.GetPage "openers.md" }}
