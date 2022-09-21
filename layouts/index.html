@@ -192,6 +192,60 @@
   {{ end }}
 </table>
 
+<h2>⛳️ Opener Usage</h2>
+<table>
+  <tr>
+    <th>Word</th>
+    <th>Pct</th>
+  </tr>
+
+  {{ $wordCounts := index (partial "openers.html" $wordles) "wordCounts" }}
+
+  {{ $minToPrint := 10 }}
+  {{ range sort $wordCounts "count" "desc" }}
+    {{ if gt .count $minToPrint }}
+    <tr>
+      <td>{{ .word }}</td>
+      <td>{{ mul (div (float .count) (len $wordles)) 100 | lang.FormatNumber 2 }}% ({{ .count }} / {{(len $wordles)}})</td>
+    </tr>
+    {{ end }}
+  {{ end }}
+  {{ with .Site.GetPage "openers.md" }}
+    <tr><td colspan="2"><a href="{{ .RelPermalink }}">🚪 See All Openers</a></td></tr>
+  {{ end }}
+</table>
+
+<h2>🗓 Monthly Trends</h2>
+<table>
+  <tr>
+    <th>Month</th>
+    <th>Puzzles Played</th>
+    <th>Avg # Guesses</th>
+    <th>Avg Score</th>
+  </tr>
+  {{ range $wordles.GroupByDate "2006 January" }}
+    {{ $guessSum := 0 }}
+    {{ $scoreSum := 0 }}
+
+    {{ range .Pages }}
+      {{ $guesses := partial "guess-count" . }}
+      {{ $guesses = cond (eq $guesses "X") 6 $guesses }}
+      {{ $guessSum = add $guessSum $guesses }}
+
+      {{ $score := partial "puzzle-score" . }}
+      {{ $scoreSum = add $scoreSum $score }}
+    {{ end }}
+
+    <tr>
+      <td>{{ .Key }}</td>
+      <td>{{ len .Pages }}</td>
+      <td>{{ lang.NumFmt 2 (div (float $guessSum) (len .Pages)) }} ({{ $guessSum }})</td>
+      <td>{{ lang.NumFmt 1 (div (float $scoreSum) (len .Pages)) }} ({{ $scoreSum }})</td>
+
+    </tr>
+  {{ end }}
+</table>
+
 <h2>⛓ Top Streaks, Consec <abbr title="Missing day breaks a streak">Days Played</abbr></h2>
 
 {{ $streaks := partial "streak-days-played.html" $wordles }}
@@ -257,60 +311,6 @@
   {{ end }}
 </table>
 <!-- end of streaks -->
-
-<h2>⛳️ Opener Usage</h2>
-<table>
-  <tr>
-    <th>Word</th>
-    <th>Pct</th>
-  </tr>
-
-  {{ $wordCounts := index (partial "openers.html" $wordles) "wordCounts" }}
-
-  {{ $minToPrint := 10 }}
-  {{ range sort $wordCounts "count" "desc" }}
-    {{ if gt .count $minToPrint }}
-    <tr>
-      <td>{{ .word }}</td>
-      <td>{{ mul (div (float .count) (len $wordles)) 100 | lang.FormatNumber 2 }}% ({{ .count }} / {{(len $wordles)}})</td>
-    </tr>
-    {{ end }}
-  {{ end }}
-  {{ with .Site.GetPage "openers.md" }}
-    <tr><td colspan="2"><a href="{{ .RelPermalink }}">🚪 See All Openers</a></td></tr>
-  {{ end }}
-</table>
-
-<h2>🗓 Monthly Trends</h2>
-<table>
-  <tr>
-    <th>Month</th>
-    <th>Puzzles Played</th>
-    <th>Avg # Guesses</th>
-    <th>Avg Score</th>
-  </tr>
-  {{ range $wordles.GroupByDate "2006 January" }}
-    {{ $guessSum := 0 }}
-    {{ $scoreSum := 0 }}
-
-    {{ range .Pages }}
-      {{ $guesses := partial "guess-count" . }}
-      {{ $guesses = cond (eq $guesses "X") 6 $guesses }}
-      {{ $guessSum = add $guessSum $guesses }}
-
-      {{ $score := partial "puzzle-score" . }}
-      {{ $scoreSum = add $scoreSum $score }}
-    {{ end }}
-
-    <tr>
-      <td>{{ .Key }}</td>
-      <td>{{ len .Pages }}</td>
-      <td>{{ lang.NumFmt 2 (div (float $guessSum) (len .Pages)) }} ({{ $guessSum }})</td>
-      <td>{{ lang.NumFmt 1 (div (float $scoreSum) (len .Pages)) }} ({{ $scoreSum }})</td>
-
-    </tr>
-  {{ end }}
-</table>
 
 {{ range $wordles }}
   {{ $tileCounts := partial "tile-counts" . }}
