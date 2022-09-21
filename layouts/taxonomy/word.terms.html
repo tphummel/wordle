@@ -7,10 +7,14 @@
 <div>{{ . }}</div>
 {{ end }}
 
+{{ $wordles := where .Site.RegularPages "Section" "w" }}
+{{ $openersByWord := index (partial "openers.html" $wordles) "byFirst" }}
+
 <table>
   <tr>
     <td>Word</td>
-    <td>Count</td>
+    <td>Total</td>
+    <td>Opens</td>
     <td>First Use</td>
     <td>Last Use</td>
   </tr>
@@ -18,6 +22,7 @@
   {{ range .Data.Terms.ByCount }}
     {{ $name := .Name }}
     {{ $count := .Count }}
+    {{ $opens := (index $openersByWord .Name) }}
     {{ $first := index (first 1 .Pages.ByDate) 0 }}
     {{ $last := index (last 1 .Pages.ByDate) 0 }}
 
@@ -25,8 +30,9 @@
     <tr>
       <td><a href="{{ .RelPermalink }}">{{ .Name }}</a></td>
       <td>{{ $count }}</td>
-      <td><a href="{{ $first.RelPermalink}}">{{ $first.Date.Format "Jan 2, 2006" }}</a></td>
-      <td><a href="{{ $last.RelPermalink}}">{{ $last.Date.Format "Jan 2, 2006" }}</a></td>
+      <td>{{ $opens | default "-" }}</td>
+      <td><a href="{{ $first.RelPermalink}}">{{ $first.Date.Format "2006-01-02" }}</a></td>
+      <td><a href="{{ $last.RelPermalink}}">{{ $last.Date.Format "2006-01-02" }}</a></td>
     </tr>
     {{ end }}
 
