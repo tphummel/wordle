@@ -93,6 +93,8 @@ I originally started with a desktop browser bookmarklet but was inspired by [Kat
 1. Mergify evaluates the PR. If all conditions pass, the PR is merged to `main`
 1. Upon `main` merge, GitHub auto-triggers a [Hugo][5] build and deploy on [Cloudflare Workers Sites][0]
 
+{{< youtube id="72By-G7AUlI" title="Daily Wordle Data Capture Demo" >}}
+
 ## iOS shortcut
 
 ```javascript
