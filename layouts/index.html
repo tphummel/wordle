@@ -4,7 +4,7 @@
 
 
 <blockquote>
-  ❗️⛔️ Note: You will not see puzzle solution spoilers anywhere on this site unless you opt in on an individual puzzle page by expanding the Guesses section.
+  ❗️ ⛔️ Note: Spoilers have a visual warning. You need to opt in twice to view.
 </blockquote>
 
 {{ $wordles := where .Site.RegularPages "Section" "w" }}
@@ -30,6 +30,10 @@
 <div>🧩 Guesses per Puzzle:  <strong>{{ lang.NumFmt 2 (div (float $total_guesses) (len $wordles)) }}</strong></div>
 <div>🧩 Distinct Words Guessed: <strong><a href="{{ with .Site.GetPage "words" }}{{ .RelPermalink }}{{ end }}">{{ len .Site.Taxonomies.words }}</a></strong></div>
 <div>🧩 Pct of Words Guessed: <strong>{{ lang.NumFmt 2 (mul (div (float (len .Site.Taxonomies.words)) ($nyt_valid_word_count)) 100) }}% ({{ lang.NumFmt 0 (len .Site.Taxonomies.words) }}/{{ lang.NumFmt 0 ($nyt_valid_word_count) }})</strong></div>
+
+<blockquote>
+  💡 <a href="{{ with .Site.GetPage "a/how-it-works" }}{{ .RelPermalink }}{{ end }}">How Does This Site Work?</a>
+</blockquote>
 
 <h2>🕰 Recent Puzzles</h2>
 <table>
@@ -391,6 +395,11 @@
     <a href="{{ .RelPermalink }}">{{ .Title }}</a> on {{ .Date.Format "Jan 2, 2006" }}
   {{ end }}
   </li>
+  <li>
+    {{ with .Site.GetPage "a/how-it-works.md" }}
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a> on {{ .Date.Format "Jan 2, 2006" }}
+    {{ end }}
+    </li>
 </ul>
 
 <h2>🏷 Tags</h2>
