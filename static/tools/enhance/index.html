@@ -8,6 +8,7 @@
     <script type="text/javascript">
       var epoch = new Date("2021-06-19T00:00:00")
       var solutionCount = 2309
+      var report
 
       function getPuzzleDate (num) {
         var startDate = new Date(epoch)
@@ -83,7 +84,7 @@
 
       function enhanceEmojiFormInput() {
         var inputText = document.querySelector('form#enhance textarea#emoji-input').value
-        var report = analyzeEmoji(inputText)
+        report = analyzeEmoji(inputText)
         var cleanEmoji = report.enrichedResults
           .map((line, i, arr) => {
             var netProgress = i === 0 ? line.lineProgress : line.lineProgress - arr[i-1].lineProgress
@@ -100,6 +101,11 @@ Puzzle Score ${report.puzzleScore}
 
       function shareClick() {
         navigator.clipboard.writeText(document.querySelector('form#enhance textarea#output').value)
+        return false
+      }
+
+      function shareJSONClick() {
+        navigator.clipboard.writeText(JSON.stringify(report, false, 2))
         return false
       }
 
@@ -127,16 +133,25 @@ Puzzle Score ${report.puzzleScore}
       <input type="button" id="enhance" value="Enhance" onclick="enhanceEmojiFormInput();" />
       <textarea id="output" rows="10"></textarea>
       <input type="button" id="copy-link" value="Copy to Clipboard" />
+    
+      <script>
+        document.getElementById("copy-link").onclick = shareClick
+      </script>
+      <p>Legend</p>
+      <p>
+        <ul>
+          <li>The percentages to the right of each row show progress achieved by that guess toward completion of the puzzle.</li>
+          <li>Puzzle Score: a total score for how well you performed on this puzzle. Like golf, lower scores are better. black: 2 pts, yellow: 1 pt, green: 0 pts. The goal is to give you a little more nuance in comparing your results with friends.</li>
+        </ul>
+      </p>
+      <p>Extras</p>
+      <p>Most people won't care about this, but once you enhance an emoji you can copy all of the JSON data from the analysis by clicking the button below.</p>
+      <p>
+        <input type="button" id="copy-json" value="Copy JSON to Clipboard" />
+      </p>
+      <script>
+        document.getElementById("copy-json").onclick = shareJSONClick
+      </script>
     </form>
-    <script>
-      document.getElementById("copy-link").onclick = shareClick
-    </script>
-    <p>Legend</p>
-    <p>
-      <ul>
-        <li>The percentages to the right of each row show progress achieved by that guess toward completion of the puzzle.</li>
-        <li>Puzzle Score: a total score for how well you performed on this puzzle. Like golf, lower scores are better. black: 2 pts, yellow: 1 pt, green: 0 pts. The goal is to give you a little more nuance in comparing your results with friends.</li>
-      </ul>
-    </p>
 </body>
 </html>
