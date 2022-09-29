@@ -124,9 +124,9 @@ Puzzle Score ${report.puzzleScore}
     </script>
     <form id="enhance">
       <textarea id="emoji-input" rows="8"></textarea>
-      <input type="button" id="enhance" value="Enhance" onclick="enhanceEmojiFormInput();"></button>
+      <input type="button" id="enhance" value="Enhance" onclick="enhanceEmojiFormInput();" />
       <textarea id="output" rows="10"></textarea>
-      <a id="copy-link" href="">Copy Enhanced</a>
+      <input type="button" id="copy-link" value="Copy to Clipboard" />
     </form>
     <script>
       document.getElementById("copy-link").onclick = shareClick
