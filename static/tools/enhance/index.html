@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>Tom's Emoji Tool</title>
+    <link rel="stylesheet" href="../../dark.min.css">
+    <script type="text/javascript">
+      var epoch = new Date("2021-06-19T00:00:00")
+      var solutionCount = 2309
+
+      function getPuzzleDate (num) {
+        var startDate = new Date(epoch)
+        var puzzleDate = startDate.setHours(0, 0, 0, 0) + (num * 864e5)
+        return (new Date(puzzleDate)).toISOString().substr(0,10)
+      }
+
+      function analyzeEmoji (input) {
+        var title = input.match(/Wordle [0-9]* [1-6]{1}\/6\*?/)
+        var titlePieces = title[0].split(' ')
+        var puzzleNum = parseInt(titlePieces[1], 10)
+        var puzzleDate = getPuzzleDate(puzzleNum)
+        var guessPieces = titlePieces[2].split("")
+        var [guessCount, slash, allowed, modeStr] = guessPieces
+
+        var results = input.match(/[🟩🟨⬛️]*/g)
+          .filter(r => r !== '')
+          .map((line) => {
+            return [...line]
+              .filter(a => /[^\ufe0f]/.test(a))
+              .map((char) => {
+                if (char === '🟩') {
+                  return 'correct'
+                } else if (char === '🟨') {
+                  return 'present'
+                } else {
+                  return 'absent'
+                }
+              })
+        })
+
+        var enrichedResults = results.map((lineStatuses) => {
+          var lineEmoji = lineStatuses.map((status) => {
+            if (status === 'correct') return '🟩'
+            if (status === 'present') return '🟨'
+            if (status === 'absent') return '⬛️'
+          })
+
+          var lineProgress = lineStatuses.reduce((memo, status) => {
+            if (status === 'correct') return memo + 2
+            if (status === 'present') return memo + 1
+            if (status === 'absent') return memo + 0
+          }, 0)
+
+          var lineScore = lineStatuses.reduce((memo, status) => {
+            if (status === 'correct') return memo + 0
+            if (status === 'present') return memo + 1
+            if (status === 'absent') return memo + 2
+          }, 0)
+
+          return {
+            lineStatuses,
+            lineEmoji,
+            lineProgress,
+            lineScore
+          }
+        })
+
+        var puzzleScore = enrichedResults.reduce((memo, result) => { 
+          return memo + result.lineScore 
+        }, 0)
+
+        return {
+          results,
+          enrichedResults,
+          puzzleScore,
+          puzzleNum,
+          puzzleDate,
+          guessCount: parseInt(guessCount, 10),
+          isHardMode: modeStr === '*'
+        }
+      }
+
+      function enhanceEmojiFormInput() {
+        var inputText = document.querySelector('form#enhance textarea#emoji-input').value
+        var report = analyzeEmoji(inputText)
+        var cleanEmoji = report.enrichedResults
+          .map((line, i, arr) => {
+            var netProgress = i === 0 ? line.lineProgress : line.lineProgress - arr[i-1].lineProgress
+            return `${line.lineEmoji.join('')}  +${netProgress}`
+        }).join('\n')
+        var output = `Wordle ${report.puzzleNum} ${report.guessCount}/6${report.isHardMode ? '*' : ''}
+Day ${report.puzzleDate}
+${cleanEmoji}
+Puzzle Score ${report.puzzleScore}
+`
+
+        document.querySelector('form#enhance textarea#output').value = output
+      }
+
+      function shareClick() {
+        navigator.clipboard.writeText(document.querySelector('form#enhance textarea#output').value)
+        return false
+      }
+
+      function demoClick() {
+        document.querySelector('form#enhance textarea#emoji-input').value = `Wordle 465 5/6*
+
+⬛️🟩⬛️⬛️🟩
+⬛️🟩⬛️⬛️🟩
+⬛️🟩⬛️⬛️🟩
+⬛️🟩🟨⬛️🟩
+🟩🟩🟩🟩🟩`
+        return false
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>Wordle Emoji Enhancer</h1>
+    <p>Paste your emoji share and click Enhance. <a id="demo-link" href="">Demo</a> </p>
+    <script>
+      document.getElementById("demo-link").onclick = demoClick
+    </script>
+    <form id="enhance">
+      <textarea id="emoji-input" rows="8"></textarea>
+      <input type="button" id="enhance" value="Enhance" onclick="enhanceEmojiFormInput();"></button>
+      <textarea id="output" rows="10"></textarea>
+      <a id="copy-link" href="">Copy Enhanced</a>
+    </form>
+    <script>
+      document.getElementById("copy-link").onclick = shareClick
+    </script>
+    <p>Legend</p>
+    <p>
+      <ul>
+        <li>+ numbers to the right of each row show: progress achieved by that guess out of a total of 10 to complete the puzzle. Green: 2, Yellow: 1, Black: 0</li>
+        <li>Puzzle Score: a total score for how well you performed on this puzzle. Lower scores are better. black: 2 pts, yellow: 1 pt, green: 0 pts. The goal is to give you a little more nuance in comparing your results with friends.</li>
+      </ul>
+    </p>
+</body>
+</html>
