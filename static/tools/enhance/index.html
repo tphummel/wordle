@@ -87,7 +87,7 @@
         var cleanEmoji = report.enrichedResults
           .map((line, i, arr) => {
             var netProgress = i === 0 ? line.lineProgress : line.lineProgress - arr[i-1].lineProgress
-            return `${line.lineEmoji.join('')}  +${netProgress}`
+            return `${line.lineEmoji.join('')}  ${netProgress === 0 ? '-' : '+' + netProgress * 10 + '%' }`
         }).join('\n')
         var output = `Wordle ${report.puzzleNum} ${report.guessCount}/6${report.isHardMode ? '*' : ''}
 Day ${report.puzzleDate}
