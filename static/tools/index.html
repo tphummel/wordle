@@ -11,6 +11,7 @@
   </head>
 
   <body>
+    <blockquote>2022-09-29: These tools might be of interest but I no longer use them as part of my daily capture workflow</blockquote>
     <h1>Wordle to JSON Bookmarklet</h1>
     <p>Drag this bookmarklet to your toolbar. After completing a puzzle, click the bookmarklet. Alert will pop open with all wordle data in json format</p>
     <a href="javascript:(function()%7Bvar%20stats%20%3D%20JSON.parse(window.localStorage.getItem(%22nyt-wordle-statistics%22))%3B%0Avar%20state%20%3D%20JSON.parse(window.localStorage.getItem(%22nyt-wordle-state%22))%3B%0A%0Avar%20completedAt%20%3D%20new%20Date(state.lastCompletedTs)%3B%0A%0Avar%20epoch%20%3D%20new%20Date(%222021-06-19T00%3A00%3A00%22)%3B%0Avar%20solutionCount%20%3D%202309%3B%0A%0Afunction%20getDaysBetween%20(start%2C%20end)%20%7B%0A%20%20var%20startDate%20%3D%20new%20Date(start)%3B%0A%20%20var%20daysBetween%20%3D%20new%20Date(end).setHours(0%2C%200%2C%200%2C%200)%20-%20startDate.setHours(0%2C%200%2C%200%2C%200)%3B%0A%20%20return%20Math.floor(daysBetween%20%2F%20864e5)%0A%7D%0A%0Afunction%20getPuzzleNumber(today)%20%7B%0A%20%20var%20puzzleNumber%20%3D%20getDaysBetween(epoch%2C%20today)%20%25%20solutionCount%0A%20%20return%20puzzleNumber%0A%7D%0Avar%20now%20%3D%20new%20Date%0Avar%20puzzleNumber%20%3D%20getPuzzleNumber(now)%0A%0Aalert(JSON.stringify(%7B%0A%20%20puzzle%3A%20puzzleNumber%2C%0A%20%20now%2C%0A%20%20state%2C%0A%20%20stats%0A%7D%2C%20null%2C%202))%3B%7D)()%3B">Wordle to JSON</a>(<--drag this to bookmarks bar)

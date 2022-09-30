@@ -390,16 +390,9 @@
 
 <h2>📒 Articles</h2>
 <ul>
-  <li>
-  {{ with .Site.GetPage "a/savor.md" }}
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a> on {{ .Date.Format "Jan 2, 2006" }}
+  {{ range (where .Site.RegularPages.ByDate.Reverse "Section" "a") }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> on {{ .Date.Format "Jan 2, 2006" }}</li>
   {{ end }}
-  </li>
-  <li>
-    {{ with .Site.GetPage "a/how-it-works.md" }}
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a> on {{ .Date.Format "Jan 2, 2006" }}
-    {{ end }}
-    </li>
 </ul>
 
 <h2>🏷 Tags</h2>
@@ -423,6 +416,7 @@
 
 <h2>🧰 Tools</h2>
 <ul>
+  <li><a href="/tools/enhance">Emoji Share Enhancer</a></li>
   <li><a href="/tools/">Bookmarklets</a></li>
 </ul>
 
