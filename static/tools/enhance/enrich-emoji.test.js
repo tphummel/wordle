@@ -57,7 +57,7 @@ Wordle 449 4/6*
     assert.equal(output.puzzleDate, '2022-09-11')
     assert.equal(output.guessCount, 4)
   },
-  function copyFromWhatsApp () {
+  function copyFromSlack () {
     const wordle = `
 Wordle 467 4/6*
 :black_large_square::black_large_square::black_large_square::black_large_square::black_large_square:
