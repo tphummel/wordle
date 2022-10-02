@@ -10,6 +10,7 @@ title: Puzzles Solved in Two Guesses
 
   {{ $found := where $wins "Params.state.rowIndex" $guesses }}
   <p>Count of puzzles solved in two guesses: <strong>{{ len $found }}</strong></p>
+  <p>Pct of Total: <strong>{{ lang.NumFmt 2 (mul (div (float (len $found)) (len $wordles)) 100) }}% ({{ len $found }} / {{ len $wordles }})</strong></p>
 
   {{ with (index $found 0) }}
   <p>Example: <a href="{{ .RelPermalink }}">Wordle {{ index .Params.puzzles 0 }} / {{ dateFormat "Jan 2, 2006" .Date }}</a></p>
