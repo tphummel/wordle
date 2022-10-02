@@ -7,9 +7,7 @@ Definition: Puzzles which contain a non-solving guess with all letters correct o
 {{< om.inline >}}
   {{ $wordles := where .Site.RegularPages "Section" "w" }}
   {{ $found := partial "anagrams.html" $wordles }}
-
-  <p>Puzzle Count: <strong>{{ len $found }}</strong></p>
-
+  <p>Pct of Total: <strong>{{ lang.NumFmt 2 (mul (div (float (len $found)) (len $wordles)) 100) }}% ({{ len $found }} / {{ len $wordles }})</strong></p>
   <table>
     <tr>
       <th>Date</th>
