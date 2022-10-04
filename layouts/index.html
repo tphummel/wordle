@@ -416,8 +416,9 @@
 
 <h2>🧰 Tools</h2>
 <ul>
-  <li><a href="/tools/enhance">Emoji Share Enhancer</a></li>
-  <li><a href="/tools/">Bookmarklets</a></li>
+  {{ range (where .Site.RegularPages "Section" "t") }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+  {{ end }}
 </ul>
 
 <a href="index.xml">RSS</a> | <a href="https://github.com/tphummel/wordle">GitHub</a>
