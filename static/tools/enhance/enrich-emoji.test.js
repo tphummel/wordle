@@ -57,7 +57,7 @@ Wordle 449 4/6*
     assert.equal(output.puzzleDate, '2022-09-11')
     assert.equal(output.guessCount, 4)
   },
-  function copyFromSlack () {
+  function copyFromSlackDarkAbsent () {
     const wordle = `
 Wordle 467 4/6*
 :black_large_square::black_large_square::black_large_square::black_large_square::black_large_square:
@@ -66,13 +66,29 @@ Wordle 467 4/6*
 :large_green_square::large_green_square::large_green_square::large_green_square::large_green_square:
 `
     const output = lib(wordle)
-    console.log(output)
+    // console.log(output)
 
     assert.equal(output.puzzleNum, 467)
     assert.equal(output.isHardMode, true)
     assert.equal(output.puzzleScore, 22)
     assert.equal(output.puzzleDate, '2022-09-29')
     assert.equal(output.guessCount, 4)
+  },
+  function copyFromSlackLightAbsent () {
+    const wordle = `
+Wordle 468 3/6*
+:white_large_square::white_large_square::white_large_square::large_green_square::white_large_square:
+:large_green_square::white_large_square::white_large_square::large_green_square::white_large_square:
+:large_green_square::large_green_square::large_green_square::large_green_square::large_green_square:
+`
+    const output = lib(wordle)
+    console.log(output)
+
+    assert.equal(output.puzzleNum, 468)
+    assert.equal(output.isHardMode, true)
+    assert.equal(output.puzzleScore, 14)
+    assert.equal(output.puzzleDate, '2022-09-30')
+    assert.equal(output.guessCount, 3)
   },
 ]
 
