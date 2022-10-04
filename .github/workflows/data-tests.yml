@@ -1,8 +1,16 @@
 name: Wordle Data Tests
 
 on:
-  - push
-  - pull_request
+  push:
+    paths:
+    - 'content/**'
+    paths_ignore: 
+    - 'assets/**'
+  pull_request:
+    paths:
+    - 'content/**'
+    paths_ignore: 
+    - 'assets/**'
 
 jobs:
   run-data-tests:
