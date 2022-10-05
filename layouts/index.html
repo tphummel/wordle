@@ -88,6 +88,16 @@
     <th>Pct of Total</th>
   </tr>
 
+{{ $homoGuessesOnly := partial "homo-guesses-only" $wordles }}
+{{ with .Site.GetPage "homogenous-guesses-only.md" }}
+  <tr>
+    <td><a href="{{ .RelPermalink }}">Homogenous Guesses Only</a></td>
+    <td>
+      {{ lang.NumFmt 2 (mul (div (float (len $homoGuessesOnly)) (len $wordles)) 100) }}% (<a href="{{ .RelPermalink }}">{{ len $homoGuessesOnly }}</a> / {{ len $wordles }})
+    </td>
+  </tr>
+{{ end }}
+
 {{ $openerMisses := partial "opener-misses" $wordles }}
 {{ with .Site.GetPage "opener-misses.md" }}
   <tr>
