@@ -58,6 +58,7 @@ const fileText = `---
 title: "${puzzleNumber}: ${puzzleDate}"
 date: ${getDateTime(state.lastCompletedTs)+getLocalTimeZone()}
 tags: []
+contests: []
 words: ${JSON.stringify(state.boardState.filter(w => w !== ''))}
 puzzles: [${puzzleNumber}]
 state: ${JSON.stringify(state, null, 2)}
@@ -67,7 +68,7 @@ stats: ${JSON.stringify(stats, null, 2)}
 `;
 
 const encodedFileText = encodeURIComponent(fileText);
-const filename = `${puzzleDate}.md`;
+const filename = `${puzzleDate}/_index.md`;
 const githubQueryLink = "https://github.com/tphummel/wordle/new/main/content/w/new?quick_pull=1&labels=puzzle&value=" + encodedFileText +"&filename=" + filename;
 // Call completion to finish
 completion(githubQueryLink);
