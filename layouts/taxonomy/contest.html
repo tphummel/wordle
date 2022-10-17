@@ -1,0 +1,23 @@
+{{ define "main" }}
+<h1>{{.Title}}</h1>
+
+<p>{{ partial "breadcrumb.html" . }}</p>
+
+{{ with .Content }}
+<div>{{ . }}</div>
+{{ end }}
+
+<p>Starting Word: {{ .Params.startingWord }}</p>
+
+<p>Puzzles Played in Contest: {{ len .Data.Pages }}</p>
+
+<p>Puzzle List</p>
+<ul>
+  {{ range .Data.Pages }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{.Title}}</a>
+    </li>
+  {{ end }}
+</ul>
+
+{{ end }}

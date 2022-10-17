@@ -2,6 +2,7 @@
 title: "415: 2022-08-08"
 date: 2022-08-08T06:49:43-07:00
 tags: []
+contests: ["2022-08-thing"]
 words: ["thing","stain","untie","unfit"]
 puzzles: [415]
 state: {

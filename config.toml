@@ -12,6 +12,7 @@ enableInlineShortcodes = true
     tag = 'tags'
     word = 'words'
     puzzle = 'puzzles'
+    contest = 'contests'
 
 [markup]
   [markup.tableOfContents]
