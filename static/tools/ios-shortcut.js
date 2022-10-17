@@ -68,7 +68,7 @@ stats: ${JSON.stringify(stats, null, 2)}
 `;
 
 const encodedFileText = encodeURIComponent(fileText);
-const filename = `${puzzleDate}/_index.md`;
+const filename = `${puzzleDate}/index.md`;
 const githubQueryLink = "https://github.com/tphummel/wordle/new/main/content/w/new?quick_pull=1&labels=puzzle&value=" + encodedFileText +"&filename=" + filename;
 // Call completion to finish
 completion(githubQueryLink);
