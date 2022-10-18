@@ -1,32 +1,40 @@
 ---
-title: "420: 2022-08-13"
-date: 2022-08-13T08:06:40-07:00
+title: "417: 2022-08-10"
+date: 2022-08-10T06:21:21-07:00
 tags: []
-words: ["thing","hunch","hunky"]
-puzzles: [420]
+contests: ["2022-08-thing"]
+words: ["thing","wring","sling","cling"]
+puzzles: [417]
 state: {
   "boardState": [
     "thing",
-    "hunch",
-    "hunky",
-    "",
+    "wring",
+    "sling",
+    "cling",
     "",
     ""
   ],
   "evaluations": [
     [
       "absent",
-      "present",
       "absent",
-      "present",
-      "absent"
+      "correct",
+      "correct",
+      "correct"
     ],
     [
-      "correct",
-      "correct",
-      "correct",
       "absent",
-      "absent"
+      "absent",
+      "correct",
+      "correct",
+      "correct"
+    ],
+    [
+      "absent",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
     ],
     [
       "correct",
@@ -36,32 +44,31 @@ state: {
       "correct"
     ],
     null,
-    null,
     null
   ],
-  "rowIndex": 3,
-  "solution": "hunky",
+  "rowIndex": 4,
+  "solution": "cling",
   "gameStatus": "WIN",
-  "lastPlayedTs": 1660403200833,
-  "lastCompletedTs": 1660403200833,
+  "lastPlayedTs": 1660137681018,
+  "lastCompletedTs": 1660137681018,
   "restoringFromLocalStorage": null,
   "hardMode": true
 }
 stats: {
-  "currentStreak": 11,
+  "currentStreak": 8,
   "maxStreak": 69,
   "guesses": {
     "1": 0,
     "2": 7,
-    "3": 29,
+    "3": 27,
     "4": 43,
-    "5": 32,
+    "5": 31,
     "6": 7,
     "fail": 1
   },
   "winPercentage": 99,
-  "gamesPlayed": 119,
-  "gamesWon": 118,
+  "gamesPlayed": 116,
+  "gamesWon": 115,
   "averageGuesses": 4
 }
 ---

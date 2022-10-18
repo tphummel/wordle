@@ -2,6 +2,7 @@
 title: "418: 2022-08-11"
 date: 2022-08-11T06:34:15-07:00
 tags: []
+contests: ["2022-08-thing"]
 words: ["thing","groan","glean"]
 puzzles: [418]
 state: {
