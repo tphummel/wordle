@@ -1,8 +1,6 @@
 {{ define "main" }}
 <h1>{{.Title}}</h1>
-
 <p>{{ partial "breadcrumb.html" . }}</p>
-
 {{ with .Content }}
 <div>{{ . }}</div>
 {{ end }}
@@ -11,13 +9,47 @@
 
 <p>Puzzles Played in Contest: {{ len .Data.Pages }}</p>
 
-<p>Puzzle List</p>
+<table>
+  <tr>
+    <th>Puzzle</th>
+    <th>Mandy</th>
+    <th>Fred</th>
+    <th>Tom</th>
+  </tr>
+{{ $scoreboard := dict "mandy" 0 "fred" 0 "tom" 0 }}
+{{ range .Data.Pages }}
+  <tr>
+    <td><a href="{{ .RelPermalink }}">{{.Title}}</a></td>
+    <td>
+      {{ with .Resources.GetMatch "mandy.json" }}
+        {{ $mandy := .Content | transform.Unmarshal }}
+        {{ $scoreboard = merge $scoreboard (dict "mandy" (add (index $scoreboard "mandy") $mandy.puzzleScore)) }}
+        {{ $mandy.puzzleScore }}
+      {{ end }}
+    </td>
+    <td>
+      {{ with .Resources.GetMatch "fred.json" }}
+        {{ $fred := .Content | transform.Unmarshal }}
+        {{ $scoreboard = merge $scoreboard (dict "fred" (add (index $scoreboard "fred") $fred.puzzleScore)) }}
+        {{ $fred.puzzleScore }}
+      {{ end }}
+    </td>
+    <td>
+      {{ $tomPuzzleScore := partial "puzzle-score" . }}
+      {{ $scoreboard = merge $scoreboard (dict "tom" (add (index $scoreboard "tom") $tomPuzzleScore )) }}
+      {{ $tomPuzzleScore }}
+    </td>
+  </tr>
+{{ end }}
+  <tr>
+    <th>Total</th>
+    <th>{{ index $scoreboard "mandy" }}</th>
+    <th>{{ index $scoreboard "fred" }}</th>
+    <th>{{ index $scoreboard "tom" }}</th>
+  </tr>
+</table>
 <ul>
-  {{ range .Data.Pages }}
-    <li>
-      <a href="{{ .RelPermalink }}">{{.Title}}</a>
-    </li>
-  {{ end }}
+  
 </ul>
 
 {{ end }}
