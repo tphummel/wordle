@@ -1,3 +1,5 @@
 resources/_gen
 public/
 notion-data/
+**/node_modules/
+**/.nyc_output/
