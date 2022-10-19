@@ -63,14 +63,14 @@ let state = {
     timestamp: data.timestamp
 };
 const fileText = `---
-title: "${data.game.id}: ${puzzleDate}"
+title: "${data.game.dayOffset}: ${puzzleDate}"
 date: ${getDateTime(data.game.timestamps.lastCompleted)+getLocalTimeZone()}
 tags: []
 contests: []
 words: ${JSON.stringify(words)}
-puzzles: [${data.game.id}]
+puzzles: [${data.game.dayOffset}]
 state: ${JSON.stringify(state, null, 2)}
-stats: ${JSON.stringify(data.game.stats, null, 2)}
+stats: ${JSON.stringify(data.stats, null, 2)}
 ---
 <!-- more -->
 `;
