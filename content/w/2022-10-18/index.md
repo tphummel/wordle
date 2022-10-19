@@ -4,7 +4,7 @@ date: 2022-10-18T07:15:20-07:00
 tags: []
 contests: []
 words: ["metal", "stone", "chest", "exist"]
-puzzles: [485]
+puzzles: [486]
 state: {
   "boardState": [
     "metal",
