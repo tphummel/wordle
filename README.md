@@ -3,9 +3,9 @@
 # What? Why?
 
 - [Wordle](https://www.nytimes.com/games/wordle/index.html) is a fun and popular daily word game.
-- Wordle doesn't currently (as of 2022-02-26) store high fidelity data historically. The share via emoji feature, while very cool, intentionally doesn't capture the actual guesses you made - so as not to spoil today's puzzle for others.
+- Wordle doesn't currently (as of 2022-10-18) store high fidelity data historically. The share via emoji feature, while very cool, intentionally doesn't capture the actual guesses you made - so as not to spoil today's puzzle for others.
 - I want to learn about myself and my play style.
-- I am not trying solve or break Wordle. I want to savor the ritual of daily play.
+- I am not trying solve or break Wordle. I want to [savor](https://wordle.tomhummel.com/a/savor/) the ritual of daily play.
 
 Read more about [how this site works](https://wordle.tomhummel.com/a/how-it-works/). 
 

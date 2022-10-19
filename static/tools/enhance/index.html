@@ -109,6 +109,11 @@ Puzzle Score ${report.puzzleScore}
         return false
       }
 
+      function shareEvalsJSONClick() {
+        navigator.clipboard.writeText(JSON.stringify(report.results, false, 2))
+        return false
+      }
+
       function demoClick() {
         document.querySelector('form#enhance textarea#emoji-input').value = `Wordle 465 5/6*
 
@@ -151,6 +156,12 @@ Puzzle Score ${report.puzzleScore}
       </p>
       <script>
         document.getElementById("copy-json").onclick = shareJSONClick
+      </script>
+      <p>
+        <input type="button" id="copy-evals-json" value="Copy Evaluations JSON to Clipboard" />
+      </p>
+      <script>
+        document.getElementById("copy-evals-json").onclick = shareEvalsJSONClick
       </script>
     </form>
     <div style="opacity:0.5; text-align:center">
