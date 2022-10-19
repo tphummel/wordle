@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  	<title>Wordle Emoji Share Enhancer</title>
-    <link rel="stylesheet" href="../../dark.min.css">
+---
+title: Emoji Enhance
+date: 2022-10-03T09:59:00.000-08:00
+toc: false
+aliases:
+- /tools/enhance
+---
+
     <script type="text/javascript">
       var epoch = new Date("2021-06-19T00:00:00")
       var solutionCount = 2309
@@ -120,9 +121,7 @@ Puzzle Score ${report.puzzleScore}
         return false
       }
     </script>
-  </head>
-
-  <body>
+  
     <h1>Wordle Emoji Share Enhancer</h1>
     <p>Paste your emoji share and click Enhance. <a id="demo-link" href="">Demo</a> </p>
     <script>
@@ -162,5 +161,3 @@ Puzzle Score ${report.puzzleScore}
     <div style="opacity:0.5; text-align:center">
       💛 No cookies. No third-party javascript. 💚
     </div>
-  </body>
-</html>
