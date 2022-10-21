@@ -48,9 +48,18 @@ function getDateTime (dateStr) {
 
 let puzzleDate = getDateTime(data.game.timestamps.lastCompleted).substring(0,10);
 let words = data.game.boardState.filter(w => w !== '');
+
+const evaluations = Array.from(document.querySelector("#wordle-app-game > div").children[0].children).map((row) => {
+    const letters = Array.from(row.children).map((letter) => {
+        return letter.children[0].ariaLabel.split(" ")[1];
+    } );
+    if (letters[0] !== undefined) return letters;
+    return null;
+} );
+
 let state = {
     boardState: data.game.boardState,
-    evaluations: [],
+    evaluations,
     rowIndex: data.game.currentRowIndex,
     solution: words[words.length - 1],
     gameStatus: data.game.status,
