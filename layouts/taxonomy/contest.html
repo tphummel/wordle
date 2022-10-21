@@ -5,7 +5,9 @@
 <div>{{ . }}</div>
 {{ end }}
 
-<p>Starting Word: {{ .Params.startingWord }}</p>
+{{ with $.Site.GetPage (printf "/%s/%s" "words" .Params.startingWord) }}
+  <p>Starting Word: <a href="{{ .RelPermalink }}">{{ .Name }}</a></p>
+{{ end }}
 
 <p>Puzzles Played in Contest: {{ len .Data.Pages }}</p>
 

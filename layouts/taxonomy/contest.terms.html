@@ -1,0 +1,42 @@
+{{ define "main" }}
+<h1>{{.Title}}</h1>
+
+<p>{{ partial "breadcrumb.html" . }}</p>
+
+{{ with .Content }}
+<div>{{ . }}</div>
+{{ end }}
+
+<table>
+  <tr>
+    <td>Contest</td>
+    <td>Starting Word</td>
+    <td>Puzzle Count</td>
+    <td>First Puzzle</td>
+    <td>Last Puzzle</td>
+  </tr>
+
+  {{ range .Data.Terms.Alphabetical }}
+    {{ $name := .Name }}
+    {{ $starter := .Page.Params.startingWord }}
+    {{ $count := .Count }}
+    {{ $first := index (first 1 .Pages.ByDate) 0 }}
+    {{ $last := index (last 1 .Pages.ByDate) 0 }}
+
+    {{ with $.Site.GetPage (printf "/%s/%s" "contests" $name) }}
+    <tr>
+      <td><a href="{{ .RelPermalink }}">{{ .Name }}</a></td>
+      <td>
+        {{ with $.Site.GetPage (printf "/%s/%s" "words" $starter) }}
+          <a href="{{ .RelPermalink }}">{{ .Name }}</a>
+        {{ end }}
+      </td>
+      <td>{{ $count }}</td>
+      <td><a href="{{ $first.RelPermalink}}">{{ $first.Date.Format "Jan 2, 2006" }}</a></td>
+      <td>{{ if gt $count 1 }}<a href="{{ $last.RelPermalink}}">{{ $last.Date.Format "Jan 2, 2006" }}</a>{{ else }}--{{ end }}</td>
+    </tr>
+    {{ end }}
+
+  {{ end }}
+</table>
+{{ end }}
