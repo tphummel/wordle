@@ -2,7 +2,7 @@
 title: "488: 2022-10-20"
 date: 2022-10-20T06:34:45-07:00
 tags: []
-contests: []
+contests: ["2022-10-metal"]
 words: ["metal","demon","denim"]
 puzzles: [488]
 state: {

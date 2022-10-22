@@ -1,31 +1,39 @@
 ---
-title: "420: 2022-08-13"
-date: 2022-08-13T08:06:40-07:00
+title: "415: 2022-08-08"
+date: 2022-08-08T06:49:43-07:00
 tags: []
-words: ["thing","hunch","hunky"]
-puzzles: [420]
+contests: ["2022-08-thing"]
+words: ["thing","stain","untie","unfit"]
+puzzles: [415]
 state: {
   "boardState": [
     "thing",
-    "hunch",
-    "hunky",
-    "",
+    "stain",
+    "untie",
+    "unfit",
     "",
     ""
   ],
   "evaluations": [
     [
-      "absent",
       "present",
       "absent",
+      "present",
       "present",
       "absent"
     ],
     [
-      "correct",
-      "correct",
-      "correct",
       "absent",
+      "present",
+      "absent",
+      "correct",
+      "present"
+    ],
+    [
+      "correct",
+      "correct",
+      "present",
+      "correct",
       "absent"
     ],
     [
@@ -36,34 +44,34 @@ state: {
       "correct"
     ],
     null,
-    null,
     null
   ],
-  "rowIndex": 3,
-  "solution": "hunky",
+  "rowIndex": 4,
+  "solution": "unfit",
   "gameStatus": "WIN",
-  "lastPlayedTs": 1660403200833,
-  "lastCompletedTs": 1660403200833,
+  "lastPlayedTs": 1659966583620,
+  "lastCompletedTs": 1659966583620,
   "restoringFromLocalStorage": null,
   "hardMode": true
 }
 stats: {
-  "currentStreak": 11,
+  "currentStreak": 6,
   "maxStreak": 69,
   "guesses": {
     "1": 0,
     "2": 7,
-    "3": 29,
-    "4": 43,
-    "5": 32,
+    "3": 27,
+    "4": 42,
+    "5": 30,
     "6": 7,
     "fail": 1
   },
   "winPercentage": 99,
-  "gamesPlayed": 119,
-  "gamesWon": 118,
+  "gamesPlayed": 114,
+  "gamesWon": 113,
   "averageGuesses": 4
 }
 ---
 
 <!-- more -->
+First day with coordinated opening word with my parents

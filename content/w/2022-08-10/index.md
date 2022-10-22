@@ -2,6 +2,7 @@
 title: "417: 2022-08-10"
 date: 2022-08-10T06:21:21-07:00
 tags: []
+contests: ["2022-08-thing"]
 words: ["thing","wring","sling","cling"]
 puzzles: [417]
 state: {
