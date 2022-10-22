@@ -204,13 +204,10 @@
 </p>
 {{ .Content }}
 
-{{ with .Params.contests }}
-  {{ $contest := index . 0 }}
-  {{ with $.GetPage (printf "/contests/%s" $contest) }}
-    <p>
-      Contest: <a href="{{ .RelPermalink}}">{{ $contest }}</a>
-    </p>
-    {{ end }}
+{{ range .GetTerms "contests" }}
+  <p>
+    Contest: <a href="{{ .RelPermalink}}">{{ .LinkTitle }}</a>
+  </p>
 {{ end }}
 
 {{ with .PrevInSection }}
