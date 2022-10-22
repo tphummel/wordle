@@ -53,4 +53,26 @@
 {{ end }}
 </table>
 
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Score</th>
+    <th>Guesses</th>
+  </tr>
+  {{ range $name, $stats := $scoreboard }}
+    <tr>
+      <td>{{ $name | title }}</td>
+      {{ if $stats.gameCount }}
+      <td>
+        {{ lang.NumFmt 2 (div $stats.scoreSum $stats.gameCount) }} ({{ $stats.scoreSum }} / {{ $stats.gameCount }})
+      </td>
+      <td>
+        {{ lang.NumFmt 2 (div $stats.guessSum $stats.gameCount) }} ({{ $stats.guessSum }} / {{ $stats.gameCount }})
+      </td>
+      {{ else }}
+      <td>-</td><td>-</td>
+      {{ end }}
+    </tr>
+  {{ end }}
+</table>
 {{ end }}
