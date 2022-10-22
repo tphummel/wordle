@@ -48,7 +48,11 @@
         {{ $scoreboard = merge $scoreboard (dict $player $after) }}
       {{ end }}
       <td>
-        {{ $w.puzzleScore }} / {{ $w.guessCount }}
+        {{ with $w }}
+          {{ .puzzleScore }} / {{ .guessCount }}
+        {{ else }}
+          --
+        {{ end }}
       </td>
     {{ end }}
   </tr>
