@@ -405,12 +405,32 @@
   {{ end }}
 </ul>
 
+<h2>🧰 Tools</h2>
+<ul>
+  <li><a href="/tools/enhance">Emoji Share Enhancer</a></li>
+  <li><a href="/tools/">Bookmarklets</a></li>
+</ul>
+
+<h2>⚔️ Contests</h2>
+<ul>
+{{range $name, $taxonomy := .Site.Taxonomies.contests}}
+  {{ $cnt := .Count }}
+  {{ with $.Site.GetPage (printf "/contests/%s" $name) }}
+  <li>
+    <a href={{ .RelPermalink }} title="All pages with tag {{$name}}">{{ .LinkTitle }}</a>
+    <sup>{{ $cnt }}</sup>
+  </li>
+  {{end}}
+{{end}}
+</ul>
+
 <h2>🏷 Tags</h2>
 <ul>
-{{range $name, $taxonomy := .Site.Taxonomies.tags}} {{ $cnt := .Count }}
+{{range $name, $taxonomy := .Site.Taxonomies.tags}} 
+  {{ $cnt := .Count }}
   {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
   <li>
-    <a href={{ .RelPermalink }} title="All pages with tag {{$name}}">{{ $name }}</a>
+    <a href={{ .RelPermalink }} title="All pages with tag {{$name}}">{{ .LinkTitle }}</a>
     <sup>{{ $cnt }}</sup>
   </li>
   {{end}}
@@ -422,12 +442,6 @@
 {{ range (where .Site.RegularPages "Section" "r") }}
   <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
 {{ end }}
-</ul>
-
-<h2>🧰 Tools</h2>
-<ul>
-  <li><a href="/tools/enhance">Emoji Share Enhancer</a></li>
-  <li><a href="/tools/">Bookmarklets</a></li>
 </ul>
 
 <a href="index.xml">RSS</a> | <a href="https://github.com/tphummel/wordle">GitHub</a>
