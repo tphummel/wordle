@@ -20,7 +20,7 @@
   {{ range .Data.Terms.Alphabetical }}
     {{ $name := .Name }}
     {{ $starter := .Page.Params.startingWord }}
-    {{ $guests := delimit .Page.Params.extraPlayers ", " | title }} 
+    {{ $guests := delimit .Page.Params.guests ", " | title }} 
     {{ $count := .Count }}
     {{ $first := index (first 1 .Pages.ByDate) 0 }}
     {{ $last := index (last 1 .Pages.ByDate) 0 }}
