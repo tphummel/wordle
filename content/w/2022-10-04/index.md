@@ -2,6 +2,7 @@
 title: "472: 2022-10-04"
 date: 2022-10-04T06:15:45-07:00
 tags: []
+contests: ["2022-10-metal"]
 words: ["metal","boing","bogus","bough"]
 puzzles: [472]
 state: {

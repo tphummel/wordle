@@ -1,0 +1,136 @@
+{
+  "results": [
+    [
+      "absent",
+      "present",
+      "absent",
+      "absent",
+      "correct"
+    ],
+    [
+      "absent",
+      "absent",
+      "absent",
+      "correct",
+      "correct"
+    ],
+    [
+      "absent",
+      "absent",
+      "absent",
+      "correct",
+      "correct"
+    ],
+    [
+      "absent",
+      "absent",
+      "absent",
+      "correct",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "present",
+        "absent",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟨",
+        "⬛️",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 25,
+  "puzzleNum": 490,
+  "puzzleDate": "2022-10-22",
+  "guessCount": 5,
+  "isHardMode": false
+}

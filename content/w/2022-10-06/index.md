@@ -2,6 +2,7 @@
 title: "474: 2022-10-06"
 date: 2022-10-06T06:18:20-07:00
 tags: []
+contests: ["2022-10-metal"]
 words: ["metal","stilt","sloth"]
 puzzles: [474]
 state: {
