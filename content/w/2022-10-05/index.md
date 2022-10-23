@@ -2,6 +2,7 @@
 title: "473: 2022-10-05"
 date: 2022-10-05T05:12:08-07:00
 tags: []
+contests: ["2022-10-metal"]
 words: ["metal","marsh"]
 puzzles: [473]
 state: {

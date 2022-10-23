@@ -1,45 +1,46 @@
 ---
-title: "475: 2022-10-07"
-date: 2022-10-07T06:21:33-07:00
+title: "470: 2022-10-02"
+date: 2022-10-02T08:29:30-07:00
 tags: []
-words: ["metal","grain","handy","candy","dandy"]
-puzzles: [475]
+contests: ["2022-10-metal"]
+words: ["metal","threw","tweet","twice","twine"]
+puzzles: [470]
 state: {
   "boardState": [
     "metal",
-    "grain",
-    "handy",
-    "candy",
-    "dandy",
+    "threw",
+    "tweet",
+    "twice",
+    "twine",
     ""
   ],
   "evaluations": [
     [
       "absent",
-      "absent",
-      "absent",
       "present",
+      "present",
+      "absent",
       "absent"
     ],
     [
+      "correct",
       "absent",
       "absent",
       "present",
-      "absent",
       "present"
     ],
     [
+      "correct",
+      "correct",
+      "present",
       "absent",
-      "correct",
-      "correct",
-      "correct",
-      "correct"
+      "absent"
     ],
     [
+      "correct",
+      "correct",
+      "correct",
       "absent",
-      "correct",
-      "correct",
-      "correct",
       "correct"
     ],
     [
@@ -52,33 +53,31 @@ state: {
     null
   ],
   "rowIndex": 5,
-  "solution": "dandy",
+  "solution": "twine",
   "gameStatus": "WIN",
-  "lastPlayedTs": 1665148893459,
-  "lastCompletedTs": 1665148893459,
+  "lastPlayedTs": 1664724570201,
+  "lastCompletedTs": 1664724570201,
   "restoringFromLocalStorage": null,
   "hardMode": true
 }
 stats: {
-  "currentStreak": 17,
+  "currentStreak": 12,
   "maxStreak": 69,
   "guesses": {
     "1": 0,
-    "2": 11,
-    "3": 42,
-    "4": 63,
-    "5": 44,
+    "2": 10,
+    "3": 41,
+    "4": 61,
+    "5": 43,
     "6": 9,
     "fail": 5
   },
   "winPercentage": 97,
-  "gamesPlayed": 174,
-  "gamesWon": 169,
+  "gamesPlayed": 169,
+  "gamesWon": 164,
   "averageGuesses": 4
 }
 ---
 
 <!-- more -->
-WordleBot
-Skill 93/99
-Luck 39/99
+Third guess was weak but it was helpful in moving ahead.

@@ -2,6 +2,7 @@
 title: "469: 2022-10-01"
 date: 2022-10-01T06:53:45-07:00
 tags: []
+contests: ["2022-10-metal"]
 words: ["metal","leash","learn","leaky","leave"]
 puzzles: [469]
 state: {

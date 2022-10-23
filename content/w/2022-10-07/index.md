@@ -1,16 +1,17 @@
 ---
-title: "477: 2022-10-09"
-date: 2022-10-09T06:58:55-07:00
+title: "475: 2022-10-07"
+date: 2022-10-07T06:21:33-07:00
 tags: []
-words: ["metal","hound","hoody","howdy"]
-puzzles: [477]
+contests: ["2022-10-metal"]
+words: ["metal","grain","handy","candy","dandy"]
+puzzles: [475]
 state: {
   "boardState": [
     "metal",
-    "hound",
-    "hoody",
-    "howdy",
-    "",
+    "grain",
+    "handy",
+    "candy",
+    "dandy",
     ""
   ],
   "evaluations": [
@@ -18,20 +19,27 @@ state: {
       "absent",
       "absent",
       "absent",
-      "absent",
+      "present",
       "absent"
     ],
     [
-      "correct",
-      "correct",
       "absent",
+      "absent",
+      "present",
       "absent",
       "present"
     ],
     [
-      "correct",
-      "correct",
       "absent",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ],
+    [
+      "absent",
+      "correct",
+      "correct",
       "correct",
       "correct"
     ],
@@ -42,37 +50,36 @@ state: {
       "correct",
       "correct"
     ],
-    null,
     null
   ],
-  "rowIndex": 4,
-  "solution": "howdy",
+  "rowIndex": 5,
+  "solution": "dandy",
   "gameStatus": "WIN",
-  "lastPlayedTs": 1665323935225,
-  "lastCompletedTs": 1665323935225,
+  "lastPlayedTs": 1665148893459,
+  "lastCompletedTs": 1665148893459,
   "restoringFromLocalStorage": null,
   "hardMode": true
 }
 stats: {
-  "currentStreak": 19,
+  "currentStreak": 17,
   "maxStreak": 69,
   "guesses": {
     "1": 0,
     "2": 11,
     "3": 42,
-    "4": 64,
-    "5": 45,
+    "4": 63,
+    "5": 44,
     "6": 9,
     "fail": 5
   },
   "winPercentage": 97,
-  "gamesPlayed": 176,
-  "gamesWon": 171,
+  "gamesPlayed": 174,
+  "gamesWon": 169,
   "averageGuesses": 4
 }
 ---
-<!-- more -->
 
+<!-- more -->
 WordleBot
-Skill 83/99
-Luck 44/99
+Skill 93/99
+Luck 39/99
