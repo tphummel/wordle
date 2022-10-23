@@ -15,7 +15,9 @@ function analyzeEmoji (input) {
   var guessPieces = titlePieces[2].split("")
   var [guessCount, slash, allowed, modeStr] = guessPieces
 
-  var results = input.match(/[🟩🟨⬛️]*/g)
+  var results = input
+    .replace(/⬜/g, '⬛️')
+    .match(/[🟩🟨⬛️]*/g)
     .filter(r => r !== '')
     .map((line) => {
       return [...line]
