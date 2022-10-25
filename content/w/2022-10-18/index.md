@@ -2,7 +2,7 @@
 title: "486: 2022-10-18"
 date: 2022-10-18T07:15:20-07:00
 tags: []
-contests: []
+contests: ["2022-10-metal"]
 words: ["metal", "stone", "chest", "exist"]
 puzzles: [486]
 state: {

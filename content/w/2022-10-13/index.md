@@ -1,14 +1,15 @@
 ---
-title: "484: 2022-10-16"
-date: 2022-10-16T05:47:53-07:00
+title: "481: 2022-10-13"
+date: 2022-10-13T08:02:57-07:00
 tags: []
-words: ["metal","crane","spade"]
-puzzles: [484]
+contests: ["2022-10-metal"]
+words: ["metal","equal"]
+puzzles: [481]
 state: {
   "boardState": [
     "metal",
-    "crane",
-    "spade",
+    "equal",
+    "",
     "",
     "",
     ""
@@ -18,14 +19,7 @@ state: {
       "absent",
       "present",
       "absent",
-      "present",
-      "absent"
-    ],
-    [
-      "absent",
-      "absent",
       "correct",
-      "absent",
       "correct"
     ],
     [
@@ -35,40 +29,39 @@ state: {
       "correct",
       "correct"
     ],
+    null,
     null,
     null,
     null
   ],
-  "rowIndex": 3,
-  "solution": "spade",
+  "rowIndex": 2,
+  "solution": "equal",
   "gameStatus": "WIN",
-  "lastPlayedTs": 1665924473990,
-  "lastCompletedTs": 1665924473990,
+  "lastPlayedTs": 1665673377978,
+  "lastCompletedTs": 1665673377978,
   "restoringFromLocalStorage": null,
   "hardMode": true
 }
 stats: {
-  "currentStreak": 26,
+  "currentStreak": 23,
   "maxStreak": 69,
   "guesses": {
     "1": 0,
     "2": 12,
-    "3": 43,
-    "4": 66,
+    "3": 42,
+    "4": 65,
     "5": 47,
-    "6": 10,
+    "6": 9,
     "fail": 5
   },
   "winPercentage": 97,
-  "gamesPlayed": 183,
-  "gamesWon": 178,
+  "gamesPlayed": 180,
+  "gamesWon": 175,
   "averageGuesses": 4
 }
 ---
 
 <!-- more -->
-Pleased with this one.
-
 WordleBot
-Skill 95/99
-Luck 59/99
+Skill 99/99
+Luck 86/99

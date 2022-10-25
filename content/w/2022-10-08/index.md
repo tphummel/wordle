@@ -2,6 +2,7 @@
 title: "476: 2022-10-08"
 date: 2022-10-08T00:09:52-07:00
 tags: []
+contests: ["2022-10-metal"]
 words: ["metal","scour","prior","rigor","vigor"]
 puzzles: [476]
 state: {

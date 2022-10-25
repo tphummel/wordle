@@ -2,6 +2,7 @@
 title: "483: 2022-10-15"
 date: 2022-10-15T07:42:47-07:00
 tags: []
+contests: ["2022-10-metal"]
 words: ["metal","gator","batch","patch","watch","catch"]
 puzzles: [483]
 state: {

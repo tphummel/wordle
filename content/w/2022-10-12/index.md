@@ -1,15 +1,16 @@
 ---
-title: "471: 2022-10-03"
-date: 2022-10-03T05:56:29-07:00
+title: "480: 2022-10-12"
+date: 2022-10-12T05:48:10-07:00
 tags: []
-words: ["metal","trick","point","sting"]
-puzzles: [471]
+contests: ["2022-10-metal"]
+words: ["metal","wound","noisy","ionic"]
+puzzles: [480]
 state: {
   "boardState": [
     "metal",
-    "trick",
-    "point",
-    "sting",
+    "wound",
+    "noisy",
+    "ionic",
     "",
     ""
   ],
@@ -17,23 +18,23 @@ state: {
     [
       "absent",
       "absent",
-      "present",
       "absent",
-      "absent"
-    ],
-    [
-      "present",
-      "absent",
-      "correct",
       "absent",
       "absent"
     ],
     [
       "absent",
+      "correct",
       "absent",
+      "present",
+      "absent"
+    ],
+    [
+      "present",
       "correct",
-      "correct",
-      "present"
+      "present",
+      "absent",
+      "absent"
     ],
     [
       "correct",
@@ -46,30 +47,33 @@ state: {
     null
   ],
   "rowIndex": 4,
-  "solution": "sting",
+  "solution": "ionic",
   "gameStatus": "WIN",
-  "lastPlayedTs": 1664801789174,
-  "lastCompletedTs": 1664801789174,
+  "lastPlayedTs": 1665578890254,
+  "lastCompletedTs": 1665578890254,
   "restoringFromLocalStorage": null,
   "hardMode": true
 }
 stats: {
-  "currentStreak": 13,
+  "currentStreak": 22,
   "maxStreak": 69,
   "guesses": {
     "1": 0,
-    "2": 10,
-    "3": 41,
-    "4": 62,
-    "5": 43,
+    "2": 11,
+    "3": 42,
+    "4": 65,
+    "5": 47,
     "6": 9,
     "fail": 5
   },
   "winPercentage": 97,
-  "gamesPlayed": 170,
-  "gamesWon": 165,
+  "gamesPlayed": 179,
+  "gamesWon": 174,
   "averageGuesses": 4
 }
 ---
 
 <!-- more -->
+WordleBot
+Skill 82/99
+Luck 46/99

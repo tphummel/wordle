@@ -2,7 +2,7 @@
 title: "487: 2022-10-19"
 date: 2022-10-19T06:21:54-07:00
 tags: []
-contests: []
+contests: ["2022-10-metal"]
 words: ["metal","group","hurry","quirk"]
 puzzles: [487]
 state: {

@@ -2,6 +2,7 @@
 title: "479: 2022-10-11"
 date: 2022-10-11T06:55:34-07:00
 tags: []
+contests: ["2022-10-metal"]
 words: ["metal","slack","laugh","daily","valid"]
 puzzles: [479]
 state: {

@@ -2,7 +2,7 @@
 title: "489: 2022-10-21"
 date: 2022-10-21T06:17:09-07:00
 tags: []
-contests: []
+contests: ["2022-10-metal"]
 words: ["metal","spree","brine","grove"]
 puzzles: [489]
 state: {
