@@ -2,7 +2,7 @@
 title: "492: 2022-10-24"
 date: 2022-10-24T06:12:34-07:00
 tags: []
-contests: []
+contests: ["2022-10-metal"]
 words: ["metal","talon","latch","fault"]
 puzzles: [492]
 state: {
