@@ -75,7 +75,7 @@ const fileText = `---
 title: "${data.game.dayOffset}: ${puzzleDate}"
 date: ${getDateTime(data.game.timestamps.lastCompleted)+getLocalTimeZone()}
 tags: []
-contests: []
+contests: [${puzzleDate.slice(0,6)}-${state.boardState[0]}]
 words: ${JSON.stringify(words)}
 puzzles: [${data.game.dayOffset}]
 state: ${JSON.stringify(state, null, 2)}
