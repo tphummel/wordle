@@ -126,6 +126,26 @@ Puzzle Score ${report.puzzleScore}
 🟩🟩🟩🟩🟩`
         return false
       }
+
+      function submitContestPullRequest() {
+        const playerName = document.querySelector('form#enhance input#contest-pr-player')
+          .value
+          .replaceAll(/\s/g,'')
+          .toLowerCase()
+        
+        const words = document.querySelector('form#enhance input#contest-pr-intermediate-words')
+          .value
+          .replaceAll(/\s/g,'')
+          .toLowerCase()
+          .split(',')
+
+        report.words = words
+        report.playerName = playerName
+        const encodedFileText = encodeURIComponent(JSON.stringify(report, false, 2))
+        const filename = `${report.puzzleDate}/${playerName}.json`
+        const githubQueryLink = `https://github.com/tphummel/wordle/new/main/content/w/new?quick_pull=1&commit-choice=quick-pull&message=add+contest+data+${report.puzzleDate}+${playerName}&target_branch=${report.puzzleDate}_guests&same_repo=1&guidance_task=&labels=contest&value=${encodedFileText}&filename=${filename}`;
+        location.href = githubQueryLink
+      }
     </script>
   </head>
 
@@ -151,8 +171,20 @@ Puzzle Score ${report.puzzleScore}
           <li>Puzzle Score: a total score for how well you performed on this puzzle. Like golf, lower scores are better. black: 2 pts, yellow: 1 pt, green: 0 pts. The goal is to give you a little more nuance in comparing your results with friends.</li>
         </ul>
       </p>
+      <hr />
       <p>Extras</p>
-      <p>Most people won't care about this, but once you enhance an emoji you can copy all of the JSON data from the analysis by clicking the button below.</p>
+      <p>Most people won't care about this, but once you enhance an emoji you can work with the json data using the buttons below.</p>
+      <p>
+        <label for="contest-pr-player">Player:</label>
+        <input type="text" id="contest-pr-player" />
+        <label for="contest-pr-intermediate-words">Words:</label>
+        <input type="text" id="contest-pr-intermediate-words" />
+        <input type="button" id="contest-pr" value="Submit Contest PR" />
+      </p>
+      <script>
+        document.getElementById("contest-pr").onclick = submitContestPullRequest
+      </script>
+      <hr />
       <p>
         <input type="button" id="copy-json" value="Copy JSON to Clipboard" />
       </p>
