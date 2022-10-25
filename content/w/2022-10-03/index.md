@@ -1,15 +1,16 @@
 ---
-title: "482: 2022-10-14"
-date: 2022-10-14T06:21:39-07:00
+title: "471: 2022-10-03"
+date: 2022-10-03T05:56:29-07:00
 tags: []
-words: ["metal","sling","flock","floor"]
-puzzles: [482]
+contests: ["2022-10-metal"]
+words: ["metal","trick","point","sting"]
+puzzles: [471]
 state: {
   "boardState": [
     "metal",
-    "sling",
-    "flock",
-    "floor",
+    "trick",
+    "point",
+    "sting",
     "",
     ""
   ],
@@ -17,23 +18,23 @@ state: {
     [
       "absent",
       "absent",
+      "present",
+      "absent",
+      "absent"
+    ],
+    [
+      "present",
+      "absent",
+      "correct",
+      "absent",
+      "absent"
+    ],
+    [
       "absent",
       "absent",
+      "correct",
+      "correct",
       "present"
-    ],
-    [
-      "absent",
-      "correct",
-      "absent",
-      "absent",
-      "absent"
-    ],
-    [
-      "correct",
-      "correct",
-      "correct",
-      "absent",
-      "absent"
     ],
     [
       "correct",
@@ -46,44 +47,30 @@ state: {
     null
   ],
   "rowIndex": 4,
-  "solution": "floor",
+  "solution": "sting",
   "gameStatus": "WIN",
-  "lastPlayedTs": 1665753699411,
-  "lastCompletedTs": 1665753699411,
+  "lastPlayedTs": 1664801789174,
+  "lastCompletedTs": 1664801789174,
   "restoringFromLocalStorage": null,
   "hardMode": true
 }
 stats: {
-  "currentStreak": 24,
+  "currentStreak": 13,
   "maxStreak": 69,
   "guesses": {
     "1": 0,
-    "2": 12,
-    "3": 42,
-    "4": 66,
-    "5": 47,
+    "2": 10,
+    "3": 41,
+    "4": 62,
+    "5": 43,
     "6": 9,
     "fail": 5
   },
   "winPercentage": 97,
-  "gamesPlayed": 181,
-  "gamesWon": 176,
+  "gamesPlayed": 170,
+  "gamesWon": 165,
   "averageGuesses": 4
 }
 ---
 
 <!-- more -->
-WordleBot
-Skill 91/99
-Luck 43/99
-
-```
-#Wordle 4/6* Grade: B
-
-⬜⬜⬜⬜🟨 F
-⬜🟩⬜⬜⬜ C-
-🟩🟩🟩⬜⬜ C+
-🟩🟩🟩🟩🟩 A+
-
-https://gradle.app/#71xM8M5g0KrwdC3odz
-```

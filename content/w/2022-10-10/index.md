@@ -2,6 +2,7 @@
 title: "478: 2022-10-10"
 date: 2022-10-10T06:39:53-07:00
 tags: []
+contests: ["2022-10-metal"]
 words: ["metal","screw","ebony","envoy","enjoy"]
 puzzles: [478]
 state: {
