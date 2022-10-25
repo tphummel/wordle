@@ -2,7 +2,7 @@
 title: "485: 2022-10-17"
 date: 2022-10-17T06:15:20-07:00
 tags: []
-contests: []
+contests: ["2022-10-metal"]
 words: ["metal","their","stein"]
 puzzles: [485]
 state: {
