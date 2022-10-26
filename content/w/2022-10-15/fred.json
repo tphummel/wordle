@@ -1,0 +1,142 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "correct",
+      "present",
+      "absent"
+    ],
+    [
+      "absent",
+      "correct",
+      "correct",
+      "absent",
+      "absent"
+    ],
+    [
+      "absent",
+      "correct",
+      "correct",
+      "absent",
+      "absent"
+    ],
+    [
+      "absent",
+      "correct",
+      "correct",
+      "absent",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "correct",
+        "present",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "🟨",
+        "⬛️"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "correct",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "🟩",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "correct",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "🟩",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "correct",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "🟩",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 25,
+  "puzzleNum": 483,
+  "puzzleDate": "2022-10-15",
+  "guessCount": 5,
+  "isHardMode": false,
+  "words": [
+    "patio",
+    "datum",
+    "fatty"
+  ],
+  "playerName": "fred"
+}
