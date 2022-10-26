@@ -1,0 +1,63 @@
+{
+  "results": [
+    [
+      "absent",
+      "present",
+      "absent",
+      "correct",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "present",
+        "absent",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟨",
+        "⬛️",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 5,
+      "lineScore": 5
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 5,
+  "puzzleNum": 481,
+  "puzzleDate": "2022-10-13",
+  "guessCount": 2,
+  "isHardMode": false,
+  "words": [],
+  "playerName": "mandy"
+}
