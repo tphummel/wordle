@@ -44,26 +44,31 @@
   <tr>
     <th>Rank</th>
     <th>Name</th>
-    <th>Score</th>
+    <th>Score ↑</th>
     <th>Guesses</th>
   </tr>
 
   {{ $sortable := slice }}
   {{ range $name, $stats := $scoreboard }}
-    {{ $row := merge $stats (dict "name" $name) }}
+    {{ $scoreAvg := div $stats.scoreSum (float $stats.gameCount) }}
+    {{ $guessAvg := div $stats.guessSum (float $stats.gameCount) }}
+    {{ $row := merge $stats (dict "name" $name "scoreAvg" $scoreAvg "guessAvg" $guessAvg) }}
     {{ $sortable = append $sortable (slice $row)}}
   {{ end }}
+  {{ range $row := $sortable }}
 
-  {{ range $i, $row := sort $sortable "scoreSum" "asc" }}
+  {{ end }}
+
+  {{ range $i, $row := sort $sortable "scoreAvg" "asc" }}
     <tr>
       <td>{{ add $i 1 }}</td>
       <td>{{ .name | title }}</td>
       {{ if .gameCount }}
       <td>
-        {{ lang.NumFmt 2 (div .scoreSum (float .gameCount)) }} ({{ .scoreSum }} / {{ .gameCount }})
+        {{ lang.NumFmt 3 .scoreAvg }} ({{ .scoreSum }} / {{ .gameCount }})
       </td>
       <td>
-        {{ lang.NumFmt 2 (div .guessSum (float .gameCount)) }} ({{ .guessSum }} / {{ .gameCount }})
+        {{ lang.NumFmt 2 .guessAvg }} ({{ .guessSum }} / {{ .gameCount }})
       </td>
       {{ else }}
       <td>-</td><td>-</td>
