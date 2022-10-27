@@ -2,7 +2,7 @@
 title: "491: 2022-10-23"
 date: 2022-10-23T06:41:23-07:00
 tags: []
-contests: []
+contests: ["2022-10-metal"]
 words: ["metal","morph","mucky","muddy","muggy","muffy"]
 puzzles: [491]
 state: {
