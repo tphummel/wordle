@@ -6,58 +6,39 @@
 {{ end }}
 
 {{ with $.Site.GetPage (printf "/%s/%s" "words" .Params.startingWord) }}
-  <p>Starting Word: <strong><a href="{{ .RelPermalink }}">{{ .Name }}</a></strong></p>
+  <p>Starting Word: <strong><a href="{{ .RelPermalink }}">{{ .Name | title }}</a></strong></p>
 {{ end }}
 <p>Guest Players: <strong>{{ delimit .Params.guests ", " | title }}</strong></p>
-
 <p>Puzzles Played in Contest: {{ len .Data.Pages }}</p>
-
-<table>
-  <tr>
-    <th>Puzzle</th>
-    <th>Tom</th>
-    {{ range .Params.guests }}
-      <th>{{ . | title }}</th>
-    {{ end }}
-  </tr>
 
 {{ $perPlayer := dict "scoreSum" 0 "guessSum" 0 "gameCount" 0 }}
 {{ $guests := .Params.guests }}
 {{ $scoreboard := dict }}
-{{ range $player := slice "tom" | append $guests }}
+{{ $players := slice "tom" | append $guests }}
+{{ range $player := $players }}
   {{ $scoreboard = merge $scoreboard (dict $player (merge (dict) $perPlayer)) }} 
 {{ end }}
 
 {{ range $puzzle := .Data.Pages }}
-  <tr>
-    <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
-    {{ range $player := slice "tom" | append $guests }}
-      {{ $before := index $scoreboard $player }}
-      
-      {{ $w := dict }}
-      {{ if eq $player "tom" }}
-        {{ $w = dict "puzzleScore" (partial "puzzle-score" $puzzle) "guessCount" (partial "guess-count" $puzzle) }}
-      {{ else }}
-        {{ with $puzzle.Resources.GetMatch (printf "%s.json" $player) }}
-          {{ $w = .Content | transform.Unmarshal }}
-        {{ end }}
-      {{ end }}
+  {{ range $player := $players }}
+    {{ $before := index $scoreboard $player }}
+    {{ $w := dict }}
 
-      {{ with $w }}
-        {{ $after := merge $before (dict "scoreSum" (add (index $before "scoreSum") .puzzleScore) "guessSum" (add (index $before "guessSum") .guessCount) "gameCount" (add (index $before "gameCount") 1))}}
-        {{ $scoreboard = merge $scoreboard (dict $player $after) }}
+    {{ if eq $player "tom" }}
+      {{ $w = dict "puzzleScore" (partial "puzzle-score" $puzzle) "guessCount" (partial "guess-count" $puzzle) }}
+    {{ else }}
+      {{ with $puzzle.Resources.GetMatch (printf "%s.json" $player) }}
+        {{ $w = .Content | transform.Unmarshal }}
       {{ end }}
-      <td>
-        {{ with $w }}
-          {{ .puzzleScore }} / {{ .guessCount }}
-        {{ else }}
-          --
-        {{ end }}
-      </td>
     {{ end }}
-  </tr>
+
+    {{ with $w }}
+      {{ $after := merge $before (dict "scoreSum" (add (index $before "scoreSum") .puzzleScore) "guessSum" (add (index $before "guessSum") .guessCount) "gameCount" (add (index $before "gameCount") 1))}}
+      {{ $scoreboard = merge $scoreboard (dict $player $after) }}
+    {{ end }}
+
+  {{ end }}
 {{ end }}
-</table>
 
 <table>
   <tr>
@@ -90,4 +71,38 @@
     </tr>
   {{ end }}
 </table>
+
+<table>
+  <tr>
+    <th>Puzzle</th>
+    {{ range $players }}
+      <th>{{ . | title }}</th>
+    {{ end }}
+  </tr>
+{{ range $puzzle := .Data.Pages }}
+  <tr>
+    <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+    {{ range $player := $players }}
+      
+      {{ $w := dict }}
+      {{ if eq $player "tom" }}
+        {{ $w = dict "puzzleScore" (partial "puzzle-score" $puzzle) "guessCount" (partial "guess-count" $puzzle) }}
+      {{ else }}
+        {{ with $puzzle.Resources.GetMatch (printf "%s.json" $player) }}
+          {{ $w = .Content | transform.Unmarshal }}
+        {{ end }}
+      {{ end }}
+      <td>
+        {{ with $w }}
+          {{ .puzzleScore }} / {{ .guessCount }}
+        {{ else }}
+          --
+        {{ end }}
+      </td>
+    {{ end }}
+  </tr>
+{{ end }}
+</table>
+
+
 {{ end }}
