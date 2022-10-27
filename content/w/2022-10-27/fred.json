@@ -1,0 +1,142 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "absent",
+      "present",
+      "absent"
+    ],
+    [
+      "absent",
+      "present",
+      "present",
+      "absent",
+      "absent"
+    ],
+    [
+      "present",
+      "correct",
+      "absent",
+      "absent",
+      "absent"
+    ],
+    [
+      "absent",
+      "correct",
+      "absent",
+      "absent",
+      "present"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "present",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟨",
+        "⬛️"
+      ],
+      "lineProgress": 1,
+      "lineScore": 9
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "present",
+        "present",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟨",
+        "🟨",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "present",
+        "correct",
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "🟩",
+        "⬛️",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "absent",
+        "absent",
+        "present"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "⬛️",
+        "⬛️",
+        "🟨"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 31,
+  "puzzleNum": 495,
+  "puzzleDate": "2022-10-27",
+  "guessCount": 5,
+  "isHardMode": false,
+  "words": [
+    "prank",
+    "rapid",
+    "favor"
+  ],
+  "playerName": "fred"
+}
