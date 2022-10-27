@@ -156,7 +156,7 @@
   "puzzleScore": 36,
   "puzzleNum": 471,
   "puzzleDate": "2022-10-03",
-  "guessCount": X,
+  "guessCount": "X",
   "isHardMode": false,
   "words": [
     "booth",
