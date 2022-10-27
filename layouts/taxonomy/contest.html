@@ -50,13 +50,12 @@
 
   {{ $sortable := slice }}
   {{ range $name, $stats := $scoreboard }}
-    {{ $scoreAvg := div $stats.scoreSum (float $stats.gameCount) }}
-    {{ $guessAvg := div $stats.guessSum (float $stats.gameCount) }}
-    {{ $row := merge $stats (dict "name" $name "scoreAvg" $scoreAvg "guessAvg" $guessAvg) }}
-    {{ $sortable = append $sortable (slice $row)}}
-  {{ end }}
-  {{ range $row := $sortable }}
-
+    {{ if $stats.gameCount }}
+      {{ $scoreAvg := div $stats.scoreSum (float $stats.gameCount) }}
+      {{ $guessAvg := div $stats.guessSum (float $stats.gameCount) }}
+      {{ $row := merge $stats (dict "name" $name "scoreAvg" $scoreAvg "guessAvg" $guessAvg) }}
+      {{ $sortable = append $sortable (slice $row)}}
+    {{ end }}
   {{ end }}
 
   {{ range $i, $row := sort $sortable "scoreAvg" "asc" }}
