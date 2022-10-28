@@ -6,33 +6,87 @@
 {{ end }}
 
 {{ with $.Site.GetPage (printf "/%s/%s" "words" .Params.startingWord) }}
-  <p>Starting Word: <strong><a href="{{ .RelPermalink }}">{{ .Name }}</a></strong></p>
+  <p>Starting Word: <strong><a href="{{ .RelPermalink }}">{{ .Name | title }}</a></strong></p>
 {{ end }}
 <p>Guest Players: <strong>{{ delimit .Params.guests ", " | title }}</strong></p>
-
 <p>Puzzles Played in Contest: {{ len .Data.Pages }}</p>
-
-<table>
-  <tr>
-    <th>Puzzle</th>
-    <th>Tom</th>
-    {{ range .Params.guests }}
-      <th>{{ . | title }}</th>
-    {{ end }}
-  </tr>
 
 {{ $perPlayer := dict "scoreSum" 0 "guessSum" 0 "gameCount" 0 }}
 {{ $guests := .Params.guests }}
 {{ $scoreboard := dict }}
-{{ range $player := slice "tom" | append $guests }}
+{{ $players := slice "tom" | append $guests }}
+{{ range $player := $players }}
   {{ $scoreboard = merge $scoreboard (dict $player (merge (dict) $perPlayer)) }} 
 {{ end }}
 
 {{ range $puzzle := .Data.Pages }}
+  {{ range $player := $players }}
+    {{ $before := index $scoreboard $player }}
+    {{ $w := dict }}
+
+    {{ if eq $player "tom" }}
+      {{ $w = dict "puzzleScore" (partial "puzzle-score" $puzzle) "guessCount" (partial "guess-count" $puzzle) }}
+    {{ else }}
+      {{ with $puzzle.Resources.GetMatch (printf "%s.json" $player) }}
+        {{ $w = .Content | transform.Unmarshal }}
+      {{ end }}
+    {{ end }}
+
+    {{ with $w }}
+      {{ $after := merge $before (dict "scoreSum" (add (index $before "scoreSum") .puzzleScore) "guessSum" (add (index $before "guessSum") (cond (eq .guessCount "X") 7 .guessCount)) "gameCount" (add (index $before "gameCount") 1))}}
+      {{ $scoreboard = merge $scoreboard (dict $player $after) }}
+    {{ end }}
+
+  {{ end }}
+{{ end }}
+
+<table>
+  <tr>
+    <th>Rank</th>
+    <th>Name</th>
+    <th>Score ↑</th>
+    <th>Guesses</th>
+  </tr>
+
+  {{ $sortable := slice }}
+  {{ range $name, $stats := $scoreboard }}
+    {{ if $stats.gameCount }}
+      {{ $scoreAvg := div $stats.scoreSum (float $stats.gameCount) }}
+      {{ $guessAvg := div $stats.guessSum (float $stats.gameCount) }}
+      {{ $row := merge $stats (dict "name" $name "scoreAvg" $scoreAvg "guessAvg" $guessAvg) }}
+      {{ $sortable = append $sortable (slice $row)}}
+    {{ end }}
+  {{ end }}
+
+  {{ range $i, $row := sort $sortable "scoreAvg" "asc" }}
+    <tr>
+      <td>{{ add $i 1 }}</td>
+      <td>{{ .name | title }}</td>
+      {{ if .gameCount }}
+      <td>
+        {{ lang.NumFmt 3 .scoreAvg }} ({{ .scoreSum }} / {{ .gameCount }})
+      </td>
+      <td>
+        {{ lang.NumFmt 2 .guessAvg }} ({{ .guessSum }} / {{ .gameCount }})
+      </td>
+      {{ else }}
+      <td>-</td><td>-</td>
+      {{ end }}
+    </tr>
+  {{ end }}
+</table>
+
+<table>
+  <tr>
+    <th>Puzzle</th>
+    {{ range $players }}
+      <th>{{ . | title }}</th>
+    {{ end }}
+  </tr>
+{{ range $puzzle := .Data.Pages }}
   <tr>
     <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
-    {{ range $player := slice "tom" | append $guests }}
-      {{ $before := index $scoreboard $player }}
+    {{ range $player := $players }}
       
       {{ $w := dict }}
       {{ if eq $player "tom" }}
@@ -41,11 +95,6 @@
         {{ with $puzzle.Resources.GetMatch (printf "%s.json" $player) }}
           {{ $w = .Content | transform.Unmarshal }}
         {{ end }}
-      {{ end }}
-
-      {{ with $w }}
-        {{ $after := merge $before (dict "scoreSum" (add (index $before "scoreSum") .puzzleScore) "guessSum" (add (index $before "guessSum") .guessCount) "gameCount" (add (index $before "gameCount") 1))}}
-        {{ $scoreboard = merge $scoreboard (dict $player $after) }}
       {{ end }}
       <td>
         {{ with $w }}
@@ -59,35 +108,6 @@
 {{ end }}
 </table>
 
-<table>
-  <tr>
-    <th>Rank</th>
-    <th>Name</th>
-    <th>Score</th>
-    <th>Guesses</th>
-  </tr>
+<p>Guesses = "X" means a failed puzzle. For purposes of counting guesses, fails are counted as 7 guesses</p>
 
-  {{ $sortable := slice }}
-  {{ range $name, $stats := $scoreboard }}
-    {{ $row := merge $stats (dict "name" $name) }}
-    {{ $sortable = append $sortable (slice $row)}}
-  {{ end }}
-
-  {{ range $i, $row := sort $sortable "scoreSum" "asc" }}
-    <tr>
-      <td>{{ add $i 1 }}</td>
-      <td>{{ .name | title }}</td>
-      {{ if .gameCount }}
-      <td>
-        {{ lang.NumFmt 2 (div .scoreSum (float .gameCount)) }} ({{ .scoreSum }} / {{ .gameCount }})
-      </td>
-      <td>
-        {{ lang.NumFmt 2 (div .guessSum (float .gameCount)) }} ({{ .guessSum }} / {{ .gameCount }})
-      </td>
-      {{ else }}
-      <td>-</td><td>-</td>
-      {{ end }}
-    </tr>
-  {{ end }}
-</table>
 {{ end }}
