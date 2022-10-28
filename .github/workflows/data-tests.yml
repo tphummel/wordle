@@ -1,7 +1,11 @@
 name: Wordle Data Tests
 
 on:
-  - push
+  push:
+    paths: 
+      - content/w/**
+      - content/r/**
+      - content/c/**
 
 jobs:
   run-data-tests:
