@@ -6,6 +6,7 @@ on:
       - content/w/**
       - content/r/**
       - content/c/**
+      - .github/**
 
 jobs:
   run-data-tests:
