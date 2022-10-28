@@ -2,7 +2,6 @@ name: Wordle Data Tests
 
 on:
   - push
-  - pull_request
 
 jobs:
   run-data-tests:
