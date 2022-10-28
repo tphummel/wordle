@@ -1,8 +1,12 @@
 name: Wordle Data Tests
 
 on:
-  - push
-  - pull_request
+  push:
+    paths: 
+      - content/w/**
+      - content/r/**
+      - content/c/**
+      - .github/**
 
 jobs:
   run-data-tests:
