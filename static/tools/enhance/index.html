@@ -127,7 +127,7 @@ Puzzle Score ${report.puzzleScore}
         return false
       }
 
-      function submitContestPullRequest() {
+      function enrichContestData() {
         const playerName = document.querySelector('form#enhance input#contest-pr-player')
           .value
           .replaceAll(/\s/g,'')
@@ -141,6 +141,16 @@ Puzzle Score ${report.puzzleScore}
 
         report.words = words
         report.playerName = playerName
+      }
+
+      function shareContestJSONClick() {
+        enrichContestData()
+        navigator.clipboard.writeText(JSON.stringify(report, false, 2))
+        return false
+      }
+
+      function submitContestPullRequest() {
+        enrichContestData()
         const encodedFileText = encodeURIComponent(JSON.stringify(report, false, 2))
         const filename = `${report.puzzleDate}/${playerName}.json`
         const githubQueryLink = `https://github.com/tphummel/wordle/new/main/content/w/new?quick_pull=1&commit-choice=quick-pull&message=add+contest+data+${report.puzzleDate}+${playerName}&target_branch=${report.puzzleDate}_guests&same_repo=1&guidance_task=&labels=contest&value=${encodedFileText}&filename=${filename}`;
@@ -175,17 +185,6 @@ Puzzle Score ${report.puzzleScore}
       <p>Extras</p>
       <p>Most people won't care about this, but once you enhance an emoji you can work with the json data using the buttons below.</p>
       <p>
-        <label for="contest-pr-player">Player:</label>
-        <input type="text" id="contest-pr-player" />
-        <label for="contest-pr-intermediate-words">Words:</label>
-        <input type="text" id="contest-pr-intermediate-words" />
-        <input type="button" id="contest-pr" value="Submit Contest PR" />
-      </p>
-      <script>
-        document.getElementById("contest-pr").onclick = submitContestPullRequest
-      </script>
-      <hr />
-      <p>
         <input type="button" id="copy-json" value="Copy JSON to Clipboard" />
       </p>
       <script>
@@ -197,6 +196,21 @@ Puzzle Score ${report.puzzleScore}
       <script>
         document.getElementById("copy-evals-json").onclick = shareEvalsJSONClick
       </script>
+      <hr />
+      <p>Contest</p>
+      <p>
+        <label for="contest-pr-player">Player:</label>
+        <input type="text" id="contest-pr-player" />
+        <label for="contest-pr-intermediate-words">Words:</label>
+        <input type="text" id="contest-pr-intermediate-words" />
+        <input type="button" id="contest-pr" value="Submit Contest PR" />
+        <input type="button" id="copy-contest-json" value="Copy Contest JSON" />
+      </p>
+      <script>
+        document.getElementById("contest-pr").onclick = submitContestPullRequest
+        document.getElementById("copy-contest-json").onclick = shareContestJSONClick
+      </script>
+      
     </form>
     <div style="opacity:0.5; text-align:center">
       <a href="https://wordle.tomhummel.com">Back to Wordle Site</a>
