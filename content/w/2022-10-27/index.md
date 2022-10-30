@@ -1,7 +1,7 @@
 ---
 title: "495: 2022-10-27"
 date: 2022-10-27T07:12:55-07:00
-tags: [covid]
+tags: ["covid-19"]
 contests: ["2022-10-metal"]
 words: ["metal","brain","raspy","carry"]
 puzzles: [495]

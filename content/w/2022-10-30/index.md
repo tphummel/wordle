@@ -1,17 +1,17 @@
 ---
-title: "494: 2022-10-26"
-date: 2022-10-26T06:09:57-07:00
+title: "498: 2022-10-30"
+date: 2022-10-30T09:44:59-07:00
 tags: ["covid-19"]
 contests: ["2022-10-metal"]
-words: ["metal","blitz","clout","flout"]
-puzzles: [494]
+words: ["metal","stalk","talon","galut","waltz"]
+puzzles: [498]
 state: {
   "boardState": [
     "metal",
-    "blitz",
-    "clout",
-    "flout",
-    "",
+    "stalk",
+    "talon",
+    "galut",
+    "waltz",
     ""
   ],
   "evaluations": [
@@ -19,22 +19,29 @@ state: {
       "absent",
       "absent",
       "present",
-      "absent",
+      "present",
       "present"
     ],
     [
       "absent",
+      "present",
+      "present",
+      "present",
+      "absent"
+    ],
+    [
+      "present",
+      "correct",
       "correct",
       "absent",
-      "present",
       "absent"
     ],
     [
       "absent",
       "correct",
       "correct",
-      "correct",
-      "correct"
+      "absent",
+      "present"
     ],
     [
       "correct",
@@ -43,43 +50,44 @@ state: {
       "correct",
       "correct"
     ],
-    null,
     null
   ],
-  "rowIndex": 4,
-  "solution": "flout",
+  "rowIndex": 5,
+  "solution": "waltz",
   "gameStatus": "WIN",
-  "lastPlayedTs": 1666789797642,
-  "lastCompletedTs": 1666789797642,
+  "lastPlayedTs": 1667148299656,
+  "lastCompletedTs": 1667148299656,
   "hardMode": true,
   "settings": {
     "hardMode": true,
     "darkMode": true,
     "colorblindMode": false
   },
-  "gameId": 495,
-  "dayOffset": 494,
-  "timestamp": 1666789797
+  "gameId": 499,
+  "dayOffset": 498,
+  "timestamp": 1667148299
 }
 stats: {
-  "currentStreak": 3,
+  "currentStreak": 7,
   "maxStreak": 69,
   "guesses": {
     "1": 0,
     "2": 12,
     "3": 46,
-    "4": 71,
-    "5": 47,
+    "4": 73,
+    "5": 49,
     "6": 11,
     "fail": 6
   },
   "winPercentage": 97,
-  "gamesPlayed": 193,
-  "gamesWon": 187,
+  "gamesPlayed": 197,
+  "gamesWon": 191,
   "averageGuesses": 4
 }
 ---
 <!-- more -->
 WordleBot
-Skill 94/99
-Luck 57/99
+Skill 68/99
+Luck 45/99
+
+For [Galut]({{< relref "/words/galut" >}}), I thought I was guessing "Galoot". Apparently it is a different word though. 

@@ -1,7 +1,7 @@
 ---
 title: "496: 2022-10-28"
 date: 2022-10-28T07:06:07-07:00
-tags: [covid]
+tags: ["covid-19"]
 contests: ["2022-10-metal"]
 words: ["metal","bread","cheap","sneak"]
 puzzles: [496]
