@@ -89,3 +89,5 @@ stats: {
 WordleBot
 Skill 68/99
 Luck 45/99
+
+For [Galut]({{< relref "/words/galut" >}}), I thought I was guessing "Galoot". Apparently it is a different word though. 
