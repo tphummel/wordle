@@ -1,7 +1,7 @@
 ---
 title: "497: 2022-10-29"
 date: 2022-10-29T06:33:55-07:00
-tags: []
+tags: ["covid-19"]
 contests: ["2022-10-metal"]
 words: ["metal","wheel","cruel","novel","libel"]
 puzzles: [497]

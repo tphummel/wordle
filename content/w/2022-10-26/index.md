@@ -1,7 +1,7 @@
 ---
 title: "494: 2022-10-26"
 date: 2022-10-26T06:09:57-07:00
-tags: ["covid"]
+tags: ["covid-19"]
 contests: ["2022-10-metal"]
 words: ["metal","blitz","clout","flout"]
 puzzles: [494]

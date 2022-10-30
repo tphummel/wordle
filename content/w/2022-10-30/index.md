@@ -1,7 +1,7 @@
 ---
 title: "498: 2022-10-30"
 date: 2022-10-30T09:44:59-07:00
-tags: ["covid"]
+tags: ["covid-19"]
 contests: ["2022-10-metal"]
 words: ["metal","stalk","talon","galut","waltz"]
 puzzles: [498]

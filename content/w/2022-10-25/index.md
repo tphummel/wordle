@@ -1,7 +1,7 @@
 ---
 title: "493: 2022-10-25"
 date: 2022-10-25T06:52:25-07:00
-tags: [covid]
+tags: ["covid-19"]
 contests: ["2022-10-metal"]
 words: ["metal","sound","worry","cocky","poofy","foggy"]
 puzzles: [493]
