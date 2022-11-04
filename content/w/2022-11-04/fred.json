@@ -1,0 +1,116 @@
+{
+  "results": [
+    [
+      "present",
+      "absent",
+      "absent",
+      "absent",
+      "present"
+    ],
+    [
+      "present",
+      "correct",
+      "absent",
+      "present",
+      "absent"
+    ],
+    [
+      "absent",
+      "correct",
+      "correct",
+      "absent",
+      "present"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "present",
+        "absent",
+        "absent",
+        "absent",
+        "present"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟨"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "present",
+        "correct",
+        "absent",
+        "present",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "🟩",
+        "⬛️",
+        "🟨",
+        "⬛️"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "correct",
+        "absent",
+        "present"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "🟩",
+        "⬛️",
+        "🟨"
+      ],
+      "lineProgress": 5,
+      "lineScore": 5
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 19,
+  "puzzleNum": 503,
+  "puzzleDate": "2022-11-04",
+  "guessCount": 4,
+  "isHardMode": false,
+  "words": [
+    "throw",
+    "shout"
+  ],
+  "playerName": "fred"
+}
