@@ -1,39 +1,33 @@
 ---
-title: "440: 2022-09-02"
-date: 2022-09-02T06:04:04-07:00
+title: "442: 2022-09-04"
+date: 2022-09-04T06:54:49-07:00
 tags: []
-words: ["honey","chair","chart","charm"]
-puzzles: [440]
+contests: ["2022-09-honey"]
+words: ["honey","siren","inter"]
+puzzles: [442]
 state: {
   "boardState": [
     "honey",
-    "chair",
-    "chart",
-    "charm",
+    "siren",
+    "inter",
+    "",
     "",
     ""
   ],
   "evaluations": [
     [
+      "absent",
+      "absent",
       "present",
-      "absent",
-      "absent",
-      "absent",
+      "correct",
       "absent"
     ],
     [
-      "correct",
-      "correct",
-      "correct",
       "absent",
+      "present",
+      "present",
+      "correct",
       "present"
-    ],
-    [
-      "correct",
-      "correct",
-      "correct",
-      "correct",
-      "absent"
     ],
     [
       "correct",
@@ -43,34 +37,34 @@ state: {
       "correct"
     ],
     null,
+    null,
     null
   ],
-  "rowIndex": 4,
-  "solution": "charm",
+  "rowIndex": 3,
+  "solution": "inter",
   "gameStatus": "WIN",
-  "lastPlayedTs": 1662123844698,
-  "lastCompletedTs": 1662123844698,
+  "lastPlayedTs": 1662299689344,
+  "lastCompletedTs": 1662299689344,
   "restoringFromLocalStorage": null,
   "hardMode": true
 }
 stats: {
-  "currentStreak": 31,
+  "currentStreak": 33,
   "maxStreak": 69,
   "guesses": {
     "1": 0,
     "2": 9,
-    "3": 35,
+    "3": 36,
     "4": 51,
-    "5": 35,
+    "5": 36,
     "6": 8,
     "fail": 1
   },
   "winPercentage": 99,
-  "gamesPlayed": 139,
-  "gamesWon": 138,
+  "gamesPlayed": 141,
+  "gamesWon": 140,
   "averageGuesses": 4
 }
 ---
 
 <!-- more -->
-Solved swiftly.

@@ -2,6 +2,7 @@
 title: "441: 2022-09-03"
 date: 2022-09-03T09:59:02-07:00
 tags: []
+contests: ["2022-09-honey"]
 words: ["honey","risky","daffy","muggy","gully"]
 puzzles: [441]
 state: {
