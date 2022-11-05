@@ -2,6 +2,7 @@
 title: "444: 2022-09-06"
 date: 2022-09-06T09:17:16-07:00
 tags: []
+contests: ["2022-09-honey"]
 words: ["honey","snack","gaunt","daunt","vaunt","taunt"]
 puzzles: [444]
 state: {

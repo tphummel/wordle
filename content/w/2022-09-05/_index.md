@@ -2,6 +2,7 @@
 title: "443: 2022-09-05"
 date: 2022-09-05T09:28:02-07:00
 tags: []
+contests: ["2022-09-honey"]
 words: ["honey","choir","ghost","whoop"]
 puzzles: [443]
 state: {
