@@ -1,0 +1,168 @@
+{
+  "results": [
+    [
+      "absent",
+      "present",
+      "absent",
+      "absent",
+      "present"
+    ],
+    [
+      "present",
+      "absent",
+      "correct",
+      "absent",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "absent",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "absent",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "absent",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "present",
+        "absent",
+        "absent",
+        "present"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟨",
+        "⬛️",
+        "⬛️",
+        "🟨"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "present",
+        "absent",
+        "correct",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "⬛️",
+        "🟩",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 5,
+      "lineScore": 5
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 8,
+      "lineScore": 2
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 8,
+      "lineScore": 2
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 8,
+      "lineScore": 2
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 19,
+  "puzzleNum": 505,
+  "puzzleDate": "2022-11-06",
+  "guessCount": 6,
+  "isHardMode": false,
+  "words": [
+    "trade",
+    "stage",
+    "stake",
+    "stave"
+  ],
+  "playerName": "fred"
+}
