@@ -1,0 +1,116 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "absent",
+      "absent",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "absent",
+      "absent",
+      "present"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "absent",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 0,
+      "lineScore": 10
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "absent",
+        "absent",
+        "present"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "⬛️",
+        "⬛️",
+        "🟨"
+      ],
+      "lineProgress": 5,
+      "lineScore": 5
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 6,
+      "lineScore": 4
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 19,
+  "puzzleNum": 507,
+  "puzzleDate": "2022-11-08",
+  "guessCount": 4,
+  "isHardMode": false,
+  "words": [
+    "spore",
+    "speck"
+  ],
+  "playerName": "mandy"
+}
