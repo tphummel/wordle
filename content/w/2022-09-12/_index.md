@@ -2,6 +2,7 @@
 title: "450: 2022-09-12"
 date: 2022-09-12T00:26:56-07:00
 tags: []
+contests: ["2022-09-honey"]
 words: ["honey","louse","voice","dodge","forte","wowee"]
 puzzles: [450]
 state: {

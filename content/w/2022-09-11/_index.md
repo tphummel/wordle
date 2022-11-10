@@ -2,6 +2,7 @@
 title: "449: 2022-09-11"
 date: 2022-09-11T07:20:01-07:00
 tags: []
+contests: ["2022-09-honey"]
 words: ["honey","trail","tacit","tibia"]
 puzzles: [449]
 state: {
