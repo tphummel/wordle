@@ -2,6 +2,7 @@
 title: "445: 2022-09-07"
 date: 2022-09-07T08:13:04-07:00
 tags: []
+contests: ["2022-09-honey"]
 words: ["honey","every","leery"]
 puzzles: [445]
 state: {

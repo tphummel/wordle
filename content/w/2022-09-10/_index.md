@@ -2,6 +2,7 @@
 title: "448: 2022-09-10"
 date: 2022-09-10T06:44:30-07:00
 tags: []
+contests: ["2022-09-honey"]
 words: ["honey","pocky","foamy","lofty"]
 puzzles: [448]
 state: {

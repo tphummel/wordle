@@ -2,6 +2,7 @@
 title: "446: 2022-09-08"
 date: 2022-09-08T07:50:22-07:00
 tags: []
+contests: ["2022-09-honey"]
 words: ["honey","trail","slack","clasp","class"]
 puzzles: [446]
 state: {
