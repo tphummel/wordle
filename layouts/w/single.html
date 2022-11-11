@@ -220,6 +220,21 @@
   Next Puzzle: <strong><a href="{{ .RelPermalink }}">{{ .Title }}</a></strong>
 </div>
 {{ end }}
+
+{{ $puzzleHash := "" }}
+{{ range $row := .Params.state.evaluations }}
+  {{ if $row }}
+    {{ range $letter := $row }}
+      {{ $firstLetter := substr $letter 0 1 }}
+      {{ $puzzleHash = printf "%s%s" $puzzleHash ($firstLetter | upper )}}
+    {{ end }}
+  {{ else }}
+    {{ $puzzleHash = printf "%s%s" $puzzleHash "XXXXXX" }}
+  {{ end }}
+{{ end }}
+
+<p>Puzzle Hash: {{ $puzzleHash }}</p>
+
 <div style="opacity:0.3">
   <div>Published: {{ dateFormat "2006-01-02 15:04 -0700" .Date }}</div>
   {{ with .GitInfo }}
