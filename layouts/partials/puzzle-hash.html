@@ -1,0 +1,12 @@
+{{ $puzzleHash := "" }}
+{{ range $row := .Params.state.evaluations }}
+  {{ if $row }}
+    {{ range $letter := $row }}
+      {{ $firstLetter := substr $letter 0 1 }}
+      {{ $puzzleHash = printf "%s%s" $puzzleHash ($firstLetter | upper )}}
+    {{ end }}
+  {{ else }}
+    {{ $puzzleHash = printf "%s%s" $puzzleHash "XXXXXX" }}
+  {{ end }}
+{{ end }}
+{{ return $puzzleHash }}
