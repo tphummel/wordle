@@ -17,7 +17,7 @@
     <td>Last</td>
   </tr>
 
-  {{ range .Data.Terms.Alphabetical }}
+  {{ range .Data.Terms.Alphabetical.Reverse }}
     {{ $name := .Name }}
     {{ $starter := .Page.Params.startingWord }}
     {{ $guests := delimit .Page.Params.guests ", " | title }} 
