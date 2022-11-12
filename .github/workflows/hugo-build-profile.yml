@@ -16,12 +16,23 @@ jobs:
       - uses: actions/github-script@v6
         with:
           script: |
+            let hugoStats = '';
+
+            const options = {};
+            options.listeners = {
+              stdout: (data) => {
+                hugoStats += data.toString();
+              }
+            };
+            await exec.exec('cat', ['hugo-build-stats.txt'], options);
             github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: '👋 a comment'
-            })
+              body: `~~~
+              ${hugoStats}
+              ~~~`
+            });
 
 
 
