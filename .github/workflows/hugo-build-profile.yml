@@ -1,0 +1,26 @@
+name: Capture Hugo Build Stats
+on: [ pull_request ]
+
+jobs:
+  build:
+    name: Comment a pull_request
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: install hugo with asdf as defined in .tool-versions manifest
+        uses: asdf-vm/actions/install@v1
+      - name: build hugo site and capture build stats
+        id: hugo_stats
+        run: echo "HUGO_STATS=$(hugo --templateMetrics)" >> $GITHUB_OUTPUT
+      - name: Comment a pull_request
+        uses: mb2dev/github-action-comment-pull-request@1.0.0
+        with:
+          message: ${{ join(steps.hugo_stats.outputs.*, '\n') }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          reactions: "+1"
+
+
+
+
+        
