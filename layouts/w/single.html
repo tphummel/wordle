@@ -94,10 +94,11 @@
   </ul>
 {{ end }}
 
+{{ $guessCount := partial "guess-count" . }}
 <p>
   <details>
     <summary>
-      Guesses: <strong>{{ partial "guess-count" . }}</strong> (⛔️ Spoilers❗️)
+      Guesses: <strong>{{ $guessCount }}</strong> (⛔️ Spoilers❗️)
     </summary>
     <table>
       <tr>
@@ -220,6 +221,53 @@
   Next Puzzle: <strong><a href="{{ .RelPermalink }}">{{ .Title }}</a></strong>
 </div>
 {{ end }}
+
+{{ $puzzleHash := partialCached "puzzle-hash" . .Title }}
+{{ $puzzleHashByChar := split $puzzleHash "" }}
+
+{{ $candidates := slice }}
+{{ $puzzleTitle := .Title }}
+{{ range $puzzle := where .Site.RegularPages "Section" "w" }}
+  {{ if eq $guessCount (partialCached "guess-count" $puzzle $puzzle.Title) }}
+    {{ if ne $puzzleTitle $puzzle.Title}}
+      {{ $candidates = $candidates | append (slice $puzzle)}}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $scored := slice }}
+{{ range $puzzle := $candidates }}
+  {{ $compHash := partialCached "puzzle-hash" $puzzle $puzzle.Title }}
+  {{ $compHashByChar := split $compHash "" }}
+  {{ $counter := 0 }}
+
+  {{ range $ix, $char := $puzzleHashByChar }}
+    {{ $compChar := index $compHashByChar $ix }}
+    {{ if ne $char $compChar }}
+      {{ $counter = add $counter 1 }}
+    {{ end }}
+  {{ end }}
+  {{ $scored = $scored | append (slice (dict "score" $counter "puzzle" $puzzle )) }}
+{{ end }}
+
+<h3>Similar Puzzles</h3>
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Puzzle</th>
+    <th>Similarity Score</th>
+  </tr>
+
+  {{ range (first 5 (sort $scored "score" "asc")) }}
+    <tr>
+      <td><a href="{{ .puzzle.RelPermalink }}">{{ dateFormat "Jan 2, 2006" .puzzle.Date }}</a></td>
+      <td><a href="{{ .puzzle.RelPermalink }}">{{ index .puzzle.Params.puzzles 0 }}</td>
+      <td><a href="{{ .puzzle.RelPermalink }}">{{ .score }}</a></td>
+    </tr>
+  {{ end }}
+</table>
+<p>Puzzle Hash: {{ $puzzleHash }}</p>
+
 <div style="opacity:0.3">
   <div>Published: {{ dateFormat "2006-01-02 15:04 -0700" .Date }}</div>
   {{ with .GitInfo }}
