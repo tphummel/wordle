@@ -6,7 +6,7 @@ Definition: Puzzles won in which no letters are correct until the final, solving
 
 {{< om.inline >}}
   {{ $wordles := where .Site.RegularPages "Section" "w" }}
-  {{ $found := partial "no-green-before-solve.html" $wordles }}
+  {{ $found := partialCached "no-green-before-solve.html" $wordles }}
 
   <p>Puzzle Count: <strong>{{ len $found }}</strong></p>
   <p>Pct of Total: <strong>{{ lang.NumFmt 2 (mul (div (float (len $found)) (len $wordles)) 100) }}% ({{ len $found }} / {{ len $wordles }})</strong></p>

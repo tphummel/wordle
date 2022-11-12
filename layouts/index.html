@@ -130,7 +130,7 @@
 {{ end }}
 
 {{ with .Site.GetPage "no-green-before-solve.md" }}
-  {{ $noGreenBeforeSolve := partial "no-green-before-solve.html" (where .Site.RegularPages "Section" "w") }}
+  {{ $noGreenBeforeSolve := partialCached "no-green-before-solve.html" (where .Site.RegularPages "Section" "w") }}
   <tr>
     <td><a href="{{ .RelPermalink }}">No Green Tiles Prior to Solving</a></td>
     <td>
