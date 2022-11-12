@@ -1,0 +1,40 @@
+name: Capture Hugo Build Stats
+on: [ pull_request ]
+
+jobs:
+  build:
+    name: Save hugo build stats
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: install hugo with asdf as defined in .tool-versions manifest
+        uses: asdf-vm/actions/install@v1
+      - name: build hugo site and capture build stats
+        id: hugo_stats
+        run: hugo --templateMetrics > hugo-build-stats.txt
+      - uses: actions/github-script@v6
+        with:
+          script: |
+            let hugoStats = '';
+
+            const options = {};
+            options.listeners = {
+              stdout: (data) => {
+                hugoStats += data.toString();
+              }
+            };
+            await exec.exec('cat', ['hugo-build-stats.txt'], options);
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `~~~
+              ${hugoStats}
+              ~~~`
+            });
+
+
+
+
+        
