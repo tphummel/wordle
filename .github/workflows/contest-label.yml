@@ -1,0 +1,28 @@
+name: Contest Helper PR Comments on Label
+on:
+  pull_request:
+    types: [labeled]
+jobs:
+  add-contest-helper-comment:
+    name: Add helper PR comment if labeled contest
+    runs-on: ubuntu-latest
+    if: contains(github.event.pull_request.labels.*.name, 'contest')
+    steps:
+      - run: echo '${{ toJSON(github) }}'
+      - uses: actions/github-script@v6
+        with:
+          script: |
+            const guests = ['Fred', 'Mandy']
+            const puzzleDate = '${{ github.head_ref}}'.substring(0,10)
+            const guestLinks = guests.map((name) => {
+              return {
+                title: name,
+                href: `https://github.com/tphummel/wordle/new/${{github.head_ref}}/content/w/new?quick_pull=1&commit-choice=quick-pull&message=add+${name}+contest+data+for+${puzzleDate}&same_repo=1&guidance_task=&filename=${puzzleDate}/${name.toLowerCase()}.json`
+              }
+            })
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: `This PR has been labeled as a Contest ⚔️.\n- [Enhancer Tool](https://wordle.tomhummel.com/tools/enhance/)\n${guestLinks.map(l => "- [Add "+l.title+"]("+l.href+")").join("\n")}`
+            })
