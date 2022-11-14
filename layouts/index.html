@@ -61,16 +61,32 @@
     <th>Guesses</th>
     <th># of Puzzles</th>
     <th>Pct of Total</th>
+    <th>Distinct Puzzles</th>
+    <th>Possible Permutations</th>
   </tr>
 
 {{ $guessReports := slice nil "solve-in-one.md" "solve-in-two.md" "solve-in-three.md" "solve-in-four.md" "solve-in-five.md" "solve-in-six.md"}}
 
+{{ $lettersPerGuess := 5 }}
+{{ $outcomesPerLetter := slice "absent" "present" "correct" }}
 {{ range $guesses := seq 1 6 }}
-  {{ $puzzles := len (where $wins "Params.state.rowIndex" $guesses) }}
+  {{ $nonSolvingGuesses := sub $guesses 1 }}
+  {{ $totalPermutations := math.Pow (len $outcomesPerLetter) (mul $nonSolvingGuesses $lettersPerGuess) }}
+  {{ $puzzlePages := where $wins "Params.state.rowIndex" $guesses }}
+  {{ $puzzles := len $puzzlePages }}
   <tr>
     <td>{{ $guesses }}</td>
     <td><a href="{{ with $.Site.GetPage (index $guessReports $guesses) }}{{ .RelPermalink }}{{ end }}">{{ $puzzles }}</a></td>
     <td>{{ lang.NumFmt 2 (mul (div (float $puzzles) (len $wordles)) 100) }}%</td>
+    <td>
+      {{ if gt $puzzles 0 }}
+        {{ $byHash := partialCached "puzzles-by-hash" $puzzlePages (string $guesses) }}
+        {{ len $byHash }} 
+      {{ else }}
+        {{ $puzzles }}
+      {{ end }}
+    </td>
+    <td>{{ lang.NumFmt 0 $totalPermutations }}</td>
   </tr>
 {{ end }}
 
@@ -78,6 +94,8 @@
   <td>Loss</td>
   <td><a href="{{ with $.Site.GetPage "losses" }}{{ .RelPermalink }}{{ end }}">{{ len $losses }}</a></td>
   <td>{{ lang.NumFmt 2 (mul (div (float (len $losses)) (len $wordles)) 100) }}%</td>
+  <td>{{ len (partialCached "puzzles-by-hash" $losses "losses") }}</td>
+  <td>Many...</td>
 </tr>
 </table>
 

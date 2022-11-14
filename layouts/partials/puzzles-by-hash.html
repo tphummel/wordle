@@ -1,0 +1,9 @@
+{{ $puzzles := . }}
+{{ $byHash := dict }}
+
+{{ range $puzzle := $puzzles }}
+  {{ $hash := partialCached "puzzle-hash" $puzzle $puzzle.Title }}
+  {{ $byHash = merge $byHash (dict $hash 1) }}
+{{ end }}
+
+{{ return $byHash }}
