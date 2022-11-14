@@ -17,7 +17,7 @@ jobs:
             const guestLinks = guests.map((name) => {
               return {
                 title: name,
-                href: `https://github.com/tphummel/wordle/new/${{github.head_ref}}/content/w/new?quick_pull=1&commit-choice=quick-pull&message=add+${name}+contest+data+for+${puzzleDate}&same_repo=1&guidance_task=&filename=${puzzleDate}/${name.toLowerCase()}.json`
+                href: `https://github.com/tphummel/wordle/new/${{github.head_ref}}/content/w/new?message=add+${name}+contest+data+for+${puzzleDate}&same_repo=1&guidance_task=&filename=${puzzleDate}/${name.toLowerCase()}.json`
               }
             })
             github.rest.issues.createComment({
