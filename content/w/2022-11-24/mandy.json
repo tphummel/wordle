@@ -8,10 +8,10 @@
       "correct"
     ],
     [
+      "correct",
       "absent",
-      "correct",
-      "correct",
-      "correct",
+      "absent",
+      "present",
       "correct"
     ],
     [
@@ -43,21 +43,21 @@
     },
     {
       "lineStatuses": [
+        "correct",
         "absent",
-        "correct",
-        "correct",
-        "correct",
+        "absent",
+        "present",
         "correct"
       ],
       "lineEmoji": [
+        "🟩",
         "⬛️",
-        "🟩",
-        "🟩",
-        "🟩",
+        "⬛️",
+        "🟨",
         "🟩"
       ],
-      "lineProgress": 8,
-      "lineScore": 2
+      "lineProgress": 5,
+      "lineScore": 5
     },
     {
       "lineStatuses": [
@@ -78,13 +78,13 @@
       "lineScore": 0
     }
   ],
-  "puzzleScore": 9,
+  "puzzleScore": 12,
   "puzzleNum": 523,
   "puzzleDate": "2022-11-24",
   "guessCount": 3,
   "isHardMode": false,
   "words": [
-    "yeast"
+    "float"
   ],
   "playerName": "mandy"
 }
