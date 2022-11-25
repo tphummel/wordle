@@ -79,15 +79,20 @@ function encodeCaesarCipher(word) {
         const shiftedIndex = (alphabet.indexOf(c) + (i + extraPositions)) % alphabet.length;
         console.log(c, i, shiftedIndex);
         return alphabet[shiftedIndex];
-    }).join('')
+    }).join('');
 }
 function decodeCaesarCipher(word) {
     return word.split('').map((c, i) => {
         const unshiftedIndex = (alphabet.length + (alphabet.indexOf(c) - (i + extraPositions))) % alphabet.length;
         console.log(c, i, unshiftedIndex);
         return alphabet[unshiftedIndex];
-    }).join('')
+    }).join('');
 }
+
+const puzzleHash = state.evaluations.map((row) => {
+    if (row === null) return 'XXXXX';
+    return row.map(c => c.substring(0, 1).toUpperCase()).join('');
+}).join('');
 
 const fileText = `---
 title: "${data.game.dayOffset}: ${puzzleDate}"
@@ -96,6 +101,7 @@ tags: []
 contests: ["${puzzleDate.slice(0,7)}-${state.boardState[0]}"]
 words: ${JSON.stringify(words)}
 puzzles: [${data.game.dayOffset}]
+hashes: ["${puzzleHash}"]
 shifts: ["${encodeCaesarCipher(state.solution)}"]
 state: ${JSON.stringify(state, null, 2)}
 stats: ${JSON.stringify(data.stats, null, 2)}

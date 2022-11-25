@@ -200,6 +200,9 @@
 {{ with .Params.hashes }}
   {{ $hash := (index . 0) }}
   <p>Hash: <strong><a href="{{ with $.GetPage (printf "/hashes/%s" $hash) }}{{ .RelPermalink}}{{end}}">{{ $hash }}</a></strong></p>
+{{ else }}
+  {{ $hash := partialCached "puzzle-hash" . .Title }}
+  <p>Hash: <strong><a href="{{ with $.GetPage (printf "/hashes/%s" $hash) }}{{ .RelPermalink}}{{end}}">{{ $hash }}</a></strong></p>
 {{ end }}
 {{ with .Params.shifts }}
   {{ $shift := (index . 0) }}
@@ -277,7 +280,6 @@
     </tr>
   {{ end }}
 </table>
-<p>Puzzle Hash: {{ $puzzleHash }}</p>
 
 <div style="opacity:0.3">
   <div>Published: {{ dateFormat "2006-01-02 15:04 -0700" .Date }}</div>
