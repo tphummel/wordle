@@ -22,7 +22,7 @@
 </p>
 
 <p>Date: <strong>{{ .Date.Format "January 2, 2006" }}</strong></p>
-<p>Puzzle: <strong><a href="{{ with $.GetPage (printf "/puzzles/%s" (index .Params.puzzles 0)) }}{{ .RelPermalink}}{{end}}">{{ index .Params.puzzles 0 }}</a></strong></p>
+
 <p>Outcome: <strong>{{ lower .Params.state.gameStatus}}</strong></p>
 <p>Hard Mode: <strong>{{ .Params.state.hardMode}}</strong></p>
 <p>{{ partial "emoji-grid" . }}</p>
@@ -195,6 +195,17 @@
     </table>
   </details>
 </p>
+
+<p>Puzzle: <strong><a href="{{ with $.GetPage (printf "/puzzles/%s" (index .Params.puzzles 0)) }}{{ .RelPermalink}}{{end}}">{{ index .Params.puzzles 0 }}</a></strong></p>
+{{ with .Params.hashes }}
+  {{ $hash := (index . 0) }}
+  <p>Hash: <strong><a href="{{ with $.GetPage (printf "/hashes/%s" $hash) }}{{ .RelPermalink}}{{end}}">{{ $hash }}</a></strong></p>
+{{ end }}
+{{ with .Params.shifts }}
+  {{ $shift := (index . 0) }}
+  <p>Shift: <strong><a href="{{ with $.GetPage (printf "/shifts/%s" $shift) }}{{ .RelPermalink}}{{end}}">{{ $shift }}</a></strong></p>
+{{ end }}
+
 <p>
   <details>
     <summary>
