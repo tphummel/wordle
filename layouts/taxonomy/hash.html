@@ -1,0 +1,37 @@
+{{ define "main" }}
+<h1>{{.Title}}</h1>
+
+<p>{{ partial "breadcrumb.html" . }}</p>
+
+{{ with .Content }}
+<div>{{ . }}</div>
+{{ end }}
+
+<h2>Grid</h2>
+{{ range $puzzle := first 1 .Data.Pages }}
+<div>
+  {{ partial "emoji-grid" . }}
+</div>
+{{ end }}
+
+<h2>History</h2>
+
+<table>
+  <tr>
+    <td>Date</td>
+    <td>Puzzle</td>
+    <td>Turns</td>
+    <td>Score</td>
+  </tr>
+
+  {{ range .Data.Pages }}
+    <tr>
+      <td><a href="{{ .RelPermalink }}">{{ dateFormat "Jan 2, 2006" .Date }}</a></td>
+      <td><a href="{{ with $.GetPage (printf "/puzzles/%s" (index .Params.puzzles 0)) }}{{ .RelPermalink}}{{end}}">{{ index .Params.puzzles 0 }}</a></td>
+      <td><a href="{{ .RelPermalink }}">{{ partial "guess-count.html" . }}{{- cond (eq .Params.state.hardMode true) "*" "" -}}</a></td>
+      <td><a href="{{ .RelPermalink }}">{{ partial "puzzle-score.html" . }}</a></td>
+    </tr>
+
+  {{ end }}
+</table>
+{{ end }}
