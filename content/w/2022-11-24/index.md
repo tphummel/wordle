@@ -1,7 +1,7 @@
 ---
 title: "523: 2022-11-24"
 date: 2022-11-24T07:33:24-07:00
-tags: []
+tags: ["holiday","thanksgiving"]
 contests: ["2022-11-habit"]
 words: ["habit","quart","coast","feast"]
 puzzles: [523]
