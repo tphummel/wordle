@@ -13,6 +13,8 @@ enableInlineShortcodes = true
     word = 'words'
     puzzle = 'puzzles'
     contest = 'contests'
+    hash = 'hashes'
+    shift = 'shifts'
 
 [markup]
   [markup.tableOfContents]

@@ -71,6 +71,29 @@ let state = {
     dayOffset: data.game.dayOffset,
     timestamp: data.timestamp
 };
+
+const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+const extraPositions = 6;
+function encodeCaesarCipher(word) {
+    return word.split('').map((c, i) => {
+        const shiftedIndex = (alphabet.indexOf(c) + (i + extraPositions)) % alphabet.length;
+        console.log(c, i, shiftedIndex);
+        return alphabet[shiftedIndex];
+    }).join('');
+}
+function decodeCaesarCipher(word) {
+    return word.split('').map((c, i) => {
+        const unshiftedIndex = (alphabet.length + (alphabet.indexOf(c) - (i + extraPositions))) % alphabet.length;
+        console.log(c, i, unshiftedIndex);
+        return alphabet[unshiftedIndex];
+    }).join('');
+}
+
+const puzzleHash = state.evaluations.map((row) => {
+    if (row === null) return 'XXXXX';
+    return row.map(c => c.substring(0, 1).toUpperCase()).join('');
+}).join('');
+
 const fileText = `---
 title: "${data.game.dayOffset}: ${puzzleDate}"
 date: ${getDateTime(data.game.timestamps.lastCompleted)+getLocalTimeZone()}
@@ -78,6 +101,8 @@ tags: []
 contests: ["${puzzleDate.slice(0,7)}-${state.boardState[0]}"]
 words: ${JSON.stringify(words)}
 puzzles: [${data.game.dayOffset}]
+hashes: ["${puzzleHash}"]
+shifts: ["${encodeCaesarCipher(state.solution)}"]
 state: ${JSON.stringify(state, null, 2)}
 stats: ${JSON.stringify(data.stats, null, 2)}
 ---

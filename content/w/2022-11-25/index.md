@@ -1,40 +1,35 @@
 ---
-title: "523: 2022-11-24"
-date: 2022-11-24T07:33:24-07:00
-tags: ["holiday","thanksgiving"]
+title: "524: 2022-11-25"
+date: 2022-11-25T05:24:05-08:00
+tags: []
 contests: ["2022-11-habit"]
-words: ["habit","quart","coast","feast"]
-puzzles: [523]
+words: ["habit","third","itchy"]
+puzzles: [524]
+hashes: ["PAAPPPPPAACCCCCXXXXXXXXXXXXXXXXXX"]
+shifts: ["jvfld"]
 state: {
   "boardState": [
     "habit",
-    "quart",
-    "coast",
-    "feast",
+    "third",
+    "itchy",
+    "",
     "",
     ""
   ],
   "evaluations": [
     [
-      "absent",
       "present",
       "absent",
       "absent",
-      "correct"
+      "present",
+      "present"
     ],
     [
+      "present",
+      "present",
+      "present",
       "absent",
-      "absent",
-      "correct",
-      "absent",
-      "correct"
-    ],
-    [
-      "absent",
-      "absent",
-      "correct",
-      "correct",
-      "correct"
+      "absent"
     ],
     [
       "correct",
@@ -44,38 +39,39 @@ state: {
       "correct"
     ],
     null,
+    null,
     null
   ],
-  "rowIndex": 4,
-  "solution": "feast",
+  "rowIndex": 3,
+  "solution": "itchy",
   "gameStatus": "WIN",
-  "lastPlayedTs": 1669300404416,
-  "lastCompletedTs": 1669300404416,
+  "lastPlayedTs": 1669382645797,
+  "lastCompletedTs": 1669382645797,
   "hardMode": true,
   "settings": {
     "hardMode": true,
     "darkMode": true,
     "colorblindMode": false
   },
-  "gameId": 1438,
-  "dayOffset": 523,
-  "timestamp": 1669300404
+  "gameId": 1680,
+  "dayOffset": 524,
+  "timestamp": 1669382645
 }
 stats: {
-  "currentStreak": 32,
+  "currentStreak": 33,
   "maxStreak": 69,
   "guesses": {
     "1": 0,
     "2": 13,
-    "3": 56,
+    "3": 57,
     "4": 84,
     "5": 52,
     "6": 11,
     "fail": 6
   },
   "winPercentage": 97,
-  "gamesPlayed": 222,
-  "gamesWon": 216,
+  "gamesPlayed": 223,
+  "gamesWon": 217,
   "averageGuesses": 4,
   "isOnStreak": true,
   "hasPlayed": true
@@ -83,5 +79,5 @@ stats: {
 ---
 <!-- more -->
 WordleBot
-Skill 73/99
-Luck 56/99
+Skill 71/99
+Luck 66/99
