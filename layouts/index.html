@@ -13,12 +13,17 @@
 {{ $nyt_puzzle_count := 2309 }}
 {{ $nyt_valid_word_count := 10663 }}
 
-<div>🧩 Days Played: <strong><a href="{{ with .Site.GetPage "section" "w" }}{{ .RelPermalink }}{{ end }}">{{ len $wordles }}</a></strong></div>
+<div>🧩 Wordles Played: <strong><a href="{{ with .Site.GetPage "section" "w" }}{{ .RelPermalink }}{{ end }}">{{ len $wordles }}</a></strong></div>
 {{ with .Site.GetPage "/puzzles" }}
-<div>🧩 Puzzles Played: <strong><a href="{{ .RelPermalink }}">{{ len .Pages }}</a></strong></div>
+  <div>🧩 Puzzle Numbers Played: <strong><a href="{{ .RelPermalink }}">{{ len .Pages }}</a></strong></div>
+{{ end }}
+{{ with .Site.GetPage "/hashes" }}
+  <div>🧩 Puzzle Hashes Played: <strong><a href="{{ .RelPermalink }}">{{ len .Pages }}</a></strong></div>
+{{ end }}
+{{ with .Site.GetPage "/shifts" }}
+  <div>🧩 Puzzle Solutions Played: <strong><a href="{{ .RelPermalink }}">{{ len .Pages }}</a></strong></div>
 {{ end }}
 <div>🧩 Win Pct: <strong>{{ lang.NumFmt 3 (div (float (len $wins)) (len $wordles)) }} ({{ len $wins }}-{{ len $losses }})</strong></div>
-<div>🧩 Pct of Total Puzzles Played: <strong>{{ lang.NumFmt 2 (mul (div (float (len $wordles)) ($nyt_puzzle_count)) 100) }}% ({{ lang.NumFmt 0 (len $wordles) }}/{{ lang.NumFmt 0 $nyt_puzzle_count }})</strong></div>
 
 {{ $total_guesses := 0}}
 {{ range $wordles }}
@@ -29,10 +34,9 @@
 <div>🧩 Total Guesses: <strong><a href="{{ with .Site.GetPage "guesses" }}{{ .RelPermalink }}{{ end }}">{{ $total_guesses }}</a></strong></div>
 <div>🧩 Guesses per Puzzle:  <strong>{{ lang.NumFmt 2 (div (float $total_guesses) (len $wordles)) }}</strong></div>
 <div>🧩 Distinct Words Guessed: <strong><a href="{{ with .Site.GetPage "words" }}{{ .RelPermalink }}{{ end }}">{{ len .Site.Taxonomies.words }}</a></strong></div>
-<div>🧩 Pct of Words Guessed: <strong>{{ lang.NumFmt 2 (mul (div (float (len .Site.Taxonomies.words)) ($nyt_valid_word_count)) 100) }}% ({{ lang.NumFmt 0 (len .Site.Taxonomies.words) }}/{{ lang.NumFmt 0 ($nyt_valid_word_count) }})</strong></div>
 
 <blockquote>
-  💡 <a href="{{ with .Site.GetPage "a/how-it-works" }}{{ .RelPermalink }}{{ end }}">How Does This Site Work?</a>
+  💡 <a href="{{ with .Site.GetPage "a/how-it-works" }}{{ .RelPermalink }}{{ end }}">How Does This Website Work?</a>
 </blockquote>
 
 <h2>🕰 Recent Puzzles</h2>
