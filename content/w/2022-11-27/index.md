@@ -72,3 +72,6 @@ stats: {
 }
 ---
 <!-- more -->
+WordleBot
+Skill 61/99
+Luck 92/99
