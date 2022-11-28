@@ -1,0 +1,90 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "absent",
+      "correct",
+      "present"
+    ],
+    [
+      "absent",
+      "present",
+      "absent",
+      "correct",
+      "present"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "correct",
+        "present"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "🟨"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "present",
+        "absent",
+        "correct",
+        "present"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟨",
+        "⬛️",
+        "🟩",
+        "🟨"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 13,
+  "puzzleNum": 527,
+  "puzzleDate": "2022-11-28",
+  "guessCount": 3,
+  "isHardMode": false,
+  "words": [
+    "strip"
+  ],
+  "playerName": "mandy"
+}
