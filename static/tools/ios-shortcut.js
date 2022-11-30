@@ -94,11 +94,16 @@ const puzzleHash = state.evaluations.map((row) => {
     return row.map(c => c.substring(0, 1).toUpperCase()).join('');
 }).join('');
 
+const activeContests = [
+    `${puzzleDate.slice(0,7)}-${state.boardState[0]}-family`,
+    `${puzzleDate.slice(0,7)}-${state.boardState[0]}-friends`
+]
+
 const fileText = `---
 title: "${data.game.dayOffset}: ${puzzleDate}"
 date: ${getDateTime(data.game.timestamps.lastCompleted)+getLocalTimeZone()}
 tags: []
-contests: ["${puzzleDate.slice(0,7)}-${state.boardState[0]}"]
+contests: ${JSON.stringify(activeContests)}
 words: ${JSON.stringify(words)}
 puzzles: [${data.game.dayOffset}]
 hashes: ["${puzzleHash}"]
