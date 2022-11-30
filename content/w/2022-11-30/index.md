@@ -100,4 +100,4 @@ WordleBot
 Skill 85/99
 Luck 37/99
 
-Happy with all my guesses but still very challenging. I thought I was going to lose. I considered [stuff]({{< ref "words/stuff" >}}) for my final guess before settling on what turned out to be the solution. 
+Happy with all my guesses but still very challenging. I thought I was going to lose. I considered "stuff" for my final guess before settling on what turned out to be the solution. 
