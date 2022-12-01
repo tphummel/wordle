@@ -90,7 +90,7 @@ stats: {
 }
 ---
 <!-- more -->
-Event was aggressive but it worked out. The decision was sound. I knew it was the last verb so I wanted to attack it. 
+[Event]({{< ref "words/event" >}}) was aggressive but it worked out. The decision was sound. I knew it was the last verb so I wanted to attack it. 
 
 WordleBot
 Skill 85/99
