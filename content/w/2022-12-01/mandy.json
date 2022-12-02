@@ -1,0 +1,142 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "present",
+      "absent",
+      "absent"
+    ],
+    [
+      "absent",
+      "absent",
+      "absent",
+      "absent",
+      "correct"
+    ],
+    [
+      "absent",
+      "absent",
+      "correct",
+      "present",
+      "correct"
+    ],
+    [
+      "correct",
+      "absent",
+      "correct",
+      "absent",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "present",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "🟨",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 1,
+      "lineScore": 9
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "correct",
+        "present",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "🟨",
+        "🟩"
+      ],
+      "lineProgress": 5,
+      "lineScore": 5
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "absent",
+        "correct",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "⬛️",
+        "🟩",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 6,
+      "lineScore": 4
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 26,
+  "puzzleNum": 530,
+  "puzzleDate": "2022-12-01",
+  "guessCount": 5,
+  "isHardMode": false,
+  "words": [
+    "start",
+    "fleet",
+    "event"
+  ],
+  "playerName": "mandy"
+}
