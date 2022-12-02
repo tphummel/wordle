@@ -2,7 +2,7 @@
 title: "531: 2022-12-02"
 date: 2022-12-02T05:58:49-08:00
 tags: []
-contests: ["2022-12-ratio-family","2022-12-ratio-friends"]
+contests: ["2022-12-ratio", "2022-12-ratio-family","2022-12-ratio-friends"]
 words: ["ratio","amuse","whale","chafe"]
 puzzles: [531]
 hashes: ["APAAAPAAACACCACCCCCCXXXXXXXXXX"]
