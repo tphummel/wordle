@@ -2,7 +2,7 @@
 title: "530: 2022-12-01"
 date: 2022-12-01T00:02:53-08:00
 tags: []
-contests: ["2022-12-ratio-family","2022-12-ratio-friends"]
+contests: ["2022-12-ratio", "2022-12-ratio-family","2022-12-ratio-friends"]
 words: ["ratio","thump","event","elect","eject"]
 puzzles: [530]
 hashes: ["AAPAAPAAAACACACCACCCCCCCCXXXXX"]
