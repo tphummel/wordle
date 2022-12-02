@@ -12,7 +12,7 @@ jobs:
       - uses: actions/github-script@v6
         with:
           script: |
-            const guests = ['Fred', 'Mandy', 'Neela', 'Jay', 'Dan']
+            const guests = ['Fred', 'Mandy', 'Neela', 'Jay', 'Dan', 'Kate']
             const puzzleDate = '${{ github.head_ref}}'.substring(0,10)
             const guestLinks = guests.map((name) => {
               return {
