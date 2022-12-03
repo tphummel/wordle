@@ -1,5 +1,5 @@
 ---
 title: December 2022
 startingWord: "ratio"
-guests: ["mandy", "fred", "neela", "kate", "dan", "jay"]
+guests: ["mandy", "fred", "neela", "kate", "dan"]
 ---
