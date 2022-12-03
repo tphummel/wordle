@@ -1,0 +1,90 @@
+{
+  "results": [
+    [
+      "present",
+      "absent",
+      "present",
+      "absent",
+      "correct"
+    ],
+    [
+      "present",
+      "absent",
+      "absent",
+      "absent",
+      "present"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "present",
+        "absent",
+        "present",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "⬛️",
+        "🟨",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "present",
+        "absent",
+        "absent",
+        "absent",
+        "present"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟨"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 14,
+  "puzzleNum": 532,
+  "puzzleDate": "2022-12-03",
+  "guessCount": 3,
+  "isHardMode": false,
+  "words": [
+    "opens"
+  ],
+  "playerName": "kate"
+}
