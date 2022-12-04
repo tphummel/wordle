@@ -1,0 +1,116 @@
+{
+  "results": [
+    [
+      "present",
+      "present",
+      "absent",
+      "absent",
+      "present"
+    ],
+    [
+      "correct",
+      "absent",
+      "absent",
+      "present",
+      "present"
+    ],
+    [
+      "correct",
+      "present",
+      "correct",
+      "absent",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "present",
+        "present",
+        "absent",
+        "absent",
+        "present"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "🟨",
+        "⬛️",
+        "⬛️",
+        "🟨"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "absent",
+        "absent",
+        "present",
+        "present"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "⬛️",
+        "⬛️",
+        "🟨",
+        "🟨"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "present",
+        "correct",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟨",
+        "🟩",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 7,
+      "lineScore": 3
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 16,
+  "puzzleNum": 533,
+  "puzzleDate": "2022-12-04",
+  "guessCount": 4,
+  "isHardMode": true,
+  "words": [
+    "abhor",
+    "arose"
+  ],
+  "playerName": "neela"
+}
