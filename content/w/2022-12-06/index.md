@@ -90,7 +90,7 @@ stats: {
 }
 ---
 <!-- more -->
-Looking back alder was a little weak. I'm happy with the rest.
+Looking back [alder]({{< relref "words/alder" >}}) was a little weak. I'm happy with the rest.
 
 WordleBot
 Skill 95/99
