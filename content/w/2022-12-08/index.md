@@ -84,7 +84,7 @@ stats: {
 }
 ---
 <!-- more -->
-Whirl was a little bit unlikely/risky but my rationale was to try to be different from other contest players. 
+[Whirl]({{< relref "/words/whirl" >}}) was a little bit unlikely/risky but my rationale was to try to be different from other contest players. 
 
 WordleBot
 Skill 77/99
