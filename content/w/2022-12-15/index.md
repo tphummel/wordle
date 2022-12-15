@@ -73,3 +73,7 @@ stats: {
 ---
 <!-- more -->
 Solution was the only word I could make for the second guess.
+
+WordleBot
+Skill 99/99
+Luck 99/99
