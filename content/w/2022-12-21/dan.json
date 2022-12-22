@@ -1,0 +1,116 @@
+{
+  "results": [
+    [
+      "present",
+      "present",
+      "absent",
+      "absent",
+      "absent"
+    ],
+    [
+      "absent",
+      "present",
+      "absent",
+      "correct",
+      "absent"
+    ],
+    [
+      "absent",
+      "correct",
+      "present",
+      "correct",
+      "present"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "present",
+        "present",
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "🟨",
+        "⬛️",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "present",
+        "absent",
+        "correct",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟨",
+        "⬛️",
+        "🟩",
+        "⬛️"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "present",
+        "correct",
+        "present"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "🟨",
+        "🟩",
+        "🟨"
+      ],
+      "lineProgress": 6,
+      "lineScore": 4
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 19,
+  "puzzleNum": 550,
+  "puzzleDate": "2022-12-21",
+  "guessCount": 4,
+  "isHardMode": false,
+  "words": [
+    "break",
+    "mural"
+  ],
+  "playerName": "dan"
+}
