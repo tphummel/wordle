@@ -1,0 +1,90 @@
+{
+  "results": [
+    [
+      "present",
+      "present",
+      "present",
+      "absent",
+      "present"
+    ],
+    [
+      "present",
+      "present",
+      "present",
+      "correct",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "present",
+        "present",
+        "present",
+        "absent",
+        "present"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "🟨",
+        "🟨",
+        "⬛️",
+        "🟨"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "present",
+        "present",
+        "present",
+        "correct",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "🟨",
+        "🟨",
+        "🟩",
+        "⬛️"
+      ],
+      "lineProgress": 5,
+      "lineScore": 5
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 11,
+  "puzzleNum": 552,
+  "puzzleDate": "2022-12-23",
+  "guessCount": 3,
+  "isHardMode": false,
+  "words": [
+    "orate"
+  ],
+  "playerName": "dan"
+}
