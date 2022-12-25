@@ -5,7 +5,8 @@
 <div>{{ . }}</div>
 {{ end }}
 
-{{ with $.Site.GetPage (printf "/%s/%s" "words" .Params.startingWord) }}
+{{ $startingWord := .Params.startingWord }}
+{{ with $.Site.GetPage (printf "/%s/%s" "words" $startingWord) }}
   <p>Starting Word: <strong><a href="{{ .RelPermalink }}">{{ .Name | title }}</a></strong></p>
 {{ end }}
 <p>Guest Players: <strong>{{ delimit .Params.guests ", " | title }}</strong></p>
@@ -20,7 +21,9 @@
 {{ end }}
 
 {{ range $puzzle := .Data.Pages }}
+  {{ $solution := $puzzle.Params.state.solution }}
   {{ range $player := $players }}
+    
     {{ $before := index $scoreboard $player }}
     {{ $w := dict }}
 
@@ -30,6 +33,16 @@
       {{ with $puzzle.Resources.GetMatch (printf "%s.json" $player) }}
         {{ $w = .Content | transform.Unmarshal }}
       {{ end }}
+      {{ with $puzzle.Resources.GetMatch (printf "%s.yaml" $player) }}
+        {{ $content := .Content | transform.Unmarshal }}
+        {{ $words := slice }}
+        {{ if $startingWord }}
+          {{ $words = $words | append (slice $startingWord) }}
+        {{ end }}
+        {{ $words = $words | append $content.words | append (slice $solution) | uniq }}
+
+      {{ end }}
+
     {{ end }}
 
     {{ with $w }}
