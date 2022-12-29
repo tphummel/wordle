@@ -2,7 +2,7 @@
 title: "538: 2022-12-09"
 date: 2022-12-09T06:50:14-08:00
 tags: []
-contests: ["2022-12-ratio","2022-12-ratio-family","2022-12-ratio-friends"]
+contests: ["2022-12-ratio"]
 words: ["ratio","chair","braid"]
 puzzles: [538]
 hashes: ["PPACAAACCPCCCCCXXXXXXXXXXXXXXX"]

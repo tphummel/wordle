@@ -2,7 +2,7 @@
 title: "539: 2022-12-10"
 date: 2022-12-10T09:21:32-08:00
 tags: []
-contests: ["2022-12-ratio","2022-12-ratio-family","2022-12-ratio-friends"]
+contests: ["2022-12-ratio"]
 words: ["ratio","mouse","clown","knock"]
 puzzles: [539]
 hashes: ["AAAAPAPAAAPACAPCCCCCXXXXXXXXXX"]

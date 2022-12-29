@@ -2,7 +2,7 @@
 title: "542: 2022-12-13"
 date: 2022-12-13T07:05:34-08:00
 tags: []
-contests: ["2022-12-ratio","2022-12-ratio-family","2022-12-ratio-friends"]
+contests: ["2022-12-ratio"]
 words: ["ratio","pound","slope","spoke"]
 puzzles: [542]
 hashes: ["AAAAPPPAAACACPCCCCCCXXXXXXXXXX"]

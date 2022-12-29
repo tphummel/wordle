@@ -2,7 +2,7 @@
 title: "545: 2022-12-16"
 date: 2022-12-16T06:23:21-08:00
 tags: []
-contests: ["2022-12-ratio","2022-12-ratio-family","2022-12-ratio-friends"]
+contests: ["2022-12-ratio"]
 words: ["ratio","brown","probe"]
 puzzles: [545]
 hashes: ["PAAAPPCCAACCCCCXXXXXXXXXXXXXXX"]

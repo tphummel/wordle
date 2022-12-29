@@ -2,7 +2,7 @@
 title: "552: 2022-12-23"
 date: 2022-12-23T05:49:30-08:00
 tags: []
-contests: ["2022-12-ratio","2022-12-ratio-family","2022-12-ratio-friends"]
+contests: ["2022-12-ratio"]
 words: ["ratio","orate","aorta"]
 puzzles: [552]
 hashes: ["PPPAPPPPCACCCCCXXXXXXXXXXXXXXX"]

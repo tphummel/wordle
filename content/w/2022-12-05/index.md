@@ -2,7 +2,7 @@
 title: "534: 2022-12-05"
 date: 2022-12-05T08:14:10-08:00
 tags: []
-contests: ["2022-12-ratio","2022-12-ratio-family","2022-12-ratio-friends"]
+contests: ["2022-12-ratio"]
 words: ["ratio","ghoul","money","coven","dozen","boxen"]
 puzzles: [534]
 hashes: ["AAAAPAAPAAACPCAACACCACACCACACC"]

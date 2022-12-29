@@ -2,7 +2,7 @@
 title: "550: 2022-12-21"
 date: 2022-12-21T06:58:16-08:00
 tags: []
-contests: ["2022-12-ratio","2022-12-ratio-family","2022-12-ratio-friends"]
+contests: ["2022-12-ratio"]
 words: ["ratio","grade","scrap","ulnar","lunar"]
 puzzles: [550]
 hashes: ["PPAAAAPPAAAAPCAPPCCCCCCCCXXXXX"]

@@ -2,7 +2,7 @@
 title: "547: 2022-12-18"
 date: 2022-12-18T06:12:28-08:00
 tags: []
-contests: ["2022-12-ratio","2022-12-ratio-family","2022-12-ratio-friends"]
+contests: ["2022-12-ratio"]
 words: ["ratio","caret","taper"]
 puzzles: [547]
 hashes: ["PCPAAACPCPCCCCCXXXXXXXXXXXXXXX"]
