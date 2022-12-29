@@ -2,7 +2,7 @@
 title: "544: 2022-12-15"
 date: 2022-12-15T06:52:55-08:00
 tags: []
-contests: ["2022-12-ratio","2022-12-ratio-family","2022-12-ratio-friends"]
+contests: ["2022-12-ratio"]
 words: ["ratio","rival"]
 puzzles: [544]
 hashes: ["CPAPACCCCCXXXXXXXXXXXXXXXXXXXX"]

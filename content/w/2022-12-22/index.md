@@ -2,7 +2,7 @@
 title: "551: 2022-12-22"
 date: 2022-12-22T06:13:48-08:00
 tags: []
-contests: ["2022-12-ratio","2022-12-ratio-family","2022-12-ratio-friends"]
+contests: ["2022-12-ratio"]
 words: ["ratio","punch","cleve","excel"]
 puzzles: [551]
 hashes: ["AAAAAAAAPAPPPAPCCCCCXXXXXXXXXX"]

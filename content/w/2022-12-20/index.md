@@ -2,7 +2,7 @@
 title: "549: 2022-12-20"
 date: 2022-12-20T06:34:36-08:00
 tags: []
-contests: ["2022-12-ratio","2022-12-ratio-family","2022-12-ratio-friends"]
+contests: ["2022-12-ratio"]
 words: ["ratio","trick","third"]
 puzzles: [549]
 hashes: ["PAPPACPCAACCCCCXXXXXXXXXXXXXXX"]

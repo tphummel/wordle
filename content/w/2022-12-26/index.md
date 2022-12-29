@@ -2,7 +2,7 @@
 title: "555: 2022-12-26"
 date: 2022-12-26T06:26:57-08:00
 tags: []
-contests: ["2022-12-ratio","2022-12-ratio-family","2022-12-ratio-friends"]
+contests: ["2022-12-ratio"]
 words: ["ratio","lunch","budge","fudge","judge"]
 puzzles: [555]
 hashes: ["AAAAAACAAAACCCCACCCCCCCCCXXXXX"]

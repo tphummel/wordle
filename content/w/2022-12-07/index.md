@@ -2,7 +2,7 @@
 title: "536: 2022-12-07"
 date: 2022-12-07T06:50:39-08:00
 tags: []
-contests: ["2022-12-ratio","2022-12-ratio-family","2022-12-ratio-friends"]
+contests: ["2022-12-ratio"]
 words: ["ratio","touch","joust"]
 puzzles: [536]
 hashes: ["AAPAPPCCAACCCCCXXXXXXXXXXXXXXX"]

@@ -2,7 +2,7 @@
 title: "533: 2022-12-04"
 date: 2022-12-04T08:01:13-08:00
 tags: []
-contests: ["2022-12-ratio","2022-12-ratio-family","2022-12-ratio-friends"]
+contests: ["2022-12-ratio"]
 words: ["ratio","broad","adore"]
 puzzles: [533]
 hashes: ["PPAAPAPCPPCCCCCXXXXXXXXXXXXXXX"]

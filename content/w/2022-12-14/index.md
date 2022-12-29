@@ -2,7 +2,7 @@
 title: "543: 2022-12-14"
 date: 2022-12-14T18:54:44-08:00
 tags: []
-contests: ["2022-12-ratio","2022-12-ratio-family","2022-12-ratio-friends"]
+contests: ["2022-12-ratio"]
 words: ["ratio","clasp","atlas","sheal","nasal","usual"]
 puzzles: [543]
 hashes: ["APAAAAPPPAAAPCPPAACCAAPCCCCCCC"]

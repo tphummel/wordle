@@ -2,7 +2,7 @@
 title: "541: 2022-12-12"
 date: 2022-12-12T06:46:55-08:00
 tags: []
-contests: ["2022-12-ratio","2022-12-ratio-family","2022-12-ratio-friends"]
+contests: ["2022-12-ratio"]
 words: ["ratio","place","apply"]
 puzzles: [541]
 hashes: ["APAAAPPPAACCCCCXXXXXXXXXXXXXXX"]

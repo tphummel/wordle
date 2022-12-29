@@ -2,7 +2,7 @@
 title: "554: 2022-12-25"
 date: 2022-12-25T06:45:44-08:00
 tags: []
-contests: ["2022-12-ratio","2022-12-ratio-family","2022-12-ratio-friends"]
+contests: ["2022-12-ratio"]
 words: ["ratio","alter","extra"]
 puzzles: [554]
 hashes: ["PPCAAPACPPCCCCCXXXXXXXXXXXXXXX"]
