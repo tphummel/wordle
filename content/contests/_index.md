@@ -2,16 +2,12 @@
 title: Duplicate Wordle Contests
 ---
 
-# Intro
-
-Multiplayer contests in which each player uses the same starting word each day. The contest is meant to highlight relative performance with the opening and solution words in common (see: [duplicate bridge](https://en.wikipedia.org/wiki/Duplicate_bridge)).
-
 # Rules
 
 ## Each Month Contest
 
 - Each contest will be either an agreed upon common starting word or free for all.
-  - If common opener: you must play the agreed up starting word to participate on any given day. 
+  - If common opener: you must play the agreed up starting word to participate on any given day. (see: [duplicate bridge](https://en.wikipedia.org/wiki/Duplicate_bridge))
   - If free for all: use any starting word you want each day. It need not be the same word every day of the contest. 
 
 - Hard mode: yes, put your game into "hard mode" in the settings panel before starting your puzzle. 
