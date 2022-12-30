@@ -2,7 +2,7 @@
 title: "553: 2022-12-24"
 date: 2022-12-24T07:05:53-08:00
 tags: []
-contests: ["2022-12-ratio","2022-12-ratio-family","2022-12-ratio-friends"]
+contests: ["2022-12-ratio"]
 words: ["ratio","diode","voice","poise"]
 puzzles: [553]
 hashes: ["AAAPPAPPACACCACCCCCCXXXXXXXXXX"]

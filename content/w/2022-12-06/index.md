@@ -2,7 +2,7 @@
 title: "535: 2022-12-06"
 date: 2022-12-06T06:42:22-08:00
 tags: []
-contests: ["2022-12-ratio","2022-12-ratio-family","2022-12-ratio-friends"]
+contests: ["2022-12-ratio"]
 words: ["ratio","grape","shear","alder","amber"]
 puzzles: [535]
 hashes: ["PPAAAAPPAPAAPPCCAACCCCCCCXXXXX"]

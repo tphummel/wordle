@@ -2,7 +2,7 @@
 title: "546: 2022-12-17"
 date: 2022-12-17T06:20:21-08:00
 tags: []
-contests: ["2022-12-ratio","2022-12-ratio-family","2022-12-ratio-friends"]
+contests: ["2022-12-ratio"]
 words: ["ratio","score","chord"]
 puzzles: [546]
 hashes: ["PAAAPAPCCACCCCCXXXXXXXXXXXXXXX"]

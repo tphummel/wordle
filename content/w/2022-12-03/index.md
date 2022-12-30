@@ -2,7 +2,7 @@
 title: "532: 2022-12-03"
 date: 2022-12-03T04:32:00-08:00
 tags: ["fork"]
-contests: ["2022-12-ratio","2022-12-ratio-family","2022-12-ratio-friends"]
+contests: ["2022-12-ratio"]
 words: ["ratio","turbo","torso"]
 puzzles: [532]
 hashes: ["PAPACCACACCCCCCXXXXXXXXXXXXXXX"]

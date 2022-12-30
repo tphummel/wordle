@@ -2,7 +2,7 @@
 title: "556: 2022-12-27"
 date: 2022-12-27T07:37:13-08:00
 tags: []
-contests: ["2022-12-ratio","2022-12-ratio-family","2022-12-ratio-friends"]
+contests: ["2022-12-ratio"]
 words: ["ratio","gumbo","phono","condo"]
 puzzles: [556]
 hashes: ["AAAACAAAACAAPPCCCCCCXXXXXXXXXX"]

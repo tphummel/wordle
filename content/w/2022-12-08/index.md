@@ -2,7 +2,7 @@
 title: "537: 2022-12-08"
 date: 2022-12-08T06:30:20-08:00
 tags: []
-contests: ["2022-12-ratio","2022-12-ratio-family","2022-12-ratio-friends"]
+contests: ["2022-12-ratio"]
 words: ["ratio","whirl","siren","infer"]
 puzzles: [537]
 hashes: ["PAAPAAAPPAAPPCPCCCCCXXXXXXXXXX"]

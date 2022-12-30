@@ -2,7 +2,7 @@
 title: "557: 2022-12-28"
 date: 2022-12-28T09:16:03-08:00
 tags: []
-contests: ["2022-12-ratio","2022-12-ratio-family","2022-12-ratio-friends"]
+contests: ["2022-12-ratio"]
 words: ["ratio","slime","limed","impel"]
 puzzles: [557]
 hashes: ["AAAPAAPPPPPPPCACCCCCXXXXXXXXXX"]

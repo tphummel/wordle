@@ -2,7 +2,7 @@
 title: "540: 2022-12-11"
 date: 2022-12-11T06:49:01-08:00
 tags: []
-contests: ["2022-12-ratio","2022-12-ratio-family","2022-12-ratio-friends"]
+contests: ["2022-12-ratio"]
 words: ["ratio","daisy","naive"]
 puzzles: [540]
 hashes: ["ACAPAACCAACCCCCXXXXXXXXXXXXXXX"]

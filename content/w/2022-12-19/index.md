@@ -2,7 +2,7 @@
 title: "548: 2022-12-19"
 date: 2022-12-19T06:18:30-08:00
 tags: []
-contests: ["2022-12-ratio","2022-12-ratio-family","2022-12-ratio-friends"]
+contests: ["2022-12-ratio"]
 words: ["ratio","teach","plate","slate"]
 puzzles: [548]
 hashes: ["APPAAPPCAAACCCCCCCCCXXXXXXXXXX"]
