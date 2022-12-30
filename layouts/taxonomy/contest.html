@@ -7,6 +7,8 @@
 
 {{ with $.Site.GetPage (printf "/%s/%s" "words" .Params.startingWord) }}
   <p>Starting Word: <strong><a href="{{ .RelPermalink }}">{{ .Name | title }}</a></strong></p>
+{{ else }}
+  <p>Starting Word: <strong>{{ .Params.startingWord }}</strong></p>
 {{ end }}
 <p>Guest Players: <strong>{{ delimit .Params.guests ", " | title }}</strong></p>
 <p>Puzzles Played in Contest: {{ len .Data.Pages }}</p>
