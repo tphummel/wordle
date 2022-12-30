@@ -2,7 +2,7 @@
 title: "559: 2022-12-30"
 date: 2022-12-30T07:04:52-08:00
 tags: []
-contests: ["2022-12-ratio","2022-12-ratio-family","2022-12-ratio-friends"]
+contests: ["2022-12-ratio"]
 words: ["ratio","hoard","coral","polar","solar","molar"]
 puzzles: [559]
 hashes: ["PPAAPACPPAACPCPACCCCACCCCCCCCC"]
