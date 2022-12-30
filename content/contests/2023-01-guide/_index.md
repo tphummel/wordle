@@ -1,6 +1,6 @@
 ---
 title: January 2023
-startingWord: "bdwd"
+startingWord: "guide"
 guests: ["mandy", "fred", "neela", "becky", "dan", "sharon", "nancy"]
 ---
 
