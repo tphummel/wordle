@@ -1,0 +1,168 @@
+{
+  "results": [
+    [
+      "absent",
+      "correct",
+      "absent",
+      "absent",
+      "absent"
+    ],
+    [
+      "absent",
+      "correct",
+      "absent",
+      "absent",
+      "absent"
+    ],
+    [
+      "absent",
+      "correct",
+      "correct",
+      "absent",
+      "correct"
+    ],
+    [
+      "absent",
+      "correct",
+      "correct",
+      "absent",
+      "correct"
+    ],
+    [
+      "present",
+      "correct",
+      "correct",
+      "absent",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "⬛️",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "⬛️",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "correct",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "🟩",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 6,
+      "lineScore": 4
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "correct",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "🟩",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 6,
+      "lineScore": 4
+    },
+    {
+      "lineStatuses": [
+        "present",
+        "correct",
+        "correct",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "🟩",
+        "🟩",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 7,
+      "lineScore": 3
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 27,
+  "puzzleNum": 560,
+  "puzzleDate": "2022-12-31",
+  "guessCount": 6,
+  "isHardMode": true,
+  "words": [
+    "vague",
+    "dandy",
+    "pansy",
+    "lanky"
+  ],
+  "playerName": "mandy"
+}
