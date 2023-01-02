@@ -1,0 +1,118 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "correct",
+      "absent",
+      "absent"
+    ],
+    [
+      "absent",
+      "absent",
+      "correct",
+      "present",
+      "correct"
+    ],
+    [
+      "correct",
+      "absent",
+      "correct",
+      "absent",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "correct",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "correct",
+        "present",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "🟨",
+        "🟩"
+      ],
+      "lineProgress": 5,
+      "lineScore": 5
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "absent",
+        "correct",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "⬛️",
+        "🟩",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 6,
+      "lineScore": 4
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 17,
+  "puzzleNum": 562,
+  "puzzleDate": "2023-01-02",
+  "guessCount": 4,
+  "isHardMode": true,
+  "playerName": "neela",
+  "timestamp": "1/2/2023 10:45:13",
+  "rawShare": "Wordle 562 4/6*\n\n⬜⬜🟩⬜⬜\n⬜⬜🟩🟨🟩\n🟩⬜🟩⬜🟩\n🟩🟩🟩🟩🟩",
+  "words": [
+    "hoist",
+    "stint"
+  ]
+}
