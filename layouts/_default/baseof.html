@@ -22,11 +22,14 @@
     {{ block "main" . }}
     {{ end }}
     </div>
-    <div>
-      {{ with .GitInfo }}
-      <a style="opacity:0.3" href="{{$.Site.Params.github_repo}}commit/{{ .Hash }}">{{ .AbbreviatedHash }}</a>
-      {{ end }}
-    </div>
+    {{ with .GitInfo }}
+      <p style="opacity:0.3">
+        Last Updated: 
+        <a href="{{$.Site.Params.github_repo}}commit/{{ .Hash }}">
+          {{ dateFormat "2006-01-02 15:04 -0700" .AuthorDate }} ({{ .AbbreviatedHash }})
+        </a>
+      </p>
+    {{ end }}
     <div style="opacity:0.5; text-align:center">
       🛠 by <a href="https://tomhummel.com">Tom Hummel</a>
     </div>
