@@ -1,0 +1,92 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "present",
+      "absent",
+      "absent"
+    ],
+    [
+      "present",
+      "absent",
+      "present",
+      "correct",
+      "present"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "present",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "🟨",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 1,
+      "lineScore": 9
+    },
+    {
+      "lineStatuses": [
+        "present",
+        "absent",
+        "present",
+        "correct",
+        "present"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "⬛️",
+        "🟨",
+        "🟩",
+        "🟨"
+      ],
+      "lineProgress": 5,
+      "lineScore": 5
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 14,
+  "puzzleNum": 563,
+  "puzzleDate": "2023-01-03",
+  "guessCount": 3,
+  "isHardMode": true,
+  "playerName": "nancy",
+  "timestamp": "1/3/2023 9:58:53",
+  "rawShare": "Wordle 563 3/6*\n\n⬜⬜🟨⬜⬜\n🟨⬜🟨🟩🟨\n🟩🟩🟩🟩🟩",
+  "words": [
+    "train"
+  ]
+}
