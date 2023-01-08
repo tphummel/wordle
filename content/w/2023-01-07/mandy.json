@@ -1,0 +1,118 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "absent",
+      "absent",
+      "present"
+    ],
+    [
+      "absent",
+      "present",
+      "present",
+      "absent",
+      "correct"
+    ],
+    [
+      "present",
+      "correct",
+      "present",
+      "correct",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "absent",
+        "present"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟨"
+      ],
+      "lineProgress": 1,
+      "lineScore": 9
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "present",
+        "present",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟨",
+        "🟨",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "present",
+        "correct",
+        "present",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "🟩",
+        "🟨",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 8,
+      "lineScore": 2
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 17,
+  "puzzleNum": 567,
+  "puzzleDate": "2023-01-07",
+  "guessCount": 4,
+  "isHardMode": true,
+  "playerName": "mandy",
+  "timestamp": "1/7/2023 8:08:17",
+  "rawShare": "Wordle 567 4/6*\n\n⬜⬜⬜⬜🟨\n⬜🟨🟨⬜🟩\n🟨🟩🟨🟩🟩\n🟩🟩🟩🟩🟩",
+  "words": [
+    "clean",
+    "melon"
+  ]
+}
