@@ -1,25 +1,18 @@
 {
   "results": [
     [
-      "absent",
-      "absent",
-      "present",
-      "absent",
-      "correct"
-    ],
-    [
+      "correct",
       "absent",
       "correct",
       "absent",
-      "absent",
-      "correct"
+      "absent"
     ],
     [
+      "correct",
       "absent",
       "correct",
       "absent",
-      "absent",
-      "correct"
+      "absent"
     ],
     [
       "correct",
@@ -32,54 +25,36 @@
   "enrichedResults": [
     {
       "lineStatuses": [
-        "absent",
-        "absent",
-        "present",
-        "absent",
-        "correct"
-      ],
-      "lineEmoji": [
-        "⬛️",
-        "⬛️",
-        "🟨",
-        "⬛️",
-        "🟩"
-      ],
-      "lineProgress": 3,
-      "lineScore": 7
-    },
-    {
-      "lineStatuses": [
+        "correct",
         "absent",
         "correct",
         "absent",
-        "absent",
-        "correct"
+        "absent"
       ],
       "lineEmoji": [
+        "🟩",
         "⬛️",
         "🟩",
         "⬛️",
-        "⬛️",
-        "🟩"
+        "⬛️"
       ],
       "lineProgress": 4,
       "lineScore": 6
     },
     {
       "lineStatuses": [
+        "correct",
         "absent",
         "correct",
         "absent",
-        "absent",
-        "correct"
+        "absent"
       ],
       "lineEmoji": [
+        "🟩",
         "⬛️",
         "🟩",
         "⬛️",
-        "⬛️",
-        "🟩"
+        "⬛️"
       ],
       "lineProgress": 4,
       "lineScore": 6
@@ -103,16 +78,15 @@
       "lineScore": 0
     }
   ],
-  "puzzleScore": 19,
-  "puzzleNum": 569,
-  "puzzleDate": "2023-01-09",
-  "guessCount": 4,
+  "puzzleScore": 12,
+  "puzzleNum": 570,
+  "puzzleDate": "2023-01-10",
+  "guessCount": 3,
   "isHardMode": true,
   "playerName": "nancy",
-  "timestamp": "1/9/2023 8:51:32",
-  "rawShare": "Wordle 569 4/6*\n\n⬜⬜🟨⬜🟩\n⬜🟩⬜⬜🟩\n⬜🟩⬜⬜🟩\n🟩🟩🟩🟩🟩",
+  "timestamp": "1/10/2023 0:04:56",
+  "rawShare": "Wordle 570 3/6*\n\n🟩⬜🟩⬜⬜\n🟩⬜🟩⬜⬜\n🟩🟩🟩🟩🟩",
   "words": [
-    "mince",
-    "lithe"
+    "going"
   ]
 }
