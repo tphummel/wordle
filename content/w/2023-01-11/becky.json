@@ -1,0 +1,92 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "absent",
+      "present",
+      "present"
+    ],
+    [
+      "absent",
+      "present",
+      "correct",
+      "present",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "present",
+        "present"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟨",
+        "🟨"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "present",
+        "correct",
+        "present",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟨",
+        "🟩",
+        "🟨",
+        "🟩"
+      ],
+      "lineProgress": 6,
+      "lineScore": 4
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 12,
+  "puzzleNum": 571,
+  "puzzleDate": "2023-01-11",
+  "guessCount": 3,
+  "isHardMode": true,
+  "playerName": "becky",
+  "timestamp": "1/11/2023 8:03:43",
+  "rawShare": "Wordle 571 3/6*\n\n⬛⬛⬛🟨🟨\n⬛🟨🟩🟨🟩\n🟩🟩🟩🟩🟩",
+  "words": [
+    "laden"
+  ]
+}
