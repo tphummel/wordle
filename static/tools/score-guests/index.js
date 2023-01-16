@@ -16,7 +16,13 @@ fs.createReadStream(filename)
   .on('data', (data) => players.push(data))
   .on('end', () => {
     const enhancedPlayers = players.map((player, i) => {
-      const enhanced = analyzeEmoji(player.result)
+      let enhanced
+      try {
+        enhanced = analyzeEmoji(player.result)  
+      } catch(e) {
+        console.log(`Error parsing emoji for ${player.name} ${player.result} ${e}`)
+      }
+
       const lowercaseName = player.name.toLowerCase()
 
       return Object.assign(enhanced, {
