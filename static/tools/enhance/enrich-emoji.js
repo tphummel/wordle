@@ -8,7 +8,7 @@ function getPuzzleDate (num) {
 }
 
 function analyzeEmoji (input) {
-  var title = input.match(/Wordle [0-9]* [1-6]{1}\/6\*?/)
+  var title = input.match(/Wordle [0-9]* [X1-6]{1}\/6\*?/)
   var titlePieces = title[0].split(' ')
   var puzzleNum = parseInt(titlePieces[1], 10)
   var puzzleDate = getPuzzleDate(puzzleNum)
