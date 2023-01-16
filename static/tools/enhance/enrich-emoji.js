@@ -70,7 +70,7 @@ function analyzeEmoji (input) {
     puzzleScore,
     puzzleNum,
     puzzleDate,
-    guessCount: parseInt(guessCount, 10),
+    guessCount: guessCount === 'X' ? 'X' : parseInt(guessCount, 10),
     isHardMode: modeStr === '*'
   }
 }

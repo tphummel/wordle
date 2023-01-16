@@ -18,7 +18,7 @@ fs.createReadStream(filename)
     const enhancedPlayers = players.map((player, i) => {
       let enhanced
       try {
-        enhanced = analyzeEmoji(player.result)  
+        enhanced = analyzeEmoji(player.result)
       } catch(e) {
         console.log(`Error parsing emoji for ${player.name} ${player.result} ${e}`)
       }
