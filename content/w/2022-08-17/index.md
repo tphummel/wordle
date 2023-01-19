@@ -1,38 +1,32 @@
 ---
-title: "423: 2022-08-16"
-date: 2022-08-16T08:00:23-07:00
+title: "424: 2022-08-17"
+date: 2022-08-17T08:29:22-07:00
 tags: []
-words: ["thing","lodge","gleam","gruel"]
-puzzles: [423]
+contests: ["2022-08-thing"]
+words: ["thing","trick","twice"]
+puzzles: [424]
 state: {
   "boardState": [
     "thing",
-    "lodge",
-    "gleam",
-    "gruel",
+    "trick",
+    "twice",
+    "",
     "",
     ""
   ],
   "evaluations": [
     [
+      "correct",
       "absent",
+      "correct",
       "absent",
-      "absent",
-      "absent",
-      "present"
-    ],
-    [
-      "present",
-      "absent",
-      "absent",
-      "present",
-      "present"
+      "absent"
     ],
     [
       "correct",
-      "present",
-      "present",
       "absent",
+      "correct",
+      "correct",
       "absent"
     ],
     [
@@ -43,34 +37,35 @@ state: {
       "correct"
     ],
     null,
+    null,
     null
   ],
-  "rowIndex": 4,
-  "solution": "gruel",
+  "rowIndex": 3,
+  "solution": "twice",
   "gameStatus": "WIN",
-  "lastPlayedTs": 1660662023568,
-  "lastCompletedTs": 1660662023568,
+  "lastPlayedTs": 1660750162078,
+  "lastCompletedTs": 1660750162078,
   "restoringFromLocalStorage": null,
   "hardMode": true
 }
 stats: {
-  "currentStreak": 14,
+  "currentStreak": 15,
   "maxStreak": 69,
   "guesses": {
     "1": 0,
     "2": 7,
-    "3": 29,
+    "3": 30,
     "4": 45,
     "5": 33,
     "6": 7,
     "fail": 1
   },
   "winPercentage": 99,
-  "gamesPlayed": 122,
-  "gamesWon": 121,
+  "gamesPlayed": 123,
+  "gamesWon": 122,
   "averageGuesses": 4
 }
 ---
 
 <!-- more -->
-Happy with the quality of all my guesses. 
+Good one. Happy with this one. 

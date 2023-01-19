@@ -2,6 +2,7 @@
 title: "425: 2022-08-18"
 date: 2022-08-18T08:04:46-07:00
 tags: []
+contests: ["2022-08-thing"]
 words: ["thing","twang"]
 puzzles: [425]
 state: {

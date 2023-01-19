@@ -2,6 +2,7 @@
 title: "427: 2022-08-20"
 date: 2022-08-20T06:51:15-07:00
 tags: []
+contests: ["2022-08-thing"]
 words: ["thing","twerp","tread","treat"]
 puzzles: [427]
 state: {

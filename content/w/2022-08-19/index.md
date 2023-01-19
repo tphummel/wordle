@@ -1,32 +1,26 @@
 ---
-title: "424: 2022-08-17"
-date: 2022-08-17T08:29:22-07:00
+title: "426: 2022-08-19"
+date: 2022-08-19T08:07:58-07:00
 tags: []
-words: ["thing","trick","twice"]
-puzzles: [424]
+contests: ["2022-08-thing"]
+words: ["thing","shrug"]
+puzzles: [426]
 state: {
   "boardState": [
     "thing",
-    "trick",
-    "twice",
+    "shrug",
+    "",
     "",
     "",
     ""
   ],
   "evaluations": [
     [
-      "correct",
       "absent",
       "correct",
       "absent",
-      "absent"
-    ],
-    [
-      "correct",
       "absent",
-      "correct",
-      "correct",
-      "absent"
+      "correct"
     ],
     [
       "correct",
@@ -37,22 +31,23 @@ state: {
     ],
     null,
     null,
+    null,
     null
   ],
-  "rowIndex": 3,
-  "solution": "twice",
+  "rowIndex": 2,
+  "solution": "shrug",
   "gameStatus": "WIN",
-  "lastPlayedTs": 1660750162078,
-  "lastCompletedTs": 1660750162078,
+  "lastPlayedTs": 1660921678808,
+  "lastCompletedTs": 1660921678808,
   "restoringFromLocalStorage": null,
   "hardMode": true
 }
 stats: {
-  "currentStreak": 15,
+  "currentStreak": 17,
   "maxStreak": 69,
   "guesses": {
     "1": 0,
-    "2": 7,
+    "2": 9,
     "3": 30,
     "4": 45,
     "5": 33,
@@ -60,11 +55,10 @@ stats: {
     "fail": 1
   },
   "winPercentage": 99,
-  "gamesPlayed": 123,
-  "gamesWon": 122,
+  "gamesPlayed": 125,
+  "gamesWon": 124,
   "averageGuesses": 4
 }
 ---
 
 <!-- more -->
-Good one. Happy with this one. 
