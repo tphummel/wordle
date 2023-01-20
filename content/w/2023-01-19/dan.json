@@ -1,0 +1,144 @@
+{
+  "results": [
+    [
+      "absent",
+      "correct",
+      "absent",
+      "absent",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "absent",
+      "absent",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "absent",
+      "present",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "absent",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "⬛️",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "⬛️",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "absent",
+        "present",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "⬛️",
+        "🟨",
+        "⬛️"
+      ],
+      "lineProgress": 5,
+      "lineScore": 5
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 6,
+      "lineScore": 4
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 23,
+  "puzzleNum": 579,
+  "puzzleDate": "2023-01-19",
+  "guessCount": 5,
+  "isHardMode": true,
+  "playerName": "dan",
+  "timestamp": "1/19/2023 8:11:11",
+  "rawShare": "Wordle 579 5/6*\n\n⬛🟩⬛⬛⬛\n🟩🟩⬛⬛⬛\n🟩🟩⬛🟨⬛\n🟩🟩🟩⬛⬛\n🟩🟩🟩🟩🟩",
+  "words": [
+    "mural",
+    "munch",
+    "mucus"
+  ]
+}
