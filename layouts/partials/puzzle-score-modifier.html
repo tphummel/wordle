@@ -1,0 +1,22 @@
+{{ $guessCount := .guessCount }}
+{{ $puzzleScore := .puzzleScore }}
+{{ $bonus := 0 }}
+
+{{ if eq $guessCount 1 }}
+  {{ $bonus = -8 }}
+{{ else if eq $guessCount 2 }}
+  {{ $bonus = -4 }}
+{{ else if eq $guessCount 3 }}
+  {{ $bonus = -2 }}
+{{ else if eq $guessCount 4 }}
+  {{ $bonus = 0 }}
+{{ else if eq $guessCount 5 }}
+  {{ $bonus = 2 }}
+{{ else if eq $guessCount 6 }}
+  {{ $bonus = 4 }}
+{{ else if (or (eq $guessCount 7) (eq $guessCount "X")) }}
+  {{ $bonus = 8 }}
+{{ end }}
+
+{{ $modScore := add $puzzleScore $bonus }}
+{{ return $modScore }}
