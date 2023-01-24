@@ -42,6 +42,8 @@
   {{ end }}
 {{ end }}
 
+<h2>Leaderboard</h2>
+
 <table>
   <tr>
     <th>Rank</th>
@@ -78,25 +80,48 @@
   {{ end }}
 </table>
 
+<h2>Daily Results</h2>
 
-<ul>
+<ul class="tree">
 {{ range $puzzle := .Data.Pages }}
+  {{ $puzzleNumber := index .Params.puzzles 0 }}
   <li>
     <details>
       <summary><a href="{{ .RelPermalink }}">{{ .Title }}</a></summary>
       <ul>
         {{ $playerPuzzles := slice }}
         {{ range $player := $puzzle.Resources.Match "*.json" }}
-          {{ $playerPuzzles = $playerPuzzles | append (slice (.Content | transform.Unmarshal)) }}
+          {{ $guest := .Content | transform.Unmarshal }}
+
+          <!-- contortions to use emoji-grid partial for guests -->
+          {{ $guest = $guest | merge (dict "Params" (dict "state" (dict "evaluations" $guest.results))) }}
+          {{ $boardState := slice }}
+          {{ range $counter := seq 1 6 }}
+            {{ $coalescedGuessCount := cond (eq $guest.guessCount "X") 6 $guest.guessCount }}
+            {{ if le $counter $coalescedGuessCount }}
+              {{ $boardState = $boardState | append "ttttt" }}
+            {{ else }}
+              {{ $boardState = $boardState | append "" }}
+            {{ end }}
+          {{ end }}
+          {{ $guest = $guest | merge (dict "Params" (dict "state" (dict "boardState" $boardState))) }}
+          <!-- end contortions -->
+
+          {{ $playerPuzzles = $playerPuzzles | append (slice $guest) }}
         {{ end }}
-        {{ $tom := dict "puzzleScore" (partial "puzzle-score" $puzzle) "guessCount" (partial "guess-count" $puzzle) "playerName" "tom" }}
+
+        {{ $tom := merge (dict "Params" .Params) (dict "words" .Params.words "isHardMode" .Params.state.hardMode "puzzleScore" (partial "puzzle-score" $puzzle) "guessCount" (partial "guess-count" $puzzle) "playerName" "tom" )}}
         {{ $playerPuzzles = $playerPuzzles | append (slice $tom) }}
 
         {{ range $puzzle := sort $playerPuzzles "puzzleScore" "asc" }}
           <li>
             <details>
-              <summary>{{ $puzzle.playerName | title }}: {{ $puzzle.puzzleScore }} pts / {{ $puzzle.guessCount }} guesses</summary>
-
+              <summary>{{ $puzzle.playerName | title }}: {{ $puzzle.puzzleScore }} points / {{ $puzzle.guessCount }} guesses</summary>
+              <p>
+                <div>Wordle {{ $puzzleNumber }} {{ $puzzle.guessCount }}/6{{ cond $puzzle.isHardMode "*" "" }}</div>
+                <div>{{ partial "emoji-grid" $puzzle }}</div>
+                <div>Words: {{ delimit $puzzle.words "," }}</div>
+              </p>
             </details>
           </li>
         {{ end }}
@@ -107,38 +132,88 @@
 {{ end }}
 </ul>
 
-<table>
-  <tr>
-    <th>Puzzle</th>
-    {{ range $players }}
-      <th>{{ . | title }}</th>
-    {{ end }}
-  </tr>
-{{ range $puzzle := .Data.Pages }}
-  <tr>
-    <td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
-    {{ range $player := $players }}
-      
-      {{ $w := dict }}
-      {{ if eq $player "tom" }}
-        {{ $w = dict "puzzleScore" (partial "puzzle-score" $puzzle) "guessCount" (partial "guess-count" $puzzle) }}
-      {{ else }}
-        {{ with $puzzle.Resources.GetMatch (printf "%s.json" $player) }}
-          {{ $w = .Content | transform.Unmarshal }}
-        {{ end }}
-      {{ end }}
-      <td>
-        {{ with $w }}
-          {{ .puzzleScore }} / {{ .guessCount }}
-        {{ else }}
-          --
-        {{ end }}
-      </td>
-    {{ end }}
-  </tr>
-{{ end }}
-</table>
-
 <p>Guesses = "X" means a failed puzzle. For purposes of counting guesses, fails are counted as 7 guesses</p>
 
+<style>
+/* https://iamkate.com/code/tree-views/ */
+.tree{
+  --spacing : 1.5rem;
+  --radius  : 10px;
+}
+
+.tree li{
+  display      : block;
+  position     : relative;
+  padding-left : calc(2 * var(--spacing) - var(--radius) - 2px);
+}
+
+.tree ul{
+  margin-left  : calc(var(--radius) - var(--spacing));
+  padding-left : 0;
+}
+
+.tree ul li{
+  border-left : 2px solid #ddd;
+}
+
+.tree ul li:last-child{
+  border-color : transparent;
+}
+
+.tree ul li::before{
+  content      : '';
+  display      : block;
+  position     : absolute;
+  top          : calc(var(--spacing) / -2);
+  left         : -2px;
+  width        : calc(var(--spacing) + 2px);
+  height       : calc(var(--spacing) + 1px);
+  border       : solid #ddd;
+  border-width : 0 0 2px 2px;
+}
+
+.tree summary{
+  display : block;
+  cursor  : pointer;
+}
+
+.tree summary::marker,
+.tree summary::-webkit-details-marker{
+  display : none;
+}
+
+.tree summary:focus{
+  outline : none;
+}
+
+.tree summary:focus-visible{
+  outline : 1px dotted #000;
+}
+
+.tree li::after,
+.tree summary::before{
+  content       : '';
+  display       : block;
+  position      : absolute;
+  top           : calc(var(--spacing) / 2 - var(--radius));
+  left          : calc(var(--spacing) - var(--radius) - 1px);
+  width         : calc(2 * var(--radius));
+  height        : calc(2 * var(--radius));
+  border-radius : 50%;
+  background    : #ddd;
+}
+
+.tree summary::before{
+  content     : '+';
+  z-index     : 1;
+  background  : #696;
+  color       : #fff;
+  line-height : calc(2 * var(--radius) - 2px);
+  text-align  : center;
+}
+
+.tree details[open] > summary::before{
+  content : '−';
+}
+</style>
 {{ end }}
