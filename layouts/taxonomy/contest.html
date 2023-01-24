@@ -85,9 +85,10 @@
 <ul class="tree">
 {{ range $puzzle := .Data.Pages }}
   {{ $puzzleNumber := index .Params.puzzles 0 }}
+  {{ $permalink := .RelPermalink }}
   <li>
     <details>
-      <summary><a href="{{ .RelPermalink }}">{{ .Title }}</a></summary>
+      <summary>{{ .Title }}</summary>
       <ul>
         {{ $playerPuzzles := slice }}
         {{ range $player := $puzzle.Resources.Match "*.json" }}
@@ -122,6 +123,9 @@
                 <div>{{ partial "emoji-grid" $puzzle }}</div>
                 {{ with $puzzle.words }}
                   <div>Words: {{ delimit . ", " }}</div>
+                {{ end }}
+                {{ if eq $puzzle.playerName "tom" }}
+                  <div><a href="{{ $permalink }}">Tom's Puzzle Report</a></div>
                 {{ end }}
               </p>
             </details>
