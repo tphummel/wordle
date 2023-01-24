@@ -1,0 +1,118 @@
+{
+  "results": [
+    [
+      "absent",
+      "present",
+      "absent",
+      "absent",
+      "absent"
+    ],
+    [
+      "absent",
+      "correct",
+      "correct",
+      "present",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "absent",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "present",
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟨",
+        "⬛️",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 1,
+      "lineScore": 9
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "correct",
+        "present",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "🟩",
+        "🟨",
+        "⬛️"
+      ],
+      "lineProgress": 5,
+      "lineScore": 5
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 8,
+      "lineScore": 2
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 16,
+  "puzzleNum": 584,
+  "puzzleDate": "2023-01-24",
+  "guessCount": 4,
+  "isHardMode": true,
+  "playerName": "becky",
+  "timestamp": "1/24/2023 7:47:42",
+  "rawShare": "Wordle 584 4/6*\n\n⬛🟨⬛⬛⬛\n⬛🟩🟩🟨⬛\n🟩🟩🟩⬛🟩\n🟩🟩🟩🟩🟩",
+  "words": [
+    "pouch",
+    "court"
+  ]
+}
