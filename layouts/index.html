@@ -59,6 +59,21 @@
   {{ end }}
 </table>
 
+{{ $activeContest := false }}
+{{range $name, $taxonomy := .Site.Taxonomies.contests}}
+  {{ with $.Site.GetPage (printf "/contests/%s" $name) }}
+    {{ if .Params.active }}
+      {{ $activeContest = .}}
+    {{ end }}
+  {{ end }}
+{{end}}
+
+{{ with $activeContest }}
+<blockquote>
+  ⚔️ Active Contest: <a href={{ .RelPermalink }} title="Currently active contest">{{ .LinkTitle }}</a>
+</blockquote>
+{{ end }}
+
 <h2>🎯 Guess Distribution</h2>
 <table>
   <tr>
@@ -435,15 +450,15 @@
 
 <h2>⚔️ Contests</h2>
 <ul>
-{{range $name, $taxonomy := .Site.Taxonomies.contests}}
-  {{ $cnt := .Count }}
-  {{ with $.Site.GetPage (printf "/contests/%s" $name) }}
-  <li>
-    <a href={{ .RelPermalink }} title="All pages with tag {{$name}}">{{ .LinkTitle }}</a>
-    <sup>{{ $cnt }}</sup>
-  </li>
+  {{range $name, $taxonomy := .Site.Taxonomies.contests}}
+    {{ $cnt := .Count }}
+    {{ with $.Site.GetPage (printf "/contests/%s" $name) }}
+    <li>
+      <a href={{ .RelPermalink }} title="All pages with tag {{$name}}">{{ .LinkTitle }}</a>
+      <sup>{{ $cnt }}</sup>
+    </li>
+    {{end}}
   {{end}}
-{{end}}
 </ul>
 
 <h2>🏷 Tags</h2>
