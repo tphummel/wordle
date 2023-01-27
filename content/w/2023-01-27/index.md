@@ -78,4 +78,4 @@ stats: {
 }
 ---
 <!-- more -->
-Perfect execution of my story strategy. Identified the "Y" right away and was aggressive with the double letter third guess and it paid off. 
+Perfect execution of my [story]({{< relref "/words/story/" >}}) strategy. Identified the "Y" right away and was aggressive with the double letter third guess and it paid off. 
