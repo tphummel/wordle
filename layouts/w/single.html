@@ -281,6 +281,32 @@
   {{ end }}
 </table>
 
+{{ $puzzleMonth := dateFormat "January" .Date }}
+{{ $puzzleDay := dateFormat "2" .Date }}
+{{ $allPuzzles := where .Site.RegularPages "Section" "w" }}
+{{ $input := dict "puzzleMonth" $puzzleMonth "puzzleDay" $puzzleDay "puzzleNum" (index .Params.puzzles 0) "puzzles" $allPuzzles }}
+{{ $puzzlesByMonthDay := partialCached "by-month-day" $input $puzzleMonth $puzzleDay }}
+
+{{ with $puzzlesByMonthDay }}
+  <h3>This Day in Wordle</h3>
+  <table>
+    <tr>
+      <th>Date</th>
+      <th>Puzzle</th>
+      <th>Turns</th>
+      <th>Score</th>
+    </tr>
+  {{ range $puzzlesByMonthDay }}
+    <tr>
+      <td><a href="{{ .RelPermalink }}">{{ dateFormat "Jan 2, 2006" .Date }}</a></td>
+      <td><a href="{{ .RelPermalink }}">{{ index .Params.puzzles 0 }}</td>
+      <td><a href="{{ .RelPermalink }}">{{ partial "guess-count.html" . }}{{- cond (eq .Params.state.hardMode true) "*" "" -}}</a></td>
+      <td><a href="{{ .RelPermalink }}">{{ partial "puzzle-score.html" . }}</a></td>
+    </tr>
+  {{ end }}
+  </table>
+{{ end }}
+
 <div style="opacity:0.3">
   <div>Published: {{ dateFormat "2006-01-02 15:04 -0700" .Date }}</div>
   {{ with .GitInfo }}
