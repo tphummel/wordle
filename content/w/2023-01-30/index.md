@@ -92,3 +92,4 @@ stats: {
 }
 ---
 <!-- more -->
+I was going to do the solution on my third guess then opted for the word I actually guessed. Should have gone with my gut - would have saved me 2 pts
