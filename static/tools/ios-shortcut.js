@@ -48,6 +48,13 @@ function getDateTime (dateStr) {
 
 let puzzleDate = getDateTime(data.game.timestamps.lastCompleted).substring(0,10);
 let words = data.game.boardState.filter(w => w !== '');
+let opener = words[0]
+let middlers = []
+if (words.length >= 3) {
+    const secondWordIndex = 1
+    const lastWordIndex = words.length - 1
+    middlers = words.slice(secondWordIndex, lastWordIndex)
+}
 
 const evaluations = Array.from(document.querySelector("#wordle-app-game > div").children[0].children).map((row) => {
     const letters = Array.from(row.children).map((letter) => {
@@ -104,6 +111,8 @@ date: ${getDateTime(data.game.timestamps.lastCompleted)+getLocalTimeZone()}
 tags: []
 contests: ${JSON.stringify(activeContests)}
 words: ${JSON.stringify(words)}
+openers: ${JSON.stringify([opener])}
+middlers: ${JSON.stringify(middlers)}
 puzzles: [${data.game.dayOffset}]
 hashes: ["${puzzleHash}"]
 shifts: ["${encodeCaesarCipher(state.solution)}"]
