@@ -85,6 +85,7 @@
 <ul class="tree">
 {{ range $puzzle := .Data.Pages }}
   {{ $puzzleNumber := index .Params.puzzles 0 }}
+  {{ $commonOpenerResult := index .Params.state.evaluations 0 }}
   {{ $permalink := .RelPermalink }}
   <li>
     <details>
@@ -100,9 +101,11 @@
           {{ range $counter := seq 1 6 }}
             {{ $coalescedGuessCount := cond (eq $guest.guessCount "X") 6 $guest.guessCount }}
             {{ if le $counter $coalescedGuessCount }}
-              {{ $boardState = $boardState | append "ttttt" }}
+              {{ $usedGuessFiller := "ttttt" }}
+              {{ $boardState = $boardState | append $usedGuessFiller }}
             {{ else }}
-              {{ $boardState = $boardState | append "" }}
+              {{ $unusedGuessFiller := "" }}
+              {{ $boardState = $boardState | append $unusedGuessFiller }}
             {{ end }}
           {{ end }}
           {{ $guest = $guest | merge (dict "Params" (dict "state" (dict "boardState" $boardState))) }}
@@ -115,9 +118,24 @@
         {{ $playerPuzzles = $playerPuzzles | append (slice $tom) }}
 
         {{ range $puzzle := sort $playerPuzzles "puzzleScore" "asc" }}
+          {{ $annotations := slice }}
+          {{ if not $puzzle.isHardMode }}
+            {{ $annotations = $annotations | append (dict "emoji" "🟡" "description" "did not have game set to hard mode") }}
+          {{ end }}
+
+          {{ $openerResult := index $puzzle.Params.state.evaluations 0 }}
+
+          {{ if and (ne $puzzle.playerName "tom") (ne $commonOpenerResult $openerResult) }}
+            {{ $annotations = $annotations | append (dict "emoji" "❌" "description" "did not use correct starting word") }}
+          {{ end }}
+          {{ $annotationsCallout := "" }}
+          {{ range $annotations }}
+            {{ $annotationsCallout = printf "%s%s" $annotationsCallout .emoji }}
+          {{ end }}
+
           <li>
             <details>
-              <summary>{{ $puzzle.playerName | title }}: {{ $puzzle.puzzleScore }} points / {{ $puzzle.guessCount }} guesses</summary>
+              <summary>{{ $puzzle.playerName | title }}: {{ $puzzle.puzzleScore }} points / {{ $puzzle.guessCount }} guesses {{ $annotationsCallout }} </summary>
               <p>
                 <div>Wordle {{ $puzzleNumber }} {{ $puzzle.guessCount }}/6{{ cond $puzzle.isHardMode "*" "" }}</div>
                 <div>{{ partial "emoji-grid" $puzzle }}</div>
@@ -126,6 +144,11 @@
                 {{ end }}
                 {{ if eq $puzzle.playerName "tom" }}
                   <div><a href="{{ $permalink }}">Tom's Puzzle Report</a></div>
+                {{ end }}
+                {{ if gt (len $annotations) 0 }}
+                  {{ range $annotations }}
+                    <p>{{ .emoji }} {{ .description }}</p>
+                  {{ end }}
                 {{ end }}
               </p>
             </details>
