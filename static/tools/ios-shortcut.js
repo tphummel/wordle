@@ -111,8 +111,8 @@ date: ${getDateTime(data.game.timestamps.lastCompleted)+getLocalTimeZone()}
 tags: []
 contests: ${JSON.stringify(activeContests)}
 words: ${JSON.stringify(words)}
-openers; ${JSON.stringify([opener])}
-middlers; ${JSON.stringify(middlers)}
+openers: ${JSON.stringify([opener])}
+middlers: ${JSON.stringify(middlers)}
 puzzles: [${data.game.dayOffset}]
 hashes: ["${puzzleHash}"]
 shifts: ["${encodeCaesarCipher(state.solution)}"]
