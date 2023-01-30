@@ -1,0 +1,118 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "absent",
+      "absent",
+      "correct"
+    ],
+    [
+      "present",
+      "absent",
+      "absent",
+      "absent",
+      "correct"
+    ],
+    [
+      "absent",
+      "correct",
+      "correct",
+      "present",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "present",
+        "absent",
+        "absent",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "correct",
+        "present",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "🟩",
+        "🟨",
+        "🟩"
+      ],
+      "lineProgress": 7,
+      "lineScore": 3
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 18,
+  "puzzleNum": 590,
+  "puzzleDate": "2023-01-29",
+  "guessCount": 4,
+  "isHardMode": true,
+  "playerName": "fred",
+  "timestamp": "1/30/2023 7:53:05",
+  "rawShare": "Wordle 590 4/6*\n\n⬜⬜⬜⬜🟩\n🟨⬜⬜⬜🟩\n⬜🟩🟩🟨🟩\n🟩🟩🟩🟩🟩",
+  "words": [
+    "alone",
+    "trace"
+  ]
+}
