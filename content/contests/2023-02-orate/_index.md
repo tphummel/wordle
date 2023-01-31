@@ -1,8 +1,8 @@
 ---
-title: January 2023
-startingWord: "guide"
+title: February 2023
+startingWord: "orate"
 guests: ["mandy", "fred", "neela", "becky", "dan", "sharon", "nancy"]
-active: false
+active: true
 ---
 
 {{< contest.inline >}}
