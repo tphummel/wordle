@@ -22,9 +22,8 @@ title: Duplicate Wordle Contests
     1. Select your name
     1. Paste your wordle emoji share
     1. Write your intermediate guessed words separated by commas. ex: `house, mouse`
+    1. Add any comments you feel compelled to record.
     1. Submit the form
-  - Message "done" in the WhatsApp chat
-- Once all daily players have written "done", we can share emojis in the WhatsApp chat. 
 
 ## Official Results
 
