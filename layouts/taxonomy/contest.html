@@ -138,6 +138,10 @@
               {{ if ne $wordCount $expectedWords }}
                 {{ $annotations = $annotations | append (dict "emoji" "🟡" "description" (printf "Did not enter (%d) expected (%d) number of words" $wordCount $expectedWords)) }}
               {{ end }}
+
+              {{ with $puzzle.comment }}
+                {{ $annotations = $annotations | append (dict "emoji" "💬" "description" (printf "\"%s\"" (htmlEscape .)) ) }}
+              {{ end }}
             {{ end }}
           {{ end }}
 
