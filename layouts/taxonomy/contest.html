@@ -120,13 +120,13 @@
         {{ range $puzzle := sort $playerPuzzles "puzzleScore" "asc" }}
           {{ $annotations := slice }}
           {{ if not $puzzle.isHardMode }}
-            {{ $annotations = $annotations | append (dict "emoji" "🟡" "description" "did not have game set to hard mode") }}
+            {{ $annotations = $annotations | append (dict "emoji" "🟡" "description" "Did not have game set to hard mode") }}
           {{ end }}
 
           {{ if ne $puzzle.playerName "tom" }}
             {{ $openerResult := index $puzzle.Params.state.evaluations 0 }}
             {{ if ne $commonOpenerResult $openerResult }}
-              {{ $annotations = $annotations | append (dict "emoji" "🔴" "description" "did not use correct starting word") }}
+              {{ $annotations = $annotations | append (dict "emoji" "🔴" "description" "Did not use correct starting word") }}
             {{ end }}
 
             {{ with $puzzle.words }}
@@ -136,7 +136,7 @@
               {{ $expectedWords := sub $guessCount $openerAndSolutionCount }}
 
               {{ if ne $wordCount $expectedWords }}
-                {{ $annotations = $annotations | append (dict "emoji" "🟡" "description" (printf "did not enter (%d) expected (%d) number of words (%d)" $guessCount $wordCount $expectedWords)) }}
+                {{ $annotations = $annotations | append (dict "emoji" "🟡" "description" (printf "Did not enter (%d) expected (%d) number of words" $wordCount $expectedWords)) }}
               {{ end }}
             {{ end }}
           {{ end }}
