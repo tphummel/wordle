@@ -123,11 +123,13 @@
             {{ $annotations = $annotations | append (dict "emoji" "🟡" "description" "did not have game set to hard mode") }}
           {{ end }}
 
-          {{ $openerResult := index $puzzle.Params.state.evaluations 0 }}
-
-          {{ if and (ne $puzzle.playerName "tom") (ne $commonOpenerResult $openerResult) }}
-            {{ $annotations = $annotations | append (dict "emoji" "❌" "description" "did not use correct starting word") }}
+          {{ if ne $puzzle.playerName "tom" }}
+            {{ $openerResult := index $puzzle.Params.state.evaluations 0 }}
+            {{ if ne $commonOpenerResult $openerResult }}
+              {{ $annotations = $annotations | append (dict "emoji" "❌" "description" "did not use correct starting word") }}
+            {{ end }}
           {{ end }}
+
           {{ $annotationsCallout := "" }}
           {{ range $annotations }}
             {{ $annotationsCallout = printf "%s%s" $annotationsCallout .emoji }}
