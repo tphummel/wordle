@@ -128,6 +128,17 @@
             {{ if ne $commonOpenerResult $openerResult }}
               {{ $annotations = $annotations | append (dict "emoji" "🔴" "description" "did not use correct starting word") }}
             {{ end }}
+
+            {{ with $puzzle.words }}
+              {{ $wordCount := len . }}
+              {{ $guessCount := cond (eq $puzzle.guessCount "X") 7 $puzzle.guessCount | int }}
+              {{ $openerAndSolutionCount := 2 }}
+              {{ $expectedWords := sub $guessCount $openerAndSolutionCount }}
+
+              {{ if ne $wordCount $expectedWords }}
+                {{ $annotations = $annotations | append (dict "emoji" "🟡" "description" (printf "did not enter (%d) expected (%d) number of words (%d)" $guessCount $wordCount $expectedWords)) }}
+              {{ end }}
+            {{ end }}
           {{ end }}
 
           {{ $annotationsCallout := "" }}
