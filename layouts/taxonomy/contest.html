@@ -126,7 +126,7 @@
           {{ if ne $puzzle.playerName "tom" }}
             {{ $openerResult := index $puzzle.Params.state.evaluations 0 }}
             {{ if ne $commonOpenerResult $openerResult }}
-              {{ $annotations = $annotations | append (dict "emoji" "❌" "description" "did not use correct starting word") }}
+              {{ $annotations = $annotations | append (dict "emoji" "🔴" "description" "did not use correct starting word") }}
             {{ end }}
           {{ end }}
 
