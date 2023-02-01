@@ -11,7 +11,7 @@ const players = []
 fs.createReadStream(filename)
   .pipe(csv({ 
     separator: '\t',
-    headers: ['ts', 'name', 'result', 'words']
+    headers: ['ts', 'name', 'result', 'words', 'comment']
   }))
   .on('data', (data) => players.push(data))
   .on('end', () => {
@@ -32,7 +32,8 @@ fs.createReadStream(filename)
         words: player.words
           .split(/[\s\,]/)
           .filter(w => w.length === 5)
-          .map(w => w.toLowerCase())
+          .map(w => w.toLowerCase()),
+        comment: player.comment,
       })
     }).sort((a, b) => {
       if (a.puzzleScore > b.puzzleScore) return 1
@@ -53,6 +54,7 @@ fs.createReadStream(filename)
 Name: ${p.playerName}
 Score: ${p.puzzleScore}
 Words: ${p.words.join(', ')}
+Comment: ${p.comment}
 ${p.rawShare}
 ----
 `)
