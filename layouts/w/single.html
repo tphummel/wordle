@@ -217,7 +217,8 @@
     {{ partial "puzzle-score-detail.html" .}}
   </details>
 </p>
-{{ .Content }}
+
+<blockquote>{{ .Content }}</blockquote>
 
 {{ range .GetTerms "contests" }}
   <p>
