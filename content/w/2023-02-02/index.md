@@ -1,7 +1,7 @@
 ---
 title: "593: 2023-02-02"
 date: 2023-02-02T00:35:09+01:00
-tags: []
+tags: ["groundhog-day"]
 contests: ["2023-02-orate"]
 words: ["orate","quirk","shirk"]
 openers: ["orate"]
