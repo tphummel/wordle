@@ -4,11 +4,14 @@
 {{ $puzzleNum := .puzzleNum }}
 
 {{ range .puzzles }}
-  {{ $month := dateFormat "January" .Date }}
-  {{ $day := dateFormat "2" .Date }}
   {{ $num := index .Params.puzzles 0 }}
-  {{ if and (eq $month $puzzleMonth) (eq $day $puzzleDay) (ne $puzzleNum $num) }}
-    {{ $found = $found | append . }}
+  {{ if ne $puzzleNum $num }}
+    {{ $month := dateFormat "January" .Date }}
+    {{ $day := dateFormat "2" .Date }}
+  
+    {{ if and (eq $month $puzzleMonth) (eq $day $puzzleDay) }}
+      {{ $found = $found | append . }}
+    {{ end }}
   {{ end }}
 {{ end }}
 
