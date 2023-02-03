@@ -1,0 +1,172 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "present",
+      "correct",
+      "absent"
+    ],
+    [
+      "absent",
+      "absent",
+      "absent",
+      "correct",
+      "present"
+    ],
+    [
+      "absent",
+      "correct",
+      "absent",
+      "correct",
+      "absent"
+    ],
+    [
+      "absent",
+      "correct",
+      "absent",
+      "correct",
+      "correct"
+    ],
+    [
+      "present",
+      "correct",
+      "absent",
+      "correct",
+      "correct"
+    ],
+    [
+      "absent",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "present",
+        "correct",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "🟨",
+        "🟩",
+        "⬛️"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "correct",
+        "present"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "🟨"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "absent",
+        "correct",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "⬛️",
+        "🟩",
+        "⬛️"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "absent",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "⬛️",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 6,
+      "lineScore": 4
+    },
+    {
+      "lineStatuses": [
+        "present",
+        "correct",
+        "absent",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "🟩",
+        "⬛️",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 7,
+      "lineScore": 3
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 8,
+      "lineScore": 2
+    }
+  ],
+  "puzzleScore": 29,
+  "puzzleNum": 594,
+  "puzzleDate": "2023-02-02",
+  "guessCount": "X",
+  "isHardMode": true,
+  "playerName": "mandy",
+  "timestamp": "2/3/2023 13:22:07",
+  "rawShare": "Wordle 594 X/6*\n\n⬜⬜🟨🟩⬜\n⬜⬜⬜🟩🟨\n⬜🟩⬜🟩⬜\n⬜🟩⬜🟩🟩\n🟨🟩⬜🟩🟩\n⬜🟩🟩🟩🟩",
+  "words": [
+    "quota",
+    "out!)",
+    "faith",
+    "party",
+    "salty"
+  ],
+  "comment": "I suck at this!"
+}
