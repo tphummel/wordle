@@ -1,0 +1,145 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "absent",
+      "present",
+      "absent"
+    ],
+    [
+      "absent",
+      "present",
+      "present",
+      "present",
+      "absent"
+    ],
+    [
+      "present",
+      "present",
+      "absent",
+      "present",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "present",
+      "correct",
+      "present"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "present",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟨",
+        "⬛️"
+      ],
+      "lineProgress": 1,
+      "lineScore": 9
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "present",
+        "present",
+        "present",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟨",
+        "🟨",
+        "🟨",
+        "⬛️"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "present",
+        "present",
+        "absent",
+        "present",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "🟨",
+        "⬛️",
+        "🟨",
+        "⬛️"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "present",
+        "correct",
+        "present"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟨",
+        "🟩",
+        "🟨"
+      ],
+      "lineProgress": 8,
+      "lineScore": 2
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 25,
+  "puzzleNum": 595,
+  "puzzleDate": "2023-02-03",
+  "guessCount": 5,
+  "isHardMode": true,
+  "playerName": "brent",
+  "timestamp": "2/4/2023 3:19:23",
+  "rawShare": "Wordle 595 5/6*\n\n⬛⬛⬛🟨⬛\n⬛🟨🟨🟨⬛\n🟨🟨⬛🟨⬛\n🟩🟩🟨🟩🟨\n🟩🟩🟩🟩🟩",
+  "words": [
+    "stink",
+    "ninth",
+    "until"
+  ],
+  "comment": ""
+}

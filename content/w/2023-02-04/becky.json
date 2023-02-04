@@ -1,0 +1,66 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "absent",
+      "present",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "present",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟨",
+        "⬛️"
+      ],
+      "lineProgress": 1,
+      "lineScore": 9
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 9,
+  "puzzleNum": 595,
+  "puzzleDate": "2023-02-03",
+  "guessCount": 2,
+  "isHardMode": true,
+  "playerName": "becky",
+  "timestamp": "2/4/2023 7:43:43",
+  "rawShare": "Wordle 595 2/6*\n\n⬛⬛⬛🟨⬛\n🟩🟩🟩🟩🟩",
+  "words": [],
+  "comment": "I know the chances of this was stupid low. But I am not rat!!"
+}

@@ -1,0 +1,119 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "absent",
+      "present",
+      "absent"
+    ],
+    [
+      "present",
+      "present",
+      "present",
+      "correct",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "absent",
+      "correct",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "present",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟨",
+        "⬛️"
+      ],
+      "lineProgress": 1,
+      "lineScore": 9
+    },
+    {
+      "lineStatuses": [
+        "present",
+        "present",
+        "present",
+        "correct",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "🟨",
+        "🟨",
+        "🟩",
+        "⬛️"
+      ],
+      "lineProgress": 5,
+      "lineScore": 5
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "absent",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "⬛️",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 8,
+      "lineScore": 2
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 16,
+  "puzzleNum": 595,
+  "puzzleDate": "2023-02-03",
+  "guessCount": 4,
+  "isHardMode": true,
+  "playerName": "sharon",
+  "timestamp": "2/4/2023 11:30:08",
+  "rawShare": "Wordle 595 4/6*\n\n⬛⬛⬛🟨⬛\n🟨🟨🟨🟩⬛\n🟩🟩⬛🟩🟩\n🟩🟩🟩🟩🟩",
+  "words": [
+    "tunic",
+    "unfit"
+  ],
+  "comment": ""
+}
