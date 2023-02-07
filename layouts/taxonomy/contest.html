@@ -145,7 +145,7 @@
           {{ end }}
 
           {{ with $puzzle.comment }}
-            {{ $annotations = $annotations | append (dict "emoji" "💬" "description" (printf "\"%s\"" .) ) }}
+            {{ $annotations = $annotations | append (dict "emoji" "💬" "description" (printf "\"%s\"" (htmlUnescape .))) }}
           {{ end }}
 
           {{ $annotationsCallout := "" }}
