@@ -115,6 +115,9 @@
         {{ end }}
 
         {{ $tom := merge (dict "Params" .Params) (dict "words" .Params.words "isHardMode" .Params.state.hardMode "puzzleScore" (partial "puzzle-score" $puzzle) "guessCount" (partial "guess-count" $puzzle) "playerName" "tom" )}}
+        {{ with .Content }}
+          {{ $tom = merge $tom (dict "comment" (plainify .)) }}
+        {{ end }}
         {{ $playerPuzzles = $playerPuzzles | append (slice $tom) }}
 
         {{ range $puzzle := sort $playerPuzzles "puzzleScore" "asc" }}
@@ -139,10 +142,10 @@
                 {{ $annotations = $annotations | append (dict "emoji" "🟡" "description" (printf "Did not enter (%d) expected (%d) number of words" $wordCount $expectedWords)) }}
               {{ end }}
             {{ end }}
+          {{ end }}
 
-            {{ with $puzzle.comment }}
-              {{ $annotations = $annotations | append (dict "emoji" "💬" "description" (printf "\"%s\"" (htmlEscape .)) ) }}
-            {{ end }}
+          {{ with $puzzle.comment }}
+            {{ $annotations = $annotations | append (dict "emoji" "💬" "description" (printf "\"%s\"" (htmlUnescape .))) }}
           {{ end }}
 
           {{ $annotationsCallout := "" }}
