@@ -285,10 +285,21 @@
 {{ $puzzleMonth := dateFormat "January" .Date }}
 {{ $puzzleDay := dateFormat "2" .Date }}
 {{ $allPuzzles := where .Site.RegularPages "Section" "w" }}
-{{ $input := dict "puzzleMonth" $puzzleMonth "puzzleDay" $puzzleDay "puzzleNum" (index .Params.puzzles 0) "puzzles" $allPuzzles }}
-{{ $puzzlesByMonthDay := partialCached "by-month-day" $input $puzzleMonth $puzzleDay }}
+{{ $thisPuzzleNum := (index .Params.puzzles 0) }}
 
-{{ with $puzzlesByMonthDay }}
+{{ $params := dict "puzzleMonth" $puzzleMonth "puzzleDay" $puzzleDay }}
+{{ $paramsWithPuzzles := merge $params (dict "puzzles" $allPuzzles) }}
+
+{{ $puzzlesByMonthDay := partialCached "by-month-day" $paramsWithPuzzles $puzzleMonth $puzzleDay }}
+{{ $otherPuzzlesByMonthDay := slice }}
+{{ range $puzzlesByMonthDay }}
+  {{ $num := index .Params.puzzles 0 }}
+  {{ if ne $num $thisPuzzleNum }}
+    {{ $otherPuzzlesByMonthDay = $otherPuzzlesByMonthDay | append . }}
+  {{ end }}
+{{ end }}
+
+{{ with $otherPuzzlesByMonthDay }}
   <h3>This Day in Wordle</h3>
   <table>
     <tr>
@@ -297,7 +308,7 @@
       <th>Turns</th>
       <th>Score</th>
     </tr>
-  {{ range $puzzlesByMonthDay }}
+  {{ range . }}
     <tr>
       <td><a href="{{ .RelPermalink }}">{{ dateFormat "Jan 2, 2006" .Date }}</a></td>
       <td><a href="{{ .RelPermalink }}">{{ index .Params.puzzles 0 }}</td>
