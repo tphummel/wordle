@@ -21,6 +21,7 @@
     {{ $name := .Name }}
     {{ $starter := .Page.Params.startingWord }}
     {{ $guests := delimit .Page.Params.guests ", " | title }} 
+    {{ $guestCount := len .Page.Params.guests }}
     {{ $count := .Count }}
     {{ $first := index (first 1 .Pages.ByDate) 0 }}
     {{ $last := index (last 1 .Pages.ByDate) 0 }}
@@ -33,7 +34,7 @@
           <a href="{{ .RelPermalink }}">{{ .Name }}</a>
         {{ end }}
       </td>
-      <td>{{ $guests }}</td>
+      <td>{{ $guestCount }}</td>
       <td>{{ $count }}</td>
       <td><a href="{{ $first.RelPermalink}}">{{ $first.Date.Format "Jan 2, 2006" }}</a></td>
       <td>{{ if gt $count 1 }}<a href="{{ $last.RelPermalink}}">{{ $last.Date.Format "Jan 2, 2006" }}</a>{{ else }}--{{ end }}</td>
