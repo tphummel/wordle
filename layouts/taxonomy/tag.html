@@ -1,0 +1,26 @@
+{{ define "main" }}
+<h1>{{.Title}}</h1>
+
+<p>{{ partial "breadcrumb.html" . }}</p>
+
+{{ with .Content }}
+<div>{{ . }}</div>
+{{ end }}
+
+<table>
+  <tr>
+    <td>Date</td>
+    <td>Turns</td>
+    <td>Score</td>
+    <td>Grid</td>
+  </tr>
+  {{ range .Data.Pages }}
+    <tr>
+      <td><a href="{{ .RelPermalink }}">{{ dateFormat "Jan 2, 2006" .Date }}</a></td>
+      <td><a href="{{ .RelPermalink }}">{{ partial "guess-count.html" . }}{{- cond (eq .Params.state.hardMode true) "*" "" -}}</a></td>
+      <td><a href="{{ .RelPermalink }}">{{ partial "puzzle-score.html" . }}</a></td>
+      <td>{{ partial "emoji-grid" . }}</td>
+    </tr>
+  {{ end }}
+</table>
+{{ end }}
