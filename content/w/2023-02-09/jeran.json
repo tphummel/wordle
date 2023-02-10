@@ -1,0 +1,67 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "correct",
+      "present",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "correct",
+        "present",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "🟨",
+        "🟩"
+      ],
+      "lineProgress": 5,
+      "lineScore": 5
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 5,
+  "puzzleNum": 600,
+  "puzzleDate": "2023-02-09",
+  "guessCount": 2,
+  "isHardMode": true,
+  "playerName": "jeran",
+  "timestamp": "2/9/2023 5:03:51",
+  "rawShare": "Wordle 600 2/6*\n\n⬛⬛🟩🟨🟩\n🟩🟩🟩🟩🟩",
+  "words": [
+    "stage"
+  ]
+}
