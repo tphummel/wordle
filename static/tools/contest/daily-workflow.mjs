@@ -34,17 +34,38 @@ if (puzzleDate === '') puzzleDate = defaultDate
 const defaultPuzzleNo = getDaysBetween(epoch, puzzleDate) + 1
 let puzzleNo = await question(`what is today's puzzle number? Hit enter for ${defaultPuzzleNo}`)
 if (puzzleNo === '') puzzleNo = defaultPuzzleNo
-await question('Open the wordle project directory: cd ~/Code/personal/wordle')
-await question("fetch all branches: gfa")
-await question(`check out today's branch: gco ${puzzleDate}_${puzzleNo}`)
-await question(`move into the puzzle directory: cd content/w/${puzzleDate}/`)
-await question(`create empty guest-entries file: touch ./guest-entries.tsv`)
-await question("copy today's rows from the google sheet into guest-entries.tsv and save: code ./guest-entries.tsv")
-await question("run the node script: node ../../../static/tools/score-guests/index.js ./guest-entries.tsv")
-await question("git add *.tsv *.json")
-await question(`git commit -m "add guest entries for ${puzzleDate}"`)
-await question(`ggp`)
-await question(`open the pr on website: https://github.com/tphummel/wordle/pulls/`)
+// await question('Open the wordle project directory: cd ~/Code/personal/wordle')
+const tmpdir = `/tmp/${puzzleDate}-${puzzleNo}/`
+await $`mkdir -p ${tmpdir}`
+cd(tmpdir)
+// await question("fetch all branches: gfa")
+await $`git clone git@github.com:tphummel/wordle.git`
+cd('wordle')
+// await question(`check out today's branch: gco ${puzzleDate}_${puzzleNo}`)
+const branch = `${puzzleDate}_${puzzleNo}`
+await $`git checkout ${branch}`
+cd('static/tools/score-guests')
+await $`npm ci`
+cd('../../..')
+// await question(`move into the puzzle directory: cd content/w/${puzzleDate}/`)
+cd(`content/w/${puzzleDate}/`)
+// await question(`create empty guest-entries file: touch ./guest-entries.tsv`)
+await $`touch ./guest-entries.tsv`
+// await question("copy today's rows from the google sheet into guest-entries.tsv and save: code ./guest-entries.tsv")
+await $`code ./guest-entries.tsv`
+await question("copy today's rows from the google sheet into guest-entries.tsv and save. then hit enter")
+// await question("run the node script: node ../../../static/tools/score-guests/index.js ./guest-entries.tsv")
+await $`node ../../../static/tools/score-guests/index.js ./guest-entries.tsv`
+// await question("git add *.tsv *.json")
+await $`git add *.tsv *.json`
+await $`git config user.name "Tom Hummel"`
+await $`git config user.email tohu@hey.com`
+// await question(`git commit -m "add guest entries for ${puzzleDate}"`)
+await $`git commit -m "add guest entries for ${puzzleDate}"`
+// await question(`ggp`)
+await $`git push origin ${branch}`
+await $`open https://github.com/tphummel/wordle/pulls/`
+// await question(`open the pr on website: https://github.com/tphummel/wordle/pulls/`)
 await question(`add the 'puzzle' label to the PR`)
 await question(`wait for auto merge and publish`)
 await question(`say "leaderboard updated" in whatsapp`)
