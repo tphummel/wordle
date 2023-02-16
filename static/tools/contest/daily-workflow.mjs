@@ -26,6 +26,7 @@ function getDaysBetween(start, end) {
   return Math.floor(secondsBetween / 864e5)
 }
 
+const crypto = require('crypto');
 
 const defaultDate = getDateTime(new Date()).substring(0,10);
 let puzzleDate = await question(`what is today's date? hit enter for ${defaultDate}`)
@@ -35,7 +36,7 @@ const defaultPuzzleNo = getDaysBetween(epoch, puzzleDate) + 1
 let puzzleNo = await question(`what is today's puzzle number? Hit enter for ${defaultPuzzleNo}`)
 if (puzzleNo === '') puzzleNo = defaultPuzzleNo
 // await question('Open the wordle project directory: cd ~/Code/personal/wordle')
-const tmpdir = `/tmp/${puzzleDate}-${puzzleNo}/`
+const tmpdir = `/tmp/${puzzleDate}-${puzzleNo}-${crypto.randomBytes(3).toString('hex')}/`
 await $`mkdir -p ${tmpdir}`
 cd(tmpdir)
 // await question("fetch all branches: gfa")
