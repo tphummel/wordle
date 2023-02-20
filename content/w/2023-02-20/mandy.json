@@ -1,0 +1,119 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "present",
+      "present",
+      "present"
+    ],
+    [
+      "present",
+      "absent",
+      "present",
+      "present",
+      "absent"
+    ],
+    [
+      "correct",
+      "present",
+      "correct",
+      "correct",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "present",
+        "present",
+        "present"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "🟨",
+        "🟨",
+        "🟨"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "present",
+        "absent",
+        "present",
+        "present",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "⬛️",
+        "🟨",
+        "🟨",
+        "⬛️"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "present",
+        "correct",
+        "correct",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟨",
+        "🟩",
+        "🟩",
+        "⬛️"
+      ],
+      "lineProgress": 7,
+      "lineScore": 3
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 17,
+  "puzzleNum": 611,
+  "puzzleDate": "2023-02-20",
+  "guessCount": 4,
+  "isHardMode": true,
+  "playerName": "mandy",
+  "timestamp": "2/20/2023 8:45:48",
+  "rawShare": "Wordle 611 4/6*\n\n⬜⬜🟨🟨🟨\n🟨⬜🟨🟨⬜\n🟩🟨🟩🟩⬜\n🟩🟩🟩🟩🟩",
+  "words": [
+    "after",
+    "steam"
+  ],
+  "comment": "Used an R I my second word when it was already gone …"
+}
