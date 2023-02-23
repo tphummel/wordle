@@ -86,4 +86,4 @@ stats: {
 }
 ---
 <!-- more -->
-My third guess opened it up. [Second guess word]({{ relref "/words/false" }}) has some history was my instinct.  
+My third guess opened it up.
