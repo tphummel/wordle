@@ -5,10 +5,17 @@
 <div>{{ . }}</div>
 {{ end }}
 
-{{ with $.Site.GetPage (printf "/%s/%s" "words" .Params.startingWord) }}
-  <p>Starting Word: <strong><a href="{{ .RelPermalink }}">{{ .Name | title }}</a></strong></p>
+{{ $contestMode := "" }}
+{{ with .Params.startingWord }}
+  {{ $contestMode = "commonOpener" }}
+  {{ with $.Site.GetPage (printf "/%s/%s" "words" .) }}
+    <p>Starting Word: <strong><a href="{{ .RelPermalink }}">{{ .Name | title }}</a></strong></p>
+  {{ else }}
+    <p>Starting Word: <strong>{{ . }}</strong></p>
+  {{ end }}
 {{ else }}
-  <p>Starting Word: <strong>{{ .Params.startingWord }}</strong></p>
+  {{ $contestMode = "freeForAll" }}
+  <p>Mode: <strong>Free For All</strong></p>
 {{ end }}
 <p>Guest Players: <strong>{{ delimit .Params.guests ", " | title }}</strong></p>
 <p>Puzzles Played in Contest: {{ len .Data.Pages }}</p>
@@ -126,20 +133,23 @@
             {{ $annotations = $annotations | append (dict "emoji" "🟡" "description" "Did not have game set to hard mode") }}
           {{ end }}
 
-          {{ if ne $puzzle.playerName "tom" }}
-            {{ $openerResult := index $puzzle.Params.state.evaluations 0 }}
-            {{ if ne $commonOpenerResult $openerResult }}
-              {{ $annotations = $annotations | append (dict "emoji" "🔴" "description" "Did not use correct starting word") }}
-            {{ end }}
+          {{ if eq $contestMode "commonOpener" }}
+            {{ if ne $puzzle.playerName "tom" }}
+              {{ $openerResult := index $puzzle.Params.state.evaluations 0 }}
+              {{ if ne $commonOpenerResult $openerResult }}
+                {{ $annotations = $annotations | append (dict "emoji" "🔴" "description" "Did not use correct starting word") }}
+              {{ end }}
 
-            {{ with $puzzle.words }}
-              {{ $wordCount := len . }}
-              {{ $guessCount := cond (eq $puzzle.guessCount "X") 7 $puzzle.guessCount | int }}
-              {{ $openerAndSolutionCount := 2 }}
-              {{ $expectedWords := sub $guessCount $openerAndSolutionCount }}
+              {{ with $puzzle.words }}
+                {{ $wordCount := len . }}
+                {{ $guessCount := cond (eq $puzzle.guessCount "X") 7 $puzzle.guessCount | int }}
 
-              {{ if ne $wordCount $expectedWords }}
-                {{ $annotations = $annotations | append (dict "emoji" "🟡" "description" (printf "Did not enter (%d) expected (%d) number of words" $wordCount $expectedWords)) }}
+                {{ $wordsNotExpected := cond (eq $contestMode "freeForAll") 1 2 }}
+                {{ $expectedWords := sub $guessCount $wordsNotExpected }}
+
+                {{ if ne $wordCount $expectedWords }}
+                  {{ $annotations = $annotations | append (dict "emoji" "🟡" "description" (printf "Did not enter (%d) expected (%d) number of words" $wordCount $expectedWords)) }}
+                {{ end }}
               {{ end }}
             {{ end }}
           {{ end }}
