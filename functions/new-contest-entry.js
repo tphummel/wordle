@@ -1,4 +1,8 @@
 export async function onRequest(context) {
+  if (context.request.method !== 'POST') {
+    return new Response('This endpoint only accepts POST requests', { status: 405 })
+  }
+
   const formData = await context.request.formData()
   const name = formData.get('name')
   const result = formData.get('result')
@@ -10,12 +14,14 @@ export async function onRequest(context) {
 
   console.log(jsonData)
 
-  const currentDatePacific = (new Date()).toLocaleString('en-US', {
+  const today = new Date()
+  const pacificTime = today.toLocaleString('en-US', {
     timeZone: 'America/Los_Angeles'
-  }).toISOString().slice(0,7)
+  })
+  const todayPacific = new Date(pacificTime).toISOString().slice(0,7)
   
   const response = await context.env.WORDLE_CONTEST_ENTRIES.put({
-    name: `${currentDatePacific}/${name}.json`,
+    name: `${todayPacific}/${name}.json`,
     data: jsonData,
     contentType: 'application/json'
   })
