@@ -20,11 +20,7 @@ export async function onRequest(context) {
   })
   const todayPacific = new Date(pacificTime).toISOString().slice(0,7)
   
-  const response = await context.env.WORDLE_CONTEST_ENTRIES.put({
-    name: `${todayPacific}/${name}.json`,
-    data: jsonData,
-    contentType: 'application/json'
-  })
+  const response = await context.env.WORDLE_CONTEST_ENTRIES.put(`${todayPacific}/${name}.json`, jsonData)
 
   return new Response(`contest entry received!`)
 }
