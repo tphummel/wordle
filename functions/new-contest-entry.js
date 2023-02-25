@@ -14,8 +14,7 @@ export async function onRequest(context) {
     timeZone: 'America/Los_Angeles'
   }).toISOString().slice(0,7)
   
-  const binding = R2.bindings.get('wordle-results')
-  const response = await binding.put({
+  const response = await context.env.WORDLE_CONTEST_ENTRIES.put({
     name: `${currentDatePacific}/${name}.json`,
     data: jsonData,
     contentType: 'application/json'
