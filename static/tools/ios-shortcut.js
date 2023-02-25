@@ -102,6 +102,7 @@ const puzzleHash = state.evaluations.map((row) => {
 }).join('');
 
 const activeContests = [
+    // `${puzzleDate.slice(0,7)}-ffa`
     `${puzzleDate.slice(0,7)}-${state.boardState[0]}`
 ]
 
