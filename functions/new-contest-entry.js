@@ -18,7 +18,7 @@ export async function onRequest(context) {
   const pacificTime = today.toLocaleString('en-US', {
     timeZone: 'America/Los_Angeles'
   })
-  const todayPacific = new Date(pacificTime).toISOString().slice(0,7)
+  const todayPacific = new Date(pacificTime).toISOString().slice(0,9)
   
   const response = await context.env.WORDLE_CONTEST_ENTRIES.put(`${todayPacific}/${name}.json`, jsonData)
 
