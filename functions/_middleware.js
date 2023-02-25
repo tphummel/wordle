@@ -28,7 +28,7 @@ export async function onRequest(context) {
   return await context.next()
 }
 
-await function postLog (data) {
+function postLog (data) {
   return fetch('https://api.honeycomb.io/1/events/' + encodeURIComponent(HONEYCOMB_DATASET), {
     method: 'POST',
     body: JSON.stringify(data),
