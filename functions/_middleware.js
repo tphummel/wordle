@@ -1,5 +1,6 @@
 export async function onRequest(context) {
   context.passThroughOnException()
+
   const {request} = context
   const { pathname } = new URL(request.url)
   const cf = request.cf !== undefined ? request.cf : {}
@@ -23,15 +24,16 @@ export async function onRequest(context) {
     req_referer: headers.get('referer'),
   }
 
-  context.waitUntil(postLog(eventData))
+  context.waitUntil(postLog(context, eventData))
+
   
   return await context.next()
 }
 
-function postLog (data) {
-  return fetch('https://api.honeycomb.io/1/events/' + encodeURIComponent(HONEYCOMB_DATASET), {
+function postLog (context, data) {
+  return fetch('https://api.honeycomb.io/1/events/' + encodeURIComponent(context.env.HONEYCOMB_DATASET), {
     method: 'POST',
     body: JSON.stringify(data),
-    headers: new Headers([['X-Honeycomb-Team', HONEYCOMB_KEY]]) 
+    headers: new Headers([['X-Honeycomb-Team', context.env.HONEYCOMB_KEY]]) 
   })
 }
