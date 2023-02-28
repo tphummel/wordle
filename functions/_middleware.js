@@ -24,9 +24,10 @@ export async function onRequest(context) {
     req_referer: headers.get('referer'),
   }
 
+  console.log(context.env.HONEYCOMB_KEY, context.env.HONEYCOMB_DATASET)
+
   context.waitUntil(postLog(context, eventData))
 
-  
   return await context.next()
 }
 
