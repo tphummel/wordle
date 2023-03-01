@@ -1,5 +1,5 @@
 {
   "version": 1,
-  "include": ["/new-contest-entry"],
-  "exclude": []
+  "include": ["/*"],
+  "exclude": ["/*.css", "/*.ico"]
 }
