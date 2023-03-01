@@ -1,7 +1,7 @@
 ---
 title: March 2023
 guests: ["mandy", "fred", "neela", "becky", "dan", "sharon", "nancy", "jeran", "brent"]
-active: false
+active: true
 ---
 
 {{< contest.inline >}}
