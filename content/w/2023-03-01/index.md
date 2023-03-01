@@ -86,3 +86,5 @@ stats: {
 }
 ---
 <!-- more -->
+felt like i didnt make much progress with my opener in terms of lighting tiles,  but scoredle thinks i did. 
+scoredle: 14855, 1761, 5, 1
