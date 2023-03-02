@@ -2,7 +2,7 @@
 title: February 2023
 startingWord: "orate"
 guests: ["mandy", "fred", "neela", "becky", "dan", "sharon", "nancy", "jeran", "brent"]
-active: true
+active: false
 ---
 
 {{< contest.inline >}}
