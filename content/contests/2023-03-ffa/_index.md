@@ -1,6 +1,6 @@
 ---
 title: March 2023
-guests: ["mandy", "fred", "neela", "becky", "dan", "sharon", "nancy", "jeran", "brent"]
+guests: ["mandy", "fred", "neela", "becky", "dan", "sharon", "nancy", "jeran"]
 active: true
 ---
 
