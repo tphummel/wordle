@@ -49,7 +49,7 @@ state: {
   "gameStatus": "WIN",
   "lastPlayedTs": 1677850769174,
   "lastCompletedTs": 1677850769174,
-  "hardMode": false,
+  "hardMode": true,
   "settings": {
     "hardMode": false,
     "darkMode": true,
