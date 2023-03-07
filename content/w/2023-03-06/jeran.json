@@ -1,0 +1,94 @@
+{
+  "results": [
+    [
+      "correct",
+      "correct",
+      "absent",
+      "present",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "absent",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "absent",
+        "present",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "⬛️",
+        "🟨",
+        "⬛️"
+      ],
+      "lineProgress": 5,
+      "lineScore": 5
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 6,
+      "lineScore": 4
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 9,
+  "puzzleNum": 625,
+  "puzzleDate": "2023-03-06",
+  "guessCount": 3,
+  "isHardMode": true,
+  "playerName": "jeran",
+  "timestamp": "3/6/2023 10:07:24",
+  "rawShare": "Wordle 625 3/6*\n\n🟩🟩⬛🟨⬛\n🟩🟩🟩⬛⬛\n🟩🟩🟩🟩🟩",
+  "words": [
+    "piano",
+    "pinch"
+  ],
+  "comment": "Thought i had it in 2."
+}
