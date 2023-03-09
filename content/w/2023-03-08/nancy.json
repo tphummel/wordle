@@ -1,0 +1,120 @@
+{
+  "results": [
+    [
+      "present",
+      "present",
+      "absent",
+      "absent",
+      "present"
+    ],
+    [
+      "correct",
+      "correct",
+      "present",
+      "absent",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "present",
+      "correct",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "present",
+        "present",
+        "absent",
+        "absent",
+        "present"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "🟨",
+        "⬛️",
+        "⬛️",
+        "🟨"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "present",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟨",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 5,
+      "lineScore": 5
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "present",
+        "correct",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟨",
+        "🟩",
+        "⬛️"
+      ],
+      "lineProgress": 7,
+      "lineScore": 3
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 15,
+  "puzzleNum": 627,
+  "puzzleDate": "2023-03-08",
+  "guessCount": 4,
+  "isHardMode": true,
+  "playerName": "nancy",
+  "timestamp": "3/8/2023 8:38:14",
+  "rawShare": "Wordle 627 4/6*\n\n🟨🟨⬜⬜🟨\n🟩🟩🟨⬜⬜\n🟩🟩🟨🟩⬜\n🟩🟩🟩🟩🟩",
+  "words": [
+    "arose",
+    "reach",
+    "relay"
+  ],
+  "comment": ""
+}
