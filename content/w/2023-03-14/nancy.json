@@ -1,0 +1,120 @@
+{
+  "results": [
+    [
+      "correct",
+      "present",
+      "absent",
+      "absent",
+      "absent"
+    ],
+    [
+      "correct",
+      "absent",
+      "absent",
+      "correct",
+      "absent"
+    ],
+    [
+      "correct",
+      "absent",
+      "present",
+      "correct",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "correct",
+        "present",
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟨",
+        "⬛️",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "absent",
+        "absent",
+        "correct",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "⬛️"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "absent",
+        "present",
+        "correct",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "⬛️",
+        "🟨",
+        "🟩",
+        "⬛️"
+      ],
+      "lineProgress": 5,
+      "lineScore": 5
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 18,
+  "puzzleNum": 633,
+  "puzzleDate": "2023-03-14",
+  "guessCount": 4,
+  "isHardMode": true,
+  "playerName": "nancy",
+  "timestamp": "3/14/2023 10:58:11",
+  "rawShare": "Wordle 633 4/6*\n\n🟩🟨⬜⬜⬜\n🟩⬜⬜🟩⬜\n🟩⬜🟨🟩⬜\n🟩🟩🟩🟩🟩",
+  "words": [
+    "slice",
+    "stall",
+    "skulk"
+  ],
+  "comment": ""
+}

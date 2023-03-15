@@ -1,0 +1,172 @@
+{
+  "results": [
+    [
+      "absent",
+      "present",
+      "absent",
+      "absent",
+      "absent"
+    ],
+    [
+      "absent",
+      "absent",
+      "absent",
+      "correct",
+      "correct"
+    ],
+    [
+      "absent",
+      "present",
+      "present",
+      "correct",
+      "correct"
+    ],
+    [
+      "absent",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ],
+    [
+      "absent",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "present",
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟨",
+        "⬛️",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 1,
+      "lineScore": 9
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "present",
+        "present",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟨",
+        "🟨",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 6,
+      "lineScore": 4
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 8,
+      "lineScore": 2
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 8,
+      "lineScore": 2
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 23,
+  "puzzleNum": 633,
+  "puzzleDate": "2023-03-14",
+  "guessCount": 6,
+  "isHardMode": true,
+  "playerName": "jeran",
+  "timestamp": "3/14/2023 9:48:07",
+  "rawShare": "Wordle 633 6/6*\n\n⬛🟨⬛⬛⬛\n⬛⬛⬛🟩🟩\n⬛🟨🟨🟩🟩\n⬛🟩🟩🟩🟩\n⬛🟩🟩🟩🟩\n🟩🟩🟩🟩🟩",
+  "words": [
+    "aline",
+    "godly",
+    "truly",
+    "burly",
+    "curly"
+  ],
+  "comment": ""
+}
