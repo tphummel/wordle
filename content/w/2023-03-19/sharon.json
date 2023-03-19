@@ -1,0 +1,94 @@
+{
+  "results": [
+    [
+      "absent",
+      "present",
+      "present",
+      "present",
+      "present"
+    ],
+    [
+      "correct",
+      "present",
+      "present",
+      "present",
+      "present"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "present",
+        "present",
+        "present",
+        "present"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟨",
+        "🟨",
+        "🟨",
+        "🟨"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "present",
+        "present",
+        "present",
+        "present"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟨",
+        "🟨",
+        "🟨",
+        "🟨"
+      ],
+      "lineProgress": 6,
+      "lineScore": 4
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 10,
+  "puzzleNum": 638,
+  "puzzleDate": "2023-03-19",
+  "guessCount": 3,
+  "isHardMode": true,
+  "playerName": "sharon",
+  "timestamp": "3/19/2023 10:58:20",
+  "rawShare": "Wordle 638 3/6*\n\n⬛🟨🟨🟨🟨\n🟩🟨🟨🟨🟨\n🟩🟩🟩🟩🟩",
+  "words": [
+    "score",
+    "cored"
+  ],
+  "comment": "The Ides of March have passed"
+}
