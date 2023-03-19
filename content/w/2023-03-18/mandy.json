@@ -1,0 +1,94 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "present",
+      "present",
+      "absent"
+    ],
+    [
+      "present",
+      "present",
+      "absent",
+      "present",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "present",
+        "present",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "🟨",
+        "🟨",
+        "⬛️"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "present",
+        "present",
+        "absent",
+        "present",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "🟨",
+        "⬛️",
+        "🟨",
+        "🟩"
+      ],
+      "lineProgress": 5,
+      "lineScore": 5
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 13,
+  "puzzleNum": 637,
+  "puzzleDate": "2023-03-18",
+  "guessCount": 3,
+  "isHardMode": true,
+  "playerName": "mandy",
+  "timestamp": "3/18/2023 10:59:36",
+  "rawShare": "Wordle 637 3/6*\n\n⬜⬜🟨🟨⬜\n🟨🟨⬜🟨🟩\n🟩🟩🟩🟩🟩",
+  "words": [
+    "black",
+    "cheat"
+  ],
+  "comment": ""
+}
