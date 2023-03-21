@@ -1,0 +1,94 @@
+{
+  "results": [
+    [
+      "absent",
+      "present",
+      "absent",
+      "absent",
+      "correct"
+    ],
+    [
+      "present",
+      "absent",
+      "absent",
+      "absent",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "present",
+        "absent",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟨",
+        "⬛️",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "present",
+        "absent",
+        "absent",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 14,
+  "puzzleNum": 639,
+  "puzzleDate": "2023-03-20",
+  "guessCount": 3,
+  "isHardMode": true,
+  "playerName": "sharon",
+  "timestamp": "3/20/2023 10:56:14",
+  "rawShare": "Wordle 639 3/6*\n\n⬛🟨⬛⬛🟩\n🟨⬛⬛⬛🟩\n🟩🟩🟩🟩🟩",
+  "words": [
+    "route",
+    "opine"
+  ],
+  "comment": "Lotta luck today!  I credit the Vernal Equinox "
+}

@@ -1,0 +1,146 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "absent",
+      "absent",
+      "present"
+    ],
+    [
+      "absent",
+      "present",
+      "absent",
+      "present",
+      "absent"
+    ],
+    [
+      "absent",
+      "absent",
+      "correct",
+      "absent",
+      "correct"
+    ],
+    [
+      "absent",
+      "absent",
+      "correct",
+      "absent",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "absent",
+        "present"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟨"
+      ],
+      "lineProgress": 1,
+      "lineScore": 9
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "present",
+        "absent",
+        "present",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟨",
+        "⬛️",
+        "🟨",
+        "⬛️"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "correct",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "correct",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 29,
+  "puzzleNum": 639,
+  "puzzleDate": "2023-03-20",
+  "guessCount": 5,
+  "isHardMode": true,
+  "playerName": "fred",
+  "timestamp": "3/20/2023 7:47:11",
+  "rawShare": "Wordle 639 5/6*\n\n⬜⬜⬜⬜🟨\n⬜🟨⬜🟨⬜\n⬜⬜🟩⬜🟩\n⬜⬜🟩⬜🟩\n🟩🟩🟩🟩🟩",
+  "words": [
+    "audio",
+    "rodeo",
+    "stone",
+    "choke"
+  ],
+  "comment": ""
+}
