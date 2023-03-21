@@ -94,39 +94,50 @@
   {{ $puzzleNumber := index .Params.puzzles 0 }}
   {{ $commonOpenerResult := index .Params.state.evaluations 0 }}
   {{ $permalink := .RelPermalink }}
+
+  {{ $playerPuzzles := slice }}
+  {{ range $player := $puzzle.Resources.Match "*.json" }}
+    {{ $guest := .Content | transform.Unmarshal }}
+
+    <!-- contortions to use emoji-grid partial for guests -->
+    {{ $guest = $guest | merge (dict "Params" (dict "state" (dict "evaluations" $guest.results))) }}
+    {{ $boardState := slice }}
+    {{ range $counter := seq 1 6 }}
+      {{ $coalescedGuessCount := cond (eq $guest.guessCount "X") 6 $guest.guessCount }}
+      {{ if le $counter $coalescedGuessCount }}
+        {{ $usedGuessFiller := "ttttt" }}
+        {{ $boardState = $boardState | append $usedGuessFiller }}
+      {{ else }}
+        {{ $unusedGuessFiller := "" }}
+        {{ $boardState = $boardState | append $unusedGuessFiller }}
+      {{ end }}
+    {{ end }}
+    {{ $guest = $guest | merge (dict "Params" (dict "state" (dict "boardState" $boardState))) }}
+    <!-- end contortions -->
+
+    {{ $playerPuzzles = $playerPuzzles | append (slice $guest) }}
+  {{ end }}
+  {{ $tom := merge (dict "Params" .Params) (dict "words" .Params.words "isHardMode" .Params.state.hardMode "puzzleScore" (partial "puzzle-score" $puzzle) "guessCount" (partial "guess-count" $puzzle) "playerName" "tom" )}}
+  {{ with .Content }}
+    {{ $tom = merge $tom (dict "comment" (plainify .)) }}
+  {{ end }}
+  {{ $playerPuzzles = $playerPuzzles | append (slice $tom) }}
+
+  {{ $puzzleStats := dict "playerCount" (len $playerPuzzles) "puzzleScore" 0 "guessCount" 0 }}
+  {{ range $playerPuzzles }}
+    {{ $newPuzzleScore := add (index $puzzleStats "puzzleScore") .puzzleScore }}
+    {{ $newGuessCount := add (index $puzzleStats "guessCount") .guessCount }}
+    {{ $updated := dict "puzzleScore" $newPuzzleScore "guessCount" $newGuessCount }}
+    {{ $puzzleStats = merge $puzzleStats $updated }}
+    
+  {{ end }}
+
+  
+
   <li>
     <details>
-      <summary>{{ .Title }}</summary>
+      <summary>{{ .Title }} - {{ $puzzleStats.puzzleScore }}p / {{ $puzzleStats.guessCount }}g </summary>
       <ul>
-        {{ $playerPuzzles := slice }}
-        {{ range $player := $puzzle.Resources.Match "*.json" }}
-          {{ $guest := .Content | transform.Unmarshal }}
-
-          <!-- contortions to use emoji-grid partial for guests -->
-          {{ $guest = $guest | merge (dict "Params" (dict "state" (dict "evaluations" $guest.results))) }}
-          {{ $boardState := slice }}
-          {{ range $counter := seq 1 6 }}
-            {{ $coalescedGuessCount := cond (eq $guest.guessCount "X") 6 $guest.guessCount }}
-            {{ if le $counter $coalescedGuessCount }}
-              {{ $usedGuessFiller := "ttttt" }}
-              {{ $boardState = $boardState | append $usedGuessFiller }}
-            {{ else }}
-              {{ $unusedGuessFiller := "" }}
-              {{ $boardState = $boardState | append $unusedGuessFiller }}
-            {{ end }}
-          {{ end }}
-          {{ $guest = $guest | merge (dict "Params" (dict "state" (dict "boardState" $boardState))) }}
-          <!-- end contortions -->
-
-          {{ $playerPuzzles = $playerPuzzles | append (slice $guest) }}
-        {{ end }}
-
-        {{ $tom := merge (dict "Params" .Params) (dict "words" .Params.words "isHardMode" .Params.state.hardMode "puzzleScore" (partial "puzzle-score" $puzzle) "guessCount" (partial "guess-count" $puzzle) "playerName" "tom" )}}
-        {{ with .Content }}
-          {{ $tom = merge $tom (dict "comment" (plainify .)) }}
-        {{ end }}
-        {{ $playerPuzzles = $playerPuzzles | append (slice $tom) }}
-
         {{ range $puzzle := sort $playerPuzzles "puzzleScore" "asc" }}
           {{ $annotations := slice }}
           {{ if not $puzzle.isHardMode }}
@@ -165,7 +176,7 @@
 
           <li>
             <details>
-              <summary>{{ $puzzle.playerName | title }}: {{ $puzzle.puzzleScore }} points / {{ $puzzle.guessCount }} guesses {{ $annotationsCallout }} </summary>
+              <summary>{{ $puzzle.playerName | title }}: {{ $puzzle.puzzleScore }}p / {{ $puzzle.guessCount }}g {{ $annotationsCallout }} </summary>
               <p>
                 <div>Wordle {{ $puzzleNumber }} {{ $puzzle.guessCount }}/6{{ cond $puzzle.isHardMode "*" "" }}</div>
                 <div>{{ partial "emoji-grid" $puzzle }}</div>
