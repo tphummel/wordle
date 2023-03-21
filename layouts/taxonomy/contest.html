@@ -126,7 +126,7 @@
   {{ $puzzleStats := dict "playerCount" (len $playerPuzzles) "puzzleScore" 0 "guessCount" 0 }}
   {{ range $playerPuzzles }}
     {{ $newPuzzleScore := add (index $puzzleStats "puzzleScore") .puzzleScore }}
-    {{ $newGuessCount := add (index $puzzleStats "guessCount") .guessCount }}
+    {{ $newGuessCount := add (index $puzzleStats "guessCount") (cond (eq .guessCount "X") 7 .guessCount) }}
     {{ $updated := dict "puzzleScore" $newPuzzleScore "guessCount" $newGuessCount }}
     {{ $puzzleStats = merge $puzzleStats $updated }}
     
