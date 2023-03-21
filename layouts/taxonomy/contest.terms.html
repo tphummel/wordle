@@ -32,6 +32,8 @@
       <td>
         {{ with $.Site.GetPage (printf "/%s/%s" "words" $starter) }}
           <a href="{{ .RelPermalink }}">{{ .Name }}</a>
+        {{ else }}
+          Free For All
         {{ end }}
       </td>
       <td>{{ $guestCount }}</td>
