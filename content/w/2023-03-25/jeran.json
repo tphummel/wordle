@@ -1,0 +1,120 @@
+{
+  "results": [
+    [
+      "present",
+      "present",
+      "absent",
+      "absent",
+      "absent"
+    ],
+    [
+      "present",
+      "correct",
+      "absent",
+      "present",
+      "present"
+    ],
+    [
+      "absent",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "present",
+        "present",
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "🟨",
+        "⬛️",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "present",
+        "correct",
+        "absent",
+        "present",
+        "present"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "🟩",
+        "⬛️",
+        "🟨",
+        "🟨"
+      ],
+      "lineProgress": 5,
+      "lineScore": 5
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 8,
+      "lineScore": 2
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 15,
+  "puzzleNum": 644,
+  "puzzleDate": "2023-03-25",
+  "guessCount": 4,
+  "isHardMode": true,
+  "playerName": "jeran",
+  "timestamp": "3/25/2023 20:23:29",
+  "rawShare": "Wordle 644 4/6*\n\n🟨🟨⬛⬛⬛\n🟨🟩⬛🟨🟨\n⬛🟩🟩🟩🟩\n🟩🟩🟩🟩🟩",
+  "words": [
+    "trial",
+    "route",
+    "doter"
+  ],
+  "comment": ""
+}
