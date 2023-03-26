@@ -1,0 +1,146 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "absent",
+      "correct",
+      "absent"
+    ],
+    [
+      "absent",
+      "present",
+      "absent",
+      "correct",
+      "present"
+    ],
+    [
+      "absent",
+      "present",
+      "present",
+      "correct",
+      "absent"
+    ],
+    [
+      "present",
+      "correct",
+      "absent",
+      "correct",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "correct",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "⬛️"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "present",
+        "absent",
+        "correct",
+        "present"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟨",
+        "⬛️",
+        "🟩",
+        "🟨"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "present",
+        "present",
+        "correct",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟨",
+        "🟨",
+        "🟩",
+        "⬛️"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "present",
+        "correct",
+        "absent",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "🟩",
+        "⬛️",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 7,
+      "lineScore": 3
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 23,
+  "puzzleNum": 644,
+  "puzzleDate": "2023-03-25",
+  "guessCount": 5,
+  "isHardMode": true,
+  "playerName": "mandy",
+  "timestamp": "3/25/2023 21:18:23",
+  "rawShare": "Wordle 644 5/6*\n\n⬜⬜⬜🟩⬜\n⬜🟨⬜🟩🟨\n⬜🟨🟨🟩⬜\n🟨🟩⬜🟩🟩\n🟩🟩🟩🟩🟩",
+  "words": [
+    "adieu",
+    "greet",
+    "strep",
+    "toner"
+  ],
+  "comment": "Jeeze …"
+}
