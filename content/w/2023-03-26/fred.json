@@ -1,0 +1,94 @@
+{
+  "results": [
+    [
+      "present",
+      "absent",
+      "absent",
+      "present",
+      "correct"
+    ],
+    [
+      "absent",
+      "present",
+      "correct",
+      "absent",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "present",
+        "absent",
+        "absent",
+        "present",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "⬛️",
+        "⬛️",
+        "🟨",
+        "🟩"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "present",
+        "correct",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟨",
+        "🟩",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 5,
+      "lineScore": 5
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 11,
+  "puzzleNum": 645,
+  "puzzleDate": "2023-03-26",
+  "guessCount": 3,
+  "isHardMode": true,
+  "playerName": "fred",
+  "timestamp": "3/26/2023 7:15:10",
+  "rawShare": "Wordle 645 3/6*\n\n🟨⬜⬜🟨🟩\n⬜🟨🟩⬜🟩\n🟩🟩🟩🟩🟩",
+  "words": [
+    "irate",
+    "lithe"
+  ],
+  "comment": ""
+}
