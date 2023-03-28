@@ -1,0 +1,94 @@
+{
+  "results": [
+    [
+      "present",
+      "absent",
+      "present",
+      "absent",
+      "absent"
+    ],
+    [
+      "absent",
+      "correct",
+      "absent",
+      "correct",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "present",
+        "absent",
+        "present",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "⬛️",
+        "🟨",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "absent",
+        "correct",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "⬛️",
+        "🟩",
+        "⬛️"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 14,
+  "puzzleNum": 647,
+  "puzzleDate": "2023-03-28",
+  "guessCount": 3,
+  "isHardMode": true,
+  "playerName": "neela",
+  "timestamp": "3/28/2023 11:39:54",
+  "rawShare": "Wordle 647 3/6*\n\n🟨⬜🟨⬜⬜\n⬜🟩⬜🟩⬜\n🟩🟩🟩🟩🟩",
+  "words": [
+    "route",
+    "quirk"
+  ],
+  "comment": ""
+}
