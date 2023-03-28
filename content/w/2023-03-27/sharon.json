@@ -1,0 +1,68 @@
+{
+  "results": [
+    [
+      "absent",
+      "present",
+      "correct",
+      "absent",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "present",
+        "correct",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟨",
+        "🟩",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 7,
+  "puzzleNum": 646,
+  "puzzleDate": "2023-03-27",
+  "guessCount": 2,
+  "isHardMode": true,
+  "playerName": "sharon",
+  "timestamp": "3/27/2023 8:26:52",
+  "rawShare": "Wordle 646 2/6*\n\n⬛🟨🟩⬛⬛\n🟩🟩🟩🟩🟩",
+  "words": [
+    "roach"
+  ],
+  "comment": "Batsh*t …..where did I pull that from? Already in the dregs with my opener"
+}
