@@ -1,0 +1,146 @@
+{
+  "results": [
+    [
+      "present",
+      "absent",
+      "absent",
+      "absent",
+      "present"
+    ],
+    [
+      "absent",
+      "absent",
+      "present",
+      "present",
+      "correct"
+    ],
+    [
+      "absent",
+      "absent",
+      "correct",
+      "correct",
+      "correct"
+    ],
+    [
+      "absent",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "present",
+        "absent",
+        "absent",
+        "absent",
+        "present"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟨"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "present",
+        "present",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "🟨",
+        "🟨",
+        "🟩"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 6,
+      "lineScore": 4
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 8,
+      "lineScore": 2
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 20,
+  "puzzleNum": 648,
+  "puzzleDate": "2023-03-29",
+  "guessCount": 5,
+  "isHardMode": true,
+  "playerName": "sharon",
+  "timestamp": "3/29/2023 16:27:42",
+  "rawShare": "Wordle 648 5/6*\n\n🟨⬛⬛⬛🟨\n⬛⬛🟨🟨🟩\n⬛⬛🟩🟩🟩\n⬛🟩🟩🟩🟩\n🟩🟩🟩🟩🟩",
+  "words": [
+    "spice",
+    "guest",
+    "onset",
+    "reset"
+  ],
+  "comment": ""
+}
