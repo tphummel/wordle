@@ -1,0 +1,68 @@
+{
+  "results": [
+    [
+      "present",
+      "correct",
+      "correct",
+      "correct",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "present",
+        "correct",
+        "correct",
+        "correct",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "🟩",
+        "🟩",
+        "🟩",
+        "⬛️"
+      ],
+      "lineProgress": 7,
+      "lineScore": 3
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 3,
+  "puzzleNum": 649,
+  "puzzleDate": "2023-03-30",
+  "guessCount": 2,
+  "isHardMode": true,
+  "playerName": "dan",
+  "timestamp": "3/30/2023 7:51:45",
+  "rawShare": "Wordle 649 2/6*\n\n🟨🟩🟩🟩⬛\n🟩🟩🟩🟩🟩",
+  "words": [
+    "dream"
+  ],
+  "comment": "Gluten Free people everywhere are offended. "
+}
