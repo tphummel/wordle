@@ -1,8 +1,8 @@
 ---
 title: "651: 2023-04-01"
 date: 2023-04-01T06:16:36-07:00
-tags: ["march-23-tour"]
-contests: ["2023-04-ffa"]
+tags: []
+contests: ["2023-04-lucky"]
 words: ["lucky","choir","reach","march"]
 openers: ["lucky"]
 middlers: ["choir","reach"]
@@ -86,4 +86,4 @@ stats: {
 }
 ---
 <!-- more -->
-Liked my words. I though I had it on guess three. 
+Solution was meta, starting a new month. Liked my words. I though I had it on guess three. 
