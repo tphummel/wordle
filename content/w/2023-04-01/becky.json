@@ -1,0 +1,119 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "present",
+      "absent",
+      "absent"
+    ],
+    [
+      "absent",
+      "present",
+      "absent",
+      "present",
+      "absent"
+    ],
+    [
+      "present",
+      "present",
+      "present",
+      "absent",
+      "present"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "present",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "🟨",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 1,
+      "lineScore": 9
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "present",
+        "absent",
+        "present",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟨",
+        "⬛️",
+        "🟨",
+        "⬛️"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "present",
+        "present",
+        "present",
+        "absent",
+        "present"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "🟨",
+        "🟨",
+        "⬛️",
+        "🟨"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 23,
+  "puzzleNum": 651,
+  "puzzleDate": "2023-04-01",
+  "guessCount": 4,
+  "isHardMode": true,
+  "playerName": "becky",
+  "timestamp": "4/1/2023 7:38:26",
+  "rawShare": "Wordle 651 4/6*\n\n⬛⬛🟨⬛⬛\n⬛🟨⬛🟨⬛\n🟨🟨🟨⬛🟨\n🟩🟩🟩🟩🟩",
+  "words": [
+    "ocean",
+    "chair"
+  ],
+  "comment": "Of course…."
+}
