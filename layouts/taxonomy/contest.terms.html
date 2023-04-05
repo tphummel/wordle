@@ -10,11 +10,11 @@
 <table>
   <tr>
     <td>Contest</td>
-    <td>Starter</td>
+    <td>Mode</td>
     <td>Guests</td>
-    <td>Puzzles</td>
-    <td>First</td>
-    <td>Last</td>
+    <td>🥇</td>
+    <td>🥈</td>
+    <td>🥉</td>
   </tr>
 
   {{ range .Data.Terms.Alphabetical.Reverse }}
@@ -23,12 +23,19 @@
     {{ $guests := delimit .Page.Params.guests ", " | title }} 
     {{ $guestCount := len .Page.Params.guests }}
     {{ $count := .Count }}
-    {{ $first := index (first 1 .Pages.ByDate) 0 }}
-    {{ $last := index (last 1 .Pages.ByDate) 0 }}
+    
+    {{ $gold := "-" }}
+    {{ $silver := "-"}}
+    {{ $bronze := "-" }}
+    {{ with .Page.Params.winners }}
+      {{ $gold = cond (ge (len .) 1) (index . 0) "-" }}
+      {{ $silver = cond (ge (len .) 2) (index . 1) "-" }}
+      {{ $bronze = cond (ge (len .) 3) (index . 2) "-x" }}
+    {{ end }}
 
     {{ with $.Site.GetPage (printf "/%s/%s" "contests" $name) }}
     <tr>
-      <td><a href="{{ .RelPermalink }}">{{ .Name }}</a></td>
+      <td><a href="{{ .RelPermalink }}">{{ .Name }} ({{ $count }})</a></td>
       <td>
         {{ with $.Site.GetPage (printf "/%s/%s" "words" $starter) }}
           <a href="{{ .RelPermalink }}">{{ .Name }}</a>
@@ -37,9 +44,9 @@
         {{ end }}
       </td>
       <td>{{ $guestCount }}</td>
-      <td>{{ $count }}</td>
-      <td><a href="{{ $first.RelPermalink}}">{{ $first.Date.Format "Jan 2, 2006" }}</a></td>
-      <td>{{ if gt $count 1 }}<a href="{{ $last.RelPermalink}}">{{ $last.Date.Format "Jan 2, 2006" }}</a>{{ else }}--{{ end }}</td>
+      <td>{{ $gold }} </td>
+      <td>{{ $silver }} </td>
+      <td>{{ $bronze }} </td>
     </tr>
     {{ end }}
 

@@ -3,6 +3,7 @@ title: January 2023
 startingWord: "guide"
 guests: ["mandy", "fred", "neela", "becky", "dan", "sharon", "nancy"]
 active: false
+winners: [ "Sharon", "Dan", "Nancy"]
 ---
 
 {{< contest.inline >}}
