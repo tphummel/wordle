@@ -1,0 +1,119 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "absent",
+      "absent",
+      "absent"
+    ],
+    [
+      "correct",
+      "absent",
+      "correct",
+      "absent",
+      "absent"
+    ],
+    [
+      "correct",
+      "absent",
+      "correct",
+      "present",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 0,
+      "lineScore": 10
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "absent",
+        "correct",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "⬛️",
+        "🟩",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "absent",
+        "correct",
+        "present",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "⬛️",
+        "🟩",
+        "🟨",
+        "⬛️"
+      ],
+      "lineProgress": 5,
+      "lineScore": 5
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 21,
+  "puzzleNum": 655,
+  "puzzleDate": "2023-04-05",
+  "guessCount": 4,
+  "isHardMode": true,
+  "playerName": "dan",
+  "timestamp": "4/5/2023 8:08:23",
+  "rawShare": "Wordle 655 4/6*\n\n⬛⬛⬛⬛⬛\n🟩⬛🟩⬛⬛\n🟩⬛🟩🟨⬛\n🟩🟩🟩🟩🟩",
+  "words": [
+    "stare",
+    "swamp"
+  ],
+  "comment": ""
+}

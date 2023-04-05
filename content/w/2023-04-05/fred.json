@@ -1,0 +1,171 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "absent",
+      "absent",
+      "absent"
+    ],
+    [
+      "present",
+      "absent",
+      "present",
+      "absent",
+      "absent"
+    ],
+    [
+      "correct",
+      "absent",
+      "absent",
+      "present",
+      "absent"
+    ],
+    [
+      "correct",
+      "absent",
+      "correct",
+      "absent",
+      "absent"
+    ],
+    [
+      "correct",
+      "present",
+      "correct",
+      "present",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 0,
+      "lineScore": 10
+    },
+    {
+      "lineStatuses": [
+        "present",
+        "absent",
+        "present",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "⬛️",
+        "🟨",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "absent",
+        "absent",
+        "present",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "⬛️",
+        "⬛️",
+        "🟨",
+        "⬛️"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "absent",
+        "correct",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "⬛️",
+        "🟩",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "present",
+        "correct",
+        "present",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟨",
+        "🟩",
+        "🟨",
+        "⬛️"
+      ],
+      "lineProgress": 6,
+      "lineScore": 4
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 35,
+  "puzzleNum": 655,
+  "puzzleDate": "2023-04-05",
+  "guessCount": 6,
+  "isHardMode": true,
+  "playerName": "fred",
+  "timestamp": "4/5/2023 7:38:33",
+  "rawShare": "Wordle 655 6/6*\n\n⬜⬜⬜⬜⬜\n🟨⬜🟨⬜⬜\n🟩⬜⬜🟨⬜\n🟩⬜🟩⬜⬜\n🟩🟨🟩🟨⬜\n🟩🟩🟩🟩🟩",
+  "words": [
+    "aisle",
+    "strap",
+    "swang",
+    "shama"
+  ],
+  "comment": ""
+}
