@@ -9,24 +9,24 @@
     ],
     [
       "absent",
-      "present",
-      "present",
       "absent",
-      "absent"
+      "absent",
+      "present",
+      "present"
+    ],
+    [
+      "absent",
+      "absent",
+      "absent",
+      "present",
+      "present"
     ],
     [
       "present",
       "absent",
       "present",
-      "correct",
+      "present",
       "absent"
-    ],
-    [
-      "absent",
-      "correct",
-      "correct",
-      "correct",
-      "correct"
     ],
     [
       "correct",
@@ -58,17 +58,35 @@
     {
       "lineStatuses": [
         "absent",
-        "present",
-        "present",
         "absent",
-        "absent"
+        "absent",
+        "present",
+        "present"
       ],
       "lineEmoji": [
         "⬛️",
-        "🟨",
-        "🟨",
         "⬛️",
-        "⬛️"
+        "⬛️",
+        "🟨",
+        "🟨"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "present",
+        "present"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟨",
+        "🟨"
       ],
       "lineProgress": 2,
       "lineScore": 8
@@ -78,36 +96,18 @@
         "present",
         "absent",
         "present",
-        "correct",
+        "present",
         "absent"
       ],
       "lineEmoji": [
         "🟨",
         "⬛️",
         "🟨",
-        "🟩",
+        "🟨",
         "⬛️"
       ],
-      "lineProgress": 4,
-      "lineScore": 6
-    },
-    {
-      "lineStatuses": [
-        "absent",
-        "correct",
-        "correct",
-        "correct",
-        "correct"
-      ],
-      "lineEmoji": [
-        "⬛️",
-        "🟩",
-        "🟩",
-        "🟩",
-        "🟩"
-      ],
-      "lineProgress": 8,
-      "lineScore": 2
+      "lineProgress": 3,
+      "lineScore": 7
     },
     {
       "lineStatuses": [
@@ -128,18 +128,15 @@
       "lineScore": 0
     }
   ],
-  "puzzleScore": 26,
+  "puzzleScore": 33,
   "puzzleNum": 654,
   "puzzleDate": "2023-04-04",
   "guessCount": 5,
   "isHardMode": true,
-  "playerName": "mandy",
-  "timestamp": "4/4/2023 11:07:35",
-  "rawShare": "Wordle 654 5/6*\n\n⬜⬜⬜⬜⬜\n⬜🟨🟨⬜⬜\n🟨⬜🟨🟩⬜\n⬜🟩🟩🟩🟩\n🟩🟩🟩🟩🟩",
   "words": [
-    "noise",
-    "avoid",
-    "patio"
+    "smear",
+    "smear",
+    "adorn"
   ],
-  "comment": ""
+  "playerName": "mandy"
 }
