@@ -2,6 +2,7 @@
 title: March 2023
 guests: ["mandy", "fred", "neela", "becky", "dan", "sharon", "nancy", "jeran"]
 active: false
+winners: [ "Becky", "Fred", "Jeran"]
 ---
 
 {{< contest.inline >}}
