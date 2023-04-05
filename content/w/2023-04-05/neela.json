@@ -11,22 +11,15 @@
       "absent",
       "absent",
       "absent",
-      "present",
-      "present"
-    ],
-    [
       "absent",
-      "absent",
-      "absent",
-      "present",
-      "present"
-    ],
-    [
-      "present",
-      "absent",
-      "present",
-      "present",
       "absent"
+    ],
+    [
+      "absent",
+      "absent",
+      "correct",
+      "correct",
+      "correct"
     ],
     [
       "correct",
@@ -60,54 +53,36 @@
         "absent",
         "absent",
         "absent",
-        "present",
-        "present"
-      ],
-      "lineEmoji": [
-        "⬛️",
-        "⬛️",
-        "⬛️",
-        "🟨",
-        "🟨"
-      ],
-      "lineProgress": 2,
-      "lineScore": 8
-    },
-    {
-      "lineStatuses": [
         "absent",
-        "absent",
-        "absent",
-        "present",
-        "present"
-      ],
-      "lineEmoji": [
-        "⬛️",
-        "⬛️",
-        "⬛️",
-        "🟨",
-        "🟨"
-      ],
-      "lineProgress": 2,
-      "lineScore": 8
-    },
-    {
-      "lineStatuses": [
-        "present",
-        "absent",
-        "present",
-        "present",
         "absent"
       ],
       "lineEmoji": [
-        "🟨",
         "⬛️",
-        "🟨",
-        "🟨",
+        "⬛️",
+        "⬛️",
+        "⬛️",
         "⬛️"
       ],
-      "lineProgress": 3,
-      "lineScore": 7
+      "lineProgress": 0,
+      "lineScore": 10
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 6,
+      "lineScore": 4
     },
     {
       "lineStatuses": [
@@ -128,15 +103,17 @@
       "lineScore": 0
     }
   ],
-  "puzzleScore": 33,
-  "puzzleNum": 654,
-  "puzzleDate": "2023-04-04",
-  "guessCount": 5,
+  "puzzleScore": 24,
+  "puzzleNum": 655,
+  "puzzleDate": "2023-04-05",
+  "guessCount": 4,
   "isHardMode": true,
+  "playerName": "neela",
+  "timestamp": "4/5/2023 0:49:33",
+  "rawShare": "Wordle 655 4/6*\n\n⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜\n⬜⬜🟩🟩🟩\n🟩🟩🟩🟩🟩",
   "words": [
-    "smear",
-    "smear",
-    "adorn"
+    "opine",
+    "trash"
   ],
-  "playerName": "mandy"
+  "comment": ""
 }

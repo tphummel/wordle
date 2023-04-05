@@ -8,24 +8,10 @@
       "absent"
     ],
     [
-      "absent",
-      "absent",
-      "absent",
-      "present",
-      "present"
-    ],
-    [
-      "absent",
-      "absent",
-      "absent",
-      "present",
-      "present"
-    ],
-    [
       "present",
       "absent",
-      "present",
-      "present",
+      "absent",
+      "absent",
       "absent"
     ],
     [
@@ -57,57 +43,21 @@
     },
     {
       "lineStatuses": [
-        "absent",
-        "absent",
-        "absent",
-        "present",
-        "present"
-      ],
-      "lineEmoji": [
-        "⬛️",
-        "⬛️",
-        "⬛️",
-        "🟨",
-        "🟨"
-      ],
-      "lineProgress": 2,
-      "lineScore": 8
-    },
-    {
-      "lineStatuses": [
-        "absent",
-        "absent",
-        "absent",
-        "present",
-        "present"
-      ],
-      "lineEmoji": [
-        "⬛️",
-        "⬛️",
-        "⬛️",
-        "🟨",
-        "🟨"
-      ],
-      "lineProgress": 2,
-      "lineScore": 8
-    },
-    {
-      "lineStatuses": [
         "present",
         "absent",
-        "present",
-        "present",
+        "absent",
+        "absent",
         "absent"
       ],
       "lineEmoji": [
         "🟨",
         "⬛️",
-        "🟨",
-        "🟨",
+        "⬛️",
+        "⬛️",
         "⬛️"
       ],
-      "lineProgress": 3,
-      "lineScore": 7
+      "lineProgress": 1,
+      "lineScore": 9
     },
     {
       "lineStatuses": [
@@ -128,15 +78,16 @@
       "lineScore": 0
     }
   ],
-  "puzzleScore": 33,
-  "puzzleNum": 654,
-  "puzzleDate": "2023-04-04",
-  "guessCount": 5,
+  "puzzleScore": 19,
+  "puzzleNum": 655,
+  "puzzleDate": "2023-04-05",
+  "guessCount": 3,
   "isHardMode": true,
+  "playerName": "mandy",
+  "timestamp": "4/5/2023 7:48:52",
+  "rawShare": "Wordle 655 3/6*\n\n⬜⬜⬜⬜⬜\n🟨⬜⬜⬜⬜\n🟩🟩🟩🟩🟩",
   "words": [
-    "smear",
-    "smear",
-    "adorn"
+    "abort"
   ],
-  "playerName": "mandy"
+  "comment": "Lucky!"
 }
