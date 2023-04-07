@@ -1,0 +1,66 @@
+{
+  "results": [
+    [
+      "correct",
+      "present",
+      "correct",
+      "absent",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "correct",
+        "present",
+        "correct",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟨",
+        "🟩",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 5,
+      "lineScore": 5
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 5,
+  "puzzleNum": 657,
+  "puzzleDate": "2023-04-07",
+  "guessCount": 2,
+  "isHardMode": true,
+  "playerName": "jeran",
+  "timestamp": "4/7/2023 12:36:06",
+  "rawShare": "Wordle 657 2/6*\n\n🟩🟨🟩⬛⬛\n🟩🟩🟩🟩🟩",
+  "words": [],
+  "comment": "Gonna be a lot of ties at the top."
+}
