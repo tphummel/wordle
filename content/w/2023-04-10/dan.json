@@ -1,0 +1,68 @@
+{
+  "results": [
+    [
+      "absent",
+      "present",
+      "absent",
+      "absent",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "present",
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟨",
+        "⬛️",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 1,
+      "lineScore": 9
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 9,
+  "puzzleNum": 660,
+  "puzzleDate": "2023-04-10",
+  "guessCount": 2,
+  "isHardMode": true,
+  "playerName": "dan",
+  "timestamp": "4/10/2023 5:21:29",
+  "rawShare": "Wordle 660 2/6*\n\n⬛🟨⬛⬛⬛\n🟩🟩🟩🟩🟩",
+  "words": [
+    "lucky"
+  ],
+  "comment": "I suppose reading up on rats really did pay off."
+}
