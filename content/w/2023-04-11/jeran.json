@@ -1,0 +1,119 @@
+{
+  "results": [
+    [
+      "present",
+      "correct",
+      "absent",
+      "absent",
+      "absent"
+    ],
+    [
+      "absent",
+      "correct",
+      "present",
+      "absent",
+      "absent"
+    ],
+    [
+      "present",
+      "correct",
+      "absent",
+      "present",
+      "present"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "present",
+        "correct",
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "🟩",
+        "⬛️",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "present",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "🟨",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "present",
+        "correct",
+        "absent",
+        "present",
+        "present"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "🟩",
+        "⬛️",
+        "🟨",
+        "🟨"
+      ],
+      "lineProgress": 5,
+      "lineScore": 5
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 19,
+  "puzzleNum": 661,
+  "puzzleDate": "2023-04-11",
+  "guessCount": 4,
+  "isHardMode": true,
+  "playerName": "jeran",
+  "timestamp": "4/11/2023 8:53:34",
+  "rawShare": "Wordle 661 4/6*\n\n🟨🟩⬛⬛⬛\n⬛🟩🟨⬛⬛\n🟨🟩⬛🟨🟨\n🟩🟩🟩🟩🟩",
+  "words": [
+    "tulip",
+    "mural"
+  ],
+  "comment": "Should’ve tried the ‘q’ sooner.🤦‍♂️"
+}
