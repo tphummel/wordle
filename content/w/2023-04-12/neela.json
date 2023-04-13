@@ -1,0 +1,119 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "absent",
+      "absent",
+      "absent"
+    ],
+    [
+      "present",
+      "present",
+      "absent",
+      "absent",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "present",
+      "present",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 0,
+      "lineScore": 10
+    },
+    {
+      "lineStatuses": [
+        "present",
+        "present",
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "🟨",
+        "⬛️",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "present",
+        "present",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟨",
+        "🟨",
+        "⬛️"
+      ],
+      "lineProgress": 6,
+      "lineScore": 4
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 22,
+  "puzzleNum": 662,
+  "puzzleDate": "2023-04-12",
+  "guessCount": 4,
+  "isHardMode": true,
+  "playerName": "neela",
+  "timestamp": "4/12/2023 7:09:45",
+  "rawShare": "Wordle 662 4/6*\n\n⬜⬜⬜⬜⬜\n🟨🟨⬜⬜⬜\n🟩🟩🟨🟨⬜\n🟩🟩🟩🟩🟩",
+  "words": [
+    "raise",
+    "board"
+  ],
+  "comment": ""
+}
