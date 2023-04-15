@@ -20,7 +20,7 @@
 <p>Guest Players: <strong>{{ delimit .Params.guests ", " | title }}</strong></p>
 <p>Puzzles Played in Contest: {{ len .Data.Pages }}</p>
 
-{{ $perPlayer := dict "scoreSum" 0 "guessSum" 0 "gameCount" 0 }}
+{{ $perPlayer := dict "scoreSum" 0 "guessSum" 0 "gameCount" 0 "wins" 0 }}
 {{ $guests := .Params.guests }}
 {{ $scoreboard := dict }}
 {{ $players := slice "tom" | append $guests }}
@@ -29,6 +29,9 @@
 {{ end }}
 
 {{ range $puzzle := .Data.Pages }}
+  {{ $minScore := 0 }}
+  {{ $winners := slice }}
+
   {{ range $player := $players }}
     {{ $before := index $scoreboard $player }}
     {{ $w := dict }}
@@ -44,8 +47,21 @@
     {{ with $w }}
       {{ $after := merge $before (dict "scoreSum" (add (index $before "scoreSum") .puzzleScore) "guessSum" (add (index $before "guessSum") (cond (eq .guessCount "X") 7 .guessCount)) "gameCount" (add (index $before "gameCount") 1))}}
       {{ $scoreboard = merge $scoreboard (dict $player $after) }}
-    {{ end }}
 
+      {{ $score := int .puzzleScore }}
+      {{ if or (eq $minScore 0) (lt $score $minScore) }}
+        {{ $minScore = $score }}
+        {{ $winners = slice $player }}
+      {{ else if eq $score $minScore }}
+        {{ $winners = $winners | append $player }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ range $winner := $winners }}
+    {{ $w := index $scoreboard $winner }}
+    {{ $after := merge $w (dict "wins" (add (index $w "wins") 1)) }}
+    {{ $scoreboard = merge $scoreboard (dict $winner $after) }}
   {{ end }}
 {{ end }}
 
@@ -57,6 +73,7 @@
     <th>Name</th>
     <th>Score ↑</th>
     <th>Guesses</th>
+    <th>Wins</th>
   </tr>
 
   {{ $sortable := slice }}
@@ -83,6 +100,7 @@
       {{ else }}
       <td>-</td><td>-</td>
       {{ end }}
+      <td>{{ .wins }}</td>
     </tr>
   {{ end }}
 </table>
@@ -202,7 +220,12 @@
 {{ end }}
 </ul>
 
-<p>Guesses = "X" means a failed puzzle. For purposes of counting guesses, fails are counted as 7 guesses</p>
+<h2>Notes</h2>
+<ul>
+  <li>Guesses = "X" means a failed puzzle. For purposes of counting guesses, fails are counted as 7 guesses</li>
+  <li>Wins are awarded for the lowest score each day, including ties</li>
+</ul>
+
 
 <style>
 /* https://iamkate.com/code/tree-views/ */
