@@ -1,0 +1,119 @@
+{
+  "results": [
+    [
+      "absent",
+      "present",
+      "absent",
+      "absent",
+      "absent"
+    ],
+    [
+      "absent",
+      "absent",
+      "correct",
+      "present",
+      "absent"
+    ],
+    [
+      "absent",
+      "absent",
+      "correct",
+      "absent",
+      "present"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "present",
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟨",
+        "⬛️",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 1,
+      "lineScore": 9
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "correct",
+        "present",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "🟨",
+        "⬛️"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "correct",
+        "absent",
+        "present"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "⬛️",
+        "🟨"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 23,
+  "puzzleNum": 669,
+  "puzzleDate": "2023-04-19",
+  "guessCount": 4,
+  "isHardMode": true,
+  "playerName": "lindsay",
+  "timestamp": "4/19/2023 5:59:48",
+  "rawShare": "Wordle 669 4/6*\n\n⬜🟨⬜⬜⬜\n⬜⬜🟩🟨⬜\n⬜⬜🟩⬜🟨\n🟩🟩🟩🟩🟩",
+  "words": [
+    "route",
+    "squat"
+  ],
+  "comment": ""
+}
