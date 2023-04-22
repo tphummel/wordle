@@ -1,0 +1,66 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "absent",
+      "present",
+      "present"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "present",
+        "present"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟨",
+        "🟨"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 8,
+  "puzzleNum": 671,
+  "puzzleDate": "2023-04-21",
+  "guessCount": 2,
+  "isHardMode": true,
+  "playerName": "neela",
+  "timestamp": "4/21/2023 6:23:59",
+  "rawShare": "Wordle 671 2/6*\n\n⬜⬜⬜🟨🟨\n🟩🟩🟩🟩🟩",
+  "words": [],
+  "comment": ""
+}
