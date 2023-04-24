@@ -1,0 +1,171 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "absent",
+      "absent",
+      "absent"
+    ],
+    [
+      "absent",
+      "present",
+      "absent",
+      "absent",
+      "absent"
+    ],
+    [
+      "present",
+      "absent",
+      "present",
+      "absent",
+      "absent"
+    ],
+    [
+      "absent",
+      "absent",
+      "present",
+      "present",
+      "present"
+    ],
+    [
+      "absent",
+      "correct",
+      "present",
+      "present",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 0,
+      "lineScore": 10
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "present",
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟨",
+        "⬛️",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 1,
+      "lineScore": 9
+    },
+    {
+      "lineStatuses": [
+        "present",
+        "absent",
+        "present",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "⬛️",
+        "🟨",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "present",
+        "present",
+        "present"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "🟨",
+        "🟨",
+        "🟨"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "present",
+        "present",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "🟨",
+        "🟨",
+        "⬛️"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 40,
+  "puzzleNum": 674,
+  "puzzleDate": "2023-04-24",
+  "guessCount": 6,
+  "isHardMode": true,
+  "playerName": "neela",
+  "timestamp": "4/24/2023 7:17:20",
+  "rawShare": "Wordle 674 6/6*\n\n⬜⬜⬜⬜⬜\n⬜🟨⬜⬜⬜\n🟨⬜🟨⬜⬜\n⬜⬜🟨🟨🟨\n⬜🟩🟨🟨⬜\n🟩🟩🟩🟩🟩",
+  "words": [
+    "horse",
+    "avoid",
+    "onion",
+    "widow"
+  ],
+  "comment": ""
+}
