@@ -1,0 +1,66 @@
+{
+  "results": [
+    [
+      "correct",
+      "absent",
+      "present",
+      "absent",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "correct",
+        "absent",
+        "present",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "⬛️",
+        "🟨",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 7,
+  "puzzleNum": 677,
+  "puzzleDate": "2023-04-27",
+  "guessCount": 2,
+  "isHardMode": true,
+  "playerName": "jeran",
+  "timestamp": "4/27/2023 5:09:12",
+  "rawShare": "Wordle 677 2/6*\n\n🟩⬛🟨⬛⬛\n🟩🟩🟩🟩🟩",
+  "words": [],
+  "comment": "Should keep me ahead of Dan."
+}
