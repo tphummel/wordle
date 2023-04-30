@@ -1,0 +1,145 @@
+{
+  "results": [
+    [
+      "present",
+      "absent",
+      "absent",
+      "absent",
+      "absent"
+    ],
+    [
+      "correct",
+      "absent",
+      "present",
+      "present",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "absent",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "absent",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "present",
+        "absent",
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 1,
+      "lineScore": 9
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "absent",
+        "present",
+        "present",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "⬛️",
+        "🟨",
+        "🟨",
+        "⬛️"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 6,
+      "lineScore": 4
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 6,
+      "lineScore": 4
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 23,
+  "puzzleNum": 680,
+  "puzzleDate": "2023-04-30",
+  "guessCount": 5,
+  "isHardMode": true,
+  "playerName": "mandy",
+  "timestamp": "4/30/2023 6:18:06",
+  "rawShare": "Wordle 680 5/6*\n\n🟨⬜⬜⬜⬜\n🟩⬜🟨🟨⬜\n🟩🟩🟩⬜⬜\n🟩🟩🟩⬜⬜\n🟩🟩🟩🟩🟩",
+  "words": [
+    "polar",
+    "plaid",
+    "plant"
+  ],
+  "comment": "Whew! April was tough; come on May!"
+}
