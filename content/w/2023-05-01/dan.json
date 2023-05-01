@@ -1,0 +1,119 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "present",
+      "absent",
+      "absent"
+    ],
+    [
+      "present",
+      "absent",
+      "absent",
+      "absent",
+      "correct"
+    ],
+    [
+      "absent",
+      "present",
+      "present",
+      "present",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "present",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "🟨",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 1,
+      "lineScore": 9
+    },
+    {
+      "lineStatuses": [
+        "present",
+        "absent",
+        "absent",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "present",
+        "present",
+        "present",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟨",
+        "🟨",
+        "🟨",
+        "🟩"
+      ],
+      "lineProgress": 5,
+      "lineScore": 5
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 21,
+  "puzzleNum": 681,
+  "puzzleDate": "2023-05-01",
+  "guessCount": 4,
+  "isHardMode": true,
+  "playerName": "dan",
+  "timestamp": "5/1/2023 13:44:10",
+  "rawShare": "Wordle 681 4/6*\n\n⬛⬛🟨⬛⬛\n🟨⬛⬛⬛🟩\n⬛🟨🟨🟨🟩\n🟩🟩🟩🟩🟩",
+  "words": [
+    "abide",
+    "snare"
+  ],
+  "comment": "Made a mistake on turn 3. The A could not be in that spot. However the mistake helped me solve."
+}
