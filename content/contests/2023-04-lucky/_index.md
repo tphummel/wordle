@@ -3,6 +3,8 @@ title: April 2023
 startingWord: "lucky"
 guests: ["mandy", "fred", "neela", "becky", "dan", "sharon", "nancy", "jeran", "lindsay"]
 active: false
+
+winners: [ "Lindsay", "Nancy", "Tom"]
 ---
 
 {{< contest.inline >}}
