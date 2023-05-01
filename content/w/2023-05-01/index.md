@@ -2,7 +2,7 @@
 title: "681: 2023-05-01"
 date: 2023-05-01T06:03:30-07:00
 tags: []
-contests: ["2023-05-plaza"]
+contests: ["2023-05-relay-mode"]
 words: ["plaza","amber","range"]
 openers: ["plaza"]
 middlers: ["amber"]
