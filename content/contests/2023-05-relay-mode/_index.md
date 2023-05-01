@@ -1,10 +1,8 @@
 ---
-title: April 2023
-startingWord: "lucky"
+title: May 2023
+startingWord: "ffa"
 guests: ["mandy", "fred", "neela", "becky", "dan", "sharon", "nancy", "jeran", "lindsay"]
-active: false
-
-winners: [ "Lindsay", "Nancy", "Tom"]
+active: true
 ---
 
 {{< contest.inline >}}
