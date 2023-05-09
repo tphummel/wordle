@@ -1,0 +1,93 @@
+{
+  "results": [
+    [
+      "present",
+      "absent",
+      "present",
+      "absent",
+      "present"
+    ],
+    [
+      "correct",
+      "present",
+      "present",
+      "absent",
+      "present"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "present",
+        "absent",
+        "present",
+        "absent",
+        "present"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "⬛️",
+        "🟨",
+        "⬛️",
+        "🟨"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "present",
+        "present",
+        "absent",
+        "present"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟨",
+        "🟨",
+        "⬛️",
+        "🟨"
+      ],
+      "lineProgress": 5,
+      "lineScore": 5
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 12,
+  "puzzleNum": 688,
+  "puzzleDate": "2023-05-08",
+  "guessCount": 3,
+  "isHardMode": true,
+  "playerName": "fred",
+  "timestamp": "5/8/2023 7:24:17",
+  "rawShare": "Wordle 688 3/6*\n\n🟨⬜🟨⬜🟨\n🟩🟨🟨⬜🟨\n🟩🟩🟩🟩🟩",
+  "words": [
+    "along"
+  ],
+  "comment": ""
+}
