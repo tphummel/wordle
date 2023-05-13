@@ -135,7 +135,7 @@
 
     {{ $playerPuzzles = $playerPuzzles | append (slice $guest) }}
   {{ end }}
-  {{ $tom := merge (dict "Params" .Params) (dict "words" .Params.words "isHardMode" .Params.state.hardMode "puzzleScore" (partial "puzzle-score" $puzzle) "guessCount" (partial "guess-count" $puzzle) "playerName" "tom" )}}
+  {{ $tom := merge (dict "Params" .Params) (dict "words" .Params.words "isHardMode" .Params.state.hardMode "puzzleScore" (partial "puzzle-score" $puzzle) "guessCount" (partial "guess-count" $puzzle) "playerName" "tom" "timestamp" .Date  )}}
   {{ with .Content }}
     {{ $tom = merge $tom (dict "comment" (plainify .)) }}
   {{ end }}
@@ -208,6 +208,9 @@
                   {{ range $annotations }}
                     <p>{{ .emoji }} {{ .description }}</p>
                   {{ end }}
+                {{ end }}
+                {{ with $puzzle.timestamp }}
+                  <div>Submitted: {{ . }}</div>
                 {{ end }}
               </p>
             </details>

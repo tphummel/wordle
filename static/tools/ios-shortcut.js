@@ -126,6 +126,6 @@ stats: ${JSON.stringify(data.stats, null, 2)}
 
 const encodedFileText = encodeURIComponent(fileText);
 const filename = `${puzzleDate}/index.md`;
-const githubQueryLink = `https://github.com/tphummel/wordle/new/main/content/w/new?quick_pull=1&commit-choice=quick-pull&message=add+puzzle+${puzzleDate}+${data.game.dayOffset}&target_branch=${puzzleDate}_${data.game.dayOffset}&same_repo=1&guidance_task=&labels=puzzle&value=${encodedFileText}&filename=${filename}`;
+const githubQueryLink = `https://github.com/tphummel/wordle/new/main/content/w?quick_pull=1&commit-choice=quick-pull&message=add+puzzle+${puzzleDate}+${data.game.dayOffset}&target_branch=${puzzleDate}_${data.game.dayOffset}&same_repo=1&guidance_task=&labels=puzzle&value=${encodedFileText}&filename=${filename}`;
 // Call completion to finish
 completion(githubQueryLink);
