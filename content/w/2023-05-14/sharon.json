@@ -1,0 +1,66 @@
+{
+  "results": [
+    [
+      "present",
+      "correct",
+      "present",
+      "absent",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "present",
+        "correct",
+        "present",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "🟩",
+        "🟨",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 6,
+  "puzzleNum": 694,
+  "puzzleDate": "2023-05-14",
+  "guessCount": 2,
+  "isHardMode": true,
+  "playerName": "sharon",
+  "timestamp": "5/14/2023 7:46:55",
+  "rawShare": "Wordle 694 2/6*\n\n🟨🟩🟨⬛⬛\n🟩🟩🟩🟩🟩",
+  "words": [],
+  "comment": ""
+}
