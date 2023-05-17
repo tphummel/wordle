@@ -1,0 +1,93 @@
+{
+  "results": [
+    [
+      "absent",
+      "correct",
+      "absent",
+      "absent",
+      "correct"
+    ],
+    [
+      "absent",
+      "correct",
+      "correct",
+      "absent",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "absent",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "⬛️",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "correct",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "🟩",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 6,
+      "lineScore": 4
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 10,
+  "puzzleNum": 696,
+  "puzzleDate": "2023-05-16",
+  "guessCount": 3,
+  "isHardMode": true,
+  "playerName": "becky",
+  "timestamp": "5/16/2023 7:15:33",
+  "rawShare": "Wordle 696 3/6*\n\n⬛🟩⬛⬛🟩\n⬛🟩🟩⬛🟩\n🟩🟩🟩🟩🟩",
+  "words": [
+    "bathe"
+  ],
+  "comment": "Dumb word"
+}
