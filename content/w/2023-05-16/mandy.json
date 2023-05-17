@@ -1,0 +1,171 @@
+{
+  "results": [
+    [
+      "absent",
+      "correct",
+      "absent",
+      "absent",
+      "correct"
+    ],
+    [
+      "absent",
+      "correct",
+      "absent",
+      "absent",
+      "correct"
+    ],
+    [
+      "absent",
+      "correct",
+      "present",
+      "absent",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "absent",
+      "absent",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "absent",
+      "absent",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "absent",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "absent",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "⬛️",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "absent",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "⬛️",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "present",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "🟨",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 5,
+      "lineScore": 5
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "absent",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "⬛️",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 6,
+      "lineScore": 4
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "absent",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "⬛️",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 6,
+      "lineScore": 4
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 8,
+      "lineScore": 2
+    }
+  ],
+  "puzzleScore": 27,
+  "puzzleNum": 696,
+  "puzzleDate": "2023-05-16",
+  "guessCount": "X",
+  "isHardMode": true,
+  "playerName": "mandy",
+  "timestamp": "5/16/2023 7:20:17",
+  "rawShare": "Wordle 696 X/6*\n\n⬜🟩⬜⬜🟩\n⬜🟩⬜⬜🟩\n⬜🟩🟨⬜🟩\n🟩🟩⬜⬜🟩\n🟩🟩⬜⬜🟩\n🟩🟩🟩⬜🟩",
+  "words": [
+    "maybe",
+    "salve",
+    "ladle",
+    "large"
+  ],
+  "comment": "Didn’t get it! Dumb word"
+}
