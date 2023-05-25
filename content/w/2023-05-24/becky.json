@@ -1,0 +1,172 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "present",
+      "present",
+      "absent"
+    ],
+    [
+      "absent",
+      "present",
+      "absent",
+      "absent",
+      "present"
+    ],
+    [
+      "present",
+      "present",
+      "absent",
+      "absent",
+      "present"
+    ],
+    [
+      "present",
+      "absent",
+      "present",
+      "correct",
+      "absent"
+    ],
+    [
+      "absent",
+      "absent",
+      "correct",
+      "correct",
+      "correct"
+    ],
+    [
+      "absent",
+      "absent",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "present",
+        "present",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "🟨",
+        "🟨",
+        "⬛️"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "present",
+        "absent",
+        "absent",
+        "present"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟨",
+        "⬛️",
+        "⬛️",
+        "🟨"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "present",
+        "present",
+        "absent",
+        "absent",
+        "present"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "🟨",
+        "⬛️",
+        "⬛️",
+        "🟨"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "present",
+        "absent",
+        "present",
+        "correct",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "⬛️",
+        "🟨",
+        "🟩",
+        "⬛️"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 6,
+      "lineScore": 4
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 6,
+      "lineScore": 4
+    }
+  ],
+  "puzzleScore": 37,
+  "puzzleNum": 704,
+  "puzzleDate": "2023-05-24",
+  "guessCount": "X",
+  "isHardMode": true,
+  "playerName": "becky",
+  "timestamp": "5/24/2023 5:54:29",
+  "rawShare": "Wordle 704 X/6*\n\n⬛⬛🟨🟨⬛\n⬛🟨⬛⬛🟨\n🟨🟨⬛⬛🟨\n🟨⬛🟨🟩⬛\n⬛⬛🟩🟩🟩\n⬛⬛🟩🟩🟩",
+  "words": [
+    "grime",
+    "repot",
+    "threw",
+    "aster",
+    "enter"
+  ],
+  "comment": "I give up…"
+}
