@@ -1,0 +1,93 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "absent",
+      "absent",
+      "present"
+    ],
+    [
+      "absent",
+      "present",
+      "correct",
+      "absent",
+      "present"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "absent",
+        "present"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟨"
+      ],
+      "lineProgress": 1,
+      "lineScore": 9
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "present",
+        "correct",
+        "absent",
+        "present"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟨",
+        "🟩",
+        "⬛️",
+        "🟨"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 15,
+  "puzzleNum": 710,
+  "puzzleDate": "2023-05-30",
+  "guessCount": 3,
+  "isHardMode": true,
+  "playerName": "lindsay",
+  "timestamp": "5/30/2023 10:09:51",
+  "rawShare": "Wordle 710 3/6*\n\n⬜⬜⬜⬜🟨\n⬜🟨🟩⬜🟨\n🟩🟩🟩🟩🟩",
+  "words": [
+    "clean"
+  ],
+  "comment": ""
+}
