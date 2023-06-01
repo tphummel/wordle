@@ -2,7 +2,7 @@
 title: June 2023
 startingWord: "squid"
 guests: ["mandy", "fred", "neela", "dan", "sharon", "nancy", "jeran", "lindsay"]
-active: false
+active: true
 
 winners: []
 ---
