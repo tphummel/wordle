@@ -1,9 +1,10 @@
 ---
-title: May 2023
-startingWord: "ffa"
-guests: ["mandy", "fred", "neela", "becky", "dan", "sharon", "nancy", "jeran", "lindsay"]
-active: false
-winners: ["Lindsay", "Sharon", "Fred"]
+title: June 2023
+startingWord: "squid"
+guests: ["mandy", "fred", "neela", "dan", "sharon", "nancy", "jeran", "lindsay"]
+active: true
+
+winners: []
 ---
 
 {{< contest.inline >}}
