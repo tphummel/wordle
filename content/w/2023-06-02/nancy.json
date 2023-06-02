@@ -1,0 +1,68 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "present",
+      "correct",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "present",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "🟨",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 5,
+      "lineScore": 5
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 5,
+  "puzzleNum": 713,
+  "puzzleDate": "2023-06-02",
+  "guessCount": 2,
+  "isHardMode": true,
+  "playerName": "nancy",
+  "timestamp": "6/2/2023 8:06:49",
+  "rawShare": "Wordle 713 2/6*\n\n⬜⬜🟨🟩🟩\n🟩🟩🟩🟩🟩",
+  "words": [
+    "humid"
+  ],
+  "comment": ""
+}

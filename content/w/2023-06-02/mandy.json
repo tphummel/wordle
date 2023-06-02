@@ -1,0 +1,93 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "present",
+      "correct",
+      "correct"
+    ],
+    [
+      "present",
+      "absent",
+      "absent",
+      "correct",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "present",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "🟨",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 5,
+      "lineScore": 5
+    },
+    {
+      "lineStatuses": [
+        "present",
+        "absent",
+        "absent",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 5,
+      "lineScore": 5
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 10,
+  "puzzleNum": 713,
+  "puzzleDate": "2023-06-02",
+  "guessCount": 3,
+  "isHardMode": true,
+  "playerName": "mandy",
+  "timestamp": "6/2/2023 4:48:13",
+  "rawShare": "Wordle 713 3/6*\n\n⬜⬜🟨🟩🟩\n🟨⬜⬜🟩🟩\n🟩🟩🟩🟩🟩",
+  "words": [
+    "undid"
+  ],
+  "comment": ""
+}
