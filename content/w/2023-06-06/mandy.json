@@ -1,0 +1,93 @@
+{
+  "results": [
+    [
+      "correct",
+      "absent",
+      "present",
+      "absent",
+      "absent"
+    ],
+    [
+      "correct",
+      "absent",
+      "correct",
+      "correct",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "correct",
+        "absent",
+        "present",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "⬛️",
+        "🟨",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "absent",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "⬛️",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 8,
+      "lineScore": 2
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 9,
+  "puzzleNum": 717,
+  "puzzleDate": "2023-06-06",
+  "guessCount": 3,
+  "isHardMode": true,
+  "playerName": "mandy",
+  "timestamp": "6/6/2023 7:35:32",
+  "rawShare": "Wordle 717 3/6*\n\n🟩⬜🟨⬜⬜\n🟩⬜🟩🟩🟩\n🟩🟩🟩🟩🟩",
+  "words": [
+    "shout"
+  ],
+  "comment": "Got so lucky on third guess… lots of possibilities!"
+}
