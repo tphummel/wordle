@@ -1,0 +1,119 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "absent",
+      "absent",
+      "present"
+    ],
+    [
+      "absent",
+      "present",
+      "absent",
+      "present",
+      "present"
+    ],
+    [
+      "present",
+      "absent",
+      "absent",
+      "correct",
+      "present"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "absent",
+        "present"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟨"
+      ],
+      "lineProgress": 1,
+      "lineScore": 9
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "present",
+        "absent",
+        "present",
+        "present"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟨",
+        "⬛️",
+        "🟨",
+        "🟨"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "present",
+        "absent",
+        "absent",
+        "correct",
+        "present"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "🟨"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 22,
+  "puzzleNum": 736,
+  "puzzleDate": "2023-06-25",
+  "guessCount": 4,
+  "isHardMode": true,
+  "playerName": "dan",
+  "timestamp": "6/25/2023 8:37:07",
+  "rawShare": "Wordle 736 4/6*\n\n⬛⬛⬛⬛🟨\n⬛🟨⬛🟨🟨\n🟨⬛⬛🟩🟨\n🟩🟩🟩🟩🟩",
+  "words": [
+    "tread",
+    "defer"
+  ],
+  "comment": ""
+}
