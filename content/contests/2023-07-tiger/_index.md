@@ -1,8 +1,8 @@
 ---
-title: June 2023
-startingWord: "squid"
-guests: ["mandy", "fred", "neela", "dan", "sharon", "nancy", "jeran", "lindsay"]
-active: false
+title: July 2023
+startingWord: "tiger"
+guests: ["mandy", "fred", "neela", "dan", "sharon", "nancy", "jeran", "lindsay", "becky"]
+active: true
 
 winners: []
 ---
