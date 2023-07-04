@@ -1,0 +1,119 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "absent",
+      "absent",
+      "absent"
+    ],
+    [
+      "present",
+      "correct",
+      "absent",
+      "absent",
+      "absent"
+    ],
+    [
+      "absent",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 0,
+      "lineScore": 10
+    },
+    {
+      "lineStatuses": [
+        "present",
+        "correct",
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "🟩",
+        "⬛️",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 8,
+      "lineScore": 2
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 19,
+  "puzzleNum": 743,
+  "puzzleDate": "2023-07-02",
+  "guessCount": 4,
+  "isHardMode": true,
+  "playerName": "nancy",
+  "timestamp": "7/2/2023 8:51:18",
+  "rawShare": "Wordle 743 4/6*\n\n⬜⬜⬜⬜⬜\n🟨🟩⬜⬜⬜\n⬜🟩🟩🟩🟩\n🟩🟩🟩🟩🟩",
+  "words": [
+    "sound",
+    "bossy"
+  ],
+  "comment": ""
+}
