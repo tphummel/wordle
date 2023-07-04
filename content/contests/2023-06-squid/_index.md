@@ -4,7 +4,7 @@ startingWord: "squid"
 guests: ["mandy", "fred", "neela", "dan", "sharon", "nancy", "jeran", "lindsay"]
 active: false
 
-winners: []
+winners: ["Dan","Lindsay","Nancy"]
 ---
 
 {{< contest.inline >}}
