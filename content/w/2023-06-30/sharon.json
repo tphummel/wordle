@@ -1,0 +1,145 @@
+{
+  "results": [
+    [
+      "correct",
+      "absent",
+      "absent",
+      "absent",
+      "absent"
+    ],
+    [
+      "correct",
+      "absent",
+      "present",
+      "present",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "correct",
+        "absent",
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "absent",
+        "present",
+        "present",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "⬛️",
+        "🟨",
+        "🟨",
+        "⬛️"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "⬛️"
+      ],
+      "lineProgress": 8,
+      "lineScore": 2
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "⬛️"
+      ],
+      "lineProgress": 8,
+      "lineScore": 2
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 18,
+  "puzzleNum": 741,
+  "puzzleDate": "2023-06-30",
+  "guessCount": 5,
+  "isHardMode": true,
+  "playerName": "sharon",
+  "timestamp": "6/30/2023 8:56:08",
+  "rawShare": "Wordle 741 5/6*\n\n🟩⬛⬛⬛⬛\n🟩⬛🟨🟨⬛\n🟩🟩🟩🟩⬛\n🟩🟩🟩🟩⬛\n🟩🟩🟩🟩🟩",
+  "words": [
+    "slate",
+    "stray",
+    "strap"
+  ],
+  "comment": "Annoying!"
+}
