@@ -1,0 +1,66 @@
+{
+  "results": [
+    [
+      "present",
+      "absent",
+      "absent",
+      "correct",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "present",
+        "absent",
+        "absent",
+        "correct",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "⬛️"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 7,
+  "puzzleNum": 744,
+  "puzzleDate": "2023-07-03",
+  "guessCount": 2,
+  "isHardMode": true,
+  "playerName": "fred",
+  "timestamp": "7/3/2023 7:15:05",
+  "rawShare": "Wordle 744 2/6*\n\n🟨⬜⬜🟩⬜\n🟩🟩🟩🟩🟩",
+  "words": [],
+  "comment": "Got one!"
+}
