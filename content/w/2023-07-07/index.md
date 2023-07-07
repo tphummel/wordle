@@ -1,7 +1,7 @@
 ---
 title: "748: 2023-07-07"
 date: 2023-07-07T06:25:57-07:00
-tags: []
+tags: ["birthday"]
 git_branch: 2023-07-07_748
 contests: ["2023-07-tiger"]
 words: ["tiger","stamp","couth","lotus","donut"]
