@@ -1,0 +1,93 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "absent",
+      "absent",
+      "absent"
+    ],
+    [
+      "absent",
+      "absent",
+      "correct",
+      "present",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 0,
+      "lineScore": 10
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "correct",
+        "present",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "🟨",
+        "⬛️"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 17,
+  "puzzleNum": 751,
+  "puzzleDate": "2023-07-10",
+  "guessCount": 3,
+  "isHardMode": true,
+  "playerName": "dan",
+  "timestamp": "7/10/2023 7:36:00",
+  "rawShare": "Wordle 751 3/6*\n\n⬛⬛⬛⬛⬛\n⬛⬛🟩🟨⬛\n🟩🟩🟩🟩🟩",
+  "words": [
+    "salon"
+  ],
+  "comment": "Golly, Holly, Jolly, and dolly were all on deck"
+}
