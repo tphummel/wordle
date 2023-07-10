@@ -1,0 +1,172 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "absent",
+      "absent",
+      "absent"
+    ],
+    [
+      "absent",
+      "absent",
+      "absent",
+      "absent",
+      "absent"
+    ],
+    [
+      "absent",
+      "correct",
+      "absent",
+      "absent",
+      "absent"
+    ],
+    [
+      "present",
+      "correct",
+      "absent",
+      "absent",
+      "correct"
+    ],
+    [
+      "absent",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ],
+    [
+      "absent",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 0,
+      "lineScore": 10
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 0,
+      "lineScore": 10
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "absent",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "⬛️",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "present",
+        "correct",
+        "absent",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "🟩",
+        "⬛️",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 5,
+      "lineScore": 5
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 8,
+      "lineScore": 2
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 8,
+      "lineScore": 2
+    }
+  ],
+  "puzzleScore": 37,
+  "puzzleNum": 751,
+  "puzzleDate": "2023-07-10",
+  "guessCount": "X",
+  "isHardMode": true,
+  "playerName": "lindsay",
+  "timestamp": "7/10/2023 5:46:28",
+  "rawShare": "Wordle 751 X/6*\n\n⬜⬜⬜⬜⬜\n⬜⬜⬜⬜⬜\n⬜🟩⬜⬜⬜\n🟨🟩⬜⬜🟩\n⬜🟩🟩🟩🟩\n⬜🟩🟩🟩🟩",
+  "words": [
+    "shack",
+    "pound",
+    "lobby",
+    "jolly",
+    "molly"
+  ],
+  "comment": ""
+}
