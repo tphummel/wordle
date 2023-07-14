@@ -1,0 +1,66 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "present",
+      "present",
+      "present"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "present",
+        "present",
+        "present"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "🟨",
+        "🟨",
+        "🟨"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 7,
+  "puzzleNum": 754,
+  "puzzleDate": "2023-07-13",
+  "guessCount": 2,
+  "isHardMode": true,
+  "playerName": "sharon",
+  "timestamp": "7/13/2023 7:24:22",
+  "rawShare": "Wordle 754 2/6*\n\n⬛⬛🟨🟨🟨\n🟩🟩🟩🟩🟩",
+  "words": [],
+  "comment": ":-)"
+}

@@ -1,0 +1,93 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "present",
+      "present",
+      "present"
+    ],
+    [
+      "absent",
+      "absent",
+      "correct",
+      "correct",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "present",
+        "present",
+        "present"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "🟨",
+        "🟨",
+        "🟨"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 6,
+      "lineScore": 4
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 11,
+  "puzzleNum": 754,
+  "puzzleDate": "2023-07-13",
+  "guessCount": 3,
+  "isHardMode": true,
+  "playerName": "nancy",
+  "timestamp": "7/13/2023 8:32:37",
+  "rawShare": "Wordle 754 3/6*\n\n⬜⬜🟨🟨🟨\n⬜⬜🟩🟩🟩\n🟩🟩🟩🟩🟩",
+  "words": [
+    "merge"
+  ],
+  "comment": ""
+}
