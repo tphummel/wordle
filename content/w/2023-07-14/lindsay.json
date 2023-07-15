@@ -1,0 +1,66 @@
+{
+  "results": [
+    [
+      "absent",
+      "correct",
+      "absent",
+      "present",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "absent",
+        "present",
+        "absent"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "⬛️",
+        "🟨",
+        "⬛️"
+      ],
+      "lineProgress": 3,
+      "lineScore": 7
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 7,
+  "puzzleNum": 755,
+  "puzzleDate": "2023-07-14",
+  "guessCount": 2,
+  "isHardMode": true,
+  "playerName": "lindsay",
+  "timestamp": "7/14/2023 5:40:23",
+  "rawShare": "Wordle 755 2/6*\n\n⬜🟩⬜🟨⬜\n🟩🟩🟩🟩🟩",
+  "words": [],
+  "comment": ""
+}
