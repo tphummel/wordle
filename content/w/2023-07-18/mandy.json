@@ -1,0 +1,119 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "absent",
+      "correct",
+      "correct"
+    ],
+    [
+      "absent",
+      "absent",
+      "present",
+      "correct",
+      "correct"
+    ],
+    [
+      "absent",
+      "present",
+      "absent",
+      "correct",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "present",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "🟨",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 5,
+      "lineScore": 5
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "present",
+        "absent",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟨",
+        "⬛️",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 5,
+      "lineScore": 5
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 16,
+  "puzzleNum": 759,
+  "puzzleDate": "2023-07-18",
+  "guessCount": 4,
+  "isHardMode": true,
+  "playerName": "mandy",
+  "timestamp": "7/18/2023 8:59:53",
+  "rawShare": "Wordle 759 4/6*\n\n⬜⬜⬜🟩🟩\n⬜⬜🟨🟩🟩\n⬜🟨⬜🟩🟩\n🟩🟩🟩🟩🟩",
+  "words": [
+    "wafer",
+    "offer"
+  ],
+  "comment": ""
+}

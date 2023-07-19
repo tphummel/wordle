@@ -1,0 +1,145 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "absent",
+      "correct",
+      "correct"
+    ],
+    [
+      "absent",
+      "absent",
+      "absent",
+      "correct",
+      "correct"
+    ],
+    [
+      "absent",
+      "absent",
+      "absent",
+      "correct",
+      "correct"
+    ],
+    [
+      "absent",
+      "absent",
+      "absent",
+      "correct",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 24,
+  "puzzleNum": 759,
+  "puzzleDate": "2023-07-18",
+  "guessCount": 5,
+  "isHardMode": true,
+  "playerName": "neela",
+  "timestamp": "7/18/2023 8:08:54",
+  "rawShare": "Wordle 759 5/6*\n\n⬜⬜⬜🟩🟩\n⬜⬜⬜🟩🟩\n⬜⬜⬜🟩🟩\n⬜⬜⬜🟩🟩\n🟩🟩🟩🟩🟩",
+  "words": [
+    "power",
+    "queer",
+    "saver"
+  ],
+  "comment": ""
+}

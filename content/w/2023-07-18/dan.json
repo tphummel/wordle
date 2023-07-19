@@ -1,0 +1,93 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "absent",
+      "correct",
+      "correct"
+    ],
+    [
+      "present",
+      "absent",
+      "correct",
+      "correct",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "present",
+        "absent",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "⬛️",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 7,
+      "lineScore": 3
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 9,
+  "puzzleNum": 759,
+  "puzzleDate": "2023-07-18",
+  "guessCount": 3,
+  "isHardMode": true,
+  "playerName": "dan",
+  "timestamp": "7/18/2023 6:57:21",
+  "rawShare": "Wordle 759 3/6*\n\n⬛⬛⬛🟩🟩\n🟨⬛🟩🟩🟩\n🟩🟩🟩🟩🟩",
+  "words": [
+    "layer"
+  ],
+  "comment": "I am being called a rat in my own home."
+}
