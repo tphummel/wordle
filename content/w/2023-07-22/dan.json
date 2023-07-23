@@ -1,0 +1,93 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "absent",
+      "present",
+      "present"
+    ],
+    [
+      "correct",
+      "present",
+      "present",
+      "absent",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "present",
+        "present"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟨",
+        "🟨"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "present",
+        "present",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟨",
+        "🟨",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 14,
+  "puzzleNum": 763,
+  "puzzleDate": "2023-07-22",
+  "guessCount": 3,
+  "isHardMode": true,
+  "playerName": "dan",
+  "timestamp": "7/22/2023 8:54:16",
+  "rawShare": "Wordle 763 3/6*\n\n⬛⬛⬛🟨🟨\n🟩🟨🟨⬛⬛\n🟩🟩🟩🟩🟩",
+  "words": [
+    "feral"
+  ],
+  "comment": "I keep nailing the starting letter. It makes life a lot easier."
+}

@@ -1,0 +1,145 @@
+{
+  "results": [
+    [
+      "absent",
+      "absent",
+      "absent",
+      "present",
+      "present"
+    ],
+    [
+      "absent",
+      "absent",
+      "correct",
+      "present",
+      "correct"
+    ],
+    [
+      "absent",
+      "correct",
+      "correct",
+      "absent",
+      "correct"
+    ],
+    [
+      "absent",
+      "correct",
+      "correct",
+      "absent",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "absent",
+        "present",
+        "present"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "⬛️",
+        "🟨",
+        "🟨"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "correct",
+        "present",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "🟩",
+        "🟨",
+        "🟩"
+      ],
+      "lineProgress": 5,
+      "lineScore": 5
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "correct",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "🟩",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 6,
+      "lineScore": 4
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "correct",
+        "correct",
+        "absent",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟩",
+        "🟩",
+        "⬛️",
+        "🟩"
+      ],
+      "lineProgress": 6,
+      "lineScore": 4
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 21,
+  "puzzleNum": 763,
+  "puzzleDate": "2023-07-22",
+  "guessCount": 5,
+  "isHardMode": true,
+  "playerName": "jeran",
+  "timestamp": "7/22/2023 8:03:11",
+  "rawShare": "Wordle 763 5/6*\n\n⬛⬛⬛🟨🟨\n⬛⬛🟩🟨🟩\n⬛🟩🟩⬛🟩\n⬛🟩🟩⬛🟩\n🟩🟩🟩🟩🟩",
+  "words": [
+    "adore",
+    "broke",
+    "prone"
+  ],
+  "comment": ""
+}
