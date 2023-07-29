@@ -1,0 +1,93 @@
+{
+  "results": [
+    [
+      "present",
+      "absent",
+      "absent",
+      "present",
+      "absent"
+    ],
+    [
+      "present",
+      "correct",
+      "present",
+      "absent",
+      "absent"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "present",
+        "absent",
+        "absent",
+        "present",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "⬛️",
+        "⬛️",
+        "🟨",
+        "⬛️"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "present",
+        "correct",
+        "present",
+        "absent",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "🟩",
+        "🟨",
+        "⬛️",
+        "⬛️"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 14,
+  "puzzleNum": 769,
+  "puzzleDate": "2023-07-28",
+  "guessCount": 3,
+  "isHardMode": true,
+  "playerName": "becky",
+  "timestamp": "7/28/2023 8:28:24",
+  "rawShare": "Wordle 769 3/6*\n\n🟨⬛⬛🟨⬛\n🟨🟩🟨⬛⬛\n🟩🟩🟩🟩🟩",
+  "words": [
+    "steal"
+  ],
+  "comment": ""
+}
