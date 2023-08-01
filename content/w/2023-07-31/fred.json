@@ -1,0 +1,145 @@
+{
+  "results": [
+    [
+      "present",
+      "absent",
+      "absent",
+      "present",
+      "absent"
+    ],
+    [
+      "absent",
+      "absent",
+      "present",
+      "absent",
+      "present"
+    ],
+    [
+      "absent",
+      "present",
+      "absent",
+      "present",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "absent",
+      "correct",
+      "correct"
+    ],
+    [
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
+    ]
+  ],
+  "enrichedResults": [
+    {
+      "lineStatuses": [
+        "present",
+        "absent",
+        "absent",
+        "present",
+        "absent"
+      ],
+      "lineEmoji": [
+        "🟨",
+        "⬛️",
+        "⬛️",
+        "🟨",
+        "⬛️"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "absent",
+        "present",
+        "absent",
+        "present"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "⬛️",
+        "🟨",
+        "⬛️",
+        "🟨"
+      ],
+      "lineProgress": 2,
+      "lineScore": 8
+    },
+    {
+      "lineStatuses": [
+        "absent",
+        "present",
+        "absent",
+        "present",
+        "correct"
+      ],
+      "lineEmoji": [
+        "⬛️",
+        "🟨",
+        "⬛️",
+        "🟨",
+        "🟩"
+      ],
+      "lineProgress": 4,
+      "lineScore": 6
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "absent",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "⬛️",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 8,
+      "lineScore": 2
+    },
+    {
+      "lineStatuses": [
+        "correct",
+        "correct",
+        "correct",
+        "correct",
+        "correct"
+      ],
+      "lineEmoji": [
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩",
+        "🟩"
+      ],
+      "lineProgress": 10,
+      "lineScore": 0
+    }
+  ],
+  "puzzleScore": 24,
+  "puzzleNum": 772,
+  "puzzleDate": "2023-07-31",
+  "guessCount": 5,
+  "isHardMode": true,
+  "playerName": "fred",
+  "timestamp": "7/31/2023 6:50:41",
+  "rawShare": "Wordle 772 5/6*\n\n🟨⬜⬜🟨⬜\n⬜⬜🟨⬜🟨\n⬜🟨⬜🟨🟩\n🟩🟩⬜🟩🟩\n🟩🟩🟩🟩🟩",
+  "words": [
+    "cheat",
+    "flute",
+    "stole"
+  ],
+  "comment": "It’s been fun"
+}
