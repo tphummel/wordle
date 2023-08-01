@@ -3,7 +3,7 @@ title: "773: 2023-08-01"
 date: 2023-08-01T14:05:04-07:00
 tags: ["numeric"]
 git_branch: 2023-08-01_773
-contests: ["2023-08-topaz"]
+contests: []
 words: ["topaz","threw","techy","teeth","tenth"]
 openers: ["topaz"]
 middlers: ["threw","techy","teeth"]
