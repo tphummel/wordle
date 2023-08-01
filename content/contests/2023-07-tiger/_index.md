@@ -4,7 +4,7 @@ startingWord: "tiger"
 guests: ["mandy", "fred", "neela", "dan", "sharon", "nancy", "jeran", "lindsay", "becky"]
 active: false
 
-winners: []
+winners: ["Dan","Sharon","Nancy"]
 ---
 
 {{< contest.inline >}}
