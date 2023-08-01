@@ -2,9 +2,9 @@
 title: July 2023
 startingWord: "tiger"
 guests: ["mandy", "fred", "neela", "dan", "sharon", "nancy", "jeran", "lindsay", "becky"]
-active: true
+active: false
 
-winners: []
+winners: ["Dan","Sharon","Nancy"]
 ---
 
 {{< contest.inline >}}
