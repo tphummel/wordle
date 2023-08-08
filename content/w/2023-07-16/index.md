@@ -7,7 +7,7 @@ contests: ["2023-07-tiger"]
 words: ["tiger","touch","topaz"]
 openers: ["tiger"]
 middlers: ["touch"]
-puzzles: [758]
+puzzles: [757]
 hashes: ["CAAAACCAAACCCCCXXXXXXXXXXXXXXX"]
 shifts: ["zvxjj"]
 state: {
