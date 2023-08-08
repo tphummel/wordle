@@ -1,0 +1,13 @@
+{{- $wordles := where .Site.RegularPages "Section" "w" -}}
+{{- $wins := where $wordles "Params.state.gameStatus" "WIN" -}}
+{{- $losses := where $wordles "Params.state.gameStatus" "FAIL" -}}
+{{- $total_guesses := 0 -}}
+{{- range $wordles  -}}
+  {{- $guesses := partial "guess-count" .  -}}
+  {{- $guesses = cond (eq $guesses "X") 6 $guesses  -}}
+  {{- $total_guesses = add $total_guesses $guesses  -}}
+{{- end  -}}
+total_puzzles_played {{ len $wordles }}
+total_wins {{ len $wins}}
+total_losses {{ len $losses}}
+total_guesses {{ $total_guesses}}
