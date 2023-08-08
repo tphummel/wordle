@@ -23,3 +23,13 @@ enableInlineShortcodes = true
     endLevel = 3
     ordered = false
     startLevel = 1
+
+[outputFormats]
+  [outputFormats.p8s]
+    baseName = 'metrics'
+    suffix = 'txt'
+    isPlainText = true
+    mediaType = 'text/plain'
+
+[outputs]
+  home = ['html', 'p8s']
