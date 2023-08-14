@@ -60,6 +60,11 @@ function analyzeEmoji (input) {
     }
   })
 
+  const puzzleHash = results.map((row) => {
+    if (row === null) return 'XXXXX';
+    return row.map(c => c.substring(0, 1).toUpperCase()).join('');
+  }).join('').padEnd(30, 'X')
+
   var puzzleScore = enrichedResults.reduce((memo, result) => { 
     return memo + result.lineScore 
   }, 0)
@@ -68,6 +73,7 @@ function analyzeEmoji (input) {
     results,
     enrichedResults,
     puzzleScore,
+    puzzleHash,
     puzzleNum,
     puzzleDate,
     guessCount: guessCount === 'X' ? 'X' : parseInt(guessCount, 10),
