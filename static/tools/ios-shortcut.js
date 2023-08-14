@@ -56,11 +56,17 @@ if (words.length >= 3) {
     middlers = words.slice(secondWordIndex, lastWordIndex)
 }
 
-const evaluations = Array.from(document.querySelector("#wordle-app-game > div").children[0].children).map((row) => {
-    const letters = Array.from(row.children).map((letter) => {
-        return letter.children[0].ariaLabel.split(" ")[1];
+const gameRows = Array.from(document.querySelector("#wordle-app-game > div").firstChild.children)
+
+const evaluations = gameRows.map((row) => {
+    const letters = Array.from(row.children).map((letterDiv) => {
+        const letter = letterDiv.firstChild;
+        return letter.dataset.state;
     } );
-    if (letters[0] !== undefined) return letters;
+
+    // historically we've treated unused guesses as null instead of ['empty', 'empty', ...]
+    // keeping it here for consistency
+    if (letters[0] !== 'empty') return letters;
     return null;
 } );
 
@@ -111,6 +117,7 @@ const fileText = `---
 title: "${data.game.dayOffset}: ${puzzleDate}"
 date: ${getDateTime(data.game.timestamps.lastCompleted)+getLocalTimeZone()}
 tags: []
+git_branch: ${puzzleDate}_${data.game.dayOffset}
 contests: ${JSON.stringify(activeContests)}
 words: ${JSON.stringify(words)}
 openers: ${JSON.stringify([opener])}

@@ -8,7 +8,7 @@ words: ["ounce","strip","wrath"]
 openers: ["ounce"]
 middlers: ["strip"]
 puzzles: [785]
-hashes: ["LLLLLLLLLLLLLLLLLLLLLLLLLLLLLL"]
+hashes: ["AAAAAAPPAACCCCCXXXXXXXXXXXXXXX"]
 shifts: ["cyicr"]
 state: {
   "boardState": [
@@ -21,47 +21,29 @@ state: {
   ],
   "evaluations": [
     [
-      "letter,",
-      "letter,",
-      "letter,",
-      "letter,",
-      "letter,"
+      "absent",
+      "absent",
+      "absent",
+      "absent",
+      "absent"
     ],
     [
-      "letter,",
-      "letter,",
-      "letter,",
-      "letter,",
-      "letter,"
+      "absent",
+      "present",
+      "present",
+      "absent",
+      "absent"
     ],
     [
-      "letter,",
-      "letter,",
-      "letter,",
-      "letter,",
-      "letter,"
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
     ],
-    [
-      "letter,",
-      "letter,",
-      "letter,",
-      "letter,",
-      "letter,"
-    ],
-    [
-      "letter,",
-      "letter,",
-      "letter,",
-      "letter,",
-      "letter,"
-    ],
-    [
-      "letter,",
-      "letter,",
-      "letter,",
-      "letter,",
-      "letter,"
-    ]
+    null,
+    null,
+    null
   ],
   "rowIndex": 3,
   "solution": "wrath",

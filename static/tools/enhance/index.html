@@ -8,7 +8,6 @@
     <script type="text/javascript">
       var epoch = new Date("2021-06-19T00:00:00")
       var solutionCount = 2309
-      var report
 
       function getPuzzleDate (num) {
         var startDate = new Date(epoch)
@@ -69,6 +68,11 @@
           }
         })
 
+        const puzzleHash = results.map((row) => {
+            if (row === null) return 'XXXXX';
+            return row.map(c => c.substring(0, 1).toUpperCase()).join('');
+        }).join('').padEnd(30, 'X')
+
         var puzzleScore = enrichedResults.reduce((memo, result) => { 
           return memo + result.lineScore 
         }, 0)
@@ -77,12 +81,15 @@
           results,
           enrichedResults,
           puzzleScore,
+          puzzleHash,
           puzzleNum,
           puzzleDate,
           guessCount: guessCount === 'X' ? 'X' : parseInt(guessCount, 10),
           isHardMode: modeStr === '*'
         }
       }
+
+      var report
 
       function enhanceEmojiFormInput() {
         var inputText = document.querySelector('form#enhance textarea#emoji-input').value
