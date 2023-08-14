@@ -8,7 +8,7 @@ words: ["ounce","model","below","hello"]
 openers: ["ounce"]
 middlers: ["model","below"]
 puzzles: [783]
-hashes: ["LLLLLLLLLLLLLLLLLLLLLLLLLLLLLL"]
+hashes: ["PAAAPAPAPPACCPACCCCCXXXXXXXXXX"]
 shifts: ["nltuy"]
 state: {
   "boardState": [
@@ -21,47 +21,35 @@ state: {
   ],
   "evaluations": [
     [
-      "letter,",
-      "letter,",
-      "letter,",
-      "letter,",
-      "letter,"
+      "present",
+      "absent",
+      "absent",
+      "absent",
+      "present"
     ],
     [
-      "letter,",
-      "letter,",
-      "letter,",
-      "letter,",
-      "letter,"
+      "absent",
+      "present",
+      "absent",
+      "present",
+      "present"
     ],
     [
-      "letter,",
-      "letter,",
-      "letter,",
-      "letter,",
-      "letter,"
+      "absent",
+      "correct",
+      "correct",
+      "present",
+      "absent"
     ],
     [
-      "letter,",
-      "letter,",
-      "letter,",
-      "letter,",
-      "letter,"
+      "correct",
+      "correct",
+      "correct",
+      "correct",
+      "correct"
     ],
-    [
-      "letter,",
-      "letter,",
-      "letter,",
-      "letter,",
-      "letter,"
-    ],
-    [
-      "letter,",
-      "letter,",
-      "letter,",
-      "letter,",
-      "letter,"
-    ]
+    null,
+    null
   ],
   "rowIndex": 4,
   "solution": "hello",
