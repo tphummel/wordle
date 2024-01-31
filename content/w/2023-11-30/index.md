@@ -1,7 +1,7 @@
 ---
 title: "894: 2023-11-30"
 date: 2023-11-30T09:11:22-08:00
-tags: []
+tags: ["interesting"]
 git_branch: 2023-11-30_894
 contests: []
 words: ["tough","swipe","risen","resin"]
