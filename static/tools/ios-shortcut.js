@@ -1,4 +1,4 @@
-const data = JSON.parse(window.localStorage.getItem('nyt-wordle-moogle/ANON'));
+const data = JSON.parse(window.localStorage.getItem('games-state-wordleV2/ANON')).states[0];
 const epoch = new Date("2021-06-19T00:00:00");
 const solutionCount = 2309;
 
@@ -46,8 +46,7 @@ function getDateTime (dateStr) {
     return current_datetime;
 }
 
-let puzzleDate = getDateTime(data.game.timestamps.lastCompleted).substring(0,10);
-let words = data.game.boardState.filter(w => w !== '');
+let words = data.data.boardState.filter(w => w !== '');
 let opener = words[0]
 let middlers = []
 if (words.length >= 3) {
@@ -71,18 +70,19 @@ const evaluations = gameRows.map((row) => {
 } );
 
 let state = {
-    boardState: data.game.boardState,
+    puzzleDate: getDateTime(data.timestamp * 1000).substring(0,10),
+    boardState: data.data.boardState,
     evaluations,
-    rowIndex: data.game.currentRowIndex,
+    rowIndex: data.data.currentRowIndex,
     solution: words[words.length - 1],
-    gameStatus: data.game.status,
-    lastPlayedTs: data.game.timestamps.lastPlayed, 
-    lastCompletedTs: data.game.timestamps.lastCompleted, 
-    hardMode: data.settings.hardMode,
-    settings: data.settings,
-    gameId: data.game.id,
-    dayOffset: data.game.dayOffset,
-    timestamp: data.timestamp
+    gameStatus: data.data.status,
+    hardMode: data.data.hardMode,
+    gameId: data.puzzleId,
+    dayOffset: getDaysBetween(epoch, (data.timestamp * 1000)),
+    timestamp: data.timestamp,
+    datetime: getDateTime(data.timestamp * 1000),
+    schemaVersion: data.schemaVersion,
+    isPlayingArchive: data.isPlayingArchive,
 };
 
 const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
@@ -114,25 +114,25 @@ const activeContests = [
 ]
 
 const fileText = `---
-title: "${data.game.dayOffset}: ${puzzleDate}"
-date: ${getDateTime(data.game.timestamps.lastCompleted)+getLocalTimeZone()}
+title: "${state.dayOffset}: ${state.puzzleDate}"
+date: ${state.datetime + getLocalTimeZone()}
 tags: []
-git_branch: ${puzzleDate}_${data.game.dayOffset}
+git_branch: ${state.puzzleDate}_${state.dayOffset}
 contests: ${JSON.stringify(activeContests)}
 words: ${JSON.stringify(words)}
 openers: ${JSON.stringify([opener])}
 middlers: ${JSON.stringify(middlers)}
-puzzles: [${data.game.dayOffset}]
+puzzles: [${state.dayOffset}]
 hashes: ["${puzzleHash}"]
 shifts: ["${encodeCaesarCipher(state.solution)}"]
 state: ${JSON.stringify(state, null, 2)}
-stats: ${JSON.stringify(data.stats, null, 2)}
+stats: ${JSON.stringify(data.data.setLegacyStats, null, 2)}
 ---
 <!-- more -->
 `;
 
 const encodedFileText = encodeURIComponent(fileText);
-const filename = `${puzzleDate}/index.md`;
-const githubQueryLink = `https://github.com/tphummel/wordle/new/main/content/w?quick_pull=1&commit-choice=quick-pull&message=add+puzzle+${puzzleDate}+${data.game.dayOffset}&target_branch=${puzzleDate}_${data.game.dayOffset}&same_repo=1&guidance_task=&labels=puzzle&value=${encodedFileText}&filename=${filename}`;
+const filename = `${state.puzzleDate}/index.md`;
+const githubQueryLink = `https://github.com/tphummel/wordle/new/main/content/w?quick_pull=1&commit-choice=quick-pull&message=add+puzzle+${state.puzzleDate}+${state.dayOffset}&target_branch=${state.puzzleDate}_${state.dayOffset}&same_repo=1&guidance_task=&labels=puzzle&value=${encodedFileText}&filename=${filename}`;
 // Call completion to finish
 completion(githubQueryLink);
