@@ -1,81 +1,81 @@
 ---
-title: "1074: 2024-05-28"
-date: 2024-05-28T21:22:29-07:00
+title: "1075: 2024-05-29"
+date: 2024-05-29T10:38:58-07:00
 tags: []
-git_branch: 2024-05-28_1074
+git_branch: 2024-05-29_1075
 contests: []
-words: ["crown","sneak","shiny","pints","bings","minds"]
-openers: ["crown"]
-middlers: ["sneak","shiny","pints","bings"]
-puzzles: [1074]
-hashes: ["AAAAPPPAAAPAPPAACCACACCACCCCAC"]
-shifts: ["spvdc"]
+words: ["would","laser","talky","cabal","halal","naval"]
+openers: ["would"]
+middlers: ["laser","talky","cabal","halal"]
+puzzles: [1075]
+hashes: ["AAAPAPCAAAACPAAACACCACACCACACC"]
+shifts: ["vhxjv"]
 state: {
-  "puzzleDate": "2024-05-28",
+  "puzzleDate": "2024-05-29",
   "boardState": [
-    "crown",
-    "sneak",
-    "shiny",
-    "pints",
-    "bings",
-    "minds"
+    "would",
+    "laser",
+    "talky",
+    "cabal",
+    "halal",
+    "naval"
   ],
   "evaluations": [
     [
       "absent",
       "absent",
       "absent",
-      "absent",
-      "present"
+      "present",
+      "absent"
     ],
     [
       "present",
-      "present",
+      "correct",
       "absent",
       "absent",
       "absent"
     ],
     [
+      "absent",
+      "correct",
       "present",
       "absent",
-      "present",
-      "present",
       "absent"
     ],
     [
       "absent",
       "correct",
-      "correct",
       "absent",
+      "correct",
       "correct"
     ],
     [
       "absent",
       "correct",
-      "correct",
       "absent",
+      "correct",
       "correct"
     ],
     [
-      "correct",
-      "correct",
+      "absent",
       "correct",
       "absent",
+      "correct",
       "correct"
     ]
   ],
   "rowIndex": 6,
-  "solution": "minus",
+  "solution": "papal",
   "gameStatus": "FAIL",
   "hardMode": true,
-  "gameId": "1768",
-  "dayOffset": 1074,
-  "timestamp": 1716956549,
-  "datetime": "2024-05-28T21:22:29",
+  "gameId": "1928",
+  "dayOffset": 1075,
+  "timestamp": 1717004338,
+  "datetime": "2024-05-29T10:38:58",
   "schemaVersion": "0.18.1"
 }
 stats: {
-  "gamesPlayed": 281,
+  "gamesPlayed": 282,
   "gamesWon": 277,
   "guesses": {
     "1": 0,
@@ -84,13 +84,13 @@ stats: {
     "4": 113,
     "5": 52,
     "6": 33,
-    "fail": 4
+    "fail": 5
   },
   "currentStreak": 0,
   "maxStreak": 36,
   "hasPlayed": true,
   "lastWonDayOffset": 1073,
-  "timestamp": 1716956549
+  "timestamp": 1717004338
 }
 ---
 <!-- more -->
