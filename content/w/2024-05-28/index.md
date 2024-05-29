@@ -65,7 +65,7 @@ state: {
     ]
   ],
   "rowIndex": 6,
-  "solution": "minds",
+  "solution": "minus",
   "gameStatus": "FAIL",
   "hardMode": true,
   "gameId": "1768",
