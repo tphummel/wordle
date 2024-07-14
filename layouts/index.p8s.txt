@@ -14,3 +14,10 @@ total_guesses {{ $total_guesses}}
 {{ with .Site.GetPage "/hashes" }}total_puzzle_hashes_played {{ len .Pages }}{{ end }}
 {{ with .Site.GetPage "/shifts" }}total_puzzle_solutions_played {{ len .Pages }}{{ end }}
 total_distinct_words_guessed {{ len .Site.Taxonomies.words }}
+total_rarities_homogenous_guesses_only {{ len (partial "homo-guesses-only" $wordles) }}
+total_rarities_opener_misses {{ len (partial "opener-misses" $wordles) }}
+total_rarities_opener_double_miss {{ len (partialCached "opener-double-misses" $wordles) }}
+total_rarities_no_yellow_tiles {{ len (partialCached "no-yellow-tiles.html" $wordles) }}
+total_rarities_no_green_before_solve {{ len (partialCached "no-green-before-solve.html" $wordles) }}
+total_rarities_anagrams {{ len (partialCached "anagrams.html" $wordles) }}
+total_rarities_symmetrical {{ len (partialCached "symmetrical.html" $wordles) }}
