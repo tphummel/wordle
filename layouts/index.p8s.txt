@@ -9,6 +9,9 @@
 {{- end  -}}
 total_puzzles_played {{ len $wordles }}
 total_wins {{ len $wins}}
+{{- range $guesses := seq 1 6 }}
+total_wins{guesses="{{ $guesses }}"} {{ len (where $wins "Params.state.rowIndex" $guesses) }}
+{{- end }}
 total_losses {{ len $losses}}
 total_guesses {{ $total_guesses}}
 {{ with .Site.GetPage "/hashes" }}total_puzzle_hashes_played {{ len .Pages }}{{ end }}
