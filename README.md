@@ -23,3 +23,4 @@ Read more about [how this site works](https://wordle.tomhummel.com/a/how-it-work
 ## Preview
 
 ![Static Site](/wordle.tomhummel.com_.png)
+![Counter](https://bumpkit.tphummel.workers.dev/bumper/c2a1-wordle-readme/bump.png)
