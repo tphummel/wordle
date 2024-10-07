@@ -313,7 +313,7 @@
     <th></th>
   </tr>
 
-  {{ range first 5 (sort $streaks "length" "desc") }}
+  {{ range first 10 (sort $streaks "length" "desc") }}
     <tr>
       <td><a href="{{ .start.RelPermalink }}">{{ .start.Date.Format "Jan 2, 2006" }}</a></td>
       <td><a href="{{ .end.RelPermalink }}">{{ .end.Date.Format "Jan 2, 2006" }}</a></td>
@@ -334,7 +334,7 @@
     <th>Length</th>
     <th></th>
   </tr>
-  {{ range first 5 (sort $streaks "length" "desc") }}
+  {{ range first 10 (sort $streaks "length" "desc") }}
     <tr>
       <td><a href="{{ .start.RelPermalink }}">{{ .start.Date.Format "Jan 2, 2006" }}</a></td>
       <td><a href="{{ .end.RelPermalink }}">{{ .end.Date.Format "Jan 2, 2006" }}</a></td>
@@ -356,7 +356,7 @@
     <th></th>
   </tr>
 
-  {{ range first 5 (sort $streaks "length" "desc") }}
+  {{ range first 10 (sort $streaks "length" "desc") }}
     <tr>
       <td><a href="{{ .start.RelPermalink }}">{{ .start.Date.Format "Jan 2, 2006" }}</a></td>
       <td><a href="{{ .end.RelPermalink }}">{{ .end.Date.Format "Jan 2, 2006" }}</a></td>
