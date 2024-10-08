@@ -6,7 +6,7 @@
   	<title>{{ block "title" . }}{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}{{ end }}</title>
 
     <meta id="description" name="description" content="{{ block "description" . }}{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.site_description }}{{ end }}{{ end }}"/>
-
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 16 16'><text x='0' y='14'>🟩</text></svg>" />
     {{ if eq (getenv "HUGO_ENV") "production" }}
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
     {{ else }}
