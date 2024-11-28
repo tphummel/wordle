@@ -1,9 +1,9 @@
 ---
 title: "1258: 2024-11-28"
 date: 2024-11-28T09:40:56-08:00
-tags: []
+tags: ["holiday","thanksgiving"]
 git_branch: 2024-11-28_1258
-contests: ["holiday","thanksgiving"]
+contests: []
 words: ["eight","shack","chock"]
 openers: ["eight"]
 middlers: ["shack"]
