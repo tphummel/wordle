@@ -301,6 +301,37 @@
   {{ end }}
 </table>
 
+<h2>🗓 Annual Trends</h2>
+<table>
+  <tr>
+    <th>Year</th>
+    <th>Puzzles Played</th>
+    <th>Avg # Guesses</th>
+    <th>Avg Score</th>
+  </tr>
+  {{ range $wordles.GroupByDate "2006" }}
+    {{ $guessSum := 0 }}
+    {{ $scoreSum := 0 }}
+
+    {{ range .Pages }}
+      {{ $guesses := partial "guess-count" . }}
+      {{ $guesses = cond (eq $guesses "X") 6 $guesses }}
+      {{ $guessSum = add $guessSum $guesses }}
+
+      {{ $score := partial "puzzle-score" . }}
+      {{ $scoreSum = add $scoreSum $score }}
+    {{ end }}
+
+    <tr>
+      <td>{{ .Key }}</td>
+      <td>{{ len .Pages }}</td>
+      <td>{{ lang.NumFmt 2 (div (float $guessSum) (len .Pages)) }} ({{ $guessSum }})</td>
+      <td>{{ lang.NumFmt 1 (div (float $scoreSum) (len .Pages)) }} ({{ $scoreSum }})</td>
+
+    </tr>
+  {{ end }}
+</table>
+
 <h2>⛓ Top Streaks, Consec <abbr title="Missing day breaks a streak">Days Played</abbr></h2>
 
 {{ $streaks := partial "streak-days-played.html" $wordles }}
