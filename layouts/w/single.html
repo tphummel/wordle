@@ -27,26 +27,18 @@
 <p>Hard Mode: <strong>{{ .Params.state.hardMode}}</strong></p>
 <p>{{ partial "emoji-grid" . }}</p>
 <p>Share: ↘️ <a id="share-button" href="">Standard</a> | ↘️ <a id="share-enhanced" href="">Enhanced</a> | ↘️ <a id="share-spoilers" href="">Spoilers</a></p>
+<p id="share-copied" style="display:none;">✅ copied</p>
 <script>
-  function shareClick() {
-    navigator.clipboard.writeText({{ partial "share-standard" . }})
-    return false
+  function copyAndShow(text) {
+    navigator.clipboard.writeText(text);
+    const msg = document.getElementById("share-copied");
+    msg.style.display = "block";
+    setTimeout(() => { msg.style.display = "none"; }, 1000);
+    return false;
   }
-  document.getElementById("share-button").onclick = shareClick
-</script>
-<script>
-  function shareClick() {
-    navigator.clipboard.writeText({{ partial "share-enhanced" . }})
-    return false
-  }
-  document.getElementById("share-enhanced").onclick = shareClick
-</script>
-<script>
-  function shareClick() {
-    navigator.clipboard.writeText({{ partial "share-spoilers" . }})
-    return false
-  }
-  document.getElementById("share-spoilers").onclick = shareClick
+  document.getElementById("share-button").onclick = function () { return copyAndShow({{ partial "share-standard" . }}); };
+  document.getElementById("share-enhanced").onclick = function () { return copyAndShow({{ partial "share-enhanced" . }}); };
+  document.getElementById("share-spoilers").onclick = function () { return copyAndShow({{ partial "share-spoilers" . }}); };
 </script>
 
 {{ $achievements := slice }}
