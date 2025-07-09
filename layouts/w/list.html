@@ -16,7 +16,7 @@
     <td>Grid</td>
   </tr>
 
-  {{ range .Data.Pages }}
+  {{ range where .Data.Pages "Kind" "page" }}
     <tr>
       <td><a href="{{ .RelPermalink }}">{{ dateFormat "Jan 2, 2006" .Date }}</a></td>
       <td><a href="{{ with $.GetPage (printf "/puzzles/%s" (index .Params.puzzles 0)) }}{{ .RelPermalink}}{{end}}">{{ index .Params.puzzles 0 }}</a></td>

@@ -1,0 +1,40 @@
+{{ $year := .year }}
+{{ $puzzles := .puzzles }}
+
+{{ $puzzleMap := dict }}
+{{ range $p := $puzzles }}
+  {{ $key := $p.Date.Format "2006-01-02" }}
+  {{ $puzzleMap = merge $puzzleMap (dict $key $p) }}
+{{ end }}
+
+{{ $weekdayMap := dict "Sunday" 0 "Monday" 1 "Tuesday" 2 "Wednesday" 3 "Thursday" 4 "Friday" 5 "Saturday" 6 }}
+{{ range $m := seq 1 12 }}
+  {{ $monthStart := time (printf "%04d-%02d-01" $year $m) }}
+  {{ $nextMonth := $monthStart.AddDate 0 1 0 }}
+  {{ $daysInMonth := ($nextMonth.AddDate 0 0 -1).Day }}
+  <h3>{{ $monthStart.Format "January" }}</h3>
+  <table>
+    <tr><th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr>
+    {{ $firstW := index $weekdayMap ($monthStart.Format "Monday") }}
+    <tr>
+      {{ range seq 0 (sub $firstW 1) }}<td></td>{{ end }}
+      {{ $w := $firstW }}
+      {{ range $d := seq 1 $daysInMonth }}
+        {{ if ge $w 7 }}
+          </tr>
+          <tr>
+          {{ $w = 0 }}
+        {{ end }}
+        {{ $dateKey := printf "%04d-%02d-%02d" $year $m $d }}
+        <td>
+          {{ with index $puzzleMap $dateKey }}
+            <a href="{{ .RelPermalink }}">{{ index .Params.puzzles 0 }}</a><br />
+            {{ partial "emoji-grid" . }}
+          {{ end }}
+        </td>
+        {{ $w = add $w 1 }}
+      {{ end }}
+      {{ range seq $w 6 }}<td></td>{{ end }}
+    </tr>
+  </table>
+{{ end }}
