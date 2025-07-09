@@ -39,6 +39,13 @@
   💡 <a href="{{ with .Site.GetPage "a/how-it-works" }}{{ .RelPermalink }}{{ end }}">How Does This Website Work?</a>
 </blockquote>
 
+  {{ $years := (where .Site.RegularPages "Section" "w").GroupByDate "2006" }}
+  <div>📅 Calendars:
+    {{ range $index, $year := $years }}
+      {{ with $.Site.GetPage (printf "/w/%s" $year.Key) }}<a href="{{ .RelPermalink }}">{{ $year.Key }}</a>{{ if lt (add $index 1) (len $years) }}, {{ end }}{{ end }}
+    {{ end }}
+  </div>
+
 <h2>🕰 Recent Puzzles</h2>
 <table>
   <tr>

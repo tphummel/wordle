@@ -3,6 +3,13 @@
 
 <p>{{ partial "breadcrumb.html" . }}</p>
 
+{{ $yearGroups := (where .Site.RegularPages "Section" "w").GroupByDate "2006" }}
+<p>
+  {{ range $index, $y := $yearGroups }}
+    {{ with $.Site.GetPage (printf "/w/%s" $y.Key) }}<a href="{{ .RelPermalink }}">{{ $y.Key }}</a>{{ if lt (add $index 1) (len $yearGroups) }}, {{ end }}{{ end }}
+  {{ end }}
+</p>
+
 {{ with .Content }}
 <div>{{ . }}</div>
 {{ end }}
