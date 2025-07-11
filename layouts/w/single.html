@@ -118,7 +118,7 @@
               <a 
                 {{ cond $isSolvingGuess ((printf "style=%q" $rowBackgroundColor) | safeHTMLAttr ) "" }} 
                   href="{{ .RelPermalink }}">
-                  {{ $guess }} {{ cond $isSolvingGuess "✨" ""}}
+                  {{ $guess }} {{ cond (and $isSolvingGuess (ne (lower $.Params.state.gameStatus) "fail")) "✨" ""}}
               </a>
             </td>
             {{ $guessHistory := index $.Site.Taxonomies.words $guess }}
