@@ -8,7 +8,7 @@ Definition: Puzzles which are symmetrical or mirrored vertically.
   {{ $wordles := where .Site.RegularPages "Section" "w" }}
   {{ $found := partial "symmetrical.html" $wordles }}
 
-  <p>Pct of Total: <strong>{{ lang.NumFmt 2 (mul (div (float (len $found)) (len $wordles)) 100) }}% ({{ len $found }} / {{ len $wordles }})</strong></p>
+  <p>Pct of Total: <strong>{{ (mul (div (float (len $found)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% ({{ len $found }} / {{ len $wordles }})</strong></p>
 
   <table>
     <tr>

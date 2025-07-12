@@ -9,7 +9,7 @@ Definition: Puzzles in which each guess contains either only present (yellow) or
   {{ $found := partial "homo-guesses-only.html" $wordles }}
 
   <p>Puzzle Count: <strong>{{ len $found }}</strong></p>
-  <p>Pct of Total: <strong>{{ lang.NumFmt 2 (mul (div (float (len $found)) (len $wordles)) 100) }}% ({{ len $found }} / {{ len $wordles }})</strong></p>
+  <p>Pct of Total: <strong>{{ (mul (div (float (len $found)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% ({{ len $found }} / {{ len $wordles }})</strong></p>
 
   <table>
     <tr>

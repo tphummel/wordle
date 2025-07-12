@@ -92,10 +92,10 @@
       <td>{{ .name | title }}</td>
       {{ if .gameCount }}
       <td>
-        {{ lang.NumFmt 3 .scoreAvg }} ({{ .scoreSum }} / {{ .gameCount }})
+        {{ .scoreAvg  | lang.FormatNumber 3 }} ({{ .scoreSum }} / {{ .gameCount }})
       </td>
       <td>
-        {{ lang.NumFmt 2 .guessAvg }} ({{ .guessSum }} / {{ .gameCount }})
+        {{ .guessAvg  | lang.FormatNumber 2 }} ({{ .guessSum }} / {{ .gameCount }})
       </td>
       {{ else }}
       <td>-</td><td>-</td>
