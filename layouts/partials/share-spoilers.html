@@ -1,4 +1,4 @@
-{{ $guessCount := partial "guess-count" . }}
+{{ $guessCount := partialCached "guess-count" . .File.Path }}
 {{ $share := print "Wordle " (index .Params.puzzles 0) " " $guessCount "/6" (cond (eq .Params.state.hardMode true) "*" "") "\n" }}
 {{ $share = print $share "Day " ( .Date.Format "2006-01-02" ) "\n" }}
 {{ $prevScore := 0 }}

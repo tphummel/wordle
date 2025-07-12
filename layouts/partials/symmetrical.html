@@ -3,7 +3,7 @@
   {{ $wordleDate := .Date }}
   {{ $wordle := . }}
 
-  {{ $numGuesses := partial "guess-count.html" $wordle }}
+  {{ $numGuesses := partialCached "guess-count.html" $wordle $wordle.File.Path }}
   {{ $numGuesses = cond (eq "X" $numGuesses) 6 $numGuesses }}
   {{ $symmetricalGuesses := 0 }}
 
