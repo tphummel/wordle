@@ -27,7 +27,7 @@
 
 {{ $total_guesses := 0}}
 {{ range $wordles }}
-  {{ $guesses := partial "guess-count" . }}
+  {{ $guesses := partialCached "guess-count" . .File.Path }}
   {{ $guesses = cond (eq $guesses "X") 6 $guesses }}
   {{ $total_guesses = add $total_guesses $guesses }}
 {{ end }}
@@ -59,8 +59,8 @@
     <tr>
       <td><a href="{{ .RelPermalink }}">{{ .Date.Format "Jan 2, 2006" }}</a></td>
       <td><a href="{{ .RelPermalink }}">{{ index .Params.puzzles 0 }}</a></td>
-      <td><a href="{{ .RelPermalink }}">{{ partial "guess-count.html" . }}{{- cond (eq .Params.state.hardMode true) "*" "" -}}</a></td>
-      <td><a href="{{ .RelPermalink }}">{{ partial "puzzle-score.html" . }}</a></td>
+      <td><a href="{{ .RelPermalink }}">{{ partialCached "guess-count.html" . .File.Path }}{{- cond (eq .Params.state.hardMode true) "*" "" -}}</a></td>
+      <td><a href="{{ .RelPermalink }}">{{ partialCached "puzzle-score.html" . .File.Path }}</a></td>
     </tr>
 
   {{ end }}
@@ -208,7 +208,7 @@
 {{ end }}
 
 {{ range $wordles }}
-  {{ $score := partial "puzzle-score" . }}
+  {{ $score := partialCached "puzzle-score" . .File.Path }}
   {{ $.Scratch.Add "scored" (slice (dict "page" . "score" $score)) }}
 {{ end }}
 
@@ -225,7 +225,7 @@
     <tr>
       <td><a href="{{ .page.RelPermalink }}">{{ .page.Date.Format "Jan 2, 2006" }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ index .page.Params.puzzles 0 }}</a></td>
-      <td><a href="{{ .page.RelPermalink }}">{{ partial "guess-count.html" .page }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ partialCached "guess-count.html" .page .page.File.Path }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ .score }}</a></td>
     </tr>
   {{ end }}
@@ -244,7 +244,7 @@
     <tr>
       <td><a href="{{ .page.RelPermalink }}">{{ .page.Date.Format "Jan 2, 2006" }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ index .page.Params.puzzles 0 }}</a></td>
-      <td><a href="{{ .page.RelPermalink }}">{{ partial "guess-count.html" .page }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ partialCached "guess-count.html" .page .page.File.Path }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ .score }}</a></td>
     </tr>
   {{ end }}
@@ -257,7 +257,7 @@
     <th>Pct</th>
   </tr>
 
-  {{ $wordCounts := index (partial "openers.html" $wordles) "wordCounts" }}
+  {{ $wordCounts := index (partialCached "openers.html" $wordles "openers") "wordCounts" }}
 
   {{ $minToPrint := 10 }}
   {{ range sort $wordCounts "count" "desc" }}
@@ -290,11 +290,11 @@
     {{ $scoreSum := 0 }}
 
     {{ range .Pages }}
-      {{ $guesses := partial "guess-count" . }}
+      {{ $guesses := partialCached "guess-count" . .File.Path }}
       {{ $guesses = cond (eq $guesses "X") 6 $guesses }}
       {{ $guessSum = add $guessSum $guesses }}
 
-      {{ $score := partial "puzzle-score" . }}
+      {{ $score := partialCached "puzzle-score" . .File.Path }}
       {{ $scoreSum = add $scoreSum $score }}
     {{ end }}
 
@@ -321,11 +321,11 @@
     {{ $scoreSum := 0 }}
 
     {{ range .Pages }}
-      {{ $guesses := partial "guess-count" . }}
+      {{ $guesses := partialCached "guess-count" . .File.Path }}
       {{ $guesses = cond (eq $guesses "X") 6 $guesses }}
       {{ $guessSum = add $guessSum $guesses }}
 
-      {{ $score := partial "puzzle-score" . }}
+      {{ $score := partialCached "puzzle-score" . .File.Path }}
       {{ $scoreSum = add $scoreSum $score }}
     {{ end }}
 
@@ -425,8 +425,8 @@
       <td><a href="{{ .page.RelPermalink }}">{{ .page.Date.Format "Jan 2, 2006" }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ index .page.Params.puzzles 0 }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ .blackTiles }}</a></td>
-      <td><a href="{{ .page.RelPermalink }}">{{ partial "guess-count.html" .page }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
-      <td><a href="{{ .page.RelPermalink }}">{{ partial "puzzle-score" .page }}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ partialCached "guess-count.html" .page .page.File.Path }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ partialCached "puzzle-score" .page .page.File.Path }}</a></td>
     </tr>
   {{ end }}
 </table>
@@ -446,8 +446,8 @@
       <td><a href="{{ .page.RelPermalink }}">{{ .page.Date.Format "Jan 2, 2006" }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ index .page.Params.puzzles 0 }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ .yellowTiles }}</a></td>
-      <td><a href="{{ .page.RelPermalink }}">{{ partial "guess-count.html" .page }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
-      <td><a href="{{ .page.RelPermalink }}">{{ partial "puzzle-score" .page }}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ partialCached "guess-count.html" .page .page.File.Path }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ partialCached "puzzle-score" .page .page.File.Path }}</a></td>
     </tr>
   {{ end }}
 </table>
@@ -467,8 +467,8 @@
       <td><a href="{{ .page.RelPermalink }}">{{ .page.Date.Format "Jan 2, 2006" }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ index .page.Params.puzzles 0 }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ .greenTiles }}</a></td>
-      <td><a href="{{ .page.RelPermalink }}">{{ partial "guess-count.html" .page }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
-      <td><a href="{{ .page.RelPermalink }}">{{ partial "puzzle-score" .page }}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ partialCached "guess-count.html" .page .page.File.Path }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ partialCached "puzzle-score" .page .page.File.Path }}</a></td>
     </tr>
   {{ end }}
 </table>
