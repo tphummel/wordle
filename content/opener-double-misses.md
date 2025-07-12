@@ -8,7 +8,7 @@ Definition: Puzzles where all letters in my first two guesses were absent.
   {{ $wordles := where .Site.RegularPages "Section" "w" }}
   {{ $found := partial "opener-double-misses" $wordles }}
 
-  <p>Pct of Total: <strong>{{ lang.NumFmt 2 (mul (div (float (len $found)) (len $wordles)) 100) }}% ({{ len $found }} / {{ len $wordles }})</strong></p>
+  <p>Pct of Total: <strong>{{ (mul (div (float (len $found)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% ({{ len $found }} / {{ len $wordles }})</strong></p>
 
   {{ $example := (index (last 1 $found) 0).puzzle }}
   <p>Example: <a href="{{ $example.RelPermalink }}">Wordle {{ index $example.Params.puzzles 0 }} / {{ dateFormat "Jan 2, 2006" $example.Date }}</a></p>

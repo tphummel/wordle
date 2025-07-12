@@ -7,7 +7,7 @@ title: Losses
   {{ $wordles := where .Site.RegularPages "Section" "w" }}
   {{ $found := where $wordles "Params.state.gameStatus" "FAIL" }}
   <p>Count of Losses: <strong>{{ len $found }}</strong></p>
-  <p>Pct of Total: <strong>{{ lang.NumFmt 2 (mul (div (float (len $found)) (len $wordles)) 100) }}% ({{ len $found }} / {{ len $wordles }})</strong></p>
+  <p>Pct of Total: <strong>{{ (mul (div (float (len $found)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% ({{ len $found }} / {{ len $wordles }})</strong></p>
   {{ with (index $found 0) }}
   <p>Example: <a href="{{ .RelPermalink }}">Wordle {{ index .Params.puzzles 0 }} / {{ dateFormat "Jan 2, 2006" .Date }}</a></p>
 

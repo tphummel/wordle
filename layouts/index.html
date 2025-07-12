@@ -23,7 +23,7 @@
 {{ with .Site.GetPage "/shifts" }}
   <div>🧩 Puzzle Solutions Played: <strong><a href="{{ .RelPermalink }}">{{ len .Pages }}</a></strong></div>
 {{ end }}
-<div>🧩 Win Pct: <strong>{{ lang.NumFmt 3 (div (float (len $wins)) (len $wordles)) }} ({{ len $wins }}-{{ len $losses }})</strong></div>
+<div>🧩 Win Pct: <strong>{{ (div (float (len $wins)) (len $wordles))  | lang.FormatNumber 3 }} ({{ len $wins }}-{{ len $losses }})</strong></div>
 
 {{ $total_guesses := 0}}
 {{ range $wordles }}
@@ -32,7 +32,7 @@
   {{ $total_guesses = add $total_guesses $guesses }}
 {{ end }}
 <div>🧩 Total Guesses: <strong><a href="{{ with .Site.GetPage "guesses" }}{{ .RelPermalink }}{{ end }}">{{ $total_guesses }}</a></strong></div>
-<div>🧩 Guesses per Puzzle:  <strong>{{ lang.NumFmt 2 (div (float $total_guesses) (len $wordles)) }}</strong></div>
+<div>🧩 Guesses per Puzzle:  <strong>{{ (div (float $total_guesses) (len $wordles))  | lang.FormatNumber 2 }}</strong></div>
 <div>🧩 Distinct Words Guessed: <strong><a href="{{ with .Site.GetPage "words" }}{{ .RelPermalink }}{{ end }}">{{ len .Site.Taxonomies.words }}</a></strong></div>
 
 <blockquote>
@@ -103,7 +103,7 @@
   <tr>
     <td>{{ $guesses }}</td>
     <td><a href="{{ with $.Site.GetPage (index $guessReports $guesses) }}{{ .RelPermalink }}{{ end }}">{{ $puzzles }}</a></td>
-    <td>{{ lang.NumFmt 2 (mul (div (float $puzzles) (len $wordles)) 100) }}%</td>
+    <td>{{ (mul (div (float $puzzles) (len $wordles)) 100)  | lang.FormatNumber 2 }}%</td>
     <td>
       {{ if gt $puzzles 0 }}
         {{ $byHash := partialCached "puzzles-by-hash" $puzzlePages (string $guesses) }}
@@ -112,14 +112,14 @@
         {{ $puzzles }}
       {{ end }}
     </td>
-    <td>{{ lang.NumFmt 0 $totalPermutations }}</td>
+    <td>{{ $totalPermutations  | lang.FormatNumber 0 }}</td>
   </tr>
 {{ end }}
 
 <tr>
   <td>Loss</td>
   <td><a href="{{ with $.Site.GetPage "losses" }}{{ .RelPermalink }}{{ end }}">{{ len $losses }}</a></td>
-  <td>{{ lang.NumFmt 2 (mul (div (float (len $losses)) (len $wordles)) 100) }}%</td>
+  <td>{{ (mul (div (float (len $losses)) (len $wordles)) 100)  | lang.FormatNumber 2 }}%</td>
   <td>{{ len (partialCached "puzzles-by-hash" $losses "losses") }}</td>
   <td>Many...</td>
 </tr>
@@ -137,7 +137,7 @@
   <tr>
     <td><a href="{{ .RelPermalink }}">Homogenous Guesses Only</a></td>
     <td>
-      {{ lang.NumFmt 2 (mul (div (float (len $homoGuessesOnly)) (len $wordles)) 100) }}% (<a href="{{ .RelPermalink }}">{{ len $homoGuessesOnly }}</a> / {{ len $wordles }})
+      {{ (mul (div (float (len $homoGuessesOnly)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $homoGuessesOnly }}</a> / {{ len $wordles }})
     </td>
   </tr>
 {{ end }}
@@ -147,7 +147,7 @@
   <tr>
     <td><a href="{{ .RelPermalink }}">Opener Misses</a></td>
     <td>
-      {{ lang.NumFmt 2 (mul (div (float (len $openerMisses)) (len $wordles)) 100) }}% (<a href="{{ .RelPermalink }}">{{ len $openerMisses }}</a> / {{ len $wordles }})
+      {{ (mul (div (float (len $openerMisses)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $openerMisses }}</a> / {{ len $wordles }})
     </td>
   </tr>
 {{ end }}
@@ -157,7 +157,7 @@
   <tr>
     <td><a href="{{ .RelPermalink }}">Opener Double Misses</a></td>
     <td>
-      {{ lang.NumFmt 2 (mul (div (float (len $openerDoubleMisses)) (len $wordles)) 100) }}% (<a href="{{ .RelPermalink }}">{{ len $openerDoubleMisses }}</a> / {{ len $wordles }})
+      {{ (mul (div (float (len $openerDoubleMisses)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $openerDoubleMisses }}</a> / {{ len $wordles }})
     </td>
   </tr>
 {{ end }}
@@ -167,7 +167,7 @@
   <tr>
     <td><a href="{{ .RelPermalink }}">No Yellow Tiles</a></td>
     <td>
-      {{ lang.NumFmt 2 (mul (div (float (len $noYellow)) (len $wordles)) 100) }}% (<a href="{{ .RelPermalink }}">{{ len $noYellow }}</a> / {{ len $wordles }})
+      {{ (mul (div (float (len $noYellow)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $noYellow }}</a> / {{ len $wordles }})
     </td>
   </tr>
 
@@ -178,7 +178,7 @@
   <tr>
     <td><a href="{{ .RelPermalink }}">No Green Tiles Prior to Solving</a></td>
     <td>
-      {{ lang.NumFmt 2 (mul (div (float (len $noGreenBeforeSolve)) (len $wordles)) 100) }}% (<a href="{{ .RelPermalink }}">{{ len $noGreenBeforeSolve }}</a> / {{ len $wordles }})
+      {{ (mul (div (float (len $noGreenBeforeSolve)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $noGreenBeforeSolve }}</a> / {{ len $wordles }})
     </td>
   </tr>
 {{ end }}
@@ -187,7 +187,7 @@
   <tr>
     <td><a href="{{ .RelPermalink }}">Anagrams</a></td>
     <td>
-      {{ lang.NumFmt 2 (mul (div (float (len $anagrams)) (len $wordles)) 100) }}% (<a href="{{ .RelPermalink }}">{{ len $anagrams }}</a> / {{ len $wordles }})
+      {{ (mul (div (float (len $anagrams)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $anagrams }}</a> / {{ len $wordles }})
     </td>
   </tr>
 {{ end }}
@@ -196,7 +196,7 @@
   <tr>
     <td><a href="{{ .RelPermalink }}">Symmetrical Puzzles</a></td>
     <td>
-      {{ lang.NumFmt 2 (mul (div (float (len $symmetrical)) (len $wordles)) 100) }}% (<a href="{{ .RelPermalink }}">{{ len $symmetrical }}</a> / {{ len $wordles }})
+      {{ (mul (div (float (len $symmetrical)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $symmetrical }}</a> / {{ len $wordles }})
     </td>
   </tr>
 {{ end }}
@@ -301,8 +301,8 @@
     <tr>
       <td>{{ .Key }}</td>
       <td>{{ len .Pages }}</td>
-      <td>{{ lang.NumFmt 2 (div (float $guessSum) (len .Pages)) }} ({{ $guessSum }})</td>
-      <td>{{ lang.NumFmt 1 (div (float $scoreSum) (len .Pages)) }} ({{ $scoreSum }})</td>
+      <td>{{ (div (float $guessSum) (len .Pages))  | lang.FormatNumber 2 }} ({{ $guessSum }})</td>
+      <td>{{ (div (float $scoreSum) (len .Pages))  | lang.FormatNumber 1 }} ({{ $scoreSum }})</td>
 
     </tr>
   {{ end }}
@@ -332,8 +332,8 @@
     <tr>
       <td>{{ .Key }}</td>
       <td>{{ len .Pages }}</td>
-      <td>{{ lang.NumFmt 2 (div (float $guessSum) (len .Pages)) }} ({{ $guessSum }})</td>
-      <td>{{ lang.NumFmt 1 (div (float $scoreSum) (len .Pages)) }} ({{ $scoreSum }})</td>
+      <td>{{ (div (float $guessSum) (len .Pages))  | lang.FormatNumber 2 }} ({{ $guessSum }})</td>
+      <td>{{ (div (float $scoreSum) (len .Pages))  | lang.FormatNumber 1 }} ({{ $scoreSum }})</td>
 
     </tr>
   {{ end }}
