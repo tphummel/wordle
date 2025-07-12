@@ -5,18 +5,32 @@ set -euo pipefail
 # ./.tool-versions-setup.sh && hugo
 # SKIP_DEPENDENCY_INSTALL=1
 
-echo "➡️ Using pre-installed asdf"
-. /opt/buildhome/.asdf/asdf.sh
-asdf version
+ASDF_DIR=".asdf-local"
 
-echo "➡️ Installing hugo plugin if needed"
-asdf plugin add hugo https://github.com/asdf-community/asdf-hugo.git || true
+echo "➡️ Installing asdf into $ASDF_DIR"
+if [[ ! -d "$ASDF_DIR" ]]; then
+  git clone https://github.com/asdf-vm/asdf.git "$ASDF_DIR" --branch v0.13.1
+fi
 
-echo "➡️ Installing hugo from .tool-versions"
+# Load asdf
+. "$ASDF_DIR/asdf.sh"
+. "$ASDF_DIR/completions/asdf.bash" || true
+
+# Export paths for use in build
+export PATH="$PWD/$ASDF_DIR/bin:$PWD/$ASDF_DIR/shims:$PATH"
+
+echo "➡️ Installing plugins from .tool-versions"
+
+# Extract tools and ensure plugins are added
+cut -d' ' -f1 .tool-versions | while read -r plugin; do
+  if ! asdf plugin list | grep -q "^$plugin$"; then
+    echo "➕ Adding plugin $plugin"
+    asdf plugin add "$plugin"
+  fi
+done
+
+echo "➡️ Installing tools"
 asdf install
-asdf global hugo "$(awk '/^hugo / {print $2}' .tool-versions)"
 
-echo "✅ Hugo version: $(hugo version)"
-
-export ASDF_DIR=/opt/buildhome/.asdf
-export PATH="$ASDF_DIR/bin:$ASDF_DIR/shims:$PATH"
+echo "✅ Installed tool versions:"
+asdf current
