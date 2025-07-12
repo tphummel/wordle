@@ -11,8 +11,8 @@ title: Collections
     {{ $evaluations := .Params.state.evaluations }}
 
     {{ if eq "WIN" $wordle.Params.state.gameStatus }}
-      {{ $turns := partial "guess-count" $wordle }}
-      {{ $score := partial "puzzle-score" $wordle }}
+      {{ $turns := partialCached "guess-count" $wordle $wordle.File.Path }}
+      {{ $score := partialCached "puzzle-score" $wordle $wordle.File.Path }}
 
       {{ $puzzleData := dict "date" $wordleDate "puzzle" $wordle "turns" $turns "score" $score }}
 

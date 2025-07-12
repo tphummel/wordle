@@ -30,7 +30,7 @@
         <td class="{{ if not $puzzle }}missed{{ end }}">
           {{ with $puzzle }}
             <a href="{{ .RelPermalink }}">{{ index .Params.puzzles 0 }}</a><br />
-            {{ partial "puzzle-score.html" . }}
+            {{ partialCached "puzzle-score.html" . .File.Path }}
           {{ else }}
             <span>&#x2717;</span>
           {{ end }}

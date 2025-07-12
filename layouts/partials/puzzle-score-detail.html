@@ -1,5 +1,5 @@
-{{ $guesses := partial "guess-count" . }}
-{{ $counts := partial "guess-eval-counts" . }}
+{{ $guesses := partialCached "guess-count" . .File.Path }}
+{{ $counts := partialCached "guess-eval-counts" . .File.Path }}
 
 <table>
   <tr>

@@ -37,7 +37,7 @@
     {{ $w := dict }}
 
     {{ if eq $player "tom" }}
-      {{ $w = dict "puzzleScore" (partial "puzzle-score" $puzzle) "guessCount" (partial "guess-count" $puzzle) }}
+      {{ $w = dict "puzzleScore" (partialCached "puzzle-score" $puzzle $puzzle.File.Path) "guessCount" (partialCached "guess-count" $puzzle $puzzle.File.Path) }}
     {{ else }}
       {{ with $puzzle.Resources.GetMatch (printf "%s.json" $player) }}
         {{ $w = .Content | transform.Unmarshal }}
@@ -135,7 +135,7 @@
 
     {{ $playerPuzzles = $playerPuzzles | append (slice $guest) }}
   {{ end }}
-  {{ $tom := merge (dict "Params" .Params) (dict "words" .Params.words "isHardMode" .Params.state.hardMode "puzzleScore" (partial "puzzle-score" $puzzle) "guessCount" (partial "guess-count" $puzzle) "playerName" "tom" "timestamp" .Date  )}}
+  {{ $tom := merge (dict "Params" .Params) (dict "words" .Params.words "isHardMode" .Params.state.hardMode "puzzleScore" (partialCached "puzzle-score" $puzzle $puzzle.File.Path) "guessCount" (partialCached "guess-count" $puzzle $puzzle.File.Path) "playerName" "tom" "timestamp" .Date  )}}
   {{ with .Content }}
     {{ $tom = merge $tom (dict "comment" (plainify .)) }}
   {{ end }}

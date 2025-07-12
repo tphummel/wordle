@@ -2,7 +2,7 @@
 {{ $missedFirstTwoGuesses := 0 }}
 
 {{ range . }}
-  {{ $turns := partial "guess-count" . }}
+  {{ $turns := partialCached "guess-count" . .File.Path }}
   {{ $puzzleHasMoreThanOneTurn := gt $turns 1 }}
   {{ if $puzzleHasMoreThanOneTurn }}
     {{ $wordleDate := .Date }}

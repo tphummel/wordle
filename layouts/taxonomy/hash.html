@@ -10,7 +10,7 @@
 <h2>Grid</h2>
 {{ range $puzzle := first 1 .Data.Pages }}
 <div>
-  {{ partial "emoji-grid" . }}
+  {{ partialCached "emoji-grid" . .File.Path }}
 </div>
 {{ end }}
 
@@ -28,8 +28,8 @@
     <tr>
       <td><a href="{{ .RelPermalink }}">{{ dateFormat "Jan 2, 2006" .Date }}</a></td>
       <td><a href="{{ with $.GetPage (printf "/puzzles/%s" (index .Params.puzzles 0)) }}{{ .RelPermalink}}{{end}}">{{ index .Params.puzzles 0 }}</a></td>
-      <td><a href="{{ .RelPermalink }}">{{ partial "guess-count.html" . }}{{- cond (eq .Params.state.hardMode true) "*" "" -}}</a></td>
-      <td><a href="{{ .RelPermalink }}">{{ partial "puzzle-score.html" . }}</a></td>
+      <td><a href="{{ .RelPermalink }}">{{ partialCached "guess-count.html" . .File.Path }}{{- cond (eq .Params.state.hardMode true) "*" "" -}}</a></td>
+      <td><a href="{{ .RelPermalink }}">{{ partialCached "puzzle-score.html" . .File.Path }}</a></td>
     </tr>
 
   {{ end }}

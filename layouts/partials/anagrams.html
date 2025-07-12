@@ -6,7 +6,7 @@
   {{ $hasAnagramGuess := false }}
   {{ $isWin := eq "WIN" .Params.state.gameStatus }}
 
-  {{ $numGuesses := partial "guess-count.html" $wordle }}
+  {{ $numGuesses := partialCached "guess-count.html" $wordle $wordle.File.Path }}
   {{ $numGuesses = cond (eq "X" $numGuesses) 6 $numGuesses }}
   
   {{ range $n, $guess := .Params.state.evaluations }}

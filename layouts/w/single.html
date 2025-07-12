@@ -3,9 +3,9 @@
   <meta property="og:title" content="{{ $.Site.Title }}" />
   <meta property="og:description" content="Wordle puzzle #{{ index .Params.puzzles 0 }} completed on {{ .Date.Format "January 2, 2006" }}" />
   <meta property="twitter:label1" value="Guesses" />
-  <meta property="twitter:data1" value="{{ partial "guess-count" . }}" />
+  <meta property="twitter:data1" value="{{ partialCached "guess-count" . .File.Path }}" />
   <meta property="twitter:label2" value="Score" />
-  <meta property="twitter:data2" value="{{ partial "puzzle-score.html" . }}" />
+  <meta property="twitter:data2" value="{{ partialCached "puzzle-score.html" . .File.Path }}" />
   <meta property="twitter:label3" value="Outcome" />
   <meta property="twitter:data3" value="{{ lower .Params.state.gameStatus }}" />
   <meta property="twitter:label4" value="Hard Mode" />
@@ -25,7 +25,7 @@
 
 <p>Outcome: <strong>{{ lower .Params.state.gameStatus}}</strong></p>
 <p>Hard Mode: <strong>{{ .Params.state.hardMode}}</strong></p>
-<p>{{ partial "emoji-grid" . }}</p>
+<p>{{ partialCached "emoji-grid" . .File.Path }}</p>
 <p>Share: ↘️ <a id="share-button" href="">Standard</a> | ↘️ <a id="share-enhanced" href="">Enhanced</a> | ↘️ <a id="share-spoilers" href="">Spoilers</a></p>
 <p id="share-copied" style="display:none;">✅ copied</p>
 <script>
@@ -36,39 +36,39 @@
     setTimeout(() => { msg.style.display = "none"; }, 1000);
     return false;
   }
-  document.getElementById("share-button").onclick = function () { return copyAndShow({{ partial "share-standard" . }}); };
-  document.getElementById("share-enhanced").onclick = function () { return copyAndShow({{ partial "share-enhanced" . }}); };
-  document.getElementById("share-spoilers").onclick = function () { return copyAndShow({{ partial "share-spoilers" . }}); };
+  document.getElementById("share-button").onclick = function () { return copyAndShow({{ partialCached "share-standard" . .File.Path }}); };
+  document.getElementById("share-enhanced").onclick = function () { return copyAndShow({{ partialCached "share-enhanced" . .File.Path }}); };
+  document.getElementById("share-spoilers").onclick = function () { return copyAndShow({{ partialCached "share-spoilers" . .File.Path }}); };
 </script>
 
 {{ $achievements := slice }}
 {{ $wordle := (slice .) }}
 
-{{ with (partial "no-green-before-solve" $wordle) }}
+{{ with (partialCached "no-green-before-solve" $wordle .File.Path) }}
   {{ $achievement := dict "badge" "🏅" "report" "no-green-before-solve.md" "title" "No Green Tiles Prior to Solving" }}
   {{ $achievements = $achievements | append (slice $achievement) }}
 {{ end }}
-{{ with (partial "no-yellow-tiles" $wordle) }}
+{{ with (partialCached "no-yellow-tiles" $wordle .File.Path) }}
   {{ $achievement := dict "badge" "🎖" "report" "no-yellow-tiles.md" "title" "No Yellow Tiles" }}
   {{ $achievements = $achievements | append (slice $achievement) }}
 {{ end }}
-{{ with (partial "opener-misses" $wordle) }}
+{{ with (partialCached "opener-misses" $wordle .File.Path) }}
   {{ $achievement := dict "badge" "🥇" "report" "opener-misses.md" "title" "Opener Miss" }}
   {{ $achievements = $achievements | append (slice $achievement) }}
 {{ end }}
-{{ with (partial "opener-double-misses" $wordle) }}
+{{ with (partialCached "opener-double-misses" $wordle .File.Path) }}
   {{ $achievement := dict "badge" "🥈" "report" "opener-double-misses.md" "title" "Opener Double Miss" }}
   {{ $achievements = $achievements | append (slice $achievement) }}
 {{ end }}
-{{ with (partial "anagrams" $wordle) }}
+{{ with (partialCached "anagrams" $wordle .File.Path) }}
   {{ $achievement := dict "badge" "🏅" "report" "anagrams.md" "title" "Anagram" }}
   {{ $achievements = $achievements | append (slice $achievement) }}
 {{ end }}
-{{ with (partial "symmetrical" $wordle) }}
+{{ with (partialCached "symmetrical" $wordle .File.Path) }}
   {{ $achievement := dict "badge" "🎖" "report" "symmetrical.md" "title" "Symmetrical" }}
   {{ $achievements = $achievements | append (slice $achievement) }}
 {{ end }}
-{{ with (partial "homo-guesses-only" $wordle) }}
+{{ with (partialCached "homo-guesses-only" $wordle .File.Path) }}
   {{ $achievement := dict "badge" "🏅" "report" "homogenous-guesses-only.md" "title" "Homogenous Guesses Only" }}
   {{ $achievements = $achievements | append (slice $achievement) }}
 {{ end }}
@@ -86,7 +86,7 @@
   </ul>
 {{ end }}
 
-{{ $guessCount := partial "guess-count" . }}
+{{ $guessCount := partialCached "guess-count" . .File.Path }}
 <p>
   <details>
     <summary>
@@ -204,9 +204,9 @@
 <p>
   <details>
     <summary>
-      Puzzle Score: <strong>{{ partial "puzzle-score.html" . }}</strong>
+      Puzzle Score: <strong>{{ partialCached "puzzle-score.html" . .File.Path }}</strong>
     </summary>
-    {{ partial "puzzle-score-detail.html" .}}
+    {{ partialCached "puzzle-score-detail.html" . .File.Path }}
   </details>
 </p>
 
@@ -304,8 +304,8 @@
     <tr>
       <td><a href="{{ .RelPermalink }}">{{ dateFormat "Jan 2, 2006" .Date }}</a></td>
       <td><a href="{{ .RelPermalink }}">{{ index .Params.puzzles 0 }}</td>
-      <td><a href="{{ .RelPermalink }}">{{ partial "guess-count.html" . }}{{- cond (eq .Params.state.hardMode true) "*" "" -}}</a></td>
-      <td><a href="{{ .RelPermalink }}">{{ partial "puzzle-score.html" . }}</a></td>
+      <td><a href="{{ .RelPermalink }}">{{ partialCached "guess-count.html" . .File.Path }}{{- cond (eq .Params.state.hardMode true) "*" "" -}}</a></td>
+      <td><a href="{{ .RelPermalink }}">{{ partialCached "puzzle-score.html" . .File.Path }}</a></td>
     </tr>
   {{ end }}
   </table>

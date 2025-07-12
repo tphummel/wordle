@@ -3,7 +3,7 @@
   {{ $wordleDate := .Date }}
   {{ $wordle := . }}
 
-  {{ $guessCount := partial "guess-count" $wordle }}
+  {{ $guessCount := partialCached "guess-count" $wordle $wordle.File.Path }}
   {{ $homogenousGuesses := slice }}
 
   {{ range $guess := .Params.state.evaluations }}
