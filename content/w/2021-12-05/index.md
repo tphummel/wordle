@@ -49,6 +49,8 @@ state:
 stats: {}
 puzzles:
   - 169
+hashes: ["APAAPPAAPPPPPCACCCCCXXXXXXXXXX"]
+shifts: ["azpnb"]
 aliases:
   - /w/169/
 ---

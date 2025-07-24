@@ -54,6 +54,8 @@ state:
 stats: {}
 puzzles:
   - 184
+hashes: ["AAAPPACAACACAACCCCACCCCCCXXXXX"]
+shifts: ["hyito"]
 aliases:
   - /w/184/
 ---

@@ -54,6 +54,8 @@ state:
 stats: {}
 puzzles:
   - 179
+hashes: ["AAAPPPPCCAACCCCACCCCCCCCCXXXXX"]
+shifts: ["zyilo"]
 aliases:
   - /w/179/
 ---

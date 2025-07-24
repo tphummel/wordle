@@ -54,6 +54,8 @@ state:
 stats: {}
 puzzles:
   - 187
+hashes: ["AAPAAAAAACAPAPCCCCACCCCCCXXXXX"]
+shifts: ["myqyo"]
 aliases:
   - /w/187/
 ---
