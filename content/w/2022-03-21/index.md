@@ -52,6 +52,8 @@ stats:
   averageGuesses: 4
 puzzles:
   - 275
+hashes: ["AAAPCCCCCCXXXXXXXXXXXXXXXXXXXX"]
+shifts: ["zomrb"]
 aliases:
   - /w/275/
 ---

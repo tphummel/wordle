@@ -57,6 +57,8 @@ stats:
   averageGuesses: 4
 puzzles:
   - 248
+hashes: ["PAAACAPCACCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["zowax"]
 aliases:
   - /w/248/
 ---

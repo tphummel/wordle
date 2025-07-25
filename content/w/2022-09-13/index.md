@@ -4,6 +4,8 @@ date: 2022-09-13T06:18:52-07:00
 tags: []
 words: ["honey","thick","plush","alpha"]
 puzzles: [451]
+hashes: ["PAAAAAPAAAPCAAPCCCCCXXXXXXXXXX"]
+shifts: ["gsxqk"]
 state: {
   "boardState": [
     "honey",

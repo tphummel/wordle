@@ -4,6 +4,8 @@ date: 2022-07-15T16:45:58-07:00
 tags: []
 words: ["track","blown","sweep","weave","wedge"]
 puzzles: [391]
+hashes: ["AAAAAAAAPAAPPPACCAACCCCCCXXXXX"]
+shifts: ["cllpo"]
 state: {
   "boardState": [
     "track",

@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-11-habit"]
 words: ["habit","wagon","laser","valve","maple"]
 puzzles: [513]
+hashes: ["ACAAAACAAAPCAPAACPACCCCCCXXXXX"]
+shifts: ["shxuo"]
 state: {
   "boardState": [
     "habit",

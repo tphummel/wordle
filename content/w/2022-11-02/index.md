@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-11-habit"]
 words: ["habit","pivot","spilt","input","inept"]
 puzzles: [501]
+hashes: ["AAAPCPPAACAPPACCCPACCCCCCXXXXX"]
+shifts: ["oumyd"]
 state: {
   "boardState": [
     "habit",

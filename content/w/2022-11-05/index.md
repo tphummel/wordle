@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-11-habit"]
 words: ["habit","scrap","dream"]
 puzzles: [504]
+hashes: ["APAAAAAPCACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["jymjw"]
 state: {
   "boardState": [
     "habit",

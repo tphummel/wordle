@@ -4,6 +4,8 @@ date: 2022-04-15T06:49:28-07:00
 tags: []
 words: ["peril","those","shade","shame"]
 puzzles: [300]
+hashes: ["APAAAACAPCCCCACCCCCCXXXXXXXXXX"]
+shifts: ["yoivo"]
 state: {
   "boardState": [
     "peril",

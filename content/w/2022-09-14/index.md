@@ -4,6 +4,8 @@ date: 2022-09-14T06:22:35-07:00
 tags: []
 words: ["honey","thyme"]
 puzzles: [452]
+hashes: ["PAAPPCCCCCXXXXXXXXXXXXXXXXXXXX"]
+shifts: ["zogvo"]
 state: {
   "boardState": [
     "honey",

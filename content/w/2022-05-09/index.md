@@ -4,6 +4,8 @@ date: 2022-05-09T06:26:59-07:00
 tags: []
 words: ["steam","those","rents","fetes","fetus"]
 puzzles: [324]
+hashes: ["PPPAAPAAPPACAPCCCCACCCCCCXXXXX"]
+shifts: ["llbdc"]
 state: {
   "boardState": [
     "steam",

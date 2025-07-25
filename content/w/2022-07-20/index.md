@@ -4,6 +4,8 @@ date: 2022-07-20T06:05:43-07:00
 tags: []
 words: ["delay","stone","chute","write","trite"]
 puzzles: [396]
+hashes: ["APAAAAPAACAAACCACCCCCCCCCXXXXX"]
+shifts: ["zyqco"]
 state: {
   "boardState": [
     "delay",

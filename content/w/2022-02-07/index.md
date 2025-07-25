@@ -49,6 +49,8 @@ state:
 stats: {}
 puzzles:
   - 233
+hashes: ["CAAAACPAAPCAPPACCCCCXXXXXXXXXX"]
+shifts: ["kslnb"]
 aliases:
   - /w/233/
 ---

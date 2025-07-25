@@ -4,6 +4,8 @@ date: 2022-06-30T06:52:16-07:00
 tags: []
 words: ["track","pitch","dutch","butch","hutch"]
 puzzles: [376]
+hashes: ["PAACAAACCCACCCCACCCCCCCCCXXXXX"]
+shifts: ["nbblr"]
 state: {
   "boardState": [
     "track",

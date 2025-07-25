@@ -57,6 +57,8 @@ stats:
   averageGuesses: 4
 puzzles:
   - 264
+hashes: ["PAPPPCCPPACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["rhxbo"]
 aliases:
   - /w/264/
 ---

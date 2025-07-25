@@ -4,6 +4,8 @@ date: 2022-05-30T06:12:31-07:00
 tags: []
 words: ["humor","stone","atoll"]
 puzzles: [345]
+hashes: ["AAAPAACCAACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["gawuv"]
 state: {
   "boardState": [
     "humor",

@@ -4,6 +4,8 @@ date: 2022-03-28T06:59:26-07:00
 tags: []
 words: ["peril","sound","mound","wound","bound","found"]
 puzzles: [282]
+hashes: ["AAAAAACCCCACCCCACCCCACCCCCCCCC"]
+shifts: ["lvcwn"]
 state: {
   "boardState": [
     "peril",

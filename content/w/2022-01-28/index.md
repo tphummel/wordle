@@ -54,6 +54,8 @@ state:
 stats: {}
 puzzles:
   - 223
+hashes: ["PAAAACPAAPCACPACCCCACCCCCXXXXX"]
+shifts: ["vlzti"]
 aliases:
   - /w/223/
 ---

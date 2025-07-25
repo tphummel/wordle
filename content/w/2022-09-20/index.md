@@ -4,6 +4,8 @@ date: 2022-09-20T01:46:01-07:00
 tags: []
 words: ["honey","dream","beast","apple","algae","alive"]
 puzzles: [458]
+hashes: ["AAAPAAAPPAAPPAACAAPCCCAACCCCAC"]
+shifts: ["gsqto"]
 state: {
   "boardState": [
     "honey",

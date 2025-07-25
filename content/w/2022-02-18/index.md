@@ -68,6 +68,8 @@ stats:
   averageGuesses: 5
 puzzles:
   - 244
+hashes: ["PAPAAACAPAACAACACAACCCCCCXXXXX"]
+shifts: ["jvlpo"]
 aliases:
   - /w/244/
 ---

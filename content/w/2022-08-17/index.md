@@ -4,6 +4,8 @@ date: 2022-08-17T08:29:22-07:00
 tags: []
 words: ["thing","trick","twice"]
 puzzles: [424]
+hashes: ["CACAACACCACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["zdqlo"]
 state: {
   "boardState": [
     "thing",

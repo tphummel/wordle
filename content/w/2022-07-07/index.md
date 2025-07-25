@@ -4,6 +4,8 @@ date: 2022-07-07T09:12:51-07:00
 tags: ["birthday"]
 words: ["track","plane","spade","agape"]
 puzzles: [383]
+hashes: ["AACAAPACACAPCACCCCCCXXXXXXXXXX"]
+shifts: ["gniyo"]
 state: {
   "boardState": [
     "track",

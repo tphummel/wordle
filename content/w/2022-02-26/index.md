@@ -62,6 +62,8 @@ stats:
   averageGuesses: 4
 puzzles:
   - 252
+hashes: ["AAAAAAAPPPAPCPPCCCCCXXXXXXXXXX"]
+shifts: ["ywquv"]
 aliases:
   - /w/252/
 ---

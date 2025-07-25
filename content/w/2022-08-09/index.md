@@ -4,6 +4,8 @@ date: 2022-08-09T06:49:49-07:00
 tags: []
 words: ["thing","cleat","party","pasty","patty"]
 puzzles: [416]
+hashes: ["PAAAAAAAPPCCACCCCACCCCCCCXXXXX"]
+shifts: ["vhbci"]
 state: {
   "boardState": [
     "thing",

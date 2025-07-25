@@ -4,6 +4,8 @@ date: 2022-03-24T06:28:24-07:00
 tags: []
 words: ["aisle","chest"]
 puzzles: [278]
+hashes: ["AAPAPCCCCCXXXXXXXXXXXXXXXXXXXX"]
+shifts: ["iombd"]
 state: {
   "boardState": [
     "aisle",

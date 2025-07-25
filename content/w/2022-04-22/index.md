@@ -4,6 +4,8 @@ date: 2022-04-22T08:19:09-07:00
 tags: []
 words: ["aisle","total","malty","plant"]
 puzzles: [307]
+hashes: ["PAAPAPAAPPAPPPACCCCCXXXXXXXXXX"]
+shifts: ["vsiwd"]
 state: {
   "boardState": [
     "aisle",

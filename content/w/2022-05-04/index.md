@@ -4,6 +4,8 @@ date: 2022-05-04T06:22:22-07:00
 tags: ["interesting"]
 words: ["mouse","train"]
 puzzles: [319]
+hashes: ["AAAAACCCCCXXXXXXXXXXXXXXXXXXXX"]
+shifts: ["zyirx"]
 state: {
   "boardState": [
     "mouse",

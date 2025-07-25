@@ -4,6 +4,8 @@ date: 2022-04-13T06:22:57-07:00
 tags: []
 words: ["peril","snout","munch","chunk"]
 puzzles: [298]
+hashes: ["AAAAAAPAPAAPPPPCCCCCXXXXXXXXXX"]
+shifts: ["iocwu"]
 state: {
   "boardState": [
     "peril",

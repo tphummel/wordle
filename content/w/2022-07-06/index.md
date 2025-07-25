@@ -4,6 +4,8 @@ date: 2022-07-06T07:00:33-07:00
 tags: ["interesting"]
 words: ["track","mouse","flung","fluid","fluff"]
 puzzles: [382]
+hashes: ["AAAAAAACAACCCAACCCAACCCCCXXXXX"]
+shifts: ["lscop"]
 state: {
   "boardState": [
     "track",

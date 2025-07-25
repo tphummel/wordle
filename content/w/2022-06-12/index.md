@@ -4,6 +4,8 @@ date: 2022-06-12T06:52:35-07:00
 tags: []
 words: ["piano","broad","cloak","gloat","float"]
 puzzles: [358]
+hashes: ["AAPAPAACCAACCCAACCCCCCCCCXXXXX"]
+shifts: ["lswjd"]
 state: {
   "boardState": [
     "piano",

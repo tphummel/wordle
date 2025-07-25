@@ -4,6 +4,8 @@ date: 2022-06-19T07:16:25-07:00
 tags: []
 words: ["amuse","slept","likes","loser"]
 puzzles: [365]
+hashes: ["AAAPPPPPAACAACPCCCCCXXXXXXXXXX"]
+shifts: ["rvanb"]
 state: {
   "boardState": [
     "amuse",

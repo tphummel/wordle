@@ -4,6 +4,8 @@ date: 2022-04-06T07:10:24-07:00
 tags: []
 words: ["mouse","comma"]
 puzzles: [291]
+hashes: ["PCAAACCCCCXXXXXXXXXXXXXXXXXXXX"]
+shifts: ["ivuvk"]
 state: {
   "boardState": [
     "mouse",

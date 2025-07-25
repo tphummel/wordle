@@ -4,6 +4,8 @@ date: 2022-05-25T06:30:09-07:00
 tags: []
 words: ["amuse","chunk","touch","pouch","vouch"]
 puzzles: [340]
+hashes: ["AACAAPPCAAACCCCACCCCCCCCCXXXXX"]
+shifts: ["bvclr"]
 state: {
   "boardState": [
     "amuse",

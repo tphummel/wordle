@@ -4,6 +4,8 @@ date: 2022-04-05T07:59:55-07:00
 tags: []
 words: ["mouse","trail","natal"]
 puzzles: [290]
+hashes: ["AAAAAPAPACCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["thbjv"]
 state: {
   "boardState": [
     "mouse",

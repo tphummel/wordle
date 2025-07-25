@@ -62,6 +62,8 @@ stats:
   averageGuesses: 4
 puzzles:
   - 269
+hashes: ["APPPAPACACACCCCCCCCCXXXXXXXXXX"]
+shifts: ["zlibo"]
 aliases:
   - /w/269/
 ---

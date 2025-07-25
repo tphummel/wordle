@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-10-metal"]
 words: ["metal","sling","flock","floor"]
 puzzles: [482]
+hashes: ["AAAAPACAAACCCAACCCCCXXXXXXXXXX"]
+shifts: ["lswxb"]
 state: {
   "boardState": [
     "metal",

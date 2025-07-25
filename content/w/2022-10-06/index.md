@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-10-metal"]
 words: ["metal","stilt","sloth"]
 puzzles: [474]
+hashes: ["AAPAPCPAPACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["yswcr"]
 state: {
   "boardState": [
     "metal",

@@ -4,6 +4,8 @@ date: 2022-09-29T07:01:26-07:00
 tags: []
 words: ["honey","grail","clasp","scald"]
 puzzles: [467]
+hashes: ["AAAAAAACAPPPCPACCCCCXXXXXXXXXX"]
+shifts: ["yjiun"]
 state: {
   "boardState": [
     "honey",

@@ -4,6 +4,8 @@ date: 2022-04-12T06:24:20-07:00
 tags: []
 words: ["mouse","point","board","coral","royal"]
 puzzles: [297]
+hashes: ["ACAAAACAAAACPPAACPCCCCCCCXXXXX"]
+shifts: ["xvgjv"]
 state: {
   "boardState": [
     "mouse",

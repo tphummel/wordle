@@ -4,6 +4,8 @@ date: 2022-08-24T07:11:18-07:00
 tags: []
 words: ["thing","clean","sneer","needy"]
 puzzles: [431]
+hashes: ["AAAPAAACAPAPCPACCCCCXXXXXXXXXX"]
+shifts: ["tlmmi"]
 state: {
   "boardState": [
     "thing",

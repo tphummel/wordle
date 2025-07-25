@@ -4,6 +4,8 @@ date: 2022-07-22T06:50:50-07:00
 tags: []
 words: ["delay","youth","stymy","tryst"]
 puzzles: [398]
+hashes: ["AAAAPPAAPAPPCAACCCCCXXXXXXXXXX"]
+shifts: ["zygbd"]
 state: {
   "boardState": [
     "delay",

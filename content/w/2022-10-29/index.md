@@ -5,6 +5,8 @@ tags: ["covid-19"]
 contests: ["2022-10-metal"]
 words: ["metal","wheel","cruel","novel","libel"]
 puzzles: [497]
+hashes: ["APAACAAACCAAACCAAACCCCCCCXXXXX"]
+shifts: ["rpjnv"]
 state: {
   "boardState": [
     "metal",

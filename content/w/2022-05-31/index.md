@@ -4,6 +4,8 @@ date: 2022-05-31T10:54:06-07:00
 tags: []
 words: ["humor","major","manor"]
 puzzles: [346]
+hashes: ["AAPCCCCACCCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["shvxb"]
 state: {
   "boardState": [
     "humor",

@@ -4,6 +4,8 @@ date: 2022-05-26T12:07:06-07:00
 tags: []
 words: ["amuse","acres","askew","ashen","asset"]
 puzzles: [341]
+hashes: ["CAAPPCAACPCCACACCACACCCCCXXXXX"]
+shifts: ["gzand"]
 state: {
   "boardState": [
     "amuse",

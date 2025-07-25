@@ -4,6 +4,8 @@ date: 2022-06-11T06:43:58-07:00
 tags: []
 words: ["piano","store","whose","close","goose"]
 puzzles: [357]
+hashes: ["AAAAPPACACAACCCAACCCCCCCCXXXXX"]
+shifts: ["mvwbo"]
 state: {
   "boardState": [
     "piano",

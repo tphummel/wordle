@@ -4,6 +4,8 @@ date: 2022-07-24T07:15:18-07:00
 tags: []
 words: ["delay","their","goner","mower","power"]
 puzzles: [400]
+hashes: ["APAAAAAPACACACCACCCCCCCCCXXXXX"]
+shifts: ["vvenb"]
 state: {
   "boardState": [
     "delay",

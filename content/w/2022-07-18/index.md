@@ -4,6 +4,8 @@ date: 2022-07-18T06:26:42-07:00
 tags: []
 words: ["delay","slink","block","flock"]
 puzzles: [394]
+hashes: ["AAPAAACAACACCCCCCCCCXXXXXXXXXX"]
+shifts: ["lswlu"]
 state: {
   "boardState": [
     "delay",

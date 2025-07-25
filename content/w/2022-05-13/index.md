@@ -4,6 +4,8 @@ date: 2022-05-13T07:10:58-07:00
 tags: []
 words: ["tiger","tipsy"]
 puzzles: [328]
+hashes: ["CCAAACCCCCXXXXXXXXXXXXXXXXXXXX"]
+shifts: ["zpxbi"]
 state: {
   "boardState": [
     "tiger",

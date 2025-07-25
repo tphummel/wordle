@@ -4,6 +4,8 @@ date: 2022-07-17T05:57:17-07:00
 tags: []
 words: ["delay","canny","wacky"]
 puzzles: [393]
+hashes: ["AAAPCPCAACCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["chkti"]
 state: {
   "boardState": [
     "delay",

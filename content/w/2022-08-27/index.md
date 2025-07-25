@@ -4,6 +4,8 @@ date: 2022-08-27T07:46:53-07:00
 tags: []
 words: ["thing","pluck","fraud","durry","ruder"]
 puzzles: [434]
+hashes: ["AAAAAAAPAAAPAPPPCPPACCCCCXXXXX"]
+shifts: ["xblnb"]
 state: {
   "boardState": [
     "thing",

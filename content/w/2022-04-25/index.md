@@ -4,6 +4,8 @@ date: 2022-04-25T06:46:23-07:00
 tags: []
 words: ["spore","least","dames","askew"]
 puzzles: [310]
+hashes: ["PAAAPAPPPAAPACPCCCCCXXXXXXXXXX"]
+shifts: ["gzsng"]
 state: {
   "boardState": [
     "spore",

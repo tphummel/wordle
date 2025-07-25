@@ -44,6 +44,8 @@ state:
 stats: {}
 puzzles:
   - 227
+hashes: ["PAAPPCCAPCCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["zowbo"]
 aliases:
   - /w/227/
 ---

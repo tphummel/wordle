@@ -4,6 +4,8 @@ date: 2022-07-09T06:16:40-07:00
 tags: []
 words: ["track","baton","admit","delta","stead"]
 puzzles: [385]
+hashes: ["PAPAAAPPAAPPAAPPPAPPCCCCCXXXXX"]
+shifts: ["yamjn"]
 state: {
   "boardState": [
     "track",

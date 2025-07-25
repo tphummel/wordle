@@ -44,6 +44,8 @@ state:
 stats: {}
 puzzles:
   - 221
+hashes: ["AAAPAPCAAACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["coilu"]
 aliases:
   - /w/221/
 ---

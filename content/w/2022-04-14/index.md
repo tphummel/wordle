@@ -4,6 +4,8 @@ date: 2022-04-14T06:24:09-07:00
 tags: []
 words: ["peril","shine","mince"]
 puzzles: [299]
+hashes: ["APAPAAAPPCCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["spvlo"]
 state: {
   "boardState": [
     "peril",

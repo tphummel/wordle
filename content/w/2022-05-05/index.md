@@ -4,6 +4,8 @@ date: 2022-05-05T07:05:01-07:00
 tags: []
 words: ["tiger","super","amber","mover","homer"]
 puzzles: [320]
+hashes: ["AAACCAAACCAPACCPCACCCCCCCXXXXX"]
+shifts: ["nvunb"]
 state: {
   "boardState": [
     "tiger",

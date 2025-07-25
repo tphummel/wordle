@@ -4,6 +4,8 @@ date: 2022-05-19T11:31:40-07:00
 tags: []
 words: ["ocean","plaid","slash","glass"]
 puzzles: [334]
+hashes: ["AAAPAACCAAPCCCACCCCCXXXXXXXXXX"]
+shifts: ["msibc"]
 state: {
   "boardState": [
     "ocean",

@@ -52,6 +52,8 @@ stats:
   averageGuesses: 4
 puzzles:
   - 247
+hashes: ["CAPAACCCCCXXXXXXXXXXXXXXXXXXXX"]
+shifts: ["uapnb"]
 aliases:
   - /w/247/
 ---

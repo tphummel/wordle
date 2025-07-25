@@ -44,6 +44,8 @@ state:
 stats: {}
 puzzles:
   - 222
+hashes: ["AAAACAAPACCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["svcwd"]
 aliases:
   - /w/222/
 ---

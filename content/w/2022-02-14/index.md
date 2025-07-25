@@ -49,6 +49,8 @@ state:
 stats: {}
 puzzles:
   - 240
+hashes: ["APAAPPPPAACAPPACCCCCXXXXXXXXXX"]
+shifts: ["ifvrm"]
 aliases:
   - /w/240/
 ---

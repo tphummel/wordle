@@ -4,6 +4,8 @@ date: 2022-06-17T07:53:54-07:00
 tags: []
 words: ["piano","snore","clown","blown"]
 puzzles: [363]
+hashes: ["AAAPPAPCAAACCCCCCCCCXXXXXXXXXX"]
+shifts: ["hswfx"]
 state: {
   "boardState": [
     "piano",

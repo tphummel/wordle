@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-10-metal"]
 words: ["metal","equal"]
 puzzles: [481]
+hashes: ["APACCCCCCCXXXXXXXXXXXXXXXXXXXX"]
+shifts: ["kxcjv"]
 state: {
   "boardState": [
     "metal",

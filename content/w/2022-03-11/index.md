@@ -72,6 +72,8 @@ stats:
   averageGuesses: 4
 puzzles:
   - 265
+hashes: ["APAPAPCAAAACAPCACCCCACCCCCCCCC"]
+shifts: ["chblr"]
 aliases:
   - /w/265/
 ---

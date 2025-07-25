@@ -4,6 +4,8 @@ date: 2022-06-29T06:09:56-07:00
 tags: []
 words: ["strap","clank","faked","gawky"]
 puzzles: [375]
+hashes: ["AAAPAAAPAPACPAACCCCCXXXXXXXXXX"]
+shifts: ["mheti"]
 state: {
   "boardState": [
     "strap",

@@ -4,6 +4,8 @@ date: 2022-09-22T08:00:24-07:00
 tags: []
 words: ["honey","plain","saint"]
 puzzles: [460]
+hashes: ["AAPAAAAPPPCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["yhqwd"]
 state: {
   "boardState": [
     "honey",

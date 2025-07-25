@@ -4,6 +4,8 @@ date: 2022-05-24T22:37:05-07:00
 tags: []
 words: ["amuse","album"]
 puzzles: [339]
+hashes: ["CPPAACCCCCXXXXXXXXXXXXXXXXXXXX"]
+shifts: ["gsjdw"]
 state: {
   "boardState": [
     "amuse",

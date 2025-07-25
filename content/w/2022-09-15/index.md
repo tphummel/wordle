@@ -4,6 +4,8 @@ date: 2022-09-15T06:33:25-07:00
 tags: []
 words: ["honey","gourd","doubt"]
 puzzles: [453]
+hashes: ["ACAAAACCAPCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["jvckd"]
 state: {
   "boardState": [
     "honey",

@@ -4,6 +4,8 @@ date: 2022-06-07T08:50:41-07:00
 tags: []
 words: ["steam","crown","ghoul","bloop","flood"]
 puzzles: [353]
+hashes: ["AAAAAAACAAAACAPACCCACCCCCXXXXX"]
+shifts: ["lswxn"]
 state: {
   "boardState": [
     "steam",

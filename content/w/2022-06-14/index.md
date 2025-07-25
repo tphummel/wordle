@@ -4,6 +4,8 @@ date: 2022-06-14T06:35:24-07:00
 tags: []
 words: ["piano","atone"]
 puzzles: [360]
+hashes: ["AAPCPCCCCCXXXXXXXXXXXXXXXXXXXX"]
+shifts: ["gawwo"]
 state: {
   "boardState": [
     "piano",

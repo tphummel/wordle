@@ -54,6 +54,8 @@ state:
 stats: {}
 puzzles:
   - 198
+hashes: ["PAAAAAAPAAACCACACCACCCCCCXXXXX"]
+shifts: ["zycbc"]
 aliases:
   - /w/198/
 ---

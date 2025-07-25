@@ -4,6 +4,8 @@ date: 2022-07-16T06:23:54-07:00
 tags: []
 words: ["piano","stove","cloud","groom","roomy"]
 puzzles: [392]
+hashes: ["AAAAPAACAAAACAAAPCPPCCCCCXXXXX"]
+shifts: ["xvwvi"]
 state: {
   "boardState": [
     "piano",

@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-10-metal"]
 words: ["metal","morph","mucky","muddy","muggy","muffy"]
 puzzles: [491]
+hashes: ["CAAAACAAAACCAACCCAACCCAACCCAAC"]
+shifts: ["sbuvi"]
 state: {
   "boardState": [
     "metal",

@@ -4,6 +4,8 @@ date: 2022-06-20T06:56:21-07:00
 tags: []
 words: ["mouse","tulip","input"]
 puzzles: [366]
+hashes: ["AAPAAPPAPPCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["ouxdd"]
 state: {
   "boardState": [
     "mouse",

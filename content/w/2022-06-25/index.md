@@ -4,6 +4,8 @@ date: 2022-06-25T06:44:40-07:00
 tags: ["interesting"]
 words: ["mouse","wheel","deity","nerdy","beady"]
 puzzles: [371]
+hashes: ["AAAAPAAPAAPCAACACACCCCCCCXXXXX"]
+shifts: ["hlimi"]
 state: {
   "boardState": [
     "mouse",

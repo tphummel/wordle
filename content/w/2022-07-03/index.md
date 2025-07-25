@@ -4,6 +4,8 @@ date: 2022-07-03T08:43:52-07:00
 tags: []
 words: ["storm","cheap","nicad","lilac"]
 puzzles: [379]
+hashes: ["AAAAAPAACAACPCACCCCCXXXXXXXXXX"]
+shifts: ["rptjm"]
 state: {
   "boardState": [
     "storm",

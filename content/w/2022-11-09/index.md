@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-11-habit"]
 words: ["habit","daily","rainy"]
 puzzles: [508]
+hashes: ["ACAPAACCACCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["xhqwi"]
 state: {
   "boardState": [
     "habit",

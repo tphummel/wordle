@@ -4,6 +4,8 @@ date: 2022-08-14T15:59:22-07:00
 tags: []
 words: ["thing","choir","while","ships","khaki"]
 puzzles: [421]
+hashes: ["ACPAAACAPAACPAAACPAACCCCCXXXXX"]
+shifts: ["qoits"]
 state: {
   "boardState": [
     "thing",

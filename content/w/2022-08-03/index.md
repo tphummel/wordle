@@ -4,6 +4,8 @@ date: 2022-08-03T07:29:05-07:00
 tags: []
 words: ["third","cloth","month","south","youth"]
 puzzles: [410]
+hashes: ["PPAAAAAPCCACACCACCCCCCCCCXXXXX"]
+shifts: ["evccr"]
 state: {
   "boardState": [
     "third",

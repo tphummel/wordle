@@ -4,6 +4,8 @@ date: 2022-04-28T07:14:13-07:00
 tags: []
 words: ["mouse","stein","feats","zesty"]
 puzzles: [313]
+hashes: ["AAAPPPPPAAACACPCCCCCXXXXXXXXXX"]
+shifts: ["flaci"]
 state: {
   "boardState": [
     "mouse",

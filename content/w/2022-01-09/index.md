@@ -49,6 +49,8 @@ state:
 stats: {}
 puzzles:
   - 204
+hashes: ["PAPAACPAPACCCPACCCCCXXXXXXXXXX"]
+shifts: ["mvzpo"]
 aliases:
   - /w/204/
 ---

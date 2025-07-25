@@ -4,6 +4,8 @@ date: 2022-08-28T09:38:27-07:00
 tags: []
 words: ["thing","growl","gamed","gaffe","gauge","gauze"]
 puzzles: [435]
+hashes: ["AAAAPCAAAACCAPACCAACCCCACCCCCC"]
+shifts: ["mhcio"]
 state: {
   "boardState": [
     "thing",

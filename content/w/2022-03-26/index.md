@@ -4,6 +4,8 @@ date: 2022-03-26T07:20:03-07:00
 tags: []
 words: ["peril","speak","epoxy"]
 puzzles: [280]
+hashes: ["PPAAAACPAACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["kwwgi"]
 state: {
   "boardState": [
     "peril",

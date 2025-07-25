@@ -4,6 +4,8 @@ date: 2022-03-23T06:32:44-07:00
 tags: []
 words: ["laser","perch","purge"]
 puzzles: [277]
+hashes: ["AAAPPCPCAACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["vbzpo"]
 state: {
   "boardState": [
     "laser",

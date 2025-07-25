@@ -4,6 +4,8 @@ date: 2022-05-22T06:29:38-07:00
 tags: []
 words: ["amuse","model","mover","money"]
 puzzles: [337]
+hashes: ["APAAPCCACACCACACCCCCXXXXXXXXXX"]
+shifts: ["svvni"]
 state: {
   "boardState": [
     "amuse",

@@ -5,6 +5,8 @@ tags: ["covid-19"]
 contests: ["2022-10-metal"]
 words: ["metal","bread","cheap","sneak"]
 puzzles: [496]
+hashes: ["APACAAACCAAACCACCCCCXXXXXXXXXX"]
+shifts: ["yumju"]
 state: {
   "boardState": [
     "metal",

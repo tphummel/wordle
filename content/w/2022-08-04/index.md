@@ -4,6 +4,8 @@ date: 2022-08-04T06:20:33-07:00
 tags: []
 words: ["third","shrew","cheer","rhone","rhyme"]
 puzzles: [411]
+hashes: ["ACAPAACPPAACPAPCCAACCCCCCXXXXX"]
+shifts: ["xogvo"]
 state: {
   "boardState": [
     "third",

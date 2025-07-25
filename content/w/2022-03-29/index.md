@@ -4,6 +4,8 @@ date: 2022-03-29T06:40:04-07:00
 tags: []
 words: ["aisle","shall"]
 puzzles: [283]
+hashes: ["PAPCACCCCCXXXXXXXXXXXXXXXXXXXX"]
+shifts: ["yoiuv"]
 state: {
   "boardState": [
     "aisle",

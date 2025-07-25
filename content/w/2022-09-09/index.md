@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-09-honey"]
 words: ["honey","their","these","theme"]
 puzzles: [447]
+hashes: ["PAAPACCCAACCCACCCCCCXXXXXXXXXX"]
+shifts: ["zomvo"]
 state: {
   "boardState": [
     "honey",

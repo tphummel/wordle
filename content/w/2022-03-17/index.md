@@ -62,6 +62,8 @@ stats:
   averageGuesses: 4
 puzzles:
   - 271
+hashes: ["AAAPAAPAACAAPACCCCCCXXXXXXXXXX"]
+shifts: ["svdro"]
 aliases:
   - /w/271/
 ---

@@ -49,6 +49,8 @@ state:
 stats: {}
 puzzles:
   - 229
+hashes: ["AAAPAPAAACACCCCCCCCCXXXXXXXXXX"]
+shifts: ["yoian"]
 aliases:
   - /w/229/
 ---

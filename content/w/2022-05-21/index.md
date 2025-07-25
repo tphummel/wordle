@@ -4,6 +4,8 @@ date: 2022-05-21T09:09:35-07:00
 tags: []
 words: ["amuse","shoal","sitar","scrap"]
 puzzles: [336]
+hashes: ["PAAPACAACACAACPCCCCCXXXXXXXXXX"]
+shifts: ["yjzjz"]
 state: {
   "boardState": [
     "amuse",

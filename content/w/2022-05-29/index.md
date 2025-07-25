@@ -4,6 +4,8 @@ date: 2022-05-29T22:23:52-07:00
 tags: []
 words: ["humor","pluot","undos","bayou"]
 puzzles: [344]
+hashes: ["APACAAAPCAPAACACCCCCXXXXXXXXXX"]
+shifts: ["hhgxe"]
 state: {
   "boardState": [
     "humor",

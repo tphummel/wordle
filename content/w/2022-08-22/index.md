@@ -4,6 +4,8 @@ date: 2022-08-22T07:04:30-07:00
 tags: []
 words: ["thing","miter","merit"]
 puzzles: [429]
+hashes: ["PAPAACPPPPCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["slzrd"]
 state: {
   "boardState": [
     "thing",

@@ -67,6 +67,8 @@ stats:
   averageGuesses: 4
 puzzles:
   - 270
+hashes: ["ACACCACACCPCACCACCCCCCCCCXXXXX"]
+shifts: ["ihbnb"]
 aliases:
   - /w/270/
 ---

@@ -4,6 +4,8 @@ date: 2022-07-12T08:16:00-07:00
 tags: []
 words: ["track","moist","bidet","light","fight","night"]
 puzzles: [388]
+hashes: ["PAAAAAAPACACAACACCCCACCCCCCCCC"]
+shifts: ["tpoqd"]
 state: {
   "boardState": [
     "track",

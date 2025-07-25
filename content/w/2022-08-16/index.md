@@ -4,6 +4,8 @@ date: 2022-08-16T08:00:23-07:00
 tags: []
 words: ["thing","lodge","gleam","gruel"]
 puzzles: [423]
+hashes: ["AAAAPPAAPPCPPAACCCCCXXXXXXXXXX"]
+shifts: ["mycnv"]
 state: {
   "boardState": [
     "thing",

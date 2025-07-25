@@ -5,6 +5,8 @@ tags: ["holiday","thanksgiving"]
 contests: ["2022-11-habit"]
 words: ["habit","quart","coast","feast"]
 puzzles: [523]
+hashes: ["APAACAACACAACCCCCCCCXXXXXXXXXX"]
+shifts: ["llibd"]
 state: {
   "boardState": [
     "habit",
