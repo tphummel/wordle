@@ -44,6 +44,8 @@ state:
 stats: {}
 puzzles:
   - 170
+hashes: ["AAPPACAAPACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["kwwlr"]
 aliases:
   - /w/170/
 ---

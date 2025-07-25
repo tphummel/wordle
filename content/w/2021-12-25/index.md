@@ -49,6 +49,8 @@ state:
 stats: {}
 puzzles:
   - 189
+hashes: ["AAAAACCAPACCCCACCCCCXXXXXXXXXX"]
+shifts: ["vpkti"]
 aliases:
   - /w/189/
 ---

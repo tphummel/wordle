@@ -59,6 +59,8 @@ state:
 stats: {}
 puzzles:
   - 191
+hashes: ["APAAPPAAPAAAPCCACCCCACCCCCCCCC"]
+shifts: ["llzai"]
 aliases:
   - /w/191/
 ---

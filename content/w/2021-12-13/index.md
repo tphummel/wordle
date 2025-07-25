@@ -45,6 +45,8 @@ state:
 stats: {}
 puzzles:
   - 177
+hashes: ["AAAAACCAPACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["yvvrm"]
 aliases:
   - /w/177/
 ---
