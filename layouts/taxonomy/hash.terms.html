@@ -16,11 +16,14 @@
     <td>Last Played</td>
   </tr>
 
-  {{ range .Data.Terms.Alphabetical }}
-    {{ $name := .Name }}
-    {{ $count := .Count }}
-    {{ $first := index (first 1 .Pages.ByDate) 0 }}
-    {{ $last := index (last 1 .Pages.ByDate) 0 }}
+  {{ $alphabetical := .Data.Terms.Alphabetical }}
+  {{ $ordered := sort $alphabetical "Count" "desc" }}
+
+  {{ range $term := $ordered }}
+    {{ $name := $term.Name }}
+    {{ $count := $term.Count }}
+    {{ $first := index (first 1 $term.Pages.ByDate) 0 }}
+    {{ $last := index (last 1 $term.Pages.ByDate) 0 }}
 
     {{ with $.Site.GetPage (printf "/%s/%s" "hashes" $name) }}
     <tr>
