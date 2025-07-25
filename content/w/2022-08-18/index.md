@@ -4,6 +4,8 @@ date: 2022-08-18T08:04:46-07:00
 tags: []
 words: ["thing","twang"]
 puzzles: [425]
+hashes: ["CAACCCCCCCXXXXXXXXXXXXXXXXXXXX"]
+shifts: ["zdiwq"]
 state: {
   "boardState": [
     "thing",

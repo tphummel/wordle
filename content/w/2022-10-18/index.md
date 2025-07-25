@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-10-metal"]
 words: ["metal", "stone", "chest", "exist"]
 puzzles: [486]
+hashes: ["APPAAPPAAPAAPCCCCCCCXXXXXXXXXX"]
+shifts: ["keqbd"]
 state: {
   "boardState": [
     "metal",

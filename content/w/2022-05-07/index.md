@@ -4,6 +4,8 @@ date: 2022-05-07T06:47:21-07:00
 tags: []
 words: ["tiger","misty","mints","midst"]
 puzzles: [322]
+hashes: ["PCAAACCPPACCAPPCCCCCXXXXXXXXXX"]
+shifts: ["splbd"]
 state: {
   "boardState": [
     "tiger",

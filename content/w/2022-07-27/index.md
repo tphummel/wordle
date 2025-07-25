@@ -4,6 +4,8 @@ date: 2022-07-27T08:19:54-07:00
 tags: []
 words: ["third","float","pouty","monte","mosts","motto"]
 puzzles: [403]
+hashes: ["PAAAAAAPAPACACACCACACCACACCCCC"]
+shifts: ["svbcy"]
 state: {
   "boardState": [
     "third",

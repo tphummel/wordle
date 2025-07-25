@@ -4,6 +4,8 @@ date: 2022-04-29T07:59:01-07:00
 tags: []
 words: ["joust","tease","trash"]
 puzzles: [314]
+hashes: ["AAACPCACCACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["zyibr"]
 state: {
   "boardState": [
     "joust",

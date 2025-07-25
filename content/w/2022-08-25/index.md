@@ -4,6 +4,8 @@ date: 2022-08-25T06:31:31-07:00
 tags: []
 words: ["thing","snore","clown"]
 puzzles: [432]
+hashes: ["AAAPAAPCAACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["iswfx"]
 state: {
   "boardState": [
     "thing",

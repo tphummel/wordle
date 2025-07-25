@@ -44,6 +44,8 @@ state:
 stats: {}
 puzzles:
   - 171
+hashes: ["APAAPCPCAACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["zyqjn"]
 aliases:
   - /w/171/
 ---

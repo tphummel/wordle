@@ -4,6 +4,8 @@ date: 2022-05-20T14:58:11-07:00
 tags: []
 words: ["ocean","least","payer","waver","fader","gamer"]
 puzzles: [335]
+hashes: ["AAPPAAPPAAACACCACACCACACCCCCCC"]
+shifts: ["mhunb"]
 state: {
   "boardState": [
     "ocean",

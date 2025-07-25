@@ -4,6 +4,8 @@ date: 2022-09-28T06:39:57-07:00
 tags: []
 words: ["honey","swamp","crisp","usurp"]
 puzzles: [466]
+hashes: ["AAAAAPAAACAPAPCCCCCCXXXXXXXXXX"]
+shifts: ["azcaz"]
 state: {
   "boardState": [
     "honey",

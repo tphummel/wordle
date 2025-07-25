@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-10-metal"]
 words: ["metal","slack","laugh","daily","valid"]
 puzzles: [479]
+hashes: ["AAAPPAPPAAPCAAAPCPPACCCCCXXXXX"]
+shifts: ["bhtrn"]
 state: {
   "boardState": [
     "metal",

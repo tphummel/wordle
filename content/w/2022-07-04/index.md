@@ -4,6 +4,8 @@ date: 2022-07-04T06:49:00-07:00
 tags: []
 words: ["track","spore","sneer","sever"]
 puzzles: [380]
+hashes: ["APAAACAAPPCAPCCCCCCCXXXXXXXXXX"]
+shifts: ["yldnb"]
 state: {
   "boardState": [
     "track",

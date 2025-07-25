@@ -4,6 +4,8 @@ date: 2022-03-31T06:58:32-07:00
 tags: []
 words: ["peril","steam","stone","stoke","stove"]
 puzzles: [284]
+hashes: ["APAAACCPAACCCACCCCACCCCCCXXXXX"]
+shifts: ["yaweo"]
 state: {
   "boardState": [
     "peril",

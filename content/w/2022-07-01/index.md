@@ -4,6 +4,8 @@ date: 2022-07-01T06:49:40-07:00
 tags: []
 words: ["track","style","doubt","booth","pinto"]
 puzzles: [377]
+hashes: ["PAAAAAPAAAAPAAPAPACACCCCCXXXXX"]
+shifts: ["vpvcy"]
 state: {
   "boardState": [
     "track",

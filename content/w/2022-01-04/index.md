@@ -44,6 +44,8 @@ state:
 stats: {}
 puzzles:
   - 199
+hashes: ["PCPAAPCAPACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["ypmpo"]
 aliases:
   - /w/199/
 ---

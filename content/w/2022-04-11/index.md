@@ -4,6 +4,8 @@ date: 2022-04-11T06:20:21-07:00
 tags: []
 words: ["mouse","shuck","stunt","slurp","squid","squad"]
 puzzles: [296]
+hashes: ["AACPACACAACACAACACAACCCACCCCCC"]
+shifts: ["yxcjn"]
 state: {
   "boardState": [
     "mouse",

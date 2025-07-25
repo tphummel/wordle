@@ -4,6 +4,8 @@ date: 2022-05-18T08:16:49-07:00
 tags: []
 words: ["ocean","scour"]
 puzzles: [333]
+hashes: ["PCAAACCCCCXXXXXXXXXXXXXXXXXXXX"]
+shifts: ["yjwdb"]
 state: {
   "boardState": [
     "ocean",

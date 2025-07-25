@@ -4,6 +4,8 @@ date: 2022-04-19T07:11:16-07:00
 tags: []
 words: ["eight","place","query","yoker","foyer"]
 puzzles: [304]
+hashes: ["PAAAAAAAAPAAPPPPCACCCCCCCXXXXX"]
+shifts: ["lvgnb"]
 state: {
   "boardState": [
     "eight",

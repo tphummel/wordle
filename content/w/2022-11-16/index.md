@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-11-habit"]
 words: ["habit","based","babel","baker"]
 puzzles: [515]
+hashes: ["ACPAACCACACCACACCCCCXXXXXXXXXX"]
+shifts: ["hhsnb"]
 state: {
   "boardState": [
     "habit",

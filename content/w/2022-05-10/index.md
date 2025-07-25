@@ -4,6 +4,8 @@ date: 2022-05-10T06:09:11-07:00
 tags: []
 words: ["tiger","stock","latch","butch"]
 puzzles: [325]
+hashes: ["PAAAAAPACAAACCCCCCCCXXXXXXXXXX"]
+shifts: ["hbblr"]
 state: {
   "boardState": [
     "tiger",

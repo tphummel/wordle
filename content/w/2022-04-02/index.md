@@ -4,6 +4,8 @@ date: 2022-04-02T06:53:39-07:00
 tags: []
 words: ["peril","month","snout"]
 puzzles: [286]
+hashes: ["AAAAAAPPPACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["yuwdd"]
 state: {
   "boardState": [
     "peril",

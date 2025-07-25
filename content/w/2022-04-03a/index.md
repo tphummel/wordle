@@ -4,6 +4,8 @@ date: 2022-04-03T22:42:18-07:00
 tags: []
 words: ["mouse","clear","never","deter","refer","fewer"]
 puzzles: [288]
+hashes: ["AAAAPAAPACACACCACACCACPCCCCCCC"]
+shifts: ["llenb"]
 state: {
   "boardState": [
     "mouse",

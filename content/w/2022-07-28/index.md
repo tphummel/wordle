@@ -4,6 +4,8 @@ date: 2022-07-28T06:21:28-07:00
 tags: []
 words: ["third","plate","spout","stoop","stomp"]
 puzzles: [404]
+hashes: ["PAAAAPAAPACPCAPCCCACCCCCCXXXXX"]
+shifts: ["yawvz"]
 state: {
   "boardState": [
     "third",

@@ -5,6 +5,8 @@ tags: ["covid-19"]
 contests: ["2022-10-metal"]
 words: ["metal","brain","raspy","carry"]
 puzzles: [495]
+hashes: ["AAAPAAPPAAPCAACCCCCCXXXXXXXXXX"]
+shifts: ["ihzai"]
 state: {
   "boardState": [
     "metal",

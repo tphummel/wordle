@@ -4,6 +4,8 @@ date: 2022-06-21T06:32:38-07:00
 tags: []
 words: ["ocean","broad","float","gloat"]
 puzzles: [367]
+hashes: ["PAACAAACCAACCCCCCCCCXXXXXXXXXX"]
+shifts: ["mswjd"]
 state: {
   "boardState": [
     "ocean",

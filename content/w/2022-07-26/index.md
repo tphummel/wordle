@@ -4,6 +4,8 @@ date: 2022-07-26T00:03:33-07:00
 tags: []
 words: ["delay","worth","finch","pinch","cinch"]
 puzzles: [402]
+hashes: ["AAAAAAAAACACCCCACCCCCCCCCXXXXX"]
+shifts: ["ipvlr"]
 state: {
   "boardState": [
     "delay",

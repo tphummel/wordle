@@ -54,6 +54,8 @@ state:
 stats: {}
 puzzles:
   - 203
+hashes: ["AAAAAACAPACCCAACCCAACCCCCXXXXX"]
+shifts: ["iyiwu"]
 aliases:
   - /w/203/
 ---

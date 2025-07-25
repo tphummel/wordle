@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-11-habit"]
 words: ["habit","dream","aloud"]
 puzzles: [502]
+hashes: ["APAAAPAAPACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["gswdn"]
 state: {
   "boardState": [
     "habit",

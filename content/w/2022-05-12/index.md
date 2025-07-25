@@ -4,6 +4,8 @@ date: 2022-05-12T08:52:35-07:00
 tags: []
 words: ["tiger","slang","slung"]
 puzzles: [327]
+hashes: ["AAPAACCACCCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["yscwq"]
 state: {
   "boardState": [
     "tiger",

@@ -4,6 +4,8 @@ date: 2022-03-22T06:17:26-07:00
 tags: []
 words: ["laser","blush","slosh"]
 puzzles: [276]
+hashes: ["PAPAAACACCCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["yswbr"]
 state: {
   "boardState": [
     "laser",

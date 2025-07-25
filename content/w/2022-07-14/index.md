@@ -4,6 +4,8 @@ date: 2022-07-14T06:36:41-07:00
 tags: []
 words: ["track","round","spire","giver","liver"]
 puzzles: [390]
+hashes: ["APAAAPAAAAAAPPPACCCCCCCCCXXXXX"]
+shifts: ["rpdnb"]
 state: {
   "boardState": [
     "track",

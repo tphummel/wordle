@@ -4,6 +4,8 @@ date: 2022-09-25T07:41:22-07:00
 tags: []
 words: ["honey","stick","tidal","audit","admit"]
 puzzles: [463]
+hashes: ["AAAAAAPPAAPPPPACAPCCCCCCCXXXXX"]
+shifts: ["gkurd"]
 state: {
   "boardState": [
     "honey",

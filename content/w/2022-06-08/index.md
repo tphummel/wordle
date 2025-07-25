@@ -4,6 +4,8 @@ date: 2022-06-08T06:00:19-07:00
 tags: []
 words: ["piano","irate","trail","trait"]
 puzzles: [354]
+hashes: ["APCAAPCCPACCCCACCCCCXXXXXXXXXX"]
+shifts: ["zyird"]
 state: {
   "boardState": [
     "piano",

@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-11-habit"]
 words: ["habit","smile","crime","prime"]
 puzzles: [521]
+hashes: ["AAAPAAPCACACCCCCCCCCXXXXXXXXXX"]
+shifts: ["vyqvo"]
 state: {
   "boardState": [
     "habit",

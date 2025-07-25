@@ -4,6 +4,8 @@ date: 2022-04-21T19:20:57-07:00
 tags: []
 words: ["mouse","chore","oldie","oxide"]
 puzzles: [306]
+hashes: ["APAACAAPACCAPPCCCCCCXXXXXXXXXX"]
+shifts: ["ueqmo"]
 state: {
   "boardState": [
     "mouse",

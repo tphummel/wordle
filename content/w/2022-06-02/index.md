@@ -4,6 +4,8 @@ date: 2022-06-02T05:45:53-07:00
 tags: []
 words: ["humor","notch","whole","showy"]
 puzzles: [348]
+hashes: ["PAAPAAPAAPPCCAACCCCCXXXXXXXXXX"]
+shifts: ["yowfi"]
 state: {
   "boardState": [
     "humor",

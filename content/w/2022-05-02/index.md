@@ -4,6 +4,8 @@ date: 2022-05-02T07:41:41-07:00
 tags: []
 words: ["mouse","shoal","swoop","stock","story"]
 puzzles: [317]
+hashes: ["APAPACACAACACAACCCAACCCCCXXXXX"]
+shifts: ["yawai"]
 state: {
   "boardState": [
     "mouse",

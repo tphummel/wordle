@@ -57,6 +57,8 @@ stats:
   averageGuesses: 4
 puzzles:
   - 268
+hashes: ["CPCAPCACCCCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["ytmud"]
 aliases:
   - /w/268/
 ---

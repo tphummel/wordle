@@ -4,6 +4,8 @@ date: 2022-09-17T05:59:13-07:00
 tags: []
 words: ["honey","their","chute"]
 puzzles: [455]
+hashes: ["PAAPAPCPAACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["iocco"]
 state: {
   "boardState": [
     "honey",

@@ -4,6 +4,8 @@ date: 2022-05-03T10:43:48-07:00
 tags: []
 words: ["mouse","train","fairy","dairy","hairy"]
 puzzles: [318]
+hashes: ["AAAAAAPPPAACCCCACCCCCCCCCXXXXX"]
+shifts: ["nhqai"]
 state: {
   "boardState": [
     "mouse",

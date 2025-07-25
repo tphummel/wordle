@@ -4,6 +4,8 @@ date: 2022-09-23T07:00:28-07:00
 tags: []
 words: ["honey","proby","story","glory"]
 puzzles: [461]
+hashes: ["APAACAPCACAACCCCCCCCXXXXXXXXXX"]
+shifts: ["mswai"]
 state: {
   "boardState": [
     "honey",

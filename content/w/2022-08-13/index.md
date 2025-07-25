@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-08-thing"]
 words: ["thing","hunch","hunky"]
 puzzles: [420]
+hashes: ["APAPACCCAACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["nbvti"]
 state: {
   "boardState": [
     "thing",

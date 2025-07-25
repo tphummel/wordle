@@ -40,6 +40,8 @@ state:
 stats: {}
 puzzles:
   - 200
+hashes: ["PCCAPCCCCCXXXXXXXXXXXXXXXXXXXX"]
+shifts: ["zponb"]
 aliases:
   - /w/200/
 ---

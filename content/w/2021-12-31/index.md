@@ -49,6 +49,8 @@ state:
 stats: {}
 puzzles:
   - 195
+hashes: ["AAAAAAACPACCCAACCCCCXXXXXXXXXX"]
+shifts: ["auqoi"]
 aliases:
   - /w/195/
 ---

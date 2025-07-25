@@ -4,6 +4,8 @@ date: 2022-08-23T00:04:12-07:00
 tags: []
 words: ["thing","dozen","woven"]
 puzzles: [430]
+hashes: ["AAAPAACACCCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["cvdnx"]
 state: {
   "boardState": [
     "thing",

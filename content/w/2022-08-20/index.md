@@ -4,6 +4,8 @@ date: 2022-08-20T06:51:15-07:00
 tags: []
 words: ["thing","twerp","tread","treat"]
 puzzles: [427]
+hashes: ["CAAAACACPACCCCACCCCCXXXXXXXXXX"]
+shifts: ["zymjd"]
 state: {
   "boardState": [
     "thing",

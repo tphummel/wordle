@@ -4,6 +4,8 @@ date: 2022-06-05T06:04:36-07:00
 tags: []
 words: ["steam","tenor","deity","depth"]
 puzzles: [351]
+hashes: ["APPAAPCAAACCACACCCCCXXXXXXXXXX"]
+shifts: ["jlxcr"]
 state: {
   "boardState": [
     "steam",

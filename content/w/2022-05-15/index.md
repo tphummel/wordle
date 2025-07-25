@@ -4,6 +4,8 @@ date: 2022-05-15T22:54:18-07:00
 tags: []
 words: ["tiger","mince","eight","piece","sieve","yield"]
 puzzles: [330]
+hashes: ["ACAPAACAAPPCAAAACCAAACCAACCCCC"]
+shifts: ["epmun"]
 state: {
   "boardState": [
     "tiger",

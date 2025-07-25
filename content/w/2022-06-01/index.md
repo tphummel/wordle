@@ -4,6 +4,8 @@ date: 2022-06-01T09:22:29-07:00
 tags: []
 words: ["amuse","treat","break","freak","wreak","creak"]
 puzzles: [347]
+hashes: ["PAAAPACCCAACCCCACCCCACCCCCCCCC"]
+shifts: ["iymju"]
 state: {
   "boardState": [
     "amuse",

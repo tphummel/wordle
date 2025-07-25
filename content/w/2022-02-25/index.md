@@ -62,6 +62,8 @@ stats:
   averageGuesses: 4
 puzzles:
   - 251
+hashes: ["AAAAAAAACAACACCCCCCCXXXXXXXXXX"]
+shifts: ["bpdrn"]
 aliases:
   - /w/251/
 ---

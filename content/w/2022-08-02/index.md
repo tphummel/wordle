@@ -4,6 +4,8 @@ date: 2022-08-02T13:07:04-07:00
 tags: []
 words: ["third","scope","combo","conga","cocky","colly"]
 puzzles: [409]
+hashes: ["AAAAAAPPAACCAAACCAAACCAACCCACC"]
+shifts: ["ivgui"]
 state: {
   "boardState": [
     "third",

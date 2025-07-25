@@ -4,6 +4,8 @@ date: 2022-05-27T06:30:30-07:00
 tags: []
 words: ["amuse","plant","track","tiara"]
 puzzles: [342]
+hashes: ["PAAAAAACAPCPCAACCCCCXXXXXXXXXX"]
+shifts: ["zpiak"]
 state: {
   "boardState": [
     "amuse",

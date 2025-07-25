@@ -67,6 +67,8 @@ stats:
   averageGuesses: 4
 puzzles:
   - 250
+hashes: ["PAPAAAPAPPACCACACCACCCCCCXXXXX"]
+shifts: ["hswto"]
 aliases:
   - /w/250/
 ---

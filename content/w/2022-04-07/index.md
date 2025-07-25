@@ -4,6 +4,8 @@ date: 2022-04-07T06:56:06-07:00
 tags: []
 words: ["mouse","board","aorta","foray"]
 puzzles: [292]
+hashes: ["ACAAAACPPAPCCAACCCCCXXXXXXXXXX"]
+shifts: ["lvzji"]
 state: {
   "boardState": [
     "mouse",

@@ -4,6 +4,8 @@ date: 2022-07-30T06:22:18-07:00
 tags: []
 words: ["third","flock","bluff"]
 puzzles: [406]
+hashes: ["AAAAAPCAAACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["hscop"]
 state: {
   "boardState": [
     "third",

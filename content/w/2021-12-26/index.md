@@ -50,6 +50,8 @@ state:
 stats: {}
 puzzles:
   - 190
+hashes: ["AAPPAAPPPAAPPPACCCCCXXXXXXXXXX"]
+shifts: ["gjcco"]
 aliases:
   - /w/190/
 ---

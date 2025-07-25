@@ -5,6 +5,8 @@ tags: ["covid-19"]
 contests: ["2022-10-metal"]
 words: ["metal","stalk","talon","galut","waltz"]
 puzzles: [498]
+hashes: ["AAPPPAPPPAPCCAAACCAPCCCCCXXXXX"]
+shifts: ["chtcj"]
 state: {
   "boardState": [
     "metal",

@@ -4,6 +4,8 @@ date: 2022-05-28T09:38:24-07:00
 tags: []
 words: ["amuse","dreck","crept"]
 puzzles: [343]
+hashes: ["AAAAPACCPACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["iymyd"]
 state: {
   "boardState": [
     "amuse",

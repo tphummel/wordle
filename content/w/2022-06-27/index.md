@@ -4,6 +4,8 @@ date: 2022-06-27T07:38:30-07:00
 tags: []
 words: ["stick","throw","grout","nitro","retro"]
 puzzles: [373]
+hashes: ["APAAAPAPPAAPPAPAACCCCCCCCXXXXX"]
+shifts: ["xlbay"]
 state: {
   "boardState": [
     "stick",

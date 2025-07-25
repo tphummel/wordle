@@ -4,6 +4,8 @@ date: 2022-04-03T07:07:44-07:00
 tags: []
 words: ["peril","drape","grope","trope"]
 puzzles: [287]
+hashes: ["PPPAAACACCACCCCCCCCCXXXXXXXXXX"]
+shifts: ["zywyo"]
 state: {
   "boardState": [
     "peril",

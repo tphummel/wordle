@@ -4,6 +4,8 @@ date: 2022-04-23T06:08:41-07:00
 tags: []
 words: ["steam","prone","loupe","olive"]
 puzzles: [308]
+hashes: ["AAPAAAAPACPPAACCCCCCXXXXXXXXXX"]
+shifts: ["usqeo"]
 state: {
   "boardState": [
     "steam",

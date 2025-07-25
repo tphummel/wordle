@@ -4,6 +4,8 @@ date: 2022-06-22T06:30:42-07:00
 tags: []
 words: ["piano","steam","gaudy","aural","awful"]
 puzzles: [368]
+hashes: ["AAPAAAAAPAAPPAACPAACCCCCCXXXXX"]
+shifts: ["gdndv"]
 state: {
   "boardState": [
     "piano",

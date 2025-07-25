@@ -4,6 +4,8 @@ date: 2022-05-23T06:40:55-07:00
 tags: []
 words: ["amuse","price","diode","tinge","hinge"]
 puzzles: [338]
+hashes: ["AAAACAAPACACAACACCCCCCCCCXXXXX"]
+shifts: ["npvpo"]
 state: {
   "boardState": [
     "amuse",

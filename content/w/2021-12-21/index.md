@@ -43,6 +43,8 @@ state:
 stats: {}
 puzzles:
   - 185
+hashes: ["PAAAAACACCCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["vsclu"]
 aliases:
   - /w/185/
 ---

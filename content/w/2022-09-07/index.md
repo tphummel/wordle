@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-09-honey"]
 words: ["honey","every","leery"]
 puzzles: [445]
+hashes: ["AAAPCPACCCCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["rlmai"]
 state: {
   "boardState": [
     "honey",

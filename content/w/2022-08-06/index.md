@@ -4,6 +4,8 @@ date: 2022-08-06T06:40:03-07:00
 tags: []
 words: ["third","slime","alien"]
 puzzles: [413]
+hashes: ["AACAAACCAPCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["gsqnx"]
 state: {
   "boardState": [
     "third",

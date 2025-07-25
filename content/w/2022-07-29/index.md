@@ -4,6 +4,8 @@ date: 2022-07-29T06:12:53-07:00
 tags: ["interesting"]
 words: ["third","plate","setup","upset"]
 puzzles: [405]
+hashes: ["PAAAAPAAPPPPPPPCCCCCXXXXXXXXXX"]
+shifts: ["awand"]
 state: {
   "boardState": [
     "third",

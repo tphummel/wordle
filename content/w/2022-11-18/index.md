@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-11-habit"]
 words: ["habit","chore","slush","glyph"]
 puzzles: [517]
+hashes: ["PAAAAAPAAAACAACCCCCCXXXXXXXXXX"]
+shifts: ["msgyr"]
 state: {
   "boardState": [
     "habit",

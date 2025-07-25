@@ -4,6 +4,8 @@ date: 2022-05-01T07:05:57-07:00
 tags: []
 words: ["mouse","tonic","board","porky","forgo"]
 puzzles: [316]
+hashes: ["ACAAAACAAAACAPAACCAACCCCCXXXXX"]
+shifts: ["lvzpy"]
 state: {
   "boardState": [
     "mouse",

@@ -4,6 +4,8 @@ date: 2022-08-01T15:51:16-07:00
 tags: []
 words: ["third","court","quart"]
 puzzles: [408]
+hashes: ["PAACAAAPCCCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["wbiad"]
 state: {
   "boardState": [
     "third",

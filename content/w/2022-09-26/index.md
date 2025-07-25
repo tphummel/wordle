@@ -4,6 +4,8 @@ date: 2022-09-26T06:28:48-07:00
 tags: []
 words: ["honey","stair","crisp","frisk","brisk"]
 puzzles: [464]
+hashes: ["AAAAAPAAPPACCCAACCCCCCCCCXXXXX"]
+shifts: ["hyqbu"]
 state: {
   "boardState": [
     "honey",

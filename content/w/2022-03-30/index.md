@@ -4,6 +4,8 @@ date: 2022-03-30T06:33:09-07:00
 tags: []
 words: ["aisle","board","marry","carry","harry"]
 puzzles: [2301]
+hashes: ["PAAAAAAPCAACCCCACCCCCCCCCXXXXX"]
+shifts: ["nhzai"]
 state: {
   "boardState": [
     "aisle",

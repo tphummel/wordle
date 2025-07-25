@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-08-thing"]
 words: ["thing","wring","sling","cling"]
 puzzles: [417]
+hashes: ["AACCCAACCCACCCCCCCCCXXXXXXXXXX"]
+shifts: ["isqwq"]
 state: {
   "boardState": [
     "thing",

@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-11-habit"]
 words: ["habit","slime","diner","piney"]
 puzzles: [500]
+hashes: ["AAAPAAAPAPACCCACCCCCXXXXXXXXXX"]
+shifts: ["vpvni"]
 state: {
   "boardState": [
     "habit",

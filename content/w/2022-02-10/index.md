@@ -59,6 +59,8 @@ state:
 stats: {}
 puzzles:
   - 236
+hashes: ["PAAAAAAPPAAPPAPPPAPAPPPACCCACC"]
+shifts: ["vhcbo"]
 aliases:
   - /w/236/
 ---

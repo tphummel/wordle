@@ -4,6 +4,8 @@ date: 2022-04-01T06:28:38-07:00
 tags: []
 words: ["peril","talon","lousy","lobby","lowly"]
 puzzles: [285]
+hashes: ["AAAAPAAPPACCAACCCAACCCCCCXXXXX"]
+shifts: ["rveui"]
 state: {
   "boardState": [
     "peril",

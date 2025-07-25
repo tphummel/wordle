@@ -4,6 +4,8 @@ date: 2022-05-14T05:33:23-07:00
 tags: []
 words: ["tiger","stone","wheat","metal"]
 puzzles: [329]
+hashes: ["PAAPAAPAAPAAPCPCCCCCXXXXXXXXXX"]
+shifts: ["slbjv"]
 state: {
   "boardState": [
     "tiger",

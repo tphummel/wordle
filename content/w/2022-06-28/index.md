@@ -4,6 +4,8 @@ date: 2022-06-28T07:38:48-07:00
 tags: []
 words: ["stamp","drone","droll"]
 puzzles: [374]
+hashes: ["AAAAACCCAACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["jywuv"]
 state: {
   "boardState": [
     "stamp",

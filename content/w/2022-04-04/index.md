@@ -4,6 +4,8 @@ date: 2022-04-04T07:03:29-07:00
 tags: []
 words: ["mouse","shard","shaft","shack","shall","shawl"]
 puzzles: [289]
+hashes: ["AAAPACCCAACCCAACCCAACCCACCCCCC"]
+shifts: ["yoifv"]
 state: {
   "boardState": [
     "mouse",

@@ -4,6 +4,8 @@ date: 2022-04-09T06:45:22-07:00
 tags: []
 words: ["mouse","strap","stark","stair"]
 puzzles: [294]
+hashes: ["AAAPACCPPACCCPACCCCCXXXXXXXXXX"]
+shifts: ["yairb"]
 state: {
   "boardState": [
     "mouse",

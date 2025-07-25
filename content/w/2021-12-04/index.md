@@ -4,6 +4,8 @@ title: "168: 2021-12-04"
 aliases: ['/w/168']
 date: 2021-12-04T12:00:00.000-08:00
 puzzles: [168]
+hashes: ["PPAAAAAPPACAAACCPAACCCCCCXXXXX"]
+shifts: ["kecud"]
 tags: ['backfill']
 words: [
   "tenor",

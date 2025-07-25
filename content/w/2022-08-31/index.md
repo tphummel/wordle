@@ -4,6 +4,8 @@ date: 2022-08-31T05:46:07-07:00
 tags: []
 words: ["thing","crimp","pride","prize"]
 puzzles: [438]
+hashes: ["AACAAACCAPCCCACCCCCCXXXXXXXXXX"]
+shifts: ["vyqio"]
 state: {
   "boardState": [
     "thing",

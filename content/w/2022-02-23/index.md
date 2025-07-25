@@ -72,6 +72,8 @@ stats:
   averageGuesses: 4
 puzzles:
   - 249
+hashes: ["PAPAAAPPPACACACCCCACCCCACCCCAC"]
+shifts: ["zyweo"]
 aliases:
   - /w/249/
 ---
