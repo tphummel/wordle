@@ -9,7 +9,7 @@ openers: ["ratio"]
 middlers: ["taste","malty","gaunt","haunt","jaunt"]
 puzzles: [1505]
 hashes: ["ACPAAPCAAAACAPAACCCCACCCCACCCC"]
-shifts: ["phcwd"]
+shifts: ["jhcwd"]
 solution: "daunt"
 state: {
   "puzzleDate": "2025-08-02",
