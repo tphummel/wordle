@@ -6,10 +6,11 @@ git_branch: 2025-08-02_1505
 contests: []
 words: ["ratio","taste","malty","gaunt","haunt","jaunt"]
 openers: ["ratio"]
-middlers: ["taste","malty","gaunt","haunt"]
+middlers: ["taste","malty","gaunt","haunt","jaunt"]
 puzzles: [1505]
 hashes: ["ACPAAPCAAAACAPAACCCCACCCCACCCC"]
 shifts: ["phcwd"]
+solution: "daunt"
 state: {
   "puzzleDate": "2025-08-02",
   "boardState": [
@@ -65,7 +66,7 @@ state: {
     ]
   ],
   "rowIndex": 6,
-  "solution": "jaunt",
+  "solution": "daunt",
   "gameStatus": "FAIL",
   "hardMode": true,
   "gameId": "2206",
@@ -74,6 +75,6 @@ state: {
   "datetime": "2025-08-02T07:39:35",
   "schemaVersion": "0.36.0"
 }
-stats: undefined
+stats: null
 ---
 <!-- more -->
