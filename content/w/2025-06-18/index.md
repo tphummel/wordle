@@ -9,7 +9,8 @@ openers: ["weird"]
 middlers: ["stack","pouch","bunch","lunch","hunch"]
 puzzles: [1460]
 hashes: ["AAAAAAAACAAAPCCACCCCACCCCACCCC"]
-shifts: ["nbvlr"]
+shifts: ["sbvlr"]
+solution: "munch"
 state: {
   "puzzleDate": "2025-06-18",
   "boardState": [
