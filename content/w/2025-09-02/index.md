@@ -9,7 +9,7 @@ openers: ["count"]
 middlers: ["blast","greet","digit","fight"]
 puzzles: [1536]
 hashes: ["AAAACAAAACPAAACACCACACCCCACCCC"]
-shifts: ["cpoqd"]
+shifts: ["spoqd"]
 state: {
   "puzzleDate": "2025-09-02",
   "boardState": [
