@@ -245,6 +245,15 @@
       </td>
     </tr>
   {{ end }}
+  {{ with .Site.GetPage "single-letter-guesses.md" }}
+    {{ $singleLetter := partial "single-letter-guesses.html" (where .Site.RegularPages "Section" "w") }}
+    <tr>
+      <td><a href="{{ .RelPermalink }}">Single Letter Guesses</a></td>
+      <td>
+        {{ (mul (div (float (len $singleLetter)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $singleLetter }}</a> / {{ len $wordles }})
+      </td>
+    </tr>
+  {{ end }}
   </table>
 
 {{ with .Site.GetPage "collections.md" }}

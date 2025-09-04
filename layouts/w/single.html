@@ -92,6 +92,12 @@
     {{ $achievement := dict "badge" "🅾️" "report" "all-vowels-plus-y.md" "title" "All Vowels Plus Y Guessed" }}
     {{ $achievements = $achievements | append (slice $achievement) }}
   {{ end }}
+  {{ range (partialCached "single-letter-guesses.html" $wordle .File.Path) }}
+    {{ range .letters }}
+      {{ $achievement := dict "badge" "🔁" "report" "single-letter-guesses.md" "title" (printf "%s Guess" (strings.Repeat . 5)) }}
+      {{ $achievements = $achievements | append (slice $achievement) }}
+    {{ end }}
+  {{ end }}
 
 {{ with $achievements }}
   <p>🏆 Achievements</p>

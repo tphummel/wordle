@@ -29,3 +29,4 @@ total_rarities_front_half_alphabet_pangrams {{ len (partialCached "front-half-al
 total_rarities_back_half_alphabet_pangrams {{ len (partialCached "back-half-alphabet-pangrams.html" $wordles) }}
 total_rarities_all_vowels {{ len (partialCached "all-vowels.html" $wordles) }}
 total_rarities_all_vowels_plus_y {{ len (partialCached "all-vowels-plus-y.html" $wordles) }}
+total_rarities_single_letter_guesses {{ len (partialCached "single-letter-guesses.html" $wordles) }}
