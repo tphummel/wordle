@@ -1,6 +1,12 @@
 {{ $missedFirstGuesses := 0 }}
 {{ $found := slice }}
 
+{{ $doubleMisses := partialCached "opener-double-misses" . "opener-double-misses" }}
+{{ $doubleMap := dict }}
+{{ range $doubleMisses }}
+  {{ $doubleMap = merge $doubleMap (dict .puzzle.File.Path true) }}
+{{ end }}
+
 {{ range . }}
   {{ $wordleDate := .Date }}
   {{ $wordle := . }}
@@ -13,18 +19,7 @@
     {{ end }}
   {{ end }}
 
-  {{ $absentLettersTwo := 0 }}
-  {{ $turns := partialCached "guess-count" . .File.Path }}
-  {{ if gt $turns 1 }}
-    {{ $secondGuess := index .Params.state.evaluations 1 }}
-    {{ range $char := (seq 0 4) }}
-      {{ if (eq "absent" (index $secondGuess $char)) }}
-        {{ $absentLettersTwo = add $absentLettersTwo 1 }}
-      {{ end }}
-    {{ end }}
-  {{ end }}
-
-  {{ if (and (eq $absentLetters 5) (ne $absentLettersTwo 5)) }}
+  {{ if (and (eq $absentLetters 5) (not (isset $doubleMap $wordle.File.Path))) }}
     {{ $missedFirstGuesses = add 1 $missedFirstGuesses }}
     {{ $found = $found | append (slice (dict "date" $wordleDate "puzzle" $wordle)) }}
   {{ end }}
