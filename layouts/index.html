@@ -65,7 +65,6 @@
 
   {{ end }}
 </table>
-
 {{ $activeContest := false }}
 {{range $name, $taxonomy := .Site.Taxonomies.contests}}
   {{ with $.Site.GetPage (printf "/contests/%s" $name) }}
@@ -201,7 +200,61 @@
   </tr>
 {{ end }}
 
-</table>
+  {{ with .Site.GetPage "alphabet-pangrams.md" }}
+    {{ $alphabetPangrams := partial "alphabet-pangrams.html" (where .Site.RegularPages "Section" "w") }}
+    <tr>
+      <td><a href="{{ .RelPermalink }}">Alphabet Pangrams</a></td>
+      <td>
+        {{ (mul (div (float (len $alphabetPangrams)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $alphabetPangrams }}</a> / {{ len $wordles }})
+      </td>
+    </tr>
+  {{ end }}
+  {{ with .Site.GetPage "front-half-alphabet-pangrams.md" }}
+    {{ $frontHalf := partial "front-half-alphabet-pangrams.html" (where .Site.RegularPages "Section" "w") }}
+    <tr>
+      <td><a href="{{ .RelPermalink }}">Front Half Alphabet Pangrams</a></td>
+      <td>
+        {{ (mul (div (float (len $frontHalf)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $frontHalf }}</a> / {{ len $wordles }})
+      </td>
+    </tr>
+  {{ end }}
+  {{ with .Site.GetPage "back-half-alphabet-pangrams.md" }}
+    {{ $backHalf := partial "back-half-alphabet-pangrams.html" (where .Site.RegularPages "Section" "w") }}
+    <tr>
+      <td><a href="{{ .RelPermalink }}">Back Half Alphabet Pangrams</a></td>
+      <td>
+        {{ (mul (div (float (len $backHalf)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $backHalf }}</a> / {{ len $wordles }})
+      </td>
+    </tr>
+  {{ end }}
+  {{ with .Site.GetPage "all-vowels-guessed.md" }}
+    {{ $allVowels := partial "all-vowels.html" (where .Site.RegularPages "Section" "w") }}
+    <tr>
+      <td><a href="{{ .RelPermalink }}">All Vowels Guessed</a></td>
+      <td>
+        {{ (mul (div (float (len $allVowels)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $allVowels }}</a> / {{ len $wordles }})
+      </td>
+    </tr>
+  {{ end }}
+  {{ with .Site.GetPage "all-vowels-plus-y.md" }}
+    {{ $allVowelsY := partial "all-vowels-plus-y.html" (where .Site.RegularPages "Section" "w") }}
+    <tr>
+      <td><a href="{{ .RelPermalink }}">All Vowels Plus Y Guessed</a></td>
+      <td>
+        {{ (mul (div (float (len $allVowelsY)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $allVowelsY }}</a> / {{ len $wordles }})
+      </td>
+    </tr>
+  {{ end }}
+  {{ with .Site.GetPage "single-letter-guesses.md" }}
+    {{ $singleLetter := partial "single-letter-guesses.html" (where .Site.RegularPages "Section" "w") }}
+    <tr>
+      <td><a href="{{ .RelPermalink }}">Single Letter Guesses</a></td>
+      <td>
+        {{ (mul (div (float (len $singleLetter)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $singleLetter }}</a> / {{ len $wordles }})
+      </td>
+    </tr>
+  {{ end }}
+  </table>
 
 {{ with .Site.GetPage "collections.md" }}
   <div>🃏 See also: <a href="{{ .RelPermalink }}">Collections</a></div>
@@ -469,6 +522,40 @@
       <td><a href="{{ .page.RelPermalink }}">{{ .greenTiles }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ partialCached "guess-count.html" .page .page.File.Path }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ partialCached "puzzle-score" .page .page.File.Path }}</a></td>
+    </tr>
+  {{ end }}
+</table>
+
+{{ $letterStats := slice }}
+{{ range $wordles }}
+  {{ $letters := partialCached "letter-counts.html" . .File.Path }}
+  {{ $distinct := 0 }}
+  {{ range (split "abcdefghijklmnopqrstuvwxyz" "") }}
+    {{ if gt (index $letters .) 0 }}
+      {{ $distinct = add $distinct 1 }}
+    {{ end }}
+  {{ end }}
+  {{ $letterStats = $letterStats | append (dict "page" . "count" $distinct) }}
+{{ end }}
+{{ $sorted := sort $letterStats "count" "desc" }}
+{{ $cutoff := 0 }}
+{{ if ge (len $sorted) 5 }}
+  {{ $cutoff = index (index $sorted 4) "count" }}
+{{ end }}
+{{ $topLetters := where $sorted "count" "ge" $cutoff }}
+<h2>🔡 Top Letter Variety</h2>
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Puzzle</th>
+    <th>Distinct Letters</th>
+  </tr>
+  {{ range $topLetters }}
+    {{ $p := .page }}
+    <tr>
+      <td><a href="{{ $p.RelPermalink }}">{{ $p.Date.Format "Jan 2, 2006" }}</a></td>
+      <td><a href="{{ $p.RelPermalink }}">{{ index $p.Params.puzzles 0 }}</a></td>
+      <td>{{ .count }}</td>
     </tr>
   {{ end }}
 </table>

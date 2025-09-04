@@ -1,0 +1,16 @@
+{{ $found := slice }}
+{{ range . }}
+  {{ $wordleDate := .Date }}
+  {{ $wordle := . }}
+  {{ $letters := partialCached "letter-counts.html" . .File.Path }}
+  {{ $all := true }}
+  {{ range (split "nopqrstuvwxyz" "") }}
+    {{ if le (index $letters .) 0 }}
+      {{ $all = false }}
+    {{ end }}
+  {{ end }}
+  {{ if $all }}
+    {{ $found = $found | append (slice (dict "date" $wordleDate "puzzle" $wordle)) }}
+  {{ end }}
+{{ end }}
+{{ return $found }}

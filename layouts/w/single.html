@@ -72,6 +72,32 @@
   {{ $achievement := dict "badge" "🏅" "report" "homogenous-guesses-only.md" "title" "Homogenous Guesses Only" }}
   {{ $achievements = $achievements | append (slice $achievement) }}
 {{ end }}
+  {{ with (partialCached "alphabet-pangrams" $wordle .File.Path) }}
+    {{ $achievement := dict "badge" "🔤" "report" "alphabet-pangrams.md" "title" "Alphabet Pangram" }}
+    {{ $achievements = $achievements | append (slice $achievement) }}
+  {{ end }}
+  {{ with (partialCached "front-half-alphabet-pangrams" $wordle .File.Path) }}
+    {{ $achievement := dict "badge" "🔡" "report" "front-half-alphabet-pangrams.md" "title" "Front Half Alphabet Pangram" }}
+    {{ $achievements = $achievements | append (slice $achievement) }}
+  {{ end }}
+  {{ with (partialCached "back-half-alphabet-pangrams" $wordle .File.Path) }}
+    {{ $achievement := dict "badge" "🔠" "report" "back-half-alphabet-pangrams.md" "title" "Back Half Alphabet Pangram" }}
+    {{ $achievements = $achievements | append (slice $achievement) }}
+  {{ end }}
+  {{ with (partialCached "all-vowels" $wordle .File.Path) }}
+    {{ $achievement := dict "badge" "🅰️" "report" "all-vowels-guessed.md" "title" "All Vowels Guessed" }}
+    {{ $achievements = $achievements | append (slice $achievement) }}
+  {{ end }}
+  {{ with (partialCached "all-vowels-plus-y" $wordle .File.Path) }}
+    {{ $achievement := dict "badge" "🅾️" "report" "all-vowels-plus-y.md" "title" "All Vowels Plus Y Guessed" }}
+    {{ $achievements = $achievements | append (slice $achievement) }}
+  {{ end }}
+  {{ range (partialCached "single-letter-guesses.html" $wordle .File.Path) }}
+    {{ range .letters }}
+      {{ $achievement := dict "badge" "🔁" "report" "single-letter-guesses.md" "title" (printf "%s Guess" (strings.Repeat . 5)) }}
+      {{ $achievements = $achievements | append (slice $achievement) }}
+    {{ end }}
+  {{ end }}
 
 {{ with $achievements }}
   <p>🏆 Achievements</p>
@@ -184,6 +210,33 @@
         </td>
       </tr>
     {{ end }}
+    </table>
+  </details>
+</p>
+
+{{ $letters := partialCached "letter-counts.html" . .File.Path }}
+{{ $distinctLetters := 0 }}
+{{ range (split "abcdefghijklmnopqrstuvwxyz" "") }}
+  {{ if gt (index $letters .) 0 }}
+    {{ $distinctLetters = add $distinctLetters 1 }}
+  {{ end }}
+{{ end }}
+<p>
+  <details>
+    <summary>
+      Letters Used: <strong>{{ $distinctLetters }}</strong>
+    </summary>
+    <table>
+      <tr>
+        <th>Letter</th>
+        <th>Count</th>
+      </tr>
+      {{ range (split "abcdefghijklmnopqrstuvwxyz" "") }}
+        <tr>
+          <td>{{ . }}</td>
+          <td>{{ index $letters . }}</td>
+        </tr>
+      {{ end }}
     </table>
   </details>
 </p>

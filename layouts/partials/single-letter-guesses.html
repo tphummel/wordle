@@ -1,0 +1,9 @@
+{{ $found := slice }}
+{{ range . }}
+  {{ $letters := partialCached "letter-counts.html" . .File.Path }}
+  {{ $singles := index $letters "_singles" }}
+  {{ if gt (len $singles) 0 }}
+    {{ $found = $found | append (dict "date" .Date "puzzle" . "letters" $singles) }}
+  {{ end }}
+{{ end }}
+{{ return $found }}
