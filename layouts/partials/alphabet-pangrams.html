@@ -2,19 +2,14 @@
 {{ range . }}
   {{ $wordleDate := .Date }}
   {{ $wordle := . }}
-
-  {{ $letters := slice }}
-  {{ range $guess := .Params.state.boardState }}
-    {{ if and $guess (ne $guess "") }}
-      {{ range (split $guess "") }}
-        {{ if not (in $letters .) }}
-          {{ $letters = $letters | append . }}
-        {{ end }}
-      {{ end }}
+  {{ $letters := partialCached "letter-counts.html" . .File.Path }}
+  {{ $distinct := 0 }}
+  {{ range (split "abcdefghijklmnopqrstuvwxyz" "") }}
+    {{ if gt (index $letters .) 0 }}
+      {{ $distinct = add $distinct 1 }}
     {{ end }}
   {{ end }}
-
-  {{ if eq (len $letters) 26 }}
+  {{ if eq $distinct 26 }}
     {{ $found = $found | append (slice (dict "date" $wordleDate "puzzle" $wordle)) }}
   {{ end }}
 {{ end }}

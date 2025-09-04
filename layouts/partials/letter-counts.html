@@ -1,0 +1,12 @@
+{{ $letters := dict }}
+{{ range (split "abcdefghijklmnopqrstuvwxyz" "") }}
+  {{ $letters = merge $letters (dict . 0) }}
+{{ end }}
+{{ range $guess := .Params.state.boardState }}
+  {{ if and $guess (ne $guess "") }}
+    {{ range (split (lower $guess) "") }}
+      {{ $letters = merge $letters (dict . (add (index $letters .) 1)) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ return $letters }}

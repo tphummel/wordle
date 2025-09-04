@@ -192,6 +192,33 @@
   </details>
 </p>
 
+{{ $letters := partialCached "letter-counts.html" . .File.Path }}
+{{ $distinctLetters := 0 }}
+{{ range (split "abcdefghijklmnopqrstuvwxyz" "") }}
+  {{ if gt (index $letters .) 0 }}
+    {{ $distinctLetters = add $distinctLetters 1 }}
+  {{ end }}
+{{ end }}
+<p>
+  <details>
+    <summary>
+      Letters Used: <strong>{{ $distinctLetters }}</strong>
+    </summary>
+    <table>
+      <tr>
+        <th>Letter</th>
+        <th>Count</th>
+      </tr>
+      {{ range (split "abcdefghijklmnopqrstuvwxyz" "") }}
+        <tr>
+          <td>{{ . }}</td>
+          <td>{{ index $letters . }}</td>
+        </tr>
+      {{ end }}
+    </table>
+  </details>
+</p>
+
 <p>Puzzle: <strong><a href="{{ with $.GetPage (printf "/puzzles/%s" (index .Params.puzzles 0)) }}{{ .RelPermalink}}{{end}}">{{ index .Params.puzzles 0 }}</a></strong></p>
 {{ $hash := "" }}
 {{ with .Params.hashes }}

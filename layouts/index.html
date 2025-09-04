@@ -66,6 +66,35 @@
   {{ end }}
 </table>
 
+{{ $letterStats := slice }}
+{{ range $wordles }}
+  {{ $letters := partialCached "letter-counts.html" . .File.Path }}
+  {{ $distinct := 0 }}
+  {{ range (split "abcdefghijklmnopqrstuvwxyz" "") }}
+    {{ if gt (index $letters .) 0 }}
+      {{ $distinct = add $distinct 1 }}
+    {{ end }}
+  {{ end }}
+  {{ $letterStats = $letterStats | append (dict "page" . "count" $distinct) }}
+{{ end }}
+{{ $topLetters := first 10 (sort $letterStats "count" "desc") }}
+<h2>🔡 Top Letter Variety</h2>
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Puzzle</th>
+    <th>Distinct Letters</th>
+  </tr>
+  {{ range $topLetters }}
+    {{ $p := .page }}
+    <tr>
+      <td><a href="{{ $p.RelPermalink }}">{{ $p.Date.Format "Jan 2, 2006" }}</a></td>
+      <td><a href="{{ $p.RelPermalink }}">{{ index $p.Params.puzzles 0 }}</a></td>
+      <td>{{ .count }}</td>
+    </tr>
+  {{ end }}
+</table>
+
 {{ $activeContest := false }}
 {{range $name, $taxonomy := .Site.Taxonomies.contests}}
   {{ with $.Site.GetPage (printf "/contests/%s" $name) }}
