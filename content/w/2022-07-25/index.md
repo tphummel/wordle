@@ -4,6 +4,8 @@ date: 2022-07-25T06:26:17-07:00
 tags: []
 words: ["delay","morel","globe","clone","slope","elope"]
 puzzles: [401]
+hashes: ["APPAAAPAPPACCACACCACACCCCCCCCC"]
+shifts: ["kswyo"]
 state: {
   "boardState": [
     "delay",

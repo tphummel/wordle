@@ -4,6 +4,8 @@ date: 2022-05-16T06:32:17-07:00
 tags: []
 words: ["tiger","place","swole","lunge","delve"]
 puzzles: [331]
+hashes: ["AAAPAAPAACAAAPCPAAACCCCCCXXXXX"]
+shifts: ["jlteo"]
 state: {
   "boardState": [
     "tiger",

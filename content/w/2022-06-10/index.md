@@ -4,6 +4,8 @@ date: 2022-06-10T06:31:59-07:00
 tags: []
 words: ["piano","pitch","piety"]
 puzzles: [356]
+hashes: ["CCAAACCPAACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["vpmci"]
 state: {
   "boardState": [
     "piano",

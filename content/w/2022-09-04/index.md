@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-09-honey"]
 words: ["honey","siren","inter"]
 puzzles: [442]
+hashes: ["AAPCAAPPCPCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["oubnb"]
 state: {
   "boardState": [
     "honey",

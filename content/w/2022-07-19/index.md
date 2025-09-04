@@ -4,6 +4,8 @@ date: 2022-07-19T15:51:04-07:00
 tags: []
 words: ["delay","wacky","rainy","angry"]
 puzzles: [395]
+hashes: ["AAAPCAPAACPPAPCCCCCCXXXXXXXXXX"]
+shifts: ["guoai"]
 state: {
   "boardState": [
     "delay",

@@ -5,6 +5,8 @@ tags: ["covid-19"]
 contests: ["2022-10-metal"]
 words: ["metal","blitz","clout","flout"]
 puzzles: [494]
+hashes: ["AAPAPACAPAACCCCCCCCCXXXXXXXXXX"]
+shifts: ["lswdd"]
 state: {
   "boardState": [
     "metal",

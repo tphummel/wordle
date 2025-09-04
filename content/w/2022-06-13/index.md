@@ -4,6 +4,8 @@ date: 2022-06-13T07:03:06-07:00
 tags: []
 words: ["piano","snout","loner","donor"]
 puzzles: [359]
+hashes: ["AAAPPAPPAAACCACCCCCCXXXXXXXXXX"]
+shifts: ["jvvxb"]
 state: {
   "boardState": [
     "piano",

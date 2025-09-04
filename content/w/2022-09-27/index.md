@@ -4,6 +4,8 @@ date: 2022-09-27T09:31:52-07:00
 tags: []
 words: ["honey","forty","moldy","bossy","soggy"]
 puzzles: [465]
+hashes: ["ACAACACAACACAACACPACCCCCCXXXXX"]
+shifts: ["yvopi"]
 state: {
   "boardState": [
     "honey",

@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-11-habit"]
 words: ["habit","great","avert"]
 puzzles: [518]
+hashes: ["APAACAPCPCCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["gcmad"]
 state: {
   "boardState": [
     "habit",

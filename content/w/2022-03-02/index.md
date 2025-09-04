@@ -57,6 +57,8 @@ stats:
   averageGuesses: 4
 puzzles:
   - 256
+hashes: ["PPAPAAAPPPCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["thaci"]
 aliases:
   - /w/256/
 ---

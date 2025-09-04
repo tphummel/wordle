@@ -4,6 +4,8 @@ date: 2022-07-23T10:27:42-07:00
 tags: []
 words: ["delay","bored","adept","fudge","midge"]
 puzzles: [399]
+hashes: ["PPAAAAAAPPAPPAAAACCCCCCCCXXXXX"]
+shifts: ["splpo"]
 state: {
   "boardState": [
     "delay",

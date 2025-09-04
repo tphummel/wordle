@@ -3,7 +3,7 @@
 {{- $losses := where $wordles "Params.state.gameStatus" "FAIL" -}}
 {{- $total_guesses := 0 -}}
 {{- range $wordles  -}}
-  {{- $guesses := partial "guess-count" .  -}}
+  {{- $guesses := partialCached "guess-count" . .File.Path  -}}
   {{- $guesses = cond (eq $guesses "X") 6 $guesses  -}}
   {{- $total_guesses = add $total_guesses $guesses  -}}
 {{- end  -}}
@@ -17,10 +17,16 @@ total_guesses {{ $total_guesses}}
 {{ with .Site.GetPage "/hashes" }}total_puzzle_hashes_played {{ len .Pages }}{{ end }}
 {{ with .Site.GetPage "/shifts" }}total_puzzle_solutions_played {{ len .Pages }}{{ end }}
 total_distinct_words_guessed {{ len .Site.Taxonomies.words }}
-total_rarities_homogenous_guesses_only {{ len (partial "homo-guesses-only" $wordles) }}
-total_rarities_opener_misses {{ len (partial "opener-misses" $wordles) }}
+total_rarities_homogenous_guesses_only {{ len (partialCached "homo-guesses-only" $wordles "homo") }}
+total_rarities_opener_misses {{ len (partialCached "opener-misses" $wordles "opener-misses") }}
 total_rarities_opener_double_miss {{ len (partialCached "opener-double-misses" $wordles) }}
 total_rarities_no_yellow_tiles {{ len (partialCached "no-yellow-tiles.html" $wordles) }}
 total_rarities_no_green_before_solve {{ len (partialCached "no-green-before-solve.html" $wordles) }}
 total_rarities_anagrams {{ len (partialCached "anagrams.html" $wordles) }}
+total_rarities_alphabet_pangrams {{ len (partialCached "alphabet-pangrams.html" $wordles) }}
 total_rarities_symmetrical {{ len (partialCached "symmetrical.html" $wordles) }}
+total_rarities_front_half_alphabet_pangrams {{ len (partialCached "front-half-alphabet-pangrams.html" $wordles) }}
+total_rarities_back_half_alphabet_pangrams {{ len (partialCached "back-half-alphabet-pangrams.html" $wordles) }}
+total_rarities_all_vowels {{ len (partialCached "all-vowels.html" $wordles) }}
+total_rarities_all_vowels_plus_y {{ len (partialCached "all-vowels-plus-y.html" $wordles) }}
+total_rarities_single_letter_guesses {{ len (partialCached "single-letter-guesses.html" $wordles) }}

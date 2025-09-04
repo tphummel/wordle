@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-09-honey"]
 words: ["honey","trail","tacit","tibia"]
 puzzles: [449]
+hashes: ["AAAAACAPCACPACACCCCCXXXXXXXXXX"]
+shifts: ["zpjrk"]
 state: {
   "boardState": [
     "honey",

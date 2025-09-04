@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-08-thing"]
 words: ["thing","dream","leaky","lapse","label"]
 puzzles: [419]
+hashes: ["AAAAAAAPPACPPAACCAAPCCCCCXXXXX"]
+shifts: ["rhjnv"]
 state: {
   "boardState": [
     "thing",

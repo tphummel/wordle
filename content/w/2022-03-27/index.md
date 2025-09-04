@@ -4,6 +4,8 @@ date: 2022-03-27T06:42:37-07:00
 tags: []
 words: ["laser","found","pinch","nymph"]
 puzzles: [281]
+hashes: ["AAAAAAAAPAPAPACCCCCCXXXXXXXXXX"]
+shifts: ["tfuyr"]
 state: {
   "boardState": [
     "laser",

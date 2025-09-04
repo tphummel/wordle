@@ -4,6 +4,8 @@ date: 2022-06-15T06:31:08-07:00
 tags: []
 words: ["piano","primo"]
 puzzles: [361]
+hashes: ["CPAACCCCCCXXXXXXXXXXXXXXXXXXXX"]
+shifts: ["vyqvy"]
 state: {
   "boardState": [
     "piano",

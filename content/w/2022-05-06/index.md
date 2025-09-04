@@ -4,6 +4,8 @@ date: 2022-05-06T06:38:36-07:00
 tags: []
 words: ["tiger","bulge","badge"]
 puzzles: [321]
+hashes: ["AAPPACAACCCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["hhlpo"]
 state: {
   "boardState": [
     "tiger",

@@ -50,6 +50,8 @@ state:
 stats: {}
 puzzles:
   - 202
+hashes: ["AAAAAAAAAACPCAACCCCCXXXXXXXXXX"]
+shifts: ["yscvz"]
 aliases:
   - /w/202/
 ---

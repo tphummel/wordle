@@ -23,21 +23,28 @@
 {{ with .Site.GetPage "/shifts" }}
   <div>🧩 Puzzle Solutions Played: <strong><a href="{{ .RelPermalink }}">{{ len .Pages }}</a></strong></div>
 {{ end }}
-<div>🧩 Win Pct: <strong>{{ lang.NumFmt 3 (div (float (len $wins)) (len $wordles)) }} ({{ len $wins }}-{{ len $losses }})</strong></div>
+<div>🧩 Win Pct: <strong>{{ (div (float (len $wins)) (len $wordles))  | lang.FormatNumber 3 }} ({{ len $wins }}-{{ len $losses }})</strong></div>
 
 {{ $total_guesses := 0}}
 {{ range $wordles }}
-  {{ $guesses := partial "guess-count" . }}
+  {{ $guesses := partialCached "guess-count" . .File.Path }}
   {{ $guesses = cond (eq $guesses "X") 6 $guesses }}
   {{ $total_guesses = add $total_guesses $guesses }}
 {{ end }}
 <div>🧩 Total Guesses: <strong><a href="{{ with .Site.GetPage "guesses" }}{{ .RelPermalink }}{{ end }}">{{ $total_guesses }}</a></strong></div>
-<div>🧩 Guesses per Puzzle:  <strong>{{ lang.NumFmt 2 (div (float $total_guesses) (len $wordles)) }}</strong></div>
+<div>🧩 Guesses per Puzzle:  <strong>{{ (div (float $total_guesses) (len $wordles))  | lang.FormatNumber 2 }}</strong></div>
 <div>🧩 Distinct Words Guessed: <strong><a href="{{ with .Site.GetPage "words" }}{{ .RelPermalink }}{{ end }}">{{ len .Site.Taxonomies.words }}</a></strong></div>
 
 <blockquote>
   💡 <a href="{{ with .Site.GetPage "a/how-it-works" }}{{ .RelPermalink }}{{ end }}">How Does This Website Work?</a>
 </blockquote>
+
+  {{ $years := (where .Site.RegularPages "Section" "w").GroupByDate "2006" }}
+  <div>📅 Calendars:
+    {{ range $index, $year := $years }}
+      {{ with $.Site.GetPage (printf "/w/%s" $year.Key) }}<a href="{{ .RelPermalink }}">{{ $year.Key }}</a>{{ if lt (add $index 1) (len $years) }}, {{ end }}{{ end }}
+    {{ end }}
+  </div>
 
 <h2>🕰 Recent Puzzles</h2>
 <table>
@@ -52,13 +59,12 @@
     <tr>
       <td><a href="{{ .RelPermalink }}">{{ .Date.Format "Jan 2, 2006" }}</a></td>
       <td><a href="{{ .RelPermalink }}">{{ index .Params.puzzles 0 }}</a></td>
-      <td><a href="{{ .RelPermalink }}">{{ partial "guess-count.html" . }}{{- cond (eq .Params.state.hardMode true) "*" "" -}}</a></td>
-      <td><a href="{{ .RelPermalink }}">{{ partial "puzzle-score.html" . }}</a></td>
+      <td><a href="{{ .RelPermalink }}">{{ partialCached "guess-count.html" . .File.Path }}{{- cond (eq .Params.state.hardMode true) "*" "" -}}</a></td>
+      <td><a href="{{ .RelPermalink }}">{{ partialCached "puzzle-score.html" . .File.Path }}</a></td>
     </tr>
 
   {{ end }}
 </table>
-
 {{ $activeContest := false }}
 {{range $name, $taxonomy := .Site.Taxonomies.contests}}
   {{ with $.Site.GetPage (printf "/contests/%s" $name) }}
@@ -96,7 +102,7 @@
   <tr>
     <td>{{ $guesses }}</td>
     <td><a href="{{ with $.Site.GetPage (index $guessReports $guesses) }}{{ .RelPermalink }}{{ end }}">{{ $puzzles }}</a></td>
-    <td>{{ lang.NumFmt 2 (mul (div (float $puzzles) (len $wordles)) 100) }}%</td>
+    <td>{{ (mul (div (float $puzzles) (len $wordles)) 100)  | lang.FormatNumber 2 }}%</td>
     <td>
       {{ if gt $puzzles 0 }}
         {{ $byHash := partialCached "puzzles-by-hash" $puzzlePages (string $guesses) }}
@@ -105,14 +111,14 @@
         {{ $puzzles }}
       {{ end }}
     </td>
-    <td>{{ lang.NumFmt 0 $totalPermutations }}</td>
+    <td>{{ $totalPermutations  | lang.FormatNumber 0 }}</td>
   </tr>
 {{ end }}
 
 <tr>
   <td>Loss</td>
   <td><a href="{{ with $.Site.GetPage "losses" }}{{ .RelPermalink }}{{ end }}">{{ len $losses }}</a></td>
-  <td>{{ lang.NumFmt 2 (mul (div (float (len $losses)) (len $wordles)) 100) }}%</td>
+  <td>{{ (mul (div (float (len $losses)) (len $wordles)) 100)  | lang.FormatNumber 2 }}%</td>
   <td>{{ len (partialCached "puzzles-by-hash" $losses "losses") }}</td>
   <td>Many...</td>
 </tr>
@@ -130,7 +136,7 @@
   <tr>
     <td><a href="{{ .RelPermalink }}">Homogenous Guesses Only</a></td>
     <td>
-      {{ lang.NumFmt 2 (mul (div (float (len $homoGuessesOnly)) (len $wordles)) 100) }}% (<a href="{{ .RelPermalink }}">{{ len $homoGuessesOnly }}</a> / {{ len $wordles }})
+      {{ (mul (div (float (len $homoGuessesOnly)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $homoGuessesOnly }}</a> / {{ len $wordles }})
     </td>
   </tr>
 {{ end }}
@@ -140,7 +146,7 @@
   <tr>
     <td><a href="{{ .RelPermalink }}">Opener Misses</a></td>
     <td>
-      {{ lang.NumFmt 2 (mul (div (float (len $openerMisses)) (len $wordles)) 100) }}% (<a href="{{ .RelPermalink }}">{{ len $openerMisses }}</a> / {{ len $wordles }})
+      {{ (mul (div (float (len $openerMisses)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $openerMisses }}</a> / {{ len $wordles }})
     </td>
   </tr>
 {{ end }}
@@ -150,7 +156,7 @@
   <tr>
     <td><a href="{{ .RelPermalink }}">Opener Double Misses</a></td>
     <td>
-      {{ lang.NumFmt 2 (mul (div (float (len $openerDoubleMisses)) (len $wordles)) 100) }}% (<a href="{{ .RelPermalink }}">{{ len $openerDoubleMisses }}</a> / {{ len $wordles }})
+      {{ (mul (div (float (len $openerDoubleMisses)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $openerDoubleMisses }}</a> / {{ len $wordles }})
     </td>
   </tr>
 {{ end }}
@@ -160,7 +166,7 @@
   <tr>
     <td><a href="{{ .RelPermalink }}">No Yellow Tiles</a></td>
     <td>
-      {{ lang.NumFmt 2 (mul (div (float (len $noYellow)) (len $wordles)) 100) }}% (<a href="{{ .RelPermalink }}">{{ len $noYellow }}</a> / {{ len $wordles }})
+      {{ (mul (div (float (len $noYellow)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $noYellow }}</a> / {{ len $wordles }})
     </td>
   </tr>
 
@@ -171,7 +177,7 @@
   <tr>
     <td><a href="{{ .RelPermalink }}">No Green Tiles Prior to Solving</a></td>
     <td>
-      {{ lang.NumFmt 2 (mul (div (float (len $noGreenBeforeSolve)) (len $wordles)) 100) }}% (<a href="{{ .RelPermalink }}">{{ len $noGreenBeforeSolve }}</a> / {{ len $wordles }})
+      {{ (mul (div (float (len $noGreenBeforeSolve)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $noGreenBeforeSolve }}</a> / {{ len $wordles }})
     </td>
   </tr>
 {{ end }}
@@ -180,7 +186,7 @@
   <tr>
     <td><a href="{{ .RelPermalink }}">Anagrams</a></td>
     <td>
-      {{ lang.NumFmt 2 (mul (div (float (len $anagrams)) (len $wordles)) 100) }}% (<a href="{{ .RelPermalink }}">{{ len $anagrams }}</a> / {{ len $wordles }})
+      {{ (mul (div (float (len $anagrams)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $anagrams }}</a> / {{ len $wordles }})
     </td>
   </tr>
 {{ end }}
@@ -189,19 +195,73 @@
   <tr>
     <td><a href="{{ .RelPermalink }}">Symmetrical Puzzles</a></td>
     <td>
-      {{ lang.NumFmt 2 (mul (div (float (len $symmetrical)) (len $wordles)) 100) }}% (<a href="{{ .RelPermalink }}">{{ len $symmetrical }}</a> / {{ len $wordles }})
+      {{ (mul (div (float (len $symmetrical)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $symmetrical }}</a> / {{ len $wordles }})
     </td>
   </tr>
 {{ end }}
 
-</table>
+  {{ with .Site.GetPage "alphabet-pangrams.md" }}
+    {{ $alphabetPangrams := partial "alphabet-pangrams.html" (where .Site.RegularPages "Section" "w") }}
+    <tr>
+      <td><a href="{{ .RelPermalink }}">Alphabet Pangrams</a></td>
+      <td>
+        {{ (mul (div (float (len $alphabetPangrams)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $alphabetPangrams }}</a> / {{ len $wordles }})
+      </td>
+    </tr>
+  {{ end }}
+  {{ with .Site.GetPage "front-half-alphabet-pangrams.md" }}
+    {{ $frontHalf := partial "front-half-alphabet-pangrams.html" (where .Site.RegularPages "Section" "w") }}
+    <tr>
+      <td><a href="{{ .RelPermalink }}">Front Half Alphabet Pangrams</a></td>
+      <td>
+        {{ (mul (div (float (len $frontHalf)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $frontHalf }}</a> / {{ len $wordles }})
+      </td>
+    </tr>
+  {{ end }}
+  {{ with .Site.GetPage "back-half-alphabet-pangrams.md" }}
+    {{ $backHalf := partial "back-half-alphabet-pangrams.html" (where .Site.RegularPages "Section" "w") }}
+    <tr>
+      <td><a href="{{ .RelPermalink }}">Back Half Alphabet Pangrams</a></td>
+      <td>
+        {{ (mul (div (float (len $backHalf)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $backHalf }}</a> / {{ len $wordles }})
+      </td>
+    </tr>
+  {{ end }}
+  {{ with .Site.GetPage "all-vowels-guessed.md" }}
+    {{ $allVowels := partial "all-vowels.html" (where .Site.RegularPages "Section" "w") }}
+    <tr>
+      <td><a href="{{ .RelPermalink }}">All Vowels Guessed</a></td>
+      <td>
+        {{ (mul (div (float (len $allVowels)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $allVowels }}</a> / {{ len $wordles }})
+      </td>
+    </tr>
+  {{ end }}
+  {{ with .Site.GetPage "all-vowels-plus-y.md" }}
+    {{ $allVowelsY := partial "all-vowels-plus-y.html" (where .Site.RegularPages "Section" "w") }}
+    <tr>
+      <td><a href="{{ .RelPermalink }}">All Vowels Plus Y Guessed</a></td>
+      <td>
+        {{ (mul (div (float (len $allVowelsY)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $allVowelsY }}</a> / {{ len $wordles }})
+      </td>
+    </tr>
+  {{ end }}
+  {{ with .Site.GetPage "single-letter-guesses.md" }}
+    {{ $singleLetter := partial "single-letter-guesses.html" (where .Site.RegularPages "Section" "w") }}
+    <tr>
+      <td><a href="{{ .RelPermalink }}">Single Letter Guesses</a></td>
+      <td>
+        {{ (mul (div (float (len $singleLetter)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $singleLetter }}</a> / {{ len $wordles }})
+      </td>
+    </tr>
+  {{ end }}
+  </table>
 
 {{ with .Site.GetPage "collections.md" }}
   <div>🃏 See also: <a href="{{ .RelPermalink }}">Collections</a></div>
 {{ end }}
 
 {{ range $wordles }}
-  {{ $score := partial "puzzle-score" . }}
+  {{ $score := partialCached "puzzle-score" . .File.Path }}
   {{ $.Scratch.Add "scored" (slice (dict "page" . "score" $score)) }}
 {{ end }}
 
@@ -218,7 +278,7 @@
     <tr>
       <td><a href="{{ .page.RelPermalink }}">{{ .page.Date.Format "Jan 2, 2006" }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ index .page.Params.puzzles 0 }}</a></td>
-      <td><a href="{{ .page.RelPermalink }}">{{ partial "guess-count.html" .page }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ partialCached "guess-count.html" .page .page.File.Path }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ .score }}</a></td>
     </tr>
   {{ end }}
@@ -237,7 +297,7 @@
     <tr>
       <td><a href="{{ .page.RelPermalink }}">{{ .page.Date.Format "Jan 2, 2006" }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ index .page.Params.puzzles 0 }}</a></td>
-      <td><a href="{{ .page.RelPermalink }}">{{ partial "guess-count.html" .page }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ partialCached "guess-count.html" .page .page.File.Path }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ .score }}</a></td>
     </tr>
   {{ end }}
@@ -250,7 +310,7 @@
     <th>Pct</th>
   </tr>
 
-  {{ $wordCounts := index (partial "openers.html" $wordles) "wordCounts" }}
+  {{ $wordCounts := index (partialCached "openers.html" $wordles "openers") "wordCounts" }}
 
   {{ $minToPrint := 10 }}
   {{ range sort $wordCounts "count" "desc" }}
@@ -283,19 +343,19 @@
     {{ $scoreSum := 0 }}
 
     {{ range .Pages }}
-      {{ $guesses := partial "guess-count" . }}
+      {{ $guesses := partialCached "guess-count" . .File.Path }}
       {{ $guesses = cond (eq $guesses "X") 6 $guesses }}
       {{ $guessSum = add $guessSum $guesses }}
 
-      {{ $score := partial "puzzle-score" . }}
+      {{ $score := partialCached "puzzle-score" . .File.Path }}
       {{ $scoreSum = add $scoreSum $score }}
     {{ end }}
 
     <tr>
       <td>{{ .Key }}</td>
       <td>{{ len .Pages }}</td>
-      <td>{{ lang.NumFmt 2 (div (float $guessSum) (len .Pages)) }} ({{ $guessSum }})</td>
-      <td>{{ lang.NumFmt 1 (div (float $scoreSum) (len .Pages)) }} ({{ $scoreSum }})</td>
+      <td>{{ (div (float $guessSum) (len .Pages))  | lang.FormatNumber 2 }} ({{ $guessSum }})</td>
+      <td>{{ (div (float $scoreSum) (len .Pages))  | lang.FormatNumber 1 }} ({{ $scoreSum }})</td>
 
     </tr>
   {{ end }}
@@ -314,19 +374,19 @@
     {{ $scoreSum := 0 }}
 
     {{ range .Pages }}
-      {{ $guesses := partial "guess-count" . }}
+      {{ $guesses := partialCached "guess-count" . .File.Path }}
       {{ $guesses = cond (eq $guesses "X") 6 $guesses }}
       {{ $guessSum = add $guessSum $guesses }}
 
-      {{ $score := partial "puzzle-score" . }}
+      {{ $score := partialCached "puzzle-score" . .File.Path }}
       {{ $scoreSum = add $scoreSum $score }}
     {{ end }}
 
     <tr>
       <td>{{ .Key }}</td>
       <td>{{ len .Pages }}</td>
-      <td>{{ lang.NumFmt 2 (div (float $guessSum) (len .Pages)) }} ({{ $guessSum }})</td>
-      <td>{{ lang.NumFmt 1 (div (float $scoreSum) (len .Pages)) }} ({{ $scoreSum }})</td>
+      <td>{{ (div (float $guessSum) (len .Pages))  | lang.FormatNumber 2 }} ({{ $guessSum }})</td>
+      <td>{{ (div (float $scoreSum) (len .Pages))  | lang.FormatNumber 1 }} ({{ $scoreSum }})</td>
 
     </tr>
   {{ end }}
@@ -418,8 +478,8 @@
       <td><a href="{{ .page.RelPermalink }}">{{ .page.Date.Format "Jan 2, 2006" }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ index .page.Params.puzzles 0 }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ .blackTiles }}</a></td>
-      <td><a href="{{ .page.RelPermalink }}">{{ partial "guess-count.html" .page }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
-      <td><a href="{{ .page.RelPermalink }}">{{ partial "puzzle-score" .page }}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ partialCached "guess-count.html" .page .page.File.Path }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ partialCached "puzzle-score" .page .page.File.Path }}</a></td>
     </tr>
   {{ end }}
 </table>
@@ -439,8 +499,8 @@
       <td><a href="{{ .page.RelPermalink }}">{{ .page.Date.Format "Jan 2, 2006" }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ index .page.Params.puzzles 0 }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ .yellowTiles }}</a></td>
-      <td><a href="{{ .page.RelPermalink }}">{{ partial "guess-count.html" .page }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
-      <td><a href="{{ .page.RelPermalink }}">{{ partial "puzzle-score" .page }}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ partialCached "guess-count.html" .page .page.File.Path }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ partialCached "puzzle-score" .page .page.File.Path }}</a></td>
     </tr>
   {{ end }}
 </table>
@@ -460,8 +520,42 @@
       <td><a href="{{ .page.RelPermalink }}">{{ .page.Date.Format "Jan 2, 2006" }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ index .page.Params.puzzles 0 }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ .greenTiles }}</a></td>
-      <td><a href="{{ .page.RelPermalink }}">{{ partial "guess-count.html" .page }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
-      <td><a href="{{ .page.RelPermalink }}">{{ partial "puzzle-score" .page }}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ partialCached "guess-count.html" .page .page.File.Path }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
+      <td><a href="{{ .page.RelPermalink }}">{{ partialCached "puzzle-score" .page .page.File.Path }}</a></td>
+    </tr>
+  {{ end }}
+</table>
+
+{{ $letterStats := slice }}
+{{ range $wordles }}
+  {{ $letters := partialCached "letter-counts.html" . .File.Path }}
+  {{ $distinct := 0 }}
+  {{ range (split "abcdefghijklmnopqrstuvwxyz" "") }}
+    {{ if gt (index $letters .) 0 }}
+      {{ $distinct = add $distinct 1 }}
+    {{ end }}
+  {{ end }}
+  {{ $letterStats = $letterStats | append (dict "page" . "count" $distinct) }}
+{{ end }}
+{{ $sorted := sort $letterStats "count" "desc" }}
+{{ $cutoff := 0 }}
+{{ if ge (len $sorted) 5 }}
+  {{ $cutoff = index (index $sorted 4) "count" }}
+{{ end }}
+{{ $topLetters := where $sorted "count" "ge" $cutoff }}
+<h2>🔡 Top Letter Variety</h2>
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Puzzle</th>
+    <th>Distinct Letters</th>
+  </tr>
+  {{ range $topLetters }}
+    {{ $p := .page }}
+    <tr>
+      <td><a href="{{ $p.RelPermalink }}">{{ $p.Date.Format "Jan 2, 2006" }}</a></td>
+      <td><a href="{{ $p.RelPermalink }}">{{ index $p.Params.puzzles 0 }}</a></td>
+      <td>{{ .count }}</td>
     </tr>
   {{ end }}
 </table>

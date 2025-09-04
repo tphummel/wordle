@@ -4,6 +4,8 @@ date: 2022-04-26T06:34:59-07:00
 tags: []
 words: ["mouse","fresh","heist"]
 puzzles: [311]
+hashes: ["AAACPAAPCPCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["nlqbd"]
 state: {
   "boardState": [
     "mouse",

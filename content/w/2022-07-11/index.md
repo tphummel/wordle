@@ -4,6 +4,8 @@ date: 2022-07-11T06:26:11-07:00
 tags: []
 words: ["track","salad","madam"]
 puzzles: [387]
+hashes: ["AAPAAACACPCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["shljw"]
 state: {
   "boardState": [
     "track",

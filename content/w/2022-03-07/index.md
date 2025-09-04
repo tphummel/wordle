@@ -62,6 +62,8 @@ stats:
   averageGuesses: 4
 puzzles:
   - 261
+hashes: ["AAAPAAACAAACCCCCCCCCXXXXXXXXXX"]
+shifts: ["nvian"]
 aliases:
   - /w/261/
 ---

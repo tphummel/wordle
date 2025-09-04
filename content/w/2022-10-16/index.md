@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-10-metal"]
 words: ["metal","crane","spade"]
 puzzles: [484]
+hashes: ["APAPAAACACCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["ywimo"]
 state: {
   "boardState": [
     "metal",

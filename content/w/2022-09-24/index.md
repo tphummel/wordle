@@ -4,6 +4,8 @@ date: 2022-09-24T06:40:45-07:00
 tags: []
 words: ["honey","crest","trade","grate"]
 puzzles: [462]
+hashes: ["AAAPAACPAPPCCACCCCCCXXXXXXXXXX"]
+shifts: ["myico"]
 state: {
   "boardState": [
     "honey",

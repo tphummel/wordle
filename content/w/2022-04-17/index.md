@@ -4,6 +4,8 @@ date: 2022-04-17T06:47:13-07:00
 tags: []
 words: ["cloud","steal","whale","apple","ample"]
 puzzles: [302]
+hashes: ["APAAAAAPPPAAPCCCACCCCCCCCXXXXX"]
+shifts: ["gtxuo"]
 state: {
   "boardState": [
     "cloud",

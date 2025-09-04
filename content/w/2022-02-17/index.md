@@ -62,6 +62,8 @@ stats:
   averageGuesses: 4
 puzzles:
   - 243
+hashes: ["AAPPAAPCAAAACACCCCCCXXXXXXXXXX"]
+shifts: ["yoito"]
 aliases:
   - /w/243/
 ---

@@ -1,0 +1,28 @@
+{{ $letters := dict }}
+{{ range (split "abcdefghijklmnopqrstuvwxyz" "") }}
+  {{ $letters = merge $letters (dict . 0) }}
+{{ end }}
+{{ $singles := slice }}
+{{ range $guess := .Params.state.boardState }}
+  {{ if and $guess (ne $guess "") }}
+    {{ $lower := lower $guess }}
+    {{ if eq (len $lower) 5 }}
+      {{ $first := substr $lower 0 1 }}
+      {{ $allSame := true }}
+      {{ range (split $lower "") }}
+        {{ if ne . $first }}
+          {{ $allSame = false }}
+        {{ end }}
+      {{ end }}
+      {{ if $allSame }}
+        {{ if not (in $singles $first) }}
+          {{ $singles = $singles | append $first }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    {{ range (split $lower "") }}
+      {{ $letters = merge $letters (dict . (add (index $letters .) 1)) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ return (merge $letters (dict "_singles" $singles)) }}

@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-11-habit"]
 words: ["habit","break","brace","brave"]
 puzzles: [519]
+hashes: ["APPAACCPPACCCACCCCCCXXXXXXXXXX"]
+shifts: ["hyieo"]
 state: {
   "boardState": [
     "habit",

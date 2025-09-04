@@ -4,6 +4,8 @@ date: 2022-04-27T03:58:11-07:00
 tags: []
 words: ["mouse","shoal","shown"]
 puzzles: [312]
+hashes: ["APAPACCCAACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["yowfx"]
 state: {
   "boardState": [
     "mouse",

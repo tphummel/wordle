@@ -4,6 +4,8 @@ date: 2022-06-06T06:24:15-07:00
 tags: []
 words: ["amuse","chomp","gloom"]
 puzzles: [352]
+hashes: ["APAAAAACPACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["mswxw"]
 state: {
   "boardState": [
     "amuse",

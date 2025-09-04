@@ -1,0 +1,13 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<p>{{ partial "breadcrumb.html" . }}</p>
+{{ $year := .Params.year }}
+{{ if not $year }}
+  {{ $year = .Title }}
+{{ end }}
+{{ $allPuzzles := where .Site.RegularPages "Section" "w" }}
+{{ $start := time (printf "%d-01-01" (int $year)) }}
+{{ $end := $start.AddDate 1 0 0 }}
+{{ $yearPuzzles := where (where $allPuzzles "Date" "ge" $start) "Date" "lt" $end }}
+{{ partial "calendar-year.html" (dict "year" $year "puzzles" $yearPuzzles) }}
+{{ end }}

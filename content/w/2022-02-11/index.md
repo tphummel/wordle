@@ -54,6 +54,8 @@ state:
 stats: {}
 puzzles:
   - 237
+hashes: ["PAAAAAPPAAPPAPAPAACCCCCCCXXXXX"]
+shifts: ["asknb"]
 aliases:
   - /w/237/
 ---

@@ -39,6 +39,8 @@ state:
 stats: {}
 puzzles:
   - 230
+hashes: ["PAAACCCCCCXXXXXXXXXXXXXXXXXXXX"]
+shifts: ["vsmjd"]
 aliases:
   - /w/230/
 ---

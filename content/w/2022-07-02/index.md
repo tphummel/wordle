@@ -4,6 +4,8 @@ date: 2022-07-02T06:28:29-07:00
 tags: []
 words: ["track","storm","liter","egret"]
 puzzles: [378]
+hashes: ["PPAAAAPAPAAAPCPCCCCCXXXXXXXXXX"]
+shifts: ["knznd"]
 state: {
   "boardState": [
     "track",

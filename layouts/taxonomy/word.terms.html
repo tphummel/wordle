@@ -8,7 +8,7 @@
 {{ end }}
 
 {{ $wordles := where .Site.RegularPages "Section" "w" }}
-{{ $openersByWord := index (partial "openers.html" $wordles) "byFirst" }}
+{{ $openersByWord := index (partialCached "openers.html" $wordles "openers") "byFirst" }}
 
 <table>
   <tr>

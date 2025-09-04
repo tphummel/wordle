@@ -4,6 +4,8 @@ date: 2022-09-18T06:40:22-07:00
 tags: []
 words: ["honey","flirt","quits","stick"]
 puzzles: [456]
+hashes: ["AAAAAAACAPAACPPCCCCCXXXXXXXXXX"]
+shifts: ["yaqlu"]
 state: {
   "boardState": [
     "honey",

@@ -4,6 +4,8 @@ date: 2022-06-09T07:12:29-07:00
 tags: []
 words: ["piano","tiger","right","girth"]
 puzzles: [355]
+hashes: ["ACAAAPCPAPPCPPPCCCCCXXXXXXXXXX"]
+shifts: ["mpzcr"]
 state: {
   "boardState": [
     "piano",

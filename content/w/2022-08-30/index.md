@@ -4,6 +4,8 @@ date: 2022-08-30T07:59:26-07:00
 tags: []
 words: ["thing","snout","onset"]
 puzzles: [437]
+hashes: ["PAAPAPCPACCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["uuand"]
 state: {
   "boardState": [
     "thing",

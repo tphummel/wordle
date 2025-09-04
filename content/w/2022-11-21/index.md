@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-11-habit"]
 words: ["habit","final","axiom"]
 puzzles: [520]
+hashes: ["APAPAAPAPACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["geqxw"]
 state: {
   "boardState": [
     "habit",

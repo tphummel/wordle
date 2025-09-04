@@ -4,6 +4,8 @@ date: 2022-07-13T08:20:59-07:00
 tags: ["pattern"]
 words: ["track","shape","bland"]
 puzzles: [389]
+hashes: ["AACAAAACAACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["hsiwn"]
 state: {
   "boardState": [
     "track",

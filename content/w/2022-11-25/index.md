@@ -6,7 +6,7 @@ contests: ["2022-11-habit"]
 words: ["habit","third","itchy"]
 puzzles: [524]
 hashes: ["PAAPPPPPAACCCCCXXXXXXXXXXXXXXX"]
-shifts: ["jvfld"]
+shifts: ["oakqi"]
 state: {
   "boardState": [
     "habit",

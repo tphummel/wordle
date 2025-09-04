@@ -54,6 +54,8 @@ state:
 stats: {}
 puzzles:
   - 205
+hashes: ["PAAAAAACAPAACCAAACCCCCCCCXXXXX"]
+shifts: ["wbmai"]
 aliases:
   - /w/205/
 ---

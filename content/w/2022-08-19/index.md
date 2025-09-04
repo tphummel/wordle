@@ -4,6 +4,8 @@ date: 2022-08-19T08:07:58-07:00
 tags: []
 words: ["thing","shrug"]
 puzzles: [426]
+hashes: ["ACAACCCCCCXXXXXXXXXXXXXXXXXXXX"]
+shifts: ["yozdq"]
 state: {
   "boardState": [
     "thing",

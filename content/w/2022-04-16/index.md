@@ -4,6 +4,8 @@ date: 2022-04-16T06:48:02-07:00
 tags: []
 words: ["cloud","cheat","cheer","cheek"]
 puzzles: [301]
+hashes: ["CAAAACCCAACCCCACCCCCXXXXXXXXXX"]
+shifts: ["iomnu"]
 state: {
   "boardState": [
     "cloud",

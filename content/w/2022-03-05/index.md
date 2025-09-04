@@ -57,6 +57,8 @@ stats:
   averageGuesses: 4
 puzzles:
   - 259
+hashes: ["AAPAAACACCCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["hyqwo"]
 aliases:
   - /w/259/
 ---

@@ -4,6 +4,8 @@ date: 2022-04-24T07:06:24-07:00
 tags: []
 words: ["aisle","their","inert"]
 puzzles: [309]
+hashes: ["APAAPPACPPCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["oumad"]
 state: {
   "boardState": [
     "aisle",

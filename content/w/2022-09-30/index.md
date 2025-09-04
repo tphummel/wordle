@@ -4,6 +4,8 @@ date: 2022-09-30T07:22:15-07:00
 tags: []
 words: ["honey","groin","scorn"]
 puzzles: [468]
+hashes: ["APPAAAPCACCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["yjwax"]
 state: {
   "boardState": [
     "honey",

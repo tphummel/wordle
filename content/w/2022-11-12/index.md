@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-11-habit"]
 words: ["habit","valet"]
 puzzles: [511]
+hashes: ["ACAACCCCCCXXXXXXXXXXXXXXXXXXXX"]
+shifts: ["bhtnd"]
 state: {
   "boardState": [
     "habit",

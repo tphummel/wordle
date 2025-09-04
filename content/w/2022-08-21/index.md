@@ -4,6 +4,8 @@ date: 2022-08-21T07:14:20-07:00
 tags: []
 words: ["thing","straw","waste"]
 puzzles: [428]
+hashes: ["PAAAAPPAPPCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["chaco"]
 state: {
   "boardState": [
     "thing",

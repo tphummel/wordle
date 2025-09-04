@@ -4,6 +4,8 @@ date: 2022-06-18T21:48:46-07:00
 tags: ["interesting"]
 words: ["ocean","coral","cacao"]
 puzzles: [364]
+hashes: ["PPACACPACACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["ihkjy"]
 state: {
   "boardState": [
     "ocean",

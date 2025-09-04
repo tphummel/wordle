@@ -4,6 +4,8 @@ date: 2022-06-16T23:22:07-07:00
 tags: []
 words: ["piano","nopal","apron"]
 puzzles: [362]
+hashes: ["PAPPPPPPPACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["gwzxx"]
 state: {
   "boardState": [
     "piano",

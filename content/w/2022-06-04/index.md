@@ -4,6 +4,8 @@ date: 2022-06-04T05:36:15-07:00
 tags: []
 words: ["steam","throw","broth","froth"]
 puzzles: [350]
+hashes: ["APAAAPPPPAACCCCCCCCCXXXXXXXXXX"]
+shifts: ["lywcr"]
 state: {
   "boardState": [
     "steam",

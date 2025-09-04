@@ -57,6 +57,8 @@ stats:
   averageGuesses: 4
 puzzles:
   - 258
+hashes: ["AACCAPACCACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["gomjn"]
 aliases:
   - /w/258/
 ---

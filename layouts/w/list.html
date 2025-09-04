@@ -3,6 +3,13 @@
 
 <p>{{ partial "breadcrumb.html" . }}</p>
 
+{{ $yearGroups := (where .Site.RegularPages "Section" "w").GroupByDate "2006" }}
+<p>
+  {{ range $index, $y := $yearGroups }}
+    {{ with $.Site.GetPage (printf "/w/%s" $y.Key) }}<a href="{{ .RelPermalink }}">{{ $y.Key }}</a>{{ if lt (add $index 1) (len $yearGroups) }}, {{ end }}{{ end }}
+  {{ end }}
+</p>
+
 {{ with .Content }}
 <div>{{ . }}</div>
 {{ end }}
@@ -16,13 +23,13 @@
     <td>Grid</td>
   </tr>
 
-  {{ range .Data.Pages }}
+  {{ range where .Data.Pages "Kind" "page" }}
     <tr>
       <td><a href="{{ .RelPermalink }}">{{ dateFormat "Jan 2, 2006" .Date }}</a></td>
       <td><a href="{{ with $.GetPage (printf "/puzzles/%s" (index .Params.puzzles 0)) }}{{ .RelPermalink}}{{end}}">{{ index .Params.puzzles 0 }}</a></td>
-      <td><a href="{{ .RelPermalink }}">{{ partial "guess-count.html" . }}{{- cond (eq .Params.state.hardMode true) "*" "" -}}</a></td>
-      <td><a href="{{ .RelPermalink }}">{{ partial "puzzle-score.html" . }}</a></td>
-      <td>{{ partial "emoji-grid" . }}</td>
+      <td><a href="{{ .RelPermalink }}">{{ partialCached "guess-count.html" . .File.Path }}{{- cond (eq .Params.state.hardMode true) "*" "" -}}</a></td>
+      <td><a href="{{ .RelPermalink }}">{{ partialCached "puzzle-score.html" . .File.Path }}</a></td>
+      <td>{{ partialCached "emoji-grid" . .File.Path }}</td>
     </tr>
 
   {{ end }}

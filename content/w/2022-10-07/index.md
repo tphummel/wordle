@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-10-metal"]
 words: ["metal","grain","handy","candy","dandy"]
 puzzles: [475]
+hashes: ["AAAPAAAPAPACCCCACCCCCCCCCXXXXX"]
+shifts: ["jhvmi"]
 state: {
   "boardState": [
     "metal",

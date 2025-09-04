@@ -4,6 +4,8 @@ date: 2022-06-03T05:54:26-07:00
 tags: []
 words: ["humor","shine","chase","phase"]
 puzzles: [349]
+hashes: ["PAAAAPCAACACCCCCCCCCXXXXXXXXXX"]
+shifts: ["voibo"]
 state: {
   "boardState": [
     "humor",

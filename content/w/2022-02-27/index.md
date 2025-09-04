@@ -57,6 +57,8 @@ stats:
   averageGuesses: 4
 puzzles:
   - 253
+hashes: ["APAPPAPCPACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["ioiwd"]
 aliases:
   - /w/253/
 ---

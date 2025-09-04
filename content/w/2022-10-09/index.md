@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-10-metal"]
 words: ["metal","hound","hoody","howdy"]
 puzzles: [477]
+hashes: ["AAAAACCAAPCCACCCCCCCXXXXXXXXXX"]
+shifts: ["nvemi"]
 state: {
   "boardState": [
     "metal",

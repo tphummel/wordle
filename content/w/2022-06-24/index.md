@@ -4,6 +4,8 @@ date: 2022-06-24T06:02:52-07:00
 tags: []
 words: ["mouse","smoke","smite"]
 puzzles: [370]
+hashes: ["PAAPCCCAACCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["ytqco"]
 state: {
   "boardState": [
     "mouse",

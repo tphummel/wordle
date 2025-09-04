@@ -4,6 +4,8 @@ date: 2022-08-15T06:06:36-07:00
 tags: []
 words: ["thing","smock","pokey","poker"]
 puzzles: [422]
+hashes: ["AAAAAAAPAPCCCCACCCCCXXXXXXXXXX"]
+shifts: ["vvsnb"]
 state: {
   "boardState": [
     "thing",

@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-11-habit"]
 words: ["habit","thorn","photo"]
 puzzles: [503]
+hashes: ["PAAAPPCCAACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["vowcy"]
 state: {
   "boardState": [
     "habit",

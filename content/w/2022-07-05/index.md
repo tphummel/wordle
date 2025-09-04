@@ -4,6 +4,8 @@ date: 2022-07-05T06:59:28-07:00
 tags: []
 words: ["track","mouse","bleed","field"]
 puzzles: [381]
+hashes: ["AAAAAAAAAPAPCACCCCCCXXXXXXXXXX"]
+shifts: ["lpmun"]
 state: {
   "boardState": [
     "track",

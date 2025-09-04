@@ -49,6 +49,8 @@ state:
 stats: {}
 puzzles:
   - 231
+hashes: ["AAAACAAPACPCCPCCCCCCXXXXXXXXXX"]
+shifts: ["gswod"]
 aliases:
   - /w/231/
 ---

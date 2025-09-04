@@ -4,6 +4,8 @@ date: 2022-07-21T17:13:09-07:00
 tags: []
 words: ["delay","board","acrid","aphid"]
 puzzles: [397]
+hashes: ["PAAPAAAPACCAACCCCCCCXXXXXXXXXX"]
+shifts: ["gwprn"]
 state: {
   "boardState": [
     "delay",

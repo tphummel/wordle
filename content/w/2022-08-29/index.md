@@ -4,6 +4,8 @@ date: 2022-08-29T08:05:16-07:00
 tags: []
 words: ["thing","shirk","chill","chime","chief"]
 puzzles: [436]
+hashes: ["ACCAAACCAACCCAACCCAPCCCCCXXXXX"]
+shifts: ["ioqnp"]
 state: {
   "boardState": [
     "thing",

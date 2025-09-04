@@ -4,6 +4,8 @@ date: 2022-05-11T23:32:28-07:00
 tags: []
 words: ["tiger","reply","dream","share","farce"]
 puzzles: [326]
+hashes: ["AAAPPPPAAAAPPPAAAPPCCCCCCXXXXX"]
+shifts: ["lhzlo"]
 state: {
   "boardState": [
     "tiger",

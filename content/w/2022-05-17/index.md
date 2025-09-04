@@ -4,6 +4,8 @@ date: 2022-05-17T08:21:14-07:00
 tags: []
 words: ["ocean","snipe","neigh","being"]
 puzzles: [332]
+hashes: ["AAPAPAPCAPPCCPACCCCCXXXXXXXXXX"]
+shifts: ["hlqwq"]
 state: {
   "boardState": [
     "ocean",

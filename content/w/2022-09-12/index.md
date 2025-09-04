@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-09-honey"]
 words: ["honey","louse","voice","dodge","forte","wowee"]
 puzzles: [450]
+hashes: ["ACAPAACAACACAACACAACACAACACAAC"]
+shifts: ["hvwio"]
 state: {
   "boardState": [
     "honey",

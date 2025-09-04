@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-09-honey"]
 words: ["honey","choir","ghost","whoop"]
 puzzles: [443]
+hashes: ["PPAAAACCAAACCAACCCCCXXXXXXXXXX"]
+shifts: ["cowxz"]
 state: {
   "boardState": [
     "honey",

@@ -4,6 +4,8 @@ date: 2022-07-10T07:18:48-07:00
 tags: []
 words: ["track","strip","worth","berth"]
 puzzles: [386]
+hashes: ["PPAAAAPCAAAACCCCCCCCXXXXXXXXXX"]
+shifts: ["hlzcr"]
 state: {
   "boardState": [
     "track",

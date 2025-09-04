@@ -4,6 +4,8 @@ date: 2022-08-26T00:21:01-07:00
 tags: []
 words: ["thing","piano","icons","irony"]
 puzzles: [433]
+hashes: ["AAPCAAPACPCACCACCCCCXXXXXXXXXX"]
+shifts: ["oywwi"]
 state: {
   "boardState": [
     "thing",

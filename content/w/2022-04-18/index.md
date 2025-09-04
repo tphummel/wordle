@@ -4,6 +4,8 @@ date: 2022-04-18T06:24:19-07:00
 tags: []
 words: ["eight","drain","flair"]
 puzzles: [303]
+hashes: ["APAAAAPCCACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["lsirb"]
 state: {
   "boardState": [
     "eight",

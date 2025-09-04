@@ -4,6 +4,8 @@ date: 2022-07-31T06:51:58-07:00
 tags: []
 words: ["third","wreak","grasp","cramp"]
 puzzles: [407]
+hashes: ["AAAPAACAPAACCACCCCCCXXXXXXXXXX"]
+shifts: ["iyivz"]
 state: {
   "boardState": [
     "third",

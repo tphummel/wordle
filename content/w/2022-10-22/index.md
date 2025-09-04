@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-10-metal"]
 words: ["metal","shell","spiel"]
 puzzles: [490]
+hashes: ["APAACCAPACCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["ywqnv"]
 state: {
   "boardState": [
     "metal",

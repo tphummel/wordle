@@ -4,6 +4,8 @@ date: 2022-04-08T06:39:47-07:00
 tags: []
 words: ["mouse","space","scare"]
 puzzles: [293]
+hashes: ["AAAPCCACPCCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["yjiao"]
 state: {
   "boardState": [
     "mouse",

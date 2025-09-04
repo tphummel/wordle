@@ -4,6 +4,8 @@ date: 2022-09-19T05:36:34-07:00
 tags: []
 words: ["honey","spear","redux","bribe","trite","trike"]
 puzzles: [457]
+hashes: ["AAAPAAAPAPPPAAAACCACCCCACCCCAC"]
+shifts: ["zyqlo"]
 state: {
   "boardState": [
     "honey",

@@ -1,6 +1,6 @@
 {{ $byFirst := dict }}
 {{ range . }}
-  {{ $score := partial "puzzle-score" . }}
+  {{ $score := partialCached "puzzle-score" . .File.Path }}
   {{ $first := index .Params.state.boardState 0 }}
   {{ $date := .Date.Format "Jan 2, 2006" }}
 

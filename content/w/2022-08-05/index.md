@@ -4,6 +4,8 @@ date: 2022-08-05T07:05:06-07:00
 tags: []
 words: ["third","flake","mousy","bunny","buggy"]
 puzzles: [412]
+hashes: ["AAAAAAAAAAAAPACCCAACCCCCCXXXXX"]
+shifts: ["hbopi"]
 state: {
   "boardState": [
     "third",

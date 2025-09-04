@@ -4,6 +4,8 @@ date: 2022-06-23T00:03:38-07:00
 tags: []
 words: ["mouse","train","drink","brink"]
 puzzles: [369]
+hashes: ["AAAAAACAPPACCCCCCCCCXXXXXXXXXX"]
+shifts: ["hyqwu"]
 state: {
   "boardState": [
     "mouse",

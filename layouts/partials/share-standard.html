@@ -1,4 +1,4 @@
-{{ $guessCount := partial "guess-count" . }}
+{{ $guessCount := partialCached "guess-count" . .File.Path }}
 {{ $share := print "Wordle " (index .Params.puzzles 0) " " $guessCount "/6" (cond (eq .Params.state.hardMode true) "*" "") "\n\n" }}
 {{ range $g, $guess := .Params.state.boardState }}
   {{ $row := "" }}

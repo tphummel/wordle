@@ -4,6 +4,8 @@ date: 2022-07-08T06:48:48-07:00
 tags: ["pattern"]
 words: ["track","spice","voice"]
 puzzles: [384]
+hashes: ["AAACAAACCCCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["bvqlo"]
 state: {
   "boardState": [
     "track",

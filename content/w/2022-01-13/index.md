@@ -49,6 +49,8 @@ state:
 stats: {}
 puzzles:
   - 208
+hashes: ["PAAAAAAPPAPPPAACCCCCXXXXXXXXXX"]
+shifts: ["gijni"]
 aliases:
   - /w/208/
 ---

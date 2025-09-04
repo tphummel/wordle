@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-11-habit"]
 words: ["habit","twist","quite","unite"]
 puzzles: [509]
+hashes: ["AAAPPPACAAAPCCCCCCCCXXXXXXXXXX"]
+shifts: ["auqco"]
 state: {
   "boardState": [
     "habit",

@@ -4,6 +4,8 @@ date: 2022-04-20T22:12:08-07:00
 tags: []
 words: ["mouse","thorn","rigor","cargo"]
 puzzles: [305]
+hashes: ["APAAAAAPPAPAPPACCCCCXXXXXXXXXX"]
+shifts: ["ihzpy"]
 state: {
   "boardState": [
     "mouse",

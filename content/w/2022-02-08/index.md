@@ -54,6 +54,8 @@ state:
 stats: {}
 puzzles:
   - 234
+hashes: ["PAAAAPAAPAACPPAACCACCCCCCXXXXX"]
+shifts: ["lyivo"]
 aliases:
   - /w/234/
 ---

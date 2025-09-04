@@ -4,6 +4,8 @@ date: 2022-06-26T06:30:22-07:00
 tags: []
 words: ["trash","storm","rusty"]
 puzzles: [372]
+hashes: ["PPAPAPPAPACCCCCXXXXXXXXXXXXXXX"]
+shifts: ["xbaci"]
 state: {
   "boardState": [
     "trash",

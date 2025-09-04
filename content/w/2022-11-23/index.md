@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-11-habit"]
 words: ["habit","price","drive"]
 puzzles: [522]
+hashes: ["AAAPAACCACCCCCCXXXXXXXXXXXXXXX"]
+shifts: ["jyqeo"]
 state: {
   "boardState": [
     "habit",

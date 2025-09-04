@@ -4,6 +4,8 @@ date: 2022-04-30T06:34:16-07:00
 tags: []
 words: ["mouse","triad","wharf","rally","larva"]
 puzzles: [315]
+hashes: ["AAAAAAPAPAAAPPAPCPAACCCCCXXXXX"]
+shifts: ["rhzek"]
 state: {
   "boardState": [
     "mouse",

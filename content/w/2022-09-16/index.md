@@ -4,6 +4,8 @@ date: 2022-09-16T06:20:49-07:00
 tags: []
 words: ["honey","gruel","wider","pacer","paper","paver"]
 puzzles: [454]
+hashes: ["AAACAAPACAAAACCCCACCCCACCCCACC"]
+shifts: ["vhznb"]
 state: {
   "boardState": [
     "honey",

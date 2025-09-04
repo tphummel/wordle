@@ -4,6 +4,8 @@ date: 2022-08-07T06:32:04-07:00
 tags: []
 words: ["heart","spear","swear","smear"]
 puzzles: [414]
+hashes: ["APPPACACCCCACCCCCCCCXXXXXXXXXX"]
+shifts: ["ytmjb"]
 state: {
   "boardState": [
     "heart",

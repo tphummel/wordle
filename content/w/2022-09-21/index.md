@@ -4,6 +4,8 @@ date: 2022-09-21T08:06:33-07:00
 tags: []
 words: ["honey","dream","feral","rebar","recap"]
 puzzles: [459]
+hashes: ["AAAPAAPPCAACPCACCACACCCCCXXXXX"]
+shifts: ["xlkjz"]
 state: {
   "boardState": [
     "honey",

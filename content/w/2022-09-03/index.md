@@ -5,6 +5,8 @@ tags: []
 contests: ["2022-09-honey"]
 words: ["honey","risky","daffy","muggy","gully"]
 puzzles: [441]
+hashes: ["AAAACAAAACAAAACACPACCCCCCXXXXX"]
+shifts: ["mbtui"]
 state: {
   "boardState": [
     "honey",

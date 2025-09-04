@@ -54,6 +54,8 @@ state:
 stats: {}
 puzzles:
   - 188
+hashes: ["ACCCAACCCAACCCAACCCACCCCCXXXXX"]
+shifts: ["cliai"]
 aliases:
   - /w/188/
 ---

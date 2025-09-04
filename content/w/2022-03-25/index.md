@@ -4,6 +4,8 @@ date: 2022-03-25T05:37:52-07:00
 tags: []
 words: ["peril","setup","depth","depot"]
 puzzles: [279]
+hashes: ["PCAAAACPAPCCCPACCCCCXXXXXXXXXX"]
+shifts: ["jlxxd"]
 state: {
   "boardState": [
     "peril",

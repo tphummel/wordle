@@ -4,6 +4,8 @@ date: 2022-04-10T06:13:20-07:00
 tags: []
 words: ["mouse","train","flack","black"]
 puzzles: [295]
+hashes: ["AAAAAAACAAACCCCCCCCCXXXXXXXXXX"]
+shifts: ["hsilu"]
 state: {
   "boardState": [
     "mouse",

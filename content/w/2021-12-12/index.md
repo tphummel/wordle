@@ -59,6 +59,8 @@ state:
 stats: {}
 puzzles:
   - 176
+hashes: ["PAAAAAPPAPPAPPAACCPAACCACCCCCC"]
+shifts: ["shabo"]
 aliases:
   - /w/176/
 ---
