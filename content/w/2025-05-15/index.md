@@ -6,10 +6,10 @@ git_branch: 2025-05-15_1426
 contests: []
 words: ["scout","plane","freak","gamer","rager","wager"]
 openers: ["scout"]
-middlers: ["plane","freak","gamer","rager","wager"]
+middlers: ["plane","freak","gamer","rager"]
 puzzles: [1426]
 hashes: ["AAAAAAAPAPAPPPAPCACCACCCCACCCC"]
-shifts: ["chonb"]
+shifts: ["khonb"]
 state: {
   "puzzleDate": "2025-05-15",
   "boardState": [
