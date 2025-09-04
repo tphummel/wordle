@@ -2,7 +2,7 @@
 title: Opener Misses
 ---
 
-Definition: Puzzles where all letters in my opening guess were absent.
+Definition: Puzzles where all letters in my opening guess were absent, excluding puzzles where this happened on the first two guesses.
 
 {{< om.inline >}}
 

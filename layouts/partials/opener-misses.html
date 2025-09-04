@@ -13,7 +13,18 @@
     {{ end }}
   {{ end }}
 
-  {{ if (eq $absentLetters 5) }}
+  {{ $absentLettersTwo := 0 }}
+  {{ $turns := partialCached "guess-count" . .File.Path }}
+  {{ if gt $turns 1 }}
+    {{ $secondGuess := index .Params.state.evaluations 1 }}
+    {{ range $char := (seq 0 4) }}
+      {{ if (eq "absent" (index $secondGuess $char)) }}
+        {{ $absentLettersTwo = add $absentLettersTwo 1 }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ if (and (eq $absentLetters 5) (ne $absentLettersTwo 5)) }}
     {{ $missedFirstGuesses = add 1 $missedFirstGuesses }}
     {{ $found = $found | append (slice (dict "date" $wordleDate "puzzle" $wordle)) }}
   {{ end }}
