@@ -201,6 +201,15 @@
   </tr>
 {{ end }}
 
+{{ with .Site.GetPage "alphabet-pangrams.md" }}
+  {{ $alphabetPangrams := partial "alphabet-pangrams.html" (where .Site.RegularPages "Section" "w") }}
+  <tr>
+    <td><a href="{{ .RelPermalink }}">Alphabet Pangrams</a></td>
+    <td>
+      {{ (mul (div (float (len $alphabetPangrams)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $alphabetPangrams }}</a> / {{ len $wordles }})
+    </td>
+  </tr>
+{{ end }}
 </table>
 
 {{ with .Site.GetPage "collections.md" }}

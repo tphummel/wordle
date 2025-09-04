@@ -23,4 +23,5 @@ total_rarities_opener_double_miss {{ len (partialCached "opener-double-misses" $
 total_rarities_no_yellow_tiles {{ len (partialCached "no-yellow-tiles.html" $wordles) }}
 total_rarities_no_green_before_solve {{ len (partialCached "no-green-before-solve.html" $wordles) }}
 total_rarities_anagrams {{ len (partialCached "anagrams.html" $wordles) }}
+total_rarities_alphabet_pangrams {{ len (partialCached "alphabet-pangrams.html" $wordles) }}
 total_rarities_symmetrical {{ len (partialCached "symmetrical.html" $wordles) }}

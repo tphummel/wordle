@@ -1,0 +1,21 @@
+{{ $found := slice }}
+{{ range . }}
+  {{ $wordleDate := .Date }}
+  {{ $wordle := . }}
+
+  {{ $letters := slice }}
+  {{ range $guess := .Params.state.boardState }}
+    {{ if and $guess (ne $guess "") }}
+      {{ range (split $guess "") }}
+        {{ if not (in $letters .) }}
+          {{ $letters = $letters | append . }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ if eq (len $letters) 26 }}
+    {{ $found = $found | append (slice (dict "date" $wordleDate "puzzle" $wordle)) }}
+  {{ end }}
+{{ end }}
+{{ return $found }}

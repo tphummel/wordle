@@ -72,6 +72,10 @@
   {{ $achievement := dict "badge" "🏅" "report" "homogenous-guesses-only.md" "title" "Homogenous Guesses Only" }}
   {{ $achievements = $achievements | append (slice $achievement) }}
 {{ end }}
+{{ with (partialCached "alphabet-pangrams" $wordle .File.Path) }}
+  {{ $achievement := dict "badge" "🔤" "report" "alphabet-pangrams.md" "title" "Alphabet Pangram" }}
+  {{ $achievements = $achievements | append (slice $achievement) }}
+{{ end }}
 
 {{ with $achievements }}
   <p>🏆 Achievements</p>
