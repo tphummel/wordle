@@ -1,11 +1,4 @@
-{{ $missedFirstGuesses := 0 }}
 {{ $found := slice }}
-
-{{ $doubleMisses := partialCached "opener-double-misses" . "opener-double-misses" }}
-{{ $doubleMap := dict }}
-{{ range $doubleMisses }}
-  {{ $doubleMap = merge $doubleMap (dict .puzzle.File.Path true) }}
-{{ end }}
 
 {{ range . }}
   {{ $wordleDate := .Date }}
@@ -19,9 +12,10 @@
     {{ end }}
   {{ end }}
 
-  {{ if (and (eq $absentLetters 5) (not (isset $doubleMap $wordle.File.Path))) }}
-    {{ $missedFirstGuesses = add 1 $missedFirstGuesses }}
-    {{ $found = $found | append (slice (dict "date" $wordleDate "puzzle" $wordle)) }}
+  {{ if (eq $absentLetters 5) }}
+    {{ with (partialCached "opener-double-misses" (slice $wordle) $wordle.File.Path) }}{{/* double miss; omit */}}{{ else }}
+      {{ $found = $found | append (slice (dict "date" $wordleDate "puzzle" $wordle)) }}
+    {{ end }}
   {{ end }}
 
 {{ end }}
