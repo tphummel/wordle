@@ -83,42 +83,43 @@
 
   <h3>Guess Position</h3>
   <table>
-    <tr>
-      {{ range seq 1 6 }}<th>{{ . }}</th>{{ end }}
-    </tr>
-    <tr>
-      {{ range seq 1 6 }}<td>{{ $scratch.Get (printf "guess-%d" .) }}</td>{{ end }}
-    </tr>
+    {{ range seq 1 6 }}
+      <tr>
+        <th>{{ . }}</th>
+        <td>{{ $scratch.Get (printf "guess-%d" .) }}</td>
+      </tr>
+    {{ end }}
   </table>
 
   <h3>Day of Week</h3>
   <table>
-    <tr>
-      {{ range (slice "Monday" "Tuesday" "Wednesday" "Thursday" "Friday" "Saturday" "Sunday") }}<th>{{ . }}</th>{{ end }}
-    </tr>
-    <tr>
-      {{ range (slice "Monday" "Tuesday" "Wednesday" "Thursday" "Friday" "Saturday" "Sunday") }}<td>{{ $scratch.Get (printf "dow-%s" .) }}</td>{{ end }}
-    </tr>
+    {{ range (slice "Monday" "Tuesday" "Wednesday" "Thursday" "Friday" "Saturday" "Sunday") }}
+      <tr>
+        <th>{{ . }}</th>
+        <td>{{ $scratch.Get (printf "dow-%s" .) }}</td>
+      </tr>
+    {{ end }}
   </table>
 
   <h3>Year</h3>
   <table>
     {{ $years := $scratch.Get "years" }}
-    <tr>
-      {{ range $y, $_ := $years }}<th>{{ $y }}</th>{{ end }}
-    </tr>
-    <tr>
-      {{ range $y, $c := $years }}<td>{{ $c }}</td>{{ end }}
-    </tr>
+    {{ range $y, $c := $years }}
+      <tr>
+        <th>{{ $y }}</th>
+        <td>{{ $c }}</td>
+      </tr>
+    {{ end }}
   </table>
 
   <h3>Puzzle Points Earned</h3>
   <table>
-    <tr>
-      {{ range seq 0 10 }}{{ $v := mul . -1 }}<th>{{ $v }}</th>{{ end }}
-    </tr>
-    <tr>
-      {{ range seq 0 10 }}{{ $v := mul . -1 }}<td>{{ $scratch.Get (printf "diff-%d" $v) }}</td>{{ end }}
-    </tr>
+    {{ range seq 0 10 }}
+      {{ $v := mul . -1 }}
+      <tr>
+        <th>{{ $v }}</th>
+        <td>{{ $scratch.Get (printf "diff-%d" $v) }}</td>
+      </tr>
+    {{ end }}
   </table>
 </div>
