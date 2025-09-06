@@ -1,0 +1,125 @@
+{{ $scratch := newScratch }}
+
+{{/* initialize guess position counts */}}
+{{ range seq 1 6 }}
+  {{ $scratch.Set (printf "guess-%d" .) 0 }}
+{{ end }}
+
+{{/* initialize day-of-week counts */}}
+{{ range (slice "Monday" "Tuesday" "Wednesday" "Thursday" "Friday" "Saturday" "Sunday") }}
+  {{ $scratch.Set (printf "dow-%s" .) 0 }}
+{{ end }}
+
+{{/* initialize diff counts 0 to -10 */}}
+{{ range seq 0 10 }}
+  {{ $v := mul . -1 }}
+  {{ $scratch.Set (printf "diff-%d" $v) 0 }}
+{{ end }}
+
+{{ $scratch.Set "years" dict }}
+{{ $scratch.Set "isSolution" false }}
+{{ $scratch.Set "solutionPage" nil }}
+
+{{ range .Data.Pages }}
+  {{ $guessSeq := -1 }}
+  {{ $beforeScore := 0 }}
+  {{ $afterScore := 0 }}
+  {{ $evaluations := .Params.state.evaluations }}
+  {{ range $g, $guess := .Params.state.boardState }}
+    {{ if eq $guess $.Data.Term }}
+      {{ $guessSeq = add $g 1 }}
+      {{ if eq $g 0 }}
+        {{ $beforeScore = 10 }}
+      {{ else }}
+        {{ $beforeEval := index $evaluations (sub $g 1) }}
+        {{ range $b := $beforeEval }}
+          {{ if eq $b "present" }}
+            {{ $beforeScore = add $beforeScore 1 }}
+          {{ else if eq $b "absent" }}
+            {{ $beforeScore = add $beforeScore 2 }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+      {{ $afterEval := index $evaluations $g }}
+      {{ range $a := $afterEval }}
+        {{ if eq $a "present" }}
+          {{ $afterScore = add $afterScore 1 }}
+        {{ else if eq $a "absent" }}
+          {{ $afterScore = add $afterScore 2 }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ if gt $guessSeq 0 }}
+    {{ $scratch.Set (printf "guess-%d" $guessSeq) (add ($scratch.Get (printf "guess-%d" $guessSeq)) 1) }}
+
+    {{ $dow := dateFormat "Monday" .Date }}
+    {{ $scratch.Set (printf "dow-%s" $dow) (add ($scratch.Get (printf "dow-%s" $dow)) 1) }}
+
+    {{ $year := dateFormat "2006" .Date }}
+    {{ $years := $scratch.Get "years" }}
+    {{ $yearCount := cond (isset $years $year) (index $years $year) 0 }}
+    {{ $years = merge $years (dict $year (add $yearCount 1)) }}
+    {{ $scratch.Set "years" $years }}
+
+    {{ $diff := sub $afterScore $beforeScore }}
+    {{ $scratch.Set (printf "diff-%d" $diff) (add ($scratch.Get (printf "diff-%d" $diff)) 1) }}
+
+    {{ if eq $.Data.Term .Params.state.solution }}
+      {{ $scratch.Set "isSolution" true }}
+      {{ $scratch.Set "solutionPage" . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+<div class="scorecard">
+  <p>
+    Puzzle Solution: <input type="checkbox" disabled {{ if $scratch.Get "isSolution" }}checked{{ end }} />
+    {{ with $scratch.Get "solutionPage" }}
+      <a href="{{ .RelPermalink }}">{{ index .Params.puzzles 0 }}</a>
+    {{ end }}
+  </p>
+
+  <h3>Guess Position</h3>
+  <table>
+    {{ range seq 1 6 }}
+      <tr>
+        <th>{{ . }}</th>
+        <td>{{ $scratch.Get (printf "guess-%d" .) }}</td>
+      </tr>
+    {{ end }}
+  </table>
+
+  <h3>Day of Week</h3>
+  <table>
+    {{ range (slice "Monday" "Tuesday" "Wednesday" "Thursday" "Friday" "Saturday" "Sunday") }}
+      <tr>
+        <th>{{ . }}</th>
+        <td>{{ $scratch.Get (printf "dow-%s" .) }}</td>
+      </tr>
+    {{ end }}
+  </table>
+
+  <h3>Year</h3>
+  <table>
+    {{ $years := $scratch.Get "years" }}
+    {{ range $y, $c := $years }}
+      <tr>
+        <th>{{ $y }}</th>
+        <td>{{ $c }}</td>
+      </tr>
+    {{ end }}
+  </table>
+
+  <h3>Puzzle Points Earned</h3>
+  <table>
+    {{ range seq 0 10 }}
+      {{ $v := mul . -1 }}
+      <tr>
+        <th>{{ $v }}</th>
+        <td>{{ $scratch.Get (printf "diff-%d" $v) }}</td>
+      </tr>
+    {{ end }}
+  </table>
+</div>
