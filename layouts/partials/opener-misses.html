@@ -1,4 +1,3 @@
-{{ $missedFirstGuesses := 0 }}
 {{ $found := slice }}
 
 {{ range . }}
@@ -14,8 +13,9 @@
   {{ end }}
 
   {{ if (eq $absentLetters 5) }}
-    {{ $missedFirstGuesses = add 1 $missedFirstGuesses }}
-    {{ $found = $found | append (slice (dict "date" $wordleDate "puzzle" $wordle)) }}
+    {{ with (partialCached "opener-double-misses" (slice $wordle) $wordle.File.Path) }}{{/* double miss; omit */}}{{ else }}
+      {{ $found = $found | append (slice (dict "date" $wordleDate "puzzle" $wordle)) }}
+    {{ end }}
   {{ end }}
 
 {{ end }}
