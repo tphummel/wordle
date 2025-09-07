@@ -6,10 +6,10 @@ git_branch: 2025-05-13_1424
 contests: []
 words: ["guide","stoke","flame","crane","brave","heare"]
 openers: ["guide"]
-middlers: ["stoke","flame","crane","brave"]
+middlers: ["stoke","flame","crane","brave","heare"]
 puzzles: [1424]
 hashes: ["AAAACAAAACAACACAPCACAPCACAACCC"]
-shifts: ["nliao"]
+shifts: ["gdiao"]
 state: {
   "puzzleDate": "2025-05-13",
   "boardState": [
@@ -65,7 +65,7 @@ state: {
     ]
   ],
   "rowIndex": 6,
-  "solution": "heare",
+  "solution": "aware",
   "gameStatus": "FAIL",
   "hardMode": true,
   "gameId": "1173",
