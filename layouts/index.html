@@ -35,28 +35,9 @@
 {{ end }}
 <div>🧩 Total Guesses: <strong><a href="{{ with .Site.GetPage "guesses" }}{{ .RelPermalink }}{{ end }}">{{ $total_guesses }}</a></strong></div>
 <div>🧩 Guesses per Puzzle:  <strong>{{ (div (float $total_guesses) (len $wordles))  | lang.FormatNumber 2 }}</strong></div>
-<div>🧩 Distinct Opening Words Used: <strong>{{ len $openers.wordCounts }}</strong></div>
-<div>🧩 Distinct Non-Opener Words Used: <strong>{{ len $nonOpeners }}</strong></div>
-<div>🧩 Distinct Words Used: <strong><a href="{{ with .Site.GetPage "words" }}{{ .RelPermalink }}{{ end }}">{{ add (len $openers.wordCounts) (len $nonOpeners) }}</a></strong></div>
-
-{{ $sortedNon := sort $nonOpeners "count" "desc" }}
-<h2>🔥 Top Non-Opener Words</h2>
-<table>
-  <tr>
-    <th>Word</th>
-    <th>Non-Opener Uses</th>
-    <th>Guesses</th>
-  </tr>
-  {{ range first 10 $sortedNon }}
-    {{ $w := . }}
-    <tr>
-      <td>{{ $w.word }}</td>
-      <td>{{ $w.count }}</td>
-      <td>{{ range $slot := seq 1 6 }}{{ if index $w.slots (string $slot) }}✅{{ else }}❌{{ end }}{{ end }}</td>
-    </tr>
-  {{ end }}
-</table>
-<p><a href="{{ with .Site.GetPage "non-opener-usage.md" }}{{ .RelPermalink }}{{ end }}">Full list…</a></p>
+  <div>🧩 Distinct Words Used: <strong><a href="{{ with .Site.GetPage "words" }}{{ .RelPermalink }}{{ end }}">{{ add (len $openers.wordCounts) (len $nonOpeners) }}</a></strong></div>
+  <div>🧩 Distinct Opening Words Used: <strong><a href="{{ with .Site.GetPage "openers.md" }}{{ .RelPermalink }}{{ end }}">{{ len $openers.wordCounts }}</a></strong></div>
+  <div>🧩 Distinct Non-Opener Words Used: <strong><a href="{{ with .Site.GetPage "non-opener-usage.md" }}{{ .RelPermalink }}{{ end }}">{{ len $nonOpeners }}</a></strong></div>
 
 <blockquote>
   💡 <a href="{{ with .Site.GetPage "a/how-it-works" }}{{ .RelPermalink }}{{ end }}">How Does This Website Work?</a>
@@ -352,6 +333,25 @@
     <tr><td colspan="2"><a href="{{ .RelPermalink }}">🚪 See All Openers</a></td></tr>
   {{ end }}
 </table>
+
+{{ $sortedNon := sort $nonOpeners "count" "desc" }}
+<h2>🔥 Top Non-Opener Words</h2>
+<table>
+  <tr>
+    <th>Word</th>
+    <th>Non-Opener Uses</th>
+    <th>Guesses</th>
+  </tr>
+  {{ range first 10 $sortedNon }}
+    {{ $w := . }}
+    <tr>
+      <td>{{ with $.Site.GetPage (printf "/words/%s" $w.word) }}<a href="{{ .RelPermalink }}">{{ $w.word }}</a>{{ else }}{{ $w.word }}{{ end }}</td>
+      <td>{{ $w.count }}</td>
+      <td>{{ range $slot := seq 1 6 }}{{ if index $w.slots (string $slot) }}✅{{ else }}❌{{ end }}{{ end }}</td>
+    </tr>
+  {{ end }}
+</table>
+<p><a href="{{ with .Site.GetPage "non-opener-usage.md" }}{{ .RelPermalink }}{{ end }}">Full list…</a></p>
 
 <h2>🗓 Monthly Trends</h2>
 <table>

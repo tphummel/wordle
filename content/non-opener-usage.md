@@ -10,7 +10,6 @@ Words that have been used outside the opener, sorted by non-opener usage.
   {{ $nonOpeners := partial "non-openers.html" $wordles }}
   {{ $words := sort $nonOpeners "count" "desc" }}
 
-  <p>Distinct Opening Words Used: <strong>{{ len $openers.wordCounts }}</strong></p>
   <p>Distinct Non-Opener Words Used: <strong>{{ len $nonOpeners }}</strong></p>
   <p>Total Distinct Words Used: <strong>{{ add (len $openers.wordCounts) (len $nonOpeners) }}</strong></p>
 
@@ -23,7 +22,7 @@ Words that have been used outside the opener, sorted by non-opener usage.
     {{ range $words }}
       {{ $w := . }}
       <tr>
-        <td>{{ $w.word }}</td>
+        <td>{{ with $.Site.GetPage (printf "/words/%s" $w.word) }}<a href="{{ .RelPermalink }}">{{ $w.word }}</a>{{ else }}{{ $w.word }}{{ end }}</td>
         <td>{{ $w.count }}</td>
         <td>{{ range $slot := seq 1 6 }}{{ if index $w.slots (string $slot) }}✅{{ else }}❌{{ end }}{{ end }}</td>
       </tr>
