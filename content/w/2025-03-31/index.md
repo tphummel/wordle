@@ -6,10 +6,10 @@ git_branch: 2025-03-31_1381
 contests: []
 words: ["focus","doily","wonky","ropey","boogy","boozy"]
 openers: ["focus"]
-middlers: ["doily","wonky","ropey","boogy"]
+middlers: ["doily","wonky","ropey","boogy","boozy"]
 puzzles: [1381]
 hashes: ["ACAAAACAACACAACACAACCCCACCCCAC"]
-shifts: ["hvwii"]
+shifts: ["hvwci"]
 state: {
   "puzzleDate": "2025-03-31",
   "boardState": [
