@@ -1,0 +1,31 @@
+{{ $usage := dict }}
+
+{{ range . }}
+  {{ $guesses := .Params.words }}
+  {{ if not $guesses }}
+    {{ $guesses = index .Params.state "boardState" }}
+  {{ end }}
+  {{ range $i, $word := $guesses }}
+    {{ if $word }}
+      {{ $entry := index $usage $word }}
+      {{ if not $entry }}
+        {{ $entry = dict "word" $word "count" 0 "slots" (dict "1" false "2" false "3" false "4" false "5" false "6" false) }}
+      {{ end }}
+      {{ $slot := add $i 1 }}
+      {{ $entry = merge $entry (dict "slots" (merge $entry.slots (dict (string $slot) true))) }}
+      {{ if gt $slot 1 }}
+        {{ $entry = merge $entry (dict "count" (add $entry.count 1)) }}
+      {{ end }}
+      {{ $usage = merge $usage (dict $word $entry) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $wordCounts := slice }}
+{{ range $word, $entry := $usage }}
+  {{ if gt $entry.count 0 }}
+    {{ $wordCounts = $wordCounts | append $entry }}
+  {{ end }}
+{{ end }}
+
+{{ return $wordCounts }}
