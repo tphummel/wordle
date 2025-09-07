@@ -8,6 +8,7 @@
 </blockquote>
 
 {{ $wordles := where .Site.RegularPages "Section" "w" }}
+{{ $openers := partial "openers.html" $wordles }}
 {{ $nonOpeners := partial "non-openers.html" $wordles }}
 {{ $wins := where $wordles "Params.state.gameStatus" "WIN" }}
 {{ $losses := where $wordles "Params.state.gameStatus" "FAIL"}}
@@ -34,31 +35,24 @@
 {{ end }}
 <div>🧩 Total Guesses: <strong><a href="{{ with .Site.GetPage "guesses" }}{{ .RelPermalink }}{{ end }}">{{ $total_guesses }}</a></strong></div>
 <div>🧩 Guesses per Puzzle:  <strong>{{ (div (float $total_guesses) (len $wordles))  | lang.FormatNumber 2 }}</strong></div>
-<div>🧩 Distinct Opening Words Used: <strong>{{ $nonOpeners.counts.openers }}</strong></div>
-<div>🧩 Distinct Non-Opener Words Used: <strong>{{ $nonOpeners.counts.nonOpeners }}</strong></div>
-<div>🧩 Distinct Words Used: <strong><a href="{{ with .Site.GetPage "words" }}{{ .RelPermalink }}{{ end }}">{{ $nonOpeners.counts.total }}</a></strong></div>
+<div>🧩 Distinct Opening Words Used: <strong>{{ len $openers.wordCounts }}</strong></div>
+<div>🧩 Distinct Non-Opener Words Used: <strong>{{ len $nonOpeners }}</strong></div>
+<div>🧩 Distinct Words Used: <strong><a href="{{ with .Site.GetPage "words" }}{{ .RelPermalink }}{{ end }}">{{ add (len $openers.wordCounts) (len $nonOpeners) }}</a></strong></div>
 
-{{ $sortedNon := sort $nonOpeners.wordCounts "count" "desc" }}
+{{ $sortedNon := sort $nonOpeners "count" "desc" }}
 <h2>🔥 Top Non-Opener Words</h2>
 <table>
   <tr>
     <th>Word</th>
     <th>Non-Opener Uses</th>
-    <th>1</th>
-    <th>2</th>
-    <th>3</th>
-    <th>4</th>
-    <th>5</th>
-    <th>6</th>
+    <th>Guesses</th>
   </tr>
   {{ range first 10 $sortedNon }}
     {{ $w := . }}
     <tr>
       <td>{{ $w.word }}</td>
       <td>{{ $w.count }}</td>
-      {{ range $slot := seq 1 6 }}
-        <td>{{ if index $w.slots (string $slot) }}✅{{ else }}❌{{ end }}</td>
-      {{ end }}
+      <td>{{ range $slot := seq 1 6 }}{{ if index $w.slots (string $slot) }}✅{{ else }}❌{{ end }}{{ end }}</td>
     </tr>
   {{ end }}
 </table>

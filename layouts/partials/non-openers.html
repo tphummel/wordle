@@ -1,6 +1,4 @@
 {{ $usage := dict }}
-{{ $openerSet := dict }}
-{{ $nonOpenerSet := dict }}
 
 {{ range . }}
   {{ $guesses := .Params.words }}
@@ -17,9 +15,6 @@
       {{ $entry = merge $entry (dict "slots" (merge $entry.slots (dict (string $slot) true))) }}
       {{ if gt $slot 1 }}
         {{ $entry = merge $entry (dict "count" (add $entry.count 1)) }}
-        {{ $nonOpenerSet = merge $nonOpenerSet (dict $word true) }}
-      {{ else }}
-        {{ $openerSet = merge $openerSet (dict $word true) }}
       {{ end }}
       {{ $usage = merge $usage (dict $word $entry) }}
     {{ end }}
@@ -28,7 +23,9 @@
 
 {{ $wordCounts := slice }}
 {{ range $word, $entry := $usage }}
-  {{ $wordCounts = $wordCounts | append $entry }}
+  {{ if gt $entry.count 0 }}
+    {{ $wordCounts = $wordCounts | append $entry }}
+  {{ end }}
 {{ end }}
 
-{{ return (dict "wordCounts" $wordCounts "counts" (dict "openers" (len $openerSet) "nonOpeners" (len $nonOpenerSet) "total" (len $wordCounts))) }}
+{{ return $wordCounts }}
