@@ -46,21 +46,17 @@ process.stdin.on("data", function (input) {
 });
 
 process.stdin.on("end", function () {
-   runTests(_input)
+  runTests(_input)
 });
 
-function runTests (yaml) {
-  const firstDoc = YAML.parseAllDocuments(yaml)[0]
-  const title = firstDoc.contents.items.find(item => item.key.value === 'title')
+function runTests (input) {
+  const frontMatter = input.match(/^---\n([\s\S]*?)\n---/)
+  const data = frontMatter ? YAML.parse(frontMatter[1]) : {}
+  const { title, state = {} } = data
+  const { boardState = [], evaluations = [], rowIndex } = state
 
-  const state = firstDoc.contents.items.find(item => item.key.value === 'state')
-  const rowIndex = state.value.items.find(item => item.key.value === 'rowIndex').value.value
-
-  const evaluations = state.value.items.find(item => item.key.value === 'evaluations')
-  const boardState = state.value.items.find(item => item.key.value === 'boardState')
-
-  const guessesFromBoardState = boardState.value.items.filter(i => i.value.length === 5).length
-  const guessesFromEvaluations = evaluations.value.items.filter(i => ['SEQ','FLOW_SEQ'].includes(i.type)).length
+  const guessesFromBoardState = boardState.filter(g => g && g.length === 5).length
+  const guessesFromEvaluations = evaluations.filter(e => Array.isArray(e)).length
 
   debug({
     guessesFromBoardState,
@@ -71,30 +67,30 @@ function runTests (yaml) {
 
   const testFile = __filename.split("/")[__filename.split("/").length-1]
 
-  console.log(`[Test: ${testFile}] Title: ${title.value}`)
+  console.log(`[Test: ${testFile}] Title: ${title}`)
 
   assert.equal(
     guessesFromBoardState,
     guessesFromEvaluations,
-    "guess count from board state should match guess count from evaluations"
+    "guess count from board state should match guess count from evaluations",
   )
 
   assert.equal(
     guessesFromBoardState,
     rowIndex,
-    "guess count from board state should match the ending rowIndex"
+    "guess count from board state should match the ending rowIndex",
   )
 
   assert.equal(
     guessesFromEvaluations,
     rowIndex,
-    "guess count from evaluations should match the ending rowIndex"
+    "guess count from evaluations should match the ending rowIndex",
   )
 }
 
 process.stdin.resume();
 
 function debug (msg) {
-  if (process.env.DEBUG) console.log(msg)  
+  if (process.env.DEBUG) console.log(msg)
 }
 ```
