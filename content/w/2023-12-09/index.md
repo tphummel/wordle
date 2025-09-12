@@ -1,6 +1,6 @@
 ---
 title: "903: 2023-12-09"
-date: 2023-12-09T22:46:56-08:00
+date: 2023-12-09T07:16:00-08:00
 tags: []
 git_branch: 2023-12-09_903
 contests: []
@@ -48,8 +48,8 @@ state: {
   "rowIndex": 3,
   "solution": "shift",
   "gameStatus": "WIN",
-  "lastPlayedTs": 1702190816680,
-  "lastCompletedTs": 1702190816680,
+  "lastPlayedTs": 1702134960000,
+  "lastCompletedTs": 1702134960000,
   "hardMode": true,
   "settings": {
     "hardMode": true,
@@ -58,7 +58,7 @@ state: {
   },
   "gameId": 1175,
   "dayOffset": 903,
-  "timestamp": 1702190816
+  "timestamp": 1702134960
 }
 stats: {
   "currentStreak": 1,
