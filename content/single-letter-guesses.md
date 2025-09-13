@@ -15,7 +15,7 @@ Definition: Puzzles containing a guess made up of the same letter in all five po
       <th>Turns</th>
       <th>Score</th>
       <th>Guess</th>
-      <th>Puzzle</th>
+      <th>Grid</th>
     </tr>
 
     {{ range sort $found "date" "desc" }}

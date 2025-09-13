@@ -16,7 +16,7 @@ Definition: Puzzles which are symmetrical or mirrored vertically.
       <th>Puzzle</th>
       <th>Turns</th>
       <th>Score</th>
-      <th>Puzzle</th>
+      <th>Grid</th>
     </tr>
 
     {{ range sort $found "date" "desc" }}

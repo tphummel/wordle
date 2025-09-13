@@ -14,7 +14,7 @@ Definition: Puzzles where each vowel (A, E, I, O, U) appears at least once acros
       <th>Puzzle</th>
       <th>Turns</th>
       <th>Score</th>
-      <th>Puzzle</th>
+      <th>Grid</th>
     </tr>
 
     {{ range sort $found "date" "desc" }}

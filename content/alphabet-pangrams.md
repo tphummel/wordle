@@ -14,7 +14,7 @@ Definition: Puzzles where every letter of the alphabet appears at least once acr
       <th>Puzzle</th>
       <th>Turns</th>
       <th>Score</th>
-      <th>Puzzle</th>
+      <th>Grid</th>
     </tr>
 
     {{ range sort $found "date" "desc" }}

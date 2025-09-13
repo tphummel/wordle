@@ -14,7 +14,7 @@ Definition: Puzzles which contain a non-solving guess with all letters correct o
       <th>Puzzle</th>
       <th>Turns</th>
       <th>Score</th>
-      <th>Puzzle</th>
+      <th>Grid</th>
     </tr>
 
     {{ range sort $found "date" "desc" }}
