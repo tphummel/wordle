@@ -14,7 +14,7 @@ Definition: Puzzles where every letter from N to Z appears at least once across 
       <th>Puzzle</th>
       <th>Turns</th>
       <th>Score</th>
-      <th>Puzzle</th>
+      <th>Grid</th>
     </tr>
 
     {{ range sort $found "date" "desc" }}

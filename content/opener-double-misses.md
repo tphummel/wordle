@@ -21,7 +21,7 @@ Definition: Puzzles where all letters in my first two guesses were absent.
       <th>Puzzle</th>
       <th>Turns</th>
       <th>Score</th>
-      <th>Puzzle</th>
+      <th>Grid</th>
     </tr>
 
     {{ range sort $found "date" "desc" }}

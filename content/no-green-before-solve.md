@@ -17,7 +17,7 @@ Definition: Puzzles won in which no letters are correct until the final, solving
       <th>Puzzle</th>
       <th>Turns</th>
       <th>Score</th>
-      <th>Puzzle</th>
+      <th>Grid</th>
     </tr>
 
     {{ range sort $found "date" "desc" }}

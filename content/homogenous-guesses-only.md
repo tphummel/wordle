@@ -17,7 +17,7 @@ Definition: Puzzles in which each guess contains either only present (yellow) or
       <th>Puzzle</th>
       <th>Turns</th>
       <th>Score</th>
-      <th>Puzzle</th>
+      <th>Grid</th>
     </tr>
 
     {{ range sort $found "date" "desc" }}
