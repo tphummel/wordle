@@ -1,45 +1,45 @@
 ---
-title: "876: 2023-11-12"
-date: 2023-11-12T20:52:25-08:00
+title: "875: 2023-11-11"
+date: 2023-11-11T05:28:00-08:00
 tags: []
-git_branch: 2023-11-12_876
+git_branch: 2023-11-11_875
 contests: []
-words: ["ounce","blend","meany","meant"]
+words: ["ounce","cloth","scoot","actor"]
 openers: ["ounce"]
-middlers: ["blend","meany"]
-puzzles: [876]
-hashes: ["AAPAPAAPCACCCCACCCCCXXXXXXXXXX"]
-shifts: ["sliwd"]
+middlers: ["cloth","scoot"]
+puzzles: [875]
+hashes: ["PAAPAPAPPAACACPCCCCCXXXXXXXXXX"]
+shifts: ["gjbxb"]
 state: {
   "boardState": [
     "ounce",
-    "blend",
-    "meany",
-    "meant",
+    "cloth",
+    "scoot",
+    "actor",
     "",
     ""
   ],
   "evaluations": [
     [
+      "present",
       "absent",
       "absent",
       "present",
+      "absent"
+    ],
+    [
+      "present",
       "absent",
+      "present",
+      "present",
+      "absent"
+    ],
+    [
+      "absent",
+      "correct",
+      "absent",
+      "correct",
       "present"
-    ],
-    [
-      "absent",
-      "absent",
-      "present",
-      "correct",
-      "absent"
-    ],
-    [
-      "correct",
-      "correct",
-      "correct",
-      "correct",
-      "absent"
     ],
     [
       "correct",
@@ -52,19 +52,19 @@ state: {
     null
   ],
   "rowIndex": 4,
-  "solution": "meant",
+  "solution": "actor",
   "gameStatus": "WIN",
-  "lastPlayedTs": 1699851145478,
-  "lastCompletedTs": 1699851145478,
+  "lastPlayedTs": 1699709280000,
+  "lastCompletedTs": 1699709280000,
   "hardMode": true,
   "settings": {
     "hardMode": true,
     "darkMode": true,
     "colorblindMode": false
   },
-  "gameId": 906,
-  "dayOffset": 876,
-  "timestamp": 1699851145
+  "gameId": 1875,
+  "dayOffset": 875,
+  "timestamp": 1699709280
 }
 stats: {
   "currentStreak": 1,
@@ -73,14 +73,14 @@ stats: {
     "1": 0,
     "2": 4,
     "3": 23,
-    "4": 48,
+    "4": 47,
     "5": 19,
     "6": 14,
     "fail": 0
   },
   "winPercentage": 100,
-  "gamesPlayed": 108,
-  "gamesWon": 108,
+  "gamesPlayed": 107,
+  "gamesWon": 107,
   "averageGuesses": 4,
   "isOnStreak": false,
   "hasPlayed": true
