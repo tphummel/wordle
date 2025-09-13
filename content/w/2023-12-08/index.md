@@ -1,64 +1,76 @@
 ---
-title: "903: 2023-12-09"
-date: 2023-12-09T22:46:56-08:00
+title: "902: 2023-12-08"
+date: 2023-12-08T06:56:00-08:00
 tags: []
-git_branch: 2023-12-09_903
+git_branch: 2023-12-08_902
 contests: []
-words: ["point","shirt","shift"]
-openers: ["point"]
-middlers: ["shirt"]
-puzzles: [903]
-hashes: ["AACACCCCACCCCCCXXXXXXXXXXXXXXX"]
-shifts: ["yoqod"]
+words: ["ounce","frail","smart","spark","sharp"]
+openers: ["ounce"]
+middlers: ["frail","smart","spark"]
+puzzles: [902]
+hashes: ["AAAAAAPCAACACCACPCCACCCCCXXXXX"]
+shifts: ["yoiaz"]
 state: {
   "boardState": [
-    "point",
-    "shirt",
-    "shift",
+    "ounce",
+    "frail",
+    "smart",
+    "spark",
+    "sharp",
     "",
-    "",
-    ""
   ],
   "evaluations": [
     [
       "absent",
       "absent",
+      "absent",
+      "absent",
+      "absent"
+    ],
+    [
+      "absent",
+      "present",
       "correct",
       "absent",
-      "correct"
+      "absent"
+    ],
+    [
+      "correct",
+      "absent",
+      "correct",
+      "correct",
+      "absent"
+    ],
+    [
+      "correct",
+      "present",
+      "correct",
+      "correct",
+      "absent"
     ],
     [
       "correct",
       "correct",
       "correct",
-      "absent",
-      "correct"
-    ],
-    [
-      "correct",
-      "correct",
-      "correct",
       "correct",
       "correct"
     ],
-    null,
-    null,
     null
   ],
-  "rowIndex": 3,
-  "solution": "shift",
+  "rowIndex": 5,
+  "solution": "sharp",
   "gameStatus": "WIN",
-  "lastPlayedTs": 1702190816680,
-  "lastCompletedTs": 1702190816680,
+  "lastPlayedTs": 1702047360000,
+  "lastCompletedTs": 1702047360000,
   "hardMode": true,
   "settings": {
     "hardMode": true,
     "darkMode": true,
     "colorblindMode": false
   },
-  "gameId": 1175,
-  "dayOffset": 903,
-  "timestamp": 1702190816
+  "gameId": 1543,
+  "dayOffset": 902,
+  "timestamp": 1702047360
 }
 stats: {
   "currentStreak": 1,
