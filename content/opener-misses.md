@@ -23,7 +23,7 @@ Definition: Puzzles where all letters in my opening guess were absent, excluding
       <th>Puzzle</th>
       <th>Turns</th>
       <th>Score</th>
-      <th>Puzzle</th>
+      <th>Grid</th>
     </tr>
 
     {{ range sort $found "date" "desc" }}

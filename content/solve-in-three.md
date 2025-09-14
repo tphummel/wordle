@@ -23,6 +23,7 @@ title: Puzzles Solved in Three Guesses
       <th>Puzzle</th>
       <th>Turns</th>
       <th>Score</th>
+      <th>Grid</th>
     </tr>
 
     {{ range sort $found "Date" "desc" }}
@@ -31,6 +32,7 @@ title: Puzzles Solved in Three Guesses
         <td><a href="{{ .RelPermalink }}">{{ index .Params.puzzles 0 }}</td>
         <td><a href="{{ .RelPermalink }}">{{ partialCached "guess-count.html" . .File.Path }}{{- cond (eq .Params.state.hardMode true) "*" "" -}}</a></td>
         <td><a href="{{ .RelPermalink }}">{{ partialCached "puzzle-score.html" . .File.Path }}</a></td>
+        <td>{{ partialCached "emoji-grid" . .File.Path }}</td>
       </tr>
 
     {{ end }}

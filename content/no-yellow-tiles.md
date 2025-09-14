@@ -18,7 +18,7 @@ Definition: Puzzles where all letters in all guesses are either absent or correc
       <th>Puzzle</th>
       <th>Turns</th>
       <th>Score</th>
-      <th>Puzzle</th>
+      <th>Grid</th>
     </tr>
 
     {{ range sort $found "date" "desc" }}
