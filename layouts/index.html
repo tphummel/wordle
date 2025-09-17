@@ -583,6 +583,38 @@
   {{ end }}
 </table>
 
+{{ $hours := partial "hourly-breakdown.html" $wordles }}
+<h2>⌚ Hour of Day Breakdown</h2>
+<table>
+  <tr>
+    <th>Hour</th>
+    <th>Puzzles</th>
+    <th>Avg Guesses</th>
+    <th>Avg Score</th>
+    <th>Wins</th>
+    <th>Losses</th>
+  </tr>
+  {{ range seq 0 23 }}
+    {{ $h := printf "%02d" . }}
+    {{ $s := index $hours $h }}
+    {{ $count := index $s "count" }}
+    {{ $avgGuesses := 0.0 }}
+    {{ $avgScore := 0.0 }}
+    {{ if gt $count 0 }}
+      {{ $avgGuesses = div (float (index $s "guesses")) $count }}
+      {{ $avgScore = div (float (index $s "score")) $count }}
+    {{ end }}
+    <tr>
+      <td>{{ $h }}</td>
+      <td>{{ $count }}</td>
+      <td>{{ $avgGuesses | lang.FormatNumber 2 }}</td>
+      <td>{{ $avgScore | lang.FormatNumber 2 }}</td>
+      <td>{{ index $s "wins" }}</td>
+      <td>{{ index $s "losses" }}</td>
+    </tr>
+  {{ end }}
+</table>
+
 <h2>📒 Articles</h2>
 <ul>
   {{ range (where .Site.RegularPages.ByDate.Reverse "Section" "a") }}
