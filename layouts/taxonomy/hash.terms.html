@@ -10,7 +10,7 @@
 <h2>List</h2>
 <table>
   <tr>
-    <td>Puzzle Hash</td>
+    <td>Emoji Grid</td>
     <td>Count</td>
     <td>First Played</td>
     <td>Last Played</td>
@@ -27,7 +27,7 @@
 
     {{ with $.Site.GetPage (printf "/%s/%s" "hashes" $name) }}
     <tr>
-      <td><a href="{{ .RelPermalink }}">{{ .Name }}</a></td>
+      <td><a href="{{ .RelPermalink }}" title="{{ .Name }}">{{ partialCached "emoji-grid" $first $first.File.Path }}</a></td>
       <td>{{ $count }}</td>
       <td><a href="{{ $first.RelPermalink}}">{{ $first.Date.Format "Jan 2, 2006" }}</a></td>
       <td>{{ if gt $count 1 }}<a href="{{ $last.RelPermalink}}">{{ $last.Date.Format "Jan 2, 2006" }}</a>{{ else }}--{{ end }}</td>
