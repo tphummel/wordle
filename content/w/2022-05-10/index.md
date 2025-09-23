@@ -5,6 +5,7 @@ tags: []
 words: ["tiger","stock","latch","butch"]
 puzzles: [325]
 hashes: ["PAAAAAPACAAACCCCCCCCXXXXXXXXXX"]
+firsthashes: ["PAAAA"]
 shifts: ["hbblr"]
 state: {
   "boardState": [

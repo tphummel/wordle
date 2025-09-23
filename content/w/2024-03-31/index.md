@@ -9,6 +9,7 @@ openers: ["style"]
 middlers: ["touch","troop"]
 puzzles: [1016]
 hashes: ["APAAACPAAACAPCACCCCCXXXXXXXXXX"]
+firsthashes: ["APAAA"]
 shifts: ["zhjxy"]
 state: {
   "boardState": [

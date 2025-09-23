@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["crude"]
 puzzles: [857]
 hashes: ["APAPCCACACCCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["APAPC"]
 shifts: ["ihcbo"]
 state: {
   "boardState": [

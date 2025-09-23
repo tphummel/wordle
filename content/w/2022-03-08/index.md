@@ -58,6 +58,7 @@ stats:
 puzzles:
   - 262
 hashes: ["CPCAACACACCCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["CPCAA"]
 shifts: ["ydmnd"]
 aliases:
   - /w/262/

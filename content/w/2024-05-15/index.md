@@ -9,6 +9,7 @@ openers: ["style"]
 middlers: ["grain"]
 puzzles: [1061]
 hashes: ["AAAAAAAAPPCCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["AAAAA"]
 shifts: ["vpvlr"]
 state: {
   "puzzleDate": "2024-05-15",

@@ -9,6 +9,7 @@ openers: ["ratio"]
 middlers: ["taste","malty","gaunt","haunt","jaunt"]
 puzzles: [1505]
 hashes: ["ACPAAPCAAAACAPAACCCCACCCCACCCC"]
+firsthashes: ["ACPAA"]
 shifts: ["jhcwd"]
 solution: "daunt"
 state: {

@@ -5,6 +5,7 @@ tags: []
 words: ["track","mouse","bleed","field"]
 puzzles: [381]
 hashes: ["AAAAAAAAAPAPCACCCCCCXXXXXXXXXX"]
+firsthashes: ["AAAAA"]
 shifts: ["lpmun"]
 state: {
   "boardState": [

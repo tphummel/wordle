@@ -6,6 +6,7 @@ contests: ["2022-12-ratio"]
 words: ["ratio","orate","aorta"]
 puzzles: [552]
 hashes: ["PPPAPPPPCACCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["PPPAP"]
 shifts: ["gvzck"]
 state: {
   "boardState": [

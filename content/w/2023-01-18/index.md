@@ -6,6 +6,7 @@ contests: ["2023-01-guide"]
 words: ["guide","adorn","shard","chard"]
 puzzles: [578]
 hashes: ["AAAPAPPACAACCCCCCCCCXXXXXXXXXX"]
+firsthashes: ["AAAPA"]
 shifts: ["ioian"]
 state: {
   "boardState": [

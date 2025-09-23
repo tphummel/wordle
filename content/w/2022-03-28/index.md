@@ -5,6 +5,7 @@ tags: []
 words: ["peril","sound","mound","wound","bound","found"]
 puzzles: [282]
 hashes: ["AAAAAACCCCACCCCACCCCACCCCCCCCC"]
+firsthashes: ["AAAAA"]
 shifts: ["lvcwn"]
 state: {
   "boardState": [

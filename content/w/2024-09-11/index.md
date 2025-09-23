@@ -9,6 +9,7 @@ openers: ["pouch"]
 middlers: ["steak","lease"]
 puzzles: [1180]
 hashes: ["AAAAAPAPPAPAPPCCCCCCXXXXXXXXXX"]
+firsthashes: ["AAAAA"]
 shifts: ["gpauo"]
 state: {
   "puzzleDate": "2024-09-11",

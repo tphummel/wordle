@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["dream","steal"]
 puzzles: [864]
 hashes: ["AAAAPAACCAAACCPCCCCCXXXXXXXXXX"]
+firsthashes: ["AAAAP"]
 shifts: ["hsmju"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["style"]
 middlers: ["spend","saver"]
 puzzles: [1018]
 hashes: ["CAAAPCAPAACAAPPCCCCCXXXXXXXXXX"]
+firsthashes: ["CAAAP"]
 shifts: ["ylzdw"]
 state: {
   "boardState": [

@@ -5,6 +5,7 @@ tags: ["pattern"]
 words: ["track","shape","bland"]
 puzzles: [389]
 hashes: ["AACAAAACAACCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["AACAA"]
 shifts: ["hsiwn"]
 state: {
   "boardState": [

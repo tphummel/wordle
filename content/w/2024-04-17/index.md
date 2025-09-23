@@ -9,6 +9,7 @@ openers: ["style"]
 middlers: ["three","tache"]
 puzzles: [1033]
 hashes: ["APAACCPAACCAACCCCCCCXXXXXXXXXX"]
+firsthashes: ["APAAC"]
 shifts: ["zpbqo"]
 state: {
   "boardState": [

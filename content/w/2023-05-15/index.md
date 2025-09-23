@@ -8,6 +8,7 @@ openers: ["scarf"]
 middlers: ["clean","caned"]
 puzzles: [695]
 hashes: ["APPAACAPPPCCCPACCCCCXXXXXXXXXX"]
+firsthashes: ["APPAA"]
 shifts: ["ihvxo"]
 state: {
   "boardState": [

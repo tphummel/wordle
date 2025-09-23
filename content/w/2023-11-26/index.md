@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["short"]
 puzzles: [890]
 hashes: ["PAAAACAPAACCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["PAAAA"]
 shifts: ["yvtrn"]
 state: {
   "boardState": [

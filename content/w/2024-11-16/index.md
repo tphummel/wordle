@@ -9,6 +9,7 @@ openers: ["scout"]
 middlers: ["poise","bison"]
 puzzles: [1246]
 hashes: ["PAPAAAPPPAACCCACCCCCXXXXXXXXXX"]
+firsthashes: ["PAPAA"]
 shifts: ["bpaxb"]
 state: {
   "puzzleDate": "2024-11-16",

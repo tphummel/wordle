@@ -9,6 +9,7 @@ openers: ["spout"]
 middlers: ["dream","chafe","haven"]
 puzzles: [1388]
 hashes: ["AAAAAAAPPAAPPAPCCACACCCCCXXXXX"]
+firsthashes: ["AAAAA"]
 shifts: ["nhhnv"]
 state: {
   "puzzleDate": "2025-04-07",

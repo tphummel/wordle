@@ -9,6 +9,7 @@ openers: ["radio"]
 middlers: ["fresh","berry","mercy","jerky"]
 puzzles: [1488]
 hashes: ["PAAAAAPPAAACCACACCACACCACCCCCC"]
+firsthashes: ["PAAAA"]
 shifts: ["tlzei"]
 state: {
   "puzzleDate": "2025-07-16",

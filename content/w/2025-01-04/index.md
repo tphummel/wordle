@@ -9,6 +9,7 @@ openers: ["train"]
 middlers: ["clear","relay"]
 puzzles: [1295]
 hashes: ["APPAAAPPCPCCCCACCCCCXXXXXXXXXX"]
+firsthashes: ["APPAA"]
 shifts: ["xltjh"]
 state: {
   "puzzleDate": "2025-01-04",

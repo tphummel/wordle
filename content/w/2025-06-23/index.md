@@ -9,6 +9,7 @@ openers: ["audio"]
 middlers: ["lodge"]
 puzzles: [1465]
 hashes: ["AACAPPPCAACCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["AACAP"]
 shifts: ["uklui"]
 state: {
   "puzzleDate": "2025-06-23",

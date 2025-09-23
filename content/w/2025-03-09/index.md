@@ -9,6 +9,7 @@ openers: ["train"]
 middlers: ["crowd"]
 puzzles: [1359]
 hashes: ["ACAAAACAACCCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["ACAAA"]
 shifts: ["mymnn"]
 state: {
   "puzzleDate": "2025-03-09",

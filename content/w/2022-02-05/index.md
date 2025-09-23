@@ -50,6 +50,7 @@ stats: {}
 puzzles:
   - 231
 hashes: ["AAAACAAPACPCCPCCCCCCXXXXXXXXXX"]
+firsthashes: ["AAAAC"]
 shifts: ["gswod"]
 aliases:
   - /w/231/

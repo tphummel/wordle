@@ -5,6 +5,7 @@ tags: []
 words: ["honey","gourd","doubt"]
 puzzles: [453]
 hashes: ["ACAAAACCAPCCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["ACAAA"]
 shifts: ["jvckd"]
 state: {
   "boardState": [

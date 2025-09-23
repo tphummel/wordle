@@ -55,6 +55,7 @@ stats: {}
 puzzles:
   - 179
 hashes: ["AAAPPPPCCAACCCCACCCCCCCCCXXXXX"]
+firsthashes: ["AAAPP"]
 shifts: ["zyilo"]
 aliases:
   - /w/179/

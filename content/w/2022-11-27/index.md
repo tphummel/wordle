@@ -6,6 +6,7 @@ contests: ["2022-11-habit"]
 words: ["habit","happy"]
 puzzles: [526]
 hashes: ["CCAAACCCCCXXXXXXXXXXXXXXXXXXXX"]
+firsthashes: ["CCAAA"]
 shifts: ["nhxyi"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["point"]
 middlers: ["slang","clunk"]
 puzzles: [1538]
 hashes: ["AAACAACACAACACACCCCCXXXXXXXXXX"]
+firsthashes: ["AAACA"]
 shifts: ["hsmwn"]
 state: {
   "puzzleDate": "2025-09-04",

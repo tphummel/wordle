@@ -5,6 +5,7 @@ tags: []
 words: ["steam","tenor","deity","depth"]
 puzzles: [351]
 hashes: ["APPAAPCAAACCACACCCCCXXXXXXXXXX"]
+firsthashes: ["APPAA"]
 shifts: ["jlxcr"]
 state: {
   "boardState": [

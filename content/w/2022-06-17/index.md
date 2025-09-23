@@ -5,6 +5,7 @@ tags: []
 words: ["piano","snore","clown","blown"]
 puzzles: [363]
 hashes: ["AAAPPAPCAAACCCCCCCCCXXXXXXXXXX"]
+firsthashes: ["AAAPP"]
 shifts: ["hswfx"]
 state: {
   "boardState": [

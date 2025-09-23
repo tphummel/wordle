@@ -9,6 +9,7 @@ openers: ["chose"]
 middlers: ["drain","drawl"]
 puzzles: [1299]
 hashes: ["AAAAACCCAACCCAACCCCCXXXXXXXXXX"]
+firsthashes: ["AAAAA"]
 shifts: ["jyiod"]
 state: {
   "puzzleDate": "2025-01-08",

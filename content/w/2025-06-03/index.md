@@ -9,6 +9,7 @@ openers: ["choir"]
 middlers: ["slain","patin"]
 puzzles: [1445]
 hashes: ["AAACAAAPCCAPACCCCCCCXXXXXXXXXX"]
+firsthashes: ["AAACA"]
 shifts: ["gkurx"]
 state: {
   "puzzleDate": "2025-06-03",

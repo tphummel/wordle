@@ -9,6 +9,7 @@ openers: ["phase"]
 middlers: ["spate","slate"]
 puzzles: [1163]
 hashes: ["AACPCCACCCCACCCCCCCCXXXXXXXXXX"]
+firsthashes: ["AACPC"]
 shifts: ["yrico"]
 state: {
   "puzzleDate": "2024-08-25",

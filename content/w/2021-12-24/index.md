@@ -55,6 +55,7 @@ stats: {}
 puzzles:
   - 188
 hashes: ["ACCCAACCCAACCCAACCCACCCCCXXXXX"]
+firsthashes: ["ACCCA"]
 shifts: ["cliai"]
 aliases:
   - /w/188/

@@ -5,6 +5,7 @@ tags: []
 words: ["thing","piano","icons","irony"]
 puzzles: [433]
 hashes: ["AAPCAAPACPCACCACCCCCXXXXXXXXXX"]
+firsthashes: ["AAPCA"]
 shifts: ["oywwi"]
 state: {
   "boardState": [

@@ -6,6 +6,7 @@ contests: ["2022-09-honey"]
 words: ["honey","siren","inter"]
 puzzles: [442]
 hashes: ["AAPCAAPPCPCCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["AAPCA"]
 shifts: ["oubnb"]
 state: {
   "boardState": [

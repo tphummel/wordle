@@ -9,6 +9,7 @@ openers: ["flour"]
 middlers: ["skull","mural","quill","pugil"]
 puzzles: [1328]
 hashes: ["APAPAAAPACACAACACPACCCACCCCCCC"]
+firsthashes: ["APAPA"]
 shifts: ["vbxrv"]
 state: {
   "puzzleDate": "2025-02-06",

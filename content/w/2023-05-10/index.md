@@ -8,6 +8,7 @@ openers: ["cocoa"]
 middlers: ["twice","licet","metic"]
 puzzles: [690]
 hashes: ["PAAAAPAPPPAPPPPAPPCCCCCCCXXXXX"]
+firsthashes: ["PAAAA"]
 shifts: ["kaprm"]
 state: {
   "boardState": [

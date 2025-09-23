@@ -8,6 +8,7 @@ openers: ["orate"]
 middlers: ["force","horse"]
 puzzles: [618]
 hashes: ["PPAACACCACACCCCCCCCCXXXXXXXXXX"]
+firsthashes: ["PPAAC"]
 shifts: ["cvzbo"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["style"]
 middlers: ["group","chain","winch","cinch"]
 puzzles: [1022]
 hashes: ["AAAAAAAAAAPPAPPACCCCACCCCCCCCC"]
+firsthashes: ["AAAAA"]
 shifts: ["lpvlr"]
 state: {
   "boardState": [

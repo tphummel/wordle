@@ -9,6 +9,7 @@ openers: ["crown"]
 middlers: ["snake"]
 puzzles: [1226]
 hashes: ["AAAAPCPPAACCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["AAAAP"]
 shifts: ["yhvmi"]
 state: {
   "puzzleDate": "2024-10-27",

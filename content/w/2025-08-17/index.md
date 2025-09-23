@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["shout"]
 puzzles: [1520]
 hashes: ["PPAAAPAPPACCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["PPAAA"]
 shifts: ["rvcbi"]
 state: {
   "puzzleDate": "2025-08-17",

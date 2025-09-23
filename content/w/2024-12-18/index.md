@@ -9,6 +9,7 @@ openers: ["ghost"]
 middlers: ["wrath","chute"]
 puzzles: [1278]
 hashes: ["APAAPAAACPAPACPCCCCCXXXXXXXXXX"]
+firsthashes: ["APAAP"]
 shifts: ["nlnci"]
 state: {
   "puzzleDate": "2024-12-18",

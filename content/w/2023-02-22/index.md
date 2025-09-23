@@ -8,6 +8,7 @@ openers: ["orate"]
 middlers: ["cheer","flier","sider","miner"]
 puzzles: [613]
 hashes: ["APAAPAAACCAAPCCACACCACACCCCACC"]
+firsthashes: ["APAAP"]
 shifts: ["xpdnb"]
 state: {
   "boardState": [

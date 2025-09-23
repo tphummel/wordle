@@ -9,6 +9,7 @@ openers: ["place"]
 middlers: ["among","nasty","thank"]
 puzzles: [1071]
 hashes: ["AAPAAPAAPAPPAPACAPPACCCCCXXXXX"]
+firsthashes: ["AAPAA"]
 shifts: ["zpbjx"]
 state: {
   "puzzleDate": "2024-05-25",

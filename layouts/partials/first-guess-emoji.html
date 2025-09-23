@@ -1,0 +1,32 @@
+{{ $row := slice }}
+{{ $evaluations := .Params.state.evaluations }}
+{{ if and $evaluations (gt (len $evaluations) 0) }}
+  {{ $row = index $evaluations 0 }}
+{{ end }}
+{{ $emoji := slice }}
+{{ if $row }}
+  {{ range $row }}
+    {{ if eq . "correct" }}
+      {{ $emoji = $emoji | append "🟩" }}
+    {{ else if eq . "present" }}
+      {{ $emoji = $emoji | append "🟨" }}
+    {{ else if eq . "absent" }}
+      {{ $emoji = $emoji | append "⬛️" }}
+    {{ else }}
+      {{ $emoji = $emoji | append "⬛️" }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ if eq (len $emoji) 0 }}
+  {{ $emoji = slice "⬛️" "⬛️" "⬛️" "⬛️" "⬛️" }}
+{{ else }}
+  {{ if gt (len $emoji) 5 }}
+    {{ $emoji = first 5 $emoji }}
+  {{ end }}
+  {{ if lt (len $emoji) 5 }}
+    {{ range seq (sub 5 (len $emoji)) }}
+      {{ $emoji = $emoji | append "⬛️" }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ return (delimit $emoji "") }}

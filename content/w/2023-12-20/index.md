@@ -9,6 +9,7 @@ openers: ["point"]
 middlers: ["dream","smack"]
 puzzles: [914]
 hashes: ["AAAAAAAAPPCCCAACCCCCXXXXXXXXXX"]
+firsthashes: ["AAAAA"]
 shifts: ["ytiuv"]
 state: {
   "boardState": [

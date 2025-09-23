@@ -9,6 +9,7 @@ openers: ["crank"]
 middlers: ["manor"]
 puzzles: [1547]
 hashes: ["APPPAACPACCCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["APPPA"]
 shifts: ["thlrb"]
 state: {
   "puzzleDate": "2025-09-13",

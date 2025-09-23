@@ -9,6 +9,7 @@ openers: ["squid"]
 middlers: ["trick","crimp"]
 puzzles: [725]
 hashes: ["AAAPAACCPACCCCACCCCCXXXXXXXXXX"]
+firsthashes: ["AAAPA"]
 shifts: ["iyqvo"]
 state: {
   "boardState": [

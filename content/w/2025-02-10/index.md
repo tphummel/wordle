@@ -9,6 +9,7 @@ openers: ["choir"]
 middlers: ["stone","gloom"]
 puzzles: [1332]
 hashes: ["AACAAAACAACACPACCCCCXXXXXXXXXX"]
+firsthashes: ["AACAA"]
 shifts: ["mvwmi"]
 state: {
   "puzzleDate": "2025-02-10",

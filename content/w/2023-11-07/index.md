@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["risky","width","tibia"]
 puzzles: [871]
 hashes: ["AAAAAACAAAACAPAPCACACCCCCXXXXX"]
+firsthashes: ["AAAAA"]
 shifts: ["rpurd"]
 state: {
   "boardState": [

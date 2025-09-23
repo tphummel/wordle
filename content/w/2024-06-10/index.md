@@ -9,6 +9,7 @@ openers: ["crown"]
 middlers: ["snipe","tangy"]
 puzzles: [1087]
 hashes: ["AAAAPAPAAAACCCACCCCCXXXXXXXXXX"]
+firsthashes: ["AAAAP"]
 shifts: ["shvpk"]
 state: {
   "puzzleDate": "2024-06-10",

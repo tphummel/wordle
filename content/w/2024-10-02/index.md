@@ -9,6 +9,7 @@ openers: ["cheat"]
 middlers: ["shelf"]
 puzzles: [1201]
 hashes: ["ACCAACCCCACCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["ACCAA"]
 shifts: ["yomuv"]
 state: {
   "puzzleDate": "2024-10-02",

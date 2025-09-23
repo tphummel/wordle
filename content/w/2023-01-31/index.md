@@ -6,6 +6,7 @@ contests: ["2023-01-guide"]
 words: ["guide","story","cross"]
 puzzles: [591]
 hashes: ["AAAAAPACPACCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["AAAAA"]
 shifts: ["iywbc"]
 state: {
   "boardState": [

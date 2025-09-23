@@ -8,6 +8,7 @@ openers: ["lucky"]
 middlers: ["erupt","serum"]
 puzzles: [660]
 hashes: ["APAAAPPPAAAPPPACCCCCXXXXXXXXXX"]
+firsthashes: ["APAAA"]
 shifts: ["aulnb"]
 state: {
   "boardState": [

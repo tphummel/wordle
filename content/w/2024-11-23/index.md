@@ -9,6 +9,7 @@ openers: ["eight"]
 middlers: ["delve","felon","belly"]
 puzzles: [1253]
 hashes: ["PAAAAACCAAACCAAACCCCCCCCCXXXXX"]
+firsthashes: ["PAAAA"]
 shifts: ["pltui"]
 state: {
   "puzzleDate": "2024-11-23",

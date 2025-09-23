@@ -45,6 +45,7 @@ stats: {}
 puzzles:
   - 220
 hashes: ["AACAAPPCAACCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["AACAA"]
 shifts: ["ybojb"]
 aliases:
   - /w/220/

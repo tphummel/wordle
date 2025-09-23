@@ -5,6 +5,7 @@ tags: []
 words: ["honey","crest","trade","grate"]
 puzzles: [462]
 hashes: ["AAAPAACPAPPCCACCCCCCXXXXXXXXXX"]
+firsthashes: ["AAAPA"]
 shifts: ["myico"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["crown"]
 middlers: ["octet","voice"]
 puzzles: [1123]
 hashes: ["PAPAAPPAPAAPAPPCCCCCXXXXXXXXXX"]
+firsthashes: ["PAPAA"]
 shifts: ["jlkxi"]
 state: {
   "puzzleDate": "2024-07-16",

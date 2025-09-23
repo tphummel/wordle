@@ -9,6 +9,7 @@ openers: ["slime"]
 middlers: ["alone","flake","plate","glare","blade"]
 puzzles: [1233]
 hashes: ["ACAACPCAACACCACACCACACCACCCCAC"]
+firsthashes: ["ACAAC"]
 shifts: ["hsiio"]
 state: {
   "puzzleDate": "2024-11-03",

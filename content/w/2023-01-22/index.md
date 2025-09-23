@@ -6,6 +6,7 @@ contests: ["2023-01-guide"]
 words: ["guide","heart","eaten","latex","matey"]
 puzzles: [582]
 hashes: ["AAAAPAPPAPACCCAACCCACCCCCXXXXX"]
+firsthashes: ["AAAAP"]
 shifts: ["shbni"]
 state: {
   "boardState": [

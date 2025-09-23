@@ -5,6 +5,7 @@ tags: []
 words: ["aisle","board","marry","carry","harry"]
 puzzles: [2301]
 hashes: ["PAAAAAAPCAACCCCACCCCCCCCCXXXXX"]
+firsthashes: ["PAAAA"]
 shifts: ["nhzai"]
 state: {
   "boardState": [

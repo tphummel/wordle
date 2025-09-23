@@ -9,6 +9,7 @@ openers: ["pride"]
 middlers: ["rogue","flare"]
 puzzles: [1209]
 hashes: ["APAACPAAACAAPPCCCCCCXXXXXXXXXX"]
+firsthashes: ["APAAC"]
 shifts: ["ihzeo"]
 state: {
   "puzzleDate": "2024-10-10",

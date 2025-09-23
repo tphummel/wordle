@@ -5,6 +5,7 @@ tags: []
 words: ["ocean","least","payer","waver","fader","gamer"]
 puzzles: [335]
 hashes: ["AAPPAAPPAAACACCACACCACACCCCCCC"]
+firsthashes: ["AAPPA"]
 shifts: ["mhunb"]
 state: {
   "boardState": [

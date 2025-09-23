@@ -9,6 +9,7 @@ openers: ["mouse"]
 middlers: ["every","cheap"]
 puzzles: [1354]
 hashes: ["AAAAPAACAACCCAACCCCCXXXXXXXXXX"]
+firsthashes: ["AAAAP"]
 shifts: ["iomlu"]
 state: {
   "puzzleDate": "2025-03-04",

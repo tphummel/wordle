@@ -9,6 +9,7 @@ openers: ["style"]
 middlers: ["scrap","swing"]
 puzzles: [1069]
 hashes: ["CAAAACAAAACCCAACCCCCXXXXXXXXXX"]
+firsthashes: ["CAAAA"]
 shifts: ["ydqbr"]
 state: {
   "puzzleDate": "2024-05-23",

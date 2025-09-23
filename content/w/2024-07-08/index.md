@@ -9,6 +9,7 @@ openers: ["flour"]
 middlers: ["shack","shame"]
 puzzles: [1115]
 hashes: ["AAAAACCCAACCCACCCCCCXXXXXXXXXX"]
+firsthashes: ["AAAAA"]
 shifts: ["yoiyo"]
 state: {
   "puzzleDate": "2024-07-08",

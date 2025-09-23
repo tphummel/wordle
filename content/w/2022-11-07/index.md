@@ -6,6 +6,7 @@ contests: ["2022-11-habit"]
 words: ["habit","broil","begin"]
 puzzles: [506]
 hashes: ["AAPCACAACACCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["AAPCA"]
 shifts: ["hlorx"]
 state: {
   "boardState": [

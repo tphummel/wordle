@@ -5,6 +5,7 @@ tags: []
 words: ["peril","snout","munch","chunk"]
 puzzles: [298]
 hashes: ["AAAAAAPAPAAPPPPCCCCCXXXXXXXXXX"]
+firsthashes: ["AAAAA"]
 shifts: ["iocwu"]
 state: {
   "boardState": [

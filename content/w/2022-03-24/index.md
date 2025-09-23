@@ -5,6 +5,7 @@ tags: []
 words: ["aisle","chest"]
 puzzles: [278]
 hashes: ["AAPAPCCCCCXXXXXXXXXXXXXXXXXXXX"]
+firsthashes: ["AAPAP"]
 shifts: ["iombd"]
 state: {
   "boardState": [

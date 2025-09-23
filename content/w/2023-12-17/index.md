@@ -9,6 +9,7 @@ openers: ["point"]
 middlers: ["snore","clown"]
 puzzles: [911]
 hashes: ["APAPAAPPAAPAPACCCCCCXXXXXXXXXX"]
+firsthashes: ["APAPA"]
 shifts: ["hhkxx"]
 state: {
   "boardState": [

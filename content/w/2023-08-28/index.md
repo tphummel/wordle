@@ -9,6 +9,7 @@ openers: ["ocean"]
 middlers: ["bride","grime","prize"]
 puzzles: [800]
 hashes: ["AAPAAACCACACCACACCACCCCCCXXXXX"]
+firsthashes: ["AAPAA"]
 shifts: ["cyqco"]
 state: {
   "boardState": [

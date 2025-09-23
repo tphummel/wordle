@@ -9,6 +9,7 @@ openers: ["chore"]
 middlers: ["sting","spill","skivy"]
 puzzles: [1150]
 hashes: ["AAAAACACAACACAACCCAACCCCCXXXXX"]
+firsthashes: ["AAAAA"]
 shifts: ["yrqop"]
 state: {
   "puzzleDate": "2024-08-12",

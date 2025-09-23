@@ -8,6 +8,7 @@ openers: ["orate"]
 middlers: ["algae"]
 puzzles: [596]
 hashes: ["AAPACPAAACCCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["AAPAC"]
 shifts: ["jhvlo"]
 state: {
   "boardState": [

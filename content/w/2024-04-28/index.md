@@ -9,6 +9,7 @@ openers: ["style"]
 middlers: ["crave","gripe","probe"]
 puzzles: [1044]
 hashes: ["AAAACACAACACAPCCCAACCCCCCXXXXX"]
+firsthashes: ["AAAAC"]
 shifts: ["vycwo"]
 state: {
   "boardState": [

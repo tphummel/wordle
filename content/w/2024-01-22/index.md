@@ -9,6 +9,7 @@ openers: ["stone"]
 middlers: ["cheat"]
 puzzles: [947]
 hashes: ["APAAPAACCPCCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["APAAP"]
 shifts: ["zdmju"]
 state: {
   "boardState": [

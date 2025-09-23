@@ -9,6 +9,7 @@ openers: ["flame"]
 middlers: ["shove","those","chose"]
 puzzles: [1413]
 hashes: ["AAAACPCCACACCCCACCCCCCCCCXXXXX"]
+firsthashes: ["AAAAC"]
 shifts: ["cowbo"]
 state: {
   "puzzleDate": "2025-05-02",

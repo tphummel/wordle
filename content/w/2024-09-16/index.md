@@ -9,6 +9,7 @@ openers: ["chain"]
 middlers: ["hound"]
 puzzles: [1185]
 hashes: ["APAAPCCAPACCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["APAAP"]
 shifts: ["nvvni"]
 state: {
   "puzzleDate": "2024-09-16",

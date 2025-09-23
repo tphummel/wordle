@@ -9,6 +9,7 @@ openers: ["plain"]
 middlers: ["siren","given"]
 puzzles: [1454]
 hashes: ["AAAPCACACCACPCCCCCCCXXXXXXXXXX"]
+firsthashes: ["AAAPC"]
 shifts: ["bpfnx"]
 state: {
   "puzzleDate": "2025-06-12",

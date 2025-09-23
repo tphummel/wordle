@@ -9,6 +9,7 @@ openers: ["steam"]
 middlers: ["mound","bumpy"]
 puzzles: [1076]
 hashes: ["AAAAPPAPAAACCACCCCCCXXXXXXXXXX"]
+firsthashes: ["AAAAP"]
 shifts: ["mbuvi"]
 state: {
   "puzzleDate": "2024-05-30",

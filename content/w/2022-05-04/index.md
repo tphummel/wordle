@@ -5,6 +5,7 @@ tags: ["interesting"]
 words: ["mouse","train"]
 puzzles: [319]
 hashes: ["AAAAACCCCCXXXXXXXXXXXXXXXXXXXX"]
+firsthashes: ["AAAAA"]
 shifts: ["zyirx"]
 state: {
   "boardState": [

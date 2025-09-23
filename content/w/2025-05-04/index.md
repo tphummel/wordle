@@ -9,6 +9,7 @@ openers: ["stone"]
 middlers: ["cloth","grout"]
 puzzles: [1415]
 hashes: ["APCAAAACPAACCCCCCCCCXXXXXXXXXX"]
+firsthashes: ["APCAA"]
 shifts: ["zywdd"]
 state: {
   "puzzleDate": "2025-05-04",

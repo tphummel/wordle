@@ -8,6 +8,7 @@ openers: ["snack"]
 middlers: ["chair"]
 puzzles: [693]
 hashes: ["AAPPAPAPCPCCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["AAPPA"]
 shifts: ["gjzrn"]
 state: {
   "boardState": [

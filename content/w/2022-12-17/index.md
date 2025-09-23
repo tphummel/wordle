@@ -6,6 +6,7 @@ contests: ["2022-12-ratio"]
 words: ["ratio","score","chord"]
 puzzles: [546]
 hashes: ["PAAAPAPCCACCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["PAAAP"]
 shifts: ["iowan"]
 state: {
   "boardState": [

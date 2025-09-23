@@ -9,6 +9,7 @@ openers: ["psych"]
 middlers: ["steak","stout","sting"]
 puzzles: [948]
 hashes: ["APAAACCAAACCAAACCCAACCCCCXXXXX"]
+firsthashes: ["APAAA"]
 shifts: ["yaquv"]
 state: {
   "boardState": [

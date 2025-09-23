@@ -9,6 +9,7 @@ openers: ["tiger"]
 middlers: ["pinch"]
 puzzles: [747]
 hashes: ["ACAAAACCAACCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["ACAAA"]
 shifts: ["cpvmi"]
 state: {
   "boardState": [

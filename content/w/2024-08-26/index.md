@@ -9,6 +9,7 @@ openers: ["great"]
 middlers: ["teach","plate"]
 puzzles: [1164]
 hashes: ["AAPPPPPCAAAACPCCCCCCXXXXXXXXXX"]
+firsthashes: ["AAPPP"]
 shifts: ["yaito"]
 state: {
   "puzzleDate": "2024-08-26",

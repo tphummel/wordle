@@ -8,6 +8,7 @@ openers: ["lucky"]
 middlers: ["craze","cargo"]
 puzzles: [678]
 hashes: ["AAPAACPPAACPCAACCCCCXXXXXXXXXX"]
+firsthashes: ["AAPAA"]
 shifts: ["ipzlk"]
 state: {
   "boardState": [

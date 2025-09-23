@@ -8,6 +8,7 @@ openers: ["venal"]
 middlers: ["strum"]
 puzzles: [624]
 hashes: ["AAAAAAPAAACCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["AAAAA"]
 shifts: ["zvfrm"]
 state: {
   "boardState": [

@@ -5,6 +5,7 @@ tags: []
 words: ["piano","steam","gaudy","aural","awful"]
 puzzles: [368]
 hashes: ["AAPAAAAAPAAPPAACPAACCCCCCXXXXX"]
+firsthashes: ["AAPAA"]
 shifts: ["gdndv"]
 state: {
   "boardState": [

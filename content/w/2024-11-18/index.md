@@ -9,6 +9,7 @@ openers: ["weird"]
 middlers: ["virus","choir","grain"]
 puzzles: [1248]
 hashes: ["AAPPAAPPAAAAACPACCCACCCCCXXXXX"]
+firsthashes: ["AAPPA"]
 shifts: ["lyirv"]
 state: {
   "puzzleDate": "2024-11-18",

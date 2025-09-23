@@ -9,6 +9,7 @@ openers: ["ratio"]
 middlers: ["sound","choke"]
 puzzles: [1499]
 hashes: ["AAAAPAPAAAACCACCCCCCXXXXXXXXXX"]
+firsthashes: ["AAAAP"]
 shifts: ["cowuo"]
 state: {
   "puzzleDate": "2025-07-27",

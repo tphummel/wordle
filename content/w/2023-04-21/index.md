@@ -8,6 +8,7 @@ openers: ["lucky"]
 middlers: []
 puzzles: [671]
 hashes: ["AAAPPCCCCCXXXXXXXXXXXXXXXXXXXX"]
+firsthashes: ["AAAPP"]
 shifts: ["qhgju"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["while"]
 middlers: ["steak","merry","foyer","buyer"]
 puzzles: [1296]
 hashes: ["AAAAPAAPAAAPPAPAAPCCPAPCCCCCCC"]
+firsthashes: ["AAAAP"]
 shifts: ["ifjnb"]
 state: {
   "puzzleDate": "2025-01-05",

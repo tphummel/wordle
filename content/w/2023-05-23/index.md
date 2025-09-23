@@ -8,6 +8,7 @@ openers: ["igloo"]
 middlers: ["flame","sleet"]
 puzzles: [703]
 hashes: ["AAPAAACAAPACCAACCCCCXXXXXXXXXX"]
+firsthashes: ["AAPAA"]
 shifts: ["ismau"]
 state: {
   "boardState": [

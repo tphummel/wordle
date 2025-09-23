@@ -6,6 +6,7 @@ contests: ["2022-09-honey"]
 words: ["honey","lunar","funds","fungi"]
 puzzles: [439]
 hashes: ["AACAAACCAACCCAACCCCCXXXXXXXXXX"]
+firsthashes: ["AACAA"]
 shifts: ["lbvps"]
 state: {
   "boardState": [

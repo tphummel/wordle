@@ -9,6 +9,7 @@ openers: ["whack"]
 middlers: ["wrest"]
 puzzles: [1471]
 hashes: ["CAAAACAAAPCCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["CAAAA"]
 shifts: ["cpbci"]
 state: {
   "puzzleDate": "2025-06-29",

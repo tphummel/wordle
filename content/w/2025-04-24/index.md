@@ -9,6 +9,7 @@ openers: ["drink"]
 middlers: ["niche","monie"]
 puzzles: [1405]
 hashes: ["AAPPAPPAACAACCCCCCCCXXXXXXXXXX"]
+firsthashes: ["AAPPA"]
 shifts: ["mlvro"]
 state: {
   "puzzleDate": "2025-04-24",

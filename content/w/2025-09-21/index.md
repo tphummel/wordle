@@ -9,6 +9,7 @@ openers: ["trail"]
 middlers: ["pouch","cocky"]
 puzzles: [1555]
 hashes: ["AAAAAACAPACCAAACCCCCXXXXXXXXXX"]
+firsthashes: ["AAAAA"]
 shifts: ["ivdnx"]
 state: {
   "puzzleDate": "2025-09-21",

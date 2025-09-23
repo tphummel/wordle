@@ -9,6 +9,7 @@ openers: ["weird"]
 middlers: ["stack","pouch","bunch","lunch","hunch"]
 puzzles: [1460]
 hashes: ["AAAAAAAACAAAPCCACCCCACCCCACCCC"]
+firsthashes: ["AAAAA"]
 shifts: ["sbvlr"]
 solution: "munch"
 state: {

@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["remit","leaky"]
 puzzles: [874]
 hashes: ["AAAAPACAAACCCAACCCCCXXXXXXXXXX"]
+firsthashes: ["AAAAP"]
 shifts: ["rlibr"]
 state: {
   "boardState": [

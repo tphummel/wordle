@@ -6,6 +6,7 @@ contests: ["2022-10-metal"]
 words: ["metal","screw","ebony","envoy","enjoy"]
 puzzles: [478]
 hashes: ["APAAAAAAPACAPPCCCACCCCCCCXXXXX"]
+firsthashes: ["APAAA"]
 shifts: ["kurxi"]
 state: {
   "boardState": [

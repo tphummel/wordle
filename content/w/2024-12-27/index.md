@@ -9,6 +9,7 @@ openers: ["slack"]
 middlers: ["drawn"]
 puzzles: [1287]
 hashes: ["AACAAACCACCCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["AACAA"]
 shifts: ["myirx"]
 state: {
   "puzzleDate": "2024-12-27",

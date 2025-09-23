@@ -9,6 +9,7 @@ openers: ["great"]
 middlers: ["torch"]
 puzzles: [1391]
 hashes: ["APAAPCPCAACCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["APAAP"]
 shifts: ["zbzky"]
 state: {
   "puzzleDate": "2025-04-10",

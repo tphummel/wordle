@@ -9,6 +9,7 @@ openers: ["sound"]
 middlers: ["worry","forth","morph"]
 puzzles: [1132]
 hashes: ["ACAAAACCAAACCACACCPCCCCCCXXXXX"]
+firsthashes: ["ACAAA"]
 shifts: ["vvzlr"]
 state: {
   "puzzleDate": "2024-07-25",

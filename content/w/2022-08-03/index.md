@@ -5,6 +5,7 @@ tags: []
 words: ["third","cloth","month","south","youth"]
 puzzles: [410]
 hashes: ["PPAAAAAPCCACACCACCCCCCCCCXXXXX"]
+firsthashes: ["PPAAA"]
 shifts: ["evccr"]
 state: {
   "boardState": [

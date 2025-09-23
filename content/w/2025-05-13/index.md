@@ -9,6 +9,7 @@ openers: ["guide"]
 middlers: ["stoke","flame","crane","brave","heare"]
 puzzles: [1424]
 hashes: ["AAAACAAAACAACACAPCACAPCACAACCC"]
+firsthashes: ["AAAAC"]
 shifts: ["gdiao"]
 state: {
   "puzzleDate": "2025-05-13",

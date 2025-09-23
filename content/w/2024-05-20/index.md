@@ -9,6 +9,7 @@ openers: ["style"]
 middlers: ["peach","creed"]
 puzzles: [1066]
 hashes: ["AAAAPAPAPAPPACACCCCCXXXXXXXXXX"]
+firsthashes: ["AAAAP"]
 shifts: ["tpknb"]
 state: {
   "puzzleDate": "2024-05-20",

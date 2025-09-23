@@ -5,6 +5,7 @@ tags: []
 words: ["thing","cleat","party","pasty","patty"]
 puzzles: [416]
 hashes: ["PAAAAAAAPPCCACCCCACCCCCCCXXXXX"]
+firsthashes: ["PAAAA"]
 shifts: ["vhbci"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["group"]
 middlers: ["crazy"]
 puzzles: [1154]
 hashes: ["ACAAAPCCAACCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["ACAAA"]
 shifts: ["hyilo"]
 state: {
   "puzzleDate": "2024-08-16",

@@ -9,6 +9,7 @@ openers: ["evict"]
 middlers: ["shear","quell","dweeb"]
 puzzles: [1408]
 hashes: ["PAAAAAACAAAACAAPPCPACCCCCXXXXX"]
+firsthashes: ["PAAAA"]
 shifts: ["clmmi"]
 state: {
   "puzzleDate": "2025-04-27",

@@ -9,6 +9,7 @@ openers: ["scout"]
 middlers: ["gorge","doily","dooly"]
 puzzles: [1101]
 hashes: ["AAPAAACAAACCACCCCACCCCCCCXXXXX"]
+firsthashes: ["AAPAA"]
 shifts: ["jvtui"]
 state: {
   "puzzleDate": "2024-06-24",

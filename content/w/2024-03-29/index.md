@@ -9,6 +9,7 @@ openers: ["style"]
 middlers: ["whelp","fella"]
 puzzles: [1014]
 hashes: ["AAACPAAPCAACACPCCCCCXXXXXXXXXX"]
+firsthashes: ["AAACP"]
 shifts: ["xliuw"]
 state: {
   "boardState": [

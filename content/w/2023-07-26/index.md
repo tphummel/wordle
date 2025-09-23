@@ -9,6 +9,7 @@ openers: ["tiger"]
 middlers: ["trace"]
 puzzles: [767]
 hashes: ["PAAPPPPCAPCCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["PAAPP"]
 shifts: ["nliad"]
 state: {
   "boardState": [

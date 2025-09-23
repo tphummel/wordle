@@ -9,6 +9,7 @@ openers: ["radio"]
 middlers: ["style","stump","stunk","stunt"]
 puzzles: [1012]
 hashes: ["AAAAACCAAACCCAACCCCACCCCACCCCC"]
+firsthashes: ["AAAAA"]
 shifts: ["yacwq"]
 state: {
   "boardState": [

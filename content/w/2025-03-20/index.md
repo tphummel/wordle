@@ -9,6 +9,7 @@ openers: ["juice"]
 middlers: ["skate","paste","haste","taste","waste"]
 puzzles: [1370]
 hashes: ["AAAACPAPCCACCCCACCCCACCCCACCCC"]
+firsthashes: ["AAAAC"]
 shifts: ["hhaco"]
 state: {
   "puzzleDate": "2025-03-20",

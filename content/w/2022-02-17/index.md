@@ -63,6 +63,7 @@ stats:
 puzzles:
   - 243
 hashes: ["AAPPAAPCAAAACACCCCCCXXXXXXXXXX"]
+firsthashes: ["AAPPA"]
 shifts: ["yoito"]
 aliases:
   - /w/243/

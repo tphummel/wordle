@@ -63,6 +63,7 @@ stats:
 puzzles:
   - 271
 hashes: ["AAAPAAPAACAAPACCCCCCXXXXXXXXXX"]
+firsthashes: ["AAAPA"]
 shifts: ["svdro"]
 aliases:
   - /w/271/

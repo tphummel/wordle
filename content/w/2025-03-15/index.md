@@ -9,6 +9,7 @@ openers: ["frown"]
 middlers: ["speak","death","evade","badge"]
 puzzles: [1365]
 hashes: ["AAAAAAAPPAPPPAAAAPPCACCACCCCCC"]
+firsthashes: ["AAAAA"]
 shifts: ["rhluo"]
 state: {
   "puzzleDate": "2025-03-15",

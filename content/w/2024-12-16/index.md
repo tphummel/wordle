@@ -9,6 +9,7 @@ openers: ["slice"]
 middlers: ["trash"]
 puzzles: [1276]
 hashes: ["PAAAAPACCACCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["PAAAA"]
 shifts: ["hvibd"]
 state: {
   "puzzleDate": "2024-12-16",

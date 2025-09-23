@@ -50,6 +50,7 @@ stats: {}
 puzzles:
   - 172
 hashes: ["PAAAAAPPAAACCCCCCCCCXXXXXXXXXX"]
+firsthashes: ["PAAAA"]
 shifts: ["hymju"]
 aliases:
   - /w/172/

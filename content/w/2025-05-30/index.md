@@ -9,6 +9,7 @@ openers: ["choir"]
 middlers: ["point","olive","guido","adios"]
 puzzles: [1441]
 hashes: ["AAPPAAPCAAPACAAAACPPACCCACCCCC"]
+firsthashes: ["AAPPA"]
 shifts: ["okqxw"]
 state: {
   "puzzleDate": "2025-05-30",

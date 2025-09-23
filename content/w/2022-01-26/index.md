@@ -45,6 +45,7 @@ stats: {}
 puzzles:
   - 221
 hashes: ["AAAPAPCAAACCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["AAAPA"]
 shifts: ["coilu"]
 aliases:
   - /w/221/

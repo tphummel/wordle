@@ -5,6 +5,7 @@ tags: []
 words: ["track","blown","sweep","weave","wedge"]
 puzzles: [391]
 hashes: ["AAAAAAAAPAAPPPACCAACCCCCCXXXXX"]
+firsthashes: ["AAAAA"]
 shifts: ["cllpo"]
 state: {
   "boardState": [

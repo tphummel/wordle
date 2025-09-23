@@ -9,6 +9,7 @@ openers: ["audio"]
 middlers: ["story"]
 puzzles: [1467]
 hashes: ["AAAAPAAPACCCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["AAAAP"]
 shifts: ["ivuoi"]
 state: {
   "puzzleDate": "2025-06-25",

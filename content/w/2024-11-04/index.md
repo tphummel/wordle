@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["ninth","dingy","pinky","mincy","linky"]
 puzzles: [1234]
 hashes: ["AACAAACCAAACCAPACCAPACCAPPCCAP"]
+firsthashes: ["AACAA"]
 shifts: ["bpvhv"]
 state: {
   "puzzleDate": "2024-11-04",

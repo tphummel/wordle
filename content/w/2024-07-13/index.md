@@ -9,6 +9,7 @@ openers: ["steak"]
 middlers: ["teach"]
 puzzles: [1120]
 hashes: ["APPPAPPCCACCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["APPPA"]
 shifts: ["kuild"]
 state: {
   "puzzleDate": "2024-07-13",

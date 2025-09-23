@@ -8,6 +8,7 @@ openers: ["below"]
 middlers: ["tread","farer"]
 puzzles: [686]
 hashes: ["APAAAAPPPAAPACCCCCCCXXXXXXXXXX"]
+firsthashes: ["APAAA"]
 shifts: ["guonb"]
 state: {
   "boardState": [

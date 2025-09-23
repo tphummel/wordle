@@ -5,6 +5,7 @@ tags: []
 words: ["thing","smock","pokey","poker"]
 puzzles: [422]
 hashes: ["AAAAAAAPAPCCCCACCCCCXXXXXXXXXX"]
+firsthashes: ["AAAAA"]
 shifts: ["vvsnb"]
 state: {
   "boardState": [

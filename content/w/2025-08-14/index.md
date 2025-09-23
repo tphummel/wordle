@@ -9,6 +9,7 @@ openers: ["chair"]
 middlers: ["sound","kneel"]
 puzzles: [1517]
 hashes: ["AAAAAAAAPACCCACCCCCCXXXXXXXXXX"]
+firsthashes: ["AAAAA"]
 shifts: ["qumuv"]
 state: {
   "puzzleDate": "2025-08-14",

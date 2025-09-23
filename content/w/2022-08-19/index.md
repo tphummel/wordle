@@ -5,6 +5,7 @@ tags: []
 words: ["thing","shrug"]
 puzzles: [426]
 hashes: ["ACAACCCCCCXXXXXXXXXXXXXXXXXXXX"]
+firsthashes: ["ACAAC"]
 shifts: ["yozdq"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["lurch","quack"]
 puzzles: [784]
 hashes: ["ACACAACACACCACCCCCCCXXXXXXXXXX"]
+firsthashes: ["ACACA"]
 shifts: ["wbqlu"]
 state: {
   "boardState": [

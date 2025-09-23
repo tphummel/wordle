@@ -9,6 +9,7 @@ openers: ["radio"]
 middlers: ["wordy"]
 puzzles: [1491]
 hashes: ["PAPAPPPPPACCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["PAPAP"]
 shifts: ["ydwan"]
 state: {
   "puzzleDate": "2025-07-19",

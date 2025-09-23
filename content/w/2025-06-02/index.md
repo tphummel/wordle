@@ -9,6 +9,7 @@ openers: ["flame"]
 middlers: ["threw","creep"]
 puzzles: [1444]
 hashes: ["AAAAPAAPCAACCCPCCCCCXXXXXXXXXX"]
+firsthashes: ["AAAAP"]
 shifts: ["vymnx"]
 state: {
   "puzzleDate": "2025-06-02",

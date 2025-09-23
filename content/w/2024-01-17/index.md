@@ -9,6 +9,7 @@ openers: ["igloo"]
 middlers: ["sound","pouch"]
 puzzles: [942]
 hashes: ["AAAPAACCAAACCPACCCCCXXXXXXXXXX"]
+firsthashes: ["AAAPA"]
 shifts: ["ivcad"]
 state: {
   "boardState": [

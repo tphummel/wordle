@@ -63,6 +63,7 @@ stats:
 puzzles:
   - 251
 hashes: ["AAAAAAAACAACACCCCCCCXXXXXXXXXX"]
+firsthashes: ["AAAAA"]
 shifts: ["bpdrn"]
 aliases:
   - /w/251/

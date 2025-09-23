@@ -9,6 +9,7 @@ openers: ["heart"]
 middlers: ["print","roust"]
 puzzles: [898]
 hashes: ["AAAPCAPAACPCACCCCCCCXXXXXXXXXX"]
+firsthashes: ["AAAPC"]
 shifts: ["cvzbd"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["score"]
 middlers: ["regal","ripen","rider"]
 puzzles: [1323]
 hashes: ["AAAPPCPAAACCACACCACACCCCCXXXXX"]
+firsthashes: ["AAAPP"]
 shifts: ["xpdnd"]
 state: {
   "puzzleDate": "2025-02-01",

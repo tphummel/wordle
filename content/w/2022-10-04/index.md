@@ -6,6 +6,7 @@ contests: ["2022-10-metal"]
 words: ["metal","boing","bogus","bough"]
 puzzles: [472]
 hashes: ["AAAAACCAAPCCPPACCCCCXXXXXXXXXX"]
+firsthashes: ["AAAAA"]
 shifts: ["hvcpr"]
 state: {
   "boardState": [

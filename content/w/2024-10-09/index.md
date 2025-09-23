@@ -9,6 +9,7 @@ openers: ["chart"]
 middlers: ["smile","mound"]
 puzzles: [1208]
 hashes: ["AAAAAAPAAACCAAACCCCCXXXXXXXXXX"]
+firsthashes: ["AAAAA"]
 shifts: ["svuvi"]
 state: {
   "puzzleDate": "2024-10-09",

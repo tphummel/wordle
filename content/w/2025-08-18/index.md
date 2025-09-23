@@ -9,6 +9,7 @@ openers: ["place"]
 middlers: ["shore"]
 puzzles: [1521]
 hashes: ["AAAACPAAACCCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["AAAAC"]
 shifts: ["ozado"]
 state: {
   "puzzleDate": "2025-08-18",

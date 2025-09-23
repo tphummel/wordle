@@ -9,6 +9,7 @@ openers: ["eight"]
 middlers: ["diver"]
 puzzles: [1198]
 hashes: ["PCAAAPCACCCCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["PCAAA"]
 shifts: ["xplnb"]
 state: {
   "puzzleDate": "2024-09-29",

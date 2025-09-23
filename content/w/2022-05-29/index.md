@@ -5,6 +5,7 @@ tags: []
 words: ["humor","pluot","undos","bayou"]
 puzzles: [344]
 hashes: ["APACAAAPCAPAACACCCCCXXXXXXXXXX"]
+firsthashes: ["APACA"]
 shifts: ["hhgxe"]
 state: {
   "boardState": [

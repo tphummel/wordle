@@ -5,6 +5,7 @@ tags: []
 words: ["mouse","shoal","swoop","stock","story"]
 puzzles: [317]
 hashes: ["APAPACACAACACAACCCAACCCCCXXXXX"]
+firsthashes: ["APAPA"]
 shifts: ["yawai"]
 state: {
   "boardState": [

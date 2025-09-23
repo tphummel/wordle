@@ -9,6 +9,7 @@ openers: ["radio"]
 middlers: ["shame"]
 puzzles: [972]
 hashes: ["APAAACPCAACCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["APAAA"]
 shifts: ["yaibr"]
 state: {
   "boardState": [

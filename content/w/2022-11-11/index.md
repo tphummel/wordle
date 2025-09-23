@@ -6,6 +6,7 @@ contests: ["2022-11-habit"]
 words: ["habit","plane","laser","medal"]
 puzzles: [510]
 hashes: ["APAAAAPPAPPPAPACCCCCXXXXXXXXXX"]
+firsthashes: ["APAAA"]
 shifts: ["slljv"]
 state: {
   "boardState": [

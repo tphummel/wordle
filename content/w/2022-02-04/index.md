@@ -40,6 +40,7 @@ stats: {}
 puzzles:
   - 230
 hashes: ["PAAACCCCCCXXXXXXXXXXXXXXXXXXXX"]
+firsthashes: ["PAAAC"]
 shifts: ["vsmjd"]
 aliases:
   - /w/230/

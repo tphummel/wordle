@@ -9,6 +9,7 @@ openers: ["radio"]
 middlers: ["shake","slate","spate"]
 puzzles: [988]
 hashes: ["APAAACACACCACCCCACCCCCCCCXXXXX"]
+firsthashes: ["APAAA"]
 shifts: ["yaico"]
 state: {
   "boardState": [

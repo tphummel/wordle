@@ -9,6 +9,7 @@ openers: ["scout"]
 middlers: ["crate"]
 puzzles: [1245]
 hashes: ["APAAPPAPPACCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["APAAP"]
 shifts: ["zhkti"]
 state: {
   "puzzleDate": "2024-11-15",

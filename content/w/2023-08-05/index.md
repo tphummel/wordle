@@ -9,6 +9,7 @@ openers: ["topaz"]
 middlers: ["radio","adobe"]
 puzzles: [777]
 hashes: ["APAPAAPPAPCPCACCCCCCXXXXXXXXXX"]
+firsthashes: ["APAPA"]
 shifts: ["guwmo"]
 state: {
   "boardState": [

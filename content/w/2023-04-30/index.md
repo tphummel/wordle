@@ -8,6 +8,7 @@ openers: ["lucky"]
 middlers: ["trail","glade","alamo"]
 puzzles: [680]
 hashes: ["PAAAAAACAPACCAAPCCAACCCCCXXXXX"]
+firsthashes: ["PAAAA"]
 shifts: ["vsiik"]
 state: {
   "boardState": [

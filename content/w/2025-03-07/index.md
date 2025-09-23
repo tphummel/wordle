@@ -9,6 +9,7 @@ openers: ["drive"]
 middlers: ["group"]
 puzzles: [1357]
 hashes: ["ACAAAACCACCCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["ACAAA"]
 shifts: ["zywxz"]
 state: {
   "puzzleDate": "2025-03-07",

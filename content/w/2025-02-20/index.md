@@ -9,6 +9,7 @@ openers: ["ingot"]
 middlers: ["louse"]
 puzzles: [1342]
 hashes: ["AAAPAACAAACCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["AAAPA"]
 shifts: ["xvilr"]
 state: {
   "puzzleDate": "2025-02-20",

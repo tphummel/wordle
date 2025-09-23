@@ -5,6 +5,7 @@ tags: []
 words: ["mouse","train","flack","black"]
 puzzles: [295]
 hashes: ["AAAAAAACAAACCCCCCCCCXXXXXXXXXX"]
+firsthashes: ["AAAAA"]
 shifts: ["hsilu"]
 state: {
   "boardState": [

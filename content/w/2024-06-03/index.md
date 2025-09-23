@@ -9,6 +9,7 @@ openers: ["dream"]
 middlers: ["rainy","chart"]
 puzzles: [1080]
 hashes: ["APAPAPPAAAAACCPCCCCCXXXXXXXXXX"]
+firsthashes: ["APAPA"]
 shifts: ["yaiau"]
 state: {
   "puzzleDate": "2024-06-03",

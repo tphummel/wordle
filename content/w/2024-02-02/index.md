@@ -9,6 +9,7 @@ openers: ["psych"]
 middlers: ["crown","climb","cleat"]
 puzzles: [958]
 hashes: ["AAAPACAAAACCAAACCCACCCCCCXXXXX"]
+firsthashes: ["AAAPA"]
 shifts: ["ismod"]
 state: {
   "boardState": [

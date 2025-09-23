@@ -8,6 +8,7 @@ openers: ["orate"]
 middlers: ["cleat"]
 puzzles: [611]
 hashes: ["AAPPPAACCCCCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["AAPPP"]
 shifts: ["ydmjd"]
 state: {
   "boardState": [

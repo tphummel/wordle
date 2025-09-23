@@ -9,6 +9,7 @@ openers: ["swing"]
 middlers: ["child","brick"]
 puzzles: [1543]
 hashes: ["AACAAPACAAACCCCCCCCCXXXXXXXXXX"]
+firsthashes: ["AACAA"]
 shifts: ["zyqlu"]
 state: {
   "puzzleDate": "2025-09-09",

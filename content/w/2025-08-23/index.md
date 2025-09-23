@@ -9,6 +9,7 @@ openers: ["bonus"]
 middlers: ["ounce"]
 puzzles: [1526]
 hashes: ["APPPAPPPAACCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["APPPA"]
 shifts: ["auqxx"]
 state: {
   "puzzleDate": "2025-08-23",

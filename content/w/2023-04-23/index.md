@@ -8,6 +8,7 @@ openers: ["lucky"]
 middlers: ["pause","opium","unpin"]
 puzzles: [673]
 hashes: ["APAAAPAPAAAPPPACCPCACCCCCXXXXX"]
+firsthashes: ["APAAA"]
 shifts: ["auhrz"]
 state: {
   "boardState": [

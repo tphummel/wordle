@@ -9,6 +9,7 @@ openers: ["topaz"]
 middlers: ["ounce","slosh","droid","groom"]
 puzzles: [779]
 hashes: ["APAAAPAAAAAACAAACCAAACCCACCCCC"]
+firsthashes: ["APAAA"]
 shifts: ["hywxu"]
 state: {
   "boardState": [

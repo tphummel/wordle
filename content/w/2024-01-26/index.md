@@ -9,6 +9,7 @@ openers: ["psych"]
 middlers: ["trade","woman","quota","avoid"]
 puzzles: [951]
 hashes: ["AAAAAAAPAAAPAPAAACAPCACAACCCCC"]
+firsthashes: ["AAAAA"]
 shifts: ["gswxp"]
 state: {
   "boardState": [

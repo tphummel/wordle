@@ -5,6 +5,7 @@ tags: []
 words: ["tiger","bulge","badge"]
 puzzles: [321]
 hashes: ["AAPPACAACCCCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["AAPPA"]
 shifts: ["hhlpo"]
 state: {
   "boardState": [

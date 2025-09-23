@@ -9,6 +9,7 @@ openers: ["chair"]
 middlers: ["flash","staph"]
 puzzles: [1329]
 hashes: ["APCAAAACPCCPCACCCCCCXXXXXXXXXX"]
+firsthashes: ["APCAA"]
 shifts: ["ydicr"]
 state: {
   "puzzleDate": "2025-02-07",

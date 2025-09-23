@@ -50,6 +50,7 @@ stats: {}
 puzzles:
   - 229
 hashes: ["AAAPAPAAACACCCCCCCCCXXXXXXXXXX"]
+firsthashes: ["AAAPA"]
 shifts: ["yoian"]
 aliases:
   - /w/229/

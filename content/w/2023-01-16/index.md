@@ -6,6 +6,7 @@ contests: ["2023-01-guide"]
 words: ["guide","north","broom","cross","frock"]
 puzzles: [576]
 hashes: ["AAAAAAPPAAACCAAPCCAACCCCCXXXXX"]
+firsthashes: ["AAAAA"]
 shifts: ["lywlu"]
 state: {
   "boardState": [

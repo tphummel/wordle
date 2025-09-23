@@ -5,6 +5,7 @@ tags: []
 words: ["honey","dream","feral","rebar","recap"]
 puzzles: [459]
 hashes: ["AAAPAAPPCAACPCACCACACCCCCXXXXX"]
+firsthashes: ["AAAPA"]
 shifts: ["xlkjz"]
 state: {
   "boardState": [

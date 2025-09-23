@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: []
 puzzles: [846]
 hashes: ["APPPCCCCCCXXXXXXXXXXXXXXXXXXXX"]
+firsthashes: ["APPPC"]
 shifts: ["aukuo"]
 state: {
   "boardState": [

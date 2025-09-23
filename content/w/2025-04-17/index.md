@@ -9,6 +9,7 @@ openers: ["slice"]
 middlers: ["strap","stout"]
 puzzles: [1398]
 hashes: ["CAAAACCAAACCCAACCCCCXXXXXXXXXX"]
+firsthashes: ["CAAAA"]
 shifts: ["yawxn"]
 state: {
   "puzzleDate": "2025-04-17",

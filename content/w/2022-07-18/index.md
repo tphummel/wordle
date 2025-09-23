@@ -5,6 +5,7 @@ tags: []
 words: ["delay","slink","block","flock"]
 puzzles: [394]
 hashes: ["AAPAAACAACACCCCCCCCCXXXXXXXXXX"]
+firsthashes: ["AAPAA"]
 shifts: ["lswlu"]
 state: {
   "boardState": [

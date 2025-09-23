@@ -8,6 +8,7 @@ openers: ["plaza"]
 middlers: ["amber"]
 puzzles: [681]
 hashes: ["AAPAAPAAPPCCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["AAPAA"]
 shifts: ["xhvpo"]
 state: {
   "boardState": [

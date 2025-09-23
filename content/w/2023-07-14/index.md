@@ -9,6 +9,7 @@ openers: ["tiger"]
 middlers: ["sieve","yield"]
 puzzles: [755]
 hashes: ["ACAPAACCAAACCACCCCCCXXXXXXXXXX"]
+firsthashes: ["ACAPA"]
 shifts: ["lpmwn"]
 state: {
   "boardState": [

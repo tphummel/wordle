@@ -9,6 +9,7 @@ openers: ["audio"]
 middlers: ["sauce","haute"]
 puzzles: [1462]
 hashes: ["PPAAAACCACACCPCCCCCCXXXXXXXXXX"]
+firsthashes: ["PPAAA"]
 shifts: ["zhcyo"]
 state: {
   "puzzleDate": "2025-06-20",

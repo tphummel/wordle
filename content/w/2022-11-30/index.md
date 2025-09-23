@@ -6,6 +6,7 @@ contests: ["2022-11-habit"]
 words: ["habit","tumor","setup","stung","stuck","study"]
 puzzles: [529]
 hashes: ["AAAAPPPAAACAPPACCCAACCCAACCCCC"]
+firsthashes: ["AAAAP"]
 shifts: ["yacmi"]
 state: {
   "boardState": [

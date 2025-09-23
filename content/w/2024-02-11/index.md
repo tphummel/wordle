@@ -9,6 +9,7 @@ openers: ["radio"]
 middlers: ["cheer","lever","fever","sever"]
 puzzles: [967]
 hashes: ["PAAAAAAPCCACCCCACCCCACCCCCCCCC"]
+firsthashes: ["PAAAA"]
 shifts: ["tldnb"]
 state: {
   "boardState": [

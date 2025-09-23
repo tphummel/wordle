@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["cheat","cream"]
 puzzles: [816]
 hashes: ["AAAPPCACCACPCCACCCCCXXXXXXXXXX"]
+firsthashes: ["AAAPP"]
 shifts: ["ismjb"]
 state: {
   "boardState": [

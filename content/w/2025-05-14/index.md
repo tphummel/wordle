@@ -9,6 +9,7 @@ openers: ["guide"]
 middlers: ["slang","congo"]
 puzzles: [1425]
 hashes: ["PAAAAAAAPPACCCCCCCCCXXXXXXXXXX"]
+firsthashes: ["PAAAA"]
 shifts: ["hvvpy"]
 state: {
   "puzzleDate": "2025-05-14",

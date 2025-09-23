@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["tread","dweeb"]
 puzzles: [810]
 hashes: ["AAAAPAACAPCCCAACCCCCXXXXXXXXXX"]
+firsthashes: ["AAAAP"]
 shifts: ["jdmuv"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["metro"]
 middlers: ["swear","crane","barge"]
 puzzles: [945]
 hashes: ["APAPAAAPPPAPPACACCCCCCCCCXXXXX"]
+firsthashes: ["APAPA"]
 shifts: ["rhzpo"]
 state: {
   "boardState": [

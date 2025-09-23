@@ -6,6 +6,7 @@ contests: ["2022-11-habit"]
 words: ["habit","dream","clean"]
 puzzles: [525]
 hashes: ["APAAAAACCACCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["APAAA"]
 shifts: ["ismjx"]
 state: {
   "boardState": [

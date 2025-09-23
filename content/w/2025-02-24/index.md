@@ -9,6 +9,7 @@ openers: ["shine"]
 middlers: ["plant","clank","bland"]
 puzzles: [1346]
 hashes: ["AAACAACCCAACCCAACCCCCCCCCXXXXX"]
+firsthashes: ["AAACA"]
 shifts: ["msiwn"]
 state: {
   "puzzleDate": "2025-02-24",

@@ -9,6 +9,7 @@ openers: ["ocean"]
 middlers: ["crate"]
 puzzles: [804]
 hashes: ["APPPAPACACCCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["APPPA"]
 shifts: ["ywilo"]
 state: {
   "boardState": [

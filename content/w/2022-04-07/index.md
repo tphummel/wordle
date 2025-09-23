@@ -5,6 +5,7 @@ tags: []
 words: ["mouse","board","aorta","foray"]
 puzzles: [292]
 hashes: ["ACAAAACPPAPCCAACCCCCXXXXXXXXXX"]
+firsthashes: ["ACAAA"]
 shifts: ["lvzji"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["sugar"]
 middlers: ["cleft"]
 puzzles: [1307]
 hashes: ["AAAAAACAPCCCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["AAAAA"]
 shifts: ["lsqwd"]
 state: {
   "puzzleDate": "2025-01-16",

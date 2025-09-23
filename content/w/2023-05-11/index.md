@@ -8,6 +8,7 @@ openers: ["ethic"]
 middlers: ["group","broad","brown"]
 puzzles: [691]
 hashes: ["AAAAAACCAACCCAACCCAACCCCCXXXXX"]
+firsthashes: ["AAAAA"]
 shifts: ["hywxw"]
 state: {
   "boardState": [

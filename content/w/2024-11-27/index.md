@@ -9,6 +9,7 @@ openers: ["eight"]
 middlers: ["groan"]
 puzzles: [1257]
 hashes: ["AAPAAPAAPPCCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["AAPAA"]
 shifts: ["ysiwq"]
 state: {
   "puzzleDate": "2024-11-27",

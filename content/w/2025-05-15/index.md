@@ -9,6 +9,7 @@ openers: ["scout"]
 middlers: ["plane","freak","gamer","rager"]
 puzzles: [1426]
 hashes: ["AAAAAAAPAPAPPPAPCACCACCCCACCCC"]
+firsthashes: ["AAAAA"]
 shifts: ["khonb"]
 state: {
   "puzzleDate": "2025-05-15",

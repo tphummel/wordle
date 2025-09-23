@@ -9,6 +9,7 @@ openers: ["slime"]
 middlers: ["champ","yummy"]
 puzzles: [1409]
 hashes: ["AAACAAAACAACCCCCCCCCXXXXXXXXXX"]
+firsthashes: ["AAACA"]
 shifts: ["jbuvi"]
 state: {
   "puzzleDate": "2025-04-28",

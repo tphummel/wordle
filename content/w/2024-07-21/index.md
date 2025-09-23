@@ -9,6 +9,7 @@ openers: ["pound"]
 middlers: ["space","specs"]
 puzzles: [1128]
 hashes: ["PAAAACCACPCCCCACCCCCXXXXXXXXXX"]
+firsthashes: ["PAAAA"]
 shifts: ["ywmlu"]
 state: {
   "puzzleDate": "2024-07-21",

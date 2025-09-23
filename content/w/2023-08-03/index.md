@@ -9,6 +9,7 @@ openers: ["topaz"]
 middlers: ["patch","paste"]
 puzzles: [775]
 hashes: ["PAPPACCPAACCACACCCCCXXXXXXXXXX"]
+firsthashes: ["PAPPA"]
 shifts: ["vhzci"]
 state: {
   "boardState": [

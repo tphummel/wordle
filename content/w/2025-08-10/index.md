@@ -9,6 +9,7 @@ openers: ["erupt"]
 middlers: ["stoic","tidal","kitty"]
 puzzles: [1513]
 hashes: ["AAAAPAPAPAPCAAAACACCCCCCCXXXXX"]
+firsthashes: ["AAAAP"]
 shifts: ["spvci"]
 state: {
   "puzzleDate": "2025-08-10",

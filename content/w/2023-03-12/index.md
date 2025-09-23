@@ -8,6 +8,7 @@ openers: ["often"]
 middlers: ["trail","girth","mirth"]
 puzzles: [631]
 hashes: ["AAPAAPPAPAACCCCACCCCCCCCCXXXXX"]
+firsthashes: ["AAPAA"]
 shifts: ["hpzcr"]
 state: {
   "boardState": [

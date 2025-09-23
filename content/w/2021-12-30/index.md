@@ -50,6 +50,7 @@ stats: {}
 puzzles:
   - 194
 hashes: ["APCAAAACACAACACCCCCCXXXXXXXXXX"]
+firsthashes: ["APCAA"]
 shifts: ["zywuv"]
 aliases:
   - /w/194/

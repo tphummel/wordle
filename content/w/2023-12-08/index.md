@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["frail","smart","spark"]
 puzzles: [902]
 hashes: ["AAAAAAPCAACACCACPCCACCCCCXXXXX"]
+firsthashes: ["AAAAA"]
 shifts: ["yoiaz"]
 state: {
   "boardState": [

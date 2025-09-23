@@ -9,6 +9,7 @@ openers: ["eight"]
 middlers: ["sleep","sever"]
 puzzles: [1190]
 hashes: ["PAAAACAPCACCCCACCCCCXXXXXXXXXX"]
+firsthashes: ["PAAAA"]
 shifts: ["yldnx"]
 state: {
   "puzzleDate": "2024-09-21",

@@ -9,6 +9,7 @@ openers: ["sound"]
 middlers: ["cream","grift"]
 puzzles: [1503]
 hashes: ["AAAAAACAAAACCPACCCCCXXXXXXXXXX"]
+firsthashes: ["AAAAA"]
 shifts: ["lyquv"]
 state: {
   "puzzleDate": "2025-07-31",

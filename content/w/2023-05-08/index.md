@@ -8,6 +8,7 @@ openers: ["ghoul"]
 middlers: ["lingo"]
 puzzles: [688]
 hashes: ["PAPAPPAAPPCCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["PAPAP"]
 shifts: ["gntxg"]
 state: {
   "boardState": [

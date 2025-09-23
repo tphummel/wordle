@@ -9,6 +9,7 @@ openers: ["weird"]
 middlers: ["track","tromp","trust","truth"]
 puzzles: [1236]
 hashes: ["AAAPACCAAACCAAACCCAACCCAACCCCC"]
+firsthashes: ["AAAPA"]
 shifts: ["zycui"]
 state: {
   "puzzleDate": "2024-11-06",

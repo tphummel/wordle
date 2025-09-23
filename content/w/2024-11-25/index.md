@@ -9,6 +9,7 @@ openers: ["since"]
 middlers: ["trunk","groan","frown"]
 puzzles: [1255]
 hashes: ["AAPAAACAPAACCACACCCCCCCCCXXXXX"]
+firsthashes: ["AAPAA"]
 shifts: ["hywfx"]
 state: {
   "puzzleDate": "2024-11-25",

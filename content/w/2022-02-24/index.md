@@ -68,6 +68,7 @@ stats:
 puzzles:
   - 250
 hashes: ["PAPAAAPAPPACCACACCACCCCCCXXXXX"]
+firsthashes: ["PAPAA"]
 shifts: ["hswto"]
 aliases:
   - /w/250/

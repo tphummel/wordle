@@ -63,6 +63,7 @@ stats:
 puzzles:
   - 255
 hashes: ["AAPAAAAPACPPAACCCCCCXXXXXXXXXX"]
+firsthashes: ["AAPAA"]
 shifts: ["xbxno"]
 aliases:
   - /w/255/

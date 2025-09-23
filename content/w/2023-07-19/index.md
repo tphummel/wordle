@@ -9,6 +9,7 @@ openers: ["tiger"]
 middlers: ["think"]
 puzzles: [760]
 hashes: ["CPAAACAPPACCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["CPAAA"]
 shifts: ["zvvrm"]
 state: {
   "boardState": [

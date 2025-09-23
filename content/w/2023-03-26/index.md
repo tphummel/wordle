@@ -8,6 +8,7 @@ openers: ["acorn"]
 middlers: ["snide"]
 puzzles: [645]
 hashes: ["AAAAPACPACCCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["AAAAP"]
 shifts: ["aubro"]
 state: {
   "boardState": [

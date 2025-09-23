@@ -9,6 +9,7 @@ openers: ["radio"]
 middlers: ["bride"]
 puzzles: [966]
 hashes: ["PAPPAACCPPCCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["PAPPA"]
 shifts: ["lyqnn"]
 state: {
   "boardState": [

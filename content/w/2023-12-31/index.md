@@ -9,6 +9,7 @@ openers: ["point"]
 middlers: ["stare","swath"]
 puzzles: [925]
 hashes: ["AAAAPCPPAACAPCACCCCCXXXXXXXXXX"]
+firsthashes: ["AAAAP"]
 shifts: ["yhtci"]
 state: {
   "boardState": [

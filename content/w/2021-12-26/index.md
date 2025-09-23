@@ -51,6 +51,7 @@ stats: {}
 puzzles:
   - 190
 hashes: ["AAPPAAPPPAAPPPACCCCCXXXXXXXXXX"]
+firsthashes: ["AAPPA"]
 shifts: ["gjcco"]
 aliases:
   - /w/190/

@@ -9,6 +9,7 @@ openers: ["score"]
 middlers: ["flout","booty"]
 puzzles: [1326]
 hashes: ["AACAAAACAPACCCACCCCCXXXXXXXXXX"]
+firsthashes: ["AACAA"]
 shifts: ["zvwcr"]
 state: {
   "puzzleDate": "2025-02-04",

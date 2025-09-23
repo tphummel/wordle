@@ -9,6 +9,7 @@ openers: ["later"]
 middlers: ["toast","chant"]
 puzzles: [806]
 hashes: ["APPAAAACACAACACCCCCCXXXXXXXXXX"]
+firsthashes: ["APPAA"]
 shifts: ["gdird"]
 state: {
   "boardState": [

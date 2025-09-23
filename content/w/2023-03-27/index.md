@@ -8,6 +8,7 @@ openers: ["quiet"]
 middlers: ["punch","nudgy"]
 puzzles: [646]
 hashes: ["ACAAAACPAAPCAPACCCCCXXXXXXXXXX"]
+firsthashes: ["ACAAA"]
 shifts: ["mbiwy"]
 state: {
   "boardState": [

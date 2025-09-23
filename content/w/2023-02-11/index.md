@@ -8,6 +8,7 @@ openers: ["orate"]
 middlers: ["sheep","medic","bendy"]
 puzzles: [602]
 hashes: ["AAAAPAAPAAACPAAPCAPACCCCCXXXXX"]
+firsthashes: ["AAAAP"]
 shifts: ["jljdq"]
 state: {
   "boardState": [

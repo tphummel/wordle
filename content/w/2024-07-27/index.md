@@ -9,6 +9,7 @@ openers: ["group"]
 middlers: ["lucky","quich"]
 puzzles: [1134]
 hashes: ["AAAPAAPCCCGGGGGXXXXXXXXXXXXXXX"]
+firsthashes: ["AAAPA"]
 shifts: ["jvlfp"]
 state: {
   "boardState": [

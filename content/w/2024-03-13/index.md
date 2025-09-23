@@ -9,6 +9,7 @@ openers: ["syrup"]
 middlers: ["teach","cabal"]
 puzzles: [998]
 hashes: ["AAAAAAAPPAPAACCCCCCCXXXXXXXXXX"]
+firsthashes: ["AAAAA"]
 shifts: ["rvkjv"]
 state: {
   "boardState": [

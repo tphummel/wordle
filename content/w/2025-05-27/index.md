@@ -9,6 +9,7 @@ openers: ["sugar"]
 middlers: ["storm"]
 puzzles: [1438]
 hashes: ["CAAAPCPCCACCCCCXXXXXXXXXXXXXXX"]
+firsthashes: ["CAAAP"]
 shifts: ["ywwad"]
 state: {
   "puzzleDate": "2025-05-27",

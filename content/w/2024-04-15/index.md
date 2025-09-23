@@ -9,6 +9,7 @@ openers: ["style"]
 middlers: ["grief","piece","tepid"]
 puzzles: [1031]
 hashes: ["AAAAPAAPPAPPPAAAPPCACCCCCXXXXX"]
+firsthashes: ["AAAAP"]
 shifts: ["kxcrz"]
 state: {
   "boardState": [

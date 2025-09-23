@@ -9,6 +9,7 @@ openers: ["score"]
 middlers: ["joust","boast"]
 puzzles: [1322]
 hashes: ["PAPAAACACCACCCCCCCCCXXXXXXXXXX"]
+firsthashes: ["PAPAA"]
 shifts: ["zvibd"]
 state: {
   "puzzleDate": "2025-01-31",

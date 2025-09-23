@@ -9,6 +9,7 @@ openers: ["ratio"]
 middlers: ["poach","along","organ"]
 puzzles: [1501]
 hashes: ["APAAPAPPAAPAPAPCAPPACCCCCXXXXX"]
+firsthashes: ["APAAP"]
 shifts: ["utmpk"]
 state: {
   "puzzleDate": "2025-07-29",

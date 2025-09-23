@@ -9,6 +9,7 @@ openers: ["wheat"]
 middlers: ["roast","agist"]
 puzzles: [1090]
 hashes: ["AAAPCAAPCCCPACCCCCCCXXXXXXXXXX"]
+firsthashes: ["AAAPC"]
 shifts: ["guobd"]
 state: {
   "puzzleDate": "2024-06-13",

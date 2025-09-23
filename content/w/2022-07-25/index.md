@@ -5,6 +5,7 @@ tags: []
 words: ["delay","morel","globe","clone","slope","elope"]
 puzzles: [401]
 hashes: ["APPAAAPAPPACCACACCACACCCCCCCCC"]
+firsthashes: ["APPAA"]
 shifts: ["kswyo"]
 state: {
   "boardState": [

@@ -8,6 +8,7 @@ openers: ["orate"]
 middlers: ["black","small","quail"]
 puzzles: [609]
 hashes: ["AACAAAPCAAAACACAACCCCCCCCXXXXX"]
+firsthashes: ["AACAA"]
 shifts: ["gcirv"]
 state: {
   "boardState": [
