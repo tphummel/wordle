@@ -16,7 +16,7 @@
     <td>Last Played</td>
   </tr>
 
-  {{ range .Data.Terms.ByCount.Reverse }}
+  {{ range .Data.Terms.ByCount }}
     {{ $name := .Name }}
     {{ $count := .Count }}
     {{ $first := index (first 1 .Pages.ByDate) 0 }}
