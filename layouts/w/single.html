@@ -85,11 +85,11 @@
     {{ $achievements = $achievements | append (slice $achievement) }}
   {{ end }}
   {{ with (partialCached "all-vowels" $wordle .File.Path) }}
-    {{ $achievement := dict "badge" "🅰️" "report" "all-vowels-guessed.md" "title" "All Vowels Guessed" }}
+    {{ $achievement := dict "badge" "🏆" "report" "all-vowels-guessed.md" "title" "All Vowels Guessed" }}
     {{ $achievements = $achievements | append (slice $achievement) }}
   {{ end }}
   {{ with (partialCached "all-vowels-plus-y" $wordle .File.Path) }}
-    {{ $achievement := dict "badge" "🅾️" "report" "all-vowels-plus-y.md" "title" "All Vowels Plus Y Guessed" }}
+    {{ $achievement := dict "badge" "🥉" "report" "all-vowels-plus-y.md" "title" "All Vowels Plus Y Guessed" }}
     {{ $achievements = $achievements | append (slice $achievement) }}
   {{ end }}
   {{ range (partialCached "single-letter-guesses.html" $wordle .File.Path) }}
