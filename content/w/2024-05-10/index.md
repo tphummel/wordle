@@ -9,6 +9,7 @@ openers: ["style"]
 middlers: ["cheap","raven","weave","zebra"]
 puzzles: [1056]
 hashes: ["AAAAPAAPPAAPAPAACPAAACAACCCCCC"]
+openerHash: ["AAAAP"]
 shifts: ["sllrk"]
 state: {
   "puzzleDate": "2024-05-10",

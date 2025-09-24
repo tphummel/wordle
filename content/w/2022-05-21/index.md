@@ -5,6 +5,7 @@ tags: []
 words: ["amuse","shoal","sitar","scrap"]
 puzzles: [336]
 hashes: ["PAAPACAACACAACPCCCCCXXXXXXXXXX"]
+openerHash: ["PAAPA"]
 shifts: ["yjzjz"]
 state: {
   "boardState": [

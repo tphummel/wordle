@@ -9,6 +9,7 @@ openers: ["tough"]
 middlers: ["track","talky"]
 puzzles: [895]
 hashes: ["CAAAACAPAPCCAPACCCCCXXXXXXXXXX"]
+openerHash: ["CAAAA"]
 shifts: ["zhsnx"]
 state: {
   "boardState": [

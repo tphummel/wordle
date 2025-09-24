@@ -6,6 +6,7 @@ contests: ["2022-12-ratio"]
 words: ["ratio","alter","extra"]
 puzzles: [554]
 hashes: ["PPCAAPACPPCCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["PPCAA"]
 shifts: ["kebak"]
 state: {
   "boardState": [

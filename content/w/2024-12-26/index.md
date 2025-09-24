@@ -9,6 +9,7 @@ openers: ["drive"]
 middlers: ["wimpy","chain","taxis"]
 puzzles: [1286]
 hashes: ["AAPAAAPAAAAAPCAAPPCACCCCCXXXXX"]
+openerHash: ["AAPAA"]
 shifts: ["gmnrh"]
 state: {
   "puzzleDate": "2024-12-26",

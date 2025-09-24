@@ -9,6 +9,7 @@ openers: ["great"]
 middlers: ["beach","panel"]
 puzzles: [957]
 hashes: ["AAPPAAPPAAAPAPPCCCCCXXXXXXXXXX"]
+openerHash: ["AAPPA"]
 shifts: ["gsqeo"]
 state: {
   "boardState": [

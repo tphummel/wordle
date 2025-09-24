@@ -8,6 +8,7 @@ openers: ["lucky"]
 middlers: ["oxide","feint"]
 puzzles: [664]
 hashes: ["AAAAAAACAPPPCAPCCCCCXXXXXXXXXX"]
+openerHash: ["AAAAA"]
 shifts: ["zoqnp"]
 state: {
   "boardState": [

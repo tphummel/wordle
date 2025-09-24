@@ -9,6 +9,7 @@ openers: ["glory"]
 middlers: ["great"]
 puzzles: [1215]
 hashes: ["CAAPACCAPCCCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["CAAPA"]
 shifts: ["myiwd"]
 state: {
   "puzzleDate": "2024-10-16",

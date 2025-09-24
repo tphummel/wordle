@@ -6,6 +6,7 @@ contests: ["2022-10-metal"]
 words: ["metal","wound","noisy","ionic"]
 puzzles: [480]
 hashes: ["AAAAAACAPAPCPAACCCCCXXXXXXXXXX"]
+openerHash: ["AAAAA"]
 shifts: ["ovvrm"]
 state: {
   "boardState": [

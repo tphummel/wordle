@@ -6,6 +6,7 @@ contests: ["2022-10-metal"]
 words: ["metal","scour","prior","rigor","vigor"]
 puzzles: [476]
 hashes: ["AAAAAAAPACAAPCCACCCCCCCCCXXXXX"]
+openerHash: ["AAAAA"]
 shifts: ["bpoxb"]
 state: {
   "boardState": [

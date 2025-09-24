@@ -9,6 +9,7 @@ openers: ["sound"]
 middlers: ["chunk","flung","grunt"]
 puzzles: [1117]
 hashes: ["AACCAAACCAAACCPCACCCCCCCCXXXXX"]
+openerHash: ["AACCA"]
 shifts: ["mhcwd"]
 state: {
   "puzzleDate": "2024-07-10",

@@ -9,6 +9,7 @@ openers: ["child"]
 middlers: ["heart","three"]
 puzzles: [1083]
 hashes: ["APAAAPPAPPPPPCPCCCCCXXXXXXXXXX"]
+openerHash: ["APAAA"]
 shifts: ["kapnb"]
 state: {
   "puzzleDate": "2024-06-06",

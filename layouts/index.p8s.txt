@@ -15,6 +15,7 @@ total_wins{guesses="{{ $guesses }}"} {{ len (where $wins "Params.state.rowIndex"
 total_losses {{ len $losses}}
 total_guesses {{ $total_guesses}}
 {{ with .Site.GetPage "/hashes" }}total_puzzle_hashes_played {{ len .Pages }}{{ end }}
+{{ with .Site.GetPage "/openerhash" }}total_opener_hashes_played {{ len .Pages }}{{ end }}
 {{ with .Site.GetPage "/shifts" }}total_puzzle_solutions_played {{ len .Pages }}{{ end }}
 total_distinct_words_guessed {{ len .Site.Taxonomies.words }}
 total_rarities_homogenous_guesses_only {{ len (partialCached "homo-guesses-only" $wordles "homo") }}

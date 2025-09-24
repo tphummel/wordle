@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["pouch"]
 puzzles: [916]
 hashes: ["PPACAACCCCCCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["PPACA"]
 shifts: ["zvclr"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["ghost"]
 middlers: ["clown"]
 puzzles: [1165]
 hashes: ["AACAACACCCCCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["AACAA"]
 shifts: ["iywfx"]
 state: {
   "puzzleDate": "2024-08-27",

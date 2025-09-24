@@ -9,6 +9,7 @@ openers: ["squid"]
 middlers: ["yearn","lanky","fancy","tangy"]
 puzzles: [714]
 hashes: ["AAAAAPAPAPACCACACCACACCACCCCCC"]
+openerHash: ["AAAAA"]
 shifts: ["thvwi"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["fight"]
 middlers: ["clean","leave","sable"]
 puzzles: [1372]
 hashes: ["AAAAAAPPPAPAPACAPCCCCCCCCXXXXX"]
+openerHash: ["AAAAA"]
 shifts: ["gtjuo"]
 state: {
   "puzzleDate": "2025-03-22",

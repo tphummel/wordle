@@ -9,6 +9,7 @@ openers: ["chomp"]
 middlers: ["smash","meshy"]
 puzzles: [1170]
 hashes: ["APAPAPPAAPCACCCCCCCCXXXXXXXXXX"]
+openerHash: ["APAPA"]
 shifts: ["sbaqi"]
 state: {
   "puzzleDate": "2024-09-01",

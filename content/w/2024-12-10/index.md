@@ -9,6 +9,7 @@ openers: ["grief"]
 middlers: ["slain","avoid"]
 puzzles: [1270]
 hashes: ["AAPAAAAPCAPAPCACCCCCXXXXXXXXXX"]
+openerHash: ["AAPAA"]
 shifts: ["vhbry"]
 state: {
   "puzzleDate": "2024-12-10",

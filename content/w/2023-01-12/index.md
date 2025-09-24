@@ -6,6 +6,7 @@ contests: ["2023-01-guide"]
 words: ["guide","teach","least","leapt"]
 puzzles: [572]
 hashes: ["AAAAPPCCAACCCACCCCCCXXXXXXXXXX"]
+openerHash: ["AAAAP"]
 shifts: ["rliyd"]
 state: {
   "boardState": [

@@ -5,6 +5,7 @@ tags: ["interesting"]
 words: ["mouse","wheel","deity","nerdy","beady"]
 puzzles: [371]
 hashes: ["AAAAPAAPAAPCAACACACCCCCCCXXXXX"]
+openerHash: ["AAAAP"]
 shifts: ["hlimi"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["early"]
 middlers: ["noisy","cocky","hoppy","potty"]
 puzzles: [1544]
 hashes: ["AAAACACAACACAACACPACCCACCCCCCC"]
+openerHash: ["AAAAC"]
 shifts: ["vvcci"]
 state: {
   "puzzleDate": "2025-09-10",

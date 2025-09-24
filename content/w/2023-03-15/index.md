@@ -8,6 +8,7 @@ openers: ["layer"]
 middlers: ["cowed","sinew","sweet"]
 puzzles: [634]
 hashes: ["AAACAAAPCACAACPCCCCACCCCCXXXXX"]
+openerHash: ["AAACA"]
 shifts: ["ydmnz"]
 state: {
   "boardState": [

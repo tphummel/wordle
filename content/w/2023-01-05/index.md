@@ -6,6 +6,7 @@ contests: ["2023-01-guide"]
 words: ["guide","freak","check","sleek"]
 puzzles: [565]
 hashes: ["AAAAPAACACAACACCCCCCXXXXXXXXXX"]
+openerHash: ["AAAAP"]
 shifts: ["ysmnu"]
 state: {
   "boardState": [

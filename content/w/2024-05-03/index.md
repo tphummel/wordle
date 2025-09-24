@@ -9,6 +9,7 @@ openers: ["style"]
 middlers: ["every","epoxy"]
 puzzles: [1049]
 hashes: ["AAPAPCAAACCACACCCCCCXXXXXXXXXX"]
+openerHash: ["AAPAP"]
 shifts: ["kiwwi"]
 state: {
   "puzzleDate": "2024-05-03",

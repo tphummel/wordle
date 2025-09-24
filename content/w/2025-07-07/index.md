@@ -9,6 +9,7 @@ openers: ["erupt"]
 middlers: ["blast"]
 puzzles: [1479]
 hashes: ["AAAACAPAPCCCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["AAAAC"]
 shifts: ["yaqud"]
 state: {
   "puzzleDate": "2025-07-07",

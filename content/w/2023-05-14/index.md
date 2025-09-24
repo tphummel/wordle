@@ -8,6 +8,7 @@ openers: ["acrid"]
 middlers: ["scary","scare"]
 puzzles: [694]
 hashes: ["PCPAACCCCACCCCACCCCCXXXXXXXXXX"]
+openerHash: ["PCPAA"]
 shifts: ["yjiap"]
 state: {
   "boardState": [

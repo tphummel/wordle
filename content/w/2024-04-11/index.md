@@ -9,6 +9,7 @@ openers: ["style"]
 middlers: ["close"]
 puzzles: [1027]
 hashes: ["PAAPCAPPCCCCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["PAAPC"]
 shifts: ["rvcbo"]
 state: {
   "boardState": [

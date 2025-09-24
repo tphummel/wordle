@@ -8,6 +8,7 @@ openers: ["ramen"]
 middlers: ["misty"]
 puzzles: [708]
 hashes: ["AAPAAPPPAACCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["AAPAA"]
 shifts: ["yrqvz"]
 state: {
   "boardState": [

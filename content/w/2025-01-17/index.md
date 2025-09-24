@@ -9,6 +9,7 @@ openers: ["noise"]
 middlers: ["close","whose"]
 puzzles: [1308]
 hashes: ["APACCAACCCAACCCCCCCCXXXXXXXXXX"]
+openerHash: ["APACC"]
 shifts: ["vywbo"]
 state: {
   "puzzleDate": "2025-01-17",

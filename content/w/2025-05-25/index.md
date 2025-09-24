@@ -9,6 +9,7 @@ openers: ["index"]
 middlers: ["whisk","built"]
 puzzles: [1436]
 hashes: ["PAAAAAACAAAACACCCCCCXXXXXXXXXX"]
+openerHash: ["PAAAA"]
 shifts: ["myqod"]
 state: {
   "puzzleDate": "2025-05-25",

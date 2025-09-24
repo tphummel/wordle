@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["check","react"]
 puzzles: [851]
 hashes: ["AAACPPAPCAPCACACCCCCXXXXXXXXXX"]
+openerHash: ["AAACP"]
 shifts: ["slzli"]
 state: {
   "boardState": [

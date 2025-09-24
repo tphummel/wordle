@@ -8,6 +8,7 @@ openers: ["orate"]
 middlers: ["salon"]
 puzzles: [619]
 hashes: ["PAPAAAPCPACCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["PAPAA"]
 shifts: ["vvttk"]
 state: {
   "boardState": [

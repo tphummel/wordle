@@ -9,6 +9,7 @@ openers: ["score"]
 middlers: ["mound","minor","manzo"]
 puzzles: [1362]
 hashes: ["AAPAACPAPACACPACCCACCCCCCXXXXX"]
+openerHash: ["AAPAA"]
 shifts: ["shvpy"]
 state: {
   "puzzleDate": "2025-03-12",

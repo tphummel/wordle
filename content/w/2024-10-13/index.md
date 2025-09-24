@@ -9,6 +9,7 @@ openers: ["story"]
 middlers: ["wrong","drone","crone"]
 puzzles: [1212]
 hashes: ["AACPAACCCAACCCCACCCCCCCCCXXXXX"]
+openerHash: ["AACPA"]
 shifts: ["vywwo"]
 state: {
   "puzzleDate": "2024-10-13",

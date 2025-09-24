@@ -8,6 +8,7 @@ openers: ["lucky"]
 middlers: ["choir","reach"]
 puzzles: [651]
 hashes: ["AAPAAPPAAPPAPCCCCCCCXXXXXXXXXX"]
+openerHash: ["AAPAA"]
 shifts: ["shzlr"]
 state: {
   "boardState": [

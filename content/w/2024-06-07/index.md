@@ -9,6 +9,7 @@ openers: ["react"]
 middlers: ["devil","jelly","welsh"]
 puzzles: [1084]
 hashes: ["ACAAAACAAPACCAAACCAACCCCCXXXXX"]
+openerHash: ["ACAAA"]
 shifts: ["sltxx"]
 state: {
   "puzzleDate": "2024-06-07",

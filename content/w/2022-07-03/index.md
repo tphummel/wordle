@@ -5,6 +5,7 @@ tags: []
 words: ["storm","cheap","nicad","lilac"]
 puzzles: [379]
 hashes: ["AAAAAPAACAACPCACCCCCXXXXXXXXXX"]
+openerHash: ["AAAAA"]
 shifts: ["rptjm"]
 state: {
   "boardState": [

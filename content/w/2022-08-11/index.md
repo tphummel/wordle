@@ -6,6 +6,7 @@ contests: ["2022-08-thing"]
 words: ["thing","groan","glean"]
 puzzles: [418]
 hashes: ["AAAPPCAACCCCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["AAAPP"]
 shifts: ["msmjx"]
 state: {
   "boardState": [

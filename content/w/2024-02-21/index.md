@@ -9,6 +9,7 @@ openers: ["radio"]
 middlers: ["windy","child","guild"]
 puzzles: [977]
 hashes: ["AAPPAAPAPAAACCCACCCCCCCCCXXXXX"]
+openerHash: ["AAPPA"]
 shifts: ["hbqun"]
 state: {
   "boardState": [

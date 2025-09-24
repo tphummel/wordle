@@ -58,6 +58,7 @@ stats:
 puzzles:
   - 248
 hashes: ["PAAACAPCACCCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["PAAAC"]
 shifts: ["zowax"]
 aliases:
   - /w/248/

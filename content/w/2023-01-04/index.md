@@ -6,6 +6,7 @@ contests: ["2023-01-guide"]
 words: ["guide","steal","realm","layer"]
 puzzles: [564]
 hashes: ["AAAAPAAPPPPPPPACCCCCXXXXXXXXXX"]
+openerHash: ["AAAAP"]
 shifts: ["rhgnb"]
 state: {
   "boardState": [

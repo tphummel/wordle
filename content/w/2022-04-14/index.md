@@ -5,6 +5,7 @@ tags: []
 words: ["peril","shine","mince"]
 puzzles: [299]
 hashes: ["APAPAAAPPCCCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["APAPA"]
 shifts: ["spvlo"]
 state: {
   "boardState": [

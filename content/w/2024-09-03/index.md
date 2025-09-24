@@ -9,6 +9,7 @@ openers: ["great"]
 middlers: ["blast","cadet","tarot","habit","paint"]
 puzzles: [1172]
 hashes: ["AAAPCAAPACACAACACAACACAPCACCCC"]
+openerHash: ["AAAPC"]
 shifts: ["lhqwd"]
 state: {
   "puzzleDate": "2024-09-03",

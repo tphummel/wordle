@@ -5,6 +5,7 @@ tags: []
 words: ["honey","spear","redux","bribe","trite","trike"]
 puzzles: [457]
 hashes: ["AAAPAAAPAPPPAAAACCACCCCACCCCAC"]
+openerHash: ["AAAPA"]
 shifts: ["zyqlo"]
 state: {
   "boardState": [

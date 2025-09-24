@@ -9,6 +9,7 @@ openers: ["squid"]
 middlers: ["place","earth"]
 puzzles: [718]
 hashes: ["AAAAAAAPAPPCPPPCCCCCXXXXXXXXXX"]
+openerHash: ["AAAAA"]
 shifts: ["nhbnb"]
 state: {
   "boardState": [

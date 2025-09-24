@@ -64,6 +64,10 @@
   {{ $achievement := dict "badge" "🏅" "report" "anagrams.md" "title" "Anagram" }}
   {{ $achievements = $achievements | append (slice $achievement) }}
 {{ end }}
+{{ with (partialCached "true-anagrams" $wordle .File.Path) }}
+  {{ $achievement := dict "badge" "🏵️" "report" "true-anagrams.md" "title" "True Anagram" }}
+  {{ $achievements = $achievements | append (slice $achievement) }}
+{{ end }}
 {{ with (partialCached "symmetrical" $wordle .File.Path) }}
   {{ $achievement := dict "badge" "🎖" "report" "symmetrical.md" "title" "Symmetrical" }}
   {{ $achievements = $achievements | append (slice $achievement) }}
@@ -249,6 +253,13 @@
   {{ $hash = partialCached "puzzle-hash" . .Title }}
 {{ end }}
 <p>Hash: <strong><a href="{{ with $.GetPage (printf "/hashes/%s" $hash) }}{{ .RelPermalink}}{{end}}">{{ $hash }}</a></strong></p>
+{{ $openerHash := "" }}
+{{ with .Params.openerHash }}
+  {{ $openerHash = (index . 0) }}
+{{ else }}
+  {{ $openerHash = partialCached "first-guess-hash" . .Title }}
+{{ end }}
+<p>Opener Hash: <strong><a href="{{ with $.GetPage (printf "/openerhash/%s" $openerHash) }}{{ .RelPermalink}}{{end}}">{{ $openerHash }}</a></strong></p>
 {{ with .Params.shifts }}
   {{ $shift := (index . 0) }}
   <p>Shift: <strong><a href="{{ with $.GetPage (printf "/shifts/%s" $shift) }}{{ .RelPermalink}}{{end}}">{{ $shift }}</a></strong></p>

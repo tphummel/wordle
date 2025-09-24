@@ -9,6 +9,7 @@ openers: ["ratio"]
 middlers: ["resin"]
 puzzles: [1507]
 hashes: ["CAACACAACACCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["CAACA"]
 shifts: ["xporn"]
 state: {
   "puzzleDate": "2025-08-04",

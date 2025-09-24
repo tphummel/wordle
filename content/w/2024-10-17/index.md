@@ -9,6 +9,7 @@ openers: ["point"]
 middlers: ["bread","cease","valve"]
 puzzles: [1216]
 hashes: ["AAAAAAAPPAAAPACACCCCCCCCCXXXXX"]
+openerHash: ["AAAAA"]
 shifts: ["nhteo"]
 state: {
   "puzzleDate": "2024-10-17",

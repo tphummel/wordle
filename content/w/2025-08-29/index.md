@@ -9,6 +9,7 @@ openers: ["tidal"]
 middlers: ["stack","wrath","grant"]
 puzzles: [1532]
 hashes: ["PAAPAAPCAAACCPACCCACCCCCCXXXXX"]
+openerHash: ["PAAPA"]
 shifts: ["myiod"]
 state: {
   "puzzleDate": "2025-08-29",

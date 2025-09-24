@@ -8,6 +8,7 @@ openers: ["flask"]
 middlers: ["trash"]
 puzzles: [701]
 hashes: ["AACCAACCCCCCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["AACCA"]
 shifts: ["hyibr"]
 state: {
   "boardState": [

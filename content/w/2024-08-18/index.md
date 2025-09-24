@@ -9,6 +9,7 @@ openers: ["ghost"]
 middlers: ["drive","fauna"]
 puzzles: [1156]
 hashes: ["AAAAAAAAAAACAPACCCCCXXXXXXXXXX"]
+openerHash: ["AAAAA"]
 shifts: ["rhvti"]
 state: {
   "puzzleDate": "2024-08-18",

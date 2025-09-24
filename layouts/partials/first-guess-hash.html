@@ -1,0 +1,27 @@
+{{ $hashParts := slice }}
+{{ $evaluations := .Params.state.evaluations }}
+{{ if and $evaluations (gt (len $evaluations) 0) }}
+  {{ $row := index $evaluations 0 }}
+  {{ if $row }}
+    {{ range $row }}
+      {{ if . }}
+        {{ $hashParts = $hashParts | append ((substr . 0 1) | upper) }}
+      {{ else }}
+        {{ $hashParts = $hashParts | append "X" }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ if eq (len $hashParts) 0 }}
+  {{ $hashParts = slice "X" "X" "X" "X" "X" }}
+{{ else }}
+  {{ if gt (len $hashParts) 5 }}
+    {{ $hashParts = first 5 $hashParts }}
+  {{ end }}
+  {{ if lt (len $hashParts) 5 }}
+    {{ range seq (sub 5 (len $hashParts)) }}
+      {{ $hashParts = $hashParts | append "X" }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ return (delimit $hashParts "") }}

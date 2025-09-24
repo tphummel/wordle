@@ -63,6 +63,7 @@ stats:
 puzzles:
   - 261
 hashes: ["AAAPAAACAAACCCCCCCCCXXXXXXXXXX"]
+openerHash: ["AAAPA"]
 shifts: ["nvian"]
 aliases:
   - /w/261/

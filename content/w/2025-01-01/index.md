@@ -9,6 +9,7 @@ openers: ["torch"]
 middlers: ["parse","merge","verve"]
 puzzles: [1292]
 hashes: ["AACAAAACACACCACACCCCCCCCCXXXXX"]
+openerHash: ["AACAA"]
 shifts: ["tlzeo"]
 state: {
   "puzzleDate": "2025-01-01",

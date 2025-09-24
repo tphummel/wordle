@@ -9,6 +9,7 @@ openers: ["choir"]
 middlers: ["liter","giver","biker","wider"]
 puzzles: [1204]
 hashes: ["AAAPCACACCACACCACACCACACCACACC"]
+openerHash: ["AAAPC"]
 shifts: ["spvnb"]
 state: {
   "puzzleDate": "2024-10-05",

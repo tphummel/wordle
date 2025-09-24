@@ -9,6 +9,7 @@ openers: ["syrup"]
 middlers: ["blend","flake"]
 puzzles: [989]
 hashes: ["AAAAAACPAACCCACCCCCCXXXXXXXXXX"]
+openerHash: ["AAAAA"]
 shifts: ["lsivo"]
 state: {
   "boardState": [

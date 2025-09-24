@@ -9,6 +9,7 @@ openers: ["weird"]
 middlers: ["swore","sweat","sweep"]
 puzzles: [1239]
 hashes: ["PPAAACCAAPCCCAACCCAACCCCCXXXXX"]
+openerHash: ["PPAAA"]
 shifts: ["ydmuv"]
 state: {
   "puzzleDate": "2024-11-09",

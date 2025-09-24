@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["groan","blond"]
 puzzles: [862]
 hashes: ["PAPAAAACAPAACCACCCCCXXXXXXXXXX"]
+openerHash: ["PAPAA"]
 shifts: ["vowwi"]
 state: {
   "boardState": [

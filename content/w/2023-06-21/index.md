@@ -9,6 +9,7 @@ openers: ["squid"]
 middlers: ["plate","brake"]
 puzzles: [732]
 hashes: ["AAAAAAACACACCACCCCCCXXXXXXXXXX"]
+openerHash: ["AAAAA"]
 shifts: ["iyiwo"]
 state: {
   "boardState": [

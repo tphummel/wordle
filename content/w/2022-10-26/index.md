@@ -6,6 +6,7 @@ contests: ["2022-10-metal"]
 words: ["metal","blitz","clout","flout"]
 puzzles: [494]
 hashes: ["AAPAPACAPAACCCCCCCCCXXXXXXXXXX"]
+openerHash: ["AAPAP"]
 shifts: ["lswdd"]
 state: {
   "boardState": [

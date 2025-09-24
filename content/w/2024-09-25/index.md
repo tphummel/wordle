@@ -9,6 +9,7 @@ openers: ["point"]
 middlers: ["touch"]
 puzzles: [1194]
 hashes: ["ACAAPCCACCCCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["ACAAP"]
 shifts: ["zvzlr"]
 state: {
   "puzzleDate": "2024-09-25",

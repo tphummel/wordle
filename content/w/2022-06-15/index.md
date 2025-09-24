@@ -5,6 +5,7 @@ tags: []
 words: ["piano","primo"]
 puzzles: [361]
 hashes: ["CPAACCCCCCXXXXXXXXXXXXXXXXXXXX"]
+openerHash: ["CPAAC"]
 shifts: ["vyqvy"]
 state: {
   "boardState": [

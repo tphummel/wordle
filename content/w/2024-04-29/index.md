@@ -9,6 +9,7 @@ openers: ["style"]
 middlers: ["touch","cacti"]
 puzzles: [1045]
 hashes: ["APAAAPAAPACPAPACCCCCXXXXXXXXXX"]
+openerHash: ["APAAA"]
 shifts: ["iyiod"]
 state: {
   "boardState": [

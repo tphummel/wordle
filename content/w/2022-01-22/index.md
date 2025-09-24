@@ -45,6 +45,7 @@ stats: {}
 puzzles:
   - 217
 hashes: ["PCAAAACCACCCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["PCAAA"]
 shifts: ["cpvlo"]
 aliases:
   - /w/217/

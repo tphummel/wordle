@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["plumb","skull","truly","vault"]
 puzzles: [850]
 hashes: ["APAAAAPCAAAACCAPACCAAPCCCCCCCC"]
+openerHash: ["APAAA"]
 shifts: ["gkcud"]
 state: {
   "boardState": [

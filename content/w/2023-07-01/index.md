@@ -9,6 +9,7 @@ openers: ["tiger"]
 middlers: ["loved","sleep"]
 puzzles: [742]
 hashes: ["AAACAPAACAACCCCCCCCCXXXXXXXXXX"]
+openerHash: ["AAACA"]
 shifts: ["hsmnz"]
 state: {
   "boardState": [

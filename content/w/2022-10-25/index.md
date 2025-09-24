@@ -6,6 +6,7 @@ contests: ["2022-10-metal"]
 words: ["metal","sound","worry","cocky","poofy","foggy"]
 puzzles: [493]
 hashes: ["AAAAAACAAAACAACACAACACAPCCCCCC"]
+openerHash: ["AAAAA"]
 shifts: ["lvopi"]
 state: {
   "boardState": [

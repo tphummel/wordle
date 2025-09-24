@@ -5,6 +5,7 @@ tags: []
 words: ["amuse","chunk","touch","pouch","vouch"]
 puzzles: [340]
 hashes: ["AACAAPPCAAACCCCACCCCCCCCCXXXXX"]
+openerHash: ["AACAA"]
 shifts: ["bvclr"]
 state: {
   "boardState": [

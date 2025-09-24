@@ -9,6 +9,7 @@ openers: ["claim"]
 middlers: ["drone","snout"]
 puzzles: [1406]
 hashes: ["AAAAAAACPAACCAACCCCCXXXXXXXXXX"]
+openerHash: ["AAAAA"]
 shifts: ["quwfx"]
 state: {
   "puzzleDate": "2025-04-25",

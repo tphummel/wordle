@@ -5,6 +5,7 @@ tags: []
 words: ["honey","flirt","quits","stick"]
 puzzles: [456]
 hashes: ["AAAAAAACAPAACPPCCCCCXXXXXXXXXX"]
+openerHash: ["AAAAA"]
 shifts: ["yaqlu"]
 state: {
   "boardState": [

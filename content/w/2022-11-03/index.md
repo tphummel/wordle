@@ -6,6 +6,7 @@ contests: ["2022-11-habit"]
 words: ["habit","dream","aloud"]
 puzzles: [502]
 hashes: ["APAAAPAAPACCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["APAAA"]
 shifts: ["gswdn"]
 state: {
   "boardState": [

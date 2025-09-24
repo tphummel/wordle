@@ -5,6 +5,7 @@ tags: []
 words: ["tiger","super","amber","mover","homer"]
 puzzles: [320]
 hashes: ["AAACCAAACCAPACCPCACCCCCCCXXXXX"]
+openerHash: ["AAACC"]
 shifts: ["nvunb"]
 state: {
   "boardState": [

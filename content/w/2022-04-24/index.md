@@ -5,6 +5,7 @@ tags: []
 words: ["aisle","their","inert"]
 puzzles: [309]
 hashes: ["APAAPPACPPCCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["APAAP"]
 shifts: ["oumad"]
 state: {
   "boardState": [

@@ -8,6 +8,7 @@ openers: ["orate"]
 middlers: []
 puzzles: [594]
 hashes: ["AAPCACCCCCXXXXXXXXXXXXXXXXXXXX"]
+openerHash: ["AAPCA"]
 shifts: ["zhaci"]
 state: {
   "boardState": [

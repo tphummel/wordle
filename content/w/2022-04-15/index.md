@@ -5,6 +5,7 @@ tags: []
 words: ["peril","those","shade","shame"]
 puzzles: [300]
 hashes: ["APAAAACAPCCCCACCCCCCXXXXXXXXXX"]
+openerHash: ["APAAA"]
 shifts: ["yoivo"]
 state: {
   "boardState": [

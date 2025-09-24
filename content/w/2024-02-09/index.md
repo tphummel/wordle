@@ -9,6 +9,7 @@ openers: ["point"]
 middlers: ["thigh","stick"]
 puzzles: [965]
 hashes: ["AACAPPACAACCCAACCCCCXXXXXXXXXX"]
+openerHash: ["AACAP"]
 shifts: ["yaqop"]
 state: {
   "boardState": [

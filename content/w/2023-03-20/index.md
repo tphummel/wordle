@@ -8,6 +8,7 @@ openers: ["grown"]
 middlers: ["ghost","globe"]
 puzzles: [639]
 hashes: ["CACAACACAACCCACCCCCCXXXXXXXXXX"]
+openerHash: ["CACAA"]
 shifts: ["msweo"]
 state: {
   "boardState": [

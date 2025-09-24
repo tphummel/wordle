@@ -9,6 +9,7 @@ openers: ["voice"]
 middlers: ["steak","tempt","beget"]
 puzzles: [1089]
 hashes: ["AAAAPAPPAAPCAAAACACPCCCCCXXXXX"]
+openerHash: ["AAAAP"]
 shifts: ["jlbnb"]
 state: {
   "puzzleDate": "2024-06-12",

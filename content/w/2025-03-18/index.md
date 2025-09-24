@@ -9,6 +9,7 @@ openers: ["would"]
 middlers: ["first","mitre"]
 puzzles: [1368]
 hashes: ["AAAAAACPAPPCPPPCCCCCXXXXXXXXXX"]
+openerHash: ["AAAAA"]
 shifts: ["zpunb"]
 state: {
   "puzzleDate": "2025-03-18",

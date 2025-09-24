@@ -1,0 +1,38 @@
+{{ $found := slice }}
+{{ range . }}
+  {{ $wordleDate := .Date }}
+  {{ $wordle := . }}
+
+  {{ $hasTrueAnagramGuess := false }}
+  {{ $isWin := eq "WIN" .Params.state.gameStatus }}
+
+  {{ $numGuesses := partialCached "guess-count.html" $wordle $wordle.File.Path }}
+  {{ $numGuesses = cond (eq "X" $numGuesses) 6 $numGuesses }}
+
+  {{ range $n, $guess := .Params.state.evaluations }}
+    {{ $isFinalGuess := eq (add 1 $n) $numGuesses }}
+    {{ $isSolvingGuess := and $isWin $isFinalGuess }}
+
+    {{ if not $isSolvingGuess }}
+      {{ $presents := 0 }}
+      {{ $corrects := 0 }}
+
+      {{ range $e := $guess }}
+        {{ if eq "present" $e }}
+          {{ $presents = add $presents 1 }}
+        {{ else if eq "correct" $e }}
+          {{ $corrects = add $corrects 1 }}
+        {{ end }}
+      {{ end }}
+
+      {{ if and (eq $presents 5) (eq $corrects 0) }}
+        {{ $hasTrueAnagramGuess = true }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ if $hasTrueAnagramGuess }}
+    {{ $found = $found | append (slice (dict "date" $wordleDate "puzzle" $wordle)) }}
+  {{ end }}
+{{ end }}
+{{ return $found }}

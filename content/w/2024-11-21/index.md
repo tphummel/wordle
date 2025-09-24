@@ -9,6 +9,7 @@ openers: ["weird"]
 middlers: ["exist","shied"]
 puzzles: [1251]
 hashes: ["APCAAPACPACACPACCCCCXXXXXXXXXX"]
+openerHash: ["APCAA"]
 shifts: ["ywqwo"]
 state: {
   "puzzleDate": "2024-11-21",

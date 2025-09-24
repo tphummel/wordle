@@ -9,6 +9,7 @@ openers: ["guide"]
 middlers: ["miner","wives","pipet"]
 puzzles: [1423]
 hashes: ["AAPAPACACAACACAPCACACCCCCXXXXX"]
+openerHash: ["AAPAP"]
 shifts: ["hpknz"]
 state: {
   "puzzleDate": "2025-05-12",

@@ -9,6 +9,7 @@ openers: ["index"]
 middlers: ["chart","swarm"]
 puzzles: [1432]
 hashes: ["AAAAAAACCAAACCCCCCCCXXXXXXXXXX"]
+openerHash: ["AAAAA"]
 shifts: ["gsiaw"]
 state: {
   "puzzleDate": "2025-05-21",

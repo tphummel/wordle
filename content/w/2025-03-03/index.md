@@ -9,6 +9,7 @@ openers: ["noise"]
 middlers: ["sleep","speck"]
 puzzles: [1353]
 hashes: ["AAAPPCACAPCCCAACCCCCXXXXXXXXXX"]
+openerHash: ["AAAPP"]
 shifts: ["ywmjb"]
 state: {
   "puzzleDate": "2025-03-03",

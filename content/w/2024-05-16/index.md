@@ -9,6 +9,7 @@ openers: ["style"]
 middlers: ["stalk"]
 puzzles: [1062]
 hashes: ["CCACACCCCACCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["CCACA"]
 shifts: ["yaiuv"]
 state: {
   "puzzleDate": "2024-05-16",

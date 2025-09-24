@@ -6,6 +6,7 @@ contests: ["2023-01-guide"]
 words: ["guide","steer","venom","lemon"]
 puzzles: [567]
 hashes: ["AAAAPAAPAAACPCPCCCCCXXXXXXXXXX"]
+openerHash: ["AAAAP"]
 shifts: ["rluxx"]
 state: {
   "boardState": [

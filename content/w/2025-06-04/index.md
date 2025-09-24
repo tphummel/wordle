@@ -9,6 +9,7 @@ openers: ["blast"]
 middlers: ["crash"]
 puzzles: [1446]
 hashes: ["AACCACACCACCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["AACCA"]
 shifts: ["ilibo"]
 state: {
   "puzzleDate": "2025-06-04",

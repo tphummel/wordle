@@ -6,6 +6,7 @@ contests: ["2023-01-guide"]
 words: ["guide","while","spire"]
 puzzles: [575]
 hashes: ["AACACAACACCCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["AACAC"]
 shifts: ["ywqao"]
 state: {
   "boardState": [

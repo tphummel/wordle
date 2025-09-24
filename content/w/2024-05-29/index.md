@@ -9,6 +9,7 @@ openers: ["would"]
 middlers: ["laser","talky","cabal","halal"]
 puzzles: [1075]
 hashes: ["AAAPAPCAAAACPAAACACCACACCACACC"]
+openerHash: ["AAAPA"]
 shifts: ["vhxjv"]
 state: {
   "puzzleDate": "2024-05-29",

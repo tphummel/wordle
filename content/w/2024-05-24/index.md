@@ -9,6 +9,7 @@ openers: ["often"]
 middlers: ["every","ledge","glade"]
 puzzles: [1070]
 hashes: ["AAAPAPAAAAPAPPCCCACCCCCCCXXXXX"]
+openerHash: ["AAAPA"]
 shifts: ["msqmo"]
 state: {
   "puzzleDate": "2024-05-24",

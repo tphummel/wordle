@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["sneak","never","newly"]
 puzzles: [1151]
 hashes: ["AAPAPAPPAACCAAACCAAACCCCCXXXXX"]
+openerHash: ["AAPAP"]
 shifts: ["tlqpr"]
 state: {
   "puzzleDate": "2024-08-13",

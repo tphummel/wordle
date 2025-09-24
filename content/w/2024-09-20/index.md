@@ -9,6 +9,7 @@ openers: ["place"]
 middlers: ["stone","shove"]
 puzzles: [1189]
 hashes: ["AAAACCACACCACACCCCCCXXXXXXXXXX"]
+openerHash: ["AAAAC"]
 shifts: ["ytwto"]
 state: {
   "puzzleDate": "2024-09-20",

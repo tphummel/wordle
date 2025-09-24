@@ -9,6 +9,7 @@ openers: ["radio"]
 middlers: ["trace","aster","alter"]
 puzzles: [963]
 hashes: ["PPAAAPPPAPCACCCCACCCCCCCCXXXXX"]
+openerHash: ["PPAAA"]
 shifts: ["gmbnb"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["index"]
 middlers: ["needy","dunce"]
 puzzles: [1437]
 hashes: ["APPPAPPAPACAPACCCCCCXXXXXXXXXX"]
+openerHash: ["APPPA"]
 shifts: ["jywwo"]
 state: {
   "puzzleDate": "2025-05-26",

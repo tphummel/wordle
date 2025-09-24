@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["plunk","stunk"]
 puzzles: [844]
 hashes: ["APPAAAACCCCACCCCCCCCXXXXXXXXXX"]
+openerHash: ["APPAA"]
 shifts: ["yrcwu"]
 state: {
   "boardState": [

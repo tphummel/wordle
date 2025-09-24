@@ -8,6 +8,7 @@ openers: ["sulky"]
 middlers: ["zebra","drone"]
 puzzles: [683]
 hashes: ["AAAAAAPAPAPPPACCCCCCXXXXXXXXXX"]
+openerHash: ["AAAAA"]
 shifts: ["nvzmo"]
 state: {
   "boardState": [

@@ -1,0 +1,41 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+
+<p>{{ partial "breadcrumb.html" . }}</p>
+
+{{ with .Content }}
+<div>{{ . }}</div>
+{{ end }}
+
+<h2>List</h2>
+<table>
+  <tr>
+    <td>First Guess</td>
+    <td>Hash</td>
+    <td>Count</td>
+    <td>First Played</td>
+    <td>Last Played</td>
+  </tr>
+
+  {{ $alphabetical := .Data.Terms.Alphabetical }}
+  {{ $ordered := sort $alphabetical "Count" "desc" }}
+
+  {{ range $term := $ordered }}
+    {{ $name := $term.Name }}
+    {{ $count := $term.Count }}
+    {{ $first := index (first 1 $term.Pages.ByDate) 0 }}
+    {{ $last := index (last 1 $term.Pages.ByDate) 0 }}
+
+    {{ with $.Site.GetPage (printf "/%s/%s" "openerhash" $name) }}
+    <tr>
+      <td><a href="{{ .RelPermalink }}" title="{{ $name }}">{{ partialCached "first-guess-emoji.html" $first $first.File.Path }}</a></td>
+      <td><a href="{{ .RelPermalink }}">{{ $name }}</a></td>
+      <td>{{ $count }}</td>
+      <td><a href="{{ $first.RelPermalink}}">{{ $first.Date.Format "Jan 2, 2006" }}</a></td>
+      <td>{{ if gt $count 1 }}<a href="{{ $last.RelPermalink}}">{{ $last.Date.Format "Jan 2, 2006" }}</a>{{ else }}--{{ end }}</td>
+    </tr>
+    {{ end }}
+
+  {{ end }}
+</table>
+{{ end }}

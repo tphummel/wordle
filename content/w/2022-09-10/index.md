@@ -6,6 +6,7 @@ contests: ["2022-09-honey"]
 words: ["honey","pocky","foamy","lofty"]
 puzzles: [448]
 hashes: ["ACAACACAACPCAACCCCCCXXXXXXXXXX"]
+openerHash: ["ACAAC"]
 shifts: ["rvnci"]
 state: {
   "boardState": [

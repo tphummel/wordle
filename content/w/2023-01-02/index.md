@@ -6,6 +6,7 @@ contests: ["2023-01-guide"]
 words: ["guide","chimp","brink","skirt"]
 puzzles: [562]
 hashes: ["AACAAAACAAAPCAPCCCCCXXXXXXXXXX"]
+openerHash: ["AACAA"]
 shifts: ["yrqad"]
 state: {
   "boardState": [

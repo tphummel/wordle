@@ -9,6 +9,7 @@ openers: ["noise"]
 middlers: ["great","berry","redux"]
 puzzles: [1319]
 hashes: ["AAAAPAPPAAACPAAPCAAACCCCCXXXXX"]
+openerHash: ["AAAAP"]
 shifts: ["lldnb"]
 state: {
   "puzzleDate": "2025-01-28",

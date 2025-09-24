@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: []
 puzzles: [887]
 hashes: ["ACPAPCCCCCXXXXXXXXXXXXXXXXXXXX"]
+openerHash: ["ACPAP"]
 shifts: ["wbmnx"]
 state: {
   "boardState": [

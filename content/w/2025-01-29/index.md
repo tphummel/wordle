@@ -9,6 +9,7 @@ openers: ["drive"]
 middlers: ["shred"]
 puzzles: [1320]
 hashes: ["PPAAPAAPCPCCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["PPAAP"]
 shifts: ["aklnb"]
 state: {
   "puzzleDate": "2025-01-29",

@@ -9,6 +9,7 @@ openers: ["weird"]
 middlers: ["howdy"]
 puzzles: [1227]
 hashes: ["PAAAPAACCCCCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["PAAAP"]
 shifts: ["hhemi"]
 state: {
   "puzzleDate": "2024-10-28",
