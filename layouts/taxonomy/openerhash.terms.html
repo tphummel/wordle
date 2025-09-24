@@ -7,6 +7,14 @@
 <div>{{ . }}</div>
 {{ end }}
 
+{{ $alphabetical := .Data.Terms.Alphabetical }}
+{{ $ordered := sort $alphabetical "Count" "desc" }}
+{{ $distinctCount := len $ordered }}
+{{ $totalPossible := 243 }}
+{{ $percentage := mul (div (float $distinctCount) (float $totalPossible)) 100 }}
+
+<p>I've seen <strong>{{ $distinctCount }}</strong> of {{ $totalPossible }} possible opener hashes ({{ $percentage | lang.FormatNumber 1 }}%).</p>
+
 <h2>List</h2>
 <table>
   <tr>
@@ -17,9 +25,6 @@
     <td>Last Played</td>
   </tr>
 
-  {{ $alphabetical := .Data.Terms.Alphabetical }}
-  {{ $ordered := sort $alphabetical "Count" "desc" }}
-
   {{ range $term := $ordered }}
     {{ $name := $term.Name }}
     {{ $count := $term.Count }}
@@ -29,7 +34,7 @@
     {{ with $.Site.GetPage (printf "/%s/%s" "openerhash" $name) }}
     <tr>
       <td><a href="{{ .RelPermalink }}" title="{{ $name }}">{{ partialCached "first-guess-emoji.html" $first $first.File.Path }}</a></td>
-      <td><a href="{{ .RelPermalink }}">{{ $name }}</a></td>
+      <td><a href="{{ .RelPermalink }}" title="{{ $name }}">{{ partialCached "openerhash-emoji.html" $name $name }}</a></td>
       <td>{{ $count }}</td>
       <td><a href="{{ $first.RelPermalink}}">{{ $first.Date.Format "Jan 2, 2006" }}</a></td>
       <td>{{ if gt $count 1 }}<a href="{{ $last.RelPermalink}}">{{ $last.Date.Format "Jan 2, 2006" }}</a>{{ else }}--{{ end }}</td>

@@ -1,0 +1,24 @@
+{{/*
+  Convert an opener hash string (e.g. "AAPAA") into its emoji representation.
+  The taxonomy stores hashes using the letters:
+    - C: correct (green)
+    - P: present (yellow)
+    - A: absent (black)
+  Some older data may include placeholder "X" characters; treat those as blanks.
+*/}}
+{{- $hash := printf "%s" . -}}
+{{- $tiles := slice -}}
+{{- range (split $hash "") -}}
+  {{- $emoji := "" -}}
+  {{- if eq . "C" -}}
+    {{- $emoji = "🟩" -}}
+  {{- else if eq . "P" -}}
+    {{- $emoji = "🟨" -}}
+  {{- else if or (eq . "A") (eq . "X") -}}
+    {{- $emoji = "⬛️" -}}
+  {{- else -}}
+    {{- $emoji = . -}}
+  {{- end -}}
+  {{- $tiles = $tiles | append $emoji -}}
+{{- end -}}
+{{- return (delimit $tiles "") -}}
