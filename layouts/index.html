@@ -197,6 +197,15 @@
     </td>
   </tr>
 {{ end }}
+{{ with .Site.GetPage "true-anagrams.md" }}
+  {{ $trueAnagrams := partial "true-anagrams.html" (where .Site.RegularPages "Section" "w") }}
+  <tr>
+    <td><a href="{{ .RelPermalink }}">True Anagrams</a></td>
+    <td>
+      {{ (mul (div (float (len $trueAnagrams)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $trueAnagrams }}</a> / {{ len $wordles }})
+    </td>
+  </tr>
+{{ end }}
 {{ with .Site.GetPage "symmetrical.md" }}
   {{ $symmetrical := partial "symmetrical.html" (where .Site.RegularPages "Section" "w") }}
   <tr>

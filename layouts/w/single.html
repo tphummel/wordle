@@ -64,6 +64,10 @@
   {{ $achievement := dict "badge" "🏅" "report" "anagrams.md" "title" "Anagram" }}
   {{ $achievements = $achievements | append (slice $achievement) }}
 {{ end }}
+{{ with (partialCached "true-anagrams" $wordle .File.Path) }}
+  {{ $achievement := dict "badge" "🏵️" "report" "true-anagrams.md" "title" "True Anagram" }}
+  {{ $achievements = $achievements | append (slice $achievement) }}
+{{ end }}
 {{ with (partialCached "symmetrical" $wordle .File.Path) }}
   {{ $achievement := dict "badge" "🎖" "report" "symmetrical.md" "title" "Symmetrical" }}
   {{ $achievements = $achievements | append (slice $achievement) }}
