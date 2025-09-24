@@ -151,7 +151,7 @@ openers: ${JSON.stringify([opener])}
 middlers: ${JSON.stringify(middlers)}
 puzzles: [${state.dayOffset}]
 hashes: ["${puzzleHash}"]
-openerHash: ["${openerHash}"]
+openerHashes: ["${openerHash}"]
 shifts: ["${encodeCaesarCipher(state.solution)}"]
 state: ${JSON.stringify(state, null, 2)}
 stats: ${JSON.stringify(data.data.setLegacyStats, null, 2)}
