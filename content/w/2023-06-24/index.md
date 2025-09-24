@@ -9,6 +9,7 @@ openers: ["squid"]
 middlers: ["tread"]
 puzzles: [735]
 hashes: ["AAAACACAPCCCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["AAAAC"]
 shifts: ["myiwn"]
 state: {
   "boardState": [

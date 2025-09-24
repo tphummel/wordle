@@ -9,6 +9,7 @@ openers: ["later"]
 middlers: ["tense","chest"]
 puzzles: [792]
 hashes: ["AAPPAPPACAAACCCCCCCCXXXXXXXXXX"]
+openerHash: ["AAPPA"]
 shifts: ["wbmbd"]
 state: {
   "boardState": [

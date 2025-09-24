@@ -9,6 +9,7 @@ openers: ["syrup"]
 middlers: ["slick","shift"]
 puzzles: [981]
 hashes: ["CAAAACACAACPCAPCCCCCXXXXXXXXXX"]
+openerHash: ["CAAAA"]
 shifts: ["ytqcr"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["tough"]
 middlers: ["smoke","swore"]
 puzzles: [892]
 hashes: ["APAAACACACCACACCCCCCXXXXXXXXXX"]
+openerHash: ["APAAA"]
 shifts: ["yjwyo"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["eight"]
 middlers: ["trick","ratio"]
 puzzles: [1478]
 hashes: ["APAAPPPPAAPPPCACCCCCXXXXXXXXXX"]
+openerHash: ["APAAP"]
 shifts: ["gazrk"]
 state: {
   "puzzleDate": "2025-07-06",

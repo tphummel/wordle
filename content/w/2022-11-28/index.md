@@ -6,6 +6,7 @@ contests: ["2022-11-habit"]
 words: ["habit","fetid","tepid"]
 puzzles: [527]
 hashes: ["AAACPACPCCCCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["AAACP"]
 shifts: ["zlxrn"]
 state: {
   "boardState": [

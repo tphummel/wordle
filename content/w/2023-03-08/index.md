@@ -8,6 +8,7 @@ openers: ["sauce"]
 middlers: ["great"]
 puzzles: [627]
 hashes: ["APAAPPPPCACCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["APAAP"]
 shifts: ["xlojv"]
 state: {
   "boardState": [

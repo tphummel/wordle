@@ -5,6 +5,7 @@ tags: []
 words: ["peril","talon","lousy","lobby","lowly"]
 puzzles: [285]
 hashes: ["AAAAPAAPPACCAACCCAACCCCCCXXXXX"]
+openerHash: ["AAAAP"]
 shifts: ["rveui"]
 state: {
   "boardState": [

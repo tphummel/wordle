@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["snore","ovine","canoe","nolle"]
 puzzles: [860]
 hashes: ["PAPACAPPACPAAPCAAPPCCCACCCCCCC"]
+openerHash: ["PAPAC"]
 shifts: ["tvjuo"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["claim"]
 middlers: ["share"]
 puzzles: [1238]
 hashes: ["AACAAAACPPCCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["AACAA"]
 shifts: ["xlimi"]
 state: {
   "puzzleDate": "2024-11-08",

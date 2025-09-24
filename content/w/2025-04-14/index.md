@@ -9,6 +9,7 @@ openers: ["erupt"]
 middlers: ["great"]
 puzzles: [1395]
 hashes: ["PCAACACCACCCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["PCAAC"]
 shifts: ["iymbd"]
 state: {
   "puzzleDate": "2025-04-14",

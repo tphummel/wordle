@@ -9,6 +9,7 @@ openers: ["tiger"]
 middlers: ["group","churn","rummy","curly"]
 puzzles: [762]
 hashes: ["AAAAPAPAPAAAPPAPCAACACCCCCCCCC"]
+openerHash: ["AAAAP"]
 shifts: ["hbzui"]
 state: {
   "boardState": [

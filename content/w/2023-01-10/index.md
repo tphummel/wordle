@@ -6,6 +6,7 @@ contests: ["2023-01-guide"]
 words: ["guide","going","grist","grill","grimy"]
 puzzles: [570]
 hashes: ["CACAACACAACCCAACCCAACCCCCXXXXX"]
+openerHash: ["CACAA"]
 shifts: ["myqvi"]
 state: {
   "boardState": [

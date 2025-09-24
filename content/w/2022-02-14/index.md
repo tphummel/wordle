@@ -50,6 +50,7 @@ stats: {}
 puzzles:
   - 240
 hashes: ["APAAPPPPAACAPPACCCCCXXXXXXXXXX"]
+openerHash: ["APAAP"]
 shifts: ["ifvrm"]
 aliases:
   - /w/240/

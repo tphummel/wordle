@@ -9,6 +9,7 @@ openers: ["guile"]
 middlers: ["finch"]
 puzzles: [1427]
 hashes: ["AAPAACCAACCCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["AAPAA"]
 shifts: ["lpncr"]
 state: {
   "puzzleDate": "2025-05-16",

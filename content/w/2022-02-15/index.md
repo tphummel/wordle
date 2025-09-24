@@ -60,6 +60,7 @@ stats: {}
 puzzles:
   - 241
 hashes: ["PAAPAAPPAACACAACACAACPCAPCCCCC"]
+openerHash: ["PAAPA"]
 shifts: ["gywvk"]
 aliases:
   - /w/241/

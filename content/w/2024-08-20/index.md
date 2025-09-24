@@ -9,6 +9,7 @@ openers: ["great"]
 middlers: ["decal"]
 puzzles: [1158]
 hashes: ["AAPCACCACPCCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["AAPCA"]
 shifts: ["jltji"]
 state: {
   "puzzleDate": "2024-08-20",

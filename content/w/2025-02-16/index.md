@@ -9,6 +9,7 @@ openers: ["crisp"]
 middlers: ["steal","snake","shame"]
 puzzles: [1338]
 hashes: ["AAAPACAPPACACACCACACCCCCCXXXXX"]
+openerHash: ["AAAPA"]
 shifts: ["ybieo"]
 state: {
   "puzzleDate": "2025-02-16",

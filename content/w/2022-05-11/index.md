@@ -5,6 +5,7 @@ tags: []
 words: ["tiger","reply","dream","share","farce"]
 puzzles: [326]
 hashes: ["AAAPPPPAAAAPPPAAAPPCCCCCCXXXXX"]
+openerHash: ["AAAPP"]
 shifts: ["lhzlo"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["radio"]
 middlers: ["trick","siren","viper"]
 puzzles: [980]
 hashes: ["PAAPAAPPAAACPCAACCCCCCCCCXXXXX"]
+openerHash: ["PAAPA"]
 shifts: ["vpxnb"]
 state: {
   "boardState": [

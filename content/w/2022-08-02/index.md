@@ -5,6 +5,7 @@ tags: []
 words: ["third","scope","combo","conga","cocky","colly"]
 puzzles: [409]
 hashes: ["AAAAAAPPAACCAAACCAAACCAACCCACC"]
+openerHash: ["AAAAA"]
 shifts: ["ivgui"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["tiger"]
 middlers: ["fishy"]
 puzzles: [768]
 hashes: ["ACAAAACCAACCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["ACAAA"]
 shifts: ["jpaly"]
 state: {
   "boardState": [

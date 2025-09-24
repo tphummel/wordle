@@ -9,6 +9,7 @@ openers: ["guide"]
 middlers: ["spark","match"]
 puzzles: [1419]
 hashes: ["AAAAAAAPAAPCAAACCCCCXXXXXXXXXX"]
+openerHash: ["AAAAA"]
 shifts: ["hhtvi"]
 state: {
   "puzzleDate": "2025-05-08",

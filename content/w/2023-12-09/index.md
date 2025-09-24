@@ -9,6 +9,7 @@ openers: ["point"]
 middlers: ["shirt"]
 puzzles: [903]
 hashes: ["AACACCCCACCCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["AACAC"]
 shifts: ["yoqod"]
 state: {
   "boardState": [

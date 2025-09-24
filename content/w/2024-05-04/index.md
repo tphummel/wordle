@@ -9,6 +9,7 @@ openers: ["style"]
 middlers: ["glare","lance","valve"]
 puzzles: [1050]
 hashes: ["AAAPCAPPACPCAACCCCACCCCCCXXXXX"]
+openerHash: ["AAAPC"]
 shifts: ["bhtdo"]
 state: {
   "puzzleDate": "2024-05-04",

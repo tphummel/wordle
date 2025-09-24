@@ -60,6 +60,7 @@ stats: {}
 puzzles:
   - 213
 hashes: ["AAAAAACCAAACCAAACCAACCCAACCCCC"]
+openerHash: ["AAAAA"]
 shifts: ["vywgi"]
 aliases:
   - /w/213/

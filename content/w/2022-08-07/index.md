@@ -5,6 +5,7 @@ tags: []
 words: ["heart","spear","swear","smear"]
 puzzles: [414]
 hashes: ["APPPACACCCCACCCCCCCCXXXXXXXXXX"]
+openerHash: ["APPPA"]
 shifts: ["ytmjb"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["ocean"]
 middlers: ["color"]
 puzzles: [798]
 hashes: ["PPAAACPAACCCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["PPAAA"]
 shifts: ["iowrb"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["erupt"]
 middlers: ["cheer","maker"]
 puzzles: [1516]
 hashes: ["PPAAAAAPACAAPPCCCCCCXXXXXXXXXX"]
+openerHash: ["PPAAA"]
 shifts: ["qlnrb"]
 state: {
   "puzzleDate": "2025-08-13",

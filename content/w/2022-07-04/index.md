@@ -5,6 +5,7 @@ tags: []
 words: ["track","spore","sneer","sever"]
 puzzles: [380]
 hashes: ["APAAACAAPPCAPCCCCCCCXXXXXXXXXX"]
+openerHash: ["APAAA"]
 shifts: ["yldnb"]
 state: {
   "boardState": [

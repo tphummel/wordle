@@ -5,6 +5,7 @@ tags: []
 words: ["delay","wacky","rainy","angry"]
 puzzles: [395]
 hashes: ["AAAPCAPAACPPAPCCCCCCXXXXXXXXXX"]
+openerHash: ["AAAPC"]
 shifts: ["guoai"]
 state: {
   "boardState": [

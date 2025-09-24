@@ -9,6 +9,7 @@ openers: ["round"]
 middlers: ["psych","blimp","leapt","spell"]
 puzzles: [955]
 hashes: ["AAAAAPAAAAAPAAPPPAPAAPPACCCCCC"]
+openerHash: ["AAAAA"]
 shifts: ["kexnv"]
 state: {
   "boardState": [

@@ -8,6 +8,7 @@ openers: ["orate"]
 middlers: ["quirk"]
 puzzles: [593]
 hashes: ["APAAAAACCCCCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["APAAA"]
 shifts: ["yoqau"]
 state: {
   "boardState": [

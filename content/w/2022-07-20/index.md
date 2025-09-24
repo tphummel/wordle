@@ -5,6 +5,7 @@ tags: []
 words: ["delay","stone","chute","write","trite"]
 puzzles: [396]
 hashes: ["APAAAAPAACAAACCACCCCCCCCCXXXXX"]
+openerHash: ["APAAA"]
 shifts: ["zyqco"]
 state: {
   "boardState": [

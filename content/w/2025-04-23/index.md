@@ -9,6 +9,7 @@ openers: ["flame"]
 middlers: ["shore","quote","booze"]
 puzzles: [1404]
 hashes: ["AAAACAACACAACACAPCPCCCCCCXXXXX"]
+openerHash: ["AAAAC"]
 shifts: ["ugwwo"]
 state: {
   "puzzleDate": "2025-04-23",

@@ -9,6 +9,7 @@ openers: ["alive"]
 middlers: ["stern","redux"]
 puzzles: [1184]
 hashes: ["AAAAPAAPPACCACACCCCCXXXXXXXXXX"]
+openerHash: ["AAAAP"]
 shifts: ["xlkdb"]
 state: {
   "puzzleDate": "2024-09-15",

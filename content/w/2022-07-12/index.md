@@ -5,6 +5,7 @@ tags: []
 words: ["track","moist","bidet","light","fight","night"]
 puzzles: [388]
 hashes: ["PAAAAAAPACACAACACCCCACCCCCCCCC"]
+openerHash: ["PAAAA"]
 shifts: ["tpoqd"]
 state: {
   "boardState": [

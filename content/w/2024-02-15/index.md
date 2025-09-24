@@ -9,6 +9,7 @@ openers: ["radio"]
 middlers: ["shoal","coast"]
 puzzles: [971]
 hashes: ["APAAPPAPPAPPPPCCCCCCXXXXXXXXXX"]
+openerHash: ["APAAP"]
 shifts: ["gzkxd"]
 state: {
   "boardState": [

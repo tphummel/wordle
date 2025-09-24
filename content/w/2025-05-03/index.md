@@ -9,6 +9,7 @@ openers: ["flame"]
 middlers: ["strap","pasty"]
 puzzles: [1414]
 hashes: ["AAPAAPPAPPCCPPCCCCCCXXXXXXXXXX"]
+openerHash: ["AAPAA"]
 shifts: ["vhbbi"]
 state: {
   "puzzleDate": "2025-05-03",

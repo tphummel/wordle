@@ -5,6 +5,7 @@ tags: []
 words: ["honey","their","chute"]
 puzzles: [455]
 hashes: ["PAAPAPCPAACCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["PAAPA"]
 shifts: ["iocco"]
 state: {
   "boardState": [

@@ -6,6 +6,7 @@ contests: ["2022-12-ratio"]
 words: ["ratio","rival"]
 puzzles: [544]
 hashes: ["CPAPACCCCCXXXXXXXXXXXXXXXXXXXX"]
+openerHash: ["CPAPA"]
 shifts: ["xpdjv"]
 state: {
   "boardState": [

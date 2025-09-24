@@ -9,6 +9,7 @@ openers: ["often"]
 middlers: ["wheel","rebel"]
 puzzles: [1072]
 hashes: ["AAACAAAPCCACPCCCCCCCXXXXXXXXXX"]
+openerHash: ["AAACA"]
 shifts: ["hldnv"]
 state: {
   "puzzleDate": "2024-05-26",

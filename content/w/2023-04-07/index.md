@@ -8,6 +8,7 @@ openers: ["lucky"]
 middlers: []
 puzzles: [657]
 hashes: ["CPCAACCCCCXXXXXXXXXXXXXXXXXXXX"]
+openerHash: ["CPCAA"]
 shifts: ["rvkdc"]
 state: {
   "boardState": [

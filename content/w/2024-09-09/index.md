@@ -9,6 +9,7 @@ openers: ["grain"]
 middlers: ["split","vomit"]
 puzzles: [1178]
 hashes: ["AAACAAAACCAAACCCCCCCXXXXXXXXXX"]
+openerHash: ["AAACA"]
 shifts: ["jljrd"]
 state: {
   "puzzleDate": "2024-09-09",

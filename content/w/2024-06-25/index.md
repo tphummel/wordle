@@ -9,6 +9,7 @@ openers: ["scope"]
 middlers: ["sound","salvo"]
 puzzles: [1102]
 hashes: ["CAPAACPAAACCAPPCCCCCXXXXXXXXXX"]
+openerHash: ["CAPAA"]
 shifts: ["yhdxb"]
 state: {
   "puzzleDate": "2024-06-25",

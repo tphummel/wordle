@@ -58,6 +58,7 @@ stats:
 puzzles:
   - 268
 hashes: ["CPCAPCACCCCCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["CPCAP"]
 shifts: ["ytmud"]
 aliases:
   - /w/268/

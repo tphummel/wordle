@@ -50,6 +50,7 @@ stats: {}
 puzzles:
   - 226
 hashes: ["ACCCCACCCCACCCCCCCCCXXXXXXXXXX"]
+openerHash: ["ACCCC"]
 shifts: ["rpoqd"]
 aliases:
   - /w/226/

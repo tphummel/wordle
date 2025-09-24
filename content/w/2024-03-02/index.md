@@ -9,6 +9,7 @@ openers: ["olive"]
 middlers: ["trunk"]
 puzzles: [987]
 hashes: ["AAAAAACPPACCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["AAAAA"]
 shifts: ["ayjjx"]
 state: {
   "boardState": [

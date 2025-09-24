@@ -9,6 +9,7 @@ openers: ["ingot"]
 middlers: ["group","hoagy"]
 puzzles: [1349]
 hashes: ["AAPPAPAPAAACACACCCCCXXXXXXXXXX"]
+openerHash: ["AAPPA"]
 shifts: ["rvlpo"]
 state: {
   "puzzleDate": "2025-02-27",

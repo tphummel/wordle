@@ -8,6 +8,7 @@ openers: ["kneel"]
 middlers: ["least","early","apple","addle"]
 puzzles: [711]
 hashes: ["AAPAPPPPAAPPACACAACCCAACCCCCCC"]
+openerHash: ["AAPAP"]
 shifts: ["gnquo"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["flake"]
 middlers: ["wheel","bevel"]
 puzzles: [1179]
 hashes: ["APAAPAAPCCPCACCCCCCCXXXXXXXXXX"]
+openerHash: ["APAAP"]
 shifts: ["xljnv"]
 state: {
   "puzzleDate": "2024-09-10",

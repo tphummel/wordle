@@ -9,6 +9,7 @@ openers: ["tiger"]
 middlers: ["sober","lever","plyer"]
 puzzles: [759]
 hashes: ["AAACCAAACCPAACCACCCCCCCCCXXXXX"]
+openerHash: ["AAACC"]
 shifts: ["lsgnb"]
 state: {
   "boardState": [

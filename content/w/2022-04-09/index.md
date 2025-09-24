@@ -5,6 +5,7 @@ tags: []
 words: ["mouse","strap","stark","stair"]
 puzzles: [294]
 hashes: ["AAAPACCPPACCCPACCCCCXXXXXXXXXX"]
+openerHash: ["AAAPA"]
 shifts: ["yairb"]
 state: {
   "boardState": [

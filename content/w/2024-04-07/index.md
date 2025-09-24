@@ -9,6 +9,7 @@ openers: ["style"]
 middlers: ["chill","quilt","daily","agile"]
 puzzles: [1023]
 hashes: ["AAACAAACCAAACCAAPCCAPACCACCCCC"]
+openerHash: ["AAACA"]
 shifts: ["bvquk"]
 state: {
   "boardState": [

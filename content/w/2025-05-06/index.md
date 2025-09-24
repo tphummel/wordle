@@ -9,6 +9,7 @@ openers: ["quilt"]
 middlers: ["suits"]
 puzzles: [1417]
 hashes: ["ACCAPCCCCACCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["ACCAP"]
 shifts: ["ybqco"]
 state: {
   "puzzleDate": "2025-05-06",

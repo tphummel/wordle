@@ -9,6 +9,7 @@ openers: ["store"]
 middlers: ["wreak","crier"]
 puzzles: [1347]
 hashes: ["AAAPPACPAAACACCCCCCCXXXXXXXXXX"]
+openerHash: ["AAAPP"]
 shifts: ["jygnb"]
 state: {
   "puzzleDate": "2025-02-25",

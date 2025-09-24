@@ -9,6 +9,7 @@ openers: ["style"]
 middlers: ["cease","passe","danse"]
 puzzles: [1035]
 hashes: ["PAAACAAPCCACACCACACCCCCCCXXXXX"]
+openerHash: ["PAAAC"]
 shifts: ["xhqbo"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["erupt"]
 middlers: ["spear","peril"]
 puzzles: [961]
 hashes: ["PPAPAAPPAPPCPACCCCCCXXXXXXXXXX"]
+openerHash: ["PPAPA"]
 shifts: ["xlxnv"]
 state: {
   "boardState": [

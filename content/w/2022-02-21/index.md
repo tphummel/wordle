@@ -53,6 +53,7 @@ stats:
 puzzles:
   - 247
 hashes: ["CAPAACCCCCXXXXXXXXXXXXXXXXXXXX"]
+openerHash: ["CAPAA"]
 shifts: ["uapnb"]
 aliases:
   - /w/247/

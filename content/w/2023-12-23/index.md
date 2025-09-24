@@ -9,6 +9,7 @@ openers: ["point"]
 middlers: ["spore"]
 puzzles: [917]
 hashes: ["PPAAACPCACCCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["PPAAA"]
 shifts: ["yswyo"]
 state: {
   "boardState": [

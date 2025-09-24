@@ -9,6 +9,7 @@ openers: ["whole"]
 middlers: ["worst"]
 puzzles: [1202]
 hashes: ["CAPAACPAAACCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["CAPAA"]
 shifts: ["choxx"]
 state: {
   "puzzleDate": "2024-10-03",

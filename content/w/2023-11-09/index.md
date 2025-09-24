@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["style","ledge","glare"]
 puzzles: [873]
 hashes: ["AAAACAAAPCPAAPCCCCACCCCCCXXXXX"]
+openerHash: ["AAAAC"]
 shifts: ["msiio"]
 state: {
   "boardState": [

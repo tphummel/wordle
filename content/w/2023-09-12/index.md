@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["grist"]
 puzzles: [815]
 hashes: ["AAAAAAACCACCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["AAAAA"]
 shifts: ["coqbu"]
 state: {
   "boardState": [

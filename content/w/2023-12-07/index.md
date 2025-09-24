@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["great","sheep"]
 puzzles: [901]
 hashes: ["AAAAPAACAACACCCCCCCCXXXXXXXXXX"]
+openerHash: ["AAAAP"]
 shifts: ["ysmnz"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["route"]
 middlers: ["spicy","lanky","daffy"]
 puzzles: [833]
 hashes: ["AAAAAAAAACACAACCCAACCCCCCXXXXX"]
+openerHash: ["AAAAA"]
 shifts: ["jhlmi"]
 state: {
   "boardState": [

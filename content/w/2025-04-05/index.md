@@ -9,6 +9,7 @@ openers: ["grief"]
 middlers: ["flout","favor"]
 puzzles: [1386]
 hashes: ["AAAAPCAPAACPAPACCCCCXXXXXXXXXX"]
+openerHash: ["AAAAP"]
 shifts: ["lvivi"]
 state: {
   "puzzleDate": "2025-04-05",

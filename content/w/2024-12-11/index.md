@@ -9,6 +9,7 @@ openers: ["light"]
 middlers: ["clasp","plunk","plump"]
 puzzles: [1271]
 hashes: ["PAAAAACAAPCCCAACCCCACCCCCXXXXX"]
+openerHash: ["PAAAA"]
 shifts: ["vscvl"]
 state: {
   "puzzleDate": "2024-12-11",

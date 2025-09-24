@@ -9,6 +9,7 @@ openers: ["plate"]
 middlers: ["screw","fried"]
 puzzles: [1554]
 hashes: ["AAAAPAAPCAPPACPCCCCCXXXXXXXXXX"]
+openerHash: ["AAAAP"]
 shifts: ["jlnnb"]
 state: {
   "puzzleDate": "2025-09-20",

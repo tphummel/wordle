@@ -9,6 +9,7 @@ openers: ["point"]
 middlers: ["cheap","erupt"]
 puzzles: [1314]
 hashes: ["PAAAAAAPAPPPPPACCCCCXXXXXXXXXX"]
+openerHash: ["PAAAA"]
 shifts: ["awxnb"]
 state: {
   "puzzleDate": "2025-01-23",

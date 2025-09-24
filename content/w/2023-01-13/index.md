@@ -6,6 +6,7 @@ contests: ["2023-01-guide"]
 words: ["guide","lucky","quart","human"]
 puzzles: [573]
 hashes: ["ACAAAACAAAACPAACCCCCXXXXXXXXXX"]
+openerHash: ["ACAAA"]
 shifts: ["nbujx"]
 state: {
   "boardState": [

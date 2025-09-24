@@ -9,6 +9,7 @@ openers: ["squid"]
 middlers: ["north","trace","track"]
 puzzles: [739]
 hashes: ["AAAAAAAPPACCCCACCCCACCCCCXXXXX"]
+openerHash: ["AAAAA"]
 shifts: ["zyild"]
 state: {
   "boardState": [

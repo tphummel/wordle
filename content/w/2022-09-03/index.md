@@ -6,6 +6,7 @@ contests: ["2022-09-honey"]
 words: ["honey","risky","daffy","muggy","gully"]
 puzzles: [441]
 hashes: ["AAAACAAAACAAAACACPACCCCCCXXXXX"]
+openerHash: ["AAAAC"]
 shifts: ["mbtui"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["choir"]
 middlers: ["shape","shall","shady"]
 puzzles: [1263]
 hashes: ["ACAAACCCAACCCAACCCACCCCCCXXXXX"]
+openerHash: ["ACAAA"]
 shifts: ["yoiti"]
 state: {
   "puzzleDate": "2024-12-03",

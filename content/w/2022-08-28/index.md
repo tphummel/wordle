@@ -5,6 +5,7 @@ tags: []
 words: ["thing","growl","gamed","gaffe","gauge","gauze"]
 puzzles: [435]
 hashes: ["AAAAPCAAAACCAPACCAACCCCACCCCCC"]
+openerHash: ["AAAAP"]
 shifts: ["mhcio"]
 state: {
   "boardState": [

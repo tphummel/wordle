@@ -9,6 +9,7 @@ openers: ["patio"]
 middlers: ["pouch","power","poofy"]
 puzzles: [1475]
 hashes: ["CAAAPCCAAACCAAACCAACCCCCCXXXXX"]
+openerHash: ["CAAAP"]
 shifts: ["vvxyi"]
 state: {
   "puzzleDate": "2025-07-03",

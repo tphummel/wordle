@@ -5,6 +5,7 @@ tags: []
 words: ["tiger","place","swole","lunge","delve"]
 puzzles: [331]
 hashes: ["AAAPAAPAACAAAPCPAAACCCCCCXXXXX"]
+openerHash: ["AAAPA"]
 shifts: ["jlteo"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["scare"]
 middlers: ["spear","smear"]
 puzzles: [1384]
 hashes: ["CAPPPCACCCCACCCCCCCCXXXXXXXXXX"]
+openerHash: ["CAPPP"]
 shifts: ["yomjb"]
 state: {
   "puzzleDate": "2025-04-03",

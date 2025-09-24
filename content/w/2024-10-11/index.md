@@ -9,6 +9,7 @@ openers: ["eight"]
 middlers: ["stags"]
 puzzles: [1210]
 hashes: ["AAPAPPPAPACCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["AAPAP"]
 shifts: ["mbaci"]
 state: {
   "puzzleDate": "2024-10-11",

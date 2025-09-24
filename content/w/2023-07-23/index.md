@@ -9,6 +9,7 @@ openers: ["tiger"]
 middlers: ["peace","shame"]
 puzzles: [764]
 hashes: ["AAAPAAACACACCACCCCCCXXXXXXXXXX"]
+openerHash: ["AAAPA"]
 shifts: ["coiuo"]
 state: {
   "boardState": [

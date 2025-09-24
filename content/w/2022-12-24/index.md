@@ -6,6 +6,7 @@ contests: ["2022-12-ratio"]
 words: ["ratio","diode","voice","poise"]
 puzzles: [553]
 hashes: ["AAAPPAPPACACCACCCCCCXXXXXXXXXX"]
+openerHash: ["AAAPP"]
 shifts: ["vvqbo"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["plant","stink","twink"]
 puzzles: [882]
 hashes: ["AAPAAAAACPAPCCCCACCCCCCCCXXXXX"]
+openerHash: ["AAPAA"]
 shifts: ["zoqwu"]
 state: {
   "boardState": [

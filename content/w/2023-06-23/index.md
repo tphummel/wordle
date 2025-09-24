@@ -9,6 +9,7 @@ openers: ["squid"]
 middlers: ["whale","meter","token"]
 puzzles: [734]
 hashes: ["AAAAAAAAAPAAPCAPCACACCCCCXXXXX"]
+openerHash: ["AAAAA"]
 shifts: ["ivdnd"]
 state: {
   "boardState": [

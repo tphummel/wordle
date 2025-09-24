@@ -9,6 +9,7 @@ openers: ["squid"]
 middlers: ["tromp","wonky","block"]
 puzzles: [730]
 hashes: ["AAAAAAAPAAAPAPAAAPAPCCCCCXXXXX"]
+openerHash: ["AAAAA"]
 shifts: ["qhhxy"]
 state: {
   "boardState": [

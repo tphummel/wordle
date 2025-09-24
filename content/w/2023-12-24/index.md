@@ -9,6 +9,7 @@ openers: ["point"]
 middlers: ["dream","erase","craze"]
 puzzles: [918]
 hashes: ["AAAAAACPPAACCACPCCACCCCCCXXXXX"]
+openerHash: ["AAAAA"]
 shifts: ["myilo"]
 state: {
   "boardState": [

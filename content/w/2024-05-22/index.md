@@ -9,6 +9,7 @@ openers: ["style"]
 middlers: ["dealt"]
 puzzles: [1068]
 hashes: ["APACPAPCCCCCCCCXXXXXXXXXXXXXXX"]
+openerHash: ["APACP"]
 shifts: ["keiud"]
 state: {
   "puzzleDate": "2024-05-22",

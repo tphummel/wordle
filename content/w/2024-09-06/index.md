@@ -9,6 +9,7 @@ openers: ["flake"]
 middlers: ["every","crest","rider"]
 puzzles: [1175]
 hashes: ["AAAAPPAAPAAPPAACAAPPCCCCCXXXXX"]
+openerHash: ["AAAAP"]
 shifts: ["xlzdx"]
 state: {
   "puzzleDate": "2024-09-06",

@@ -63,6 +63,7 @@ stats:
 puzzles:
   - 263
 hashes: ["APAAAPPAPACCACCCCCCCXXXXXXXXXX"]
+openerHash: ["APAAA"]
 shifts: ["svvcr"]
 aliases:
   - /w/263/

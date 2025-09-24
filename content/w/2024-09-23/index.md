@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["laser","beast","steak"]
 puzzles: [1192]
 hashes: ["AAAAPAPPPAAPPPPCCCCACCCCCXXXXX"]
+openerHash: ["AAAAP"]
 shifts: ["yamjw"]
 state: {
   "puzzleDate": "2024-09-23",

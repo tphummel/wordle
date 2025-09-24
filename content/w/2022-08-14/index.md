@@ -5,6 +5,7 @@ tags: []
 words: ["thing","choir","while","ships","khaki"]
 puzzles: [421]
 hashes: ["ACPAAACAPAACPAAACPAACCCCCXXXXX"]
+openerHash: ["ACPAA"]
 shifts: ["qoits"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["syrup"]
 middlers: ["wavey","beady","delay"]
 puzzles: [1007]
 hashes: ["APAAAAPAPCACPPCCCACCCCCCCXXXXX"]
+openerHash: ["APAAA"]
 shifts: ["jlkji"]
 state: {
   "boardState": [
