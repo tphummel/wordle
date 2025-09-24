@@ -9,7 +9,7 @@ openers: ["patio"]
 middlers: ["delve"]
 puzzles: [1476]
 hashes: ["AAAAAAAACCCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["ibzeo"]
 state: {
   "puzzleDate": "2025-07-04",

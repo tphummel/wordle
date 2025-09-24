@@ -6,7 +6,7 @@ contests: ["2023-01-guide"]
 words: ["guide","stoic","fishy"]
 puzzles: [589]
 hashes: ["AAPAAPAAPACCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AAPAA"]
+openerHashes: ["AAPAA"]
 shifts: ["lpaqi"]
 state: {
   "boardState": [

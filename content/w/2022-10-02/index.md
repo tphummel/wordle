@@ -6,7 +6,7 @@ contests: ["2022-10-metal"]
 words: ["metal","threw","tweet","twice","twine"]
 puzzles: [470]
 hashes: ["APPAACAAPPCCPAACCCACCCCCCXXXXX"]
-openerHash: ["APPAA"]
+openerHashes: ["APPAA"]
 shifts: ["zdqwo"]
 state: {
   "boardState": [

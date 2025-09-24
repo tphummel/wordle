@@ -9,7 +9,7 @@ openers: ["eight"]
 middlers: ["sling"]
 puzzles: [1297]
 hashes: ["APPAACAPACCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["APPAA"]
+openerHashes: ["APPAA"]
 shifts: ["ywzrq"]
 state: {
   "puzzleDate": "2025-01-06",

@@ -9,7 +9,7 @@ openers: ["great"]
 middlers: ["avail","champ","candy"]
 puzzles: [1114]
 hashes: ["AAAPAPAAAACAPAACCCAACCCCCXXXXX"]
-openerHash: ["AAAPA"]
+openerHashes: ["AAAPA"]
 shifts: ["ihvxx"]
 state: {
   "puzzleDate": "2024-07-07",

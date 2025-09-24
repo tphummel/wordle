@@ -9,7 +9,7 @@ openers: ["tenor"]
 middlers: ["could","moldy"]
 puzzles: [1489]
 hashes: ["AAAPAACAPPCCPPACCCCCXXXXXXXXXX"]
-openerHash: ["AAAPA"]
+openerHashes: ["AAAPA"]
 shifts: ["svljv"]
 state: {
   "puzzleDate": "2025-07-17",

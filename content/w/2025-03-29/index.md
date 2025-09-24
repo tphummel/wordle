@@ -9,7 +9,7 @@ openers: ["cream"]
 middlers: ["strip","shrug"]
 puzzles: [1379]
 hashes: ["APAAACACAACACAACCCCCXXXXXXXXXX"]
-openerHash: ["APAAA"]
+openerHashes: ["APAAA"]
 shifts: ["yvzai"]
 state: {
   "puzzleDate": "2025-03-29",

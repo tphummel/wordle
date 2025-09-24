@@ -9,7 +9,7 @@ openers: ["juice"]
 middlers: ["gravy","stark"]
 puzzles: [1369]
 hashes: ["AAAAAAPCAACACCCCCCCCXXXXXXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["ywiau"]
 state: {
   "puzzleDate": "2025-03-19",

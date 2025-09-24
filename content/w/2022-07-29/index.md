@@ -5,7 +5,7 @@ tags: ["interesting"]
 words: ["third","plate","setup","upset"]
 puzzles: [405]
 hashes: ["PAAAAPAAPPPPPPPCCCCCXXXXXXXXXX"]
-openerHash: ["PAAAA"]
+openerHashes: ["PAAAA"]
 shifts: ["awand"]
 state: {
   "boardState": [

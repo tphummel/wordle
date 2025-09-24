@@ -9,7 +9,7 @@ openers: ["scout"]
 middlers: ["reput","debut"]
 puzzles: [1186]
 hashes: ["AAACCACACCACPCCCCCCCXXXXXXXXXX"]
-openerHash: ["AAACC"]
+openerHashes: ["AAACC"]
 shifts: ["hlidd"]
 state: {
   "puzzleDate": "2024-09-17",

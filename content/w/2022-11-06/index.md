@@ -6,7 +6,7 @@ contests: ["2022-11-habit"]
 words: ["habit","track","stamp","stand","stale"]
 puzzles: [505]
 hashes: ["APAAPPACAACCCAACCCAACCCCCXXXXX"]
-openerHash: ["APAAP"]
+openerHashes: ["APAAP"]
 shifts: ["yaiuo"]
 state: {
   "boardState": [

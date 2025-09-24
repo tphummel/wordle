@@ -9,7 +9,7 @@ openers: ["radio"]
 middlers: ["baton"]
 puzzles: [970]
 hashes: ["ACAAPACPCCCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["ACAAP"]
+openerHashes: ["ACAAP"]
 shifts: ["zhtxx"]
 state: {
   "boardState": [

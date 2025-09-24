@@ -6,7 +6,7 @@ contests: ["2022-12-ratio"]
 words: ["ratio","whirl","siren","infer"]
 puzzles: [537]
 hashes: ["PAAPAAAPPAAPPCPCCCCCXXXXXXXXXX"]
-openerHash: ["PAAPA"]
+openerHashes: ["PAAPA"]
 shifts: ["ounnb"]
 state: {
   "boardState": [

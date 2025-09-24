@@ -81,7 +81,7 @@ Common workflow for adding old puzzles that haven't been entered yet:
 - `title`, `date`, `puzzles`, `words`, `openers`, `middlers`
 - `state` object with board state, evaluations, solution, game status
 - `stats` object with current player statistics
-- Taxonomies: `tags`, `contests`, `hashes`, `openerHash`, `shifts`
+- Taxonomies: `tags`, `contests`, `hashes`, `openerHashes`, `shifts`
 
 ### Validation
 Tests validate puzzle data integrity using both web publishing and executable testing with google/zx.

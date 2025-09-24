@@ -5,7 +5,7 @@ tags: []
 words: ["mouse","comma"]
 puzzles: [291]
 hashes: ["PCAAACCCCCXXXXXXXXXXXXXXXXXXXX"]
-openerHash: ["PCAAA"]
+openerHashes: ["PCAAA"]
 shifts: ["ivuvk"]
 state: {
   "boardState": [

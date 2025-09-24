@@ -9,7 +9,7 @@ openers: ["under"]
 middlers: ["prune"]
 puzzles: [1393]
 hashes: ["PPAPPAPPPCCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["PPAPP"]
+openerHashes: ["PPAPP"]
 shifts: ["tbzbo"]
 state: {
   "puzzleDate": "2025-04-12",

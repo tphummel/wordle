@@ -5,7 +5,7 @@ tags: []
 words: ["steam","those","rents","fetes","fetus"]
 puzzles: [324]
 hashes: ["PPPAAPAAPPACAPCCCCACCCCCCXXXXX"]
-openerHash: ["PPPAA"]
+openerHashes: ["PPPAA"]
 shifts: ["llbdc"]
 state: {
   "boardState": [

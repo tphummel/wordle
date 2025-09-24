@@ -22,7 +22,7 @@
 {{ with .Site.GetPage "/hashes" }}
   <div>🧩 Puzzle Hashes Played: <strong><a href="{{ .RelPermalink }}">{{ len .Pages }}</a></strong></div>
 {{ end }}
-{{ with .Site.GetPage "/openerhash" }}
+{{ with .Site.GetPage "/openerhashes" }}
   <div>🧩 Opener Hashes Played: <strong><a href="{{ .RelPermalink }}">{{ len .Pages }}</a></strong></div>
 {{ end }}
 {{ with .Site.GetPage "/shifts" }}
@@ -194,6 +194,15 @@
     <td><a href="{{ .RelPermalink }}">Anagrams</a></td>
     <td>
       {{ (mul (div (float (len $anagrams)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $anagrams }}</a> / {{ len $wordles }})
+    </td>
+  </tr>
+{{ end }}
+{{ with .Site.GetPage "true-anagrams.md" }}
+  {{ $trueAnagrams := partial "true-anagrams.html" (where .Site.RegularPages "Section" "w") }}
+  <tr>
+    <td><a href="{{ .RelPermalink }}">True Anagrams</a></td>
+    <td>
+      {{ (mul (div (float (len $trueAnagrams)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $trueAnagrams }}</a> / {{ len $wordles }})
     </td>
   </tr>
 {{ end }}

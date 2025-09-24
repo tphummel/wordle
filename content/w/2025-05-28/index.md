@@ -9,7 +9,7 @@ openers: ["sugar"]
 middlers: ["rebar"]
 puzzles: [1439]
 hashes: ["AAACCAAACCCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AAACC"]
+openerHashes: ["AAACC"]
 shifts: ["vvtjb"]
 state: {
   "puzzleDate": "2025-05-28",

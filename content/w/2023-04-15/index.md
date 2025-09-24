@@ -8,7 +8,7 @@ openers: ["lucky"]
 middlers: ["story"]
 puzzles: [665]
 hashes: ["AAAACAACACCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AAAAC"]
+openerHashes: ["AAAAC"]
 shifts: ["gnwwi"]
 state: {
   "boardState": [

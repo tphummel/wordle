@@ -9,7 +9,7 @@ openers: ["eight"]
 middlers: ["scare","weary"]
 puzzles: [1252]
 hashes: ["PAAAAAACCPACCCACCCCCXXXXXXXXXX"]
-openerHash: ["PAAAA"]
+openerHashes: ["PAAAA"]
 shifts: ["vliav"]
 state: {
   "puzzleDate": "2024-11-22",

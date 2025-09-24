@@ -9,7 +9,7 @@ openers: ["eight"]
 middlers: ["score","moved","model"]
 puzzles: [1200]
 hashes: ["PAAAAAAPAPCCACPCCCCACCCCCXXXXX"]
-openerHash: ["PAAAA"]
+openerHashes: ["PAAAA"]
 shifts: ["svlnw"]
 state: {
   "puzzleDate": "2024-10-01",

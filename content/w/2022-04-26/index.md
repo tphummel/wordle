@@ -5,7 +5,7 @@ tags: []
 words: ["mouse","fresh","heist"]
 puzzles: [311]
 hashes: ["AAACPAAPCPCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AAACP"]
+openerHashes: ["AAACP"]
 shifts: ["nlqbd"]
 state: {
   "boardState": [

@@ -9,7 +9,7 @@ openers: ["weird"]
 middlers: ["shelf","quote"]
 puzzles: [1519]
 hashes: ["APAAAAAPAAAAACCCCCCCXXXXXXXXXX"]
-openerHash: ["APAAA"]
+openerHashes: ["APAAA"]
 shifts: ["shbco"]
 state: {
   "puzzleDate": "2025-08-16",

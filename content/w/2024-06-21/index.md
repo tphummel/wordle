@@ -9,7 +9,7 @@ openers: ["proud"]
 middlers: ["place","pizza"]
 puzzles: [1098]
 hashes: ["CAAAACAPAACPAAPCCCCCXXXXXXXXXX"]
-openerHash: ["CAAAA"]
+openerHashes: ["CAAAA"]
 shifts: ["vhqwd"]
 state: {
   "puzzleDate": "2024-06-21",

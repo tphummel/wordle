@@ -5,7 +5,7 @@ tags: []
 words: ["mouse","thorn","rigor","cargo"]
 puzzles: [305]
 hashes: ["APAAAAAPPAPAPPACCCCCXXXXXXXXXX"]
-openerHash: ["APAAA"]
+openerHashes: ["APAAA"]
 shifts: ["ihzpy"]
 state: {
   "boardState": [

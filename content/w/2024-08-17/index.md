@@ -9,7 +9,7 @@ openers: ["beach"]
 middlers: ["strip","story"]
 puzzles: [1155]
 hashes: ["AAAAACCPAACCCCACCCCCXXXXXXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["yawaw"]
 state: {
   "puzzleDate": "2024-08-17",

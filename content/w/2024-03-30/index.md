@@ -9,7 +9,7 @@ openers: ["style"]
 middlers: ["deuce","farce"]
 puzzles: [1015]
 hashes: ["AAAACAAACCCACCCCCCCCXXXXXXXXXX"]
-openerHash: ["AAAAC"]
+openerHashes: ["AAAAC"]
 shifts: ["lvzlo"]
 state: {
   "boardState": [

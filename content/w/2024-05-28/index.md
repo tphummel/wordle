@@ -9,7 +9,7 @@ openers: ["crown"]
 middlers: ["sneak","shiny","pints","bings"]
 puzzles: [1074]
 hashes: ["AAAAPPPAAAPAPPAACCACACCACCCCAC"]
-openerHash: ["AAAAP"]
+openerHashes: ["AAAAP"]
 shifts: ["spvdc"]
 state: {
   "puzzleDate": "2024-05-28",

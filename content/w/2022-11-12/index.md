@@ -6,7 +6,7 @@ contests: ["2022-11-habit"]
 words: ["habit","valet"]
 puzzles: [511]
 hashes: ["ACAACCCCCCXXXXXXXXXXXXXXXXXXXX"]
-openerHash: ["ACAAC"]
+openerHashes: ["ACAAC"]
 shifts: ["bhtnd"]
 state: {
   "boardState": [

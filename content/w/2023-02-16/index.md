@@ -8,7 +8,7 @@ openers: ["orate"]
 middlers: ["campy","match","macks","manic"]
 puzzles: [607]
 hashes: ["AAPAAPCPAACCAPACCPAACCACCCCCCC"]
-openerHash: ["AAPAA"]
+openerHashes: ["AAPAA"]
 shifts: ["shorm"]
 state: {
   "boardState": [

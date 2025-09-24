@@ -9,7 +9,7 @@ openers: ["squid"]
 middlers: ["cloud","unfed"]
 puzzles: [722]
 hashes: ["AAPACAAAPCPAAACCCCCCXXXXXXXXXX"]
-openerHash: ["AAPAC"]
+openerHashes: ["AAPAC"]
 shifts: ["mbian"]
 state: {
   "boardState": [

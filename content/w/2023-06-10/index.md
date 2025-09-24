@@ -9,7 +9,7 @@ openers: ["squid"]
 middlers: ["train","plain","chain"]
 puzzles: [721]
 hashes: ["AAACAAACCCAACCCAACCCCCCCCXXXXX"]
-openerHash: ["AAACA"]
+openerHashes: ["AAACA"]
 shifts: ["gnirx"]
 state: {
   "boardState": [

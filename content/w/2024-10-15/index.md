@@ -9,7 +9,7 @@ openers: ["choir"]
 middlers: ["coder","cover","cower","comer","coper"]
 puzzles: [1214]
 hashes: ["CAPACCCACCCCACCCCACCCCACCCCACC"]
-openerHash: ["CAPAC"]
+openerHashes: ["CAPAC"]
 shifts: ["ivznb"]
 state: {
   "puzzleDate": "2024-10-15",

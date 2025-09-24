@@ -9,7 +9,7 @@ openers: ["count"]
 middlers: ["train"]
 puzzles: [1211]
 hashes: ["AAAPPPACCCCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AAAPP"]
+openerHashes: ["AAAPP"]
 shifts: ["yairx"]
 state: {
   "puzzleDate": "2024-10-12",

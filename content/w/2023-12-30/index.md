@@ -9,7 +9,7 @@ openers: ["point"]
 middlers: ["threw"]
 puzzles: [924]
 hashes: ["AAAAPCCCCACCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AAAAP"]
+openerHashes: ["AAAAP"]
 shifts: ["zozno"]
 state: {
   "boardState": [

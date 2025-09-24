@@ -5,7 +5,7 @@ tags: []
 words: ["thing","lodge","gleam","gruel"]
 puzzles: [423]
 hashes: ["AAAAPPAAPPCPPAACCCCCXXXXXXXXXX"]
-openerHash: ["AAAAP"]
+openerHashes: ["AAAAP"]
 shifts: ["mycnv"]
 state: {
   "boardState": [

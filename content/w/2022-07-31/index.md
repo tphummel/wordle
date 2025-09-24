@@ -5,7 +5,7 @@ tags: []
 words: ["third","wreak","grasp","cramp"]
 puzzles: [407]
 hashes: ["AAAPAACAPAACCACCCCCCXXXXXXXXXX"]
-openerHash: ["AAAPA"]
+openerHashes: ["AAAPA"]
 shifts: ["iyivz"]
 state: {
   "boardState": [

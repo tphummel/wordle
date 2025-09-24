@@ -8,7 +8,7 @@ openers: ["bingo"]
 middlers: ["plate","threw"]
 puzzles: [641]
 hashes: ["AAAAAAAAPPPAACACCCCCXXXXXXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["jbdnd"]
 state: {
   "boardState": [

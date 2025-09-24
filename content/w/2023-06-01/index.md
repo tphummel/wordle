@@ -9,7 +9,7 @@ openers: ["squid"]
 middlers: ["regal","patch","jammy"]
 puzzles: [712]
 hashes: ["AAAAAAAAPAACAAACCAACCCCCCXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["phhii"]
 state: {
   "boardState": [

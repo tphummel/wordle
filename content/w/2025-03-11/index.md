@@ -9,7 +9,7 @@ openers: ["twice"]
 middlers: ["truck"]
 puzzles: [1361]
 hashes: ["CAACACCACCCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["CAACA"]
+openerHashes: ["CAACA"]
 shifts: ["zyilu"]
 state: {
   "puzzleDate": "2025-03-11",

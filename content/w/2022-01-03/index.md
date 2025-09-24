@@ -55,7 +55,7 @@ stats: {}
 puzzles:
   - 198
 hashes: ["PAAAAAAPAAACCACACCACCCCCCXXXXX"]
-openerHash: ["PAAAA"]
+openerHashes: ["PAAAA"]
 shifts: ["zycbc"]
 aliases:
   - /w/198/

@@ -6,7 +6,7 @@ contests: ["2023-01-guide"]
 words: ["guide","slice","tribe","whine","maize"]
 puzzles: [585]
 hashes: ["AACACAACACAACACAACACCCCCCXXXXX"]
-openerHash: ["AACAC"]
+openerHashes: ["AACAC"]
 shifts: ["shqio"]
 state: {
   "boardState": [

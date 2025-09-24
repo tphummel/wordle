@@ -5,7 +5,7 @@ tags: []
 words: ["honey","stair","crisp","frisk","brisk"]
 puzzles: [464]
 hashes: ["AAAAAPAAPPACCCAACCCCCCCCCXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["hyqbu"]
 state: {
   "boardState": [

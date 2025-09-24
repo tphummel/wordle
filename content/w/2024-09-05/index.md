@@ -9,7 +9,7 @@ openers: ["think"]
 middlers: ["denim"]
 puzzles: [1174]
 hashes: ["AAPPAPPPPACCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AAPPA"]
+openerHashes: ["AAPPA"]
 shifts: ["cplnx"]
 state: {
   "puzzleDate": "2024-09-05",

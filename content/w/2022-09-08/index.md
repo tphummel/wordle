@@ -6,7 +6,7 @@ contests: ["2022-09-honey"]
 words: ["honey","trail","slack","clasp","class"]
 puzzles: [446]
 hashes: ["AAAAAAACAPPCCPACCCCACCCCCXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["isibc"]
 state: {
   "boardState": [

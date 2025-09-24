@@ -5,7 +5,7 @@ tags: []
 words: ["honey","thick","plush","alpha"]
 puzzles: [451]
 hashes: ["PAAAAAPAAAPCAAPCCCCCXXXXXXXXXX"]
-openerHash: ["PAAAA"]
+openerHashes: ["PAAAA"]
 shifts: ["gsxqk"]
 state: {
   "boardState": [

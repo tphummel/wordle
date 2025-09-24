@@ -9,7 +9,7 @@ openers: ["rapid"]
 middlers: ["reach","royal"]
 puzzles: [1335]
 hashes: ["CPAAACAPAACAAPACCCCCXXXXXXXXXX"]
-openerHash: ["CPAAA"]
+openerHashes: ["CPAAA"]
 shifts: ["xbukk"]
 state: {
   "puzzleDate": "2025-02-13",

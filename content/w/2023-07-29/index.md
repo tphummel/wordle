@@ -9,7 +9,7 @@ openers: ["tiger"]
 middlers: ["proud","lurch"]
 puzzles: [770]
 hashes: ["AAAAPAPAPAPCCPACCCCCXXXXXXXXXX"]
-openerHash: ["AAAAP"]
+openerHashes: ["AAAAP"]
 shifts: ["ibzui"]
 state: {
   "boardState": [

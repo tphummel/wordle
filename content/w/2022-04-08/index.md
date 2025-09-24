@@ -5,7 +5,7 @@ tags: []
 words: ["mouse","space","scare"]
 puzzles: [293]
 hashes: ["AAAPCCACPCCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AAAPC"]
+openerHashes: ["AAAPC"]
 shifts: ["yjiao"]
 state: {
   "boardState": [

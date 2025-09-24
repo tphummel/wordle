@@ -9,7 +9,7 @@ openers: ["ounce"]
 middlers: ["paint"]
 puzzles: [891]
 hashes: ["AAPAAACACPCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AAPAA"]
+openerHashes: ["AAPAA"]
 shifts: ["zhewi"]
 state: {
   "boardState": [

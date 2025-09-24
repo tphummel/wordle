@@ -6,7 +6,7 @@ contests: ["2022-10-metal"]
 words: ["metal","marsh"]
 puzzles: [473]
 hashes: ["CAAPACCCCCXXXXXXXXXXXXXXXXXXXX"]
-openerHash: ["CAAPA"]
+openerHashes: ["CAAPA"]
 shifts: ["shzbr"]
 state: {
   "boardState": [

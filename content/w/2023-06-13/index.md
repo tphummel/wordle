@@ -9,7 +9,7 @@ openers: ["squid"]
 middlers: ["trunk"]
 puzzles: [724]
 hashes: ["AACAAAACCCCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AACAA"]
+openerHashes: ["AACAA"]
 shifts: ["vscwu"]
 state: {
   "boardState": [

@@ -9,7 +9,7 @@ openers: ["style"]
 middlers: ["track","froth"]
 puzzles: [1026]
 hashes: ["APAAAPCAAAACCCCCCCCCXXXXXXXXXX"]
-openerHash: ["APAAA"]
+openerHashes: ["APAAA"]
 shifts: ["hywcr"]
 state: {
   "boardState": [

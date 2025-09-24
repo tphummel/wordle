@@ -8,7 +8,7 @@ openers: ["paint"]
 middlers: ["chair","flail","avail"]
 puzzles: [630]
 hashes: ["APPAAAACCAAACCCAACCCCCCCCXXXXX"]
-openerHash: ["APPAA"]
+openerHashes: ["APPAA"]
 shifts: ["ktirv"]
 state: {
   "boardState": [

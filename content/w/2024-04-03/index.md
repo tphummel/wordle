@@ -9,7 +9,7 @@ openers: ["style"]
 middlers: ["split"]
 puzzles: [1019]
 hashes: ["APAPAAPPCCCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["APAPA"]
+openerHashes: ["APAPA"]
 shifts: ["vsird"]
 state: {
   "boardState": [

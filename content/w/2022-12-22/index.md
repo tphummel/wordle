@@ -6,7 +6,7 @@ contests: ["2022-12-ratio"]
 words: ["ratio","punch","cleve","excel"]
 puzzles: [551]
 hashes: ["AAAAAAAAPAPPPAPCCCCCXXXXXXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["keknv"]
 state: {
   "boardState": [

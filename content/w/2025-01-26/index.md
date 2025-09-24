@@ -9,7 +9,7 @@ openers: ["ghost"]
 middlers: ["snake","spiny"]
 puzzles: [1317]
 hashes: ["AAAPACPAAACAACCCCCCCXXXXXXXXXX"]
-openerHash: ["AAAPA"]
+openerHashes: ["AAAPA"]
 shifts: ["ybvwi"]
 state: {
   "puzzleDate": "2025-01-26",

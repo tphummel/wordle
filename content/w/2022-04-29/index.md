@@ -5,7 +5,7 @@ tags: []
 words: ["joust","tease","trash"]
 puzzles: [314]
 hashes: ["AAACPCACCACCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AAACP"]
+openerHashes: ["AAACP"]
 shifts: ["zyibr"]
 state: {
   "boardState": [

@@ -9,7 +9,7 @@ openers: ["ocean"]
 middlers: ["climb"]
 puzzles: [808]
 hashes: ["APAAAPAPAPCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["APAAA"]
+openerHashes: ["APAAA"]
 shifts: ["hpzlr"]
 state: {
   "boardState": [

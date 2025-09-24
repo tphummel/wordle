@@ -9,7 +9,7 @@ openers: ["swath"]
 middlers: ["drone","crimp","frill","grill"]
 puzzles: [1385]
 hashes: ["AAAAAACAAAACCAAACCCCACCCCCCCCC"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["qyquv"]
 state: {
   "puzzleDate": "2025-04-04",

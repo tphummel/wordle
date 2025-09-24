@@ -9,7 +9,7 @@ openers: ["point"]
 middlers: ["roach"]
 puzzles: [905]
 hashes: ["ACAAAACAAPCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["ACAAA"]
+openerHashes: ["ACAAA"]
 shifts: ["nvcbo"]
 state: {
   "boardState": [

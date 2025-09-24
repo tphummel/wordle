@@ -5,7 +5,7 @@ tags: []
 words: ["amuse","chomp","gloom"]
 puzzles: [352]
 hashes: ["APAAAAACPACCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["APAAA"]
+openerHashes: ["APAAA"]
 shifts: ["mswxw"]
 state: {
   "boardState": [

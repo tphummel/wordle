@@ -9,7 +9,7 @@ openers: ["mouse"]
 middlers: ["every","peach","tiled"]
 puzzles: [1162]
 hashes: ["AAAAPPAAAAAPAAAPCCCACCCCCXXXXX"]
-openerHash: ["AAAAP"]
+openerHashes: ["AAAAP"]
 shifts: ["lptnd"]
 state: {
   "puzzleDate": "2024-08-24",

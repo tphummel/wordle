@@ -9,7 +9,7 @@ openers: ["child"]
 middlers: ["scare","scope"]
 puzzles: [1149]
 hashes: ["PAAAACCAACCCCACCCCCCXXXXXXXXXX"]
-openerHash: ["PAAAA"]
+openerHashes: ["PAAAA"]
 shifts: ["yjwwo"]
 state: {
   "puzzleDate": "2024-08-11",

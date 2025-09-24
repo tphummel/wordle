@@ -8,7 +8,7 @@ openers: ["ingot"]
 middlers: ["react"]
 puzzles: [637]
 hashes: ["AAAACAAPPCCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AAAAC"]
+openerHashes: ["AAAAC"]
 shifts: ["ehkqd"]
 state: {
   "boardState": [

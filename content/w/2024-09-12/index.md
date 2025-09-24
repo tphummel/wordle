@@ -9,7 +9,7 @@ openers: ["aisle"]
 middlers: ["shack","grasp"]
 puzzles: [1181]
 hashes: ["PAPAAPACAAACCCACCCCCXXXXXXXXXX"]
-openerHash: ["PAPAA"]
+openerHashes: ["PAPAA"]
 shifts: ["hyibc"]
 state: {
   "puzzleDate": "2024-09-12",

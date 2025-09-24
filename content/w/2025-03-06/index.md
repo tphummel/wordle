@@ -9,7 +9,7 @@ openers: ["slime"]
 middlers: ["clean"]
 puzzles: [1356]
 hashes: ["ACAAPACCPACCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["ACAAP"]
+openerHashes: ["ACAAP"]
 shifts: ["gsmad"]
 state: {
   "puzzleDate": "2025-03-06",

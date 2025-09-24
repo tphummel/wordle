@@ -5,7 +5,7 @@ tags: []
 words: ["honey","swamp","crisp","usurp"]
 puzzles: [466]
 hashes: ["AAAAAPAAACAPAPCCCCCCXXXXXXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["azcaz"]
 state: {
   "boardState": [

@@ -9,7 +9,7 @@ openers: ["style"]
 middlers: ["group","broad","crowd","droid"]
 puzzles: [1017]
 hashes: ["AAAAAACCAAACCACACCACACCACCCCCC"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["lywwn"]
 state: {
   "boardState": [

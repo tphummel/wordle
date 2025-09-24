@@ -9,7 +9,7 @@ openers: ["point"]
 middlers: []
 puzzles: [909]
 hashes: ["PCPAPCCCCCXXXXXXXXXXXXXXXXXXXX"]
-openerHash: ["PCPAP"]
+openerHashes: ["PCPAP"]
 shifts: ["zvxrm"]
 state: {
   "boardState": [

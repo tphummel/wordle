@@ -9,7 +9,7 @@ openers: ["ounce"]
 middlers: ["chord","scoff","scoot"]
 puzzles: [1277]
 hashes: ["PAAPAPACAACCCAACCCAACCCCCXXXXX"]
-openerHash: ["PAAPA"]
+openerHashes: ["PAAPA"]
 shifts: ["yjwfv"]
 state: {
   "puzzleDate": "2024-12-17",

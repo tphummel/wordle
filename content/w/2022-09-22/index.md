@@ -5,7 +5,7 @@ tags: []
 words: ["honey","plain","saint"]
 puzzles: [460]
 hashes: ["AAPAAAAPPPCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AAPAA"]
+openerHashes: ["AAPAA"]
 shifts: ["yhqwd"]
 state: {
   "boardState": [

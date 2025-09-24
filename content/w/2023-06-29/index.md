@@ -9,7 +9,7 @@ openers: ["squid"]
 middlers: ["drive"]
 puzzles: [740]
 hashes: ["AAAPPCPPAPCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AAAPP"]
+openerHashes: ["AAAPP"]
 shifts: ["jpvnb"]
 state: {
   "boardState": [

@@ -9,7 +9,7 @@ openers: ["giant"]
 middlers: ["scone","plunk"]
 puzzles: [1167]
 hashes: ["AAACAAAACAACCCCCCCCCXXXXXXXXXX"]
-openerHash: ["AAACA"]
+openerHashes: ["AAACA"]
 shifts: ["lscwu"]
 state: {
   "puzzleDate": "2024-08-29",

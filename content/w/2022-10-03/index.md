@@ -6,7 +6,7 @@ contests: ["2022-10-metal"]
 words: ["metal","trick","point","sting"]
 puzzles: [471]
 hashes: ["AAPAAPACAAAACCPCCCCCXXXXXXXXXX"]
-openerHash: ["AAPAA"]
+openerHashes: ["AAPAA"]
 shifts: ["yaqwq"]
 state: {
   "boardState": [

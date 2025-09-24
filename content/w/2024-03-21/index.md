@@ -9,7 +9,7 @@ openers: ["syrup"]
 middlers: ["sweat","scale","snake","shame"]
 puzzles: [1006]
 hashes: ["CAAAACAPPACACACCACACCCCACCCCCC"]
-openerHash: ["CAAAA"]
+openerHashes: ["CAAAA"]
 shifts: ["yoimo"]
 state: {
   "boardState": [

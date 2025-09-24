@@ -9,7 +9,7 @@ openers: ["style"]
 middlers: ["trail"]
 puzzles: [1057]
 hashes: ["APAPACAPPCCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["APAPA"]
+openerHashes: ["APAPA"]
 shifts: ["zpljv"]
 state: {
   "puzzleDate": "2024-05-11",

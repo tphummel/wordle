@@ -9,7 +9,7 @@ openers: ["globe"]
 middlers: ["learn","leech"]
 puzzles: [1518]
 hashes: ["APAAPCCAAACCPAACCCCCXXXXXXXXXX"]
-openerHash: ["APAAP"]
+openerHashes: ["APAAP"]
 shifts: ["rldnv"]
 state: {
   "puzzleDate": "2025-08-15",

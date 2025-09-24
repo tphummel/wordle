@@ -9,7 +9,7 @@ openers: ["point"]
 middlers: ["trade"]
 puzzles: [935]
 hashes: ["AAAAPCPAAPCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AAAAP"]
+openerHashes: ["AAAAP"]
 shifts: ["zozng"]
 state: {
   "boardState": [

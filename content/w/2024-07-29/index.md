@@ -9,7 +9,7 @@ openers: ["great"]
 middlers: ["chore","river","flyer","sewer"]
 puzzles: [1136]
 hashes: ["AACCGAACCCCCCCGGGGGGGGGGGGGGGGGG"]
-openerHash: ["AACCG"]
+openerHashes: ["AACCG"]
 shifts: ["jvmai"]
 state: {
   "boardState": [

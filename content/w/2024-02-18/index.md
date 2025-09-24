@@ -9,7 +9,7 @@ openers: ["radio"]
 middlers: []
 puzzles: [974]
 hashes: ["CACPACCCCCXXXXXXXXXXXXXXXXXXXX"]
-openerHash: ["CACPA"]
+openerHashes: ["CACPA"]
 shifts: ["xplpo"]
 state: {
   "boardState": [

@@ -9,7 +9,7 @@ openers: ["phase"]
 middlers: ["flier","deify"]
 puzzles: [1448]
 hashes: ["AAAAPPACPAPPCCCCCCCCXXXXXXXXXX"]
-openerHash: ["AAAAP"]
+openerHashes: ["AAAAP"]
 shifts: ["kkqoi"]
 state: {
   "puzzleDate": "2025-06-06",

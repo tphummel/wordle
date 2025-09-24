@@ -9,7 +9,7 @@ openers: ["radio"]
 middlers: ["tramp"]
 puzzles: [979]
 hashes: ["PPAAAPPCAPCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["PPAAA"]
+openerHashes: ["PPAAA"]
 shifts: ["gwiad"]
 state: {
   "boardState": [

@@ -9,7 +9,7 @@ openers: ["style"]
 middlers: ["peach","ender","giver","mover"]
 puzzles: [1039]
 hashes: ["AAAAPAPAAAAAACCAACCCACCCCCCCCC"]
-openerHash: ["AAAAP"]
+openerHashes: ["AAAAP"]
 shifts: ["xvdnb"]
 state: {
   "boardState": [

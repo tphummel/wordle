@@ -9,7 +9,7 @@ openers: ["style"]
 middlers: ["peach","green"]
 puzzles: [1024]
 hashes: ["AAAAPAPAAAACCCACCCCCXXXXXXXXXX"]
-openerHash: ["AAAAP"]
+openerHashes: ["AAAAP"]
 shifts: ["hymnn"]
 state: {
   "boardState": [

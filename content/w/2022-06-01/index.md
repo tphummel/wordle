@@ -5,7 +5,7 @@ tags: []
 words: ["amuse","treat","break","freak","wreak","creak"]
 puzzles: [347]
 hashes: ["PAAAPACCCAACCCCACCCCACCCCCCCCC"]
-openerHash: ["PAAAP"]
+openerHashes: ["PAAAP"]
 shifts: ["iymju"]
 state: {
   "boardState": [

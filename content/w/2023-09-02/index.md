@@ -9,7 +9,7 @@ openers: ["ocean"]
 middlers: ["often","organ","olden"]
 puzzles: [805]
 hashes: ["CAAACCAAACCAAACCAAACCCCCCXXXXX"]
-openerHash: ["CAAAC"]
+openerHashes: ["CAAAC"]
 shifts: ["uuqxx"]
 state: {
   "boardState": [

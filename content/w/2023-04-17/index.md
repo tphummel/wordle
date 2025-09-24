@@ -8,7 +8,7 @@ openers: ["lucky"]
 middlers: ["poise","thigh"]
 puzzles: [667]
 hashes: ["AAAAAAACAAACCAACCCCCXXXXXXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["coqop"]
 state: {
   "boardState": [

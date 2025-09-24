@@ -9,7 +9,7 @@ openers: ["swipe"]
 middlers: ["crane","blaze","evade"]
 puzzles: [1496]
 hashes: ["AAAACAACACAACACAACACCCCCCXXXXX"]
-openerHash: ["AAAAC"]
+openerHashes: ["AAAAC"]
 shifts: ["wbito"]
 state: {
   "puzzleDate": "2025-07-24",

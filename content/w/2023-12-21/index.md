@@ -9,7 +9,7 @@ openers: ["point"]
 middlers: ["shift","edict","britt"]
 puzzles: [915]
 hashes: ["AACACAACACAACACCACACCCCCCXXXXX"]
-openerHash: ["AACAC"]
+openerHashes: ["AACAC"]
 shifts: ["hbqud"]
 state: {
   "boardState": [

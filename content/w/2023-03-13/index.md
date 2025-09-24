@@ -8,7 +8,7 @@ openers: ["noise"]
 middlers: ["plate","flame"]
 puzzles: [632]
 hashes: ["AAAACACCACACCCCCCCCCXXXXXXXXXX"]
-openerHash: ["AAAAC"]
+openerHashes: ["AAAAC"]
 shifts: ["hsivo"]
 state: {
   "boardState": [

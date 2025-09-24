@@ -5,7 +5,7 @@ tags: []
 words: ["thing","crimp","pride","prize"]
 puzzles: [438]
 hashes: ["AACAAACCAPCCCACCCCCCXXXXXXXXXX"]
-openerHash: ["AACAA"]
+openerHashes: ["AACAA"]
 shifts: ["vyqio"]
 state: {
   "boardState": [

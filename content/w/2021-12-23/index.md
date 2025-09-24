@@ -55,7 +55,7 @@ stats: {}
 puzzles:
   - 187
 hashes: ["AAPAAAAAACAPAPCCCCACCCCCCXXXXX"]
-openerHash: ["AAPAA"]
+openerHashes: ["AAPAA"]
 shifts: ["myqyo"]
 aliases:
   - /w/187/

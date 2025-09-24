@@ -6,7 +6,7 @@ contests: ["2022-09-honey"]
 words: ["honey","their","these","theme"]
 puzzles: [447]
 hashes: ["PAAPACCCAACCCACCCCCCXXXXXXXXXX"]
-openerHash: ["PAAPA"]
+openerHashes: ["PAAPA"]
 shifts: ["zomvo"]
 state: {
   "boardState": [

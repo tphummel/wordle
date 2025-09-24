@@ -6,7 +6,7 @@ contests: ["2022-09-honey"]
 words: ["honey","louse","voice","dodge","forte","wowee"]
 puzzles: [450]
 hashes: ["ACAPAACAACACAACACAACACAACACAAC"]
-openerHash: ["ACAPA"]
+openerHashes: ["ACAPA"]
 shifts: ["hvwio"]
 state: {
   "boardState": [

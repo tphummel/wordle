@@ -9,7 +9,7 @@ openers: ["water"]
 middlers: ["truck","storm"]
 puzzles: [1528]
 hashes: ["AAPAPPPAAAAPAPPCCCCCXXXXXXXXXX"]
-openerHash: ["AAPAP"]
+openerHashes: ["AAPAP"]
 shifts: ["spzcr"]
 state: {
   "puzzleDate": "2025-08-25",

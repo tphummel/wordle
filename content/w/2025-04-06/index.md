@@ -9,7 +9,7 @@ openers: ["great"]
 middlers: ["apply","chalk","sails","viola"]
 puzzles: [1387]
 hashes: ["AAAPAPAACAAAPCAAPPCACCACCCCCCC"]
-openerHash: ["AAAPA"]
+openerHashes: ["AAAPA"]
 shifts: ["bptuk"]
 state: {
   "puzzleDate": "2025-04-06",

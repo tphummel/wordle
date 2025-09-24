@@ -9,7 +9,7 @@ openers: ["sugar"]
 middlers: ["ranch","roach"]
 puzzles: [1313]
 hashes: ["AAAPPCPACCCACCCCCCCCXXXXXXXXXX"]
-openerHash: ["AAAPP"]
+openerHashes: ["AAAPP"]
 shifts: ["xlilr"]
 state: {
   "puzzleDate": "2025-01-22",

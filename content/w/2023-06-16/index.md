@@ -9,7 +9,7 @@ openers: ["squid"]
 middlers: ["smoke","scary","straw"]
 puzzles: [727]
 hashes: ["CAAAACAAAACAPPACCCCACCCCCXXXXX"]
-openerHash: ["CAAAA"]
+openerHashes: ["CAAAA"]
 shifts: ["yazjz"]
 state: {
   "boardState": [

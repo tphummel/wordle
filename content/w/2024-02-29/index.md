@@ -9,7 +9,7 @@ openers: ["radio"]
 middlers: ["sigma"]
 puzzles: [985]
 hashes: ["APAPAAPPPPCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["APAPA"]
+openerHashes: ["APAPA"]
 shifts: ["otipo"]
 state: {
   "boardState": [

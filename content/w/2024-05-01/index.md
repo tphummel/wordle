@@ -9,7 +9,7 @@ openers: ["style"]
 middlers: ["crazy"]
 puzzles: [1047]
 hashes: ["AAPAAAPCACCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AAPAA"]
+openerHashes: ["AAPAA"]
 shifts: ["jpiai"]
 state: {
   "puzzleDate": "2024-05-01",
