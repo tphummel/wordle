@@ -9,7 +9,7 @@ openers: ["scout"]
 middlers: ["cheat","elect","evict"]
 puzzles: [1099]
 hashes: ["APAACPAPACCAACCCACCCCCCCCXXXXX"]
-openerHash: ["APAAC"]
+openerHashes: ["APAAC"]
 shifts: ["kkqld"]
 state: {
   "puzzleDate": "2024-06-22",

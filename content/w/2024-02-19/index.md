@@ -9,7 +9,7 @@ openers: ["radio"]
 middlers: ["first","grill","brink","crimp"]
 puzzles: [975]
 hashes: ["PAAPAAPPAAACCAAACCAAPCCAPCCCCC"]
-openerHash: ["PAAPA"]
+openerHashes: ["PAAPA"]
 shifts: ["vyqlo"]
 state: {
   "boardState": [

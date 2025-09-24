@@ -9,7 +9,7 @@ openers: ["score"]
 middlers: []
 puzzles: [1324]
 hashes: ["APCCCCCCCCXXXXXXXXXXXXXXXXXXXX"]
-openerHash: ["APCCC"]
+openerHashes: ["APCCC"]
 shifts: ["iowao"]
 state: {
   "puzzleDate": "2025-02-02",

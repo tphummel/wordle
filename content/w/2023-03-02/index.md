@@ -8,7 +8,7 @@ openers: ["yearn"]
 middlers: ["cheap","latke","abide","abuse"]
 puzzles: [621]
 hashes: ["APPAAAAPPAAPAACCCAACCCAACCCCCC"]
-openerHash: ["APPAA"]
+openerHashes: ["APPAA"]
 shifts: ["giweo"]
 state: {
   "boardState": [

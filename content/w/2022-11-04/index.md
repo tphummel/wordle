@@ -6,7 +6,7 @@ contests: ["2022-11-habit"]
 words: ["habit","thorn","photo"]
 puzzles: [503]
 hashes: ["PAAAPPCCAACCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["PAAAP"]
+openerHashes: ["PAAAP"]
 shifts: ["vowcy"]
 state: {
   "boardState": [

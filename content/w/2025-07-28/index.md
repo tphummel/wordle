@@ -9,7 +9,7 @@ openers: ["ratio"]
 middlers: ["sandy","sappy","saggy"]
 puzzles: [1500]
 hashes: ["ACAAACCAACCCAACCCAACCCCCCXXXXX"]
-openerHash: ["ACAAA"]
+openerHashes: ["ACAAA"]
 shifts: ["yhdei"]
 state: {
   "puzzleDate": "2025-07-28",

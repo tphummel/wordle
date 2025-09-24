@@ -5,7 +5,7 @@ tags: []
 words: ["cloud","cheat","cheer","cheek"]
 puzzles: [301]
 hashes: ["CAAAACCCAACCCCACCCCCXXXXXXXXXX"]
-openerHash: ["CAAAA"]
+openerHashes: ["CAAAA"]
 shifts: ["iomnu"]
 state: {
   "boardState": [

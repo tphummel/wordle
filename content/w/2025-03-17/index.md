@@ -9,7 +9,7 @@ openers: ["style"]
 middlers: ["clash","balsa"]
 puzzles: [1367]
 hashes: ["PAAPAAPPCAACPCACCCCCXXXXXXXXXX"]
-openerHash: ["PAAPA"]
+openerHashes: ["PAAPA"]
 shifts: ["rhaby"]
 state: {
   "puzzleDate": "2025-03-17",

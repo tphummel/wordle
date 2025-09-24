@@ -9,7 +9,7 @@ openers: ["ounce"]
 middlers: ["north","wagon"]
 puzzles: [861]
 hashes: ["PAPAAPPAAAACACCCCCCCXXXXXXXXXX"]
-openerHash: ["PAPAA"]
+openerHashes: ["PAPAA"]
 shifts: ["shaxx"]
 state: {
   "boardState": [

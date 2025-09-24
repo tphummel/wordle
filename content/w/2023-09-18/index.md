@@ -9,7 +9,7 @@ openers: ["ocean"]
 middlers: ["nasty","plank"]
 puzzles: [821]
 hashes: ["AAAPPPPAAAAACCCCCCCCXXXXXXXXXX"]
-openerHash: ["AAAPP"]
+openerHashes: ["AAAPP"]
 shifts: ["lyiwu"]
 state: {
   "boardState": [

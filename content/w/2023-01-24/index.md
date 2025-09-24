@@ -6,7 +6,7 @@ contests: ["2023-01-guide"]
 words: ["guide","scuba","chunk","count"]
 puzzles: [584]
 hashes: ["APAAAAPCAACACCACCCCCXXXXXXXXXX"]
-openerHash: ["APAAA"]
+openerHashes: ["APAAA"]
 shifts: ["ivcwd"]
 state: {
   "boardState": [

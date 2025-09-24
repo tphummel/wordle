@@ -9,7 +9,7 @@ openers: ["weird"]
 middlers: ["eight"]
 puzzles: [1250]
 hashes: ["APPAAPCACACCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["APPAA"]
+openerHashes: ["APPAA"]
 shifts: ["tpkqo"]
 state: {
   "puzzleDate": "2024-11-20",

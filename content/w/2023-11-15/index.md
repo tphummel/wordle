@@ -10,7 +10,7 @@ middlers: ["party","still","sixty"]
 puzzles: [879]
 hashes: ["AAAAAAAAPACPPAACCAPACCCCCXXXXX"]
 shifts: ["ypoqd"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 state: {
   "boardState": [
     "ounce",

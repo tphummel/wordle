@@ -9,7 +9,7 @@ openers: ["often"]
 middlers: ["small","gully"]
 puzzles: [1267]
 hashes: ["AAAAAAAACPAACCCCCCCCXXXXXXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["nptui"]
 state: {
   "puzzleDate": "2024-12-07",

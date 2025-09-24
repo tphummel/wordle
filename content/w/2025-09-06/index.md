@@ -9,7 +9,7 @@ openers: ["cause"]
 middlers: ["bugle"]
 puzzles: [1540]
 hashes: ["AAPACCCPPCCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AAPAC"]
+openerHashes: ["AAPAC"]
 shifts: ["hbtpo"]
 state: {
   "puzzleDate": "2025-09-06",

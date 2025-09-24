@@ -9,7 +9,7 @@ openers: ["group"]
 middlers: ["crazy"]
 puzzles: [1154]
 hashes: ["ACAAAPCCAACCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["ACAAA"]
+openerHashes: ["ACAAA"]
 shifts: ["hyilo"]
 state: {
   "puzzleDate": "2024-08-16",

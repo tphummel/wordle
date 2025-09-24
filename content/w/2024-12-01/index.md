@@ -9,7 +9,7 @@ openers: ["wheat"]
 middlers: ["scare","naive"]
 puzzles: [1261]
 hashes: ["AAPPAAAPACACACCCCCCCXXXXXXXXXX"]
-openerHash: ["AAPPA"]
+openerHashes: ["AAPPA"]
 shifts: ["shceo"]
 state: {
   "puzzleDate": "2024-12-01",

@@ -9,7 +9,7 @@ openers: ["syrup"]
 middlers: ["clown","death","amend","adieu"]
 puzzles: [1004]
 hashes: ["AAAAAAAAAAPPPAACAPAPCPCPACCCCC"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["giqmo"]
 state: {
   "boardState": [

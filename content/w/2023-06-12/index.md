@@ -9,7 +9,7 @@ openers: ["squid"]
 middlers: ["mealy","troop","grown"]
 puzzles: [723]
 hashes: ["AAAAAAAAAAACCAAPCCPPCCCCCXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["cywwq"]
 state: {
   "boardState": [

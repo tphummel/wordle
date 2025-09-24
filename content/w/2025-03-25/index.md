@@ -9,7 +9,7 @@ openers: ["swing"]
 middlers: ["steam"]
 puzzles: [1375]
 hashes: ["CAAAACACAACCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["CAAAA"]
+openerHashes: ["CAAAA"]
 shifts: ["yomup"]
 state: {
   "puzzleDate": "2025-03-25",

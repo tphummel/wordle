@@ -9,7 +9,7 @@ openers: ["point"]
 middlers: ["siege","cider","diced"]
 puzzles: [1219]
 hashes: ["AAPAAACPAAPCPCACCCCACCCCCXXXXX"]
-openerHash: ["AAPAA"]
+openerHashes: ["AAPAA"]
 shifts: ["jpkni"]
 state: {
   "puzzleDate": "2024-10-20",

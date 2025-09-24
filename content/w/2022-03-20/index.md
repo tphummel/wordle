@@ -63,7 +63,7 @@ stats:
 puzzles:
   - 274
 hashes: ["AAACPAAPCACAACPCCCCCXXXXXXXXXX"]
-openerHash: ["AAACP"]
+openerHashes: ["AAACP"]
 shifts: ["xlvng"]
 aliases:
   - /w/274/

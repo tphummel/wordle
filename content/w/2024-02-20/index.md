@@ -9,7 +9,7 @@ openers: ["radio"]
 middlers: ["sable","fancy","watch"]
 puzzles: [976]
 hashes: ["ACAAAACAAAACACAACCCCCCCCCXXXXX"]
-openerHash: ["ACAAA"]
+openerHashes: ["ACAAA"]
 shifts: ["shblr"]
 state: {
   "boardState": [

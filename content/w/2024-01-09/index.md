@@ -9,7 +9,7 @@ openers: ["point"]
 middlers: ["niche","lined"]
 puzzles: [934]
 hashes: ["AAPPAPCAAPCCCCACCCCCXXXXXXXXXX"]
-openerHash: ["AAPPA"]
+openerHashes: ["AAPPA"]
 shifts: ["rpvnb"]
 state: {
   "boardState": [

@@ -55,7 +55,7 @@ stats: {}
 puzzles:
   - 184
 hashes: ["AAAPPACAACACAACCCCACCCCCCXXXXX"]
-openerHash: ["AAAPP"]
+openerHashes: ["AAAPP"]
 shifts: ["hyito"]
 aliases:
   - /w/184/

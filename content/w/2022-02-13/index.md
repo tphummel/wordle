@@ -45,7 +45,7 @@ stats: {}
 puzzles:
   - 239
 hashes: ["PAAACPPPACCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["PAAAC"]
+openerHashes: ["PAAAC"]
 shifts: ["xvjrx"]
 aliases:
   - /w/239/

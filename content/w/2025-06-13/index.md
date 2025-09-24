@@ -9,7 +9,7 @@ openers: ["ounce"]
 middlers: ["slate","exile"]
 puzzles: [1455]
 hashes: ["AAAACAPAACAAPPCCCCCCXXXXXXXXXX"]
-openerHash: ["AAAAC"]
+openerHashes: ["AAAAC"]
 shifts: ["hptpo"]
 state: {
   "puzzleDate": "2025-06-13",

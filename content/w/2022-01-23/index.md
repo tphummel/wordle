@@ -50,7 +50,7 @@ stats: {}
 puzzles:
   - 218
 hashes: ["APAAAAPAPAACCCCCCCCCXXXXXXXXXX"]
-openerHash: ["APAAA"]
+openerHashes: ["APAAA"]
 shifts: ["iyqvz"]
 aliases:
   - /w/218/

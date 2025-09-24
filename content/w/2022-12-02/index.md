@@ -6,7 +6,7 @@ contests: ["2022-12-ratio"]
 words: ["ratio","amuse","whale","chafe"]
 puzzles: [531]
 hashes: ["APAAAPAAACACCACCCCCCXXXXXXXXXX"]
-openerHash: ["APAAA"]
+openerHashes: ["APAAA"]
 shifts: ["ioioo"]
 state: {
   "boardState": [

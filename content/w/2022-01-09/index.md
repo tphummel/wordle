@@ -50,7 +50,7 @@ stats: {}
 puzzles:
   - 204
 hashes: ["PAPAACPAPACCCPACCCCCXXXXXXXXXX"]
-openerHash: ["PAPAA"]
+openerHashes: ["PAPAA"]
 shifts: ["mvzpo"]
 aliases:
   - /w/204/

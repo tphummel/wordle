@@ -8,7 +8,7 @@ openers: ["bagel"]
 middlers: ["mouse","spice"]
 puzzles: [706]
 hashes: ["AAAPAAAAPCCACACCCCCCXXXXXXXXXX"]
-openerHash: ["AAAPA"]
+openerHashes: ["AAAPA"]
 shifts: ["ydqwo"]
 state: {
   "boardState": [

@@ -8,7 +8,7 @@ openers: ["orate"]
 middlers: ["false","gauge"]
 puzzles: [614]
 hashes: ["AAPACACAACPCPACCCCCCXXXXXXXXXX"]
-openerHash: ["AAPAC"]
+openerHashes: ["AAPAC"]
 shifts: ["bhodo"]
 state: {
   "boardState": [

@@ -5,7 +5,7 @@ tags: []
 words: ["honey","dream","beast","apple","algae","alive"]
 puzzles: [458]
 hashes: ["AAAPAAAPPAAPPAACAAPCCCAACCCCAC"]
-openerHash: ["AAAPA"]
+openerHashes: ["AAAPA"]
 shifts: ["gsqto"]
 state: {
   "boardState": [

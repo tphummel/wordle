@@ -9,7 +9,7 @@ openers: ["ounce"]
 middlers: ["entry","never","preen"]
 puzzles: [877]
 hashes: ["AAPAPPPAPAPPACPACCCCCCCCCXXXXX"]
-openerHash: ["AAPAP"]
+openerHashes: ["AAPAP"]
 shifts: ["bktxz"]
 state: {
   "boardState": [

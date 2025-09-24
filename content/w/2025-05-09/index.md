@@ -9,7 +9,7 @@ openers: ["guide"]
 middlers: ["alive","spice","prize"]
 puzzles: [1420]
 hashes: ["AACACAACACAPCACPCCACCCCCCXXXXX"]
-openerHash: ["AACAC"]
+openerHashes: ["AACAC"]
 shifts: ["zyqyo"]
 state: {
   "puzzleDate": "2025-05-09",

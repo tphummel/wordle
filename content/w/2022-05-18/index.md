@@ -5,7 +5,7 @@ tags: []
 words: ["ocean","scour"]
 puzzles: [333]
 hashes: ["PCAAACCCCCXXXXXXXXXXXXXXXXXXXX"]
-openerHash: ["PCAAA"]
+openerHashes: ["PCAAA"]
 shifts: ["yjwdb"]
 state: {
   "boardState": [

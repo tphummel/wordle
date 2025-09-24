@@ -5,7 +5,7 @@ tags: []
 words: ["honey","thyme"]
 puzzles: [452]
 hashes: ["PAAPPCCCCCXXXXXXXXXXXXXXXXXXXX"]
-openerHash: ["PAAPP"]
+openerHashes: ["PAAPP"]
 shifts: ["zogvo"]
 state: {
   "boardState": [

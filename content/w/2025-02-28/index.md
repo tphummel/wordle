@@ -9,7 +9,7 @@ openers: ["ounce"]
 middlers: ["hurry","gully","dusty","puffy"]
 puzzles: [1350]
 hashes: ["ACAAAACAACACAACACAACACPACCCCCC"]
-openerHash: ["ACAAA"]
+openerHashes: ["ACAAA"]
 shifts: ["lbhii"]
 state: {
   "puzzleDate": "2025-02-28",

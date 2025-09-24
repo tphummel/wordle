@@ -9,7 +9,7 @@ openers: ["super"]
 middlers: ["reach"]
 puzzles: [1137]
 hashes: ["APCCCPCGGGGGGGXXXXXXXXXXXXXXX"]
-openerHash: ["APCCC"]
+openerHashes: ["APCCC"]
 shifts: ["gimuq"]
 state: {
   "boardState": [

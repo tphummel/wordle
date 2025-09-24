@@ -9,7 +9,7 @@ openers: ["style"]
 middlers: ["trash","frost","grist"]
 puzzles: [1021]
 hashes: ["PPAAAPCACAACACCACCCCCCCCCXXXXX"]
-openerHash: ["PPAAA"]
+openerHashes: ["PPAAA"]
 shifts: ["cyqbd"]
 state: {
   "boardState": [

@@ -9,7 +9,7 @@ openers: ["about"]
 middlers: ["boing","bonny","boons"]
 puzzles: [1431]
 hashes: ["APPAACCACACCACACCACACCCCCXXXXX"]
-openerHash: ["APPAA"]
+openerHashes: ["APPAA"]
 shifts: ["hvzwo"]
 state: {
   "puzzleDate": "2025-05-20",

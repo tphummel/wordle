@@ -5,7 +5,7 @@ tags: []
 words: ["piano","tiger","right","girth"]
 puzzles: [355]
 hashes: ["ACAAAPCPAPPCPPPCCCCCXXXXXXXXXX"]
-openerHash: ["ACAAA"]
+openerHashes: ["ACAAA"]
 shifts: ["mpzcr"]
 state: {
   "boardState": [

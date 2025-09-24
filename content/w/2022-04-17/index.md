@@ -5,7 +5,7 @@ tags: []
 words: ["cloud","steal","whale","apple","ample"]
 puzzles: [302]
 hashes: ["APAAAAAPPPAAPCCCACCCCCCCCXXXXX"]
-openerHash: ["APAAA"]
+openerHashes: ["APAAA"]
 shifts: ["gtxuo"]
 state: {
   "boardState": [

@@ -9,7 +9,7 @@ openers: ["slice"]
 middlers: ["forge","prune"]
 puzzles: [1160]
 hashes: ["AAAACAAPACACCACCCCCCXXXXXXXXXX"]
-openerHash: ["AAAAC"]
+openerHashes: ["AAAAC"]
 shifts: ["hycco"]
 state: {
   "puzzleDate": "2024-08-22",

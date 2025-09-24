@@ -9,7 +9,7 @@ openers: ["smoke"]
 middlers: ["cover","lover","rover"]
 puzzles: [1351]
 hashes: ["AAPAPACCCCACCCCACCCCCCCCCXXXXX"]
-openerHash: ["AAPAP"]
+openerHashes: ["AAPAP"]
 shifts: ["nvdnb"]
 state: {
   "puzzleDate": "2025-03-01",

@@ -9,7 +9,7 @@ openers: ["point"]
 middlers: ["notch"]
 puzzles: [946]
 hashes: ["ACAPPCCPACCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["ACAPP"]
+openerHashes: ["ACAPP"]
 shifts: ["tvzcr"]
 state: {
   "boardState": [

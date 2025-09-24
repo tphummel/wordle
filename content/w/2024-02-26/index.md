@@ -9,7 +9,7 @@ openers: ["syrup"]
 middlers: ["clean","begin","women"]
 puzzles: [982]
 hashes: ["AAAAAAAPACAPAACAPACCCCCCCXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["umbnx"]
 state: {
   "boardState": [

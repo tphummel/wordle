@@ -9,7 +9,7 @@ openers: ["chair"]
 middlers: ["bloat"]
 puzzles: [1515]
 hashes: ["AAPAAAAPCACCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AAPAA"]
+openerHashes: ["AAPAA"]
 shifts: ["tvujn"]
 state: {
   "puzzleDate": "2025-08-12",

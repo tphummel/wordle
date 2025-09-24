@@ -9,7 +9,7 @@ openers: ["squid"]
 middlers: ["opera","track"]
 puzzles: [728]
 hashes: ["AAAAAAAAPPAPPCACCCCCXXXXXXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["xhvlr"]
 state: {
   "boardState": [

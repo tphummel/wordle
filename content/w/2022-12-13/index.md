@@ -6,7 +6,7 @@ contests: ["2022-12-ratio"]
 words: ["ratio","pound","slope","spoke"]
 puzzles: [542]
 hashes: ["AAAAPPPAAACACPCCCCCCXXXXXXXXXX"]
-openerHash: ["AAAAP"]
+openerHashes: ["AAAAP"]
 shifts: ["ywwto"]
 state: {
   "boardState": [

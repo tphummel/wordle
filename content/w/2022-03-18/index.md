@@ -58,7 +58,7 @@ stats:
 puzzles:
   - 272
 hashes: ["ACPPAACCPCCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["ACPPA"]
+openerHashes: ["ACPPA"]
 shifts: ["yhcco"]
 aliases:
   - /w/272/

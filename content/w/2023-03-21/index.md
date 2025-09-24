@@ -8,7 +8,7 @@ openers: ["flank"]
 middlers: ["spice","grout"]
 puzzles: [640]
 hashes: ["AAAAAAAAAAPAPPPCCCCCXXXXXXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["zvcpr"]
 state: {
   "boardState": [

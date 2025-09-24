@@ -9,7 +9,7 @@ openers: ["coupe"]
 middlers: ["earth","revel","renew"]
 puzzles: [1126]
 hashes: ["AAAAPPAPAACCACACCACACCCCCXXXXX"]
-openerHash: ["AAAAP"]
+openerHashes: ["AAAAP"]
 shifts: ["xlnnb"]
 state: {
   "puzzleDate": "2024-07-19",

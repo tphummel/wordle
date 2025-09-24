@@ -8,7 +8,7 @@ openers: ["broom"]
 middlers: ["edict","spacy"]
 puzzles: [692]
 hashes: ["AAAAAAAACACACCACCCCCXXXXXXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["yuilu"]
 state: {
   "boardState": [

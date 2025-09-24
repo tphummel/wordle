@@ -9,7 +9,7 @@ openers: ["place"]
 middlers: ["split","loopy"]
 puzzles: [1506]
 hashes: ["PPAAAAPPAACAACCCCCCCXXXXXXXXXX"]
-openerHash: ["PPAAA"]
+openerHashes: ["PPAAA"]
 shifts: ["rbuyi"]
 state: {
   "puzzleDate": "2025-08-03",

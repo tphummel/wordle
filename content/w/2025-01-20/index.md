@@ -9,7 +9,7 @@ openers: ["sugar"]
 middlers: ["slump","sound"]
 puzzles: [1311]
 hashes: ["CPAAACACAACACACCCCCCXXXXXXXXXX"]
-openerHash: ["CPAAA"]
+openerHashes: ["CPAAA"]
 shifts: ["yxcrn"]
 state: {
   "puzzleDate": "2025-01-20",

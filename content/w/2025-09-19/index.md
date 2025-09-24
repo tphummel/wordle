@@ -9,7 +9,7 @@ openers: ["sound"]
 middlers: ["crime","reply"]
 puzzles: [1553]
 hashes: ["AAAAAAPAAPPPAPACCCCCXXXXXXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["rhbnb"]
 state: {
   "puzzleDate": "2025-09-19",

@@ -9,7 +9,7 @@ openers: ["eight"]
 middlers: ["scrap","dowry"]
 puzzles: [1274]
 hashes: ["AAAAAAAPAACPAPACCCCCXXXXXXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["jywxv"]
 state: {
   "puzzleDate": "2024-12-14",

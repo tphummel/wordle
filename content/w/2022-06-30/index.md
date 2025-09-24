@@ -5,7 +5,7 @@ tags: []
 words: ["track","pitch","dutch","butch","hutch"]
 puzzles: [376]
 hashes: ["PAACAAACCCACCCCACCCCCCCCCXXXXX"]
-openerHash: ["PAACA"]
+openerHashes: ["PAACA"]
 shifts: ["nbblr"]
 state: {
   "boardState": [

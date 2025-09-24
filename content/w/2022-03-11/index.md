@@ -73,7 +73,7 @@ stats:
 puzzles:
   - 265
 hashes: ["APAPAPCAAAACAPCACCCCACCCCCCCCC"]
-openerHash: ["APAPA"]
+openerHashes: ["APAPA"]
 shifts: ["chblr"]
 aliases:
   - /w/265/

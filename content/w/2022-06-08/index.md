@@ -5,7 +5,7 @@ tags: []
 words: ["piano","irate","trail","trait"]
 puzzles: [354]
 hashes: ["APCAAPCCPACCCCACCCCCXXXXXXXXXX"]
-openerHash: ["APCAA"]
+openerHashes: ["APCAA"]
 shifts: ["zyird"]
 state: {
   "boardState": [

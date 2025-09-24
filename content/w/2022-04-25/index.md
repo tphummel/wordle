@@ -5,7 +5,7 @@ tags: []
 words: ["spore","least","dames","askew"]
 puzzles: [310]
 hashes: ["PAAAPAPPPAAPACPCCCCCXXXXXXXXXX"]
-openerHash: ["PAAAP"]
+openerHashes: ["PAAAP"]
 shifts: ["gzsng"]
 state: {
   "boardState": [

@@ -58,7 +58,7 @@ stats:
 puzzles:
   - 264
 hashes: ["PAPPPCCPPACCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["PAPPP"]
+openerHashes: ["PAPPP"]
 shifts: ["rhxbo"]
 aliases:
   - /w/264/

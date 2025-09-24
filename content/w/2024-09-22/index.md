@@ -9,7 +9,7 @@ openers: ["point"]
 middlers: ["track"]
 puzzles: [1191]
 hashes: ["AAAAPCACCACCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AAAAP"]
+openerHashes: ["AAAAP"]
 shifts: ["zlilr"]
 state: {
   "puzzleDate": "2024-09-22",

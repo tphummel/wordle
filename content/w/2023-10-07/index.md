@@ -9,7 +9,7 @@ openers: ["ounce"]
 middlers: ["hoist","droid","ivory"]
 puzzles: [840]
 hashes: ["PAAAAAPPAAAACPAPPCAACCCCCXXXXX"]
-openerHash: ["PAAAA"]
+openerHashes: ["PAAAA"]
 shifts: ["bpwuk"]
 state: {
   "boardState": [

@@ -9,7 +9,7 @@ openers: ["eight"]
 middlers: ["screw","penny","bleak","blame"]
 puzzles: [1281]
 hashes: ["PAAAAAAAPAAPAAACCPPACCCACCCCCC"]
-openerHash: ["PAAAA"]
+openerHashes: ["PAAAA"]
 shifts: ["hsimo"]
 state: {
   "puzzleDate": "2024-12-21",

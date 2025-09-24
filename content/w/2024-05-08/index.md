@@ -9,7 +9,7 @@ openers: ["style"]
 middlers: ["crash","bonus"]
 puzzles: [1054]
 hashes: ["PAAAAAAAPAAPACCCCCCCXXXXXXXXXX"]
-openerHash: ["PAAAA"]
+openerHashes: ["PAAAA"]
 shifts: ["vpwdc"]
 state: {
   "puzzleDate": "2024-05-08",

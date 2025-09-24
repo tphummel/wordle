@@ -9,7 +9,7 @@ openers: ["grown"]
 middlers: ["steal","fleck"]
 puzzles: [1161]
 hashes: ["AAAAAAACAPAPCCACCCCCXXXXXXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["rlmlr"]
 state: {
   "puzzleDate": "2024-08-23",

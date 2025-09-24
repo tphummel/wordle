@@ -6,7 +6,7 @@ contests: ["2023-01-guide"]
 words: ["guide","story","worry"]
 puzzles: [587]
 hashes: ["AAAAAAAPCCCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["cvzai"]
 state: {
   "boardState": [

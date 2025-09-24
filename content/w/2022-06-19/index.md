@@ -5,7 +5,7 @@ tags: []
 words: ["amuse","slept","likes","loser"]
 puzzles: [365]
 hashes: ["AAAPPPPPAACAACPCCCCCXXXXXXXXXX"]
-openerHash: ["AAAPP"]
+openerHashes: ["AAAPP"]
 shifts: ["rvanb"]
 state: {
   "boardState": [

@@ -5,7 +5,7 @@ tags: []
 words: ["ocean","plaid","slash","glass"]
 puzzles: [334]
 hashes: ["AAAPAACCAAPCCCACCCCCXXXXXXXXXX"]
-openerHash: ["AAAPA"]
+openerHashes: ["AAAPA"]
 shifts: ["msibc"]
 state: {
   "boardState": [

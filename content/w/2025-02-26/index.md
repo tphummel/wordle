@@ -9,7 +9,7 @@ openers: ["shame"]
 middlers: ["crank","quart","board","liard"]
 puzzles: [1348]
 hashes: ["AACAAAPCAAAACCAAACCCAACCCCCCCC"]
-openerHash: ["AACAA"]
+openerHashes: ["AACAA"]
 shifts: ["gdian"]
 state: {
   "puzzleDate": "2025-02-26",

@@ -5,7 +5,7 @@ tags: []
 words: ["third","shrew","cheer","rhone","rhyme"]
 puzzles: [411]
 hashes: ["ACAPAACPPAACPAPCCAACCCCCCXXXXX"]
-openerHash: ["ACAPA"]
+openerHashes: ["ACAPA"]
 shifts: ["xogvo"]
 state: {
   "boardState": [

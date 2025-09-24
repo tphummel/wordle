@@ -9,7 +9,7 @@ openers: ["ghost"]
 middlers: ["round","rodeo","roady"]
 puzzles: [1522]
 hashes: ["AAPAACCAAPCCPAACCACCCCCCCXXXXX"]
-openerHash: ["AAPAA"]
+openerHashes: ["AAPAA"]
 shifts: ["xvemi"]
 state: {
   "puzzleDate": "2025-08-19",

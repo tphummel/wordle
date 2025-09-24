@@ -6,7 +6,7 @@ contests: ["2023-01-guide"]
 words: ["guide","rifle","looie","belie"]
 puzzles: [566]
 hashes: ["AAPACAPAPCPAACCCCCCCXXXXXXXXXX"]
-openerHash: ["AAPAC"]
+openerHashes: ["AAPAC"]
 shifts: ["hltro"]
 state: {
   "boardState": [

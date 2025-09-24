@@ -9,7 +9,7 @@ openers: ["audio"]
 middlers: ["since","while"]
 puzzles: [1466]
 hashes: ["AAAPAAPAACAACPCCCCCCXXXXXXXXXX"]
-openerHash: ["AAAPA"]
+openerHashes: ["AAAPA"]
 shifts: ["ksqco"]
 state: {
   "puzzleDate": "2025-06-24",

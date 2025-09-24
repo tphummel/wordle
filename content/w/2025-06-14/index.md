@@ -9,7 +9,7 @@ openers: ["point"]
 middlers: ["short"]
 puzzles: [1456]
 hashes: ["APAACPCCACCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["APAAC"]
+openerHashes: ["APAAC"]
 shifts: ["mowbd"]
 state: {
   "puzzleDate": "2025-06-14",

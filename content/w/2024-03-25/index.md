@@ -9,7 +9,7 @@ openers: ["syrup"]
 middlers: ["silky","salty"]
 puzzles: [1010]
 hashes: ["CPAAACACACCCCACCCCCCXXXXXXXXXX"]
-openerHash: ["CPAAA"]
+openerHashes: ["CPAAA"]
 shifts: ["yhtui"]
 state: {
   "boardState": [

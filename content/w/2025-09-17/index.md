@@ -9,7 +9,7 @@ openers: ["sonic"]
 middlers: ["freak","wheel"]
 puzzles: [1551]
 hashes: ["AAAAAAACAAAPCPACCCCCXXXXXXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["zlmcr"]
 state: {
   "puzzleDate": "2025-09-17",

@@ -9,7 +9,7 @@ openers: ["other"]
 middlers: ["chump","flash"]
 puzzles: [809]
 hashes: ["AAPAAAPAAAAACCCCCCCCXXXXXXXXXX"]
-openerHash: ["AAPAA"]
+openerHashes: ["AAPAA"]
 shifts: ["muibr"]
 state: {
   "boardState": [

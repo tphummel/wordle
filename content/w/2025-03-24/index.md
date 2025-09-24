@@ -9,7 +9,7 @@ openers: ["imbue"]
 middlers: ["choke","stale","apple","addle"]
 puzzles: [1374]
 hashes: ["AAAACAAAACAAPCCCAACCCAACCCCCCC"]
-openerHash: ["AAAAC"]
+openerHashes: ["AAAAC"]
 shifts: ["guouo"]
 state: {
   "puzzleDate": "2025-03-24",

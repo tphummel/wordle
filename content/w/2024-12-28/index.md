@@ -9,7 +9,7 @@ openers: ["score"]
 middlers: ["clerk"]
 puzzles: [1288]
 hashes: ["APACPPAPCACCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["APACP"]
+openerHashes: ["APACP"]
 shifts: ["jlkai"]
 state: {
   "puzzleDate": "2024-12-28",

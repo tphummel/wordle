@@ -9,7 +9,7 @@ openers: ["eight"]
 middlers: ["clasp","assay","samba"]
 puzzles: [1283]
 hashes: ["AAAAAAAPPAPPAPACCAACCCCCCXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["yhcwk"]
 state: {
   "puzzleDate": "2024-12-23",

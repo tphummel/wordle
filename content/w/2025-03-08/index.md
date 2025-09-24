@@ -9,7 +9,7 @@ openers: ["ounce"]
 middlers: ["never"]
 puzzles: [1358]
 hashes: ["AAPAPCACCACCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AAPAP"]
+openerHashes: ["AAPAP"]
 shifts: ["thdnv"]
 state: {
   "puzzleDate": "2025-03-08",

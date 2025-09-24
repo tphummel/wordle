@@ -9,7 +9,7 @@ openers: ["tiger"]
 middlers: ["stamp","couth","lotus"]
 puzzles: [748]
 hashes: ["PAAAAAPAAAACPPAACPCACCCCCXXXXX"]
-openerHash: ["PAAAA"]
+openerHashes: ["PAAAA"]
 shifts: ["jvvdd"]
 state: {
   "boardState": [

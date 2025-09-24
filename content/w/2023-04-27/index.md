@@ -8,7 +8,7 @@ openers: ["lucky"]
 middlers: ["latch"]
 puzzles: [677]
 hashes: ["CAPAACAAPACCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["CAPAA"]
+openerHashes: ["CAPAA"]
 shifts: ["rvorm"]
 state: {
   "boardState": [

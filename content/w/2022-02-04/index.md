@@ -40,7 +40,7 @@ stats: {}
 puzzles:
   - 230
 hashes: ["PAAACCCCCCXXXXXXXXXXXXXXXXXXXX"]
-openerHash: ["PAAAC"]
+openerHashes: ["PAAAC"]
 shifts: ["vsmjd"]
 aliases:
   - /w/230/

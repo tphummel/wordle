@@ -9,7 +9,7 @@ openers: ["shine"]
 middlers: ["court","plump","baulk","adult"]
 puzzles: [1244]
 hashes: ["AAAAAAACAAAPCAAAPCCAPACCACCCCC"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["accuk"]
 state: {
   "puzzleDate": "2024-11-14",

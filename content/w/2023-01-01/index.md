@@ -6,7 +6,7 @@ contests: ["2023-01-guide"]
 words: ["guide","tribe","chive","while","whine"]
 puzzles: [561]
 hashes: ["AACACAACACACCACCCCACCCCCCXXXXX"]
-openerHash: ["AACAC"]
+openerHashes: ["AACAC"]
 shifts: ["coqwo"]
 state: {
   "boardState": [

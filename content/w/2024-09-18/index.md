@@ -9,7 +9,7 @@ openers: ["alive"]
 middlers: ["scold","truly","bully","pully","gully"]
 puzzles: [1187]
 hashes: ["APAAAAAACAAAPCCACCCCACCCCACCCC"]
-openerHash: ["APAAA"]
+openerHashes: ["APAAA"]
 shifts: ["lbtui"]
 state: {
   "puzzleDate": "2024-09-18",

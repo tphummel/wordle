@@ -9,7 +9,7 @@ openers: ["weird"]
 middlers: []
 puzzles: [1230]
 hashes: ["CCCCCXXXXXXXXXXXXXXXXXXXXXXXXX"]
-openerHash: ["CCCCC"]
+openerHashes: ["CCCCC"]
 shifts: ["clqan"]
 state: {
   "puzzleDate": "2024-10-31",

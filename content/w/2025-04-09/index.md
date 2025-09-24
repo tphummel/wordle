@@ -9,7 +9,7 @@ openers: ["trade"]
 middlers: ["steal","cheat"]
 puzzles: [1390]
 hashes: ["PAPAPAPCCAACCCCCCCCCXXXXXXXXXX"]
-openerHash: ["PAPAP"]
+openerHashes: ["PAPAP"]
 shifts: ["comjd"]
 state: {
   "puzzleDate": "2025-04-09",

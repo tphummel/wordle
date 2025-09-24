@@ -9,7 +9,7 @@ openers: ["radio"]
 middlers: ["brawl","scrap"]
 puzzles: [969]
 hashes: ["PPAAAAPPAACCCCACCCCCXXXXXXXXXX"]
-openerHash: ["PPAAA"]
+openerHashes: ["PPAAA"]
 shifts: ["yjzjw"]
 state: {
   "boardState": [

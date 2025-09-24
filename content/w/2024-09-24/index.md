@@ -9,7 +9,7 @@ openers: ["eight"]
 middlers: ["hound"]
 puzzles: [1193]
 hashes: ["AAAPACAAPPCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AAAPA"]
+openerHashes: ["AAAPA"]
 shifts: ["nhvmi"]
 state: {
   "puzzleDate": "2024-09-24",

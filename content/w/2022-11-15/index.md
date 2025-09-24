@@ -6,7 +6,7 @@ contests: ["2022-11-habit"]
 words: ["habit","prank","snare","snarl"]
 puzzles: [514]
 hashes: ["APAAAAPCPACCCCACCCCCXXXXXXXXXX"]
-openerHash: ["APAAA"]
+openerHashes: ["APAAA"]
 shifts: ["yuiav"]
 state: {
   "boardState": [

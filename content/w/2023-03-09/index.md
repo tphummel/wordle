@@ -8,7 +8,7 @@ openers: ["raise"]
 middlers: ["broke","there"]
 puzzles: [628]
 hashes: ["PAAACAPAACACCCCCCCCCXXXXXXXXXX"]
-openerHash: ["PAAAC"]
+openerHashes: ["PAAAC"]
 shifts: ["comao"]
 state: {
   "boardState": [

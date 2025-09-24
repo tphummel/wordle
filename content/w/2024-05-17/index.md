@@ -9,7 +9,7 @@ openers: ["style"]
 middlers: ["track","throw","tumor"]
 puzzles: [1063]
 hashes: ["APAAACPAAACAPCACCACCCCCCCXXXXX"]
-openerHash: ["APAAA"]
+openerHashes: ["APAAA"]
 shifts: ["zbbxb"]
 state: {
   "puzzleDate": "2024-05-17",

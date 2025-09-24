@@ -9,7 +9,7 @@ openers: ["weird"]
 middlers: ["crisp"]
 puzzles: [1243]
 hashes: ["AACPAACCACCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AACPA"]
+openerHashes: ["AACPA"]
 shifts: ["vyqvz"]
 state: {
   "puzzleDate": "2024-11-13",

@@ -9,7 +9,7 @@ openers: ["point"]
 middlers: ["could"]
 puzzles: [908]
 hashes: ["ACAAAACCCCCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["ACAAA"]
+openerHashes: ["ACAAA"]
 shifts: ["cvcun"]
 state: {
   "boardState": [

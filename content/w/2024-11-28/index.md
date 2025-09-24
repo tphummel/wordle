@@ -9,7 +9,7 @@ openers: ["eight"]
 middlers: ["shack"]
 puzzles: [1258]
 hashes: ["AAAPAACACCCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AAAPA"]
+openerHashes: ["AAAPA"]
 shifts: ["iowlu"]
 state: {
   "puzzleDate": "2024-11-28",

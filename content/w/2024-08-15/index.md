@@ -9,7 +9,7 @@ openers: ["scour"]
 middlers: []
 puzzles: [1153]
 hashes: ["ACCAPCCCCCXXXXXXXXXXXXXXXXXXXX"]
-openerHash: ["ACCAP"]
+openerHashes: ["ACCAP"]
 shifts: ["gjwax"]
 state: {
   "puzzleDate": "2024-08-15",

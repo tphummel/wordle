@@ -6,7 +6,7 @@ contests: ["2022-12-ratio"]
 words: ["ratio","daisy","naive"]
 puzzles: [540]
 hashes: ["ACAPAACCAACCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["ACAPA"]
+openerHashes: ["ACAPA"]
 shifts: ["thqeo"]
 state: {
   "boardState": [

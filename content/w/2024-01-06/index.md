@@ -9,7 +9,7 @@ openers: ["point"]
 middlers: ["shame","barge","fable"]
 puzzles: [931]
 hashes: ["AAAAAAAPACPCAACACCCCCCCCCXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["ihjuo"]
 state: {
   "boardState": [
