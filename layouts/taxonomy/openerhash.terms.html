@@ -7,19 +7,21 @@
 <div>{{ . }}</div>
 {{ end }}
 
+{{ $taxonomySlug := (urlize .Data.Plural) }}
+{{ $taxonomyName := humanize .Data.Plural }}
 {{ $alphabetical := .Data.Terms.Alphabetical }}
 {{ $ordered := sort $alphabetical "Count" "desc" }}
 {{ $distinctCount := len $ordered }}
 {{ $totalPossible := 243 }}
 {{ $percentage := mul (div (float $distinctCount) (float $totalPossible)) 100 }}
 
-<p>I've seen <strong>{{ $distinctCount }}</strong> of {{ $totalPossible }} possible opener hashes ({{ $percentage | lang.FormatNumber 1 }}%).</p>
+<p>I've seen <strong>{{ $distinctCount }}</strong> of {{ $totalPossible }} possible {{ lower $taxonomyName }} patterns ({{ $percentage | lang.FormatNumber 1 }}%).</p>
 
 <h2>List</h2>
 <table>
   <tr>
     <td>First Guess</td>
-    <td>Hash</td>
+    <td>{{ $taxonomyName | title }}</td>
     <td>Count</td>
     <td>First Played</td>
     <td>Last Played</td>
@@ -31,7 +33,7 @@
     {{ $first := index (first 1 $term.Pages.ByDate) 0 }}
     {{ $last := index (last 1 $term.Pages.ByDate) 0 }}
 
-    {{ with $.Site.GetPage (printf "/%s/%s" "openerhash" $name) }}
+    {{ with $.Site.GetPage (printf "/%s/%s" $taxonomySlug $name) }}
     <tr>
       <td><a href="{{ .RelPermalink }}" title="{{ $name }}">{{ partialCached "first-guess-emoji.html" $first $first.File.Path }}</a></td>
       <td><a href="{{ .RelPermalink }}" title="{{ $name }}">{{ partialCached "openerhash-emoji.html" $name $name }}</a></td>

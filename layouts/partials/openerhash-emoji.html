@@ -10,14 +10,15 @@
 {{- $tiles := slice -}}
 {{- range (split $hash "") -}}
   {{- $emoji := "" -}}
-  {{- if eq . "C" -}}
+  {{- $char := upper . -}}
+  {{- if eq $char "C" -}}
     {{- $emoji = "🟩" -}}
-  {{- else if eq . "P" -}}
+  {{- else if eq $char "P" -}}
     {{- $emoji = "🟨" -}}
-  {{- else if or (eq . "A") (eq . "X") -}}
+  {{- else if or (eq $char "A") (eq $char "X") -}}
     {{- $emoji = "⬛️" -}}
   {{- else -}}
-    {{- $emoji = . -}}
+    {{- $emoji = $char -}}
   {{- end -}}
   {{- $tiles = $tiles | append $emoji -}}
 {{- end -}}
