@@ -102,10 +102,37 @@ function decodeCaesarCipher(word) {
     }).join('');
 }
 
+const hashLength = 5;
+
+function buildGuessHash(row) {
+    if (!row) {
+        return 'X'.repeat(hashLength);
+    }
+
+    const parts = row.map((value) => {
+        if (value) {
+            return value.substring(0, 1).toUpperCase();
+        }
+        return 'X';
+    });
+
+    if (parts.length > hashLength) {
+        return parts.slice(0, hashLength).join('');
+    }
+
+    if (parts.length < hashLength) {
+        return parts.concat(new Array(hashLength - parts.length).fill('X')).join('');
+    }
+
+    return parts.join('');
+}
+
 const puzzleHash = state.evaluations.map((row) => {
     if (row === null) return 'XXXXX';
     return row.map(c => c.substring(0, 1).toUpperCase()).join('');
 }).join('');
+
+const openerHash = buildGuessHash(state.evaluations[0]);
 
 const activeContests = [
     // `${puzzleDate.slice(0,7)}-relay-mode`
@@ -124,6 +151,7 @@ openers: ${JSON.stringify([opener])}
 middlers: ${JSON.stringify(middlers)}
 puzzles: [${state.dayOffset}]
 hashes: ["${puzzleHash}"]
+openerHash: ["${openerHash}"]
 shifts: ["${encodeCaesarCipher(state.solution)}"]
 state: ${JSON.stringify(state, null, 2)}
 stats: ${JSON.stringify(data.data.setLegacyStats, null, 2)}
