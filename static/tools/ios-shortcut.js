@@ -107,6 +107,8 @@ const puzzleHash = state.evaluations.map((row) => {
     return row.map(c => c.substring(0, 1).toUpperCase()).join('');
 }).join('');
 
+const openerHash = puzzleHash.slice(0, 5);
+
 const activeContests = [
     // `${puzzleDate.slice(0,7)}-relay-mode`
     // `${puzzleDate.slice(0,7)}-ffa`
@@ -124,6 +126,7 @@ openers: ${JSON.stringify([opener])}
 middlers: ${JSON.stringify(middlers)}
 puzzles: [${state.dayOffset}]
 hashes: ["${puzzleHash}"]
+openerHashes: ["${openerHash}"]
 shifts: ["${encodeCaesarCipher(state.solution)}"]
 state: ${JSON.stringify(state, null, 2)}
 stats: ${JSON.stringify(data.data.setLegacyStats, null, 2)}
