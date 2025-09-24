@@ -8,7 +8,7 @@ openers: ["shorn"]
 middlers: ["route","greed"]
 puzzles: [699]
 hashes: ["AAAPAPAAAPCCACACCCCCXXXXXXXXXX"]
-openerHash: ["AAAPA"]
+openerHashes: ["AAAPA"]
 shifts: ["myqnp"]
 state: {
   "boardState": [

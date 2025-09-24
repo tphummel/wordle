@@ -9,7 +9,7 @@ openers: ["syrup"]
 middlers: ["worry","mercy"]
 puzzles: [993]
 hashes: ["APCAAAACACAPCACCCCCCXXXXXXXXXX"]
-openerHash: ["APCAA"]
+openerHashes: ["APCAA"]
 shifts: ["khzui"]
 state: {
   "boardState": [

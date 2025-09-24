@@ -9,7 +9,7 @@ openers: ["weird"]
 middlers: ["wreck"]
 puzzles: [1225]
 hashes: ["CPAPACCCACCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["CPAPA"]
+openerHashes: ["CPAPA"]
 shifts: ["cymju"]
 state: {
   "puzzleDate": "2024-10-26",

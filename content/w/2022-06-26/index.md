@@ -5,7 +5,7 @@ tags: []
 words: ["trash","storm","rusty"]
 puzzles: [372]
 hashes: ["PPAPAPPAPACCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["PPAPA"]
+openerHashes: ["PPAPA"]
 shifts: ["xbaci"]
 state: {
   "boardState": [

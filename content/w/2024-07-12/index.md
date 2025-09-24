@@ -9,7 +9,7 @@ openers: ["crown"]
 middlers: ["death","quill","spiky","fizzy"]
 puzzles: [1119]
 hashes: ["AAAAAAAAAAAAPAAAAPACPCAACCCCCC"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["ppnoi"]
 state: {
   "puzzleDate": "2024-07-12",

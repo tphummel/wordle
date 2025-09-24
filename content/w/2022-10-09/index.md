@@ -6,7 +6,7 @@ contests: ["2022-10-metal"]
 words: ["metal","hound","hoody","howdy"]
 puzzles: [477]
 hashes: ["AAAAACCAAPCCACCCCCCCXXXXXXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["nvemi"]
 state: {
   "boardState": [

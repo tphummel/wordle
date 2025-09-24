@@ -9,7 +9,7 @@ openers: ["alone"]
 middlers: ["share","stake"]
 puzzles: [1402]
 hashes: ["PAAACCACACCPCACCCCCCXXXXXXXXXX"]
-openerHash: ["PAAAC"]
+openerHashes: ["PAAAC"]
 shifts: ["ywico"]
 state: {
   "puzzleDate": "2025-04-21",

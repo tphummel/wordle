@@ -5,7 +5,7 @@ tags: []
 words: ["piano","nopal","apron"]
 puzzles: [362]
 hashes: ["PAPPPPPPPACCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["PAPPP"]
+openerHashes: ["PAPPP"]
 shifts: ["gwzxx"]
 state: {
   "boardState": [

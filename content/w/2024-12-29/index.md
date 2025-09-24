@@ -9,7 +9,7 @@ openers: ["frame"]
 middlers: ["mason","macho","mango"]
 puzzles: [1289]
 hashes: ["AAPPACCAPACCAACCCAACCCCCCXXXXX"]
-openerHash: ["AAPPA"]
+openerHashes: ["AAPPA"]
 shifts: ["shuky"]
 state: {
   "puzzleDate": "2024-12-29",

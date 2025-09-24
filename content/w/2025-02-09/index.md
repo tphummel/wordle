@@ -9,7 +9,7 @@ openers: ["close"]
 middlers: ["sound","bosun"]
 puzzles: [1331]
 hashes: ["AAPPAPCPPACCPCPCCCCCXXXXXXXXXX"]
-openerHash: ["AAPPA"]
+openerHashes: ["AAPPA"]
 shifts: ["hvvdc"]
 state: {
   "puzzleDate": "2025-02-09",

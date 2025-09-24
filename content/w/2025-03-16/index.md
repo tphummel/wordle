@@ -9,7 +9,7 @@ openers: ["poise"]
 middlers: ["spark","staph"]
 puzzles: [1366]
 hashes: ["PAAPACPCAACCCPACCCCCXXXXXXXXXX"]
-openerHash: ["PAAPA"]
+openerHashes: ["PAAPA"]
 shifts: ["yaivz"]
 state: {
   "puzzleDate": "2025-03-16",

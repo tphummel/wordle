@@ -9,7 +9,7 @@ openers: ["patio"]
 middlers: ["share","arena","cream","bread"]
 puzzles: [1480]
 hashes: ["APAAAAAPPPPCCAAACCCAACCCCCCCCC"]
-openerHash: ["APAAA"]
+openerHashes: ["APAAA"]
 shifts: ["jymjn"]
 state: {
   "puzzleDate": "2025-07-08",

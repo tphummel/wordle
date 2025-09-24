@@ -9,7 +9,7 @@ openers: ["ounce"]
 middlers: ["shock","porch","botch","hooch"]
 puzzles: [831]
 hashes: ["PAACAAPPCAACACCACACCACACCCCCCC"]
-openerHash: ["PAACA"]
+openerHashes: ["PAACA"]
 shifts: ["ivilr"]
 state: {
   "boardState": [

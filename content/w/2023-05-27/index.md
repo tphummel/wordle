@@ -8,7 +8,7 @@ openers: ["swine"]
 middlers: ["queen","token","paren","raven"]
 puzzles: [707]
 hashes: ["AAAPPAAACCAAACCACPCCCCACCCCCCC"]
-openerHash: ["AAAPP"]
+openerHashes: ["AAAPP"]
 shifts: ["xhunx"]
 state: {
   "boardState": [

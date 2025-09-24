@@ -8,7 +8,7 @@ openers: ["bride"]
 middlers: ["reset","threw","otter"]
 puzzles: [644]
 hashes: ["APAAPPAACPPAPCAPACCCCCCCCXXXXX"]
-openerHash: ["APAAP"]
+openerHashes: ["APAAP"]
 shifts: ["bvbnb"]
 state: {
   "boardState": [

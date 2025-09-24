@@ -9,7 +9,7 @@ openers: ["radio"]
 middlers: ["manly","taste"]
 puzzles: [968]
 hashes: ["ACAAAACAAAACCCACCCCCXXXXXXXXXX"]
-openerHash: ["ACAAA"]
+openerHashes: ["ACAAA"]
 shifts: ["vhack"]
 state: {
   "boardState": [

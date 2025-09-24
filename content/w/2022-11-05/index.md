@@ -6,7 +6,7 @@ contests: ["2022-11-habit"]
 words: ["habit","scrap","dream"]
 puzzles: [504]
 hashes: ["APAAAAAPCACCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["APAAA"]
+openerHashes: ["APAAA"]
 shifts: ["jymjw"]
 state: {
   "boardState": [

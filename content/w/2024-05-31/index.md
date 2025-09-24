@@ -9,7 +9,7 @@ openers: ["sound"]
 middlers: ["chose"]
 puzzles: [1077]
 hashes: ["PPAAACCPPACCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["PPAAA"]
+openerHashes: ["PPAAA"]
 shifts: ["ioixc"]
 state: {
   "puzzleDate": "2024-05-31",

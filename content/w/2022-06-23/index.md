@@ -5,7 +5,7 @@ tags: []
 words: ["mouse","train","drink","brink"]
 puzzles: [369]
 hashes: ["AAAAAACAPPACCCCCCCCCXXXXXXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["hyqwu"]
 state: {
   "boardState": [

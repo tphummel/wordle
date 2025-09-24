@@ -5,7 +5,7 @@ tags: []
 words: ["mouse","shuck","stunt","slurp","squid","squad"]
 puzzles: [296]
 hashes: ["AACPACACAACACAACACAACCCACCCCCC"]
-openerHash: ["AACPA"]
+openerHashes: ["AACPA"]
 shifts: ["yxcjn"]
 state: {
   "boardState": [

@@ -5,7 +5,7 @@ tags: []
 words: ["humor","stone","atoll"]
 puzzles: [345]
 hashes: ["AAAPAACCAACCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AAAPA"]
+openerHashes: ["AAAPA"]
 shifts: ["gawuv"]
 state: {
   "boardState": [

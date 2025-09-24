@@ -6,7 +6,7 @@ contests: ["2023-01-guide"]
 words: ["guide","steam","teach","water","alter"]
 puzzles: [580]
 hashes: ["AAAAPAPPPAPPPAAAPCCCCCCCCXXXXX"]
-openerHash: ["AAAAP"]
+openerHashes: ["AAAAP"]
 shifts: ["gsbnb"]
 state: {
   "boardState": [

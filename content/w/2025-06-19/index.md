@@ -9,7 +9,7 @@ openers: ["audio"]
 middlers: []
 puzzles: [1461]
 hashes: ["ACACCCCCCCXXXXXXXXXXXXXXXXXXXX"]
-openerHash: ["ACACC"]
+openerHashes: ["ACACC"]
 shifts: ["ibzry"]
 state: {
   "puzzleDate": "2025-06-19",

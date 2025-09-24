@@ -9,7 +9,7 @@ openers: ["psych"]
 middlers: ["sound","snare"]
 puzzles: [952]
 hashes: ["APAAACAAPACCCACCCCCCXXXXXXXXXX"]
-openerHash: ["APAAA"]
+openerHashes: ["APAAA"]
 shifts: ["yuito"]
 state: {
   "boardState": [

@@ -9,7 +9,7 @@ openers: ["ocean"]
 middlers: ["cease","camel","caber"]
 puzzles: [801]
 hashes: ["APPPACPPAACCACACCACCCCCCCXXXXX"]
-openerHash: ["APPPA"]
+openerHashes: ["APPPA"]
 shifts: ["ihxnb"]
 state: {
   "boardState": [

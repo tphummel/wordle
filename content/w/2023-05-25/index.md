@@ -8,7 +8,7 @@ openers: ["utter"]
 middlers: ["gavel"]
 puzzles: [705]
 hashes: ["AAACAPCACCCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AAACA"]
+openerHashes: ["AAACA"]
 shifts: ["hhonv"]
 state: {
   "boardState": [

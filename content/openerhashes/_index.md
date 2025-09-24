@@ -2,6 +2,7 @@
 title: Opener Hashes Played
 aliases:
   - /firsthashes/
+  - /openerhash/
 ---
 
 ## Intro

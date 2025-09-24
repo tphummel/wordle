@@ -9,7 +9,7 @@ openers: ["choir"]
 middlers: ["cream","crank","crass","craft","crazy"]
 puzzles: [1301]
 hashes: ["CAAAPCCAPACCCAACCCAACCCAACCCAA"]
-openerHash: ["CAAAP"]
+openerHashes: ["CAAAP"]
 shifts: ["iyifv"]
 state: {
   "puzzleDate": "2025-01-10",

@@ -6,7 +6,7 @@ contests: ["2022-11-habit"]
 words: ["habit","alien","inane"]
 puzzles: [512]
 hashes: ["APAPAPAPPPCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["APAPA"]
+openerHashes: ["APAPA"]
 shifts: ["ouiwo"]
 state: {
   "boardState": [

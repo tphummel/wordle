@@ -6,7 +6,7 @@ contests: ["2022-11-habit"]
 words: ["habit","pivot","spilt","input","inept"]
 puzzles: [501]
 hashes: ["AAAPCPPAACAPPACCCPACCCCCCXXXXX"]
-openerHash: ["AAAPC"]
+openerHashes: ["AAAPC"]
 shifts: ["oumyd"]
 state: {
   "boardState": [

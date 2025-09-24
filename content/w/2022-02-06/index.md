@@ -60,7 +60,7 @@ stats: {}
 puzzles:
   - 232
 hashes: ["APPCAAACCPCACCCCACCCCACCCCCCCC"]
-openerHash: ["APPCA"]
+openerHashes: ["APPCA"]
 shifts: ["yrquv"]
 aliases:
   - /w/232/

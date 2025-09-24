@@ -5,7 +5,7 @@ tags: []
 words: ["humor","shine","chase","phase"]
 puzzles: [349]
 hashes: ["PAAAAPCAACACCCCCCCCCXXXXXXXXXX"]
-openerHash: ["PAAAA"]
+openerHashes: ["PAAAA"]
 shifts: ["voibo"]
 state: {
   "boardState": [

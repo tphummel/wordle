@@ -9,7 +9,7 @@ openers: ["found"]
 middlers: ["snake","anger"]
 puzzles: [1529]
 hashes: ["AAAPAACPAPCCACACCCCCXXXXXXXXXX"]
-openerHash: ["AAAPA"]
+openerHashes: ["AAAPA"]
 shifts: ["guvnh"]
 state: {
   "puzzleDate": "2025-08-26",

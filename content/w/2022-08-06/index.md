@@ -5,7 +5,7 @@ tags: []
 words: ["third","slime","alien"]
 puzzles: [413]
 hashes: ["AACAAACCAPCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AACAA"]
+openerHashes: ["AACAA"]
 shifts: ["gsqnx"]
 state: {
   "boardState": [

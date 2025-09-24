@@ -5,7 +5,7 @@ tags: []
 words: ["mouse","smoke","smite"]
 puzzles: [370]
 hashes: ["PAAPCCCAACCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["PAAPC"]
+openerHashes: ["PAAPC"]
 shifts: ["ytqco"]
 state: {
   "boardState": [

@@ -9,7 +9,7 @@ openers: ["tiger"]
 middlers: ["polka","hound","woozy","mommy"]
 puzzles: [743]
 hashes: ["AAAAAACAAAACAAAACAACCCAACCCCCC"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["svabi"]
 state: {
   "boardState": [

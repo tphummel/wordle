@@ -8,7 +8,7 @@ openers: ["orate"]
 middlers: ["scowl"]
 puzzles: [605]
 hashes: ["PAAAACAPAACCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["PAAAA"]
+openerHashes: ["PAAAA"]
 shifts: ["yvcwn"]
 state: {
   "boardState": [

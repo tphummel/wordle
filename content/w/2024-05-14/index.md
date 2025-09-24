@@ -9,7 +9,7 @@ openers: ["style"]
 middlers: ["grasp","awash"]
 puzzles: [1060]
 hashes: ["PAAAAAACCACACCACCCCCXXXXXXXXXX"]
-openerHash: ["PAAAA"]
+openerHashes: ["PAAAA"]
 shifts: ["gtibc"]
 state: {
   "puzzleDate": "2024-05-14",

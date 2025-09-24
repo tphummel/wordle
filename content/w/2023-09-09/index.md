@@ -9,7 +9,7 @@ openers: ["ounce"]
 middlers: ["duchy"]
 puzzles: [812]
 hashes: ["ACAPAACCACCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["ACAPA"]
+openerHashes: ["ACAPA"]
 shifts: ["rbkti"]
 state: {
   "boardState": [

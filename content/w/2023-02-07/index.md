@@ -8,7 +8,7 @@ openers: ["orate"]
 middlers: ["dance","amble"]
 puzzles: [598]
 hashes: ["AAPACAPAACCAACCCCCCCXXXXXXXXXX"]
-openerHash: ["AAPAC"]
+openerHashes: ["AAPAC"]
 shifts: ["gwxuo"]
 state: {
   "boardState": [

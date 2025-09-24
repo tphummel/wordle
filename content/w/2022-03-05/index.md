@@ -58,7 +58,7 @@ stats:
 puzzles:
   - 259
 hashes: ["AAPAAACACCCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AAPAA"]
+openerHashes: ["AAPAA"]
 shifts: ["hyqwo"]
 aliases:
   - /w/259/

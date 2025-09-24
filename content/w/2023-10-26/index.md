@@ -9,7 +9,7 @@ openers: ["ounce"]
 middlers: ["flute","imbue"]
 puzzles: [859]
 hashes: ["APAACAAPACPAACCCCCCCXXXXXXXXXX"]
-openerHash: ["APAAC"]
+openerHashes: ["APAAC"]
 shifts: ["vpydo"]
 state: {
   "boardState": [

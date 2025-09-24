@@ -6,7 +6,7 @@ contests: ["2022-11-habit"]
 words: ["habit","cloud","redux","undue"]
 puzzles: [528]
 hashes: ["AAAAAAAACPAPCCACCCCCXXXXXXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["auldo"]
 state: {
   "boardState": [

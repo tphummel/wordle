@@ -9,7 +9,7 @@ openers: ["quote"]
 middlers: ["shock","drown"]
 puzzles: [1549]
 hashes: ["AACAAAACAAAACAPCCCCCXXXXXXXXXX"]
-openerHash: ["AACAA"]
+openerHashes: ["AACAA"]
 shifts: ["gswwq"]
 state: {
   "puzzleDate": "2025-09-15",

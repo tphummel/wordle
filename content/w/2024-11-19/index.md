@@ -9,7 +9,7 @@ openers: ["weird"]
 middlers: ["chili","spiny","faint","boing"]
 puzzles: [1249]
 hashes: ["AACAAAACAAAACCAAACCAACCCCCCCCC"]
-openerHash: ["AACAA"]
+openerHashes: ["AACAA"]
 shifts: ["mvqwq"]
 state: {
   "puzzleDate": "2024-11-19",

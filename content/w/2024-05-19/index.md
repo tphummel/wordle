@@ -9,7 +9,7 @@ openers: ["style"]
 middlers: ["point","tiara","ditch","witch"]
 puzzles: [1065]
 hashes: ["APAAAAAPAPPCAAAACCCCACCCCCCCCC"]
-openerHash: ["APAAA"]
+openerHashes: ["APAAA"]
 shifts: ["npblr"]
 state: {
   "puzzleDate": "2024-05-19",

@@ -53,7 +53,7 @@ stats:
 puzzles:
   - 275
 hashes: ["AAAPCCCCCCXXXXXXXXXXXXXXXXXXXX"]
-openerHash: ["AAAPC"]
+openerHashes: ["AAAPC"]
 shifts: ["zomrb"]
 aliases:
   - /w/275/

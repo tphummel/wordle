@@ -9,7 +9,7 @@ openers: ["radio"]
 middlers: ["plant","shame"]
 puzzles: [978]
 hashes: ["APAAAAACAAAPCAPCCCCCXXXXXXXXXX"]
-openerHash: ["APAAA"]
+openerHashes: ["APAAA"]
 shifts: ["nliei"]
 state: {
   "boardState": [

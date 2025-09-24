@@ -9,7 +9,7 @@ openers: ["point"]
 middlers: ["wring","fling","axing"]
 puzzles: [927]
 hashes: ["AACCAAACCCAACCCCACCCCCCCCXXXXX"]
-openerHash: ["AACCA"]
+openerHashes: ["AACCA"]
 shifts: ["gnqwq"]
 state: {
   "boardState": [

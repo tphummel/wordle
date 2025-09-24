@@ -9,7 +9,7 @@ openers: ["patio"]
 middlers: ["saber","baker"]
 puzzles: [1477]
 hashes: ["ACAAAACPCCCCACCCCCCCXXXXXXXXXX"]
-openerHash: ["ACAAA"]
+openerHashes: ["ACAAA"]
 shifts: ["hhtnb"]
 state: {
   "puzzleDate": "2025-07-05",

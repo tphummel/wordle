@@ -8,7 +8,7 @@ openers: ["lucky"]
 middlers: ["olive","steal"]
 puzzles: [666]
 hashes: ["PAAAAAPAAPAPCAPCCCCCXXXXXXXXXX"]
-openerHash: ["PAAAA"]
+openerHashes: ["PAAAA"]
 shifts: ["jdmud"]
 state: {
   "boardState": [

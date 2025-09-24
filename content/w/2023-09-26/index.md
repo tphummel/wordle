@@ -9,7 +9,7 @@ openers: ["juice"]
 middlers: ["trash","panda","aloof","polka"]
 puzzles: [829]
 hashes: ["AAAAAAAPAAAPAAAPPPAAACPAPCCCCC"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["rvgjv"]
 state: {
   "boardState": [

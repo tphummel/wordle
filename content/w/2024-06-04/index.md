@@ -9,7 +9,7 @@ openers: ["wheat"]
 middlers: ["grimy"]
 puzzles: [1081]
 hashes: ["AAAAACCAPACCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["mywxw"]
 state: {
   "puzzleDate": "2024-06-04",

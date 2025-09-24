@@ -5,7 +5,7 @@ tags: []
 words: ["mouse","trail","natal"]
 puzzles: [290]
 hashes: ["AAAAAPAPACCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["thbjv"]
 state: {
   "boardState": [

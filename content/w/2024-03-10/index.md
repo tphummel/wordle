@@ -9,7 +9,7 @@ openers: ["syrup"]
 middlers: ["crisp"]
 puzzles: [995]
 hashes: ["PAPACACACCCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["PAPAC"]
+openerHashes: ["PAPAC"]
 shifts: ["myibz"]
 state: {
   "boardState": [

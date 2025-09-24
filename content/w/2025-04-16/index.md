@@ -9,7 +9,7 @@ openers: ["scout"]
 middlers: ["board","roman"]
 puzzles: [1397]
 hashes: ["AAPAAACPPAPCPCACCCCCXXXXXXXXXX"]
-openerHash: ["AAPAA"]
+openerHashes: ["AAPAA"]
 shifts: ["svzjv"]
 state: {
   "puzzleDate": "2025-04-16",

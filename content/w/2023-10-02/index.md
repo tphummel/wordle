@@ -9,7 +9,7 @@ openers: ["ounce"]
 middlers: ["great","reply","berry"]
 puzzles: [835]
 hashes: ["AAAAPAPPAAPCAACACCCCCCCCCXXXXX"]
-openerHash: ["AAAAP"]
+openerHashes: ["AAAAP"]
 shifts: ["slzai"]
 state: {
   "boardState": [

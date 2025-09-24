@@ -9,7 +9,7 @@ openers: ["point"]
 middlers: ["since","windy","binge"]
 puzzles: [933]
 hashes: ["AAPPAACCAAACCAAACCAACCCCCXXXXX"]
-openerHash: ["AAPPA"]
+openerHashes: ["AAPPA"]
 shifts: ["lpvjv"]
 state: {
   "boardState": [

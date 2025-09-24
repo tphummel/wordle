@@ -9,7 +9,7 @@ openers: ["eight"]
 middlers: []
 puzzles: [1206]
 hashes: ["AAAAACCCCCXXXXXXXXXXXXXXXXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["lswdb"]
 state: {
   "puzzleDate": "2024-10-07",

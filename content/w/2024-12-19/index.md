@@ -9,7 +9,7 @@ openers: ["ideal"]
 middlers: ["scrap","straw"]
 puzzles: [1279]
 hashes: ["AAACACACCACCCCACCCCCXXXXXXXXXX"]
-openerHash: ["AAACA"]
+openerHashes: ["AAACA"]
 shifts: ["yazji"]
 state: {
   "puzzleDate": "2024-12-19",

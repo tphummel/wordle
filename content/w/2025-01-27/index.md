@@ -9,7 +9,7 @@ openers: ["noise"]
 middlers: ["snack"]
 puzzles: [1318]
 hashes: ["PAAPACPAAACCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["PAAPA"]
+openerHashes: ["PAAPA"]
 shifts: ["yocwd"]
 state: {
   "puzzleDate": "2025-01-27",

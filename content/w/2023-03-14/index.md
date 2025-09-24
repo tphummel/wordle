@@ -8,7 +8,7 @@ openers: ["mocha"]
 middlers: ["spine","sulky"]
 puzzles: [633]
 hashes: ["AAAAACAAAACCPACCCCCCXXXXXXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["ybzui"]
 state: {
   "boardState": [

@@ -6,7 +6,7 @@ contests: ["2022-12-ratio"]
 words: ["ratio","touch","joust"]
 puzzles: [536]
 hashes: ["AAPAPPCCAACCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AAPAP"]
+openerHashes: ["AAPAP"]
 shifts: ["pvcbd"]
 state: {
   "boardState": [

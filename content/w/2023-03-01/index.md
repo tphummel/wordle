@@ -8,7 +8,7 @@ openers: ["zebra"]
 middlers: ["smile","mouse"]
 puzzles: [620]
 hashes: ["APAAAPPAACCCACCCCCCCXXXXXXXXXX"]
-openerHash: ["APAAA"]
+openerHashes: ["APAAA"]
 shifts: ["svwbo"]
 state: {
   "boardState": [

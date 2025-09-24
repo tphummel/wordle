@@ -9,7 +9,7 @@ openers: ["choir"]
 middlers: ["stink","spilt"]
 puzzles: [1360]
 hashes: ["AAAPACPCAACCCAPCCCCCXXXXXXXXXX"]
-openerHash: ["AAAPA"]
+openerHashes: ["AAAPA"]
 shifts: ["ywqco"]
 state: {
   "puzzleDate": "2025-03-10",

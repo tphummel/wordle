@@ -9,7 +9,7 @@ openers: ["great"]
 middlers: ["least","adept"]
 puzzles: [1129]
 hashes: ["AAPPCAPPACPPPACCCCCCXXXXXXXXXX"]
-openerHash: ["AAPPC"]
+openerHashes: ["AAPPC"]
 shifts: ["ihlnd"]
 state: {
   "puzzleDate": "2024-07-22",

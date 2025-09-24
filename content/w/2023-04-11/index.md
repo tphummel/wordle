@@ -8,7 +8,7 @@ openers: ["lucky"]
 middlers: ["pulse","guilt"]
 puzzles: [661]
 hashes: ["PCAAAACPAAACACACCCCCXXXXXXXXXX"]
-openerHash: ["PCAAA"]
+openerHashes: ["PCAAA"]
 shifts: ["wbiuw"]
 state: {
   "boardState": [

@@ -6,7 +6,7 @@ contests: ["2023-01-guide"]
 words: ["guide","trust","churn","blurb"]
 puzzles: [581]
 hashes: ["APAAAAPCAAAACCACCCCCXXXXXXXXXX"]
-openerHash: ["APAAA"]
+openerHashes: ["APAAA"]
 shifts: ["hscal"]
 state: {
   "boardState": [

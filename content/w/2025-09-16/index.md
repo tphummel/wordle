@@ -9,7 +9,7 @@ openers: ["choir"]
 middlers: ["blend","least"]
 puzzles: [1550]
 hashes: ["AAAAAAPPAACCAAPCCCCCXXXXXXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["rlnci"]
 state: {
   "puzzleDate": "2025-09-16",

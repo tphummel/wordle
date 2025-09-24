@@ -6,7 +6,7 @@ contests: ["2022-10-metal"]
 words: ["metal","leash","learn","leaky","leave"]
 puzzles: [469]
 hashes: ["ACAPPCCCAACCCAACCCAACCCCCXXXXX"]
-openerHash: ["ACAPP"]
+openerHashes: ["ACAPP"]
 shifts: ["rlieo"]
 state: {
   "boardState": [

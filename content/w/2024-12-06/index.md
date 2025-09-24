@@ -9,7 +9,7 @@ openers: ["often"]
 middlers: ["score","spoke"]
 puzzles: [1266]
 hashes: ["PAAPACACACCACACCCCCCXXXXXXXXXX"]
-openerHash: ["PAAPA"]
+openerHashes: ["PAAPA"]
 shifts: ["yoweo"]
 state: {
   "puzzleDate": "2024-12-06",

@@ -5,7 +5,7 @@ tags: []
 words: ["piano","pitch","piety"]
 puzzles: [356]
 hashes: ["CCAAACCPAACCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["CCAAA"]
+openerHashes: ["CCAAA"]
 shifts: ["vpmci"]
 state: {
   "boardState": [

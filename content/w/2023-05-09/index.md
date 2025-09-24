@@ -8,7 +8,7 @@ openers: ["aglow"]
 middlers: ["havoc"]
 puzzles: [689]
 hashes: ["PAACAAPACPCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["PAACA"]
+openerHashes: ["PAACA"]
 shifts: ["ivkxk"]
 state: {
   "boardState": [

@@ -9,7 +9,7 @@ openers: ["alone"]
 middlers: ["truly","lumpy","sulky"]
 puzzles: [956]
 hashes: ["APAAAAAPPCPCAACACCCCCCCCCXXXXX"]
-openerHash: ["APAAA"]
+openerHashes: ["APAAA"]
 shifts: ["hbtti"]
 state: {
   "boardState": [

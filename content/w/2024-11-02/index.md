@@ -9,7 +9,7 @@ openers: ["weird"]
 middlers: ["slack","spout"]
 puzzles: [1232]
 hashes: ["AAAAACAAAACPCAACCCCCXXXXXXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["yuwxz"]
 state: {
   "puzzleDate": "2024-11-02",

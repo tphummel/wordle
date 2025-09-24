@@ -9,7 +9,7 @@ openers: ["lucky"]
 middlers: ["stick","frock","whack"]
 puzzles: [1306]
 hashes: ["AAPPAAAACCAAACCAACCCCCCCCXXXXX"]
-openerHash: ["AAPPA"]
+openerHashes: ["AAPPA"]
 shifts: ["quilu"]
 state: {
   "puzzleDate": "2025-01-15",

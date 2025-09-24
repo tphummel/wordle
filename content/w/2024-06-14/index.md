@@ -9,7 +9,7 @@ openers: ["brave"]
 middlers: ["naval","valid"]
 puzzles: [1091]
 hashes: ["AAPPAACPAPCCPAACCCCCXXXXXXXXXX"]
-openerHash: ["AAPPA"]
+openerHashes: ["AAPPA"]
 shifts: ["bhcud"]
 state: {
   "puzzleDate": "2024-06-14",

@@ -9,7 +9,7 @@ openers: ["tiger"]
 middlers: ["hound","plank","blank","clank"]
 puzzles: [761]
 hashes: ["AAAAAAAACAACCCCACCCCACCCCCCCCC"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["lsiwu"]
 state: {
   "boardState": [

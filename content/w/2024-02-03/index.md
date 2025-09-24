@@ -9,7 +9,7 @@ openers: ["grape"]
 middlers: ["storm","mourn"]
 puzzles: [959]
 hashes: ["APAAAAAPCPCPACACCCCCXXXXXXXXXX"]
-openerHash: ["APAAA"]
+openerHashes: ["APAAA"]
 shifts: ["spkay"]
 state: {
   "boardState": [

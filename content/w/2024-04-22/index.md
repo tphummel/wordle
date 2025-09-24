@@ -9,7 +9,7 @@ openers: ["style"]
 middlers: ["leash"]
 puzzles: [1038]
 hashes: ["PAAPPCPPPACCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["PAAPP"]
+openerHashes: ["PAAPP"]
 shifts: ["rhanb"]
 state: {
   "boardState": [

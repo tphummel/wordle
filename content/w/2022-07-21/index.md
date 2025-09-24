@@ -5,7 +5,7 @@ tags: []
 words: ["delay","board","acrid","aphid"]
 puzzles: [397]
 hashes: ["PAAPAAAPACCAACCCCCCCXXXXXXXXXX"]
-openerHash: ["PAAPA"]
+openerHashes: ["PAAPA"]
 shifts: ["gwprn"]
 state: {
   "boardState": [

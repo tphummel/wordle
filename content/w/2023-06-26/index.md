@@ -9,7 +9,7 @@ openers: ["squid"]
 middlers: ["pushy","curse"]
 puzzles: [737]
 hashes: ["PAPAAACPAAACACPCCCCCXXXXXXXXXX"]
-openerHash: ["PAPAA"]
+openerHashes: ["PAPAA"]
 shifts: ["mbmbd"]
 state: {
   "boardState": [

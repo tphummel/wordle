@@ -9,7 +9,7 @@ openers: ["orbit"]
 middlers: ["claim","lupin","legit"]
 puzzles: [1429]
 hashes: ["AAACAAPACACAACACAACACCCCCXXXXX"]
-openerHash: ["AAACA"]
+openerHashes: ["AAACA"]
 shifts: ["rpdrn"]
 state: {
   "puzzleDate": "2025-05-18",

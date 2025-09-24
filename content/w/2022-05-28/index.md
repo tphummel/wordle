@@ -5,7 +5,7 @@ tags: []
 words: ["amuse","dreck","crept"]
 puzzles: [343]
 hashes: ["AAAAPACCPACCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AAAAP"]
+openerHashes: ["AAAAP"]
 shifts: ["iymyd"]
 state: {
   "boardState": [

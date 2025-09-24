@@ -9,7 +9,7 @@ openers: ["scope"]
 middlers: ["crash"]
 puzzles: [1112]
 hashes: ["PPAAACCACCCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["PPAAA"]
+openerHashes: ["PPAAA"]
 shifts: ["iycbr"]
 state: {
   "puzzleDate": "2024-07-05",

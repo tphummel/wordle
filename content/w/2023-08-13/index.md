@@ -9,7 +9,7 @@ openers: ["ounce"]
 middlers: ["strip"]
 puzzles: [785]
 hashes: ["AAAAAAPPAACCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["cyicr"]
 state: {
   "boardState": [

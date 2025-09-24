@@ -9,7 +9,7 @@ openers: ["squid"]
 middlers: ["clash","press"]
 puzzles: [731]
 hashes: ["PAAAAAAACAACACACCCCCXXXXXXXXXX"]
-openerHash: ["PAAAA"]
+openerHashes: ["PAAAA"]
 shifts: ["lywbd"]
 state: {
   "boardState": [

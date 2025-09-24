@@ -9,7 +9,7 @@ openers: ["drive"]
 middlers: ["lidar"]
 puzzles: [1334]
 hashes: ["PPPAAAPPPPCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["PPPAA"]
+openerHashes: ["PPPAA"]
 shifts: ["xhxrn"]
 state: {
   "puzzleDate": "2025-02-12",

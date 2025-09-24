@@ -9,7 +9,7 @@ openers: ["score"]
 middlers: ["plead","bendy"]
 puzzles: [1352]
 hashes: ["AAAAPAAPAPACAPCCCCCCXXXXXXXXXX"]
-openerHash: ["AAAAP"]
+openerHashes: ["AAAAP"]
 shifts: ["jlqci"]
 state: {
   "puzzleDate": "2025-03-02",

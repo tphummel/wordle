@@ -22,7 +22,7 @@
 {{ with .Site.GetPage "/hashes" }}
   <div>🧩 Puzzle Hashes Played: <strong><a href="{{ .RelPermalink }}">{{ len .Pages }}</a></strong></div>
 {{ end }}
-{{ with .Site.GetPage "/openerhash" }}
+{{ with .Site.GetPage "/openerhashes" }}
   <div>🧩 Opener Hashes Played: <strong><a href="{{ .RelPermalink }}">{{ len .Pages }}</a></strong></div>
 {{ end }}
 {{ with .Site.GetPage "/shifts" }}

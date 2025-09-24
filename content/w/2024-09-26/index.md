@@ -9,7 +9,7 @@ openers: ["noise"]
 middlers: ["crank","plank"]
 puzzles: [1195]
 hashes: ["PAAAAAACCCAACCCCCCCCXXXXXXXXXX"]
-openerHash: ["PAAAA"]
+openerHashes: ["PAAAA"]
 shifts: ["zoiwu"]
 state: {
   "puzzleDate": "2024-09-26",

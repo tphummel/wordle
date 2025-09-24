@@ -9,7 +9,7 @@ openers: ["style"]
 middlers: ["scour","smash"]
 puzzles: [1032]
 hashes: ["CAAAACAAAACACAPCCCCCXXXXXXXXXX"]
-openerHash: ["CAAAA"]
+openerHashes: ["CAAAA"]
 shifts: ["yoiwu"]
 state: {
   "boardState": [

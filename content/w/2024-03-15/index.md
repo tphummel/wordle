@@ -9,7 +9,7 @@ openers: ["syrup"]
 middlers: []
 puzzles: [1000]
 hashes: ["AAPPPCCCCCXXXXXXXXXXXXXXXXXXXX"]
-openerHash: ["AAPPP"]
+openerHashes: ["AAPPP"]
 shifts: ["kycyd"]
 state: {
   "boardState": [

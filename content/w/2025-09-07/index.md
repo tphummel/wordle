@@ -9,7 +9,7 @@ openers: ["broad"]
 middlers: ["roust","throw"]
 puzzles: [1541]
 hashes: ["APPAAPPAAPCAPCACCCCCXXXXXXXXXX"]
-openerHash: ["APPAA"]
+openerHashes: ["APPAA"]
 shifts: ["zlvxb"]
 state: {
   "puzzleDate": "2025-09-07",

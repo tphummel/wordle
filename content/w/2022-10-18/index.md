@@ -6,7 +6,7 @@ contests: ["2022-10-metal"]
 words: ["metal", "stone", "chest", "exist"]
 puzzles: [486]
 hashes: ["APPAAPPAAPAAPCCCCCCCXXXXXXXXXX"]
-openerHash: ["APPAA"]
+openerHashes: ["APPAA"]
 shifts: ["keqbd"]
 state: {
   "boardState": [

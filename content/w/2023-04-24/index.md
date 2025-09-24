@@ -8,7 +8,7 @@ openers: ["lucky"]
 middlers: ["radio"]
 puzzles: [674]
 hashes: ["AAAAAAAPPCCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["jpbcy"]
 state: {
   "boardState": [

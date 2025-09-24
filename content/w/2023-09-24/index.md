@@ -9,7 +9,7 @@ openers: ["eight"]
 middlers: ["might","light","sight","night"]
 puzzles: [827]
 hashes: ["ACCCCACCCCACCCCACCCCACCCCCCCCC"]
-openerHash: ["ACCCC"]
+openerHashes: ["ACCCC"]
 shifts: ["xpoqd"]
 state: {
   "boardState": [

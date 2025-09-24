@@ -8,7 +8,7 @@ openers: ["range"]
 middlers: ["would","lucky","bulky"]
 puzzles: [682]
 hashes: ["AAAAAAAPPAPCACCACCCCCCCCCXXXXX"]
-openerHash: ["AAAAA"]
+openerHashes: ["AAAAA"]
 shifts: ["ybtti"]
 state: {
   "boardState": [

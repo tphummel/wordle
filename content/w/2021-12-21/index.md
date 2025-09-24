@@ -44,7 +44,7 @@ stats: {}
 puzzles:
   - 185
 hashes: ["PAAAAACACCCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["PAAAA"]
+openerHashes: ["PAAAA"]
 shifts: ["vsclu"]
 aliases:
   - /w/185/

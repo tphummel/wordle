@@ -9,7 +9,7 @@ openers: ["tiger"]
 middlers: ["stake","stole"]
 puzzles: [772]
 hashes: ["PAAPACCAACCCACCCCCCCXXXXXXXXXX"]
-openerHash: ["PAAPA"]
+openerHashes: ["PAAPA"]
 shifts: ["yaguo"]
 state: {
   "boardState": [

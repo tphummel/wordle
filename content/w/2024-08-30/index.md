@@ -9,7 +9,7 @@ openers: ["cheat"]
 middlers: ["beard","snake"]
 puzzles: [1168]
 hashes: ["AAPPAAPCAAACCPCCCCCCXXXXXXXXXX"]
-openerHash: ["AAPPA"]
+openerHashes: ["AAPPA"]
 shifts: ["quieo"]
 state: {
   "puzzleDate": "2024-08-30",

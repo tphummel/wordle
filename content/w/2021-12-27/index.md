@@ -60,7 +60,7 @@ stats: {}
 puzzles:
   - 191
 hashes: ["APAAPPAAPAAAPCCACCCCACCCCCCCCC"]
-openerHash: ["APAAP"]
+openerHashes: ["APAAP"]
 shifts: ["llzai"]
 aliases:
   - /w/191/

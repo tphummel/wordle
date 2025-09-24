@@ -8,7 +8,7 @@ openers: ["orate"]
 middlers: ["peach"]
 puzzles: [601]
 hashes: ["AACAPACCAPCCCCCXXXXXXXXXXXXXXX"]
-openerHash: ["AACAP"]
+openerHashes: ["AACAP"]
 shifts: ["nlimi"]
 state: {
   "boardState": [

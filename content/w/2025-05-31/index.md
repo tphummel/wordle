@@ -9,7 +9,7 @@ openers: ["ghost"]
 middlers: []
 puzzles: [1442]
 hashes: ["APAACCCCCCXXXXXXXXXXXXXXXXXXXX"]
-openerHash: ["APAAC"]
+openerHashes: ["APAAC"]
 shifts: ["nhjrd"]
 state: {
   "puzzleDate": "2025-05-31",
