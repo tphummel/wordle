@@ -6,7 +6,7 @@ contests: ["2022-12-ratio"]
 words: ["ratio","caret","taper"]
 puzzles: [547]
 hashes: ["PCPAAACPCPCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["PCPAA"]
+openerHash: ["PCPAA"]
 shifts: ["zhxnb"]
 state: {
   "boardState": [

@@ -9,7 +9,7 @@ openers: ["slice"]
 middlers: ["brand"]
 puzzles: [1282]
 hashes: ["AAAAACCCPACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["hyifx"]
 state: {
   "puzzleDate": "2024-12-22",

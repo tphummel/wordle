@@ -9,7 +9,7 @@ openers: ["noise"]
 middlers: ["crowd"]
 puzzles: [1199]
 hashes: ["APAAACACACCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["APAAA"]
+openerHash: ["APAAA"]
 shifts: ["iswdn"]
 state: {
   "puzzleDate": "2024-09-30",

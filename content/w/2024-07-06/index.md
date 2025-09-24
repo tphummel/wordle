@@ -9,7 +9,7 @@ openers: ["proud"]
 middlers: ["shock","scone","scoot"]
 puzzles: [1113]
 hashes: ["AACAACACPACCCAACCCAACCCCCXXXXX"]
-firsthashes: ["AACAA"]
+openerHash: ["AACAA"]
 shifts: ["yjwop"]
 state: {
   "puzzleDate": "2024-07-06",

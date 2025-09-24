@@ -6,7 +6,7 @@ contests: ["2022-09-honey"]
 words: ["honey","snack","gaunt","daunt","vaunt","taunt"]
 puzzles: [444]
 hashes: ["AAPAAAPPAAACCCCACCCCACCCCCCCCC"]
-firsthashes: ["AAPAA"]
+openerHash: ["AAPAA"]
 shifts: ["zhcwd"]
 state: {
   "boardState": [

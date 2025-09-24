@@ -9,7 +9,7 @@ openers: ["great"]
 middlers: ["chest","tweet"]
 puzzles: [1237]
 hashes: ["AACACAACACAACPCCCCCCXXXXXXXXXX"]
-firsthashes: ["AACAC"]
+openerHash: ["AACAC"]
 shifts: ["kcmwd"]
 state: {
   "puzzleDate": "2024-11-07",

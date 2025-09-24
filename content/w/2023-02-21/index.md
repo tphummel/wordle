@@ -8,7 +8,7 @@ openers: ["orate"]
 middlers: ["churn","rummy"]
 puzzles: [612]
 hashes: ["APAAAAAPPACCAACCCCCCXXXXXXXXXX"]
-firsthashes: ["APAAA"]
+openerHash: ["APAAA"]
 shifts: ["xblmi"]
 state: {
   "boardState": [

@@ -8,7 +8,7 @@ openers: ["lucky"]
 middlers: ["blade","plane"]
 puzzles: [670]
 hashes: ["PAAAAACCACCCCACCCCCCXXXXXXXXXX"]
-firsthashes: ["PAAAA"]
+openerHash: ["PAAAA"]
 shifts: ["vsico"]
 state: {
   "boardState": [

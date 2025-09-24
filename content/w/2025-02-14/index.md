@@ -9,7 +9,7 @@ openers: ["pouch"]
 middlers: ["steak","trill","minty","fifty"]
 puzzles: [1336]
 hashes: ["AAAAAAPAAAPAPAAACACCACACCCCCCC"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["jpbci"]
 state: {
   "puzzleDate": "2025-02-14",

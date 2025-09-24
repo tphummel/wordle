@@ -9,7 +9,7 @@ openers: ["psych"]
 middlers: ["crime","riced"]
 puzzles: [949]
 hashes: ["AAAPAPPPAPCPPPACCCCCXXXXXXXXXX"]
-firsthashes: ["AAAPA"]
+openerHash: ["AAAPA"]
 shifts: ["xltrm"]
 state: {
   "boardState": [

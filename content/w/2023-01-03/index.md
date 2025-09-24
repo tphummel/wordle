@@ -6,7 +6,7 @@ contests: ["2023-01-guide"]
 words: ["guide","first","tonic","antic"]
 puzzles: [563]
 hashes: ["AAPAAAPAAPPAPCCCCCCCXXXXXXXXXX"]
-firsthashes: ["AAPAA"]
+openerHash: ["AAPAA"]
 shifts: ["gubrm"]
 state: {
   "boardState": [

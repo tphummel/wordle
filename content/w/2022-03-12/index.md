@@ -63,7 +63,7 @@ stats:
 puzzles:
   - 266
 hashes: ["APACAAAPCPCCACACCCCCXXXXXXXXXX"]
-firsthashes: ["APACA"]
+openerHash: ["APACA"]
 shifts: ["zvlji"]
 aliases:
   - /w/266/

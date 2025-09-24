@@ -6,7 +6,7 @@ contests: ["2022-12-ratio"]
 words: ["ratio","hoard","coral","polar","solar","molar"]
 puzzles: [559]
 hashes: ["PPAAPACPPAACPCPACCCCACCCCCCCCC"]
-firsthashes: ["PPAAP"]
+openerHash: ["PPAAP"]
 shifts: ["svtjb"]
 state: {
   "boardState": [

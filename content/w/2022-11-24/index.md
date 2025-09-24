@@ -6,7 +6,7 @@ contests: ["2022-11-habit"]
 words: ["habit","quart","coast","feast"]
 puzzles: [523]
 hashes: ["APAACAACACAACCCCCCCCXXXXXXXXXX"]
-firsthashes: ["APAAC"]
+openerHash: ["APAAC"]
 shifts: ["llibd"]
 state: {
   "boardState": [

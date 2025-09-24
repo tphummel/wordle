@@ -9,7 +9,7 @@ openers: ["noise"]
 middlers: ["imbue","lithe"]
 puzzles: [1203]
 hashes: ["AAPACPAAACPCCACCCCCCXXXXXXXXXX"]
-firsthashes: ["AAPAC"]
+openerHash: ["AAPAC"]
 shifts: ["zpbuo"]
 state: {
   "puzzleDate": "2024-10-04",

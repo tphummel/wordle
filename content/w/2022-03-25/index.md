@@ -5,7 +5,7 @@ tags: []
 words: ["peril","setup","depth","depot"]
 puzzles: [279]
 hashes: ["PCAAAACPAPCCCPACCCCCXXXXXXXXXX"]
-firsthashes: ["PCAAA"]
+openerHash: ["PCAAA"]
 shifts: ["jlxxd"]
 state: {
   "boardState": [

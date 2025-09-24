@@ -9,7 +9,7 @@ openers: ["style"]
 middlers: ["slope","slime","slide"]
 puzzles: [1048]
 hashes: ["CAAPCCCAACCCCACCCCACCCCCCXXXXX"]
-firsthashes: ["CAAPC"]
+openerHash: ["CAAPC"]
 shifts: ["ysqlo"]
 state: {
   "puzzleDate": "2024-05-02",

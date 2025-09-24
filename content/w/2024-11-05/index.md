@@ -9,7 +9,7 @@ openers: ["trace"]
 middlers: ["scent"]
 puzzles: [1235]
 hashes: ["PAAPPACPACCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["PAAPP"]
+openerHash: ["PAAPP"]
 shifts: ["ujbnd"]
 state: {
   "puzzleDate": "2024-11-05",

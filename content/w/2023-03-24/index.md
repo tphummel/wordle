@@ -8,7 +8,7 @@ openers: ["chasm"]
 middlers: ["brown","drove","troll","proto"]
 puzzles: [643]
 hashes: ["AAAAAACCAAACCAAPCCAAACCPACCCCC"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["mywdd"]
 state: {
   "boardState": [

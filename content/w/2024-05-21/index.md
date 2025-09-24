@@ -9,7 +9,7 @@ openers: ["style"]
 middlers: ["group","doing"]
 puzzles: [1067]
 hashes: ["AAAAAPAPAACPPPPCCCCCXXXXXXXXXX"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["jpvpy"]
 state: {
   "puzzleDate": "2024-05-21",

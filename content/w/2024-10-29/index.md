@@ -9,7 +9,7 @@ openers: ["weird"]
 middlers: ["pinch","manic"]
 puzzles: [1228]
 hashes: ["AAPAAAPCPAAACCCCCCCCXXXXXXXXXX"]
-firsthashes: ["AAPAA"]
+openerHash: ["AAPAA"]
 shifts: ["zbvrm"]
 state: {
   "puzzleDate": "2024-10-29",

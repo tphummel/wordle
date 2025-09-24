@@ -9,7 +9,7 @@ openers: ["ocean"]
 middlers: ["cease"]
 puzzles: [799]
 hashes: ["APPPAPCCACCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["APPPA"]
+openerHash: ["APPPA"]
 shifts: ["vlilo"]
 state: {
   "boardState": [

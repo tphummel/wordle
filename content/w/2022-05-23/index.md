@@ -5,7 +5,7 @@ tags: []
 words: ["amuse","price","diode","tinge","hinge"]
 puzzles: [338]
 hashes: ["AAAACAAPACACAACACCCCCCCCCXXXXX"]
-firsthashes: ["AAAAC"]
+openerHash: ["AAAAC"]
 shifts: ["npvpo"]
 state: {
   "boardState": [

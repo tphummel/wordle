@@ -9,7 +9,7 @@ openers: ["dream"]
 middlers: ["whose","those"]
 puzzles: [1293]
 hashes: ["AAPAAACCCCACCCCCCCCCXXXXXXXXXX"]
-firsthashes: ["AAPAA"]
+openerHash: ["AAPAA"]
 shifts: ["iowbo"]
 state: {
   "puzzleDate": "2025-01-02",

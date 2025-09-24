@@ -9,7 +9,7 @@ openers: ["sugar"]
 middlers: ["cheap"]
 puzzles: [1304]
 hashes: ["AAACACAACACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAACA"]
+openerHash: ["AAACA"]
 shifts: ["iswju"]
 state: {
   "puzzleDate": "2025-01-13",

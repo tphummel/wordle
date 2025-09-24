@@ -9,7 +9,7 @@ openers: ["style"]
 middlers: ["teach","greet","voter","opter"]
 puzzles: [1058]
 hashes: ["APAAPPPAAAAPACPAPCCCCACCCCCCCC"]
-firsthashes: ["APAAP"]
+openerHash: ["APAAP"]
 shifts: ["ubbnb"]
 state: {
   "puzzleDate": "2024-05-12",

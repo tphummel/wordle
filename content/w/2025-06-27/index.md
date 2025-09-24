@@ -9,7 +9,7 @@ openers: ["chain"]
 middlers: ["slain"]
 puzzles: [1469]
 hashes: ["AACCCACCCCCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AACCC"]
+openerHash: ["AACCC"]
 shifts: ["vsirx"]
 state: {
   "puzzleDate": "2025-06-27",

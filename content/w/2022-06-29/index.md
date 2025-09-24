@@ -5,7 +5,7 @@ tags: []
 words: ["strap","clank","faked","gawky"]
 puzzles: [375]
 hashes: ["AAAPAAAPAPACPAACCCCCXXXXXXXXXX"]
-firsthashes: ["AAAPA"]
+openerHash: ["AAAPA"]
 shifts: ["mheti"]
 state: {
   "boardState": [

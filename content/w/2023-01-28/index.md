@@ -6,7 +6,7 @@ contests: ["2023-01-guide"]
 words: ["guide","shiny","trick","flirt"]
 puzzles: [588]
 hashes: ["AACAAAACAAPPCAACCCCCXXXXXXXXXX"]
-firsthashes: ["AACAA"]
+openerHash: ["AACAA"]
 shifts: ["lsqad"]
 state: {
   "boardState": [

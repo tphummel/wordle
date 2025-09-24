@@ -9,7 +9,7 @@ openers: ["whole"]
 middlers: ["loser","melon","elbow"]
 puzzles: [1524]
 hashes: ["AAPPPPPAPAAPPCACPACACCCCCXXXXX"]
-firsthashes: ["AAPPP"]
+openerHash: ["AAPPP"]
 shifts: ["kebxv"]
 state: {
   "puzzleDate": "2025-08-21",

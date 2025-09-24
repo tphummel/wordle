@@ -9,7 +9,7 @@ openers: ["crown"]
 middlers: []
 puzzles: [1176]
 hashes: ["APPPPCCCCCXXXXXXXXXXXXXXXXXXXX"]
-firsthashes: ["APPPP"]
+openerHash: ["APPPP"]
 shifts: ["udvnb"]
 state: {
   "puzzleDate": "2024-09-07",

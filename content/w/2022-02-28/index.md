@@ -63,7 +63,7 @@ stats:
 puzzles:
   - 254
 hashes: ["AAPAAAAAACAAAACCCCCCXXXXXXXXXX"]
-firsthashes: ["AAPAA"]
+openerHash: ["AAPAA"]
 shifts: ["iowto"]
 aliases:
   - /w/254/

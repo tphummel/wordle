@@ -9,7 +9,7 @@ openers: ["ounce"]
 middlers: ["flair","pasta","washy","gassy"]
 puzzles: [878]
 hashes: ["AAAAAAAPAAACCAAACCACACCCCCCCCC"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["yhabi"]
 state: {
   "boardState": [

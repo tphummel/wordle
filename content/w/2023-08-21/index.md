@@ -9,7 +9,7 @@ openers: ["later"]
 middlers: ["cheap"]
 puzzles: [793]
 hashes: ["APAPAPPPPACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["APAPA"]
+openerHash: ["APAPA"]
 shifts: ["hlilr"]
 state: {
   "boardState": [

@@ -9,7 +9,7 @@ openers: ["brand"]
 middlers: ["lapse","faith"]
 puzzles: [1452]
 hashes: ["AAPAAACAAAPCAPACCCCCXXXXXXXXXX"]
-firsthashes: ["AAPAA"]
+openerHash: ["AAPAA"]
 shifts: ["zhnoi"]
 state: {
   "puzzleDate": "2025-06-10",

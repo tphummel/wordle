@@ -9,7 +9,7 @@ openers: ["point"]
 middlers: []
 puzzles: [923]
 hashes: ["AACAACCCCCXXXXXXXXXXXXXXXXXXXX"]
-firsthashes: ["AACAA"]
+openerHash: ["AACAA"]
 shifts: ["ejknf"]
 state: {
   "boardState": [

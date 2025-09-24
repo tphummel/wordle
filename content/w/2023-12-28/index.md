@@ -9,7 +9,7 @@ openers: ["point"]
 middlers: ["green"]
 puzzles: [922]
 hashes: ["AAAPAAPPACCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAAPA"]
+openerHash: ["AAAPA"]
 shifts: ["rliax"]
 state: {
   "boardState": [

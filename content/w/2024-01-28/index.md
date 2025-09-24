@@ -9,7 +9,7 @@ openers: ["psych"]
 middlers: ["round","twirl","freak","merge"]
 puzzles: [953]
 hashes: ["AAAAAPAAAAAAAPAAPPAAPPPAPCCCCC"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["ktjnb"]
 state: {
   "boardState": [

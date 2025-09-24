@@ -8,7 +8,7 @@ openers: ["orate"]
 middlers: ["saucy","salad"]
 puzzles: [606]
 hashes: ["AAPAACCAAACCCPACCCCCXXXXXXXXXX"]
-firsthashes: ["AAPAA"]
+openerHash: ["AAPAA"]
 shifts: ["yhtbk"]
 state: {
   "boardState": [

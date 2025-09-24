@@ -9,7 +9,7 @@ openers: ["smoke"]
 middlers: ["scowl","spoon","sport"]
 puzzles: [1169]
 hashes: ["CACAACACAACCCAACCCACCCCCCXXXXX"]
-firsthashes: ["CACAA"]
+openerHash: ["CACAA"]
 shifts: ["ywwdd"]
 state: {
   "puzzleDate": "2024-08-31",

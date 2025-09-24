@@ -58,7 +58,7 @@ stats:
 puzzles:
   - 258
 hashes: ["AACCAPACCACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AACCA"]
+openerHash: ["AACCA"]
 shifts: ["gomjn"]
 aliases:
   - /w/258/

@@ -6,7 +6,7 @@ contests: ["2023-01-guide"]
 words: ["guide","money","opera"]
 puzzles: [568]
 hashes: ["AAAAPAPAPACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAAAP"]
+openerHash: ["AAAAP"]
 shifts: ["uwmak"]
 state: {
   "boardState": [

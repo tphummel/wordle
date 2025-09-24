@@ -9,7 +9,7 @@ openers: ["break"]
 middlers: ["admin","drama","dolma"]
 puzzles: [1260]
 hashes: ["AAAPAPPPAACAACCCCACCCCCCCXXXXX"]
-firsthashes: ["AAAPA"]
+openerHash: ["AAAPA"]
 shifts: ["jvovk"]
 state: {
   "puzzleDate": "2024-11-30",

@@ -6,7 +6,7 @@ contests: ["2022-10-metal"]
 words: ["metal","stalk","talon","galut","waltz"]
 puzzles: [498]
 hashes: ["AAPPPAPPPAPCCAAACCAPCCCCCXXXXX"]
-firsthashes: ["AAPPP"]
+openerHash: ["AAPPP"]
 shifts: ["chtcj"]
 state: {
   "boardState": [

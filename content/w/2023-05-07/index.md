@@ -8,7 +8,7 @@ openers: ["anger"]
 middlers: ["tough"]
 puzzles: [687]
 hashes: ["AAPAAAPPPPCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAPAA"]
+openerHash: ["AAPAA"]
 shifts: ["mowdv"]
 state: {
   "boardState": [

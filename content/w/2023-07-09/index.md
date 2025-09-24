@@ -9,7 +9,7 @@ openers: ["tiger"]
 middlers: ["other","cater","deter"]
 puzzles: [750]
 hashes: ["PAACCAPACCAACCCAPCCCCCCCCXXXXX"]
-firsthashes: ["PAACC"]
+openerHash: ["PAACC"]
 shifts: ["kubnb"]
 state: {
   "boardState": [

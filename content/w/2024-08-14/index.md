@@ -9,7 +9,7 @@ openers: ["group"]
 middlers: ["chore"]
 puzzles: [1152]
 hashes: ["APCAAACCCCCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["APCAA"]
+openerHash: ["APCAA"]
 shifts: ["yowao"]
 state: {
   "puzzleDate": "2024-08-14",

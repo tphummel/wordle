@@ -9,7 +9,7 @@ openers: ["ghost"]
 middlers: ["world"]
 puzzles: [1392]
 hashes: ["AAPAAPPCAACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAPAA"]
+openerHash: ["AAPAA"]
 shifts: ["gyzxg"]
 state: {
   "puzzleDate": "2025-04-11",

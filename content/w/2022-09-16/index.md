@@ -5,7 +5,7 @@ tags: []
 words: ["honey","gruel","wider","pacer","paper","paver"]
 puzzles: [454]
 hashes: ["AAACAAPACAAAACCCCACCCCACCCCACC"]
-firsthashes: ["AAACA"]
+openerHash: ["AAACA"]
 shifts: ["vhznb"]
 state: {
   "boardState": [

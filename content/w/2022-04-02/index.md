@@ -5,7 +5,7 @@ tags: []
 words: ["peril","month","snout"]
 puzzles: [286]
 hashes: ["AAAAAAPPPACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["yuwdd"]
 state: {
   "boardState": [

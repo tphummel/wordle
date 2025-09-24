@@ -9,7 +9,7 @@ openers: ["chase"]
 middlers: ["torch","pitch"]
 puzzles: [1256]
 hashes: ["PPAAAPAACCACCCCCCCCCXXXXXXXXXX"]
-firsthashes: ["PPAAA"]
+openerHash: ["PPAAA"]
 shifts: ["cpblr"]
 state: {
   "puzzleDate": "2024-11-26",

@@ -41,7 +41,7 @@ stats: {}
 puzzles:
   - 200
 hashes: ["PCCAPCCCCCXXXXXXXXXXXXXXXXXXXX"]
-firsthashes: ["PCCAP"]
+openerHash: ["PCCAP"]
 shifts: ["zponb"]
 aliases:
   - /w/200/

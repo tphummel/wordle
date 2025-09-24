@@ -9,7 +9,7 @@ openers: ["mouse"]
 middlers: ["stair","aspis","basic"]
 puzzles: [1078]
 hashes: ["AAAPAPAPCAPPACACCCCACCCCCXXXXX"]
-firsthashes: ["AAAPA"]
+openerHash: ["AAAPA"]
 shifts: ["hharx"]
 state: {
   "puzzleDate": "2024-06-01",

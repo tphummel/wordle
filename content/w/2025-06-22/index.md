@@ -9,7 +9,7 @@ openers: ["audio"]
 middlers: ["stuck"]
 puzzles: [1464]
 hashes: ["APAAAAPPAACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["APAAA"]
+openerHash: ["APAAA"]
 shifts: ["zozdw"]
 state: {
   "puzzleDate": "2025-06-22",

@@ -9,7 +9,7 @@ openers: ["radio"]
 middlers: ["vivid"]
 puzzles: [984]
 hashes: ["AAPCAAACCPCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAPCA"]
+openerHash: ["AAPCA"]
 shifts: ["jldrv"]
 state: {
   "boardState": [

@@ -9,7 +9,7 @@ openers: ["noise"]
 middlers: ["chain"]
 puzzles: [1197]
 hashes: ["PAPAAAACCCCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["PAPAA"]
+openerHash: ["PAPAA"]
 shifts: ["hyirx"]
 state: {
   "puzzleDate": "2024-09-28",

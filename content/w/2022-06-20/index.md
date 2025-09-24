@@ -5,7 +5,7 @@ tags: []
 words: ["mouse","tulip","input"]
 puzzles: [366]
 hashes: ["AAPAAPPAPPCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAPAA"]
+openerHash: ["AAPAA"]
 shifts: ["ouxdd"]
 state: {
   "boardState": [

@@ -9,7 +9,7 @@ openers: ["layer"]
 middlers: ["hence","douse","butte"]
 puzzles: [1124]
 hashes: ["AAAPAAAAACAAPACACACCCCCCCXXXXX"]
-firsthashes: ["AAAPA"]
+openerHash: ["AAAPA"]
 shifts: ["wbqco"]
 state: {
   "puzzleDate": "2024-07-17",

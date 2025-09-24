@@ -5,7 +5,7 @@ tags: ["interesting"]
 words: ["ocean","coral","cacao"]
 puzzles: [364]
 hashes: ["PPACACPACACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["PPACA"]
+openerHash: ["PPACA"]
 shifts: ["ihkjy"]
 state: {
   "boardState": [

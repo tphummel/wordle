@@ -9,7 +9,7 @@ openers: ["ounce"]
 middlers: ["slope"]
 puzzles: [943]
 hashes: ["PAAACCPCACCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["PAAAC"]
+openerHash: ["PAAAC"]
 shifts: ["yawuo"]
 state: {
   "boardState": [

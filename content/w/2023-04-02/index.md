@@ -8,7 +8,7 @@ openers: ["lucky"]
 middlers: ["stick","stack"]
 puzzles: [652]
 hashes: ["AAPPACCACCCCACCCCCCCXXXXXXXXXX"]
-firsthashes: ["AAPPA"]
+openerHash: ["AAPPA"]
 shifts: ["yawlu"]
 state: {
   "boardState": [

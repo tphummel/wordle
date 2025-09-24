@@ -5,7 +5,7 @@ tags: []
 words: ["track","baton","admit","delta","stead"]
 puzzles: [385]
 hashes: ["PAPAAAPPAAPPAAPPPAPPCCCCCXXXXX"]
-firsthashes: ["PAPAA"]
+openerHash: ["PAPAA"]
 shifts: ["yamjn"]
 state: {
   "boardState": [

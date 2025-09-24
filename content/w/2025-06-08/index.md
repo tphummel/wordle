@@ -9,7 +9,7 @@ openers: ["after"]
 middlers: ["peach"]
 puzzles: [1450]
 hashes: ["PAAPAACCAACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["PAAPA"]
+openerHash: ["PAAPA"]
 shifts: ["rlibo"]
 state: {
   "puzzleDate": "2025-06-08",

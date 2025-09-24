@@ -9,7 +9,7 @@ openers: ["point"]
 middlers: ["stare"]
 puzzles: [906]
 hashes: ["AAAAPPPAACCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAAAP"]
+openerHash: ["AAAAP"]
 shifts: ["zombo"]
 state: {
   "boardState": [

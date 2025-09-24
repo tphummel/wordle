@@ -9,7 +9,7 @@ openers: ["mouse"]
 middlers: ["where","evade","fence","genie"]
 puzzles: [1138]
 hashes: ["AAACPCAACCCCCCCCCCGGGGGGGGGGGGGG"]
-firsthashes: ["AAACP"]
+openerHash: ["AAACP"]
 shifts: ["qfoog"]
 state: {
   "boardState": [

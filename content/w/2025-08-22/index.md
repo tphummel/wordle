@@ -9,7 +9,7 @@ openers: ["forge"]
 middlers: ["wrath","rants","raita"]
 puzzles: [1525]
 hashes: ["AAPAAAPPCACCACACCACACCCCCXXXXX"]
-firsthashes: ["AAPAA"]
+openerHash: ["AAPAA"]
 shifts: ["xhbci"]
 state: {
   "puzzleDate": "2025-08-22",

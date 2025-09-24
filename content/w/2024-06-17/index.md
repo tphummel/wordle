@@ -9,7 +9,7 @@ openers: ["brown"]
 middlers: ["credo"]
 puzzles: [1094]
 hashes: ["ACPAAACAAPCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["ACPAA"]
+openerHash: ["ACPAA"]
 shifts: ["vyqxb"]
 state: {
   "puzzleDate": "2024-06-17",

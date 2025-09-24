@@ -6,7 +6,7 @@ contests: ["2022-11-habit"]
 words: ["habit","smile","crime","prime"]
 puzzles: [521]
 hashes: ["AAAPAAPCACACCCCCCCCCXXXXXXXXXX"]
-firsthashes: ["AAAPA"]
+openerHash: ["AAAPA"]
 shifts: ["vyqvo"]
 state: {
   "boardState": [

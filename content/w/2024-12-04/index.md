@@ -9,7 +9,7 @@ openers: ["plane"]
 middlers: ["spicy"]
 puzzles: [1264]
 hashes: ["PAAAAAPAPPCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["PAAAA"]
+openerHash: ["PAAAA"]
 shifts: ["iygyd"]
 state: {
   "puzzleDate": "2024-12-04",

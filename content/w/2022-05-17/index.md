@@ -5,7 +5,7 @@ tags: []
 words: ["ocean","snipe","neigh","being"]
 puzzles: [332]
 hashes: ["AAPAPAPCAPPCCPACCCCCXXXXXXXXXX"]
-firsthashes: ["AAPAP"]
+openerHash: ["AAPAP"]
 shifts: ["hlqwq"]
 state: {
   "boardState": [

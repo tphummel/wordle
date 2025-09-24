@@ -9,7 +9,7 @@ openers: ["tiger"]
 middlers: ["grave","range","large"]
 puzzles: [754]
 hashes: ["AAPPPPPPACPCACCACCCCCCCCCXXXXX"]
-firsthashes: ["AAPPP"]
+openerHash: ["AAPPP"]
 shifts: ["hhzpo"]
 state: {
   "boardState": [

@@ -8,7 +8,7 @@ openers: ["orate"]
 middlers: ["slack","bland","llama"]
 puzzles: [599]
 hashes: ["AACAAACCAAACCAAPCCAACCCCCXXXXX"]
-firsthashes: ["AACAA"]
+openerHash: ["AACAA"]
 shifts: ["lsirv"]
 state: {
   "boardState": [

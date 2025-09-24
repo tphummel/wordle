@@ -5,7 +5,7 @@ tags: []
 words: ["tiger","mince","eight","piece","sieve","yield"]
 puzzles: [330]
 hashes: ["ACAPAACAAPPCAAAACCAAACCAACCCCC"]
-firsthashes: ["ACAPA"]
+openerHash: ["ACAPA"]
 shifts: ["epmun"]
 state: {
   "boardState": [

@@ -9,7 +9,7 @@ openers: ["squid"]
 middlers: ["drone"]
 puzzles: [736]
 hashes: ["AAAAPPPPAPCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAAAP"]
+openerHash: ["AAAAP"]
 shifts: ["xvlny"]
 state: {
   "boardState": [

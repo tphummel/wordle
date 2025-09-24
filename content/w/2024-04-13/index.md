@@ -9,7 +9,7 @@ openers: ["style"]
 middlers: ["steal"]
 puzzles: [1029]
 hashes: ["CCAPPCCCACCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["CCAPP"]
+openerHash: ["CCAPP"]
 shifts: ["yamnv"]
 state: {
   "boardState": [

@@ -8,7 +8,7 @@ openers: ["dwarf"]
 middlers: ["plaid"]
 puzzles: [642]
 hashes: ["PACAAAACCCCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["PACAA"]
+openerHash: ["PACAA"]
 shifts: ["yairn"]
 state: {
   "boardState": [

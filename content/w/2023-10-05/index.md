@@ -9,7 +9,7 @@ openers: ["ounce"]
 middlers: ["punch"]
 puzzles: [838]
 hashes: ["ACCCAACCCCCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["ACCCA"]
+openerHash: ["ACCCA"]
 shifts: ["hbvlr"]
 state: {
   "boardState": [

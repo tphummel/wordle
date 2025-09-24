@@ -6,7 +6,7 @@ contests: ["2022-10-metal"]
 words: ["metal","equal"]
 puzzles: [481]
 hashes: ["APACCCCCCCXXXXXXXXXXXXXXXXXXXX"]
-firsthashes: ["APACC"]
+openerHash: ["APACC"]
 shifts: ["kxcjv"]
 state: {
   "boardState": [

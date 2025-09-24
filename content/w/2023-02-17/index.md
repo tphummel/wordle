@@ -8,7 +8,7 @@ openers: ["orate"]
 middlers: ["dance"]
 puzzles: [608]
 hashes: ["AAPACACAPCCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAPAC"]
+openerHash: ["AAPAC"]
 shifts: ["ihkqo"]
 state: {
   "boardState": [

@@ -5,7 +5,7 @@ tags: []
 words: ["amuse","model","mover","money"]
 puzzles: [337]
 hashes: ["APAAPCCACACCACACCCCCXXXXXXXXXX"]
-firsthashes: ["APAAP"]
+openerHash: ["APAAP"]
 shifts: ["svvni"]
 state: {
   "boardState": [

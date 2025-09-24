@@ -5,7 +5,7 @@ tags: []
 words: ["mouse","shoal","shown"]
 puzzles: [312]
 hashes: ["APAPACCCAACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["APAPA"]
+openerHash: ["APAPA"]
 shifts: ["yowfx"]
 state: {
   "boardState": [

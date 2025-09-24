@@ -9,7 +9,7 @@ openers: ["light"]
 middlers: ["lousy","lumen"]
 puzzles: [1291]
 hashes: ["CAAAACAPAACPCPACCCCCXXXXXXXXXX"]
-firsthashes: ["CAAAA"]
+openerHash: ["CAAAA"]
 shifts: ["rludb"]
 state: {
   "puzzleDate": "2024-12-31",

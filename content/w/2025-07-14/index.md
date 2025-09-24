@@ -9,7 +9,7 @@ openers: ["patio"]
 middlers: ["relic","humid","squid"]
 puzzles: [1486]
 hashes: ["AAACAAAACAAPACCAAPCCCCCCCXXXXX"]
-firsthashes: ["AAACA"]
+openerHash: ["AAACA"]
 shifts: ["aulrn"]
 state: {
   "puzzleDate": "2025-07-14",

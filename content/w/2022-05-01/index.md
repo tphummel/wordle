@@ -5,7 +5,7 @@ tags: []
 words: ["mouse","tonic","board","porky","forgo"]
 puzzles: [316]
 hashes: ["ACAAAACAAAACAPAACCAACCCCCXXXXX"]
-firsthashes: ["ACAAA"]
+openerHash: ["ACAAA"]
 shifts: ["lvzpy"]
 state: {
   "boardState": [

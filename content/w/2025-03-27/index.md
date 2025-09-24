@@ -9,7 +9,7 @@ openers: ["whole"]
 middlers: ["sheep","sheer","sheen"]
 puzzles: [1377]
 hashes: ["ACAAPCCCCACCCCACCCCACCCCCXXXXX"]
-firsthashes: ["ACAAP"]
+openerHash: ["ACAAP"]
 shifts: ["yomnd"]
 state: {
   "puzzleDate": "2025-03-27",

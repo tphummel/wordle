@@ -5,7 +5,7 @@ tags: []
 words: ["humor","major","manor"]
 puzzles: [346]
 hashes: ["AAPCCCCACCCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAPCC"]
+openerHash: ["AAPCC"]
 shifts: ["shvxb"]
 state: {
   "boardState": [

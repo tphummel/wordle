@@ -8,7 +8,7 @@ openers: ["clerk"]
 middlers: ["grape","rider","sober","tuner"]
 puzzles: [704]
 hashes: ["AAPPAAPAAPAAACCAAACCPPACCCCCCC"]
-firsthashes: ["AAPPA"]
+openerHash: ["AAPPA"]
 shifts: ["aabnb"]
 state: {
   "boardState": [

@@ -5,7 +5,7 @@ tags: []
 words: ["delay","canny","wacky"]
 puzzles: [393]
 hashes: ["AAAPCPCAACCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAAPC"]
+openerHash: ["AAAPC"]
 shifts: ["chkti"]
 state: {
   "boardState": [

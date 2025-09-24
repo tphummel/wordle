@@ -9,7 +9,7 @@ openers: ["style"]
 middlers: ["teach","noted"]
 puzzles: [1040]
 hashes: ["APAAPPPAAAAPPPACCCCCXXXXXXXXXX"]
-firsthashes: ["APAAP"]
+openerHash: ["APAAP"]
 shifts: ["ucmad"]
 state: {
   "boardState": [

@@ -26,7 +26,7 @@
     {{ $first := index (first 1 $term.Pages.ByDate) 0 }}
     {{ $last := index (last 1 $term.Pages.ByDate) 0 }}
 
-    {{ with $.Site.GetPage (printf "/%s/%s" "firsthashes" $name) }}
+    {{ with $.Site.GetPage (printf "/%s/%s" "openerhash" $name) }}
     <tr>
       <td><a href="{{ .RelPermalink }}" title="{{ $name }}">{{ partialCached "first-guess-emoji.html" $first $first.File.Path }}</a></td>
       <td><a href="{{ .RelPermalink }}">{{ $name }}</a></td>

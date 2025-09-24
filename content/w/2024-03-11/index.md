@@ -9,7 +9,7 @@ openers: ["syrup"]
 middlers: ["psych","pansy","posey"]
 puzzles: [996]
 hashes: ["PPAAPCPPAACAAPCCACPCCCCCCXXXXX"]
-firsthashes: ["PPAAP"]
+openerHash: ["PPAAP"]
 shifts: ["vlati"]
 state: {
   "boardState": [

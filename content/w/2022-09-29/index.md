@@ -5,7 +5,7 @@ tags: []
 words: ["honey","grail","clasp","scald"]
 puzzles: [467]
 hashes: ["AAAAAAACAPPPCPACCCCCXXXXXXXXXX"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["yjiun"]
 state: {
   "boardState": [

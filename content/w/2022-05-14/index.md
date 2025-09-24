@@ -5,7 +5,7 @@ tags: []
 words: ["tiger","stone","wheat","metal"]
 puzzles: [329]
 hashes: ["PAAPAAPAAPAAPCPCCCCCXXXXXXXXXX"]
-firsthashes: ["PAAPA"]
+openerHash: ["PAAPA"]
 shifts: ["slbjv"]
 state: {
   "boardState": [

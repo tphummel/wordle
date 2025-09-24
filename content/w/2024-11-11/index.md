@@ -9,7 +9,7 @@ openers: ["weird"]
 middlers: ["giant","topic"]
 puzzles: [1241]
 hashes: ["AAPAAAPAAPPPACCCCCCCXXXXXXXXXX"]
-firsthashes: ["AAPAA"]
+openerHash: ["AAPAA"]
 shifts: ["yawrm"]
 state: {
   "puzzleDate": "2024-11-11",

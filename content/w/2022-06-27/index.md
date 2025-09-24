@@ -5,7 +5,7 @@ tags: []
 words: ["stick","throw","grout","nitro","retro"]
 puzzles: [373]
 hashes: ["APAAAPAPPAAPPAPAACCCCCCCCXXXXX"]
-firsthashes: ["APAAA"]
+openerHash: ["APAAA"]
 shifts: ["xlbay"]
 state: {
   "boardState": [

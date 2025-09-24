@@ -9,7 +9,7 @@ openers: ["radio"]
 middlers: ["shape"]
 puzzles: [973]
 hashes: ["APAAAPACPACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["APAAA"]
+openerHash: ["APAAA"]
 shifts: ["vziuw"]
 state: {
   "boardState": [

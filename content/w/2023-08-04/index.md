@@ -9,7 +9,7 @@ openers: ["topaz"]
 middlers: ["stair","crate"]
 puzzles: [776]
 hashes: ["PAAPAAPCAPCPCPACCCCCXXXXXXXXXX"]
-firsthashes: ["PAAPA"]
+openerHash: ["PAAPA"]
 shifts: ["ioiad"]
 state: {
   "boardState": [

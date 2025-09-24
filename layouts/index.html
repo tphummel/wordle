@@ -22,8 +22,8 @@
 {{ with .Site.GetPage "/hashes" }}
   <div>🧩 Puzzle Hashes Played: <strong><a href="{{ .RelPermalink }}">{{ len .Pages }}</a></strong></div>
 {{ end }}
-{{ with .Site.GetPage "/firsthashes" }}
-  <div>🧩 First Guess Hashes Played: <strong><a href="{{ .RelPermalink }}">{{ len .Pages }}</a></strong></div>
+{{ with .Site.GetPage "/openerhash" }}
+  <div>🧩 Opener Hashes Played: <strong><a href="{{ .RelPermalink }}">{{ len .Pages }}</a></strong></div>
 {{ end }}
 {{ with .Site.GetPage "/shifts" }}
   <div>🧩 Puzzle Solutions Played: <strong><a href="{{ .RelPermalink }}">{{ len .Pages }}</a></strong></div>

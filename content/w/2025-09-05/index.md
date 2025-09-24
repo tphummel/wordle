@@ -9,7 +9,7 @@ openers: ["straw"]
 middlers: ["trick"]
 puzzles: [1539]
 hashes: ["APPAAPCCAACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["APPAA"]
+openerHash: ["APPAA"]
 shifts: ["jyqod"]
 state: {
   "puzzleDate": "2025-09-05",

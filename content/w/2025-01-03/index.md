@@ -9,7 +9,7 @@ openers: ["place"]
 middlers: []
 puzzles: [1294]
 hashes: ["PAPPPCCCCCXXXXXXXXXXXXXXXXXXXX"]
-firsthashes: ["PAPPP"]
+openerHash: ["PAPPP"]
 shifts: ["iomjz"]
 state: {
   "puzzleDate": "2025-01-03",

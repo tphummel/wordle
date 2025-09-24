@@ -9,7 +9,7 @@ openers: ["eight"]
 middlers: ["trawl","salty"]
 puzzles: [1298]
 hashes: ["AAAAPPAPAPPPCPACCCCCXXXXXXXXXX"]
-firsthashes: ["AAAAP"]
+openerHash: ["AAAAP"]
 shifts: ["gatjc"]
 state: {
   "puzzleDate": "2025-01-07",

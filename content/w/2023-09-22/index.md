@@ -9,7 +9,7 @@ openers: ["ocean"]
 middlers: ["slimy","trust"]
 puzzles: [825]
 hashes: ["AAAAAPAAAAACCCACCCCCXXXXXXXXXX"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["hycbr"]
 state: {
   "boardState": [

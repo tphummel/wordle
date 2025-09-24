@@ -9,7 +9,7 @@ openers: ["twice"]
 middlers: ["groan","flask","dally","badly"]
 puzzles: [1341]
 hashes: ["AAAAAAAAPAAPPAAPCACCACCCCCCCCC"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["shlui"]
 state: {
   "puzzleDate": "2025-02-19",

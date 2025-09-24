@@ -9,7 +9,7 @@ openers: ["acorn"]
 middlers: ["brine"]
 puzzles: [1494]
 hashes: ["AAAPPCPACACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAAPP"]
+openerHash: ["AAAPP"]
 shifts: ["hbzwd"]
 state: {
   "puzzleDate": "2025-07-22",

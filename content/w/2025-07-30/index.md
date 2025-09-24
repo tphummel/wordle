@@ -9,7 +9,7 @@ openers: ["ounce"]
 middlers: ["graph","salad"]
 puzzles: [1502]
 hashes: ["AAAAAAAPAAPPACACCCCCXXXXXXXXXX"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["gzaji"]
 state: {
   "puzzleDate": "2025-07-30",

@@ -6,7 +6,7 @@ contests: ["2022-10-metal"]
 words: ["metal","sling","flock","floor"]
 puzzles: [482]
 hashes: ["AAAAPACAAACCCAACCCCCXXXXXXXXXX"]
-firsthashes: ["AAAAP"]
+openerHash: ["AAAAP"]
 shifts: ["lswxb"]
 state: {
   "boardState": [

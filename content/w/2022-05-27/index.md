@@ -5,7 +5,7 @@ tags: []
 words: ["amuse","plant","track","tiara"]
 puzzles: [342]
 hashes: ["PAAAAAACAPCPCAACCCCCXXXXXXXXXX"]
-firsthashes: ["PAAAA"]
+openerHash: ["PAAAA"]
 shifts: ["zpiak"]
 state: {
   "boardState": [

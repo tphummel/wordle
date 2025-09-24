@@ -9,7 +9,7 @@ openers: ["score"]
 middlers: ["quail","taunt"]
 puzzles: [1213]
 hashes: ["AAAAAAPPAAACPACCCCCCXXXXXXXXXX"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["mhudd"]
 state: {
   "puzzleDate": "2024-10-14",

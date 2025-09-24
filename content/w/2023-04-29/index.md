@@ -8,7 +8,7 @@ openers: ["lucky"]
 middlers: ["coach","cream"]
 puzzles: [679]
 hashes: ["AAPAACAPAACPPCACCCCCXXXXXXXXXX"]
-firsthashes: ["AAPAA"]
+openerHash: ["AAPAA"]
 shifts: ["illjb"]
 state: {
   "boardState": [

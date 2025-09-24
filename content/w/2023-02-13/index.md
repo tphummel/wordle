@@ -8,7 +8,7 @@ openers: ["orate"]
 middlers: ["place","snake"]
 puzzles: [604]
 hashes: ["AACACAACACPACACCCCCCXXXXXXXXXX"]
-firsthashes: ["AACAC"]
+openerHash: ["AACAC"]
 shifts: ["azipo"]
 state: {
   "boardState": [

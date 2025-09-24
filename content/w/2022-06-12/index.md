@@ -5,7 +5,7 @@ tags: []
 words: ["piano","broad","cloak","gloat","float"]
 puzzles: [358]
 hashes: ["AAPAPAACCAACCCAACCCCCCCCCXXXXX"]
-firsthashes: ["AAPAP"]
+openerHash: ["AAPAP"]
 shifts: ["lswjd"]
 state: {
   "boardState": [

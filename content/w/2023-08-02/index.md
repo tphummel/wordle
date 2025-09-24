@@ -9,7 +9,7 @@ openers: ["fruit"]
 middlers: ["cheat","depot","tenet"]
 puzzles: [774]
 hashes: ["AAAACAAPACACAACACACCCCCCCXXXXX"]
-firsthashes: ["AAAAC"]
+openerHash: ["AAAAC"]
 shifts: ["hlond"]
 state: {
   "boardState": [

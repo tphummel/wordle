@@ -9,7 +9,7 @@ openers: ["ounce"]
 middlers: ["prize"]
 puzzles: [870]
 hashes: ["AAAACACAACCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAAAC"]
+openerHash: ["AAAAC"]
 shifts: ["zyimo"]
 state: {
   "boardState": [

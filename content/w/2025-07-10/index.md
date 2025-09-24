@@ -9,7 +9,7 @@ openers: ["patio"]
 middlers: ["speck","grump","bumpy","lumpy"]
 puzzles: [1482]
 hashes: ["PAAAAAPAAAAAPPPACCCCACCCCCCCCC"]
-firsthashes: ["PAAAA"]
+openerHash: ["PAAAA"]
 shifts: ["pbuyi"]
 state: {
   "puzzleDate": "2025-07-10",

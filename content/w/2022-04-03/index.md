@@ -5,7 +5,7 @@ tags: []
 words: ["peril","drape","grope","trope"]
 puzzles: [287]
 hashes: ["PPPAAACACCACCCCCCCCCXXXXXXXXXX"]
-firsthashes: ["PPPAA"]
+openerHash: ["PPPAA"]
 shifts: ["zywyo"]
 state: {
   "boardState": [

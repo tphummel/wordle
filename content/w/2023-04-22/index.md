@@ -8,7 +8,7 @@ openers: ["lucky"]
 middlers: ["spike","awoke"]
 puzzles: [672]
 hashes: ["AAACAAAACCAACCCCCCCCXXXXXXXXXX"]
-firsthashes: ["AAACA"]
+openerHash: ["AAACA"]
 shifts: ["hywto"]
 state: {
   "boardState": [

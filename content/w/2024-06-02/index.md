@@ -9,7 +9,7 @@ openers: ["sport"]
 middlers: ["round"]
 puzzles: [1079]
 hashes: ["AAPPAPPAAACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAPPA"]
+openerHash: ["AAPPA"]
 shifts: ["hyiey"]
 state: {
   "puzzleDate": "2024-06-02",

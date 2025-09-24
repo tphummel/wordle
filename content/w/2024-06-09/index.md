@@ -9,7 +9,7 @@ openers: ["shout"]
 middlers: ["clown"]
 puzzles: [1086]
 hashes: ["AACAACACCACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AACAA"]
+openerHash: ["AACAA"]
 shifts: ["iywfn"]
 state: {
   "puzzleDate": "2024-06-09",

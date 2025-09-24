@@ -9,7 +9,7 @@ openers: ["ocean"]
 middlers: ["baton","mason","wagon","radon"]
 puzzles: [817]
 hashes: ["PAAPCACACCACACCACACCCCACCCCCCC"]
-firsthashes: ["PAAPC"]
+openerHash: ["PAAPC"]
 shifts: ["xhgxx"]
 state: {
   "boardState": [

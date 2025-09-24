@@ -9,7 +9,7 @@ openers: ["group"]
 middlers: []
 puzzles: [1104]
 hashes: ["ACPAACCCCCXXXXXXXXXXXXXXXXXXXX"]
-firsthashes: ["ACPAA"]
+openerHash: ["ACPAA"]
 shifts: ["uylnb"]
 state: {
   "puzzleDate": "2024-06-27",

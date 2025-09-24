@@ -58,7 +58,7 @@ stats:
 puzzles:
   - 260
 hashes: ["APAAPCCCAPCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["APAAP"]
+openerHash: ["APAAP"]
 shifts: ["iswcr"]
 aliases:
   - /w/260/

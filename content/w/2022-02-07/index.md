@@ -50,7 +50,7 @@ stats: {}
 puzzles:
   - 233
 hashes: ["CAAAACPAAPCAPPACCCCCXXXXXXXXXX"]
-firsthashes: ["CAAAA"]
+openerHash: ["CAAAA"]
 shifts: ["kslnb"]
 aliases:
   - /w/233/

@@ -5,7 +5,7 @@ tags: []
 words: ["thing","shirk","chill","chime","chief"]
 puzzles: [436]
 hashes: ["ACCAAACCAACCCAACCCAPCCCCCXXXXX"]
-firsthashes: ["ACCAA"]
+openerHash: ["ACCAA"]
 shifts: ["ioqnp"]
 state: {
   "boardState": [

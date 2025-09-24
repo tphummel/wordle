@@ -9,7 +9,7 @@ openers: ["tiger"]
 middlers: ["steam","death","lathe"]
 puzzles: [771]
 hashes: ["PAAPAAPPPAAPPPPACCCCCCCCCXXXXX"]
-firsthashes: ["PAAPA"]
+openerHash: ["PAAPA"]
 shifts: ["hhbqo"]
 state: {
   "boardState": [

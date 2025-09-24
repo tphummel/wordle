@@ -5,7 +5,7 @@ tags: []
 words: ["mouse","point","board","coral","royal"]
 puzzles: [297]
 hashes: ["ACAAAACAAAACPPAACPCCCCCCCXXXXX"]
-firsthashes: ["ACAAA"]
+openerHash: ["ACAAA"]
 shifts: ["xvgjv"]
 state: {
   "boardState": [

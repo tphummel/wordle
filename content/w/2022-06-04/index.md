@@ -5,7 +5,7 @@ tags: []
 words: ["steam","throw","broth","froth"]
 puzzles: [350]
 hashes: ["APAAAPPPPAACCCCCCCCCXXXXXXXXXX"]
-firsthashes: ["APAAA"]
+openerHash: ["APAAA"]
 shifts: ["lywcr"]
 state: {
   "boardState": [

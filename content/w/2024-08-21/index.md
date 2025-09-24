@@ -9,7 +9,7 @@ openers: ["great"]
 middlers: ["whiny","pouch"]
 puzzles: [1159]
 hashes: ["AAAAAAPAAAAAPCCCCCCCXXXXXXXXXX"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["sbtlr"]
 state: {
   "puzzleDate": "2024-08-21",

@@ -9,7 +9,7 @@ openers: ["steam"]
 middlers: ["cheer","elect"]
 puzzles: [1364]
 hashes: ["AACAAPACPAPACCACCCCCXXXXXXXXXX"]
-firsthashes: ["AACAA"]
+openerHash: ["AACAA"]
 shifts: ["vpmlo"]
 state: {
   "puzzleDate": "2025-03-14",

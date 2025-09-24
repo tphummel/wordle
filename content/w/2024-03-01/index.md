@@ -9,7 +9,7 @@ openers: ["radio"]
 middlers: ["troop","north"]
 puzzles: [986]
 hashes: ["PAAAPPPPAAACCCACCCCCXXXXXXXXXX"]
-firsthashes: ["PAAAP"]
+openerHash: ["PAAAP"]
 shifts: ["lvzci"]
 state: {
   "boardState": [

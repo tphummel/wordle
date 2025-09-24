@@ -9,7 +9,7 @@ openers: ["point"]
 middlers: ["child","bribe","brier"]
 puzzles: [936]
 hashes: ["AACAAAACAACCCAPCCCCACCCCCXXXXX"]
-firsthashes: ["AACAA"]
+openerHash: ["AACAA"]
 shifts: ["hyqnp"]
 state: {
   "boardState": [

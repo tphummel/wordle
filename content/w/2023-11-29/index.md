@@ -9,7 +9,7 @@ openers: ["tough"]
 middlers: ["human","cushy"]
 puzzles: [893]
 hashes: ["AAPAPPCAAAACCCACCCCCXXXXXXXXXX"]
-firsthashes: ["AAPAP"]
+openerHash: ["AAPAP"]
 shifts: ["ybaqs"]
 state: {
   "boardState": [

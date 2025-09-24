@@ -73,7 +73,7 @@ stats:
 puzzles:
   - 249
 hashes: ["PAPAAAPPPACACACCCCACCCCACCCCAC"]
-firsthashes: ["PAPAA"]
+openerHash: ["PAPAA"]
 shifts: ["zyweo"]
 aliases:
   - /w/249/

@@ -69,7 +69,7 @@ stats:
 puzzles:
   - 244
 hashes: ["PAPAAACAPAACAACACAACCCCCCXXXXX"]
-firsthashes: ["PAPAA"]
+openerHash: ["PAPAA"]
 shifts: ["jvlpo"]
 aliases:
   - /w/244/

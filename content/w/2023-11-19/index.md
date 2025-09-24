@@ -9,7 +9,7 @@ openers: ["ounce"]
 middlers: ["purse","fudge","quite","quake"]
 puzzles: [883]
 hashes: ["ACAACACAACACAACCCAACCCAACCCCCC"]
-firsthashes: ["ACAAC"]
+openerHash: ["ACAAC"]
 shifts: ["wbmdo"]
 state: {
   "boardState": [

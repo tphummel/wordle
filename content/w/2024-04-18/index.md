@@ -9,7 +9,7 @@ openers: ["style"]
 middlers: ["teach","cater"]
 puzzles: [1034]
 hashes: ["APAAPPPPPAPCPCACCCCCXXXXXXXXXX"]
-firsthashes: ["APAAP"]
+openerHash: ["APAAP"]
 shifts: ["lhknd"]
 state: {
   "boardState": [

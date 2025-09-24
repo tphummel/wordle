@@ -5,7 +5,7 @@ tags: []
 words: ["aisle","shall"]
 puzzles: [283]
 hashes: ["PAPCACCCCCXXXXXXXXXXXXXXXXXXXX"]
-firsthashes: ["PAPCA"]
+openerHash: ["PAPCA"]
 shifts: ["yoiuv"]
 state: {
   "boardState": [

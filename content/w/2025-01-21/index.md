@@ -9,7 +9,7 @@ openers: ["sugar"]
 middlers: ["given","boing","tying","fling"]
 puzzles: [1312]
 hashes: ["AAPAAPPAAPAACCCAACCCAACCCCCCCC"]
-firsthashes: ["AAPAA"]
+openerHash: ["AAPAA"]
 shifts: ["ojqwq"]
 state: {
   "puzzleDate": "2025-01-21",

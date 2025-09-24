@@ -6,7 +6,7 @@ contests: ["2022-11-habit"]
 words: ["habit","final","axiom"]
 puzzles: [520]
 hashes: ["APAPAAPAPACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["APAPA"]
+openerHash: ["APAPA"]
 shifts: ["geqxw"]
 state: {
   "boardState": [

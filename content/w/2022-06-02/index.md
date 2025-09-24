@@ -5,7 +5,7 @@ tags: []
 words: ["humor","notch","whole","showy"]
 puzzles: [348]
 hashes: ["PAAPAAPAAPPCCAACCCCCXXXXXXXXXX"]
-firsthashes: ["PAAPA"]
+openerHash: ["PAAPA"]
 shifts: ["yowfi"]
 state: {
   "boardState": [

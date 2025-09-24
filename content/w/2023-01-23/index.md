@@ -6,7 +6,7 @@ contests: ["2023-01-guide"]
 words: ["guide","crude","exude","elude"]
 puzzles: [583]
 hashes: ["APACCAACCCCACCCCCCCCXXXXXXXXXX"]
-firsthashes: ["APACC"]
+openerHash: ["APACC"]
 shifts: ["kscmo"]
 state: {
   "boardState": [

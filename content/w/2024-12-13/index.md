@@ -9,7 +9,7 @@ openers: ["pulse"]
 middlers: ["cheat","bendy","biker"]
 puzzles: [1273]
 hashes: ["AAAAPAAPAACPAAACAACCCCCCCXXXXX"]
-firsthashes: ["AAAAP"]
+openerHash: ["AAAAP"]
 shifts: ["hvfnb"]
 state: {
   "puzzleDate": "2024-12-13",

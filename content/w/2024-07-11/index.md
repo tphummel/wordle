@@ -9,7 +9,7 @@ openers: ["great"]
 middlers: ["apple","beach","cased"]
 puzzles: [1118]
 hashes: ["AAPPAPAAAPAPPPACCACACCCCCXXXXX"]
-firsthashes: ["AAPPA"]
+openerHash: ["AAPPA"]
 shifts: ["ihuny"]
 state: {
   "puzzleDate": "2024-07-11",

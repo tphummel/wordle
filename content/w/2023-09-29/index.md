@@ -9,7 +9,7 @@ openers: ["ounce"]
 middlers: ["spume","brute","route","alure"]
 puzzles: [832]
 hashes: ["APAACAACACAPCACPACACCACCCCCCCC"]
-firsthashes: ["APAAC"]
+openerHash: ["APAAC"]
 shifts: ["ggcao"]
 state: {
   "boardState": [

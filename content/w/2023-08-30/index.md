@@ -9,7 +9,7 @@ openers: ["ocean"]
 middlers: ["boast","valor","adopt"]
 puzzles: [802]
 hashes: ["PAAPAAPPAAAPAPACPPAACCCCCXXXXX"]
-firsthashes: ["PAAPA"]
+openerHash: ["PAAPA"]
 shifts: ["gblry"]
 state: {
   "boardState": [

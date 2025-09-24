@@ -8,7 +8,7 @@ openers: ["xenia"]
 middlers: ["saucy"]
 puzzles: [622]
 hashes: ["AAAAPCPCAACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAAAP"]
+openerHash: ["AAAAP"]
 shifts: ["yxcjd"]
 state: {
   "boardState": [

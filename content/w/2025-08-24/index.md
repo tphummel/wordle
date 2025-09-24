@@ -9,7 +9,7 @@ openers: ["tunic"]
 middlers: ["slope"]
 puzzles: [1527]
 hashes: ["AAAAACACPCCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["ywwao"]
 state: {
   "puzzleDate": "2025-08-24",

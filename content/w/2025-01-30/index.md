@@ -9,7 +9,7 @@ openers: ["ghost"]
 middlers: ["crisp","lease"]
 puzzles: [1321]
 hashes: ["AAACAAAACAPAPCCCCCCCXXXXXXXXXX"]
-firsthashes: ["AAACA"]
+openerHash: ["AAACA"]
 shifts: ["lhtbo"]
 state: {
   "puzzleDate": "2025-01-30",

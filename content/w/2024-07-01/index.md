@@ -9,7 +9,7 @@ openers: ["grand"]
 middlers: []
 puzzles: [1108]
 hashes: ["PACAPCCCCCXXXXXXXXXXXXXXXXXXXX"]
-firsthashes: ["PACAP"]
+openerHash: ["PACAP"]
 shifts: ["gkipo"]
 state: {
   "puzzleDate": "2024-07-01",

@@ -5,7 +5,7 @@ tags: []
 words: ["delay","bored","adept","fudge","midge"]
 puzzles: [399]
 hashes: ["PPAAAAAAPPAPPAAAACCCCCCCCXXXXX"]
-firsthashes: ["PPAAA"]
+openerHash: ["PPAAA"]
 shifts: ["splpo"]
 state: {
   "boardState": [

@@ -6,7 +6,7 @@ contests: ["2022-12-ratio"]
 words: ["ratio","trick","third"]
 puzzles: [549]
 hashes: ["PAPPACPCAACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["PAPPA"]
+openerHash: ["PAPPA"]
 shifts: ["zoqan"]
 state: {
   "boardState": [

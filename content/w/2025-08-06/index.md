@@ -9,7 +9,7 @@ openers: ["ratio"]
 middlers: []
 puzzles: [1509]
 hashes: ["PPAAPCCCCCXXXXXXXXXXXXXXXXXXXX"]
-firsthashes: ["PPAAP"]
+openerHash: ["PPAAP"]
 shifts: ["mywjx"]
 state: {
   "puzzleDate": "2025-08-06",

@@ -60,7 +60,7 @@ stats: {}
 puzzles:
   - 176
 hashes: ["PAAAAAPPAPPAPPAACCPAACCACCCCCC"]
-firsthashes: ["PAAAA"]
+openerHash: ["PAAAA"]
 shifts: ["shabo"]
 aliases:
   - /w/176/

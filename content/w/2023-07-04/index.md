@@ -9,7 +9,7 @@ openers: ["tiger"]
 middlers: ["write"]
 puzzles: [745]
 hashes: ["PPAPPACPCCCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["PPAPP"]
+openerHash: ["PPAPP"]
 shifts: ["oyico"]
 state: {
   "boardState": [

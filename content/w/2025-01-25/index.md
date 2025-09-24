@@ -9,7 +9,7 @@ openers: ["sugar"]
 middlers: ["prose"]
 puzzles: [1316]
 hashes: ["PAAAPPCACACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["PAAAP"]
+openerHash: ["PAAAP"]
 shifts: ["iyqbz"]
 state: {
   "puzzleDate": "2025-01-25",

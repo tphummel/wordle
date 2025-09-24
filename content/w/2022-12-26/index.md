@@ -6,7 +6,7 @@ contests: ["2022-12-ratio"]
 words: ["ratio","lunch","budge","fudge","judge"]
 puzzles: [555]
 hashes: ["AAAAAACAAAACCCCACCCCCCCCCXXXXX"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["pblpo"]
 state: {
   "boardState": [

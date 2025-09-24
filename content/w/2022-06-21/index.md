@@ -5,7 +5,7 @@ tags: []
 words: ["ocean","broad","float","gloat"]
 puzzles: [367]
 hashes: ["PAACAAACCAACCCCCCCCCXXXXXXXXXX"]
-firsthashes: ["PAACA"]
+openerHash: ["PAACA"]
 shifts: ["mswjd"]
 state: {
   "boardState": [

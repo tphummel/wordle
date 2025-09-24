@@ -5,7 +5,7 @@ tags: []
 words: ["mouse","clear","never","deter","refer","fewer"]
 puzzles: [288]
 hashes: ["AAAAPAAPACACACCACACCACPCCCCCCC"]
-firsthashes: ["AAAAP"]
+openerHash: ["AAAAP"]
 shifts: ["llenb"]
 state: {
   "boardState": [

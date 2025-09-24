@@ -6,7 +6,7 @@ contests: ["2022-11-habit"]
 words: ["habit","daily","rainy"]
 puzzles: [508]
 hashes: ["ACAPAACCACCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["ACAPA"]
+openerHash: ["ACAPA"]
 shifts: ["xhqwi"]
 state: {
   "boardState": [

@@ -9,7 +9,7 @@ openers: ["story"]
 middlers: ["while","quine","anime"]
 puzzles: [1552]
 hashes: ["AAAAAAACACAACPCACCACCCCCCXXXXX"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["quqoo"]
 state: {
   "puzzleDate": "2025-09-18",

@@ -9,7 +9,7 @@ openers: ["point"]
 middlers: ["shank","wrung"]
 puzzles: [912]
 hashes: ["AAACAAAACAAAPCACCCCCXXXXXXXXXX"]
-firsthashes: ["AAACA"]
+openerHash: ["AAACA"]
 shifts: ["lbvwi"]
 state: {
   "boardState": [

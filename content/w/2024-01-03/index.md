@@ -9,7 +9,7 @@ openers: ["ounce"]
 middlers: ["braid","shirt"]
 puzzles: [928]
 hashes: ["AAAAAAPAPAAACCPCCCCCXXXXXXXXXX"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["zdqav"]
 state: {
   "boardState": [

@@ -9,7 +9,7 @@ openers: ["ocean"]
 middlers: ["otter","offer","order"]
 puzzles: [814]
 hashes: ["CAPAACAACCCAACCCACCCCCCCCXXXXX"]
-firsthashes: ["CAPAA"]
+openerHash: ["CAPAA"]
 shifts: ["uslnb"]
 state: {
   "boardState": [

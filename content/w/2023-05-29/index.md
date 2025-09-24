@@ -8,7 +8,7 @@ openers: ["skimp"]
 middlers: []
 puzzles: [709]
 hashes: ["PAAPACCCCCXXXXXXXXXXXXXXXXXXXX"]
-firsthashes: ["PAAPA"]
+openerHash: ["PAAPA"]
 shifts: ["svcbo"]
 state: {
   "boardState": [

@@ -9,7 +9,7 @@ openers: ["shove"]
 middlers: ["donut","boing","roman"]
 puzzles: [900]
 hashes: ["AAPAAACPAAACAPAACCCCCCCCCXXXXX"]
-firsthashes: ["AAPAA"]
+openerHash: ["AAPAA"]
 shifts: ["cvujx"]
 state: {
   "boardState": [

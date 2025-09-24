@@ -5,7 +5,7 @@ tags: []
 words: ["mouse","stein","feats","zesty"]
 puzzles: [313]
 hashes: ["AAAPPPPPAAACACPCCCCCXXXXXXXXXX"]
-firsthashes: ["AAAPP"]
+openerHash: ["AAAPP"]
 shifts: ["flaci"]
 state: {
   "boardState": [

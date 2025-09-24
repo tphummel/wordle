@@ -6,7 +6,7 @@ contests: ["2022-12-ratio"]
 words: ["ratio","gumbo","phono","condo"]
 puzzles: [556]
 hashes: ["AAAACAAAACAAPPCCCCCCXXXXXXXXXX"]
-firsthashes: ["AAAAC"]
+openerHash: ["AAAAC"]
 shifts: ["ivvmy"]
 state: {
   "boardState": [

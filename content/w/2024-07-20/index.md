@@ -9,7 +9,7 @@ openers: ["cameo"]
 middlers: ["shark","shall"]
 puzzles: [1127]
 hashes: ["APAAACCCAACCCAACCCCCXXXXXXXXXX"]
-firsthashes: ["APAAA"]
+openerHash: ["APAAA"]
 shifts: ["yoiod"]
 state: {
   "puzzleDate": "2024-07-20",

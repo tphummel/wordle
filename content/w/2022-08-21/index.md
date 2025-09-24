@@ -5,7 +5,7 @@ tags: []
 words: ["thing","straw","waste"]
 puzzles: [428]
 hashes: ["PAAAAPPAPPCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["PAAAA"]
+openerHash: ["PAAAA"]
 shifts: ["chaco"]
 state: {
   "boardState": [

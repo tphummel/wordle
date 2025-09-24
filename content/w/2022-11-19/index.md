@@ -6,7 +6,7 @@ contests: ["2022-11-habit"]
 words: ["habit","great","avert"]
 puzzles: [518]
 hashes: ["APAACAPCPCCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["APAAC"]
+openerHash: ["APAAC"]
 shifts: ["gcmad"]
 state: {
   "boardState": [

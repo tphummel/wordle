@@ -9,7 +9,7 @@ openers: ["straw"]
 middlers: ["reign"]
 puzzles: [1093]
 hashes: ["AAPAAPACPPCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAPAA"]
+openerHash: ["AAPAA"]
 shifts: ["myqwn"]
 state: {
   "puzzleDate": "2024-06-16",

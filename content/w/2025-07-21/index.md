@@ -9,7 +9,7 @@ openers: ["untie"]
 middlers: ["stick","fifty"]
 puzzles: [1493]
 hashes: ["AAPPAAPPAAACAPCCCCCCXXXXXXXXXX"]
-firsthashes: ["AAPPA"]
+openerHash: ["AAPPA"]
 shifts: ["zphii"]
 state: {
   "puzzleDate": "2025-07-21",

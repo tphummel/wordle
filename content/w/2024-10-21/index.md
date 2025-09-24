@@ -9,7 +9,7 @@ openers: ["ounce"]
 middlers: ["north","snoop"]
 puzzles: [1220]
 hashes: ["PAPAAPPAAACPCCPCCCCCXXXXXXXXXX"]
-firsthashes: ["PAPAA"]
+openerHash: ["PAPAA"]
 shifts: ["ywwxx"]
 state: {
   "puzzleDate": "2024-10-21",

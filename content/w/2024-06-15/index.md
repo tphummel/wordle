@@ -9,7 +9,7 @@ openers: ["train"]
 middlers: ["credo","brood"]
 puzzles: [1092]
 hashes: ["ACAAAACAPPACCACCCCCCXXXXXXXXXX"]
-firsthashes: ["ACAAA"]
+openerHash: ["ACAAA"]
 shifts: ["vywdn"]
 state: {
   "puzzleDate": "2024-06-15",

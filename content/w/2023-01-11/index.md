@@ -6,7 +6,7 @@ contests: ["2023-01-guide"]
 words: ["guide","dream","pedal","sedan"]
 puzzles: [571]
 hashes: ["AAAPPPAPCAACCCACCCCCXXXXXXXXXX"]
-firsthashes: ["AAAPP"]
+openerHash: ["AAAPP"]
 shifts: ["ylljx"]
 state: {
   "boardState": [

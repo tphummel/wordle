@@ -9,7 +9,7 @@ openers: ["topaz"]
 middlers: ["pouch","posse","podgy","polly"]
 puzzles: [778]
 hashes: ["ACPAACCAAACCAAACCAAPCCCAPCCCCC"]
-firsthashes: ["ACPAA"]
+openerHash: ["ACPAA"]
 shifts: ["vvthz"]
 state: {
   "boardState": [

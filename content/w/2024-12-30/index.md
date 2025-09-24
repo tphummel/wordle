@@ -9,7 +9,7 @@ openers: ["dream"]
 middlers: ["spare","snare","scare"]
 puzzles: [1290]
 hashes: ["APPPACACCCCACCCCACCCCCCCCXXXXX"]
-firsthashes: ["APPPA"]
+openerHash: ["APPPA"]
 shifts: ["yaiao"]
 state: {
   "puzzleDate": "2024-12-30",

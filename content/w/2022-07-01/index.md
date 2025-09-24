@@ -5,7 +5,7 @@ tags: []
 words: ["track","style","doubt","booth","pinto"]
 puzzles: [377]
 hashes: ["PAAAAAPAAAAPAAPAPACACCCCCXXXXX"]
-firsthashes: ["PAAAA"]
+openerHash: ["PAAAA"]
 shifts: ["vpvcy"]
 state: {
   "boardState": [

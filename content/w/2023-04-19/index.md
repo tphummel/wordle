@@ -8,7 +8,7 @@ openers: ["lucky"]
 middlers: ["under","tough"]
 puzzles: [669]
 hashes: ["APAAAPAAAACACAPCCCCCXXXXXXXXXX"]
-firsthashes: ["APAAA"]
+openerHash: ["APAAA"]
 shifts: ["zocvz"]
 state: {
   "boardState": [

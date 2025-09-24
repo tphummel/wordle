@@ -9,7 +9,7 @@ openers: ["zebra"]
 middlers: ["crone"]
 puzzles: [1383]
 hashes: ["APAPACPAACCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["APAPA"]
+openerHash: ["APAPA"]
 shifts: ["ibzbo"]
 state: {
   "puzzleDate": "2025-04-02",

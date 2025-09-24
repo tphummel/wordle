@@ -6,7 +6,7 @@ contests: ["2022-11-habit"]
 words: ["habit","throw","there"]
 puzzles: [516]
 hashes: ["PAAAPCCPAACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["PAAAP"]
+openerHash: ["PAAAP"]
 shifts: ["zomao"]
 state: {
   "boardState": [

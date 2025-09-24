@@ -5,7 +5,7 @@ tags: []
 words: ["tiger","slang","slung"]
 puzzles: [327]
 hashes: ["AAPAACCACCCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAPAA"]
+openerHash: ["AAPAA"]
 shifts: ["yscwq"]
 state: {
   "boardState": [

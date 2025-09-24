@@ -9,7 +9,7 @@ openers: ["eight"]
 middlers: ["groan","gloom","goody","goopy"]
 puzzles: [1222]
 hashes: ["AAPAACACAACACPACCCACCCCACCCCCC"]
-firsthashes: ["AAPAA"]
+openerHash: ["AAPAA"]
 shifts: ["mvwoi"]
 state: {
   "puzzleDate": "2024-10-23",

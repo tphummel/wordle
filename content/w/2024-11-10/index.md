@@ -9,7 +9,7 @@ openers: ["place"]
 middlers: ["steer","mover","rider","inker"]
 puzzles: [1240]
 hashes: ["AAAAPAAACCAAACCAPACCCCACCCCCCC"]
-firsthashes: ["AAAAP"]
+openerHash: ["AAAAP"]
 shifts: ["ouvnb"]
 state: {
   "puzzleDate": "2024-11-10",

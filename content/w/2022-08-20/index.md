@@ -5,7 +5,7 @@ tags: []
 words: ["thing","twerp","tread","treat"]
 puzzles: [427]
 hashes: ["CAAAACACPACCCCACCCCCXXXXXXXXXX"]
-firsthashes: ["CAAAA"]
+openerHash: ["CAAAA"]
 shifts: ["zymjd"]
 state: {
   "boardState": [

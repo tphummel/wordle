@@ -9,7 +9,7 @@ openers: ["style"]
 middlers: ["valor","plunk"]
 puzzles: [1030]
 hashes: ["AAAPAAAPAAPCAAACCCCCXXXXXXXXXX"]
-firsthashes: ["AAAPA"]
+openerHash: ["AAAPA"]
 shifts: ["hsqvz"]
 state: {
   "boardState": [

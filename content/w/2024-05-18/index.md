@@ -9,7 +9,7 @@ openers: ["style"]
 middlers: ["young","whiny"]
 puzzles: [1064]
 hashes: ["AAPAAPAACAAACCCCCCCCXXXXXXXXXX"]
-firsthashes: ["AAPAA"]
+openerHash: ["AAPAA"]
 shifts: ["hyqwi"]
 state: {
   "puzzleDate": "2024-05-18",

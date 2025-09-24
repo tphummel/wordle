@@ -9,7 +9,7 @@ openers: ["point"]
 middlers: ["tread","tease"]
 puzzles: [913]
 hashes: ["AAAAPCAPPACAPACCCCCCXXXXXXXXXX"]
-firsthashes: ["AAAAP"]
+openerHash: ["AAAAP"]
 shifts: ["zhjuo"]
 state: {
   "boardState": [

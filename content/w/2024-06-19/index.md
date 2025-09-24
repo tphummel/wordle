@@ -9,7 +9,7 @@ openers: ["sword"]
 middlers: ["crash","first"]
 puzzles: [1096]
 hashes: ["PAAPAAPACAAACCPCCCCCXXXXXXXXXX"]
-firsthashes: ["PAAPA"]
+openerHash: ["PAAPA"]
 shifts: ["zlzbo"]
 state: {
   "puzzleDate": "2024-06-19",

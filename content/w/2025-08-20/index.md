@@ -9,7 +9,7 @@ openers: ["piano"]
 middlers: ["shake","graft","qualm"]
 puzzles: [1523]
 hashes: ["AACAAAACAAAACAAAACPPCCCCCXXXXX"]
-firsthashes: ["AACAA"]
+openerHash: ["AACAA"]
 shifts: ["rsivk"]
 state: {
   "puzzleDate": "2025-08-20",

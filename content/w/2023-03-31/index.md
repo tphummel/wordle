@@ -8,7 +8,7 @@ openers: ["juice"]
 middlers: ["tweak","sleep"]
 puzzles: [650]
 hashes: ["AAAAPAACAAAACPACCCCCXXXXXXXXXX"]
-firsthashes: ["AAAAP"]
+openerHash: ["AAAAP"]
 shifts: ["kcmai"]
 state: {
   "boardState": [

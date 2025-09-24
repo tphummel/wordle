@@ -9,7 +9,7 @@ openers: ["under"]
 middlers: ["navel"]
 puzzles: [1396]
 hashes: ["APACAPPACACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["APACA"]
+openerHash: ["APACA"]
 shifts: ["gzpnx"]
 state: {
   "puzzleDate": "2025-04-15",

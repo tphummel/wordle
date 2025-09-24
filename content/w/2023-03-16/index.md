@@ -8,7 +8,7 @@ openers: ["knife"]
 middlers: ["piety","diver"]
 puzzles: [635]
 hashes: ["AAPAPACPAAPCACCCCCCCXXXXXXXXXX"]
-firsthashes: ["AAPAP"]
+openerHash: ["AAPAP"]
 shifts: ["iplnb"]
 state: {
   "boardState": [

@@ -45,7 +45,7 @@ stats: {}
 puzzles:
   - 222
 hashes: ["AAAACAAPACCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAAAC"]
+openerHash: ["AAAAC"]
 shifts: ["svcwd"]
 aliases:
   - /w/222/

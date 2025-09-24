@@ -6,7 +6,7 @@ contests: ["2022-08-thing"]
 words: ["thing","stain","untie","unfit"]
 puzzles: [415]
 hashes: ["PAPPAAPACPCCPCACCCCCXXXXXXXXXX"]
-firsthashes: ["PAPPA"]
+openerHash: ["PAPPA"]
 shifts: ["aunrd"]
 state: {
   "boardState": [

@@ -9,7 +9,7 @@ openers: ["style"]
 middlers: ["loach"]
 puzzles: [1036]
 hashes: ["AAAPACAAPACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAAPA"]
+openerHash: ["AAAPA"]
 shifts: ["rbkrn"]
 state: {
   "boardState": [

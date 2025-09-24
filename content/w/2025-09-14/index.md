@@ -9,7 +9,7 @@ openers: ["sound"]
 middlers: ["noose"]
 puzzles: [1548]
 hashes: ["PCAPACCACACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["PCAPA"]
+openerHash: ["PCAPA"]
 shifts: ["tvqbi"]
 state: {
   "puzzleDate": "2025-09-14",

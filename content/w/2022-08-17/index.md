@@ -5,7 +5,7 @@ tags: []
 words: ["thing","trick","twice"]
 puzzles: [424]
 hashes: ["CACAACACCACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["CACAA"]
+openerHash: ["CACAA"]
 shifts: ["zdqlo"]
 state: {
   "boardState": [

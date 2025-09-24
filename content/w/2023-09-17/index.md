@@ -9,7 +9,7 @@ openers: ["ocean"]
 middlers: ["crush","sucky"]
 puzzles: [820]
 hashes: ["APAAAPAPPAPCPAACCCCCXXXXXXXXXX"]
-firsthashes: ["APAAA"]
+openerHash: ["APAAA"]
 shifts: ["sbarm"]
 state: {
   "boardState": [

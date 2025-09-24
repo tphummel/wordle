@@ -9,7 +9,7 @@ openers: ["ounce"]
 middlers: ["tummy","music","murky","murgh"]
 puzzles: [926]
 hashes: ["ACAAAACPAACCAAACCCAACCCAACCCAP"]
-firsthashes: ["ACAAA"]
+openerHash: ["ACAAA"]
 shifts: ["sbzek"]
 state: {
   "boardState": [

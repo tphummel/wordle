@@ -9,7 +9,7 @@ openers: ["scale"]
 middlers: ["prose","rinse","terse"]
 puzzles: [1378]
 hashes: ["PAAACAPACCPAACCACCCCCCCCCXXXXX"]
-firsthashes: ["PAAAC"]
+openerHash: ["PAAAC"]
 shifts: ["blzbo"]
 state: {
   "puzzleDate": "2025-03-28",

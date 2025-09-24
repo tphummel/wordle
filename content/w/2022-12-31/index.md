@@ -6,7 +6,7 @@ contests: ["2022-12-ratio"]
 words: ["ratio","false","laugh","cabal","manly"]
 puzzles: [560]
 hashes: ["ACAAAACPAAPCAAAACAAPCCCCCXXXXX"]
-firsthashes: ["ACAAA"]
+openerHash: ["ACAAA"]
 shifts: ["shvui"]
 state: {
   "boardState": [

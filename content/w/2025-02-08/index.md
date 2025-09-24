@@ -9,7 +9,7 @@ openers: ["while"]
 middlers: ["steer"]
 puzzles: [1330]
 hashes: ["AAAAPCCCCACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAAAP"]
+openerHash: ["AAAAP"]
 shifts: ["yamnz"]
 state: {
   "puzzleDate": "2025-02-08",

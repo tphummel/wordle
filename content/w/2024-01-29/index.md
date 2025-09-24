@@ -9,7 +9,7 @@ openers: ["psych"]
 middlers: ["berry","jelly","lefty","ledgy"]
 puzzles: [954]
 hashes: ["AAPAAACAACACPACCCAACCCACCCCCCC"]
-firsthashes: ["AAPAA"]
+openerHash: ["AAPAA"]
 shifts: ["rlopi"]
 state: {
   "boardState": [

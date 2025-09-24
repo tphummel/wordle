@@ -9,7 +9,7 @@ openers: ["noise"]
 middlers: ["misty"]
 puzzles: [1309]
 hashes: ["AAPPAACPACCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAPPA"]
+openerHash: ["AAPPA"]
 shifts: ["yptui"]
 state: {
   "puzzleDate": "2025-01-18",

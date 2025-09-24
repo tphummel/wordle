@@ -9,7 +9,7 @@ openers: ["style"]
 middlers: ["share","shape","shame","shade"]
 puzzles: [1052]
 hashes: ["CAAACCCCACCCCACCCCACCCCACCCCAC"]
-firsthashes: ["CAAAC"]
+openerHash: ["CAAAC"]
 shifts: ["yoieo"]
 state: {
   "puzzleDate": "2024-05-06",

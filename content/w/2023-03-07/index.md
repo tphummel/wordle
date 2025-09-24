@@ -8,7 +8,7 @@ openers: ["truck"]
 middlers: ["spare","rinse","worse"]
 puzzles: [626]
 hashes: ["APAAAPAAPCPAACCACCCCCCCCCXXXXX"]
-firsthashes: ["APAAA"]
+openerHash: ["APAAA"]
 shifts: ["nvzbo"]
 state: {
   "boardState": [

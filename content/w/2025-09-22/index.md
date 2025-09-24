@@ -9,7 +9,7 @@ openers: ["teach"]
 middlers: ["squid"]
 puzzles: [1556]
 hashes: ["AAAAAAPPPACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["wbquv"]
 state: {
   "puzzleDate": "2025-09-22",

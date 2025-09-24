@@ -9,7 +9,7 @@ openers: ["tiger"]
 middlers: []
 puzzles: [766]
 hashes: ["AAACACCCCCXXXXXXXXXXXXXXXXXXXX"]
-firsthashes: ["AAACA"]
+openerHash: ["AAACA"]
 shifts: ["comnv"]
 state: {
   "boardState": [

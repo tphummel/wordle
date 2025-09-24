@@ -5,7 +5,7 @@ tags: []
 words: ["aisle","total","malty","plant"]
 puzzles: [307]
 hashes: ["PAAPAPAAPPAPPPACCCCCXXXXXXXXXX"]
-firsthashes: ["PAAPA"]
+openerHash: ["PAAPA"]
 shifts: ["vsiwd"]
 state: {
   "boardState": [

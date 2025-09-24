@@ -9,7 +9,7 @@ openers: ["eight"]
 middlers: ["slang"]
 puzzles: [1269]
 hashes: ["AAPAAACACCCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAPAA"]
+openerHash: ["AAPAA"]
 shifts: ["lscwq"]
 state: {
   "puzzleDate": "2024-12-09",

@@ -9,7 +9,7 @@ openers: ["ounce"]
 middlers: ["cloth","scoot"]
 puzzles: [875]
 hashes: ["PAAPAPAPPAACACPCCCCCXXXXXXXXXX"]
-firsthashes: ["PAAPA"]
+openerHash: ["PAAPA"]
 shifts: ["gjbxb"]
 state: {
   "boardState": [

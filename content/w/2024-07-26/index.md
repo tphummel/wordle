@@ -9,7 +9,7 @@ openers: ["stomp"]
 middlers: ["crash","flash","quash"]
 puzzles: [1133]
 hashes: ["PAAAAAACCCAACCCAACCCCCCCCXXXXX"]
-firsthashes: ["PAAAA"]
+openerHash: ["PAAAA"]
 shifts: ["gdibr"]
 state: {
   "puzzleDate": "2024-07-26",

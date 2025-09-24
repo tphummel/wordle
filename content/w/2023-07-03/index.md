@@ -9,7 +9,7 @@ openers: ["tiger"]
 middlers: ["valet"]
 puzzles: [744]
 hashes: ["PAACAAAPCPCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["PAACA"]
+openerHash: ["PAACA"]
 shifts: ["nvbnv"]
 state: {
   "boardState": [

@@ -9,7 +9,7 @@ openers: ["weird"]
 middlers: ["itchy"]
 puzzles: [1231]
 hashes: ["AAPAAPPAPACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAPAA"]
+openerHash: ["AAPAA"]
 shifts: ["ypfcr"]
 state: {
   "puzzleDate": "2024-11-01",

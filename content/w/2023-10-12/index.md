@@ -9,7 +9,7 @@ openers: ["ounce"]
 middlers: ["sneak","kneel"]
 puzzles: [845]
 hashes: ["AAPAPACCAPCCCAPCCCCCXXXXXXXXXX"]
-firsthashes: ["AAPAP"]
+openerHash: ["AAPAP"]
 shifts: ["qumud"]
 state: {
   "boardState": [

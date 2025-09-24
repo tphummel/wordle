@@ -6,7 +6,7 @@ contests: ["2022-10-metal"]
 words: ["metal","wheel","cruel","novel","libel"]
 puzzles: [497]
 hashes: ["APAACAAACCAAACCAAACCCCCCCXXXXX"]
-firsthashes: ["APAAC"]
+openerHash: ["APAAC"]
 shifts: ["rpjnv"]
 state: {
   "boardState": [

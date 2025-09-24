@@ -9,7 +9,7 @@ openers: ["grave"]
 middlers: ["sting"]
 puzzles: [1110]
 hashes: ["PAAAAAPCAPCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["PAAAA"]
+openerHash: ["PAAAA"]
 shifts: ["zoqpr"]
 state: {
   "puzzleDate": "2024-07-03",

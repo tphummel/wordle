@@ -9,7 +9,7 @@ openers: ["mouse"]
 middlers: ["earth","beryl","ferry","jerky"]
 puzzles: [1125]
 hashes: ["AAAAPPACAAACCPAACCACACCACCCCCC"]
-firsthashes: ["AAAAP"]
+openerHash: ["AAAAP"]
 shifts: ["tlzmi"]
 state: {
   "puzzleDate": "2024-07-18",

@@ -6,7 +6,7 @@ contests: ["2022-12-ratio"]
 words: ["ratio","turbo","torso"]
 puzzles: [532]
 hashes: ["PAPACCACACCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["PAPAC"]
+openerHash: ["PAPAC"]
 shifts: ["zvzby"]
 state: {
   "boardState": [

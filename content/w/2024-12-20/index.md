@@ -9,7 +9,7 @@ openers: ["great"]
 middlers: ["shack"]
 puzzles: [1280]
 hashes: ["AAAPAPPCAACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAAPA"]
+openerHash: ["AAAPA"]
 shifts: ["lsibr"]
 state: {
   "puzzleDate": "2024-12-20",

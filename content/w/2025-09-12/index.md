@@ -9,7 +9,7 @@ openers: ["float"]
 middlers: ["touch","throw"]
 puzzles: [1546]
 hashes: ["AAPAPCPAAPCCCCACCCCCXXXXXXXXXX"]
-firsthashes: ["AAPAP"]
+openerHash: ["AAPAP"]
 shifts: ["zozxl"]
 state: {
   "puzzleDate": "2025-09-12",

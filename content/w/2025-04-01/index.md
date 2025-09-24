@@ -9,7 +9,7 @@ openers: ["flake"]
 middlers: ["loser","wheel"]
 puzzles: [1382]
 hashes: ["APAAPPAACAPAPCCCCCCCXXXXXXXXXX"]
-firsthashes: ["APAAP"]
+openerHash: ["APAAP"]
 shifts: ["plenv"]
 state: {
   "puzzleDate": "2025-04-01",

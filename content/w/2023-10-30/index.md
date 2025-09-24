@@ -9,7 +9,7 @@ openers: ["ounce"]
 middlers: ["plaid","trail","frail"]
 puzzles: [863]
 hashes: ["AAAAAAPCCAACCCCACCCCCCCCCXXXXX"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["myirv"]
 state: {
   "boardState": [

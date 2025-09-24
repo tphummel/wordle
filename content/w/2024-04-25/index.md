@@ -9,7 +9,7 @@ openers: ["style"]
 middlers: ["train"]
 puzzles: [1041]
 hashes: ["APAAAPPAPPCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["APAAA"]
+openerHash: ["APAAA"]
 shifts: ["oubay"]
 state: {
   "boardState": [

@@ -6,7 +6,7 @@ contests: ["2022-12-ratio"]
 words: ["ratio","clasp","atlas","sheal","nasal","usual"]
 puzzles: [543]
 hashes: ["APAAAAPPPAAAPCPPAACCAAPCCCCCCC"]
-firsthashes: ["APAAA"]
+openerHash: ["APAAA"]
 shifts: ["azcjv"]
 state: {
   "boardState": [

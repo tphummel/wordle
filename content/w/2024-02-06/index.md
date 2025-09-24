@@ -9,7 +9,7 @@ openers: ["point"]
 middlers: ["child"]
 puzzles: [962]
 hashes: ["AACAAPCCAACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AACAA"]
+openerHash: ["AACAA"]
 shifts: ["coqlr"]
 state: {
   "boardState": [

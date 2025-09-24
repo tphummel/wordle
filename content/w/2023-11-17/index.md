@@ -9,7 +9,7 @@ openers: ["ounce"]
 middlers: ["wharf","artsy"]
 puzzles: [881]
 hashes: ["AAAAAAAPPAPPPACCCCCCXXXXXXXXXX"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["zhzmi"]
 state: {
   "boardState": [

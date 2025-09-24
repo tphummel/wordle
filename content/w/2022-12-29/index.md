@@ -6,7 +6,7 @@ contests: ["2022-12-ratio"]
 words: ["ratio","salon","havoc"]
 puzzles: [558]
 hashes: ["ACAAPACACACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["ACAAP"]
+openerHash: ["ACAAP"]
 shifts: ["nhdxm"]
 state: {
   "boardState": [

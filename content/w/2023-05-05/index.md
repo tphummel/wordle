@@ -8,7 +8,7 @@ openers: ["guppy"]
 middlers: ["arise","fleet","melon"]
 puzzles: [685]
 hashes: ["AAAAAAAAAPAPPAAACCCACCCCCXXXXX"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["hltxg"]
 state: {
   "boardState": [

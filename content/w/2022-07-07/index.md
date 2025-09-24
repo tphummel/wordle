@@ -5,7 +5,7 @@ tags: ["birthday"]
 words: ["track","plane","spade","agape"]
 puzzles: [383]
 hashes: ["AACAAPACACAPCACCCCCCXXXXXXXXXX"]
-firsthashes: ["AACAA"]
+openerHash: ["AACAA"]
 shifts: ["gniyo"]
 state: {
   "boardState": [

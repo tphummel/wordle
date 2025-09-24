@@ -5,7 +5,7 @@ tags: []
 words: ["laser","blush","slosh"]
 puzzles: [276]
 hashes: ["PAPAAACACCCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["PAPAA"]
+openerHash: ["PAPAA"]
 shifts: ["yswbr"]
 state: {
   "boardState": [

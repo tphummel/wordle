@@ -9,7 +9,7 @@ openers: ["point"]
 middlers: ["noose"]
 puzzles: [1481]
 hashes: ["ACAPACCAAPCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["ACAPA"]
+openerHash: ["ACAPA"]
 shifts: ["tvdnv"]
 state: {
   "puzzleDate": "2025-07-09",

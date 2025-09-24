@@ -9,7 +9,7 @@ openers: ["ounce"]
 middlers: []
 puzzles: [853]
 hashes: ["CPAPACCCCCXXXXXXXXXXXXXXXXXXXX"]
-firsthashes: ["CPAPA"]
+openerHash: ["CPAPA"]
 shifts: ["ujkdb"]
 state: {
   "boardState": [

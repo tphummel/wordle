@@ -9,7 +9,7 @@ openers: ["psych"]
 middlers: ["learn","redux","merit","verve"]
 puzzles: [960]
 hashes: ["AAAAAACAPAPCAAAACCAACCCACCCCCC"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["blzpo"]
 state: {
   "boardState": [

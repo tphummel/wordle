@@ -9,7 +9,7 @@ openers: ["route"]
 middlers: ["green","screw","beard"]
 puzzles: [938]
 hashes: ["PAAAPAPPAAAAPPAACCCCCCCCCXXXXX"]
-firsthashes: ["PAAAP"]
+openerHash: ["PAAAP"]
 shifts: ["nlian"]
 state: {
   "boardState": [

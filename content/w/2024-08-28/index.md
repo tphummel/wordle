@@ -9,7 +9,7 @@ openers: ["great"]
 middlers: ["tense","flute"]
 puzzles: [1166]
 hashes: ["AAPAPPAAACAPAPCCCCCCXXXXXXXXXX"]
-firsthashes: ["AAPAP"]
+openerHash: ["AAPAP"]
 shifts: ["rpbqo"]
 state: {
   "puzzleDate": "2024-08-28",

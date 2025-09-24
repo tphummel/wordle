@@ -9,7 +9,7 @@ openers: ["style"]
 middlers: ["lined"]
 puzzles: [1043]
 hashes: ["AAAPPPAAPACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAAPP"]
+openerHash: ["AAAPP"]
 shifts: ["msmjw"]
 state: {
   "boardState": [

@@ -8,7 +8,7 @@ openers: ["orate"]
 middlers: ["smith"]
 puzzles: [616]
 hashes: ["AAACAAAPCACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAACA"]
+openerHash: ["AAACA"]
 shifts: ["lpnci"]
 state: {
   "boardState": [

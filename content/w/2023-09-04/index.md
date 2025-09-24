@@ -9,7 +9,7 @@ openers: ["smear"]
 middlers: ["hound","divvy"]
 puzzles: [807]
 hashes: ["AAAAAAAAAPPCAACCCCCCXXXXXXXXXX"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["mplmi"]
 state: {
   "boardState": [

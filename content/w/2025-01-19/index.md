@@ -9,7 +9,7 @@ openers: ["solar"]
 middlers: ["cover","power","tower","mower"]
 puzzles: [1310]
 hashes: ["ACAACACACCACCCCACCCCACCCCCCCCC"]
-firsthashes: ["ACAAC"]
+openerHash: ["ACAAC"]
 shifts: ["xvenb"]
 state: {
   "puzzleDate": "2025-01-19",

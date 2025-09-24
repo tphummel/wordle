@@ -6,7 +6,7 @@ contests: ["2022-12-ratio"]
 words: ["ratio","brown","probe"]
 puzzles: [545]
 hashes: ["PAAAPPCCAACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["PAAAP"]
+openerHash: ["PAAAP"]
 shifts: ["vywko"]
 state: {
   "boardState": [

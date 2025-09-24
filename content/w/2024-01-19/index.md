@@ -9,7 +9,7 @@ openers: ["point"]
 middlers: ["think"]
 puzzles: [944]
 hashes: ["AACCPCCCCACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AACCP"]
+openerHash: ["AACCP"]
 shifts: ["zoqwq"]
 state: {
   "boardState": [

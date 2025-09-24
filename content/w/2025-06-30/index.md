@@ -9,7 +9,7 @@ openers: ["share"]
 middlers: ["would","blimp"]
 puzzles: [1472]
 hashes: ["AAAAAAAAPACCCAACCCCCXXXXXXXXXX"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["hsqwu"]
 state: {
   "puzzleDate": "2025-06-30",

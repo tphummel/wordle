@@ -5,7 +5,7 @@ tags: []
 words: ["mouse","shard","shaft","shack","shall","shawl"]
 puzzles: [289]
 hashes: ["AAAPACCCAACCCAACCCAACCCACCCCCC"]
-firsthashes: ["AAAPA"]
+openerHash: ["AAAPA"]
 shifts: ["yoifv"]
 state: {
   "boardState": [

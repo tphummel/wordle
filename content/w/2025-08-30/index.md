@@ -9,7 +9,7 @@ openers: ["scout"]
 middlers: ["twine","plate"]
 puzzles: [1533]
 hashes: ["AAAAPPAAACACCCCCCCCCXXXXXXXXXX"]
-firsthashes: ["AAAAP"]
+openerHash: ["AAAAP"]
 shifts: ["ksico"]
 state: {
   "puzzleDate": "2025-08-30",

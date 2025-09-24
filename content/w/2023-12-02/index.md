@@ -9,7 +9,7 @@ openers: ["proud"]
 middlers: ["reach","merry","leers","terre"]
 puzzles: [896]
 hashes: ["APAAAPCAAAACACAACPCAACACCCCCCC"]
-firsthashes: ["APAAA"]
+openerHash: ["APAAA"]
 shifts: ["mlvao"]
 state: {
   "boardState": [

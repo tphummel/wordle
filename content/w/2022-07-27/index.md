@@ -5,7 +5,7 @@ tags: []
 words: ["third","float","pouty","monte","mosts","motto"]
 puzzles: [403]
 hashes: ["PAAAAAAPAPACACACCACACCACACCCCC"]
-firsthashes: ["PAAAA"]
+openerHash: ["PAAAA"]
 shifts: ["svbcy"]
 state: {
   "boardState": [

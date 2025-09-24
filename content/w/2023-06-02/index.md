@@ -9,7 +9,7 @@ openers: ["squid"]
 middlers: []
 puzzles: [713]
 hashes: ["AAPCCCCCCCXXXXXXXXXXXXXXXXXXXX"]
-firsthashes: ["AAPCC"]
+openerHash: ["AAPCC"]
 shifts: ["nburn"]
 state: {
   "boardState": [

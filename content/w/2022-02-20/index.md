@@ -58,7 +58,7 @@ stats:
 puzzles:
   - 246
 hashes: ["APAPAPAPCACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["APAPA"]
+openerHash: ["APAPA"]
 shifts: ["zhkrd"]
 aliases:
   - /w/246/

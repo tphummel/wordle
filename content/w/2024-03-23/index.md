@@ -9,7 +9,7 @@ openers: ["syrup"]
 middlers: ["raise"]
 puzzles: [1008]
 hashes: ["PAPAACAPPPCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["PAPAA"]
+openerHash: ["PAPAA"]
 shifts: ["xpanx"]
 state: {
   "boardState": [

@@ -9,7 +9,7 @@ openers: ["scout"]
 middlers: ["drive","plead"]
 puzzles: [1327]
 hashes: ["AAAAAPAAAPCPPCPCCCCCXXXXXXXXXX"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["vlljv"]
 state: {
   "puzzleDate": "2025-02-05",

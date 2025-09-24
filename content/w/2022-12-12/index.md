@@ -6,7 +6,7 @@ contests: ["2022-12-ratio"]
 words: ["ratio","place","apply"]
 puzzles: [541]
 hashes: ["APAAAPPPAACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["APAAA"]
+openerHash: ["APAAA"]
 shifts: ["gwxui"]
 state: {
   "boardState": [

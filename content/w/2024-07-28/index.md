@@ -9,7 +9,7 @@ openers: ["close"]
 middlers: ["scoop","shock"]
 puzzles: [1135]
 hashes: ["CAGSCCCGGGGGGGGGXXXXXXXXXXXXXXX"]
-firsthashes: ["CAGSC"]
+openerHash: ["CAGSC"]
 shifts: ["pybdj"]
 state: {
   "boardState": [

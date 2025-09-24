@@ -6,7 +6,7 @@ contests: ["2023-01-guide"]
 words: ["guide","yeast","berry","belly","beefy"]
 puzzles: [586]
 hashes: ["AAAAPPCAAACCAACCCAACCCCCCXXXXX"]
-firsthashes: ["AAAAP"]
+openerHash: ["AAAAP"]
 shifts: ["hlmoi"]
 state: {
   "boardState": [

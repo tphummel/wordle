@@ -6,7 +6,7 @@ contests: ["2022-12-ratio"]
 words: ["ratio","slime","limed","impel"]
 puzzles: [557]
 hashes: ["AAAPAAPPPPPPPCACCCCCXXXXXXXXXX"]
-firsthashes: ["AAAPA"]
+openerHash: ["AAAPA"]
 shifts: ["otxnv"]
 state: {
   "boardState": [

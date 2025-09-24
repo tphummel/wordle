@@ -5,7 +5,7 @@ tags: []
 words: ["thing","pluck","fraud","durry","ruder"]
 puzzles: [434]
 hashes: ["AAAAAAAPAAAPAPPPCPPACCCCCXXXXX"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["xblnb"]
 state: {
   "boardState": [

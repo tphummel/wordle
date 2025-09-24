@@ -9,7 +9,7 @@ openers: ["ghost"]
 middlers: ["coral","owned"]
 puzzles: [1121]
 hashes: ["AAPAAAPAAAPAACPCCCCCXXXXXXXXXX"]
-firsthashes: ["AAPAA"]
+openerHash: ["AAPAA"]
 shifts: ["bplny"]
 state: {
   "puzzleDate": "2024-07-14",

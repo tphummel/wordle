@@ -9,7 +9,7 @@ openers: ["sword"]
 middlers: ["shift"]
 puzzles: [1097]
 hashes: ["CAAAACAAACCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["CAAAA"]
+openerHash: ["CAAAA"]
 shifts: ["yjmwd"]
 state: {
   "puzzleDate": "2024-06-20",

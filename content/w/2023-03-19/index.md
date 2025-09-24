@@ -8,7 +8,7 @@ openers: ["house"]
 middlers: ["melon"]
 puzzles: [638]
 hashes: ["APAAPAPAPACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["APAAP"]
+openerHash: ["APAAP"]
 shifts: ["iymmy"]
 state: {
   "boardState": [

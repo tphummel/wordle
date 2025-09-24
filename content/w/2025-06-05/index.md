@@ -9,7 +9,7 @@ openers: ["ounce"]
 middlers: ["trump","mouth"]
 puzzles: [1447]
 hashes: ["APAAAPAPPAPAPPACCCCCXXXXXXXXXX"]
-firsthashes: ["APAAA"]
+openerHash: ["APAAA"]
 shifts: ["jhbdw"]
 state: {
   "puzzleDate": "2025-06-05",

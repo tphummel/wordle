@@ -9,7 +9,7 @@ openers: ["style"]
 middlers: ["fairy"]
 puzzles: [1028]
 hashes: ["AAPAAAACACCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAPAA"]
+openerHash: ["AAPAA"]
 shifts: ["coqwi"]
 state: {
   "boardState": [

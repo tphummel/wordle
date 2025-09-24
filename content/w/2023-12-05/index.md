@@ -9,7 +9,7 @@ openers: ["group"]
 middlers: []
 puzzles: [899]
 hashes: ["PAPPACCCCCXXXXXXXXXXXXXXXXXXXX"]
-firsthashes: ["PAPPA"]
+openerHash: ["PAPPA"]
 shifts: ["evcwq"]
 state: {
   "boardState": [

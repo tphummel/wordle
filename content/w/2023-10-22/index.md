@@ -9,7 +9,7 @@ openers: ["ounce"]
 middlers: ["trend","seven","maven"]
 puzzles: [855]
 hashes: ["AAPAPAAPPAAACCCAACCCCCCCCXXXXX"]
-firsthashes: ["AAPAP"]
+openerHash: ["AAPAP"]
 shifts: ["mpdnx"]
 state: {
   "boardState": [

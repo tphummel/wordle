@@ -9,7 +9,7 @@ openers: ["squid"]
 middlers: ["prose","leash"]
 puzzles: [715]
 hashes: ["PAAAAAAACPACCCACCCCCXXXXXXXXXX"]
-firsthashes: ["PAAAA"]
+openerHash: ["PAAAA"]
 shifts: ["hlibd"]
 state: {
   "boardState": [

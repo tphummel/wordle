@@ -9,7 +9,7 @@ openers: ["sport"]
 middlers: ["trash"]
 puzzles: [1403]
 hashes: ["PAAPPPCPCACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["PAAPP"]
+openerHash: ["PAAPP"]
 shifts: ["gybbi"]
 state: {
   "puzzleDate": "2025-04-22",

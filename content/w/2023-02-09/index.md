@@ -8,7 +8,7 @@ openers: ["orate"]
 middlers: ["stale"]
 puzzles: [600]
 hashes: ["AACPCCCCACCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AACPC"]
+openerHash: ["AACPC"]
 shifts: ["yaipo"]
 state: {
   "boardState": [

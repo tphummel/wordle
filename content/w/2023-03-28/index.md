@@ -8,7 +8,7 @@ openers: ["virus"]
 middlers: ["turbo","curry"]
 puzzles: [647]
 hashes: ["AACPAACCAAACCCCCCCCCXXXXXXXXXX"]
-firsthashes: ["AACPA"]
+openerHash: ["AACPA"]
 shifts: ["nbzai"]
 state: {
   "boardState": [

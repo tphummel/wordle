@@ -5,7 +5,7 @@ tags: []
 words: ["thing","miter","merit"]
 puzzles: [429]
 hashes: ["PAPAACPPPPCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["PAPAA"]
+openerHash: ["PAPAA"]
 shifts: ["slzrd"]
 state: {
   "boardState": [

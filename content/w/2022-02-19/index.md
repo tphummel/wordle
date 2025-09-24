@@ -73,7 +73,7 @@ stats:
 puzzles:
   - 245
 hashes: ["AAAAACPAAACACCCCACCCCACCCCCCCC"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["ydquv"]
 aliases:
   - /w/245/

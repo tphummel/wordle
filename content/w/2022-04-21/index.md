@@ -5,7 +5,7 @@ tags: []
 words: ["mouse","chore","oldie","oxide"]
 puzzles: [306]
 hashes: ["APAACAAPACCAPPCCCCCCXXXXXXXXXX"]
-firsthashes: ["APAAC"]
+openerHash: ["APAAC"]
 shifts: ["ueqmo"]
 state: {
   "boardState": [

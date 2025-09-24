@@ -5,7 +5,7 @@ tags: []
 words: ["piano","store","whose","close","goose"]
 puzzles: [357]
 hashes: ["AAAAPPACACAACCCAACCCCCCCCXXXXX"]
-firsthashes: ["AAAAP"]
+openerHash: ["AAAAP"]
 shifts: ["mvwbo"]
 state: {
   "boardState": [

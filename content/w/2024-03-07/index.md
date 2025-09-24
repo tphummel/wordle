@@ -9,7 +9,7 @@ openers: ["syrup"]
 middlers: ["flock"]
 puzzles: [992]
 hashes: ["AAAAAACCPACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["iswwo"]
 state: {
   "boardState": [

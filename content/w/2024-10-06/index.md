@@ -9,7 +9,7 @@ openers: ["noise"]
 middlers: ["teach","dream","paver","baker","wager"]
 puzzles: [1205]
 hashes: ["AAAAPAPPAAAPPPAACACCACACCACCCC"]
-firsthashes: ["AAAAP"]
+openerHash: ["AAAAP"]
 shifts: ["rhonb"]
 state: {
   "puzzleDate": "2024-10-06",

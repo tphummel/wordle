@@ -9,7 +9,7 @@ openers: ["light"]
 middlers: ["scrap","bound","devon"]
 puzzles: [1265]
 hashes: ["AAAAAAAAAAAPAPPPPACPCCCCCXXXXX"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["kulxg"]
 state: {
   "puzzleDate": "2024-12-05",

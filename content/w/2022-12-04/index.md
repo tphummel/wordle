@@ -6,7 +6,7 @@ contests: ["2022-12-ratio"]
 words: ["ratio","broad","adore"]
 puzzles: [533]
 hashes: ["PPAAPAPCPPCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["PPAAP"]
+openerHash: ["PPAAP"]
 shifts: ["gkwao"]
 state: {
   "boardState": [

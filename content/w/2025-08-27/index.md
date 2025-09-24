@@ -9,7 +9,7 @@ openers: ["eight"]
 middlers: ["tense","tread"]
 puzzles: [1530]
 hashes: ["PAAAPCPAAACPPAACCCCCXXXXXXXXXX"]
-firsthashes: ["PAAAP"]
+openerHash: ["PAAAP"]
 shifts: ["zvenb"]
 state: {
   "puzzleDate": "2025-08-27",

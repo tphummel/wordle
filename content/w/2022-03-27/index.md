@@ -5,7 +5,7 @@ tags: []
 words: ["laser","found","pinch","nymph"]
 puzzles: [281]
 hashes: ["AAAAAAAAPAPAPACCCCCCXXXXXXXXXX"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["tfuyr"]
 state: {
   "boardState": [

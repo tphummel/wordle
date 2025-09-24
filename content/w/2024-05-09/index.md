@@ -9,7 +9,7 @@ openers: ["style"]
 middlers: ["yearn","mercy"]
 puzzles: [1055]
 hashes: ["AAPAPPCAPAACCACCCCCCXXXXXXXXXX"]
-firsthashes: ["AAPAP"]
+openerHash: ["AAPAP"]
 shifts: ["plzti"]
 state: {
   "puzzleDate": "2024-05-09",

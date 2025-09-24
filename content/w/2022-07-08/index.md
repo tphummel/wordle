@@ -5,7 +5,7 @@ tags: ["pattern"]
 words: ["track","spice","voice"]
 puzzles: [384]
 hashes: ["AAACAAACCCCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAACA"]
+openerHash: ["AAACA"]
 shifts: ["bvqlo"]
 state: {
   "boardState": [

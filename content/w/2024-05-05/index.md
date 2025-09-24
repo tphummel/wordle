@@ -9,7 +9,7 @@ openers: ["style"]
 middlers: ["learn","medal"]
 puzzles: [1051]
 hashes: ["AAAPPPCPAAACPCCCCCCCXXXXXXXXXX"]
-firsthashes: ["AAAPP"]
+openerHash: ["AAAPP"]
 shifts: ["jlkjv"]
 state: {
   "puzzleDate": "2024-05-05",

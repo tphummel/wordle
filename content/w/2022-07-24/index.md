@@ -5,7 +5,7 @@ tags: []
 words: ["delay","their","goner","mower","power"]
 puzzles: [400]
 hashes: ["APAAAAAPACACACCACCCCCCCCCXXXXX"]
-firsthashes: ["APAAA"]
+openerHash: ["APAAA"]
 shifts: ["vvenb"]
 state: {
   "boardState": [

@@ -8,7 +8,7 @@ openers: ["lucky"]
 middlers: ["pilot","moral"]
 puzzles: [653]
 hashes: ["PAAAAAAPPAAPPPPCCCCCXXXXXXXXXX"]
-firsthashes: ["PAAAA"]
+openerHash: ["PAAAA"]
 shifts: ["lswak"]
 state: {
   "boardState": [

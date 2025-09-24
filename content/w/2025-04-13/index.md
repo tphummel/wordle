@@ -9,7 +9,7 @@ openers: ["tower"]
 middlers: ["squid","chunk"]
 puzzles: [1394]
 hashes: ["AAAAAAACAAAPCAACCCCCXXXXXXXXXX"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["rhcpr"]
 state: {
   "puzzleDate": "2025-04-13",

@@ -55,7 +55,7 @@ stats: {}
 puzzles:
   - 205
 hashes: ["PAAAAAACAPAACCAAACCCCCCCCXXXXX"]
-firsthashes: ["PAAAA"]
+openerHash: ["PAAAA"]
 shifts: ["wbmai"]
 aliases:
   - /w/205/

@@ -9,7 +9,7 @@ openers: ["skate"]
 middlers: ["greed","chief","melon"]
 puzzles: [1376]
 hashes: ["AAAAPAAPAAAAAPAAPPCACCCCCXXXXX"]
-firsthashes: ["AAAAP"]
+openerHash: ["AAAAP"]
 shifts: ["ksjxg"]
 state: {
   "puzzleDate": "2025-03-26",

@@ -9,7 +9,7 @@ openers: ["squid"]
 middlers: ["cheat","realm","maven"]
 puzzles: [726]
 hashes: ["AAAAAAAPPAAPPAPCCAPACCCCCXXXXX"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["shgko"]
 state: {
   "boardState": [

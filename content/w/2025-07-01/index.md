@@ -9,7 +9,7 @@ openers: ["audio"]
 middlers: ["dorky","howdy","goldy"]
 puzzles: [1473]
 hashes: ["AAPAPPCAACACACCACCCCCCCCCXXXXX"]
-firsthashes: ["AAPAP"]
+openerHash: ["AAPAP"]
 shifts: ["svtmi"]
 state: {
   "puzzleDate": "2025-07-01",

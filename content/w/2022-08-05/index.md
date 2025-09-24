@@ -5,7 +5,7 @@ tags: []
 words: ["third","flake","mousy","bunny","buggy"]
 puzzles: [412]
 hashes: ["AAAAAAAAAAAAPACCCAACCCCCCXXXXX"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["hbopi"]
 state: {
   "boardState": [

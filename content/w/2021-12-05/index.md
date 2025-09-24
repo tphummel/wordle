@@ -50,7 +50,7 @@ stats: {}
 puzzles:
   - 169
 hashes: ["APAAPPAAPPPPPCACCCCCXXXXXXXXXX"]
-firsthashes: ["APAAP"]
+openerHash: ["APAAP"]
 shifts: ["azpnb"]
 aliases:
   - /w/169/

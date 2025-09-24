@@ -9,7 +9,7 @@ openers: ["child"]
 middlers: ["dream","drank"]
 puzzles: [1177]
 hashes: ["AAAAPCCAPACCCPACCCCCXXXXXXXXXX"]
-firsthashes: ["AAAAP"]
+openerHash: ["AAAAP"]
 shifts: ["jyifx"]
 state: {
   "puzzleDate": "2024-09-08",

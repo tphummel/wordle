@@ -8,7 +8,7 @@ openers: ["orate"]
 middlers: ["tulip"]
 puzzles: [595]
 hashes: ["AAAPAPPCCACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAAPA"]
+openerHash: ["AAAPA"]
 shifts: ["autrd"]
 state: {
   "boardState": [

@@ -5,7 +5,7 @@ tags: []
 words: ["steam","crown","ghoul","bloop","flood"]
 puzzles: [353]
 hashes: ["AAAAAAACAAAACAPACCCACCCCCXXXXX"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["lswxn"]
 state: {
   "boardState": [

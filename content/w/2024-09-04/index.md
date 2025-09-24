@@ -9,7 +9,7 @@ openers: ["close"]
 middlers: ["shear"]
 puzzles: [1173]
 hashes: ["AAAPPCACAPCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAAPP"]
+openerHash: ["AAAPP"]
 shifts: ["yamax"]
 state: {
   "puzzleDate": "2024-09-04",

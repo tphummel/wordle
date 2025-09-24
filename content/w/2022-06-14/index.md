@@ -5,7 +5,7 @@ tags: []
 words: ["piano","atone"]
 puzzles: [360]
 hashes: ["AAPCPCCCCCXXXXXXXXXXXXXXXXXXXX"]
-firsthashes: ["AAPCP"]
+openerHash: ["AAPCP"]
 shifts: ["gawwo"]
 state: {
   "boardState": [

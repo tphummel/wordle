@@ -5,7 +5,7 @@ tags: []
 words: ["track","round","spire","giver","liver"]
 puzzles: [390]
 hashes: ["APAAAPAAAAAAPPPACCCCCCCCCXXXXX"]
-firsthashes: ["APAAA"]
+openerHash: ["APAAA"]
 shifts: ["rpdnb"]
 state: {
   "boardState": [

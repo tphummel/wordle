@@ -9,7 +9,7 @@ openers: ["weird"]
 middlers: ["stone","woosh","mousy"]
 puzzles: [1223]
 hashes: ["AAAAAPAPAAACACAACACCCCCCCXXXXX"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["hvabi"]
 state: {
   "puzzleDate": "2024-10-24",

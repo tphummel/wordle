@@ -8,7 +8,7 @@ openers: ["grief"]
 middlers: ["fount","flash"]
 puzzles: [700]
 hashes: ["AAAAPCAAAACCCCACCCCCXXXXXXXXXX"]
-firsthashes: ["AAAAP"]
+openerHash: ["AAAAP"]
 shifts: ["lsibu"]
 state: {
   "boardState": [

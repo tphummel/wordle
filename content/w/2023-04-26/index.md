@@ -8,7 +8,7 @@ openers: ["lucky"]
 middlers: ["great","terse","retro"]
 puzzles: [676]
 hashes: ["AAAAAAPPAPPCPAAACCCCCCCCCXXXXX"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["slbay"]
 state: {
   "boardState": [

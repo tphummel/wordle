@@ -9,7 +9,7 @@ openers: ["recon"]
 middlers: ["chest","cable"]
 puzzles: [1171]
 hashes: ["APPAACAPAACCAPPCCCCCXXXXXXXXXX"]
-firsthashes: ["APPAA"]
+openerHash: ["APPAA"]
 shifts: ["ihunv"]
 state: {
   "puzzleDate": "2024-09-02",

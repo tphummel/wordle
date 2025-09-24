@@ -6,7 +6,7 @@ contests: ["2022-11-habit"]
 words: ["habit","twist","quite","unite"]
 puzzles: [509]
 hashes: ["AAAPPPACAAAPCCCCCCCCXXXXXXXXXX"]
-firsthashes: ["AAAPP"]
+openerHash: ["AAAPP"]
 shifts: ["auqco"]
 state: {
   "boardState": [

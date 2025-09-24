@@ -8,7 +8,7 @@ openers: ["plank"]
 middlers: ["noise","snoop","sworn","scorn"]
 puzzles: [698]
 hashes: ["AAAPAPPAPACPCAACACCCCACCCCCCCC"]
-firsthashes: ["AAAPA"]
+openerHash: ["AAAPA"]
 shifts: ["yowax"]
 state: {
   "boardState": [

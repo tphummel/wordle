@@ -6,7 +6,7 @@ contests: ["2022-10-metal"]
 words: ["metal","bread","cheap","sneak"]
 puzzles: [496]
 hashes: ["APACAAACCAAACCACCCCCXXXXXXXXXX"]
-firsthashes: ["APACA"]
+openerHash: ["APACA"]
 shifts: ["yumju"]
 state: {
   "boardState": [

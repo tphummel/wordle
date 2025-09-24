@@ -9,7 +9,7 @@ openers: ["squid"]
 middlers: ["flash","askew","caste","paste"]
 puzzles: [733]
 hashes: ["PAAAAAAPPAPPAPAACCCCACCCCCCCCC"]
-firsthashes: ["PAAAA"]
+openerHash: ["PAAAA"]
 shifts: ["zhaco"]
 state: {
   "boardState": [

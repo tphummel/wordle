@@ -5,7 +5,7 @@ tags: []
 words: ["amuse","acres","askew","ashen","asset"]
 puzzles: [341]
 hashes: ["CAAPPCAACPCCACACCACACCCCCXXXXX"]
-firsthashes: ["CAAPP"]
+openerHash: ["CAAPP"]
 shifts: ["gzand"]
 state: {
   "boardState": [

@@ -9,7 +9,7 @@ openers: ["ratio"]
 middlers: ["touch"]
 puzzles: [1514]
 hashes: ["AAPAPPCCACCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AAPAP"]
+openerHash: ["AAPAP"]
 shifts: ["yvccr"]
 state: {
   "puzzleDate": "2025-08-11",

@@ -9,7 +9,7 @@ openers: ["psych"]
 middlers: ["fleck","black"]
 puzzles: [950]
 hashes: ["AAACAACACCCCACCCCCCCXXXXXXXXXX"]
-firsthashes: ["AAACA"]
+openerHash: ["AAACA"]
 shifts: ["hswlu"]
 state: {
   "boardState": [

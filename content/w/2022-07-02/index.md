@@ -5,7 +5,7 @@ tags: []
 words: ["track","storm","liter","egret"]
 puzzles: [378]
 hashes: ["PPAAAAPAPAAAPCPCCCCCXXXXXXXXXX"]
-firsthashes: ["PPAAA"]
+openerHash: ["PPAAA"]
 shifts: ["knznd"]
 state: {
   "boardState": [

@@ -8,7 +8,7 @@ openers: ["orate"]
 middlers: ["misty","filth","width"]
 puzzles: [597]
 hashes: ["AAACAACACAACACCACACCCCCCCXXXXX"]
-firsthashes: ["AAACA"]
+openerHash: ["AAACA"]
 shifts: ["tpvcr"]
 state: {
   "boardState": [

@@ -9,7 +9,7 @@ openers: ["ounce"]
 middlers: ["roast","troop"]
 puzzles: [888]
 hashes: ["PAAAAPPAAPCPACACCCCCXXXXXXXXXX"]
-firsthashes: ["PAAAA"]
+openerHash: ["PAAAA"]
 shifts: ["zozxg"]
 state: {
   "boardState": [

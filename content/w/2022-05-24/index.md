@@ -5,7 +5,7 @@ tags: []
 words: ["amuse","album"]
 puzzles: [339]
 hashes: ["CPPAACCCCCXXXXXXXXXXXXXXXXXXXX"]
-firsthashes: ["CPPAA"]
+openerHash: ["CPPAA"]
 shifts: ["gsjdw"]
 state: {
   "boardState": [

@@ -9,7 +9,7 @@ openers: ["great"]
 middlers: ["reach","snare"]
 puzzles: [1116]
 hashes: ["APPPAPPCAAAACCCCCCCCXXXXXXXXXX"]
-firsthashes: ["APPPA"]
+openerHash: ["APPPA"]
 shifts: ["hsiao"]
 state: {
   "puzzleDate": "2024-07-09",

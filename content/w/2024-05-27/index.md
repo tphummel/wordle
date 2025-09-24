@@ -9,7 +9,7 @@ openers: ["often"]
 middlers: ["wheel","cried","brier"]
 puzzles: [1073]
 hashes: ["AAACAAAACAAPCCAAACCCCCCCCXXXXX"]
-firsthashes: ["AAACA"]
+openerHash: ["AAACA"]
 shifts: ["yrqnb"]
 state: {
   "puzzleDate": "2024-05-27",

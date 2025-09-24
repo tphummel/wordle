@@ -9,7 +9,7 @@ openers: ["blimp"]
 middlers: ["crisp"]
 puzzles: [1542]
 hashes: ["AACACCPCACCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["AACAC"]
+openerHash: ["AACAC"]
 shifts: ["ioqaz"]
 state: {
   "puzzleDate": "2025-09-08",

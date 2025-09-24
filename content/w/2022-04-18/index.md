@@ -5,7 +5,7 @@ tags: []
 words: ["eight","drain","flair"]
 puzzles: [303]
 hashes: ["APAAAAPCCACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["APAAA"]
+openerHash: ["APAAA"]
 shifts: ["lsirb"]
 state: {
   "boardState": [

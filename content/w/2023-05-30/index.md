@@ -8,7 +8,7 @@ openers: ["mouse"]
 middlers: ["great","blend"]
 puzzles: [710]
 hashes: ["AAAAPAACAAAPCPACCCCCXXXXXXXXXX"]
-firsthashes: ["AAAAP"]
+openerHash: ["AAAAP"]
 shifts: ["qumnv"]
 state: {
   "boardState": [

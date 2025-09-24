@@ -9,7 +9,7 @@ openers: ["cloud"]
 middlers: ["fried","grand"]
 puzzles: [1483]
 hashes: ["AAAACACAACACCCCCCCCCXXXXXXXXXX"]
-firsthashes: ["AAAAC"]
+openerHash: ["AAAAC"]
 shifts: ["hyiwn"]
 state: {
   "puzzleDate": "2025-07-11",

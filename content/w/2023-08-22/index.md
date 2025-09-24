@@ -9,7 +9,7 @@ openers: ["later"]
 middlers: ["geese","spine","spike"]
 puzzles: [794]
 hashes: ["AAAPAAAAPCCCCACCCCACCCCCCXXXXX"]
-firsthashes: ["AAAPA"]
+openerHash: ["AAAPA"]
 shifts: ["ywqlo"]
 state: {
   "boardState": [

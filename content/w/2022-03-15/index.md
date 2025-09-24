@@ -63,7 +63,7 @@ stats:
 puzzles:
   - 269
 hashes: ["APPPAPACACACCCCCCCCCXXXXXXXXXX"]
-firsthashes: ["APPPA"]
+openerHash: ["APPPA"]
 shifts: ["zlibo"]
 aliases:
   - /w/269/

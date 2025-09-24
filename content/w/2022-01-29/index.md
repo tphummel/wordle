@@ -50,7 +50,7 @@ stats: {}
 puzzles:
   - 224
 hashes: ["AAAAAAAPACACCCCCCCCCXXXXXXXXXX"]
-firsthashes: ["AAAAA"]
+openerHash: ["AAAAA"]
 shifts: ["ivcun"]
 aliases:
   - /w/224/

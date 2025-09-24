@@ -9,7 +9,7 @@ openers: ["weird"]
 middlers: ["swath","clown"]
 puzzles: [1242]
 hashes: ["PAAAAAPAAAACCCCCCCCCXXXXXXXXXX"]
-firsthashes: ["PAAAA"]
+openerHash: ["PAAAA"]
 shifts: ["lswfx"]
 state: {
   "puzzleDate": "2024-11-12",

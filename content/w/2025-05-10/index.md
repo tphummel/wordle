@@ -9,7 +9,7 @@ openers: ["guide"]
 middlers: ["cheap","least","feast","beast"]
 puzzles: [1421]
 hashes: ["AAAAPAAPPAACCCCACCCCACCCCCCCCC"]
-firsthashes: ["AAAAP"]
+openerHash: ["AAAAP"]
 shifts: ["elibd"]
 state: {
   "puzzleDate": "2025-05-10",

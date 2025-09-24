@@ -9,7 +9,7 @@ openers: ["chime"]
 middlers: ["comer"]
 puzzles: [1344]
 hashes: ["CAAPPCAPPPCCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["CAAPP"]
+openerHash: ["CAAPP"]
 shifts: ["iymjw"]
 state: {
   "puzzleDate": "2025-02-22",

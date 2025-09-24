@@ -9,7 +9,7 @@ openers: ["steam"]
 middlers: ["evoke","hoove"]
 puzzles: [1105]
 hashes: ["AAPAAAPCACAACCCCCCCCXXXXXXXXXX"]
-firsthashes: ["AAPAA"]
+openerHash: ["AAPAA"]
 shifts: ["jyweo"]
 state: {
   "puzzleDate": "2024-06-28",

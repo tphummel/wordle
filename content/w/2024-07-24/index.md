@@ -9,7 +9,7 @@ openers: ["story"]
 middlers: ["torch"]
 puzzles: [1131]
 hashes: ["APPPAPCCAACCCCCXXXXXXXXXXXXXXX"]
-firsthashes: ["APPPA"]
+openerHash: ["APPPA"]
 shifts: ["lvzco"]
 state: {
   "puzzleDate": "2024-07-24",

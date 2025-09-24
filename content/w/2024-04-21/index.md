@@ -9,7 +9,7 @@ openers: ["style"]
 middlers: ["rally","dolly","golly","folly"]
 puzzles: [1037]
 hashes: ["AAPCAAACCCACCCCACCCCACCCCACCCC"]
-firsthashes: ["AAPCA"]
+openerHash: ["AAPCA"]
 shifts: ["rvtui"]
 state: {
   "boardState": [

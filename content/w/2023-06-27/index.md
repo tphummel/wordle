@@ -9,7 +9,7 @@ openers: ["squid"]
 middlers: ["ultra","bantu"]
 puzzles: [738]
 hashes: ["AAPAAPAPAPPPAPPCCCCCXXXXXXXXXX"]
-firsthashes: ["AAPAA"]
+openerHash: ["AAPAA"]
 shifts: ["giwdd"]
 state: {
   "boardState": [
