@@ -8,16 +8,19 @@
 {{ end }}
 
 <h2>List</h2>
+
+{{ $alphabetical := .Data.Terms.Alphabetical }}
+{{ $completed := len $alphabetical }}
+<p>Completed {{ $completed }} of 243 opener hash combinations.</p>
+
 <table>
   <tr>
-    <td>First Guess</td>
-    <td>Hash</td>
+    <td>Emoji</td>
     <td>Count</td>
     <td>First Played</td>
     <td>Last Played</td>
   </tr>
 
-  {{ $alphabetical := .Data.Terms.Alphabetical }}
   {{ $ordered := sort $alphabetical "Count" "desc" }}
 
   {{ range $term := $ordered }}
@@ -29,7 +32,6 @@
     {{ with $.Site.GetPage (printf "/%s/%s" "openerhashes" $name) }}
     <tr>
       <td><a href="{{ .RelPermalink }}" title="{{ $name }}">{{ partialCached "first-guess-emoji.html" $first $first.File.Path }}</a></td>
-      <td><a href="{{ .RelPermalink }}">{{ $name }}</a></td>
       <td>{{ $count }}</td>
       <td><a href="{{ $first.RelPermalink}}">{{ $first.Date.Format "Jan 2, 2006" }}</a></td>
       <td>{{ if gt $count 1 }}<a href="{{ $last.RelPermalink}}">{{ $last.Date.Format "Jan 2, 2006" }}</a>{{ else }}--{{ end }}</td>
