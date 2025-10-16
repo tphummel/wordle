@@ -9,6 +9,7 @@ openers: ["scour"]
 middlers: ["drone","groan","groin"]
 puzzles: [1428]
 hashes: ["AACAPACCPACCCACCCCACCCCCCXXXXX"]
+openerHashes: ["AACAP"]
 shifts: ["mywfx"]
 state: {
   "puzzleDate": "2025-05-17",
