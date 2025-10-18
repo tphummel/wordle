@@ -18,6 +18,7 @@ total_guesses {{ $total_guesses}}
 {{ with .Site.GetPage "/openerhashes" }}total_opener_hashes_played {{ len .Pages }}{{ end }}
 {{ with .Site.GetPage "/shifts" }}total_puzzle_solutions_played {{ len .Pages }}{{ end }}
 total_distinct_words_guessed {{ len .Site.Taxonomies.words }}
+total_rarities_dive_and_saves {{ len (partialCached "dive-and-saves.html" $wordles "dive-and-saves") }}
 total_rarities_homogenous_guesses_only {{ len (partialCached "homo-guesses-only" $wordles "homo") }}
 total_rarities_opener_misses {{ len (partialCached "opener-misses" $wordles "opener-misses") }}
 total_rarities_opener_double_miss {{ len (partialCached "opener-double-misses" $wordles) }}
