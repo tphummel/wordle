@@ -1,0 +1,30 @@
+{{ $found := slice }}
+
+{{ range . }}
+  {{ $guessCount := partialCached "guess-count" . .File.Path }}
+  {{ if and (eq .Params.state.gameStatus "WIN") (eq $guessCount 6) }}
+    {{ $lastGuessIndex := sub $guessCount 1 }}
+    {{ $beforeScore := 0 }}
+
+    {{ if gt $lastGuessIndex 0 }}
+      {{ with (index .Params.state.evaluations (sub $lastGuessIndex 1)) }}
+        {{ range . }}
+          {{- if eq . "correct" -}}
+            {{ $beforeScore = add $beforeScore 0 }}
+          {{- else if eq . "present" -}}
+            {{ $beforeScore = add $beforeScore 1 }}
+          {{- else if eq . "absent" -}}
+            {{ $beforeScore = add $beforeScore 2 }}
+          {{- end -}}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    {{ if ge $beforeScore 4 }}
+      {{ $progressPoints := $beforeScore }}
+      {{ $found = $found | append (slice (dict "date" .Date "puzzle" . "progressPoints" $progressPoints)) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ return $found }}
