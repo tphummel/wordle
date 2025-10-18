@@ -138,7 +138,16 @@
     <th>Pct of Total</th>
   </tr>
 
+{{ $diveAndSaves := partialCached "dive-and-saves.html" $wordles "dive-and-saves" }}
 {{ $homoGuessesOnly := partial "homo-guesses-only" $wordles }}
+{{ with .Site.GetPage "dive-and-saves.md" }}
+  <tr>
+    <td><a href="{{ .RelPermalink }}">Dive and Saves</a></td>
+    <td>
+      {{ (mul (div (float (len $diveAndSaves)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $diveAndSaves }}</a> / {{ len $wordles }})
+    </td>
+  </tr>
+{{ end }}
 {{ with .Site.GetPage "homogenous-guesses-only.md" }}
   <tr>
     <td><a href="{{ .RelPermalink }}">Homogenous Guesses Only</a></td>
