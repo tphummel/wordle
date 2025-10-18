@@ -6,10 +6,12 @@ Definition: Puzzles solved on the sixth (and final) guess that required at least
 
 {{< om.inline >}}
   {{ $wordles := where .Site.RegularPages "Section" "w" }}
-  {{ $found := partial "dive-and-saves.html" $wordles }}
+  {{ $found := partialCached "dive-and-saves.html" $wordles }}
+
+  <p>Puzzle Count: <strong>{{ len $found }}</strong></p>
+  <p>Pct of Total: <strong>{{ (mul (div (float (len $found)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% ({{ len $found }} / {{ len $wordles }})</strong></p>
 
   {{ if gt (len $found) 0 }}
-    <p>Pct of Total: <strong>{{ (mul (div (float (len $found)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% ({{ len $found }} / {{ len $wordles }})</strong></p>
 
     {{ $example := (index (sort $found "date" "desc") 0).puzzle }}
     <p>Recent Example: <a href="{{ $example.RelPermalink }}">Wordle {{ index $example.Params.puzzles 0 }} / {{ dateFormat "Jan 2, 2006" $example.Date }}</a></p>

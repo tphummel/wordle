@@ -4,9 +4,11 @@
   {{ $guessCount := partialCached "guess-count" . .File.Path }}
   {{ if and (eq .Params.state.gameStatus "WIN") (eq $guessCount 6) }}
     {{ $lastGuessIndex := sub $guessCount 1 }}
-    {{ $beforeScore := 0 }}
 
     {{ if gt $lastGuessIndex 0 }}
+      {{ $beforeScore := 0 }}
+      {{ $afterScore := 0 }}
+
       {{ with (index .Params.state.evaluations (sub $lastGuessIndex 1)) }}
         {{ range . }}
           {{- if eq . "correct" -}}
@@ -18,11 +20,24 @@
           {{- end -}}
         {{ end }}
       {{ end }}
-    {{ end }}
 
-    {{ if ge $beforeScore 4 }}
-      {{ $progressPoints := $beforeScore }}
-      {{ $found = $found | append (slice (dict "date" .Date "puzzle" . "progressPoints" $progressPoints)) }}
+      {{ with (index .Params.state.evaluations $lastGuessIndex) }}
+        {{ range . }}
+          {{- if eq . "correct" -}}
+            {{ $afterScore = add $afterScore 0 }}
+          {{- else if eq . "present" -}}
+            {{ $afterScore = add $afterScore 1 }}
+          {{- else if eq . "absent" -}}
+            {{ $afterScore = add $afterScore 2 }}
+          {{- end -}}
+        {{ end }}
+      {{ end }}
+
+      {{ $progressPoints := sub $beforeScore $afterScore }}
+
+      {{ if ge $progressPoints 4 }}
+        {{ $found = $found | append (slice (dict "date" .Date "puzzle" . "progressPoints" $progressPoints)) }}
+      {{ end }}
     {{ end }}
   {{ end }}
 {{ end }}
