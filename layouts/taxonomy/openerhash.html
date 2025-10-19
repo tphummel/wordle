@@ -23,7 +23,6 @@
     <td>Date</td>
     <td>Puzzle</td>
     <td>First Guess</td>
-    <td>Turns</td>
     <td>Score</td>
   </tr>
 
@@ -40,7 +39,6 @@
       <td>
         <a href="{{ .RelPermalink }}">{{ if $firstGuessWord }}{{ $firstGuessWord }}{{ else }}--{{ end }}</a>
       </td>
-      <td><a href="{{ .RelPermalink }}">{{ partialCached "guess-count.html" . .File.Path }}{{- cond (eq .Params.state.hardMode true) "*" "" -}}</a></td>
       <td><a href="{{ .RelPermalink }}">{{ partialCached "puzzle-score.html" . .File.Path }}</a></td>
     </tr>
 
