@@ -26,7 +26,6 @@ Definition: Puzzles solved on the sixth (and final) guess that required at least
       <tr>
         <th>Date</th>
         <th>Puzzle</th>
-        <th>Turns</th>
         <th>Score</th>
         <th>Progress Points</th>
         <th>Grid</th>
@@ -36,7 +35,6 @@ Definition: Puzzles solved on the sixth (and final) guess that required at least
         <tr>
           <td><a href="{{ .puzzle.RelPermalink }}">{{ dateFormat "Jan 2, 2006" .date }}</a></td>
           <td><a href="{{ .puzzle.RelPermalink }}">{{ index .puzzle.Params.puzzles 0 }}</td>
-          <td><a href="{{ .puzzle.RelPermalink }}">{{ partialCached "guess-count.html" .puzzle .puzzle.File.Path }}{{- cond (eq .puzzle.Params.state.hardMode true) "*" "" -}}</a></td>
           <td><a href="{{ .puzzle.RelPermalink }}">{{ partialCached "puzzle-score.html" .puzzle .puzzle.File.Path }}</a></td>
           <td>{{ .progressPoints }}</td>
           <td>{{ partialCached "emoji-grid" .puzzle .puzzle.File.Path }}</td>

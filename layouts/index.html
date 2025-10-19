@@ -58,7 +58,6 @@
   <tr>
     <th>Date</th>
     <th>Puzzle</th>
-    <th>Turns</th>
     <th>Score</th>
   </tr>
 
@@ -66,7 +65,6 @@
     <tr>
       <td><a href="{{ .RelPermalink }}">{{ .Date.Format "Jan 2, 2006" }}</a></td>
       <td><a href="{{ .RelPermalink }}">{{ index .Params.puzzles 0 }}</a></td>
-      <td><a href="{{ .RelPermalink }}">{{ partialCached "guess-count.html" . .File.Path }}{{- cond (eq .Params.state.hardMode true) "*" "" -}}</a></td>
       <td><a href="{{ .RelPermalink }}">{{ partialCached "puzzle-score.html" . .File.Path }}</a></td>
     </tr>
 
@@ -295,7 +293,6 @@
   <tr>
     <th>Date</th>
     <th>Puzzle</th>
-    <th>Turns</th>
     <th>Score</th>
   </tr>
 
@@ -303,7 +300,6 @@
     <tr>
       <td><a href="{{ .page.RelPermalink }}">{{ .page.Date.Format "Jan 2, 2006" }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ index .page.Params.puzzles 0 }}</a></td>
-      <td><a href="{{ .page.RelPermalink }}">{{ partialCached "guess-count.html" .page .page.File.Path }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ .score }}</a></td>
     </tr>
   {{ end }}
@@ -314,7 +310,6 @@
   <tr>
     <th>Date</th>
     <th>Puzzle</th>
-    <th>Turns</th>
     <th>Score</th>
   </tr>
 
@@ -322,7 +317,6 @@
     <tr>
       <td><a href="{{ .page.RelPermalink }}">{{ .page.Date.Format "Jan 2, 2006" }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ index .page.Params.puzzles 0 }}</a></td>
-      <td><a href="{{ .page.RelPermalink }}">{{ partialCached "guess-count.html" .page .page.File.Path }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ .score }}</a></td>
     </tr>
   {{ end }}
@@ -513,7 +507,6 @@
     <th>Date</th>
     <th>Puzzle</th>
     <th>Tiles</th>
-    <th>Turns</th>
     <th>Score</th>
   </tr>
 
@@ -522,7 +515,6 @@
       <td><a href="{{ .page.RelPermalink }}">{{ .page.Date.Format "Jan 2, 2006" }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ index .page.Params.puzzles 0 }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ .blackTiles }}</a></td>
-      <td><a href="{{ .page.RelPermalink }}">{{ partialCached "guess-count.html" .page .page.File.Path }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ partialCached "puzzle-score" .page .page.File.Path }}</a></td>
     </tr>
   {{ end }}
@@ -534,7 +526,6 @@
     <th>Date</th>
     <th>Puzzle</th>
     <th>Tiles</th>
-    <th>Turns</th>
     <th>Score</th>
   </tr>
 
@@ -543,7 +534,6 @@
       <td><a href="{{ .page.RelPermalink }}">{{ .page.Date.Format "Jan 2, 2006" }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ index .page.Params.puzzles 0 }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ .yellowTiles }}</a></td>
-      <td><a href="{{ .page.RelPermalink }}">{{ partialCached "guess-count.html" .page .page.File.Path }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ partialCached "puzzle-score" .page .page.File.Path }}</a></td>
     </tr>
   {{ end }}
@@ -555,7 +545,6 @@
     <th>Date</th>
     <th>Puzzle</th>
     <th>Tiles</th>
-    <th>Turns</th>
     <th>Score</th>
   </tr>
 
@@ -564,7 +553,6 @@
       <td><a href="{{ .page.RelPermalink }}">{{ .page.Date.Format "Jan 2, 2006" }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ index .page.Params.puzzles 0 }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ .greenTiles }}</a></td>
-      <td><a href="{{ .page.RelPermalink }}">{{ partialCached "guess-count.html" .page .page.File.Path }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ partialCached "puzzle-score" .page .page.File.Path }}</a></td>
     </tr>
   {{ end }}
