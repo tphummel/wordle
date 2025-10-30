@@ -1,3 +1,4 @@
+{{ $result := false }}
 {{ $guessCount := partialCached "guess-count" . .File.Path }}
 
 {{ if and (eq .Params.state.gameStatus "WIN") (or (eq $guessCount 5) (eq $guessCount 6)) }}
@@ -128,9 +129,9 @@
       {{ end }}
 
       {{ if $isStairstep }}
-        {{ return (dict "direction" $direction) }}
+        {{ $result = dict "direction" $direction }}
       {{ end }}
     {{ end }}
   {{ end }}
 {{ end }}
-{{ return false }}
+{{ return $result }}
