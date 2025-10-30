@@ -106,6 +106,10 @@
       {{ $achievements = $achievements | append (slice $achievement) }}
     {{ end }}
   {{ end }}
+  {{ with (partialCached "stairstep" . .File.Path) }}
+    {{ $achievement := dict "badge" "🪜" "report" "stairstep.md" "title" "Stairstep" }}
+    {{ $achievements = $achievements | append (slice $achievement) }}
+  {{ end }}
 
 {{ with $achievements }}
   <p>🏆 Achievements</p>

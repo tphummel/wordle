@@ -277,6 +277,20 @@
       </td>
     </tr>
   {{ end }}
+  {{ with .Site.GetPage "stairstep.md" }}
+    {{ $stairstep := slice }}
+    {{ range $wordles }}
+      {{ if partialCached "stairstep.html" . .File.Path }}
+        {{ $stairstep = $stairstep | append . }}
+      {{ end }}
+    {{ end }}
+    <tr>
+      <td><a href="{{ .RelPermalink }}">Stairstep</a></td>
+      <td>
+        {{ (mul (div (float (len $stairstep)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $stairstep }}</a> / {{ len $wordles }})
+      </td>
+    </tr>
+  {{ end }}
   </table>
 
 {{ with .Site.GetPage "collections.md" }}
