@@ -1,0 +1,144 @@
+{{ $found := slice }}
+
+{{ range . }}
+  {{ $wordleDate := .Date }}
+  {{ $wordle := . }}
+
+  {{ $guessCount := partialCached "guess-count" . .File.Path }}
+
+  {{ if and (eq .Params.state.gameStatus "WIN") (or (eq $guessCount 5) (eq $guessCount 6)) }}
+
+    {{ $presentLetters := 0 }}
+    {{ range $guess := .Params.state.evaluations }}
+      {{ range $e := $guess }}
+        {{ if eq "present" $e }}
+          {{ $presentLetters = add $presentLetters 1 }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    {{ if eq $presentLetters 0 }}
+
+      {{ $firstGuess := index .Params.state.evaluations 0 }}
+      {{ $firstCorrect := 0 }}
+      {{ range $i, $e := $firstGuess }}
+        {{ if eq "correct" $e }}
+          {{ $firstCorrect = add $firstCorrect 1 }}
+        {{ end }}
+      {{ end }}
+
+      {{ $validOpener := false }}
+      {{ $startingGreens := 0 }}
+      {{ $direction := "" }}
+
+      {{ if eq $firstCorrect 0 }}
+        {{ $validOpener = true }}
+        {{ $startingGreens = 0 }}
+      {{ else if eq $firstCorrect 1 }}
+        {{ if eq (index $firstGuess 0) "correct" }}
+          {{ $validOpener = true }}
+          {{ $startingGreens = 1 }}
+          {{ $direction = "left" }}
+        {{ else if eq (index $firstGuess 4) "correct" }}
+          {{ $validOpener = true }}
+          {{ $startingGreens = 1 }}
+          {{ $direction = "right" }}
+        {{ end }}
+      {{ end }}
+
+      {{ if $validOpener }}
+        {{ $isStairstep := true }}
+
+        {{ if eq $startingGreens 0 }}
+          {{ range $guessNum := (seq 1 (sub $guessCount 1)) }}
+            {{ $guess := index $.Params.state.evaluations $guessNum }}
+            {{ $correctCount := 0 }}
+            {{ $leftmost := 5 }}
+            {{ $rightmost := -1 }}
+
+            {{ range $pos, $e := $guess }}
+              {{ if eq "correct" $e }}
+                {{ $correctCount = add $correctCount 1 }}
+                {{ if lt $pos $leftmost }}{{ $leftmost = $pos }}{{ end }}
+                {{ if gt $pos $rightmost }}{{ $rightmost = $pos }}{{ end }}
+              {{ end }}
+            {{ end }}
+
+            {{ $expectedCount := add $guessNum 1 }}
+            {{ if lt $guessNum (sub $guessCount 1) }}
+              {{ if ne $correctCount $expectedCount }}
+                {{ $isStairstep = false }}
+              {{ else }}
+                {{ if ne (add (sub $rightmost $leftmost) 1) $correctCount }}
+                  {{ $isStairstep = false }}
+                {{ else }}
+                  {{ if eq $guessNum 1 }}
+                    {{ if eq $leftmost 0 }}
+                      {{ $direction = "left" }}
+                    {{ else if eq $rightmost 4 }}
+                      {{ $direction = "right" }}
+                    {{ else }}
+                      {{ $isStairstep = false }}
+                    {{ end }}
+                  {{ else }}
+                    {{ if eq $direction "left" }}
+                      {{ if ne $leftmost 0 }}
+                        {{ $isStairstep = false }}
+                      {{ end }}
+                    {{ else if eq $direction "right" }}
+                      {{ if ne $rightmost 4 }}
+                        {{ $isStairstep = false }}
+                      {{ end }}
+                    {{ end }}
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ else }}
+          {{ range $guessNum := (seq 1 (sub $guessCount 1)) }}
+            {{ $guess := index $.Params.state.evaluations $guessNum }}
+            {{ $correctCount := 0 }}
+            {{ $leftmost := 5 }}
+            {{ $rightmost := -1 }}
+
+            {{ range $pos, $e := $guess }}
+              {{ if eq "correct" $e }}
+                {{ $correctCount = add $correctCount 1 }}
+                {{ if lt $pos $leftmost }}{{ $leftmost = $pos }}{{ end }}
+                {{ if gt $pos $rightmost }}{{ $rightmost = $pos }}{{ end }}
+              {{ end }}
+            {{ end }}
+
+            {{ $expectedCount := add $startingGreens (add $guessNum 1) }}
+            {{ if lt $guessNum (sub $guessCount 1) }}
+              {{ if ne $correctCount $expectedCount }}
+                {{ $isStairstep = false }}
+              {{ else }}
+                {{ if ne (add (sub $rightmost $leftmost) 1) $correctCount }}
+                  {{ $isStairstep = false }}
+                {{ else }}
+                  {{ if eq $direction "left" }}
+                    {{ if ne $leftmost 0 }}
+                      {{ $isStairstep = false }}
+                    {{ end }}
+                  {{ else if eq $direction "right" }}
+                    {{ if ne $rightmost 4 }}
+                      {{ $isStairstep = false }}
+                    {{ end }}
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+
+        {{ if $isStairstep }}
+          {{ $found = $found | append (slice (dict "date" $wordleDate "puzzle" $wordle "direction" $direction)) }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ return $found }}
