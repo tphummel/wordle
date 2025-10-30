@@ -64,7 +64,7 @@
               {{ end }}
             {{ end }}
 
-            {{ $expectedCount := add $guessNum 1 }}
+            {{ $expectedCount := $guessNum }}
             {{ if lt $guessNum (sub $guessCount 1) }}
               {{ if ne $correctCount $expectedCount }}
                 {{ $isStairstep = false }}
@@ -110,7 +110,7 @@
               {{ end }}
             {{ end }}
 
-            {{ $expectedCount := add $startingGreens (add $guessNum 1) }}
+            {{ $expectedCount := add $startingGreens $guessNum }}
             {{ if lt $guessNum (sub $guessCount 1) }}
               {{ if ne $correctCount $expectedCount }}
                 {{ $isStairstep = false }}
