@@ -51,7 +51,7 @@
 
         {{ if eq $startingGreens 0 }}
           {{ range $guessNum := (seq 1 (sub $guessCount 1)) }}
-            {{ $guess := index $.Params.state.evaluations $guessNum }}
+            {{ $guess := index $wordle.Params.state.evaluations $guessNum }}
             {{ $correctCount := 0 }}
             {{ $leftmost := 5 }}
             {{ $rightmost := -1 }}
@@ -97,7 +97,7 @@
           {{ end }}
         {{ else }}
           {{ range $guessNum := (seq 1 (sub $guessCount 1)) }}
-            {{ $guess := index $.Params.state.evaluations $guessNum }}
+            {{ $guess := index $wordle.Params.state.evaluations $guessNum }}
             {{ $correctCount := 0 }}
             {{ $leftmost := 5 }}
             {{ $rightmost := -1 }}
