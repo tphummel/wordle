@@ -278,7 +278,12 @@
     </tr>
   {{ end }}
   {{ with .Site.GetPage "stairstep.md" }}
-    {{ $stairstep := partial "stairstep.html" (where .Site.RegularPages "Section" "w") }}
+    {{ $stairstep := slice }}
+    {{ range $wordles }}
+      {{ if partialCached "stairstep.html" . .File.Path }}
+        {{ $stairstep = $stairstep | append . }}
+      {{ end }}
+    {{ end }}
     <tr>
       <td><a href="{{ .RelPermalink }}">Stairstep</a></td>
       <td>

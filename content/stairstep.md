@@ -7,7 +7,13 @@ Definition: Puzzles where each guess adds exactly one contiguous green tile, for
 {{< om.inline >}}
   {{ $wordles := where .Site.RegularPages "Section" "w" }}
 
-  {{ $found := partial "stairstep.html" $wordles }}
+  {{ $found := slice }}
+  {{ range $wordles }}
+    {{ $result := partialCached "stairstep.html" . .File.Path }}
+    {{ if $result }}
+      {{ $found = $found | append (slice (dict "date" .Date "puzzle" . "direction" $result.direction)) }}
+    {{ end }}
+  {{ end }}
 
   <p>Puzzle Count: <strong>{{ len $found }}</strong></p>
   <p>Pct of Total: <strong>{{ (mul (div (float (len $found)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% ({{ len $found }} / {{ len $wordles }})</strong></p>
