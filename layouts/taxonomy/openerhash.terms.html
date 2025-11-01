@@ -15,32 +15,8 @@
 
 <p>All 243 possible combinations in alphabetical order.</p>
 
-{{/* Create a map of existing hashes for quick lookup */}}
-{{ $hashMap := dict }}
-{{ range $term := $alphabetical }}
-  {{ $name := $term.Name }}
-  {{ $count := $term.Count }}
-  {{ $first := index (first 1 $term.Pages.ByDate) 0 }}
-  {{ $hashMap = merge $hashMap (dict $name (dict "count" $count "first" $first "term" $term)) }}
-{{ end }}
-
 {{/* Generate all 243 possible combinations */}}
 {{ $values := slice "A" "P" "C" }}
-{{ $allCombos := slice }}
-
-{{/* Generate all combinations using nested loops */}}
-{{ range $v5 := $values }}
-  {{ range $v4 := $values }}
-    {{ range $v3 := $values }}
-      {{ range $v2 := $values }}
-        {{ range $v1 := $values }}
-          {{ $combo := printf "%s%s%s%s%s" $v1 $v2 $v3 $v4 $v5 }}
-          {{ $allCombos = $allCombos | append $combo }}
-        {{ end }}
-      {{ end }}
-    {{ end }}
-  {{ end }}
-{{ end }}
 
 <table>
   <tr>
@@ -50,37 +26,57 @@
     <th>First Occurrence</th>
   </tr>
 
-  {{ range $combo := $allCombos }}
-    {{ $data := index $hashMap $combo }}
-    <tr>
-      <td>
-        {{ if $data }}
-          {{ with $.Site.GetPage (printf "/%s/%s" "openerhashes" $combo) }}
-            <a href="{{ .RelPermalink }}">{{ $combo }}</a>
+{{/* Generate all combinations using nested loops */}}
+{{ range $v5 := $values }}
+  {{ range $v4 := $values }}
+    {{ range $v3 := $values }}
+      {{ range $v2 := $values }}
+        {{ range $v1 := $values }}
+          {{ $combo := printf "%s%s%s%s%s" $v1 $v2 $v3 $v4 $v5 }}
+
+          {{/* Find matching term */}}
+          {{ $found := false }}
+          {{ $foundTerm := dict }}
+          {{ range $term := $alphabetical }}
+            {{ if eq $term.Name $combo }}
+              {{ $found = true }}
+              {{ $foundTerm = $term }}
+            {{ end }}
           {{ end }}
-        {{ else }}
-          {{ $combo }}
+
+          <tr>
+            <td>
+              {{ if $found }}
+                {{ with $.Site.GetPage (printf "/%s/%s" "openerhashes" $combo) }}
+                  <a href="{{ .RelPermalink }}">{{ $combo }}</a>
+                {{ end }}
+              {{ else }}
+                {{ $combo }}
+              {{ end }}
+            </td>
+            <td>
+              {{ if $found }}
+                {{ $firstPage := index (first 1 $foundTerm.Pages.ByDate) 0 }}
+                {{ partialCached "first-guess-emoji.html" $firstPage $firstPage.File.Path }}
+              {{ else }}
+                --
+              {{ end }}
+            </td>
+            <td>{{ if $found }}{{ $foundTerm.Count }}{{ else }}--{{ end }}</td>
+            <td>
+              {{ if $found }}
+                {{ $firstPage := index (first 1 $foundTerm.Pages.ByDate) 0 }}
+                <a href="{{ $firstPage.RelPermalink }}">{{ $firstPage.Date.Format "Jan 2, 2006" }}</a>
+              {{ else }}
+                --
+              {{ end }}
+            </td>
+          </tr>
         {{ end }}
-      </td>
-      <td>
-        {{ if $data }}
-          {{ $firstPage := $data.first }}
-          {{ partialCached "first-guess-emoji.html" $firstPage $firstPage.File.Path }}
-        {{ else }}
-          --
-        {{ end }}
-      </td>
-      <td>{{ if $data }}{{ $data.count }}{{ else }}--{{ end }}</td>
-      <td>
-        {{ if $data }}
-          {{ $firstPage := $data.first }}
-          <a href="{{ $firstPage.RelPermalink }}">{{ $firstPage.Date.Format "Jan 2, 2006" }}</a>
-        {{ else }}
-          --
-        {{ end }}
-      </td>
-    </tr>
+      {{ end }}
+    {{ end }}
   {{ end }}
+{{ end }}
 </table>
 
 <h2>Opener Hashes Played</h2>
