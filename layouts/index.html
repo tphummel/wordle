@@ -23,7 +23,12 @@
   <div>🧩 Puzzle Hashes Played: <strong><a href="{{ .RelPermalink }}">{{ len .Pages }}</a></strong></div>
 {{ end }}
 {{ with .Site.GetPage "/openerhashes" }}
-  <div>🧩 Opener Hashes Played: <strong><a href="{{ .RelPermalink }}">{{ len .Pages }}</a></strong></div>
+  <div>
+    🧩 Opener Hashes Played: <strong><a href="{{ .RelPermalink }}">{{ len .Pages }}</a></strong>
+    {{ with $.Site.GetPage "/openerhashes/checklist" }}
+      (<a href="{{ .RelPermalink }}">Checklist</a>)
+    {{ end }}
+  </div>
 {{ end }}
 {{ with .Site.GetPage "/shifts" }}
   <div>🧩 Puzzle Solutions Played: <strong><a href="{{ .RelPermalink }}">{{ len .Pages }}</a></strong></div>
