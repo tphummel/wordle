@@ -7,8 +7,6 @@ This report lists every possible opener hash combination so I can track which pa
 {{< openerhashes.inline >}}
   {{ $letters := slice "A" "P" "C" }}
   {{ $emojiMap := dict "A" "⬛️" "P" "🟨" "C" "🟩" }}
-  {{ $taxonomy := default (dict) .Site.Taxonomies.openerhashes }}
-
   <table>
     <tr>
       <th>Emoji</th>
@@ -23,21 +21,31 @@ This report lists every possible opener hash combination so I can track which pa
             {{ range $c1 := $letters }}
               {{ $hash := printf "%s%s%s%s%s" $c1 $c2 $c3 $c4 $c5 }}
               {{ $emoji := printf "%s%s%s%s%s" (index $emojiMap $c1) (index $emojiMap $c2) (index $emojiMap $c3) (index $emojiMap $c4) (index $emojiMap $c5) }}
-              {{ $pages := index $taxonomy $hash }}
+              {{ $term := $.Site.GetPage (printf "/openerhashes/%s" (lower $hash)) }}
               <tr>
                 <td>{{ $emoji }}</td>
                 <td>
-                  {{ with $.Site.GetPage (printf "/openerhashes/%s" $hash) }}
+                  {{ with $term }}
                     <a href="{{ .RelPermalink }}"><code>{{ $hash }}</code></a>
                   {{ else }}
                     <code>{{ $hash }}</code>
                   {{ end }}
                 </td>
-                <td>{{ if $pages }}{{ $pages.Count }}{{ else }}--{{ end }}</td>
                 <td>
-                  {{ with $pages }}
-                    {{ $first := index (first 1 (.Pages.ByDate)) 0 }}
-                    <a href="{{ $first.RelPermalink }}">{{ $first.Date.Format "Jan 2, 2006" }}</a>
+                  {{ with $term }}
+                    {{ len .Pages }}
+                  {{ else }}
+                    --
+                  {{ end }}
+                </td>
+                <td>
+                  {{ with $term }}
+                    {{ with first 1 (.Pages.ByDate) }}
+                      {{ $first := index . 0 }}
+                      <a href="{{ $first.RelPermalink }}">{{ $first.Date.Format "Jan 2, 2006" }}</a>
+                    {{ else }}
+                      --
+                    {{ end }}
                   {{ else }}
                     --
                   {{ end }}
