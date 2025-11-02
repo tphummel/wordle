@@ -28,7 +28,9 @@
     🧩 Opener Hashes Played: <strong><a href="{{ .RelPermalink }}">{{ len .Pages }}</a></strong>
     {{ with $.Site.GetPage "opener-hash-checklist.md" }}
       (<span class="opener-hash-checklist-link">
-        <input type="checkbox" disabled aria-label="Opener hash checklist progress" {{ if eq (len $openerHashesPage.Pages) 243 }}checked{{ end }} />
+        <span role="img" aria-label="{{ if eq (len $openerHashesPage.Pages) 243 }}Checklist complete{{ else }}Checklist incomplete{{ end }}">
+          {{ if eq (len $openerHashesPage.Pages) 243 }}☑️{{ else }}⬜️{{ end }}
+        </span>
         <a href="{{ .RelPermalink }}">Checklist</a>
       </span>)
     {{ end }}
