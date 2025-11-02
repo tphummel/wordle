@@ -19,3 +19,5 @@ Is encoded as this opener hash:
 ```
 AAPAA
 ```
+
+Want to see every possible combination? Check out the [Opener Hash Checklist](/openerhashes/checklist/).
