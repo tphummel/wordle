@@ -33,20 +33,12 @@
       {{ range $v2 := $values }}
         {{ range $v1 := $values }}
           {{ $combo := printf "%s%s%s%s%s" $v1 $v2 $v3 $v4 $v5 }}
-
-          {{/* Find matching term */}}
-          {{ $found := false }}
-          {{ $foundTerm := dict }}
-          {{ range $term := $alphabetical }}
-            {{ if eq $term.Name $combo }}
-              {{ $found = true }}
-              {{ $foundTerm = $term }}
-            {{ end }}
-          {{ end }}
+          {{ $matches := where $alphabetical "Name" $combo }}
+          {{ $matchCount := len $matches }}
 
           <tr>
             <td>
-              {{ if $found }}
+              {{ if gt $matchCount 0 }}
                 {{ with $.Site.GetPage (printf "/%s/%s" "openerhashes" $combo) }}
                   <a href="{{ .RelPermalink }}">{{ $combo }}</a>
                 {{ end }}
@@ -55,17 +47,26 @@
               {{ end }}
             </td>
             <td>
-              {{ if $found }}
-                {{ $firstPage := index (first 1 $foundTerm.Pages.ByDate) 0 }}
+              {{ if gt $matchCount 0 }}
+                {{ $match := index $matches 0 }}
+                {{ $firstPage := index (first 1 $match.Pages.ByDate) 0 }}
                 {{ partialCached "first-guess-emoji.html" $firstPage $firstPage.File.Path }}
               {{ else }}
                 --
               {{ end }}
             </td>
-            <td>{{ if $found }}{{ $foundTerm.Count }}{{ else }}--{{ end }}</td>
             <td>
-              {{ if $found }}
-                {{ $firstPage := index (first 1 $foundTerm.Pages.ByDate) 0 }}
+              {{ if gt $matchCount 0 }}
+                {{ $match := index $matches 0 }}
+                {{ $match.Count }}
+              {{ else }}
+                --
+              {{ end }}
+            </td>
+            <td>
+              {{ if gt $matchCount 0 }}
+                {{ $match := index $matches 0 }}
+                {{ $firstPage := index (first 1 $match.Pages.ByDate) 0 }}
                 <a href="{{ $firstPage.RelPermalink }}">{{ $firstPage.Date.Format "Jan 2, 2006" }}</a>
               {{ else }}
                 --
