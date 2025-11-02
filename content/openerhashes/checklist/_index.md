@@ -2,11 +2,40 @@
 title: Opener Hash Checklist
 ---
 
-This report lists every possible opener hash combination so I can track which patterns I've already seen. Use it alongside the [Opener Hashes Played](/openerhashes/) summary to spot any gaps.
-
 {{< openerhashes.inline >}}
   {{ $letters := slice "A" "P" "C" }}
   {{ $emojiMap := dict "A" "⬛️" "P" "🟨" "C" "🟩" }}
+  {{ $scratch := newScratch }}
+  {{ $scratch.Set "total" 0 }}
+  {{ $scratch.Set "completed" 0 }}
+  {{ $scratch.Set "percent" 0 }}
+
+  {{ range $c5 := $letters }}
+    {{ range $c4 := $letters }}
+      {{ range $c3 := $letters }}
+        {{ range $c2 := $letters }}
+          {{ range $c1 := $letters }}
+            {{ $hash := printf "%s%s%s%s%s" $c1 $c2 $c3 $c4 $c5 }}
+            {{ $term := $.Site.GetPage (printf "/openerhashes/%s" (lower $hash)) }}
+            {{ $scratch.Set "total" (add ($scratch.Get "total") 1) }}
+            {{ if $term }}
+              {{ $scratch.Set "completed" (add ($scratch.Get "completed") 1) }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ $total := $scratch.Get "total" }}
+  {{ $completed := $scratch.Get "completed" }}
+  {{ if gt $total 0 }}
+    {{ $scratch.Set "percent" (mul (div (float $completed) (float $total)) 100) }}
+  {{ end }}
+  {{ $percent := $scratch.Get "percent" }}
+
+  <p><strong>Checklist progress:</strong> {{ $completed }} / {{ $total }} ({{ printf "%.1f" $percent }}%)</p>
+
   <table>
     <tr>
       <th>Emoji</th>
