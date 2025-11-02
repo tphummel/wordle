@@ -14,6 +14,7 @@
 {{ $losses := where $wordles "Params.state.gameStatus" "FAIL"}}
 {{ $nyt_puzzle_count := 2309 }}
 {{ $nyt_valid_word_count := 10663 }}
+{{ $openerHashesPage := .Site.GetPage "/openerhashes" }}
 
 <div>🧩 Wordles Played: <strong><a href="{{ with .Site.GetPage "section" "w" }}{{ .RelPermalink }}{{ end }}">{{ len $wordles }}</a></strong></div>
 {{ with .Site.GetPage "/puzzles" }}
@@ -22,11 +23,14 @@
 {{ with .Site.GetPage "/hashes" }}
   <div>🧩 Puzzle Hashes Played: <strong><a href="{{ .RelPermalink }}">{{ len .Pages }}</a></strong></div>
 {{ end }}
-{{ with .Site.GetPage "/openerhashes" }}
+{{ with $openerHashesPage }}
   <div>
     🧩 Opener Hashes Played: <strong><a href="{{ .RelPermalink }}">{{ len .Pages }}</a></strong>
-    {{ with $.Site.GetPage "/openerhashes/checklist" }}
-      (<a href="{{ .RelPermalink }}">Checklist</a>)
+    {{ with $.Site.GetPage "opener-hash-checklist.md" }}
+      (<span class="opener-hash-checklist-link">
+        <input type="checkbox" disabled aria-label="Opener hash checklist progress" {{ if eq (len $openerHashesPage.Pages) 243 }}checked{{ end }} />
+        <a href="{{ .RelPermalink }}">Checklist</a>
+      </span>)
     {{ end }}
   </div>
 {{ end }}
