@@ -1,6 +1,52 @@
 ---
 title: Opener Hash Checklist
-layout: openerhash-checklist
 ---
 
 This report lists every possible opener hash combination so I can track which patterns I've already seen. Use it alongside the [Opener Hashes Played](/openerhashes/) summary to spot any gaps.
+
+{{< openerhashes.inline >}}
+  {{ $letters := slice "A" "P" "C" }}
+  {{ $emojiMap := dict "A" "⬛️" "P" "🟨" "C" "🟩" }}
+  {{ $taxonomy := default (dict) .Site.Taxonomies.openerhash }}
+
+  <table>
+    <tr>
+      <th>Emoji</th>
+      <th>Hash</th>
+      <th>Count</th>
+      <th>First Played</th>
+    </tr>
+    {{ range $c5 := $letters }}
+      {{ range $c4 := $letters }}
+        {{ range $c3 := $letters }}
+          {{ range $c2 := $letters }}
+            {{ range $c1 := $letters }}
+              {{ $hash := printf "%s%s%s%s%s" $c1 $c2 $c3 $c4 $c5 }}
+              {{ $emoji := printf "%s%s%s%s%s" (index $emojiMap $c1) (index $emojiMap $c2) (index $emojiMap $c3) (index $emojiMap $c4) (index $emojiMap $c5) }}
+              {{ $pages := index $taxonomy $hash }}
+              <tr>
+                <td>{{ $emoji }}</td>
+                <td>
+                  {{ with $.Site.GetPage (printf "/openerhashes/%s" $hash) }}
+                    <a href="{{ .RelPermalink }}"><code>{{ $hash }}</code></a>
+                  {{ else }}
+                    <code>{{ $hash }}</code>
+                  {{ end }}
+                </td>
+                <td>{{ if $pages }}{{ len $pages }}{{ else }}--{{ end }}</td>
+                <td>
+                  {{ with $pages }}
+                    {{ $first := index (first 1 (.ByDate)) 0 }}
+                    <a href="{{ $first.RelPermalink }}">{{ $first.Date.Format "Jan 2, 2006" }}</a>
+                  {{ else }}
+                    --
+                  {{ end }}
+                </td>
+              </tr>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  </table>
+{{< /openerhashes.inline >}}
