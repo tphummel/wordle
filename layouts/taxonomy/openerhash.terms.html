@@ -15,6 +15,16 @@
 
 <p>All 243 possible combinations in alphabetical order.</p>
 
+{{/* Debug: Show actual term names */}}
+<details>
+<summary>Debug: Actual Terms ({{ len $alphabetical }})</summary>
+<ul>
+{{ range $alphabetical }}
+  <li>{{ .Name }} (Count: {{ .Count }})</li>
+{{ end }}
+</ul>
+</details>
+
 {{/* Generate all 243 possible combinations */}}
 {{ $values := slice "A" "P" "C" }}
 
