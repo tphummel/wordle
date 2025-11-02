@@ -7,7 +7,7 @@ This report lists every possible opener hash combination so I can track which pa
 {{< openerhashes.inline >}}
   {{ $letters := slice "A" "P" "C" }}
   {{ $emojiMap := dict "A" "⬛️" "P" "🟨" "C" "🟩" }}
-  {{ $taxonomy := default (dict) .Site.Taxonomies.openerhash }}
+  {{ $taxonomy := default (dict) .Site.Taxonomies.openerhashes }}
 
   <table>
     <tr>
@@ -33,10 +33,10 @@ This report lists every possible opener hash combination so I can track which pa
                     <code>{{ $hash }}</code>
                   {{ end }}
                 </td>
-                <td>{{ if $pages }}{{ len $pages }}{{ else }}--{{ end }}</td>
+                <td>{{ if $pages }}{{ $pages.Count }}{{ else }}--{{ end }}</td>
                 <td>
                   {{ with $pages }}
-                    {{ $first := index (first 1 (.ByDate)) 0 }}
+                    {{ $first := index (first 1 (.Pages.ByDate)) 0 }}
                     <a href="{{ $first.RelPermalink }}">{{ $first.Date.Format "Jan 2, 2006" }}</a>
                   {{ else }}
                     --
