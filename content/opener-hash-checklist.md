@@ -1,5 +1,7 @@
 ---
 title: Opener Hash Checklist
+aliases:
+  - /openerhashes/checklist/
 ---
 
 {{< openerhashes.inline >}}
