@@ -69,6 +69,7 @@
     <th>Date</th>
     <th>Puzzle</th>
     <th>Score</th>
+    <th>Percentile</th>
   </tr>
 
   {{ range first 5 $wordles }}
@@ -76,6 +77,7 @@
       <td><a href="{{ .RelPermalink }}">{{ .Date.Format "Jan 2, 2006" }}</a></td>
       <td><a href="{{ .RelPermalink }}">{{ index .Params.puzzles 0 }}</a></td>
       <td><a href="{{ .RelPermalink }}">{{ partialCached "puzzle-score.html" . .File.Path }}</a></td>
+      <td><a href="{{ .RelPermalink }}">{{ (partialCached "puzzle-score-percentile.html" . .File.Path) | lang.FormatNumber 1 }}%</a></td>
     </tr>
 
   {{ end }}
