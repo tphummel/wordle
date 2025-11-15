@@ -7,11 +7,92 @@
 <div>{{ . }}</div>
 {{ end }}
 
-<h2>List</h2>
-
 {{ $alphabetical := .Data.Terms.Alphabetical }}
 {{ $completed := len $alphabetical }}
 <p>Completed {{ $completed }} of 243 opener hash combinations.</p>
+
+<h2>Opener Hash Checklist</h2>
+
+<p>All 243 possible combinations in alphabetical order.</p>
+
+{{/* Debug: Show actual term names */}}
+<details>
+<summary>Debug: Actual Terms ({{ len $alphabetical }})</summary>
+<ul>
+{{ range $alphabetical }}
+  <li>{{ .Name }} (Count: {{ .Count }})</li>
+{{ end }}
+</ul>
+</details>
+
+{{/* Generate all 243 possible combinations */}}
+{{ $values := slice "A" "P" "C" }}
+
+<table>
+  <tr>
+    <th>Hash</th>
+    <th>Emoji</th>
+    <th>Count</th>
+    <th>First Occurrence</th>
+  </tr>
+
+{{/* Generate all combinations using nested loops */}}
+{{ range $v5 := $values }}
+  {{ range $v4 := $values }}
+    {{ range $v3 := $values }}
+      {{ range $v2 := $values }}
+        {{ range $v1 := $values }}
+          {{ $combo := printf "%s%s%s%s%s" $v1 $v2 $v3 $v4 $v5 }}
+          {{ $matches := where $alphabetical "Name" $combo }}
+          {{ $matchCount := len $matches }}
+
+          <tr>
+            <td>
+              {{ if gt $matchCount 0 }}
+                {{ with $.Site.GetPage (printf "/%s/%s" "openerhashes" $combo) }}
+                  <a href="{{ .RelPermalink }}">{{ $combo }}</a>
+                {{ end }}
+              {{ else }}
+                {{ $combo }}
+              {{ end }}
+            </td>
+            <td>
+              {{ if gt $matchCount 0 }}
+                {{ $match := index $matches 0 }}
+                {{ $firstPage := index (first 1 $match.Pages.ByDate) 0 }}
+                {{ partialCached "first-guess-emoji.html" $firstPage $firstPage.File.Path }}
+              {{ else }}
+                --
+              {{ end }}
+            </td>
+            <td>
+              {{ if gt $matchCount 0 }}
+                {{ $match := index $matches 0 }}
+                {{ $match.Count }}
+              {{ else }}
+                --
+              {{ end }}
+            </td>
+            <td>
+              {{ if gt $matchCount 0 }}
+                {{ $match := index $matches 0 }}
+                {{ $firstPage := index (first 1 $match.Pages.ByDate) 0 }}
+                <a href="{{ $firstPage.RelPermalink }}">{{ $firstPage.Date.Format "Jan 2, 2006" }}</a>
+              {{ else }}
+                --
+              {{ end }}
+            </td>
+          </tr>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+</table>
+
+<h2>Opener Hashes Played</h2>
+
+<p>Ordered by count (most played first).</p>
 
 <table>
   <tr>
