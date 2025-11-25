@@ -60,6 +60,10 @@
   {{ $achievement := dict "badge" "🥈" "report" "opener-double-misses.md" "title" "Opener Double Miss" }}
   {{ $achievements = $achievements | append (slice $achievement) }}
 {{ end }}
+{{ with (partialCached "opener-triple-misses" $wordle .File.Path) }}
+  {{ $achievement := dict "badge" "🥉" "report" "opener-triple-misses.md" "title" "Opener Triple Miss" }}
+  {{ $achievements = $achievements | append (slice $achievement) }}
+{{ end }}
 {{ with (partialCached "anagrams" $wordle .File.Path) }}
   {{ $achievement := dict "badge" "🏅" "report" "anagrams.md" "title" "Anagram" }}
   {{ $achievements = $achievements | append (slice $achievement) }}

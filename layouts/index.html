@@ -185,6 +185,16 @@
   </tr>
 {{ end }}
 
+{{ $openerTripleMisses := partial "opener-triple-misses" $wordles }}
+{{ with .Site.GetPage "opener-triple-misses.md" }}
+  <tr>
+    <td><a href="{{ .RelPermalink }}">Opener Triple Misses</a></td>
+    <td>
+      {{ (mul (div (float (len $openerTripleMisses)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $openerTripleMisses }}</a> / {{ len $wordles }})
+    </td>
+  </tr>
+{{ end }}
+
 {{ $noYellow := partial "no-yellow-tiles.html" (where .Site.RegularPages "Section" "w") }}
 {{ with .Site.GetPage "no-yellow-tiles.md" }}
   <tr>
