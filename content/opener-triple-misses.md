@@ -1,18 +1,16 @@
 ---
-title: Opener Misses
+title: Opener Triple Misses
 ---
 
-Definition: Puzzles where all letters in my opening guess were absent, excluding puzzles where this happened on the first two guesses (see [opener double misses]({{< ref "opener-double-misses" >}})) or the first three guesses (see [opener triple misses]({{< ref "opener-triple-misses" >}})).
+Definition: Puzzles where all letters in my first three guesses were absent.
 
 {{< om.inline >}}
-
   {{ $wordles := where .Site.RegularPages "Section" "w" }}
-
-  {{ $found := partial "opener-misses" $wordles }}
+  {{ $found := partial "opener-triple-misses" $wordles }}
 
   <p>Pct of Total: <strong>{{ (mul (div (float (len $found)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% ({{ len $found }} / {{ len $wordles }})</strong></p>
 
-  {{ $example := (index $found 0).puzzle }}
+  {{ $example := (index (last 1 $found) 0).puzzle }}
   <p>Example: <a href="{{ $example.RelPermalink }}">Wordle {{ index $example.Params.puzzles 0 }} / {{ dateFormat "Jan 2, 2006" $example.Date }}</a></p>
 
   <p>{{ partialCached "emoji-grid" $example $example.File.Path }}</p>
@@ -36,5 +34,5 @@ Definition: Puzzles where all letters in my opening guess were absent, excluding
     {{ end }}
   </table>
 
-  <p>Count of puzzles with a missed opening guess: <strong>{{ len $found }}</strong></p>
+  <p>Count of puzzles with three consecutive missed opening guesses: <strong>{{ len $found }}</strong></p>
 {{< /om.inline >}}
