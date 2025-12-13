@@ -9,14 +9,18 @@ This is Tom's personal Wordle results tracking website built with Hugo. It proce
 ## Development Commands
 
 ### Hugo Site Management
-- `hugo` - Build the static site
-- `hugo server` - Start local development server with live reload
-- `hugo --templateMetrics` - Build with template performance metrics (used in CI)
+When running Hugo commands, use `asdf exec` to ensure the correct version is used:
+- `asdf exec hugo` - Build the static site
+- `asdf exec hugo server` - Start local development server with live reload
+- `asdf exec hugo --templateMetrics` - Build with template performance metrics (used in CI)
+
+Note: If asdf is properly configured in your shell (via `.bashrc` or `.zshrc`), the `asdf exec` prefix is not needed.
 
 ### Hugo Version Management
 The project uses asdf for tool version management:
 - Hugo version is pinned to `0.148.1` in `.tool-versions`
 - Run `./.tool-versions-setup.sh` to install the required Hugo version with asdf
+- When asdf is available but not initialized in the shell, prefix Hugo commands with `asdf exec`
 
 ### Testing
 - `node static/tools/enhance/enrich-emoji.test.js` - Run JavaScript tests for emoji enrichment functionality
