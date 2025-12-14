@@ -34,3 +34,6 @@ enableInlineShortcodes = true
 
 [outputs]
   home = ['html', 'p8s']
+  section = ['html']
+  taxonomy = ['html']
+  term = ['html']
