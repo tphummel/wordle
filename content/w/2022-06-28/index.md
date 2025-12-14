@@ -5,6 +5,7 @@ tags: []
 words: ["stamp","drone","droll"]
 puzzles: [374]
 hashes: ["AAAAACCCAACCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["AAAAA"]
 shifts: ["jywuv"]
 state: {
   "boardState": [

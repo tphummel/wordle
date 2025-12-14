@@ -9,6 +9,7 @@ openers: ["ingot"]
 middlers: ["pouch","close"]
 puzzles: [1343]
 hashes: ["AAAPAAPAPACCCACCCCCCXXXXXXXXXX"]
+openerHashes: ["AAAPA"]
 shifts: ["isweo"]
 state: {
   "puzzleDate": "2025-02-21",

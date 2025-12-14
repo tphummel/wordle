@@ -5,6 +5,7 @@ tags: []
 words: ["third","flock","bluff"]
 puzzles: [406]
 hashes: ["AAAAAPCAAACCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["AAAAA"]
 shifts: ["hscop"]
 state: {
   "boardState": [

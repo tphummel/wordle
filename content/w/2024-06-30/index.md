@@ -9,6 +9,7 @@ openers: ["score"]
 middlers: ["paint","buggy"]
 puzzles: [1107]
 hashes: ["AAAAAAAAAACCAACCCCCCXXXXXXXXXX"]
+openerHashes: ["AAAAA"]
 shifts: ["hblmi"]
 state: {
   "puzzleDate": "2024-06-30",

@@ -6,6 +6,7 @@ contests: ["2023-01-guide"]
 words: ["guide","stock","polka","koala"]
 puzzles: [574]
 hashes: ["AAAAAAAPAPACPPCCCCCCXXXXXXXXXX"]
+openerHashes: ["AAAAA"]
 shifts: ["qviuk"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["style"]
 middlers: ["brain","groan"]
 puzzles: [1082]
 hashes: ["AAAAAACPACPCPCCCCCCCXXXXXXXXXX"]
+openerHashes: ["AAAAA"]
 shifts: ["uyojx"]
 state: {
   "puzzleDate": "2024-06-05",

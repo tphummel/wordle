@@ -9,6 +9,7 @@ openers: ["sauce"]
 middlers: ["depth","fleer"]
 puzzles: [1468]
 hashes: ["AAAAPAPAAAPAACCCCCCCXXXXXXXXXX"]
+openerHashes: ["AAAAP"]
 shifts: ["umnnb"]
 state: {
   "puzzleDate": "2025-06-26",

@@ -9,6 +9,7 @@ openers: ["eight"]
 middlers: ["sever","boxer","caper","wader"]
 puzzles: [1300]
 hashes: ["PAAAAAAACCAAACCACACCCCACCCCCCC"]
+openerHashes: ["PAAAA"]
 shifts: ["chnnb"]
 state: {
   "puzzleDate": "2025-01-09",

@@ -9,6 +9,7 @@ openers: ["index"]
 middlers: ["first","pithy"]
 puzzles: [1430]
 hashes: ["PAAAAACAAPCCCPACCCCCXXXXXXXXXX"]
+openerHashes: ["PAAAA"]
 shifts: ["vpblr"]
 state: {
   "puzzleDate": "2025-05-19",

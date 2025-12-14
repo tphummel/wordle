@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["neigh","widen"]
 puzzles: [787]
 hashes: ["AAPAPPPPAAAPCCPCCCCCXXXXXXXXXX"]
+openerHashes: ["AAPAP"]
 shifts: ["oulnh"]
 state: {
   "boardState": [

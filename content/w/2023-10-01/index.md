@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["dream","plier"]
 puzzles: [834]
 hashes: ["AAAAPAPPAAAAACPCCCCCXXXXXXXXXX"]
+openerHashes: ["AAAAP"]
 shifts: ["hlznd"]
 state: {
   "boardState": [

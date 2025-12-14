@@ -9,6 +9,7 @@ openers: ["guide"]
 middlers: ["track","canny","havoc"]
 puzzles: [1418]
 hashes: ["AAAAAAAPPAPCAAAPCAPPCCCCCXXXXX"]
+openerHashes: ["AAAAA"]
 shifts: ["shkqy"]
 state: {
   "puzzleDate": "2025-05-07",

@@ -9,6 +9,7 @@ openers: ["trade"]
 middlers: ["flare","share"]
 puzzles: [1389]
 hashes: ["APCACAACCCCACCCCCCCCXXXXXXXXXX"]
+openerHashes: ["APCAC"]
 shifts: ["ywiao"]
 state: {
   "puzzleDate": "2025-04-08",

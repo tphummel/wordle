@@ -5,6 +5,7 @@ tags: []
 words: ["thing","twang"]
 puzzles: [425]
 hashes: ["CAACCCCCCCXXXXXXXXXXXXXXXXXXXX"]
+openerHashes: ["CAACC"]
 shifts: ["zdiwq"]
 state: {
   "boardState": [

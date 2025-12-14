@@ -5,6 +5,7 @@ tags: []
 words: ["laser","perch","purge"]
 puzzles: [277]
 hashes: ["AAAPPCPCAACCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["AAAPP"]
 shifts: ["vbzpo"]
 state: {
   "boardState": [

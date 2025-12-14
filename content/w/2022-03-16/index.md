@@ -68,6 +68,7 @@ stats:
 puzzles:
   - 270
 hashes: ["ACACCACACCPCACCACCCCCCCCCXXXXX"]
+openerHashes: ["ACACC"]
 shifts: ["ihbnb"]
 aliases:
   - /w/270/

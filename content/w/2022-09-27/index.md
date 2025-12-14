@@ -5,6 +5,7 @@ tags: []
 words: ["honey","forty","moldy","bossy","soggy"]
 puzzles: [465]
 hashes: ["ACAACACAACACAACACPACCCCCCXXXXX"]
+openerHashes: ["ACAAC"]
 shifts: ["yvopi"]
 state: {
   "boardState": [

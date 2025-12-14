@@ -9,6 +9,7 @@ openers: ["sound"]
 middlers: ["chime","hacky","parch"]
 puzzles: [1401]
 hashes: ["AAAAAPPAAAPCPAACCACCCCCCCXXXXX"]
+openerHashes: ["AAAAA"]
 shifts: ["vhblr"]
 state: {
   "puzzleDate": "2025-04-20",

@@ -9,6 +9,7 @@ openers: ["power"]
 middlers: ["blast","salad","vasal"]
 puzzles: [1512]
 hashes: ["AAAAAAPPPAPCPCAACCCCCCCCCXXXXX"]
+openerHashes: ["AAAAA"]
 shifts: ["thajv"]
 state: {
   "puzzleDate": "2025-08-09",

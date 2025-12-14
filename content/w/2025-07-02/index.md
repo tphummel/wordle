@@ -9,6 +9,7 @@ openers: ["patio"]
 middlers: ["since","clink","icing"]
 puzzles: [1474]
 hashes: ["AAAPAAPPPAPAPPACPAPACCCCCXXXXX"]
+openerHashes: ["AAAPA"]
 shifts: ["oukdb"]
 state: {
   "puzzleDate": "2025-07-02",

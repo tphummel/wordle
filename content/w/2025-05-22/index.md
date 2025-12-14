@@ -9,6 +9,7 @@ openers: ["index"]
 middlers: ["misty","chill","broil"]
 puzzles: [1433]
 hashes: ["PAAAAAPAAAAAPPAAAPCPCCCCCXXXXX"]
+openerHashes: ["PAAAA"]
 shifts: ["lvtry"]
 state: {
   "puzzleDate": "2025-05-22",

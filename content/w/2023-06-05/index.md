@@ -9,6 +9,7 @@ openers: ["squid"]
 middlers: ["unite"]
 puzzles: [716]
 hashes: ["AAPPAPCPAPCCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["AAPPA"]
 shifts: ["kuvds"]
 state: {
   "boardState": [

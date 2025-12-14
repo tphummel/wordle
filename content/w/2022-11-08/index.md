@@ -6,6 +6,7 @@ contests: ["2022-11-habit"]
 words: ["habit","group","pence","spell"]
 puzzles: [507]
 hashes: ["AAAAAAAAAPPPAAACCCCCXXXXXXXXXX"]
+openerHashes: ["AAAAA"]
 shifts: ["ywmuv"]
 state: {
   "boardState": [

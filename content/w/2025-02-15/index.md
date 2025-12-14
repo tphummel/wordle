@@ -9,6 +9,7 @@ openers: ["crown"]
 middlers: ["cross","croak","crock"]
 puzzles: [1337]
 hashes: ["CCCAACCCAACCCACCCCACCCCCCXXXXX"]
+openerHashes: ["CCCAA"]
 shifts: ["iywxu"]
 state: {
   "puzzleDate": "2025-02-15",

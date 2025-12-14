@@ -9,6 +9,7 @@ openers: ["weird"]
 middlers: ["crown","brown","grown"]
 puzzles: [1224]
 hashes: ["PAAPAACCCCACCCCACCCCCCCCCXXXXX"]
+openerHashes: ["PAAPA"]
 shifts: ["lywfx"]
 state: {
   "puzzleDate": "2024-10-25",

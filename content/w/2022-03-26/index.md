@@ -5,6 +5,7 @@ tags: []
 words: ["peril","speak","epoxy"]
 puzzles: [280]
 hashes: ["PPAAAACPAACCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["PPAAA"]
 shifts: ["kwwgi"]
 state: {
   "boardState": [

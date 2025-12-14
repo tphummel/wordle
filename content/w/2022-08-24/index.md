@@ -5,6 +5,7 @@ tags: []
 words: ["thing","clean","sneer","needy"]
 puzzles: [431]
 hashes: ["AAAPAAACAPAPCPACCCCCXXXXXXXXXX"]
+openerHashes: ["AAAPA"]
 shifts: ["tlmmi"]
 state: {
   "boardState": [

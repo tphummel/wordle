@@ -60,6 +60,7 @@ stats: {}
 puzzles:
   - 236
 hashes: ["PAAAAAAPPAAPPAPPPAPAPPPACCCACC"]
+openerHashes: ["PAAAA"]
 shifts: ["vhcbo"]
 aliases:
   - /w/236/

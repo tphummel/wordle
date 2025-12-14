@@ -5,6 +5,7 @@ tags: []
 words: ["track","strip","worth","berth"]
 puzzles: [386]
 hashes: ["PPAAAAPCAAAACCCCCCCCXXXXXXXXXX"]
+openerHashes: ["PPAAA"]
 shifts: ["hlzcr"]
 state: {
   "boardState": [

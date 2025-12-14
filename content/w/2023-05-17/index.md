@@ -8,6 +8,7 @@ openers: ["latte"]
 middlers: ["molar","slack","blank","flank"]
 puzzles: [697]
 hashes: ["PPAAAAAPPAACCACACCCCACCCCCCCCC"]
+openerHashes: ["PPAAA"]
 shifts: ["vsiwu"]
 state: {
   "boardState": [

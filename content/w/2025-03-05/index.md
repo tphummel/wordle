@@ -9,6 +9,7 @@ openers: ["great"]
 middlers: ["choir","scrub"]
 puzzles: [1355]
 hashes: ["APAAAPAAAPCCCCACCCCCXXXXXXXXXX"]
+openerHashes: ["APAAA"]
 shifts: ["yjzdw"]
 state: {
   "puzzleDate": "2025-03-05",

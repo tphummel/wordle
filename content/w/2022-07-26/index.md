@@ -5,6 +5,7 @@ tags: []
 words: ["delay","worth","finch","pinch","cinch"]
 puzzles: [402]
 hashes: ["AAAAAAAAACACCCCACCCCCCCCCXXXXX"]
+openerHashes: ["AAAAA"]
 shifts: ["ipvlr"]
 state: {
   "boardState": [

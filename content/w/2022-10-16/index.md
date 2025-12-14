@@ -6,6 +6,7 @@ contests: ["2022-10-metal"]
 words: ["metal","crane","spade"]
 puzzles: [484]
 hashes: ["APAPAAACACCCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["APAPA"]
 shifts: ["ywimo"]
 state: {
   "boardState": [

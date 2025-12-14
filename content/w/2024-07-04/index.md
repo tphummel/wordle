@@ -9,6 +9,7 @@ openers: ["proud"]
 middlers: []
 puzzles: [1111]
 hashes: ["AAACPCCCCCXXXXXXXXXXXXXXXXXXXX"]
+openerHashes: ["AAACP"]
 shifts: ["jljdd"]
 state: {
   "puzzleDate": "2024-07-04",

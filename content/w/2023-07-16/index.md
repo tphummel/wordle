@@ -9,6 +9,7 @@ openers: ["tiger"]
 middlers: ["touch"]
 puzzles: [757]
 hashes: ["CAAAACCAAACCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["CAAAA"]
 shifts: ["zvxjj"]
 state: {
   "boardState": [

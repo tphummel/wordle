@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["peach","trace"]
 puzzles: [790]
 hashes: ["AAACPAPCCAPACCPCCCCCXXXXXXXXXX"]
+openerHashes: ["AAACP"]
 shifts: ["keild"]
 state: {
   "boardState": [

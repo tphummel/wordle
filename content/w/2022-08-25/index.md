@@ -5,6 +5,7 @@ tags: []
 words: ["thing","snore","clown"]
 puzzles: [432]
 hashes: ["AAAPAAPCAACCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["AAAPA"]
 shifts: ["iswfx"]
 state: {
   "boardState": [

@@ -6,6 +6,7 @@ contests: ["2023-01-guide"]
 words: ["guide","crowd","adopt"]
 puzzles: [577]
 hashes: ["AAAPAAACAPCCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["AAAPA"]
 shifts: ["gkwyd"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["thump"]
 puzzles: [842]
 hashes: ["APAAACPCAACCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["APAAA"]
 shifts: ["zyccr"]
 state: {
   "boardState": [

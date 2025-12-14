@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["pudgy","rusty","fully"]
 puzzles: [780]
 hashes: ["ACAAAACAACACAACACCCCCCCCCXXXXX"]
+openerHashes: ["ACAAA"]
 shifts: ["hbtui"]
 state: {
   "boardState": [

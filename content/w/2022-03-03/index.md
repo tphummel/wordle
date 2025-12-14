@@ -58,6 +58,7 @@ stats:
 puzzles:
   - 257
 hashes: ["AAAAPCCCAACCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["AAAAP"]
 shifts: ["svcax"]
 aliases:
   - /w/257/

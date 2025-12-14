@@ -9,6 +9,7 @@ openers: ["ratio"]
 middlers: ["taken","nasty"]
 puzzles: [1498]
 hashes: ["ACPAAPCAAPPCAPACCCCCXXXXXXXXXX"]
+openerHashes: ["ACPAA"]
 shifts: ["nhcwd"]
 state: {
   "puzzleDate": "2025-07-26",

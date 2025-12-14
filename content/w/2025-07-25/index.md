@@ -9,6 +9,7 @@ openers: ["scare"]
 middlers: ["remit","breed","gluer","goner"]
 puzzles: [1497]
 hashes: ["AAAPPPPAAAAPACACAACCCCACCCCCCC"]
+openerHashes: ["AAAPP"]
 shifts: ["mvnnb"]
 state: {
   "puzzleDate": "2025-07-25",

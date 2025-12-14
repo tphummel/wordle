@@ -8,6 +8,7 @@ openers: ["brash"]
 middlers: ["young","gloom"]
 puzzles: [702]
 hashes: ["AAAAAAPAAPPPPCACCCCCXXXXXXXXXX"]
+openerHashes: ["AAAAA"]
 shifts: ["ontxy"]
 state: {
   "boardState": [

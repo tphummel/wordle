@@ -1,0 +1,18 @@
+{{- $wordles := . -}}
+{{- $hours := dict -}}
+{{- range seq 0 23 -}}
+  {{- $hours = merge $hours (dict (printf "%02d" .) (dict "count" 0 "wins" 0 "losses" 0 "guesses" 0 "score" 0)) -}}
+{{- end -}}
+{{- range $w := $wordles -}}
+  {{- $hour := dateFormat "15" $w.Date -}}
+  {{- $stats := index $hours $hour -}}
+  {{- $count := add (index $stats "count") 1 -}}
+  {{- $guesses := partialCached "guess-count.html" $w $w.File.Path -}}
+  {{- $guesses = cond (eq $guesses "X") 6 $guesses -}}
+  {{- $guesses = add (index $stats "guesses") $guesses -}}
+  {{- $score := add (index $stats "score") (partialCached "puzzle-score.html" $w $w.File.Path) -}}
+  {{- $wins := add (index $stats "wins") (cond (eq $w.Params.state.gameStatus "WIN") 1 0) -}}
+  {{- $losses := add (index $stats "losses") (cond (eq $w.Params.state.gameStatus "FAIL") 1 0) -}}
+  {{- $hours = merge $hours (dict $hour (dict "count" $count "wins" $wins "losses" $losses "guesses" $guesses "score" $score)) -}}
+{{- end -}}
+{{- return $hours -}}

@@ -1,0 +1,40 @@
+{{ $found := slice }}
+
+{{ range . }}
+  {{ $turns := partialCached "guess-count" . .File.Path }}
+  {{ $puzzleHasMoreThanTwoTurns := gt $turns 2 }}
+  {{ if $puzzleHasMoreThanTwoTurns }}
+    {{ $wordleDate := .Date }}
+    {{ $wordle := . }}
+
+    {{ $absentLetters := 0}}
+    {{ $firstGuess := index .Params.state.evaluations 0 }}
+    {{ range $char := (seq 0 4) }}
+      {{ if (eq "absent" (index $firstGuess $char)) }}
+        {{ $absentLetters = add $absentLetters 1 }}
+      {{ end }}
+    {{ end }}
+
+    {{ $absentLettersTwo := 0}}
+    {{ $secondGuess := index .Params.state.evaluations 1 }}
+    {{ range $char := (seq 0 4) }}
+      {{ if (eq "absent" (index $secondGuess $char)) }}
+        {{ $absentLettersTwo = add $absentLettersTwo 1 }}
+      {{ end }}
+    {{ end }}
+
+    {{ $absentLettersThree := 0}}
+    {{ $thirdGuess := index .Params.state.evaluations 2 }}
+    {{ range $char := (seq 0 4) }}
+      {{ if (eq "absent" (index $thirdGuess $char)) }}
+        {{ $absentLettersThree = add $absentLettersThree 1 }}
+      {{ end }}
+    {{ end }}
+
+    {{ if (and (eq $absentLetters 5) (eq $absentLettersTwo 5) (eq $absentLettersThree 5)) }}
+      {{ $found = $found | append (slice (dict "date" $wordleDate "puzzle" $wordle)) }}
+    {{ end }}
+  {{ end }}
+
+{{ end }}
+{{ return $found }}

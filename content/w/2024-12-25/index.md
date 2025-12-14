@@ -9,6 +9,7 @@ openers: ["champ"]
 middlers: ["shave"]
 puzzles: [1285]
 hashes: ["ACCAACCCACCCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["ACCAA"]
 shifts: ["yoiao"]
 state: {
   "puzzleDate": "2024-12-25",

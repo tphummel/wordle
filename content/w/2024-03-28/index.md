@@ -9,6 +9,7 @@ openers: ["style"]
 middlers: ["sheep"]
 puzzles: [1013]
 hashes: ["CAAAPCACAPCCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["CAAAP"]
 shifts: ["ywmju"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["ratio"]
 middlers: ["broad","moral"]
 puzzles: [1510]
 hashes: ["PPAAPAPPCAACCCCCCCCCXXXXXXXXXX"]
+openerHashes: ["PPAAP"]
 shifts: ["ivzjv"]
 state: {
   "puzzleDate": "2025-08-07",

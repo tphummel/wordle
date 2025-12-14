@@ -9,6 +9,7 @@ openers: ["point"]
 middlers: ["shore","clove"]
 puzzles: [910]
 hashes: ["APAAAAACACACCACCCCCCXXXXXXXXXX"]
+openerHashes: ["APAAA"]
 shifts: ["mswko"]
 state: {
   "boardState": [

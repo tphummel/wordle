@@ -5,6 +5,7 @@ tags: []
 words: ["tiger","tipsy"]
 puzzles: [328]
 hashes: ["CCAAACCCCCXXXXXXXXXXXXXXXXXXXX"]
+openerHashes: ["CCAAA"]
 shifts: ["zpxbi"]
 state: {
   "boardState": [

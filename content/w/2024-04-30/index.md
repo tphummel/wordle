@@ -9,6 +9,7 @@ openers: ["style"]
 middlers: ["blank","lurch","drool","growl"]
 puzzles: [1046]
 hashes: ["AAAPAAPAAAPAPAAACCACACCCCCCCCC"]
+openerHashes: ["AAAPA"]
 shifts: ["vywfv"]
 state: {
   "boardState": [

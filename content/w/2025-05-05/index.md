@@ -9,6 +9,7 @@ openers: ["ghost"]
 middlers: ["chase","whisk"]
 puzzles: [1416]
 hashes: ["ACACAACACAACACACCCCCXXXXXXXXXX"]
+openerHashes: ["ACACA"]
 shifts: ["yocbr"]
 state: {
   "puzzleDate": "2025-05-05",

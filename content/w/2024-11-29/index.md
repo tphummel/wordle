@@ -9,6 +9,7 @@ openers: ["chose"]
 middlers: ["mouth","halon","hydro"]
 puzzles: [1259]
 hashes: ["APPAAAPAAPCAAPACAAACCCCCCXXXXX"]
+openerHashes: ["APPAA"]
 shifts: ["npxyy"]
 state: {
   "puzzleDate": "2024-11-29",

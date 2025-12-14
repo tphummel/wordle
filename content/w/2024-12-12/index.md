@@ -9,6 +9,7 @@ openers: ["slime"]
 middlers: ["chirp","boing","aging","fling","doing"]
 puzzles: [1272]
 hashes: ["AACAAAACAAAACCCAACCCAACCCAACCC"]
+openerHashes: ["AACAA"]
 shifts: ["bfqwq"]
 state: {
   "puzzleDate": "2024-12-12",

@@ -45,6 +45,7 @@ stats: {}
 puzzles:
   - 199
 hashes: ["PCPAAPCAPACCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["PCPAA"]
 shifts: ["ypmpo"]
 aliases:
   - /w/199/

@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: []
 puzzles: [1363]
 hashes: ["AAAPCCCCCCXXXXXXXXXXXXXXXXXXXX"]
+openerHashes: ["AAAPC"]
 shifts: ["ioibo"]
 state: {
   "puzzleDate": "2025-03-13",

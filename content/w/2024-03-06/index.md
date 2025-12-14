@@ -9,6 +9,7 @@ openers: ["syrup"]
 middlers: ["glory","fairy","weary"]
 puzzles: [991]
 hashes: ["APPAAAAACCAPACCACCCCCCCCCXXXXX"]
+openerHashes: ["APPAA"]
 shifts: ["zliai"]
 state: {
   "boardState": [

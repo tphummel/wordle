@@ -5,6 +5,7 @@ tags: []
 words: ["thing","dozen","woven"]
 puzzles: [430]
 hashes: ["AAAPAACACCCCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["AAAPA"]
 shifts: ["cvdnx"]
 state: {
   "boardState": [

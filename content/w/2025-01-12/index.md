@@ -9,6 +9,7 @@ openers: ["light"]
 middlers: ["plate","tally"]
 puzzles: [1303]
 hashes: ["PAAAPAPPPACPPAACCCCCXXXXXXXXXX"]
+openerHashes: ["PAAAP"]
 shifts: ["zvbjv"]
 state: {
   "puzzleDate": "2025-01-12",

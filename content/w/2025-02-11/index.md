@@ -9,6 +9,7 @@ openers: ["chain"]
 middlers: []
 puzzles: [1333]
 hashes: ["PAAAACCCCCXXXXXXXXXXXXXXXXXXXX"]
+openerHashes: ["PAAAA"]
 shifts: ["yjwao"]
 state: {
   "puzzleDate": "2025-02-11",

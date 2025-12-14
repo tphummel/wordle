@@ -9,6 +9,7 @@ openers: ["weird"]
 middlers: ["feast","beast"]
 puzzles: [1535]
 hashes: ["ACAAAACCCCACCCCCCCCCXXXXXXXXXX"]
+openerHashes: ["ACAAA"]
 shifts: ["rlibd"]
 state: {
   "puzzleDate": "2025-09-01",

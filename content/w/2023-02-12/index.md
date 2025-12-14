@@ -8,6 +8,7 @@ openers: ["orate"]
 middlers: ["chant","slant"]
 puzzles: [603]
 hashes: ["AACPAAACCCAACCCCCCCCXXXXXXXXXX"]
+openerHashes: ["AACPA"]
 shifts: ["mpiwd"]
 state: {
   "boardState": [

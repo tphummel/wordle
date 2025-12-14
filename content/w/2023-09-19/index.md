@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["choke","clove"]
 puzzles: [822]
 hashes: ["PAAPCCACACCCCACCCCCCXXXXXXXXXX"]
+openerHashes: ["PAAPC"]
 shifts: ["iswbo"]
 state: {
   "boardState": [

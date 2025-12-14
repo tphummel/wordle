@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["vogue","mouse","house"]
 puzzles: [811]
 hashes: ["PPAACACAPCACCCCACCCCCCCCCXXXXX"]
+openerHashes: ["PPAAC"]
 shifts: ["xvcbo"]
 state: {
   "boardState": [

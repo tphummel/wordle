@@ -9,6 +9,7 @@ openers: ["group"]
 middlers: ["split","leapt","chapt"]
 puzzles: [897]
 hashes: ["AAAAPAPAACAACCCAACCCCCCCCXXXXX"]
+openerHashes: ["AAAAP"]
 shifts: ["gkiyd"]
 state: {
   "boardState": [

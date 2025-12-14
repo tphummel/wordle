@@ -9,6 +9,7 @@ openers: ["syrup"]
 middlers: ["clone","talon"]
 puzzles: [1005]
 hashes: ["AAAAAAPPPAAAPPPCCCCCXXXXXXXXXX"]
+openerHashes: ["AAAAA"]
 shifts: ["rpvpy"]
 state: {
   "boardState": [

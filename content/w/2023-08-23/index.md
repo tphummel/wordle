@@ -9,6 +9,7 @@ openers: ["later"]
 middlers: ["wreck","reign","berry","verse"]
 puzzles: [795]
 hashes: ["AAAPPAPPAAPCAAAACCAACCCACCCCCC"]
+openerHashes: ["AAAPP"]
 shifts: ["blzeo"]
 state: {
   "boardState": [

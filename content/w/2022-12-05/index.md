@@ -6,6 +6,7 @@ contests: ["2022-12-ratio"]
 words: ["ratio","ghoul","money","coven","dozen","boxen"]
 puzzles: [534]
 hashes: ["AAAAPAAPAAACPCAACACCACACCACACC"]
+openerHashes: ["AAAAP"]
 shifts: ["cvsnx"]
 state: {
   "boardState": [

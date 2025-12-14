@@ -9,6 +9,7 @@ openers: ["ocean"]
 middlers: []
 puzzles: [823]
 hashes: ["AAPPPCCCCCXXXXXXXXXXXXXXXXXXXX"]
+openerHashes: ["AAPPP"]
 shifts: ["gkqtp"]
 state: {
   "boardState": [

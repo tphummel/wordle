@@ -9,6 +9,7 @@ openers: ["tiger"]
 middlers: ["reach","credo"]
 puzzles: [756]
 hashes: ["AAAPPPPAPACCPAPCCCCCXXXXXXXXXX"]
+openerHashes: ["AAAPP"]
 shifts: ["iywwo"]
 state: {
   "boardState": [

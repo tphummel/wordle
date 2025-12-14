@@ -5,6 +5,7 @@ tags: []
 words: ["track","salad","madam"]
 puzzles: [387]
 hashes: ["AAPAAACACPCCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["AAPAA"]
 shifts: ["shljw"]
 state: {
   "boardState": [

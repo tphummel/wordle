@@ -4,19 +4,20 @@ date: 2023-11-15T15:18:00-08:00
 tags: []
 git_branch: 2023-11-15_879
 contests: []
-words: ["ounce","party","still","sixty","sixth"]
+words: ["ounce","party","still","sixty","sight"]
 openers: ["ounce"]
 middlers: ["party","still","sixty"]
 puzzles: [879]
-hashes: ["AAAAAAAACACPPAACCCCACCCCCXXXXX"]
-shifts: ["ypfcr"]
+hashes: ["AAAAAAAAPACPPAACCAPACCCCCXXXXX"]
+shifts: ["ypoqd"]
+openerHashes: ["AAAAA"]
 state: {
   "boardState": [
     "ounce",
     "party",
     "still",
     "sixty",
-    "sixth",
+    "sight",
     ""
   ],
   "evaluations": [
@@ -31,7 +32,7 @@ state: {
       "absent",
       "absent",
       "absent",
-      "correct",
+      "present",
       "absent"
     ],
     [
@@ -44,8 +45,8 @@ state: {
     [
       "correct",
       "correct",
-      "correct",
-      "correct",
+      "absent",
+      "present",
       "absent"
     ],
     [
@@ -58,7 +59,7 @@ state: {
     null
   ],
   "rowIndex": 5,
-  "solution": "sixth",
+  "solution": "sight",
   "gameStatus": "WIN",
   "lastPlayedTs": 1700090280000,
   "lastCompletedTs": 1700090280000,

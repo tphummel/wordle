@@ -9,6 +9,7 @@ openers: ["point"]
 middlers: ["thong","stone"]
 puzzles: [932]
 hashes: ["APACPPACCACCCCACCCCCXXXXXXXXXX"]
+openerHashes: ["APACP"]
 shifts: ["yawwi"]
 state: {
   "boardState": [

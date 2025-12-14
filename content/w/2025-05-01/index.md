@@ -9,6 +9,7 @@ openers: ["evict"]
 middlers: ["pleat"]
 puzzles: [1412]
 hashes: ["PAAACPACPCCCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["PAAAC"]
 shifts: ["gkmyd"]
 state: {
   "puzzleDate": "2025-05-01",

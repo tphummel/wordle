@@ -6,6 +6,7 @@ contests: ["2022-10-metal"]
 words: ["metal","gator","batch","patch","watch","catch"]
 puzzles: [483]
 hashes: ["AACPAACCAAACCCCACCCCACCCCCCCCC"]
+openerHashes: ["AACPA"]
 shifts: ["ihblr"]
 state: {
   "boardState": [

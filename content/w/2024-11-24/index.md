@@ -9,6 +9,7 @@ openers: ["night"]
 middlers: ["drift","moist","waist"]
 puzzles: [1254]
 hashes: ["APAACAACACAACCCPACCCCCCCCXXXXX"]
+openerHashes: ["APAAC"]
 shifts: ["zdqbd"]
 state: {
   "puzzleDate": "2024-11-24",

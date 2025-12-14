@@ -6,6 +6,7 @@ contests: ["2022-10-metal"]
 words: ["metal","their","stein"]
 puzzles: [485]
 hashes: ["APPAAPACCACCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["APPAA"]
 shifts: ["yamrx"]
 state: {
   "boardState": [

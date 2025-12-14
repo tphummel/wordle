@@ -9,6 +9,7 @@ openers: ["alive"]
 middlers: ["chest","guess"]
 puzzles: [1188]
 hashes: ["AAAAPAACCAAACCCCCCCCXXXXXXXXXX"]
+openerHashes: ["AAAAP"]
 shifts: ["vymbc"]
 state: {
   "puzzleDate": "2024-09-19",

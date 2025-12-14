@@ -9,6 +9,7 @@ openers: ["great"]
 middlers: ["bench","snipe","untie"]
 puzzles: [1340]
 hashes: ["AAPAAAPPAAACPACACACCCCCCCXXXXX"]
+openerHashes: ["AAPAA"]
 shifts: ["oulro"]
 state: {
   "puzzleDate": "2025-02-18",

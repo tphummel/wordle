@@ -5,6 +5,7 @@ tags: []
 words: ["mouse","train","fairy","dairy","hairy"]
 puzzles: [318]
 hashes: ["AAAAAAPPPAACCCCACCCCCCCCCXXXXX"]
+openerHashes: ["AAAAA"]
 shifts: ["nhqai"]
 state: {
   "boardState": [

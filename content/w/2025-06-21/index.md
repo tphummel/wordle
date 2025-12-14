@@ -9,6 +9,7 @@ openers: ["audio"]
 middlers: ["paved","death","blade"]
 puzzles: [1463]
 hashes: ["PAPAAAPAPPPPCAAACCCCCCCCCXXXXX"]
+openerHashes: ["PAPAA"]
 shifts: ["msimo"]
 state: {
   "puzzleDate": "2025-06-21",

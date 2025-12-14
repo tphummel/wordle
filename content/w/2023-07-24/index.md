@@ -9,6 +9,7 @@ openers: ["tiger"]
 middlers: ["squad","flock","poboy","nobby"]
 puzzles: [765]
 hashes: ["AAAAAAAAAAAAPAAACCACACCCCCCCCC"]
+openerHashes: ["AAAAA"]
 shifts: ["nvjki"]
 state: {
   "boardState": [

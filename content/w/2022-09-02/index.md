@@ -6,6 +6,7 @@ contests: ["2022-09-honey"]
 words: ["honey","chair","chart","charm"]
 puzzles: [440]
 hashes: ["PAAAACCCAPCCCCACCCCCXXXXXXXXXX"]
+openerHashes: ["PAAAA"]
 shifts: ["ioiaw"]
 state: {
   "boardState": [

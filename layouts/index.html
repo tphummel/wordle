@@ -14,6 +14,7 @@
 {{ $losses := where $wordles "Params.state.gameStatus" "FAIL"}}
 {{ $nyt_puzzle_count := 2309 }}
 {{ $nyt_valid_word_count := 10663 }}
+{{ $openerHashesPage := .Site.GetPage "/openerhashes" }}
 
 <div>🧩 Wordles Played: <strong><a href="{{ with .Site.GetPage "section" "w" }}{{ .RelPermalink }}{{ end }}">{{ len $wordles }}</a></strong></div>
 {{ with .Site.GetPage "/puzzles" }}
@@ -21,6 +22,18 @@
 {{ end }}
 {{ with .Site.GetPage "/hashes" }}
   <div>🧩 Puzzle Hashes Played: <strong><a href="{{ .RelPermalink }}">{{ len .Pages }}</a></strong></div>
+{{ end }}
+{{ with $openerHashesPage }}
+  <div>
+    🧩 Opener Hashes Played: <strong><a href="{{ .RelPermalink }}">{{ len .Pages }}</a></strong>
+    {{ with $.Site.GetPage "opener-hash-checklist.md" }}
+      (<a class="opener-hash-checklist-link"
+          href="{{ .RelPermalink }}"
+          aria-label="{{ if eq (len $openerHashesPage.Pages) 243 }}Checklist complete{{ else }}Checklist incomplete{{ end }}">
+        <span aria-hidden="true">{{ if eq (len $openerHashesPage.Pages) 243 }}☑️{{ else }}⬜️{{ end }}</span>
+      </a>)
+    {{ end }}
+  </div>
 {{ end }}
 {{ with .Site.GetPage "/shifts" }}
   <div>🧩 Puzzle Solutions Played: <strong><a href="{{ .RelPermalink }}">{{ len .Pages }}</a></strong></div>
@@ -55,7 +68,6 @@
   <tr>
     <th>Date</th>
     <th>Puzzle</th>
-    <th>Turns</th>
     <th>Score</th>
   </tr>
 
@@ -63,7 +75,6 @@
     <tr>
       <td><a href="{{ .RelPermalink }}">{{ .Date.Format "Jan 2, 2006" }}</a></td>
       <td><a href="{{ .RelPermalink }}">{{ index .Params.puzzles 0 }}</a></td>
-      <td><a href="{{ .RelPermalink }}">{{ partialCached "guess-count.html" . .File.Path }}{{- cond (eq .Params.state.hardMode true) "*" "" -}}</a></td>
       <td><a href="{{ .RelPermalink }}">{{ partialCached "puzzle-score.html" . .File.Path }}</a></td>
     </tr>
 
@@ -135,7 +146,16 @@
     <th>Pct of Total</th>
   </tr>
 
+{{ $diveAndSaves := partialCached "dive-and-saves.html" $wordles "dive-and-saves" }}
 {{ $homoGuessesOnly := partial "homo-guesses-only" $wordles }}
+{{ with .Site.GetPage "dive-and-saves.md" }}
+  <tr>
+    <td><a href="{{ .RelPermalink }}">Dive and Saves</a></td>
+    <td>
+      {{ (mul (div (float (len $diveAndSaves)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $diveAndSaves }}</a> / {{ len $wordles }})
+    </td>
+  </tr>
+{{ end }}
 {{ with .Site.GetPage "homogenous-guesses-only.md" }}
   <tr>
     <td><a href="{{ .RelPermalink }}">Homogenous Guesses Only</a></td>
@@ -161,6 +181,16 @@
     <td><a href="{{ .RelPermalink }}">Opener Double Misses</a></td>
     <td>
       {{ (mul (div (float (len $openerDoubleMisses)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $openerDoubleMisses }}</a> / {{ len $wordles }})
+    </td>
+  </tr>
+{{ end }}
+
+{{ $openerTripleMisses := partial "opener-triple-misses" $wordles }}
+{{ with .Site.GetPage "opener-triple-misses.md" }}
+  <tr>
+    <td><a href="{{ .RelPermalink }}">Opener Triple Misses</a></td>
+    <td>
+      {{ (mul (div (float (len $openerTripleMisses)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $openerTripleMisses }}</a> / {{ len $wordles }})
     </td>
   </tr>
 {{ end }}
@@ -191,6 +221,15 @@
     <td><a href="{{ .RelPermalink }}">Anagrams</a></td>
     <td>
       {{ (mul (div (float (len $anagrams)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $anagrams }}</a> / {{ len $wordles }})
+    </td>
+  </tr>
+{{ end }}
+{{ with .Site.GetPage "true-anagrams.md" }}
+  {{ $trueAnagrams := partial "true-anagrams.html" (where .Site.RegularPages "Section" "w") }}
+  <tr>
+    <td><a href="{{ .RelPermalink }}">True Anagrams</a></td>
+    <td>
+      {{ (mul (div (float (len $trueAnagrams)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $trueAnagrams }}</a> / {{ len $wordles }})
     </td>
   </tr>
 {{ end }}
@@ -258,6 +297,20 @@
       </td>
     </tr>
   {{ end }}
+  {{ with .Site.GetPage "stairstep.md" }}
+    {{ $stairstep := slice }}
+    {{ range $wordles }}
+      {{ if partialCached "stairstep.html" . .File.Path }}
+        {{ $stairstep = $stairstep | append . }}
+      {{ end }}
+    {{ end }}
+    <tr>
+      <td><a href="{{ .RelPermalink }}">Stairstep</a></td>
+      <td>
+        {{ (mul (div (float (len $stairstep)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $stairstep }}</a> / {{ len $wordles }})
+      </td>
+    </tr>
+  {{ end }}
   </table>
 
 {{ with .Site.GetPage "collections.md" }}
@@ -274,7 +327,6 @@
   <tr>
     <th>Date</th>
     <th>Puzzle</th>
-    <th>Turns</th>
     <th>Score</th>
   </tr>
 
@@ -282,7 +334,6 @@
     <tr>
       <td><a href="{{ .page.RelPermalink }}">{{ .page.Date.Format "Jan 2, 2006" }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ index .page.Params.puzzles 0 }}</a></td>
-      <td><a href="{{ .page.RelPermalink }}">{{ partialCached "guess-count.html" .page .page.File.Path }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ .score }}</a></td>
     </tr>
   {{ end }}
@@ -293,7 +344,6 @@
   <tr>
     <th>Date</th>
     <th>Puzzle</th>
-    <th>Turns</th>
     <th>Score</th>
   </tr>
 
@@ -301,7 +351,6 @@
     <tr>
       <td><a href="{{ .page.RelPermalink }}">{{ .page.Date.Format "Jan 2, 2006" }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ index .page.Params.puzzles 0 }}</a></td>
-      <td><a href="{{ .page.RelPermalink }}">{{ partialCached "guess-count.html" .page .page.File.Path }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ .score }}</a></td>
     </tr>
   {{ end }}
@@ -492,7 +541,6 @@
     <th>Date</th>
     <th>Puzzle</th>
     <th>Tiles</th>
-    <th>Turns</th>
     <th>Score</th>
   </tr>
 
@@ -501,7 +549,6 @@
       <td><a href="{{ .page.RelPermalink }}">{{ .page.Date.Format "Jan 2, 2006" }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ index .page.Params.puzzles 0 }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ .blackTiles }}</a></td>
-      <td><a href="{{ .page.RelPermalink }}">{{ partialCached "guess-count.html" .page .page.File.Path }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ partialCached "puzzle-score" .page .page.File.Path }}</a></td>
     </tr>
   {{ end }}
@@ -513,7 +560,6 @@
     <th>Date</th>
     <th>Puzzle</th>
     <th>Tiles</th>
-    <th>Turns</th>
     <th>Score</th>
   </tr>
 
@@ -522,7 +568,6 @@
       <td><a href="{{ .page.RelPermalink }}">{{ .page.Date.Format "Jan 2, 2006" }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ index .page.Params.puzzles 0 }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ .yellowTiles }}</a></td>
-      <td><a href="{{ .page.RelPermalink }}">{{ partialCached "guess-count.html" .page .page.File.Path }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ partialCached "puzzle-score" .page .page.File.Path }}</a></td>
     </tr>
   {{ end }}
@@ -534,7 +579,6 @@
     <th>Date</th>
     <th>Puzzle</th>
     <th>Tiles</th>
-    <th>Turns</th>
     <th>Score</th>
   </tr>
 
@@ -543,7 +587,6 @@
       <td><a href="{{ .page.RelPermalink }}">{{ .page.Date.Format "Jan 2, 2006" }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ index .page.Params.puzzles 0 }}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ .greenTiles }}</a></td>
-      <td><a href="{{ .page.RelPermalink }}">{{ partialCached "guess-count.html" .page .page.File.Path }}{{- cond (eq .page.Params.state.hardMode true) "*" "" -}}</a></td>
       <td><a href="{{ .page.RelPermalink }}">{{ partialCached "puzzle-score" .page .page.File.Path }}</a></td>
     </tr>
   {{ end }}
@@ -579,6 +622,38 @@
       <td><a href="{{ $p.RelPermalink }}">{{ $p.Date.Format "Jan 2, 2006" }}</a></td>
       <td><a href="{{ $p.RelPermalink }}">{{ index $p.Params.puzzles 0 }}</a></td>
       <td>{{ .count }}</td>
+    </tr>
+  {{ end }}
+</table>
+
+{{ $hours := partial "hourly-breakdown.html" $wordles }}
+<h2>⌚ Hour of Day Breakdown</h2>
+<table>
+  <tr>
+    <th>Hour</th>
+    <th>Puzzles</th>
+    <th>Avg Guesses</th>
+    <th>Avg Score</th>
+    <th>Wins</th>
+    <th>Losses</th>
+  </tr>
+  {{ range seq 0 23 }}
+    {{ $h := printf "%02d" . }}
+    {{ $s := index $hours $h }}
+    {{ $count := index $s "count" }}
+    {{ $avgGuesses := 0.0 }}
+    {{ $avgScore := 0.0 }}
+    {{ if gt $count 0 }}
+      {{ $avgGuesses = div (float (index $s "guesses")) $count }}
+      {{ $avgScore = div (float (index $s "score")) $count }}
+    {{ end }}
+    <tr>
+      <td>{{ $h }}</td>
+      <td>{{ $count }}</td>
+      <td>{{ $avgGuesses | lang.FormatNumber 2 }}</td>
+      <td>{{ $avgScore | lang.FormatNumber 2 }}</td>
+      <td>{{ index $s "wins" }}</td>
+      <td>{{ index $s "losses" }}</td>
     </tr>
   {{ end }}
 </table>

@@ -9,6 +9,7 @@ openers: ["grape"]
 middlers: ["genie"]
 puzzles: [1262]
 hashes: ["CAAACCAAPCCCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["CAAAC"]
 shifts: ["mbquo"]
 state: {
   "puzzleDate": "2024-12-02",

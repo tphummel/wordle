@@ -9,6 +9,7 @@ openers: ["ocean"]
 middlers: ["glove","shore"]
 puzzles: [813]
 hashes: ["PAPAAAACACAACACCCCCCXXXXXXXXXX"]
+openerHashes: ["PAPAA"]
 shifts: ["wbwco"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["point"]
 middlers: []
 puzzles: [907]
 hashes: ["PAACCCCCCCXXXXXXXXXXXXXXXXXXXX"]
+openerHashes: ["PAACC"]
 shifts: ["ywmwd"]
 state: {
   "boardState": [

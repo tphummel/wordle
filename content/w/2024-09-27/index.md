@@ -9,6 +9,7 @@ openers: ["noise"]
 middlers: ["shift"]
 puzzles: [1196]
 hashes: ["AACAAAPCPPCCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["AACAA"]
 shifts: ["lhqcr"]
 state: {
   "puzzleDate": "2024-09-27",

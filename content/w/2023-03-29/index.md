@@ -8,6 +8,7 @@ openers: ["argot"]
 middlers: ["shift"]
 puzzles: [648]
 hashes: ["AAAACPAAACCCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["AAAAC"]
 shifts: ["hland"]
 state: {
   "boardState": [

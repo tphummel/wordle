@@ -9,6 +9,7 @@ openers: ["squid"]
 middlers: ["stock","swear","sylph"]
 puzzles: [729]
 hashes: ["CAAAACAAAACAAAACPPAPCCCCCXXXXX"]
+openerHashes: ["CAAAA"]
 shifts: ["yogui"]
 state: {
   "boardState": [

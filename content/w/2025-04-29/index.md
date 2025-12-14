@@ -9,6 +9,7 @@ openers: ["quote"]
 middlers: ["crash","pissy"]
 puzzles: [1410]
 hashes: ["AAAAAAAACAAPPCACCCCCXXXXXXXXXX"]
+openerHashes: ["AAAAA"]
 shifts: ["hsqbc"]
 state: {
   "puzzleDate": "2025-04-29",

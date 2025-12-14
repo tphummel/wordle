@@ -5,6 +5,7 @@ tags: []
 words: ["piano","snout","loner","donor"]
 puzzles: [359]
 hashes: ["AAAPPAPPAAACCACCCCCCXXXXXXXXXX"]
+openerHashes: ["AAAPP"]
 shifts: ["jvvxb"]
 state: {
   "boardState": [

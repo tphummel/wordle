@@ -60,6 +60,7 @@ stats: {}
 puzzles:
   - 175
 hashes: ["AAAAAAPPAAACAPAPCACCACCCCACCCC"]
+openerHashes: ["AAAAA"]
 shifts: ["ivvrm"]
 aliases:
   - /w/175/

@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: []
 puzzles: [865]
 hashes: ["PAPACCCCCCXXXXXXXXXXXXXXXXXXXX"]
+openerHashes: ["PAPAC"]
 shifts: ["tvqbo"]
 state: {
   "boardState": [

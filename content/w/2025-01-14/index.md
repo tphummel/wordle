@@ -9,6 +9,7 @@ openers: ["sugar"]
 middlers: ["chant","panic","lance"]
 puzzles: [1305]
 hashes: ["AAAPAPAPPAACCAPACCCACCCCCXXXXX"]
+openerHashes: ["AAAPA"]
 shifts: ["lhvli"]
 state: {
   "puzzleDate": "2025-01-14",

@@ -58,6 +58,7 @@ stats:
 puzzles:
   - 253
 hashes: ["APAPPAPCPACCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["APAPP"]
 shifts: ["ioiwd"]
 aliases:
   - /w/253/

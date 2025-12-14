@@ -8,6 +8,7 @@ openers: ["white"]
 middlers: ["tenet","taken"]
 puzzles: [623]
 hashes: ["AAAPPCPPAACAAPPCCCCCXXXXXXXXXX"]
+openerHashes: ["AAAPP"]
 shifts: ["zymwn"]
 state: {
   "boardState": [

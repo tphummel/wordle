@@ -9,6 +9,7 @@ openers: ["weird"]
 middlers: ["chest","panel"]
 puzzles: [1485]
 hashes: ["APAAAAAPAAAAPPACCCCCXXXXXXXXXX"]
+openerHashes: ["APAAA"]
 shifts: ["muwvo"]
 state: {
   "puzzleDate": "2025-07-13",

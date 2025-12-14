@@ -6,6 +6,7 @@ contests: ["2022-10-metal"]
 words: ["metal","latch","ultra","aptly"]
 puzzles: [499]
 hashes: ["AACPPPPCAAAPCAPCCCCCXXXXXXXXXX"]
+openerHashes: ["AACPP"]
 shifts: ["gwbui"]
 state: {
   "boardState": [

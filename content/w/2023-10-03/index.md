@@ -9,6 +9,7 @@ openers: ["merit"]
 middlers: ["slice"]
 puzzles: [836]
 hashes: ["APAPAAPCACCCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["APAPA"]
 shifts: ["coquo"]
 state: {
   "boardState": [

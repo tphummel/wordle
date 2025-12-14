@@ -5,6 +5,7 @@ tags: []
 words: ["third","court","quart"]
 puzzles: [408]
 hashes: ["PAACAAAPCCCCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["PAACA"]
 shifts: ["wbiad"]
 state: {
   "boardState": [

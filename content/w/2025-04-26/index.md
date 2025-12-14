@@ -9,6 +9,7 @@ openers: ["sport"]
 middlers: ["chase"]
 puzzles: [1407]
 hashes: ["PAAAACPCCACCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["PAAAA"]
 shifts: ["isibr"]
 state: {
   "puzzleDate": "2025-04-26",

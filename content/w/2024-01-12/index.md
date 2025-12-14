@@ -9,6 +9,7 @@ openers: ["point"]
 middlers: ["touch"]
 puzzles: [937]
 hashes: ["ACAAPPCCAACCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["ACAAP"]
 shifts: ["xvcco"]
 state: {
   "boardState": [

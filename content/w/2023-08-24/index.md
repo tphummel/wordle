@@ -9,6 +9,7 @@ openers: ["later"]
 middlers: ["round"]
 puzzles: [796]
 hashes: ["AAAAPPCAAPCCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["AAAAP"]
 shifts: ["cvzmi"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["pinky","panic"]
 puzzles: [868]
 hashes: ["AACAAAPCAAACCCACCCCCXXXXXXXXXX"]
+openerHashes: ["AACAA"]
 shifts: ["shvrk"]
 state: {
   "boardState": [

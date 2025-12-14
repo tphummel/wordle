@@ -9,6 +9,7 @@ openers: ["eight"]
 middlers: ["threw","hefty"]
 puzzles: [1537]
 hashes: ["PAAPPPPAPAPCPPACCCCCXXXXXXXXXX"]
+openerHashes: ["PAAPP"]
 shifts: ["llblr"]
 state: {
   "puzzleDate": "2025-09-03",

@@ -9,6 +9,7 @@ openers: ["patio"]
 middlers: ["since","grime","while"]
 puzzles: [1484]
 hashes: ["AAAPAAPAACAACACAACCCCCCCCXXXXX"]
+openerHashes: ["AAAPA"]
 shifts: ["kequo"]
 state: {
   "puzzleDate": "2025-07-12",

@@ -58,6 +58,7 @@ stats:
 puzzles:
   - 256
 hashes: ["PPAPAAAPPPCCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["PPAPA"]
 shifts: ["thaci"]
 aliases:
   - /w/256/

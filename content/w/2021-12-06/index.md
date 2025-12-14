@@ -45,6 +45,7 @@ stats: {}
 puzzles:
   - 170
 hashes: ["AAPPACAAPACCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["AAPPA"]
 shifts: ["kwwlr"]
 aliases:
   - /w/170/

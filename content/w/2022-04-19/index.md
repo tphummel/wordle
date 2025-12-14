@@ -5,6 +5,7 @@ tags: []
 words: ["eight","place","query","yoker","foyer"]
 puzzles: [304]
 hashes: ["PAAAAAAAAPAAPPPPCACCCCCCCXXXXX"]
+openerHashes: ["PAAAA"]
 shifts: ["lvgnb"]
 state: {
   "boardState": [

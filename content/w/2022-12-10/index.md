@@ -6,6 +6,7 @@ contests: ["2022-12-ratio"]
 words: ["ratio","mouse","clown","knock"]
 puzzles: [539]
 hashes: ["AAAAPAPAAAPACAPCCCCCXXXXXXXXXX"]
+openerHashes: ["AAAAP"]
 shifts: ["quwlu"]
 state: {
   "boardState": [

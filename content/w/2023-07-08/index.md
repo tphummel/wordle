@@ -9,6 +9,7 @@ openers: ["tiger"]
 middlers: ["poker","loner","cover","coder"]
 puzzles: [749]
 hashes: ["AAACCACACCACACCCCACCCCACCCCCCC"]
+openerHashes: ["AAACC"]
 shifts: ["ivenb"]
 state: {
   "boardState": [

@@ -8,6 +8,7 @@ openers: ["quest"]
 middlers: ["leave","bevel"]
 puzzles: [629]
 hashes: ["AAPAAPCAPPACCCCCCCCCXXXXXXXXXX"]
+openerHashes: ["AAPAA"]
 shifts: ["xldnv"]
 state: {
   "boardState": [

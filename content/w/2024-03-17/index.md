@@ -9,6 +9,7 @@ openers: ["syrup"]
 middlers: ["score"]
 puzzles: [1002]
 hashes: ["CAPAACACCACCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["CAPAA"]
 shifts: ["yuwad"]
 state: {
   "boardState": [

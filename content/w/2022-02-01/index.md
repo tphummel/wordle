@@ -45,6 +45,7 @@ stats: {}
 puzzles:
   - 227
 hashes: ["PAAPPCCAPCCCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["PAAPP"]
 shifts: ["zowbo"]
 aliases:
   - /w/227/

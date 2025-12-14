@@ -9,6 +9,7 @@ openers: ["video"]
 middlers: ["polar","ghost","scoff","snowy"]
 puzzles: [1122]
 hashes: ["AAAAPAPAAAAACPACACAACPCPACCCCC"]
+openerHashes: ["AAAAP"]
 shifts: ["ydwxx"]
 state: {
   "puzzleDate": "2024-07-15",

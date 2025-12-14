@@ -9,6 +9,7 @@ openers: ["evict"]
 middlers: ["spark","round"]
 puzzles: [1443]
 hashes: ["AAAAAAAAPACCCAACCCCCXXXXXXXXXX"]
+openerHashes: ["AAAAA"]
 shifts: ["xvcpr"]
 state: {
   "puzzleDate": "2025-06-01",

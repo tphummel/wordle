@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["break","jetty","plied"]
 puzzles: [886]
 hashes: ["AAAAPAAPAAAPAAACPPCACCCCCXXXXX"]
+openerHashes: ["AAAAP"]
 shifts: ["vpfnv"]
 state: {
   "boardState": [

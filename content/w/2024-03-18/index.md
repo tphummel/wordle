@@ -9,6 +9,7 @@ openers: ["syrup"]
 middlers: ["spoil","splat"]
 puzzles: [1003]
 hashes: ["CAAAPCCAAPCCPACCCCCCXXXXXXXXXX"]
+openerHashes: ["CAAAP"]
 shifts: ["ywmud"]
 state: {
   "boardState": [

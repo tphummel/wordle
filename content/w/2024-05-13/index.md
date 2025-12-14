@@ -9,6 +9,7 @@ openers: ["style"]
 middlers: ["group","chunk"]
 puzzles: [1059]
 hashes: ["AAAAAAAAPACAPPACCCCCXXXXXXXXXX"]
+openerHashes: ["AAAAA"]
 shifts: ["iburx"]
 state: {
   "puzzleDate": "2024-05-13",

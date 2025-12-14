@@ -8,6 +8,7 @@ openers: ["orate"]
 middlers: ["arrow"]
 puzzles: [615]
 hashes: ["PCPAACCPCACCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["PCPAA"]
 shifts: ["gyjxb"]
 state: {
   "boardState": [

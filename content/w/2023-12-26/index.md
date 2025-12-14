@@ -9,6 +9,7 @@ openers: ["point"]
 middlers: []
 puzzles: [920]
 hashes: ["CPACACCCCCXXXXXXXXXXXXXXXXXXXX"]
+openerHashes: ["CPACA"]
 shifts: ["vowwo"]
 state: {
   "boardState": [

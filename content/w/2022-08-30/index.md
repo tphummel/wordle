@@ -5,6 +5,7 @@ tags: []
 words: ["thing","snout","onset"]
 puzzles: [437]
 hashes: ["PAAPAPCPACCCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["PAAPA"]
 shifts: ["uuand"]
 state: {
   "boardState": [

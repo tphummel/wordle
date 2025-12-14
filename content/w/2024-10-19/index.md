@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["earth","grief","lifer"]
 puzzles: [1218]
 hashes: ["AAAAPPAPAAAPPCPACPCCCCCCCXXXXX"]
+openerHashes: ["AAAAP"]
 shifts: ["lpjnb"]
 state: {
   "puzzleDate": "2024-10-19",

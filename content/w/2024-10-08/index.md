@@ -9,6 +9,7 @@ openers: ["proud"]
 middlers: ["botch","toast","vomit"]
 puzzles: [1207]
 hashes: ["AAPAAACPAAACAACACAPCCCCCCXXXXX"]
+openerHashes: ["AAPAA"]
 shifts: ["pvqwd"]
 state: {
   "puzzleDate": "2024-10-08",

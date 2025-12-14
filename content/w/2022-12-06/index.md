@@ -6,6 +6,7 @@ contests: ["2022-12-ratio"]
 words: ["ratio","grape","shear","alder","amber"]
 puzzles: [535]
 hashes: ["PPAAAAPPAPAAPPCCAACCCCCCCXXXXX"]
+openerHashes: ["PPAAA"]
 shifts: ["gtjnb"]
 state: {
   "boardState": [

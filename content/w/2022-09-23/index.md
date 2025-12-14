@@ -5,6 +5,7 @@ tags: []
 words: ["honey","proby","story","glory"]
 puzzles: [461]
 hashes: ["APAACAPCACAACCCCCCCCXXXXXXXXXX"]
+openerHashes: ["APAAC"]
 shifts: ["mswai"]
 state: {
   "boardState": [

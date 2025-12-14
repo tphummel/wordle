@@ -6,6 +6,7 @@ contests: ["2022-12-ratio"]
 words: ["ratio","thump","event","elect","eject"]
 puzzles: [530]
 hashes: ["AAPAAPAAAACACACCACCCCCCCCXXXXX"]
+openerHashes: ["AAPAA"]
 shifts: ["kqmld"]
 state: {
   "boardState": [

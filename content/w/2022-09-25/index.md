@@ -5,6 +5,7 @@ tags: []
 words: ["honey","stick","tidal","audit","admit"]
 puzzles: [463]
 hashes: ["AAAAAAPPAAPPPPACAPCCCCCCCXXXXX"]
+openerHashes: ["AAAAA"]
 shifts: ["gkurd"]
 state: {
   "boardState": [

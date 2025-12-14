@@ -6,6 +6,7 @@ contests: ["2022-12-ratio"]
 words: ["ratio","teach","plate","slate"]
 puzzles: [548]
 hashes: ["APPAAPPCAAACCCCCCCCCXXXXXXXXXX"]
+openerHashes: ["APPAA"]
 shifts: ["ysico"]
 state: {
   "boardState": [

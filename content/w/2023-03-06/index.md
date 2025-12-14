@@ -8,6 +8,7 @@ openers: ["under"]
 middlers: ["plain","pinch","pinot"]
 puzzles: [625]
 hashes: ["APAAACAAPPCCCAACCCAACCCCCXXXXX"]
+openerHashes: ["APAAA"]
 shifts: ["vpvti"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["model","below"]
 puzzles: [783]
 hashes: ["PAAAPAPAPPACCPACCCCCXXXXXXXXXX"]
+openerHashes: ["PAAAP"]
 shifts: ["nltuy"]
 state: {
   "boardState": [

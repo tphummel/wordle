@@ -9,6 +9,7 @@ openers: ["trove"]
 middlers: ["cheer","remix","ferry","beard"]
 puzzles: [1106]
 hashes: ["APAAPAAPAPPCAAAACACAPCPCACCCCC"]
+openerHashes: ["APAAP"]
 shifts: ["fljak"]
 state: {
   "puzzleDate": "2024-06-29",

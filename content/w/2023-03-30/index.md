@@ -8,6 +8,7 @@ openers: ["sepia"]
 middlers: ["earth","clear"]
 puzzles: [649]
 hashes: ["APAAPPPPAAAACCPCCCCCXXXXXXXXXX"]
+openerHashes: ["APAAP"]
 shifts: ["hymjn"]
 state: {
   "boardState": [

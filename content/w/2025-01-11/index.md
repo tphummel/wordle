@@ -9,6 +9,7 @@ openers: ["slope"]
 middlers: ["chair","twink"]
 puzzles: [1302]
 hashes: ["AAAAAAAAPAAAPPACCCCCXXXXXXXXXX"]
+openerHashes: ["AAAAA"]
 shifts: ["jpvpi"]
 state: {
   "puzzleDate": "2025-01-11",

@@ -9,6 +9,7 @@ openers: ["clean"]
 middlers: ["stalk"]
 puzzles: [1247]
 hashes: ["APAPAAPPCACCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["APAPA"]
 shifts: ["zhtui"]
 state: {
   "puzzleDate": "2024-11-17",

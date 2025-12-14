@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["crate","chive"]
 puzzles: [839]
 hashes: ["AAAPCCAAACCCCACCCCCCXXXXXXXXXX"]
+openerHashes: ["AAAPC"]
 shifts: ["ioqvo"]
 state: {
   "boardState": [

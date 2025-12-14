@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: []
 puzzles: [841]
 hashes: ["AACACCCCCCXXXXXXXXXXXXXXXXXXXX"]
+openerHashes: ["AACAC"]
 shifts: ["hpvpo"]
 state: {
   "boardState": [

@@ -6,6 +6,7 @@ contests: ["2023-01-guide"]
 words: ["guide","lunch","curry","mucky"]
 puzzles: [579]
 hashes: ["ACAAAACAPAPCAACCCCCCXXXXXXXXXX"]
+openerHashes: ["ACAAA"]
 shifts: ["sbkti"]
 state: {
   "boardState": [

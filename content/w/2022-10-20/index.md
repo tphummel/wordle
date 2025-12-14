@@ -6,6 +6,7 @@ contests: ["2022-10-metal"]
 words: ["metal","demon","denim"]
 puzzles: [488]
 hashes: ["PCAAACCPAPCCCCC"]
+openerHashes: ["PCAAA"]
 shifts: ["jlvrw"]
 state: {
   "boardState": [

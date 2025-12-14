@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["golem","yodel"]
 puzzles: [781]
 hashes: ["PAAAPACPCAACACPCCCCCXXXXXXXXXX"]
+openerHashes: ["PAAAP"]
 shifts: ["rvdnb"]
 state: {
   "boardState": [

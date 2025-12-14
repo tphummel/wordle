@@ -9,6 +9,7 @@ openers: ["index"]
 middlers: ["savor","skull","stuck"]
 puzzles: [1434]
 hashes: ["AAAAACAAAACPCAACACCCCCCCCXXXXX"]
+openerHashes: ["AAAAA"]
 shifts: ["yoclu"]
 state: {
   "puzzleDate": "2025-05-23",

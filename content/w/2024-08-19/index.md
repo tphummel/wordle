@@ -9,6 +9,7 @@ openers: ["great"]
 middlers: ["three"]
 puzzles: [1157]
 hashes: ["APPAPPAPCPCCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["APPAP"]
 shifts: ["slbnb"]
 state: {
   "puzzleDate": "2024-08-19",

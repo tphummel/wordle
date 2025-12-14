@@ -9,6 +9,7 @@ openers: ["choir"]
 middlers: []
 puzzles: [1221]
 hashes: ["ACCAACCCCCXXXXXXXXXXXXXXXXXXXX"]
+openerHashes: ["ACCAA"]
 shifts: ["yowdd"]
 state: {
   "puzzleDate": "2024-10-22",

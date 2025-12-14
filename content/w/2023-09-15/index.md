@@ -9,6 +9,7 @@ openers: ["ocean"]
 middlers: ["sheer","reedy","every"]
 puzzles: [818]
 hashes: ["AACAAAACPPPPCAACACCACCCCCXXXXX"]
+openerHashes: ["AACAA"]
 shifts: ["kemad"]
 state: {
   "boardState": [

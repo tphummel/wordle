@@ -6,6 +6,7 @@ contests: ["2022-10-metal"]
 words: ["metal","group","hurry","quirk"]
 puzzles: [487]
 hashes: ["AAAAAAPAPAACACACCCCC"]
+openerHashes: ["AAAAA"]
 shifts: ["wbqau"]
 state: {
   "boardState": [

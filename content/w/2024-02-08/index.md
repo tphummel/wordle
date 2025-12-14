@@ -9,6 +9,7 @@ openers: ["radio"]
 middlers: ["shake","plate","plane"]
 puzzles: [964]
 hashes: ["APAAAAACACCCCACCCCACCCCCCXXXXX"]
+openerHashes: ["APAAA"]
 shifts: ["vsilo"]
 state: {
   "boardState": [

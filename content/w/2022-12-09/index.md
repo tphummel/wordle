@@ -6,6 +6,7 @@ contests: ["2022-12-ratio"]
 words: ["ratio","chair","braid"]
 puzzles: [538]
 hashes: ["PPACAAACCPCCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["PPACA"]
 shifts: ["hyirn"]
 state: {
   "boardState": [

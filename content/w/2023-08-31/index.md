@@ -9,6 +9,7 @@ openers: ["ocean"]
 middlers: ["tepid","diver"]
 puzzles: [803]
 hashes: ["AAPAAAPAPPPPAPPCCCCCXXXXXXXXXX"]
+openerHashes: ["AAPAA"]
 shifts: ["hyqmo"]
 state: {
   "boardState": [

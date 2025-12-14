@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["shaky","radix","walla","gamma"]
 puzzles: [791]
 hashes: ["AAAAAAAPAAACAAAACAACPCPCCCCCCC"]
+openerHashes: ["AAAAA"]
 shifts: ["shovk"]
 state: {
   "boardState": [

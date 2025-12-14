@@ -5,6 +5,7 @@ tags: []
 words: ["delay","youth","stymy","tryst"]
 puzzles: [398]
 hashes: ["AAAAPPAAPAPPCAACCCCCXXXXXXXXXX"]
+openerHashes: ["AAAAP"]
 shifts: ["zygbd"]
 state: {
   "boardState": [

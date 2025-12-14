@@ -5,6 +5,7 @@ tags: []
 words: ["honey","groin","scorn"]
 puzzles: [468]
 hashes: ["APPAAAPCACCCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["APPAA"]
 shifts: ["yjwax"]
 state: {
   "boardState": [

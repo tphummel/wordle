@@ -6,6 +6,7 @@ contests: ["2023-01-guide"]
 words: ["guide","since","biome","pixie"]
 puzzles: [569]
 hashes: ["AAPACACAACACAACCCCCCXXXXXXXXXX"]
+openerHashes: ["AAPAC"]
 shifts: ["vpfro"]
 state: {
   "boardState": [

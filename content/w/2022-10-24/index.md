@@ -6,6 +6,7 @@ contests: ["2022-10-metal"]
 words: ["metal","talon","latch","fault"]
 puzzles: [492]
 hashes: ["AAPPPPCPAAPCPAACCCCCXXXXXXXXXX"]
+openerHashes: ["AAPPP"]
 shifts: ["lhcud"]
 state: {
   "boardState": [

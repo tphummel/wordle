@@ -9,6 +9,7 @@ openers: ["ingot"]
 middlers: ["touch","stomp"]
 puzzles: [1345]
 hashes: ["AAAPPPPAAAACPAACCCCCXXXXXXXXXX"]
+openerHashes: ["AAAPP"]
 shifts: ["uabnb"]
 state: {
   "puzzleDate": "2025-02-23",

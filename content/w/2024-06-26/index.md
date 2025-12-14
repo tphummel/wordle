@@ -9,6 +9,7 @@ openers: ["shout"]
 middlers: ["crime","plead"]
 puzzles: [1103]
 hashes: ["AAAAAAAAAPAACCCCCCCCXXXXXXXXXX"]
+openerHashes: ["AAAAA"]
 shifts: ["qumjn"]
 state: {
   "puzzleDate": "2024-06-26",

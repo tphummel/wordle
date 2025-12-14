@@ -8,6 +8,7 @@ openers: ["canoe"]
 middlers: ["taste"]
 puzzles: [696]
 hashes: ["ACAACPCACCCCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["ACAAC"]
 shifts: ["rhbco"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["syrup"]
 middlers: ["crowd","chair"]
 puzzles: [994]
 hashes: ["AAPAACPAAACCAACCCCCCXXXXXXXXXX"]
+openerHashes: ["AAPAA"]
 shifts: ["iomnb"]
 state: {
   "boardState": [

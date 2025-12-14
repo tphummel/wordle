@@ -5,6 +5,7 @@ tags: []
 words: ["tiger","misty","mints","midst"]
 puzzles: [322]
 hashes: ["PCAAACCPPACCAPPCCCCCXXXXXXXXXX"]
+openerHashes: ["PCAAA"]
 shifts: ["splbd"]
 state: {
   "boardState": [

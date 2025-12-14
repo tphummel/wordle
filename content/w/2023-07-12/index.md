@@ -9,6 +9,7 @@ openers: ["tiger"]
 middlers: ["rainy","frill","swirl"]
 puzzles: [753]
 hashes: ["APAAPPACAAAPCACAPCCCCCCCCXXXXX"]
+openerHashes: ["APAAP"]
 shifts: ["coqav"]
 state: {
   "boardState": [

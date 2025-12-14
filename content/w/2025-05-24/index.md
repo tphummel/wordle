@@ -9,6 +9,7 @@ openers: ["index"]
 middlers: ["death","elude"]
 puzzles: [1435]
 hashes: ["AAPPAPPAAAPAPCCCCCCCXXXXXXXXXX"]
+openerHashes: ["AAPPA"]
 shifts: ["ybmmo"]
 state: {
   "puzzleDate": "2025-05-24",

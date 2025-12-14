@@ -9,6 +9,7 @@ openers: ["squid"]
 middlers: ["clasp","false"]
 puzzles: [720]
 hashes: ["PAAAAAPPCAACCCACCCCCXXXXXXXXXX"]
+openerHashes: ["PAAAA"]
 shifts: ["hhtbk"]
 state: {
   "boardState": [

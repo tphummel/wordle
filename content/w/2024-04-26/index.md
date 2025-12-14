@@ -9,6 +9,7 @@ openers: ["style"]
 middlers: ["grain","avoid"]
 puzzles: [1042]
 hashes: ["AAAAAAAPCAPPACCCCCCCXXXXXXXXXX"]
+openerHashes: ["AAAAA"]
 shifts: ["bhxrn"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["syrup"]
 middlers: ["think","tinge"]
 puzzles: [1001]
 hashes: ["AAAAACAPPACPPAACCCCCXXXXXXXXXX"]
+openerHashes: ["AAAAA"]
 shifts: ["zvfrx"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["brown"]
 middlers: ["whine","swank"]
 puzzles: [1088]
 hashes: ["AAAPPPAACACCACACCCCCXXXXXXXXXX"]
+openerHashes: ["AAAPP"]
 shifts: ["ydcwq"]
 state: {
   "puzzleDate": "2024-06-11",

@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["count"]
 puzzles: [828]
 hashes: ["PAAPAPCAAACCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["PAAPA"]
 shifts: ["xvkti"]
 state: {
   "boardState": [

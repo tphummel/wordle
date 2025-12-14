@@ -9,6 +9,7 @@ openers: ["topaz"]
 middlers: ["threw","techy","teeth"]
 puzzles: [773]
 hashes: ["CAAAACPAPACCAPACCACCCCCCCXXXXX"]
+openerHashes: ["CAAAA"]
 shifts: ["zlvcr"]
 state: {
   "boardState": [

@@ -9,6 +9,7 @@ openers: ["patio"]
 middlers: ["hoist","moist"]
 puzzles: [1487]
 hashes: ["AAPPPACCCCACCCCCCCCCXXXXXXXXXX"]
+openerHashes: ["AAPPP"]
 shifts: ["lvqbd"]
 state: {
   "puzzleDate": "2025-07-15",

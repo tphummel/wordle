@@ -5,6 +5,7 @@ tags: []
 words: ["mouse","triad","wharf","rally","larva"]
 puzzles: [315]
 hashes: ["AAAAAAPAPAAAPPAPCPAACCCCCXXXXX"]
+openerHashes: ["AAAAA"]
 shifts: ["rhzek"]
 state: {
   "boardState": [

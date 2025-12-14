@@ -8,6 +8,7 @@ openers: ["orate"]
 middlers: ["spurn"]
 puzzles: [617]
 hashes: ["APAAACPPPACCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["APAAA"]
 shifts: ["yfzdz"]
 state: {
   "boardState": [

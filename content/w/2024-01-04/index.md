@@ -9,6 +9,7 @@ openers: ["point"]
 middlers: ["chant"]
 puzzles: [929]
 hashes: ["AAACCPACCCCCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["AAACC"]
 shifts: ["yjiwd"]
 state: {
   "boardState": [

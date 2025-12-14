@@ -9,6 +9,7 @@ openers: ["tough"]
 middlers: ["swipe","risen"]
 puzzles: [894]
 hashes: ["AAAAAPAPAPCPCPCCCCCCXXXXXXXXXX"]
+openerHashes: ["AAAAA"]
 shifts: ["xlarx"]
 state: {
   "boardState": [

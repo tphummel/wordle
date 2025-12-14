@@ -9,6 +9,7 @@ openers: ["tiger"]
 middlers: ["steal"]
 puzzles: [769]
 hashes: ["PAAPAPCPAACCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["PAAPA"]
 shifts: ["kapxc"]
 state: {
   "boardState": [

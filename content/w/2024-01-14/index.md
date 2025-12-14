@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["thorn","noisy","boing"]
 puzzles: [939]
 hashes: ["PAPAAAAPAPPCCAAACCCCCCCCCXXXXX"]
+openerHashes: ["PAPAA"]
 shifts: ["jvqwq"]
 state: {
   "boardState": [

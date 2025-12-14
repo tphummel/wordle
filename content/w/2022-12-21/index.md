@@ -6,6 +6,7 @@ contests: ["2022-12-ratio"]
 words: ["ratio","grade","scrap","ulnar","lunar"]
 puzzles: [550]
 hashes: ["PPAAAAPPAAAAPCAPPCCCCCCCCXXXXX"]
+openerHashes: ["PPAAA"]
 shifts: ["rbvjb"]
 state: {
   "boardState": [

@@ -8,6 +8,7 @@ openers: ["horde"]
 middlers: ["plain","stump","puffy"]
 puzzles: [684]
 hashes: ["AAAAAPAAAAAAPAPPCAACCCCCCXXXXX"]
+openerHashes: ["AAAAA"]
 shifts: ["mbxyi"]
 state: {
   "boardState": [

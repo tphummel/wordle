@@ -9,6 +9,7 @@ openers: ["dream"]
 middlers: ["chore","cores"]
 puzzles: [1095]
 hashes: ["APPAACAPPPCCPCACCCCCXXXXXXXXXX"]
+openerHashes: ["APPAA"]
 shifts: ["ivdnb"]
 state: {
   "puzzleDate": "2024-06-18",

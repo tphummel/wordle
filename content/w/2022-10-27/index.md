@@ -6,6 +6,7 @@ contests: ["2022-10-metal"]
 words: ["metal","brain","raspy","carry"]
 puzzles: [495]
 hashes: ["AAAPAAPPAAPCAACCCCCCXXXXXXXXXX"]
+openerHashes: ["AAAPA"]
 shifts: ["ihzai"]
 state: {
   "boardState": [

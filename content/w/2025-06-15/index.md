@@ -9,6 +9,7 @@ openers: ["phase"]
 middlers: ["track"]
 puzzles: [1457]
 hashes: ["AACAAAACAACCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["AACAA"]
 shifts: ["wbirv"]
 state: {
   "puzzleDate": "2025-06-15",

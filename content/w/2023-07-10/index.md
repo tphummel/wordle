@@ -9,6 +9,7 @@ openers: ["tiger"]
 middlers: ["sound","poach"]
 puzzles: [751]
 hashes: ["AAAAAACAAAACAAACCCCCXXXXXXXXXX"]
+openerHashes: ["AAAAA"]
 shifts: ["lvtui"]
 state: {
   "boardState": [

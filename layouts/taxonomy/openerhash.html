@@ -1,0 +1,50 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+
+<p>{{ partial "breadcrumb.html" . }}</p>
+
+{{ with .Content }}
+<div>{{ . }}</div>
+{{ end }}
+
+<h2>Opener Hash Pattern</h2>
+{{ if gt (len .Data.Pages) 0 }}
+  {{ $first := index .Data.Pages 0 }}
+  <div>
+    <div>{{ partialCached "first-guess-emoji.html" $first $first.File.Path }}</div>
+    <div><code>{{ $.Title }}</code></div>
+  </div>
+{{ end }}
+
+<h2>Occurrences</h2>
+<p>This opener hash has been used <strong>{{ len .Data.Pages }}</strong> time{{ if ne (len .Data.Pages) 1 }}s{{ end }}.</p>
+
+<h2>History</h2>
+
+<table>
+  <tr>
+    <td>Date</td>
+    <td>Puzzle</td>
+    <td>First Guess</td>
+    <td>Score</td>
+  </tr>
+
+  {{ range .Data.Pages }}
+    {{ $firstGuessWord := "" }}
+    {{ with .Params.state.boardState }}
+      {{ if gt (len .) 0 }}
+        {{ $firstGuessWord = index . 0 }}
+      {{ end }}
+    {{ end }}
+    <tr>
+      <td><a href="{{ .RelPermalink }}">{{ dateFormat "Jan 2, 2006" .Date }}</a></td>
+      <td><a href="{{ with $.GetPage (printf "/puzzles/%s" (index .Params.puzzles 0)) }}{{ .RelPermalink}}{{end}}">{{ index .Params.puzzles 0 }}</a></td>
+      <td>
+        <a href="{{ .RelPermalink }}">{{ if $firstGuessWord }}{{ $firstGuessWord }}{{ else }}--{{ end }}</a>
+      </td>
+      <td><a href="{{ .RelPermalink }}">{{ partialCached "puzzle-score.html" . .File.Path }}</a></td>
+    </tr>
+
+  {{ end }}
+</table>
+{{ end }}

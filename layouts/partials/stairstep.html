@@ -1,0 +1,21 @@
+{{ $result := false }}
+
+{{ if isset .Params "hashes" }}
+  {{ $hash := index .Params.hashes 0 }}
+
+  {{ if eq $hash "AAAAACAAAACCAAACCCAACCCCCXXXXX" }}
+    {{ $result = dict "direction" "left" }}
+  {{ else if eq $hash "AAAAACAAAACCAAACCCAACCCCACCCCC" }}
+    {{ $result = dict "direction" "left" }}
+  {{ else if eq $hash "AAAAAAAAACAAACCAACCCCCCCCXXXXX" }}
+    {{ $result = dict "direction" "right" }}
+  {{ else if eq $hash "AAAAAAAAACAAACCAACCCACCCCCCCCC" }}
+    {{ $result = dict "direction" "right" }}
+  {{ else if eq $hash "CAAAACCAAACCCAACCCCACCCCCXXXXX" }}
+    {{ $result = dict "direction" "left" }}
+  {{ else if eq $hash "AAAACAAACCAACCCACCCCCCCCXXXXX" }}
+    {{ $result = dict "direction" "right" }}
+  {{ end }}
+{{ end }}
+
+{{ return $result }}

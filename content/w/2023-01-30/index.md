@@ -8,6 +8,7 @@ openers: ["guide"]
 middlers: ["plane","stare","craze"]
 puzzles: [590]
 hashes: ["AAAACAACACAACPCCCCACCCCCCXXXXX"]
+openerHashes: ["AAAAC"]
 shifts: ["iyieo"]
 state: {
   "boardState": [

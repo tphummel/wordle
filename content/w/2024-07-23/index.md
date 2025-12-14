@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["noisy"]
 puzzles: [1130]
 hashes: ["PAPAAPPAAACCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["PAPAA"]
 shifts: ["vywwq"]
 state: {
   "puzzleDate": "2024-07-23",

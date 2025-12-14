@@ -5,6 +5,7 @@ tags: []
 words: ["third","plate","spout","stoop","stomp"]
 puzzles: [404]
 hashes: ["PAAAAPAAPACPCAPCCCACCCCCCXXXXX"]
+openerHashes: ["PAAAA"]
 shifts: ["yawvz"]
 state: {
   "boardState": [

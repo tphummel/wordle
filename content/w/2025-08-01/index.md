@@ -9,6 +9,7 @@ openers: ["could"]
 middlers: ["shore","tango"]
 puzzles: [1504]
 hashes: ["APAAAAAPAAACCACCCCCCXXXXXXXXXX"]
+openerHashes: ["APAAA"]
 shifts: ["hhvsy"]
 state: {
   "puzzleDate": "2025-08-01",

@@ -9,6 +9,7 @@ openers: ["eight"]
 middlers: ["clown","snaky"]
 puzzles: [1275]
 hashes: ["AAAAAAAAAPAPACCCCCCCXXXXXXXXXX"]
+openerHashes: ["AAAAA"]
 shifts: ["lbvti"]
 state: {
   "puzzleDate": "2024-12-15",

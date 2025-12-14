@@ -9,6 +9,7 @@ openers: ["drive"]
 middlers: ["react","extra","after","later"]
 puzzles: [1495]
 hashes: ["APAAPPPPAPPACPPPACCCACCCCCCCCC"]
+openerHashes: ["APAAP"]
 shifts: ["chbnb"]
 state: {
   "puzzleDate": "2025-07-23",

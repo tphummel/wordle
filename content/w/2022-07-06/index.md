@@ -5,6 +5,7 @@ tags: ["interesting"]
 words: ["track","mouse","flung","fluid","fluff"]
 puzzles: [382]
 hashes: ["AAAAAAACAACCCAACCCAACCCCCXXXXX"]
+openerHashes: ["AAAAA"]
 shifts: ["lscop"]
 state: {
   "boardState": [

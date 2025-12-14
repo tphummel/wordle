@@ -9,6 +9,7 @@ openers: ["eight"]
 middlers: ["clean","spore","moped"]
 puzzles: [1373]
 hashes: ["PAAAAAAPAAAPPAPACCCPCCCCCXXXXX"]
+openerHashes: ["PAAAA"]
 shifts: ["jvxni"]
 state: {
   "puzzleDate": "2025-03-23",

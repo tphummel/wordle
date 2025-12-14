@@ -5,6 +5,7 @@ tags: []
 words: ["piano","stove","cloud","groom","roomy"]
 puzzles: [392]
 hashes: ["AAAAPAACAAAACAAAPCPPCCCCCXXXXX"]
+openerHashes: ["AAAAP"]
 shifts: ["xvwvi"]
 state: {
   "boardState": [

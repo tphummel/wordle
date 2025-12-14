@@ -6,6 +6,7 @@ contests: ["2022-10-metal"]
 words: ["metal","spree","brine","grove"]
 puzzles: [489]
 hashes: ["APAAAAAPACACAACCCCCCXXXXXXXXXX"]
+openerHashes: ["APAAA"]
 shifts: ["myweo"]
 state: {
   "boardState": [

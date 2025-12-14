@@ -60,8 +60,16 @@
   {{ $achievement := dict "badge" "🥈" "report" "opener-double-misses.md" "title" "Opener Double Miss" }}
   {{ $achievements = $achievements | append (slice $achievement) }}
 {{ end }}
+{{ with (partialCached "opener-triple-misses" $wordle .File.Path) }}
+  {{ $achievement := dict "badge" "🥉" "report" "opener-triple-misses.md" "title" "Opener Triple Miss" }}
+  {{ $achievements = $achievements | append (slice $achievement) }}
+{{ end }}
 {{ with (partialCached "anagrams" $wordle .File.Path) }}
   {{ $achievement := dict "badge" "🏅" "report" "anagrams.md" "title" "Anagram" }}
+  {{ $achievements = $achievements | append (slice $achievement) }}
+{{ end }}
+{{ with (partialCached "true-anagrams" $wordle .File.Path) }}
+  {{ $achievement := dict "badge" "🏵️" "report" "true-anagrams.md" "title" "True Anagram" }}
   {{ $achievements = $achievements | append (slice $achievement) }}
 {{ end }}
 {{ with (partialCached "symmetrical" $wordle .File.Path) }}
@@ -85,11 +93,15 @@
     {{ $achievements = $achievements | append (slice $achievement) }}
   {{ end }}
   {{ with (partialCached "all-vowels" $wordle .File.Path) }}
-    {{ $achievement := dict "badge" "🅰️" "report" "all-vowels-guessed.md" "title" "All Vowels Guessed" }}
+    {{ $achievement := dict "badge" "🏆" "report" "all-vowels-guessed.md" "title" "All Vowels Guessed" }}
     {{ $achievements = $achievements | append (slice $achievement) }}
   {{ end }}
   {{ with (partialCached "all-vowels-plus-y" $wordle .File.Path) }}
-    {{ $achievement := dict "badge" "🅾️" "report" "all-vowels-plus-y.md" "title" "All Vowels Plus Y Guessed" }}
+    {{ $achievement := dict "badge" "🥉" "report" "all-vowels-plus-y.md" "title" "All Vowels Plus Y Guessed" }}
+    {{ $achievements = $achievements | append (slice $achievement) }}
+  {{ end }}
+  {{ with (partialCached "dive-and-saves" $wordle .File.Path) }}
+    {{ $achievement := dict "badge" "🛟" "report" "dive-and-saves.md" "title" "Dive and Save" }}
     {{ $achievements = $achievements | append (slice $achievement) }}
   {{ end }}
   {{ range (partialCached "single-letter-guesses.html" $wordle .File.Path) }}
@@ -97,6 +109,10 @@
       {{ $achievement := dict "badge" "🔁" "report" "single-letter-guesses.md" "title" (printf "%s Guess" (strings.Repeat . 5)) }}
       {{ $achievements = $achievements | append (slice $achievement) }}
     {{ end }}
+  {{ end }}
+  {{ with (partialCached "stairstep" . .File.Path) }}
+    {{ $achievement := dict "badge" "🪜" "report" "stairstep.md" "title" "Stairstep" }}
+    {{ $achievements = $achievements | append (slice $achievement) }}
   {{ end }}
 
 {{ with $achievements }}
@@ -129,8 +145,8 @@
       </tr>
     {{ $title := .Title }}
     {{ $evaluations := .Params.state.evaluations }}
-    {{ $darkRowColor := "color:#161f27;" }}
-    {{ $lightRowColor := "color:#202b38;" }}
+    {{ $darkRowColor := "color:#0b1d3a;" }}
+    {{ $lightRowColor := "color:#13294b;" }}
 
     {{ range $g, $guess := .Params.state.boardState }}
       {{ if not (eq $guess "") }}
@@ -249,6 +265,13 @@
   {{ $hash = partialCached "puzzle-hash" . .Title }}
 {{ end }}
 <p>Hash: <strong><a href="{{ with $.GetPage (printf "/hashes/%s" $hash) }}{{ .RelPermalink}}{{end}}">{{ $hash }}</a></strong></p>
+{{ $openerHash := "" }}
+{{ with .Params.openerHashes }}
+  {{ $openerHash = (index . 0) }}
+{{ else }}
+  {{ $openerHash = partialCached "first-guess-hash" . .Title }}
+{{ end }}
+<p>Opener Hash: <strong><a href="{{ with $.GetPage (printf "/openerhashes/%s" $openerHash) }}{{ .RelPermalink}}{{end}}">{{ $openerHash }}</a></strong></p>
 {{ with .Params.shifts }}
   {{ $shift := (index . 0) }}
   <p>Shift: <strong><a href="{{ with $.GetPage (printf "/shifts/%s" $shift) }}{{ .RelPermalink}}{{end}}">{{ $shift }}</a></strong></p>
@@ -350,14 +373,12 @@
     <tr>
       <th>Date</th>
       <th>Puzzle</th>
-      <th>Turns</th>
       <th>Score</th>
     </tr>
   {{ range . }}
     <tr>
       <td><a href="{{ .RelPermalink }}">{{ dateFormat "Jan 2, 2006" .Date }}</a></td>
       <td><a href="{{ .RelPermalink }}">{{ index .Params.puzzles 0 }}</td>
-      <td><a href="{{ .RelPermalink }}">{{ partialCached "guess-count.html" . .File.Path }}{{- cond (eq .Params.state.hardMode true) "*" "" -}}</a></td>
       <td><a href="{{ .RelPermalink }}">{{ partialCached "puzzle-score.html" . .File.Path }}</a></td>
     </tr>
   {{ end }}

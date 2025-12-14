@@ -9,6 +9,7 @@ openers: ["block"]
 middlers: ["saber","webby"]
 puzzles: [1511]
 hashes: ["PAAAAAACPAAPCAACCCCCXXXXXXXXXX"]
+openerHashes: ["PAAAA"]
 shifts: ["otjdo"]
 state: {
   "puzzleDate": "2025-08-08",

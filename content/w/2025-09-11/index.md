@@ -9,6 +9,7 @@ openers: ["plush"]
 middlers: ["chide"]
 puzzles: [1545]
 hashes: ["AAAAPCCPAACCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["AAAAP"]
 shifts: ["ioirb"]
 state: {
   "puzzleDate": "2025-09-11",

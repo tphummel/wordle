@@ -9,6 +9,7 @@ openers: ["point"]
 middlers: ["chore","globe","awoke"]
 puzzles: [919]
 hashes: ["APAAAAACACAACACAACCCCCCCCXXXXX"]
+openerHashes: ["APAAA"]
 shifts: ["kcwto"]
 state: {
   "boardState": [

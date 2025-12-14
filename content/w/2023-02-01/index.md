@@ -6,6 +6,7 @@ contests: ["2023-02-orate"]
 words: ["orate","cough","scowl","scold"]
 puzzles: [592]
 hashes: ["PAAAAPPAAACCCAPCCCCCXXXXXXXXXX"]
+openerHashes: ["PAAAA"]
 shifts: ["yjwun"]
 state: {
   "boardState": [

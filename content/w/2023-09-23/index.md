@@ -9,6 +9,7 @@ openers: ["merit"]
 middlers: ["harsh","carry","cargo"]
 puzzles: [826]
 hashes: ["AACAAACCAACCCAACCCAPCCCCCXXXXX"]
+openerHashes: ["AACAA"]
 shifts: ["ihzxv"]
 state: {
   "boardState": [

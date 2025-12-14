@@ -9,6 +9,7 @@ openers: ["ghost"]
 middlers: ["fling","range"]
 puzzles: [1371]
 hashes: ["PAAAAAAAPPAAPCCCCCCCXXXXXXXXXX"]
+openerHashes: ["PAAAA"]
 shifts: ["tblpo"]
 state: {
   "puzzleDate": "2025-03-21",

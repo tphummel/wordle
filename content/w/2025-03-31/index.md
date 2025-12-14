@@ -9,6 +9,7 @@ openers: ["focus"]
 middlers: ["doily","wonky","ropey","boogy","boozy"]
 puzzles: [1381]
 hashes: ["ACAAAACAACACAACACAACCCCACCCCAC"]
+openerHashes: ["ACAAA"]
 shifts: ["hvwci"]
 state: {
   "puzzleDate": "2025-03-31",

@@ -9,6 +9,7 @@ openers: ["noise"]
 middlers: ["crave"]
 puzzles: [1325]
 hashes: ["AAAACAPAPCCCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["AAAAC"]
 shifts: ["xlddo"]
 state: {
   "puzzleDate": "2025-02-03",

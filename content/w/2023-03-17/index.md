@@ -8,6 +8,7 @@ openers: ["juice"]
 middlers: ["bread","askew","leafy"]
 puzzles: [636]
 hashes: ["AAAAPAAPPAPAAPAPCCACCCCCCXXXXX"]
+openerHashes: ["AAAAP"]
 shifts: ["sliui"]
 state: {
   "boardState": [

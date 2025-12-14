@@ -9,6 +9,7 @@ openers: ["weird"]
 middlers: ["cease","began","fetal","metal"]
 puzzles: [1534]
 hashes: ["ACAAAACPAAACACAACCCCACCCCCCCCC"]
+openerHashes: ["ACAAA"]
 shifts: ["vlbjv"]
 state: {
   "puzzleDate": "2025-08-31",

@@ -9,6 +9,7 @@ openers: ["sting"]
 middlers: ["fleck","bumpy"]
 puzzles: [1183]
 hashes: ["AAAAAAAAAACAAAACCCCCXXXXXXXXXX"]
+openerHashes: ["AAAAA"]
 shifts: ["hywjn"]
 state: {
   "puzzleDate": "2024-09-14",

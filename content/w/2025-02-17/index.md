@@ -9,6 +9,7 @@ openers: ["voice"]
 middlers: ["strip","trait"]
 puzzles: [1339]
 hashes: ["AAPAAAPPCACCCCACCCCCXXXXXXXXXX"]
+openerHashes: ["AAPAA"]
 shifts: ["zyirv"]
 state: {
   "puzzleDate": "2025-02-17",

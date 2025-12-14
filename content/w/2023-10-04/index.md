@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["trump"]
 puzzles: [837]
 hashes: ["APAAAPPCAPCCCCCXXXXXXXXXXXXXXX"]
+openerHashes: ["APAAA"]
 shifts: ["ywcad"]
 state: {
   "boardState": [

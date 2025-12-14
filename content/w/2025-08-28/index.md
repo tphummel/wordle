@@ -9,6 +9,7 @@ openers: ["weird"]
 middlers: ["pinky","spait"]
 puzzles: [1531]
 hashes: ["AAPAAPPAAACCACCCCCCCXXXXXXXXXX"]
+openerHashes: ["AAPAA"]
 shifts: ["ywtrd"]
 state: {
   "puzzleDate": "2025-08-28",

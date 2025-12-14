@@ -9,6 +9,7 @@ openers: ["crazy"]
 middlers: ["shame","giant","flank"]
 puzzles: [1492]
 hashes: ["AACAAAACAAAACCAACCCCCCCCCXXXXX"]
+openerHashes: ["AACAA"]
 shifts: ["hsiwu"]
 state: {
   "puzzleDate": "2025-07-20",

@@ -5,6 +5,7 @@ tags: []
 words: ["steam","prone","loupe","olive"]
 puzzles: [308]
 hashes: ["AAPAAAAPACPPAACCCCCCXXXXXXXXXX"]
+openerHashes: ["AAPAA"]
 shifts: ["usqeo"]
 state: {
   "boardState": [

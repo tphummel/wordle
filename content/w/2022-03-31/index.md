@@ -5,6 +5,7 @@ tags: []
 words: ["peril","steam","stone","stoke","stove"]
 puzzles: [284]
 hashes: ["APAAACCPAACCCACCCCACCCCCCXXXXX"]
+openerHashes: ["APAAA"]
 shifts: ["yaweo"]
 state: {
   "boardState": [

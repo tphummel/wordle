@@ -9,6 +9,7 @@ openers: ["child"]
 middlers: ["stole","brule","apple","whale"]
 puzzles: [1284]
 hashes: ["AAACAAAACCAAACCPAACCAAPCCCCCCC"]
+openerHashes: ["AAACA"]
 shifts: ["khouo"]
 state: {
   "puzzleDate": "2024-12-24",

@@ -9,6 +9,7 @@ openers: ["ounce"]
 middlers: ["snowy","north"]
 puzzles: [885]
 hashes: ["PAPAAAPPAAPPAAACCCCCXXXXXXXXXX"]
+openerHashes: ["PAPAA"]
 shifts: ["vpiwy"]
 state: {
   "boardState": [

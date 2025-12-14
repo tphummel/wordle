@@ -8,6 +8,7 @@ openers: ["lucky"]
 middlers: ["laser","lithe","lodge"]
 puzzles: [658]
 hashes: ["CAAAACAAPACAAACCACCCCCCCCXXXXX"]
+openerHashes: ["CAAAA"]
 shifts: ["rllpo"]
 state: {
   "boardState": [
