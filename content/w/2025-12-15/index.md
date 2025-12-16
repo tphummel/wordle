@@ -10,7 +10,7 @@ middlers: ["month","worry","folly","pocky","soggy"]
 puzzles: [1640]
 hashes: ["AAPAAACAAAACAACACAACACAACACACC"]
 openerHashes: ["AAPAA"]
-shifts: [""]
+shifts: ["jvlpi"]
 state: {
   "puzzleDate": "2025-12-15",
   "boardState": [
