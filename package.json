@@ -1,0 +1,10 @@
+{
+  "name": "wordle",
+  "version": "1.0.0",
+  "description": "Utility scripts for the Wordle puzzle site.",
+  "type": "commonjs",
+  "private": true,
+  "scripts": {
+    "build:puzzle-db": "python scripts/build_puzzle_db.py"
+  }
+}
