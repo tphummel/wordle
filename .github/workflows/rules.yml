@@ -1,0 +1,25 @@
+name: Run Rules Scripts
+
+on:
+  pull_request:
+
+jobs:
+  run-rules:
+    name: Run Rules
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+      - name: Install zx
+        run: npm install -g zx
+      - name: Run rule scripts on puzzles
+        run: |
+          set -o pipefail
+          for script in content/r/*.md; do
+            if [[ "$(basename "$script")" != "_index.md" ]]; then
+              echo "Running $script"
+              find content/w -name "*.md" | grep -v "_index" | xargs -I {} sh -c "cat {} | zx $script"
+            fi
+          done
