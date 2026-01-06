@@ -280,7 +280,10 @@
 <p>
   <details>
     <summary>
-      Puzzle Score: <strong>{{ partialCached "puzzle-score.html" . .File.Path }}</strong>
+      {{ $puzzleScore := partialCached "puzzle-score.html" . .File.Path }}
+      {{ $puzzlePercentile := partialCached "puzzle-score-percentile.html" . .File.Path }}
+      Puzzle Score: <strong>{{ $puzzleScore }}</strong>
+      (Percentile: {{ $puzzlePercentile | lang.FormatNumber 1 }}%)
     </summary>
     {{ partialCached "puzzle-score-detail.html" . .File.Path }}
   </details>
