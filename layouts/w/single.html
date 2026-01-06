@@ -271,7 +271,23 @@
 {{ else }}
   {{ $openerHash = partialCached "first-guess-hash" . .Title }}
 {{ end }}
-<p>Opener Hash: <strong><a href="{{ with $.GetPage (printf "/openerhashes/%s" $openerHash) }}{{ .RelPermalink}}{{end}}">{{ $openerHash }}</a></strong></p>
+{{ $openerHashKey := printf "%s" $openerHash }}
+{{ $openerHashCount := 0 }}
+{{ $openerHashOccurrence := 0 }}
+{{ with (index $.Site.Taxonomies.openerhashes $openerHashKey) }}
+  {{ $openerHashCount = len .Pages }}
+  {{ range $i, $page := .Pages.ByDate }}
+    {{ if eq $page.RelPermalink $.RelPermalink }}
+      {{ $openerHashOccurrence = add $i 1 }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ $openerHashLabel := $openerHashKey }}
+{{ if gt $openerHashCount 0 }}
+  {{ $occurrenceLabel := cond (gt $openerHashOccurrence 0) (printf "%d" $openerHashOccurrence) "?" }}
+  {{ $openerHashLabel = printf "%s (%s/%d)" $openerHashKey $occurrenceLabel $openerHashCount }}
+{{ end }}
+<p>Opener Hash: <strong><a href="{{ with $.GetPage (printf "/openerhashes/%s" $openerHashKey) }}{{ .RelPermalink}}{{end}}">{{ $openerHashLabel }}</a></strong></p>
 {{ with .Params.shifts }}
   {{ $shift := (index . 0) }}
   <p>Shift: <strong><a href="{{ with $.GetPage (printf "/shifts/%s" $shift) }}{{ .RelPermalink}}{{end}}">{{ $shift }}</a></strong></p>
