@@ -1,0 +1,33 @@
+name: Build puzzle SQLite artifact
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-sqlite:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install sqlite-utils
+        run: python -m pip install --upgrade pip && python -m pip install -r scripts/requirements-sqlite-utils.txt
+
+      - name: Build puzzle database
+        run: python scripts/build_puzzle_db.py --db-path puzzle-data.db
+
+      - name: Capture short SHA
+        run: echo "SHORT_SHA=${GITHUB_SHA::7}" >> $GITHUB_ENV
+
+      - name: Upload SQLite artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: puzzle-sqlite-${{ env.SHORT_SHA }}
+          path: puzzle-data.db
+          if-no-files-found: error
