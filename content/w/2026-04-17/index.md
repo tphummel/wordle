@@ -65,4 +65,5 @@ state: {
 }
 stats: undefined
 ---
+delve into the money chest
 <!-- more -->
