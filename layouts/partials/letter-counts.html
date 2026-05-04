@@ -1,28 +1,25 @@
 {{ $letters := dict }}
+{{ $singleCoverage := dict }}
 {{ range (split "abcdefghijklmnopqrstuvwxyz" "") }}
   {{ $letters = merge $letters (dict . 0) }}
+  {{ $singleCoverage = merge $singleCoverage (dict . (dict "1" false "2" false "3" false "4" false "5" false)) }}
 {{ end }}
 {{ $singles := slice }}
 {{ range $guess := .Params.state.boardState }}
   {{ if and $guess (ne $guess "") }}
     {{ $lower := lower $guess }}
-    {{ if eq (len $lower) 5 }}
-      {{ $first := substr $lower 0 1 }}
-      {{ $allSame := true }}
-      {{ range (split $lower "") }}
-        {{ if ne . $first }}
-          {{ $allSame = false }}
-        {{ end }}
-      {{ end }}
-      {{ if $allSame }}
-        {{ if not (in $singles $first) }}
-          {{ $singles = $singles | append $first }}
-        {{ end }}
-      {{ end }}
+    {{ range $i, $char := (split $lower "") }}
+      {{ $letters = merge $letters (dict $char (add (index $letters $char) 1)) }}
+      {{ $slot := string (add $i 1) }}
+      {{ $coverage := index $singleCoverage $char }}
+      {{ $singleCoverage = merge $singleCoverage (dict $char (merge $coverage (dict $slot true))) }}
     {{ end }}
-    {{ range (split $lower "") }}
-      {{ $letters = merge $letters (dict . (add (index $letters .) 1)) }}
-    {{ end }}
+  {{ end }}
+{{ end }}
+{{ range (split "abcdefghijklmnopqrstuvwxyz" "") }}
+  {{ $coverage := index $singleCoverage . }}
+  {{ if and (index $coverage "1") (index $coverage "2") (index $coverage "3") (index $coverage "4") (index $coverage "5") }}
+    {{ $singles = $singles | append . }}
   {{ end }}
 {{ end }}
 {{ return (merge $letters (dict "_singles" $singles)) }}

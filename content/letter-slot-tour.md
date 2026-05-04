@@ -1,8 +1,8 @@
 ---
-title: Single Letter Guesses
+title: Letter Slot Tour
 ---
 
-Definition: Puzzles containing a guess made up of the same letter in all five positions.
+Definition: Puzzles where a letter appears in all five positions/slots 1-5.
 
 {{< om.inline >}}
   {{ $wordles := where .Site.RegularPages "Section" "w" }}
@@ -13,14 +13,14 @@ Definition: Puzzles containing a guess made up of the same letter in all five po
       <th>Date</th>
       <th>Puzzle</th>
       <th>Score</th>
-      <th>Guess</th>
+      <th>Letter</th>
       <th>Grid</th>
     </tr>
 
     {{ range sort $found "date" "desc" }}
       {{ $guesses := slice }}
       {{ range .letters }}
-        {{ $guesses = $guesses | append (strings.Repeat . 5) }}
+        {{ $guesses = $guesses | append (upper .) }}
       {{ end }}
       <tr>
         <td><a href="{{ .puzzle.RelPermalink }}">{{ dateFormat "Jan 2, 2006" .date }}</a></td>
