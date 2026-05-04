@@ -2,7 +2,7 @@
 title: Letter Slot Tour
 ---
 
-Definition: Puzzles where a letter appears in all five positions (1-5) across that puzzle's guesses.
+Definition: Puzzles where a letter appears in all five positions/slots 1-5.
 
 {{< om.inline >}}
   {{ $wordles := where .Site.RegularPages "Section" "w" }}
@@ -13,7 +13,7 @@ Definition: Puzzles where a letter appears in all five positions (1-5) across th
       <th>Date</th>
       <th>Puzzle</th>
       <th>Score</th>
-      <th>Guess</th>
+      <th>Letter</th>
       <th>Grid</th>
     </tr>
 
