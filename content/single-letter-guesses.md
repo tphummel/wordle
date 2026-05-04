@@ -20,7 +20,7 @@ Definition: Puzzles containing a guess made up of the same letter in all five po
     {{ range sort $found "date" "desc" }}
       {{ $guesses := slice }}
       {{ range .letters }}
-        {{ $guesses = $guesses | append (strings.Repeat . 5) }}
+        {{ $guesses = $guesses | append (strings.Repeat 5 .) }}
       {{ end }}
       <tr>
         <td><a href="{{ .puzzle.RelPermalink }}">{{ dateFormat "Jan 2, 2006" .date }}</a></td>
