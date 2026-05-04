@@ -1,5 +1,5 @@
 ---
-title: Single Letter Tour
+title: Letter Slot Tour
 ---
 
 Definition: Puzzles where a letter appears in all five positions (1-5) across that puzzle's guesses.
