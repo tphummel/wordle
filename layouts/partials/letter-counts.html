@@ -5,6 +5,7 @@
   {{ $singleCoverage = merge $singleCoverage (dict . (dict "1" false "2" false "3" false "4" false "5" false)) }}
 {{ end }}
 {{ $singles := slice }}
+{{ $doubles := slice }}
 {{ range $guess := .Params.state.boardState }}
   {{ if and $guess (ne $guess "") }}
     {{ $lower := lower $guess }}
@@ -22,4 +23,9 @@
     {{ $singles = $singles | append . }}
   {{ end }}
 {{ end }}
-{{ return (merge $letters (dict "_singles" $singles)) }}
+{{ range $i, $left := $singles }}
+  {{ range after (add $i 1) $singles }}
+    {{ $doubles = $doubles | append (printf "%s%s" $left .) }}
+  {{ end }}
+{{ end }}
+{{ return (merge $letters (dict "_singles" $singles "_doubles" $doubles)) }}

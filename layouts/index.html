@@ -289,11 +289,20 @@
     </tr>
   {{ end }}
   {{ with .Site.GetPage "letter-slot-tour.md" }}
-    {{ $singleLetter := partial "single-letter-guesses.html" (where .Site.RegularPages "Section" "w") }}
+    {{ $singleLetter := partialCached "single-letter-guesses.html" (where .Site.RegularPages "Section" "w") "single-letter-guesses" }}
     <tr>
       <td><a href="{{ .RelPermalink }}">Letter Slot Tour</a></td>
       <td>
         {{ (mul (div (float (len $singleLetter)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $singleLetter }}</a> / {{ len $wordles }})
+      </td>
+    </tr>
+  {{ end }}
+  {{ with .Site.GetPage "double-letter-slot-tour.md" }}
+    {{ $doubleLetter := partialCached "double-letter-guesses.html" (where .Site.RegularPages "Section" "w") "double-letter-guesses" }}
+    <tr>
+      <td><a href="{{ .RelPermalink }}">Double Letter Slot Tour</a></td>
+      <td>
+        {{ (mul (div (float (len $doubleLetter)) (len $wordles)) 100)  | lang.FormatNumber 2 }}% (<a href="{{ .RelPermalink }}">{{ len $doubleLetter }}</a> / {{ len $wordles }})
       </td>
     </tr>
   {{ end }}
