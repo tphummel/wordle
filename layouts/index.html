@@ -402,7 +402,7 @@
 </table>
 <p><a href="{{ with .Site.GetPage "non-opener-usage.md" }}{{ .RelPermalink }}{{ end }}">Full list…</a></p>
 
-{{ $newestWords := partialCached "newest-words.html" $wordles "newest-words" }}
+{{ $newestWords := partialCached "newest-words.html" .Site "newest-words" }}
 <h2>🆕 Newest Words</h2>
 <table>
   <tr>

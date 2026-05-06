@@ -5,8 +5,7 @@ title: Newest Words
 Words sorted by when they were first used, newest additions first.
 
 {{< nw.inline >}}
-  {{ $wordles := where .Site.RegularPages "Section" "w" }}
-  {{ $newestWords := partialCached "newest-words.html" $wordles "newest-words" }}
+  {{ $newestWords := partialCached "newest-words.html" .Site "newest-words" }}
 
   <p>Total Distinct Words: <strong>{{ len $newestWords }}</strong></p>
 
