@@ -1,0 +1,12 @@
+{{ $result := slice }}
+
+{{ range $word, $weightedPages := .Taxonomies.words }}
+  {{ $sorted := $weightedPages.Pages.ByDate }}
+  {{ $first := index (first 1 $sorted) 0 }}
+  {{ $last := index (last 1 $sorted) 0 }}
+  {{ if $first }}
+    {{ $result = $result | append (dict "word" $word "firstDate" $first.Date "firstPage" $first "lastDate" $last.Date "lastPage" $last "count" (len $weightedPages)) }}
+  {{ end }}
+{{ end }}
+
+{{ return (sort $result "firstDate" "desc") }}
