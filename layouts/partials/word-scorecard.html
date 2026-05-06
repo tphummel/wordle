@@ -23,7 +23,7 @@
 
 {{ $scratch.Set "years" dict }}
 {{ $scratch.Set "isSolution" false }}
-{{ $scratch.Set "solutionPage" nil }}
+{{ $scratch.Set "solutionPages" (slice) }}
 
 {{ range .Data.Pages }}
   {{ $guessSeq := -1 }}
@@ -76,7 +76,7 @@
 
     {{ if eq $.Data.Term .Params.state.solution }}
       {{ $scratch.Set "isSolution" true }}
-      {{ $scratch.Set "solutionPage" . }}
+      {{ $scratch.Add "solutionPages" (slice .) }}
     {{ end }}
   {{ end }}
 {{ end }}
@@ -84,7 +84,7 @@
 <div class="scorecard">
   <p>
     Puzzle Solution: <input type="checkbox" disabled {{ if $scratch.Get "isSolution" }}checked{{ end }} />
-    {{ with $scratch.Get "solutionPage" }}
+    {{ range $scratch.Get "solutionPages" }}
       <a href="{{ .RelPermalink }}">{{ index .Params.puzzles 0 }}</a>
     {{ end }}
   </p>
