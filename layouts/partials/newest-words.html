@@ -1,0 +1,23 @@
+{{ $wordFirstSeen := dict }}
+
+{{ range (sort . "Date" "asc") }}
+  {{ $page := . }}
+  {{ $words := .Params.words }}
+  {{ if not $words }}
+    {{ $words = index .Params.state "boardState" }}
+  {{ end }}
+  {{ range $words }}
+    {{ if . }}
+      {{ if not (isset $wordFirstSeen .) }}
+        {{ $wordFirstSeen = merge $wordFirstSeen (dict . $page) }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $result := slice }}
+{{ range $word, $page := $wordFirstSeen }}
+  {{ $result = $result | append (dict "word" $word "firstDate" $page.Date "firstPage" $page) }}
+{{ end }}
+
+{{ return (sort $result "firstDate" "desc") }}

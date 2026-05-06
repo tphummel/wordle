@@ -1,0 +1,26 @@
+---
+title: Newest Words
+---
+
+Words sorted by when they were first used, newest additions first.
+
+{{< nw.inline >}}
+  {{ $wordles := where .Site.RegularPages "Section" "w" }}
+  {{ $newestWords := partialCached "newest-words.html" $wordles "newest-words" }}
+
+  <p>Total Distinct Words: <strong>{{ len $newestWords }}</strong></p>
+
+  <table>
+    <tr>
+      <th>Word</th>
+      <th>First Used</th>
+    </tr>
+    {{ range $newestWords }}
+      {{ $nw := . }}
+      <tr>
+        <td>{{ with $.Site.GetPage (printf "/words/%s" $nw.word) }}<a href="{{ .RelPermalink }}">{{ $nw.word }}</a>{{ else }}{{ $nw.word }}{{ end }}</td>
+        <td><a href="{{ $nw.firstPage.RelPermalink }}">{{ $nw.firstDate.Format "Jan 2, 2006" }}</a></td>
+      </tr>
+    {{ end }}
+  </table>
+{{< /nw.inline >}}
