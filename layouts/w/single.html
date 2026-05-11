@@ -264,14 +264,30 @@
 {{ else }}
   {{ $hash = partialCached "puzzle-hash" . .Title }}
 {{ end }}
-<p>Hash: <strong><a href="{{ with $.GetPage (printf "/hashes/%s" $hash) }}{{ .RelPermalink}}{{end}}">{{ $hash }}</a></strong></p>
+{{ $hashHistory := index .Site.Taxonomies.hashes (lower $hash) }}
+{{ $hashSeq := -1 }}
+{{ range $i, $p := $hashHistory.Pages.ByDate }}
+  {{ if eq $p.Title $.Title }}
+    {{ $hashSeq = $i }}
+  {{ end }}
+{{ end }}
+{{ $hashDisplay := add $hashSeq 1 }}
+<p>Hash: <strong><a href="{{ with $.GetPage (printf "/hashes/%s" $hash) }}{{ .RelPermalink}}{{end}}">{{ $hash }}</a></strong> ({{ $hashDisplay }}/{{ len $hashHistory }})</p>
 {{ $openerHash := "" }}
 {{ with .Params.openerHashes }}
   {{ $openerHash = (index . 0) }}
 {{ else }}
   {{ $openerHash = partialCached "first-guess-hash" . .Title }}
 {{ end }}
-<p>Opener Hash: <strong><a href="{{ with $.GetPage (printf "/openerhashes/%s" $openerHash) }}{{ .RelPermalink}}{{end}}">{{ $openerHash }}</a></strong></p>
+{{ $openerHashHistory := index .Site.Taxonomies.openerhashes (lower $openerHash) }}
+{{ $openerHashSeq := -1 }}
+{{ range $i, $p := $openerHashHistory.Pages.ByDate }}
+  {{ if eq $p.Title $.Title }}
+    {{ $openerHashSeq = $i }}
+  {{ end }}
+{{ end }}
+{{ $openerHashDisplay := add $openerHashSeq 1 }}
+<p>Opener Hash: <strong><a href="{{ with $.GetPage (printf "/openerhashes/%s" $openerHash) }}{{ .RelPermalink}}{{end}}">{{ $openerHash }}</a></strong> ({{ $openerHashDisplay }}/{{ len $openerHashHistory }})</p>
 {{ with .Params.shifts }}
   {{ $shift := (index . 0) }}
   <p>Shift: <strong><a href="{{ with $.GetPage (printf "/shifts/%s" $shift) }}{{ .RelPermalink}}{{end}}">{{ $shift }}</a></strong></p>
