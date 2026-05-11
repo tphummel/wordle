@@ -264,7 +264,15 @@
 {{ else }}
   {{ $hash = partialCached "puzzle-hash" . .Title }}
 {{ end }}
-<p>Hash: <strong><a href="{{ with $.GetPage (printf "/hashes/%s" $hash) }}{{ .RelPermalink}}{{end}}">{{ $hash }}</a></strong></p>
+{{ $hashHistory := index .Site.Taxonomies.hashes (lower $hash) }}
+{{ $hashSeq := -1 }}
+{{ range $i, $p := $hashHistory.Pages.ByDate }}
+  {{ if eq $p.Title $.Title }}
+    {{ $hashSeq = $i }}
+  {{ end }}
+{{ end }}
+{{ $hashDisplay := add $hashSeq 1 }}
+<p>Hash: <strong><a href="{{ with $.GetPage (printf "/hashes/%s" $hash) }}{{ .RelPermalink}}{{end}}">{{ $hash }}</a></strong> ({{ $hashDisplay }}/{{ len $hashHistory }})</p>
 {{ $openerHash := "" }}
 {{ with .Params.openerHashes }}
   {{ $openerHash = (index . 0) }}
