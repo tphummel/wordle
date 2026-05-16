@@ -1,7 +1,7 @@
 ---
 title: "1324: 2025-02-02"
 date: 2025-02-02T09:55:53-08:00
-tags: []
+tags: ["groundhog-day","holiday"]
 git_branch: 2025-02-02_1324
 contests: []
 words: ["score","chore"]

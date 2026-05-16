@@ -1,7 +1,7 @@
 ---
 title: "1689: 2026-02-02"
 date: 2026-02-02T07:16:04-08:00
-tags: []
+tags: ["groundhog-day","holiday"]
 git_branch: 2026-02-02_1689
 contests: []
 words: ["pouch","crank","clear","cigar"]
