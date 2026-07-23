@@ -110,6 +110,12 @@
       {{ $achievements = $achievements | append (slice $achievement) }}
     {{ end }}
   {{ end }}
+  {{ range (partialCached "double-letter-guesses.html" $wordle .File.Path) }}
+    {{ range .letters }}
+      {{ $achievement := dict "badge" "🔂" "report" "double-letter-slot-tour.md" "title" (printf "Double Letter Slot Tour: %s" (upper .)) }}
+      {{ $achievements = $achievements | append (slice $achievement) }}
+    {{ end }}
+  {{ end }}
   {{ with (partialCached "stairstep" . .File.Path) }}
     {{ $achievement := dict "badge" "🪜" "report" "stairstep.md" "title" "Stairstep" }}
     {{ $achievements = $achievements | append (slice $achievement) }}
