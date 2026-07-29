@@ -1,11 +1,29 @@
+.activity-grid-years {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.activity-grid-year {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.activity-grid-year-label {
+  flex: 0 0 auto;
+  width: 2.5em;
+  padding-top: 14px;
+  font-weight: 600;
+  opacity: 0.85;
+}
+
 .activity-grid-scroll {
   overflow-x: auto;
-  direction: rtl;
   padding-bottom: 4px;
 }
 
 .activity-grid-inner {
-  direction: ltr;
   display: inline-block;
 }
 
@@ -45,7 +63,8 @@ a.activity-grid-day:focus {
   background: #1b2a4a;
 }
 
-.activity-grid-day.level-future {
+.activity-grid-day.level-future,
+.activity-grid-day.level-pad {
   background: transparent;
 }
 
