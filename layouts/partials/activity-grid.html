@@ -1,0 +1,84 @@
+{{/* GitHub-style all-time activity grid: one column per week, one row per weekday (Sun-Sat) */}}
+{{ $wordles := . }}
+{{ $puzzleMap := dict }}
+{{ range $p := $wordles }}
+  {{ $key := $p.Date.Format "2006-01-02" }}
+  {{ $puzzleMap = merge $puzzleMap (dict $key $p) }}
+{{ end }}
+
+{{ $sorted := $wordles.ByDate }}
+{{ if gt (len $sorted) 0 }}
+  {{ $weekdayMap := dict "Sunday" 0 "Monday" 1 "Tuesday" 2 "Wednesday" 3 "Thursday" 4 "Friday" 5 "Saturday" 6 }}
+
+  {{ $firstDate := (index $sorted 0).Date }}
+  {{ $lastDate := (index $sorted (sub (len $sorted) 1)).Date }}
+
+  {{ $firstW := index $weekdayMap ($firstDate.Format "Monday") }}
+  {{ $startDate := $firstDate.AddDate 0 0 (int (mul $firstW -1)) }}
+
+  {{ $lastW := index $weekdayMap ($lastDate.Format "Monday") }}
+  {{ $endDate := $lastDate.AddDate 0 0 (int (sub 6 $lastW)) }}
+
+  {{ $totalDays := add (div (sub $endDate.Unix $startDate.Unix) 86400) 1 }}
+  {{ $totalWeeks := div $totalDays 7 }}
+  {{ $now := now }}
+
+  <div class="activity-grid-scroll">
+    <div class="activity-grid-inner">
+      <div class="activity-grid-months" style="grid-template-columns: repeat({{ $totalWeeks }}, 11px);">
+        {{ $lastMonth := "" }}
+        {{ range $w := seq 0 (sub $totalWeeks 1) }}
+          {{ $weekStart := $startDate.AddDate 0 0 (int (mul $w 7)) }}
+          {{ $mName := $weekStart.Format "Jan" }}
+          <span class="activity-grid-month-label">{{ if ne $mName $lastMonth }}{{ $mName }}{{ $lastMonth = $mName }}{{ end }}</span>
+        {{ end }}
+      </div>
+      <div class="activity-grid" style="grid-template-columns: repeat({{ $totalWeeks }}, 11px); grid-template-rows: repeat(7, 11px);">
+        {{ range $w := seq 0 (sub $totalWeeks 1) }}
+          {{ range $d := seq 0 6 }}
+            {{ $date := $startDate.AddDate 0 0 (int (add (mul $w 7) $d)) }}
+            {{ $dateKey := $date.Format "2006-01-02" }}
+            {{ $puzzle := index $puzzleMap $dateKey }}
+            {{ $label := $date.Format "Jan 2, 2006" }}
+            {{ $level := "empty" }}
+            {{ with $puzzle }}
+              {{ $puzzleNum := index .Params.puzzles 0 }}
+              {{ if eq .Params.state.gameStatus "WIN" }}
+                {{ $guesses := partialCached "guess-count" . .File.Path }}
+                {{ $level = cond (le $guesses 2) "4" (cond (eq $guesses 3) "3" (cond (eq $guesses 4) "2" "1")) }}
+                {{ $label = printf "%s — %d, solved in %d" $label $puzzleNum $guesses }}
+              {{ else }}
+                {{ $level = "loss" }}
+                {{ $label = printf "%s — %d, lost" $label $puzzleNum }}
+              {{ end }}
+            {{ else }}
+              {{ if $date.After $now }}
+                {{ $level = "future" }}
+                {{ $label = "" }}
+              {{ else }}
+                {{ $label = printf "%s — no puzzle played" $label }}
+              {{ end }}
+            {{ end }}
+            {{ if $puzzle }}
+              <a class="activity-grid-day level-{{ $level }}" href="{{ $puzzle.RelPermalink }}" title="{{ $label }}"></a>
+            {{ else }}
+              <span class="activity-grid-day level-{{ $level }}"{{ with $label }} title="{{ . }}"{{ end }}></span>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+
+  <div class="activity-grid-legend">
+    <span>Less</span>
+    <span class="activity-grid-day level-empty"></span>
+    <span class="activity-grid-day level-1"></span>
+    <span class="activity-grid-day level-2"></span>
+    <span class="activity-grid-day level-3"></span>
+    <span class="activity-grid-day level-4"></span>
+    <span>More</span>
+    <span class="activity-grid-day level-loss" style="margin-left: 0.75em"></span>
+    <span>Loss</span>
+  </div>
+{{ end }}
