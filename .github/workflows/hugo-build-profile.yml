@@ -7,13 +7,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
       - name: install hugo with asdf as defined in .tool-versions manifest
-        uses: asdf-vm/actions/install@v1
+        uses: asdf-vm/actions/install@v4
       - name: build hugo site and capture build stats
         id: hugo_stats
         run: hugo --templateMetrics > hugo-build-stats.txt
-      - uses: actions/github-script@v6
+      - uses: actions/github-script@v9
         with:
           script: |
             let hugoStats = '';
