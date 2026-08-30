@@ -10,7 +10,7 @@ middlers: ["flame","shell","bevel","pixel",”incel”]
 puzzles: [1898]
 hashes: ["AAAAAAPAAPAAPACAAACCAPACCCCACC"]
 openerHashes: ["AAAAA"]
-shifts: ["ouknv"]
+shifts: ["oubnv"]
 state: {
   "puzzleDate": "2026-08-30",
   "boardState": [
