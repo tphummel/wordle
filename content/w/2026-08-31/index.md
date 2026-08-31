@@ -6,11 +6,11 @@ git_branch: 2026-08-31_1899
 contests: []
 words: ["lucky","wrung","pound","sound","bound","hound"]
 openers: ["lucky"]
-middlers: ["wrung","pound","sound","bound"]
+middlers: ["wrung","pound","sound","bound",”hound”]
 puzzles: [1899]
 hashes: ["APAAAAACCAACCCCACCCCACCCCACCCC"]
 openerHashes: ["APAAA"]
-shifts: ["nvcwn"]
+shifts: ["svcwn"]
 state: {
   "puzzleDate": "2026-08-31",
   "boardState": [
@@ -66,7 +66,7 @@ state: {
     ]
   ],
   "rowIndex": 6,
-  "solution": "hound",
+  "solution": "mound",
   "gameStatus": "FAIL",
   "hardMode": true,
   "gameId": "558",
