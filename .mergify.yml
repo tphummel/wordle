@@ -5,6 +5,7 @@ pull_request_rules:
       - base=main
       - label=puzzle
       - check-success=Cloudflare Pages
+      - check-success=Run Rules
     actions:
       merge:
         method: squash
