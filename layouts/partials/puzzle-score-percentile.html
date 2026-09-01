@@ -1,0 +1,18 @@
+{{ $score := partialCached "puzzle-score.html" . .File.Path }}
+{{ $wordles := where .Site.RegularPages "Section" "w" }}
+{{ $total := len $wordles }}
+{{ $less := 0 }}
+{{ $equal := 0 }}
+{{ range $puzzle := $wordles }}
+  {{ $otherScore := partialCached "puzzle-score.html" $puzzle $puzzle.File.Path }}
+  {{ if lt $otherScore $score }}
+    {{ $less = add $less 1 }}
+  {{ else if eq $otherScore $score }}
+    {{ $equal = add $equal 1 }}
+  {{ end }}
+{{ end }}
+{{ $percentile := 0.0 }}
+{{ if gt $total 0 }}
+  {{ $percentile = mul (div (float (add $less $equal)) $total) 100 }}
+{{ end }}
+{{ return $percentile }}
