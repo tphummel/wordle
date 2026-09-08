@@ -19,10 +19,13 @@
     {{ end }}
   {{ end }}
   {{ if not (eq $guess "") }}
-    {{ $row = print $row " " $guess "\n" }}
+    {{ $row = print $row " +" (mul (sub $rowScore $prevScore) 10) "% " $guess "\n" }}
     {{ $share = print $share $row }}
   {{ end }}
   {{ $prevScore = $rowScore }}
 
 {{ end }}
+
+{{ $puzzleScore := partialCached "puzzle-score" . .File.Path }}
+{{ $share = print $share "Puzzle Score " $puzzleScore }}
 {{ return $share }}
