@@ -1,19 +1,15 @@
 {{ $guessCount := partialCached "guess-count" . .File.Path }}
 {{ $share := print "Wordle " (index .Params.puzzles 0) " " $guessCount "/6" (cond (eq .Params.state.hardMode true) "*" "") "\n" }}
 {{ $share = print $share "Day " ( .Date.Format "2006-01-02" ) "\n" }}
-{{ $prevScore := 0 }}
 {{ range $g, $guess := .Params.state.boardState }}
   {{ $row := "" }}
-  {{ $rowScore := 0 }}
 
   {{ range $c, $char := split $guess "" }}
     {{ $eval := index $.Params.state.evaluations $g $c }}
     {{ if eq $eval "correct" }}
       {{ $row = print $row "🟩" }}
-      {{ $rowScore = add $rowScore 2 }}
     {{ else if eq $eval "present" }}
       {{ $row = print $row "🟨" }}
-      {{ $rowScore = add $rowScore 1 }}
     {{ else }}
       {{ $row = print $row "⬛️" }}
     {{ end }}
@@ -22,7 +18,9 @@
     {{ $row = print $row " " $guess "\n" }}
     {{ $share = print $share $row }}
   {{ end }}
-  {{ $prevScore = $rowScore }}
 
 {{ end }}
+
+{{ $puzzleScore := partialCached "puzzle-score" . .File.Path }}
+{{ $share = print $share "Puzzle Score " $puzzleScore }}
 {{ return $share }}
