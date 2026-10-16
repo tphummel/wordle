@@ -38,6 +38,32 @@ Wordle 466 4/6*
     assert.equal(output.puzzleScore, 23)
     assert.equal(output.puzzleDate, '2022-09-28')
     assert.equal(output.guessCount, 4)
+  },
+  () => {
+    const output = lib(`
+Wordle 1,941 3/6
+
+⬛🟨⬛⬛⬛
+🟨🟩⬛⬛⬛
+🟩🟩🟩🟩🟩
+`)
+    assert.equal(output.puzzleNum, 1941)
+    assert.equal(output.puzzleDate, '2026-10-12')
+    assert.equal(output.guessCount, 3)
+  },
+  () => {
+    // high contrast: orange = correct, blue = present
+    const output = lib(`
+Wordle 1,941 2/6
+
+🟦⬛⬛⬛⬛
+🟧🟧🟧🟧🟧
+`)
+    assert.deepEqual(output.results[0][0], 'present')
+    assert.equal(output.results[1].every(s => s === 'correct'), true)
+  },
+  () => {
+    assert.throws(() => lib('hello'), /title line/)
   }
 ]
 

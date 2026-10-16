@@ -8,15 +8,18 @@ function getPuzzleDate (num) {
 }
 
 function analyzeEmoji (input) {
-  var title = input.match(/Wordle [0-9]* [X1-6]{1}\/6\*?/)
+  var title = input.match(/Wordle [0-9,]+ [X1-6]\/6\*?/)
+  if (!title) throw new Error("Couldn't find a Wordle title line (e.g. 'Wordle 1,234 4/6')")
   var titlePieces = title[0].split(' ')
-  var puzzleNum = parseInt(titlePieces[1], 10)
+  var puzzleNum = parseInt(titlePieces[1].replace(/,/g, ''), 10)
   var puzzleDate = getPuzzleDate(puzzleNum)
   var guessPieces = titlePieces[2].split("")
   var [guessCount, slash, allowed, modeStr] = guessPieces
 
   var results = input
     .replace(/⬜/g, '⬛️')
+    .replace(/🟧/g, '🟩')
+    .replace(/🟦/g, '🟨')
     .match(/[🟩🟨⬛️]*/g)
     .filter(r => r !== '')
     .map((line) => {
