@@ -10,7 +10,7 @@ middlers: ["spank","paste","psalm","psalm"]
 puzzles: [1852]
 hashes: ["AAAAPPPPAACPPAACCPAACCPAACCPAA"]
 openerHashes: ["AAAAP"]
-shifts: ["vziuw"]
+shifts: ["vzpjg"]
 state: {
   "puzzleDate": "2026-07-15",
   "boardState": [
@@ -66,7 +66,7 @@ state: {
     ]
   ],
   "rowIndex": 6,
-  "solution": "psalm",
+  "solution": "pshaw",
   "gameStatus": "FAIL",
   "hardMode": true,
   "gameId": "2372",
